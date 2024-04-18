@@ -51,10 +51,10 @@ export default {
                         <a href="./schedule" class="btn bg-gradient-yellow btn-round btn-lg">Schedule</a>
                         <a href="./video-archives" class="btn bg-gradient-yellow btn-round btn-lg">Video archives</a>
                         -->
-                        <RouterLink :to="Tr.i18nRoute({ name: 'registration' })" 
+                        <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' })" 
 												class="btn btn-lg  bg-gradient-yellow  btn-round"
                           >
-                          {{ $t("jumbotron.button") }}
+                          {{ $t("calls.cwt") }}
                         </RouterLink>           
                     </div>
                 </div>

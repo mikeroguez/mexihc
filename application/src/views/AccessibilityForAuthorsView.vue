@@ -98,7 +98,7 @@
                             <component :is="currentComponent" />
                         </template> 
 
-                        <h3 class="my-4">{{ $t("organizers.acccessibility_chairs_title") }}</h3>
+                        <h3 class="my-4">{{ $t("organizers.web_chairs_title") }}</h3>
                         <div class="row">
                             <div class="col-md-4">
                                 <OrganizerItem>
@@ -119,27 +119,6 @@
                                 </template>
                                 </OrganizerItem>
                             </div>
-                            <div class="col-md-4 mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/selene.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/selene.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Alba Selene Leon Arenas
-                                        </template>
-                                        <template #institution>
-                                            MX
-                                        </template>
-                                        <template #email>
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
                         </div>
                     </div>
             </div>

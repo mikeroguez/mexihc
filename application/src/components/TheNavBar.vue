@@ -53,6 +53,7 @@
 									</RouterLink>
 									<ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
 										aria-labelledby="navbarDropdown1">
+										<!--
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers' })" 
 												class="dropdown-item border-radius-md"
@@ -87,6 +88,7 @@
 												</div>
 											</RouterLink>											
 										</li>
+										-->
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' })" 
 												class="dropdown-item border-radius-md"
@@ -104,6 +106,7 @@
 												</div>
 											</RouterLink>
 										</li>
+										<!--
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'student-design-competition' })" 
 												class="dropdown-item border-radius-md"
@@ -138,6 +141,7 @@
 												</div>
 											</RouterLink>
 										</li>
+										-->
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })" 
 												class="dropdown-item border-radius-md"

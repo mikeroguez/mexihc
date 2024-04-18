@@ -49,7 +49,7 @@
     "jumbotron":{
         "conference": "XI Conferencia Latinoamericana de Interacción Humano-Computadora.",
         "date": "6, 7 y 8 de Noviembre",
-        "button": "Tarifas e registro"
+        "button": "Convocatoria de participación"
     },
     "about":{
         "about_title": "Acerca del MexIHC 2024",
@@ -62,7 +62,7 @@
     },
     "organizers": {
         "title": "Organizadores",
-        "intro": "El objetivo principal de la Conferencia Latinoamericana de Interacción Humano-Computadora (CLIHC) 2023 es fomentar la colaboración, la discusión y el intercambio de conocimiento entre investigadores internacionales y latinoamericanos en HCI. La conferencia tiene como objetivo promover el diseño y desarrollo de inteligencia artificial centrada en el ser humano y culturalmente consciente, y proporcionar una plataforma para la presentación y discusión de nuevas ideas, métodos y técnicas para el diseño de experiencias interactivas para el usuario. La conferencia se llevará a cabo en Puebla, México, y está organizada por un diverso grupo de expertos de América Latina y más allá.",
+        "intro": "",
         "general_committee_link": "Comité general",
         "general_committee_title": "Comité general",
         "program_committee_link": "Comité de programa",
