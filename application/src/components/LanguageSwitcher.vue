@@ -8,9 +8,11 @@
         <li class="nav-item">
           <a v-bind:class = "(locale == 'es')?'active':''" class="nav-link" v-on:click.prevent="switchLanguage" value="es" href="#0">{{ t( `locale.es` ) }}</a>
         </li>
+        <!--
         <li class="nav-item">
           <a v-bind:class = "(locale == 'pt')?'active':''" class="nav-link" v-on:click.prevent="switchLanguage" value="pt" href="#0">{{ t( `locale.pt` ) }}</a>
         </li>
+        -->
         <li class="nav-item">
           <a v-bind:class = "(locale == 'en')?'active':''" class="nav-link" v-on:click.prevent="switchLanguage" value="en" href="#0">{{ t( `locale.en` ) }}</a>
         </li>

@@ -43,16 +43,16 @@
         "accepted_papers": "Artículos aceptados",
         "accepted_papers_message": "",        
         "pending": "Pendiente",
-        "copyright": "© 2023 Conferencia Latinoamericana de Interacción Humano-Computadora, una conferencia de LAIHC.",
+        "copyright": "© 2024 Conferencia Mexicana sobre Interacción Humano-Computadora, una conferencia de AMexIHC.",
         "back_to_top": "Volver arriba"
     },
     "jumbotron":{
         "conference": "XI Conferencia Latinoamericana de Interacción Humano-Computadora.",
-        "date": "30, 31 de octubre y 1 de noviembre",
+        "date": "6, 7 y 8 de Noviembre",
         "button": "Tarifas e registro"
     },
     "about":{
-        "about_title": "Acerca de CLIHC",
+        "about_title": "Acerca del MexIHC 2024",
         "about_text": "La Conferencia Latinoamericana de Interacción Humano-Computadora (CLIHC) es gestionada por la Comunidad Latinoamericana de HCI de SIGCHI (LAIHC). CLIHC es una conferencia destacada que reúne a las comunidades de investigación de HCI de América Latina e internacionales para discutir e intercambiar ideas, métodos, enfoques y técnicas para diseñar experiencias de usuario interactivas, fomentando el intercambio intercultural y la cooperación entre personas con diferentes antecedentes y necesidades. Esta conferencia tiene su origen en Río de Janeiro en 2003 (Brasil), con ediciones posteriores en Cuernavaca en 2005 (México), Río de Janeiro en 2007 (Brasil), Mérida en 2009 (México), Porto de Galinhas en 2011 (Brasil), Guanacaste en 2013 (Costa Rica), Córdoba en 2015 (Argentina), Antigua en 2017 (Guatemala) y Ciudad de Panamá en 2019 (Panamá), y la Conferencia Virtual en 2021 (en línea).",
         "call": "Convocatoria de participación",
         "registration": "Llamada a registro",

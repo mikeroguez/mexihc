@@ -19,10 +19,10 @@
 				<nav class="navbar navbar-expand-lg  blur blur-rounded top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4 navbar-color-on-scroll justify-content-between">
 					<div class="container-fluid">
 						<a class="navbar-brand font-weight-bolder ms-sm-3" href="./" rel="tooltip"
-							title="Ninth Mexican International Conference on Human-Computer Interaction" data-placement="bottom"
+							title="Tenth Mexican conference on Human-Computer Interaction" data-placement="bottom"
 							tabindex="0">
-							<img src="/assets/img/logos/clihc2023.svg" height="25" alt="CLIHC Logo">
-							CLIHC 2023
+							<img src="/assets/img/logos/mexihc2024.svg" height="25" alt="">
+							MexIHC 2024
 						</a>
 						<button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
 							data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
@@ -158,6 +158,7 @@
 										
 									</ul>
 								</li>
+								<!--
 								<li class="nav-item dropdown dropdown-hover mx-2">
 									<a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="#"
 										id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
@@ -202,7 +203,7 @@
 												</div>
 											</RouterLink>
 										</li>
-										<!--
+										
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'accessibility-FAQ' })" 
 												class="dropdown-item border-radius-md"
@@ -217,9 +218,10 @@
 												</div>
 											</RouterLink>
 										</li>
-										-->
+										
 									</ul>
 								</li>
+								
 								<li class="nav-item dropdown dropdown-hover mx-2">
 									<RouterLink :to="Tr.i18nRoute({ name: 'registration' })" 
 										class="nav-link ps-2 d-flex cursor-pointer align-items-center"
@@ -279,7 +281,7 @@
 										</li>
 									</ul>
 								</li>
-								<!--
+								
 								<li class="nav-item mx-2">
 									<a class="nav-link ps-2 d-flex cursor-pointer align-items-center"
 										href="./video-archives">

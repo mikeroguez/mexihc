@@ -21,13 +21,13 @@
                     <div>
                         <ul class="d-flex flex-row ms-n3 nav">
                             <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://www.facebook.com/clihc" target="_blank">
+                                <a class="nav-link pe-1" href="https://www.facebook.com/mexihc" target="_blank">
                                     <i class="fab fa-facebook text-lg opacity-8"></i>
                                     <span class="sr-only">{{ $t("nav.facebook") }}</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://twitter.com/clihc2023" target="_blank">
+                                <a class="nav-link pe-1" href="https://twitter.com/mexihc" target="_blank">
                                     <i class="fab fa-twitter text-lg opacity-8"></i>
                                     <span class="sr-only">{{ $t("nav.twitter") }}</span>
                                 </a>
