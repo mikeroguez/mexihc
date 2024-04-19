@@ -100,7 +100,7 @@
 															{{ $t("nav.cwt") }}
 														</span>
 														<span class="text-sm text-dark">
-															{{ $t("about.closed") }}
+															{{ $t("nav.cwt_message") }}
 														</span>
 													</div>
 												</div>

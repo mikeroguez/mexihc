@@ -37,19 +37,19 @@ export default {
         The modalities of participation are:
     </p>
 
-    <h3>Workshop</h3>
+    <h2>Workshop</h2>
     <p>
         Every subject related to Human-Computer Interaction, such as those listed in the conference, with a duration of
         3 up to 8 hours.
     </p>
 
-    <h3>Tutorial</h3>
+    <h2>Tutorial</h2>
     <p>
         A conference, an interactive mini-workshop, a training session or any other modality which explore new forms of
         interaction with duration from 1 up to 3 hours.
     </p>
 
-    <h3>GUIDELINES FOR PROPOSALS</h3>
+    <h2>GUIDELINES FOR PROPOSALS</h2>
     <p>
         Proposals for workshops and tutorials should contain the necessary information to enable the workshops chairs to
         judge its importance, quality and interest of the community in the proposed topics. These should not exceed two
@@ -80,13 +80,13 @@ export default {
 
     <p>Proposals should be submitted to: ws.2024@mexihc.org</p>
 
-    <h3>AFTER ACCEPTANCE</h3>
+    <h2>AFTER ACCEPTANCE</h2>
     <p>
         Organizers of workshops should develop the Web Page with the call for papers. They should promote the call for
         papers among their contacts, and additional and convenient mailing-lists
     </p>
 
-    <h3 id="cwt-dates">Important Dates</h3>
+    <h2 id="cwt-dates">Important Dates</h2>
     <ul>
         <li><strong>May 17th, 2024</strong> – Deadline for workshop & tutorial proposals</li>
         <li><strong>May 24th, 2024</strong> – Notification acceptance</li>
@@ -99,7 +99,7 @@ export default {
         <li><strong>Sep 13th, 2024</strong> – Camera Ready</li>
     </ul>    
 
-    <h3 class="my-4">{{ $t("organizers.workshops_and_tutorials_chairs_title") }}</h3>
+    <h2 class="my-4">{{ $t("organizers.workshops_and_tutorials_chairs_title") }}</h2>
     <div class="row">
         <div class="col-md-4">
             <OrganizerItem>

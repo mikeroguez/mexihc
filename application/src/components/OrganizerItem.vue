@@ -4,9 +4,9 @@
             <slot name="image"></slot>
         </div>
         <div class="card-body">
-            <h4 class="mt-3">                
+            <h3 class="mt-3">                
                 <slot name="name"></slot>
-            </h4>
+            </h3>
             <p>
                 <!--Universidad Michoacana de San Nicolás de Hidalgo-->
                 <slot name="institution"></slot>
