@@ -7,10 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [2023.0.0.1] - 2023-05-09
+## [2024.0.0.1] - 2023-05-09
 
 ### Added
 
 - Landing page content
-- Call for papers
+- Call for participation page
+- Call for workshops and tutorials page
 - Organizers page
