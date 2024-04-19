@@ -18,128 +18,86 @@ export default {
 <template>
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>31 de julio</del> <del>11 de agosto EXTENDIDA</del> <strong class="text-danger"> {{ $t("about.closed") }}</strong><br>
-            <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-dates'})" class="uline">
-                Ver todas las fechas importantes
-            </RouterLink>            
-        </div>
+            <div class="ms-2 me-auto">
+                <strong class="text-primary text-gradient">Fecha límite para propuestas de talleres y
+                    tutoriales:</strong> 17 de mayo de 2024 <strong> ({{ $t("about.open") }})</strong><br>
+                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-dates' })"
+                    class="uline">
+                    Ver todas las fechas importantes
+                </RouterLink>
+            </div>
         </li>
     </ol>
 
     <p>
-        Los talleres y tutoriales de CLIHC son presentaciones en profundidad sobre temas fundamentales o de vanguardia
-        presentados por investigadores o profesionales en el campo de la Interacción Humano-Computadora (HCI, por sus siglas
-        en inglés). Los talleres y tutoriales brindan a los participantes la oportunidad de adquirir nuevas habilidades y
-        ofrecen posibilidades de conocer nuevas personas y discutir temas de interés compartido. El alcance de los talleres
-        y tutoriales es amplio e incluye temas como nuevas tecnologías, enfoques y metodologías de investigación, prácticas
-        de diseño, conocimientos sobre usuarios/consumidores, investigaciones sobre nuevos
-        servicios/aplicaciones/interfaces, estadísticas y mucho más. Se recomienda encarecidamente la inclusión de realidad
-        virtual o aumentada, computación portátil y aplicaciones en general con tecnología móvil en mente.
+        Para promover el acceso al conocimiento de expertos y fomentar el intercambio de experiencias, el Comité
+        Organizador de la conferencia MexIHC realiza la siguiente convocatoria para la participación en temas
+        interdisciplinarios, relevantes, actuales y prácticos en diversas áreas de investigación en el campo de la
+        Interacción Humano-Computadora.
+        Las modalidades de participación son:
     </p>
+
+    <h3>Taller</h3>
     <p>
-        Un taller o tutorial debe centrarse en su tema en detalle e incluir referencias a los artículos o materiales
-        "imprescindibles" dentro de su dominio. Se da la bienvenida a un enfoque participativo en el que los participantes
-        del tutorial participen activamente en ejercicios, aunque no es obligatorio. La audiencia esperada variará en
-        términos de conocimientos previos, pero estará compuesta principalmente por investigadores, estudiantes de
-        doctorado, profesionales y educadores. También se reciben propuestas de talleres y tutoriales de miembros de la
-        industria.
+        Cada tema relacionado con la Interacción Humano-Computadora, como los que se enumeran en la conferencia, con una
+        duración de 3 hasta 8 horas.
     </p>
+
+    <h3>Tutorial</h3>
     <p>
-        El tema general de la conferencia en 2023 es Cultura e Inteligencia Artificial, por lo que invitamos a los talleres
-        y tutoriales a discutir aspectos éticos en su trabajo, como parte de sus definiciones de problemas, diseño de
-        sistemas, diseño de experimentos, adopción de instrumentos y métricas, y conclusiones.
+        Una conferencia, un mini-taller interactivo, una sesión de capacitación o cualquier otra modalidad que explore
+        nuevas formas de interacción con una duración de 1 a 3 horas.
     </p>
 
-    <h3 id="cwt-dates">Fechas Importantes</h3>
-    <ul>
-        <li>Fecha límite de envío: <del>31 de julio</del> 11 de agosto EXTENDIDA</li>
-        <li>nNotificación: 28 de agosto</li>
-        <li>Versión final: 14 de septiembre</li>
-        <li>Evento 30 a 31 de octubre, 1 de noviembre</li>
-    </ul>
-
-    <h3>Plataforma de Envío</h3>
-
+    <h3>GUÍA PARA PROPUESTAS</h3>
     <p>
-        Todos los materiales deben ser enviados electrónicamente al <a
-            href="https://easychair.org/conferences/?conf=clihc2023" class="uline">Sistema de Conferencias EasyChair</a>, en
-        la sección de Talleres y Tutoriales, antes de la fecha límite.
+        Las propuestas para talleres y tutoriales deben contener la información necesaria para permitir a los
+        responsables de los talleres evaluar su importancia, calidad e interés de la comunidad en los temas propuestos.
+        Estas no deben exceder de dos páginas. Al proponer un taller, por favor proporciona (al menos) la siguiente
+        información:
     </p>
-
-    <h3>Formato y Extensión de la Submisión</h3>
 
     <ul>
-        <li>
-            El formato de envío a utilizar para cada categoría seguirá el <a
-                href="https://www.acm.org/publications/proceedings-template" class="uline">nuevo formato de Artículo Maestro
-                de ACM</a>. Los autores pueden optar por trabajar en uno de los siguientes formatos:
-            <ul>
-                <li>Microsoft Word</li>
-                <li>LaTeX (recomendado)</li>
-            </ul>
-        </li>
-        <li>
-            Máximo 4 páginas (excluyendo referencias)
-        </li>
-        <li>
-            CLIHC acepta submisiones en español, inglés y portugués, pero solo las submisiones en inglés pueden ser
-            publicadas en ACM DL y solo las submisiones en español e inglés pueden ser publicadas en la revista AMEXIHC.
-        </li>
-        <li>
-            <a href="http://www.sigaccess.org/welcome-to-sigaccess/resources/accessible-pdf-author-guide/"
-                class="uline">Guía para Submisiones Accesibles</a>
+        <li>Título y objetivos del taller o tutorial.</li>
+        <li>Tiempo necesario para impartir el taller o tutorial.</li>
+        <li>La relevancia del taller o tutorial en relación con los temas de la conferencia.</li>
+        <li>Una breve descripción del contenido (por ejemplo, objetivos, alcance).</li>
+        <li>Los temas específicos que se abordarán en el taller (agenda breve).</li>
+        <li>El público objetivo.</li>
+        <li>Número esperado de participantes (máximo de participantes).</li>
+        <li>Nombres, afiliaciones, correo electrónico y biografías cortas de los organizadores del taller, quienes deben
+            tener experiencia en los temas del taller.</li>
+        <li>Requisitos especiales con respecto a la logística (por ejemplo, soportes para pósters, más de un proyector
+            de video, etc.).</li>
+        <li>Una biografía de los organizadores con información relevante sobre su experiencia en el tema del
+            taller/tutorial (publicaciones, proyectos, etc.).</li>
+        <li>La propuesta puede estar escrita en español o inglés, y tener una extensión de 3-4 páginas.</li>
+        <li>Los trabajos aceptados serán publicados dentro del Journal Avances en Interacción Humano-Computadora (AIHC)
+            de la <a class="uline" href="http://aihc.amexihc.org/index.php/aihc">AmexIHC</a> en la sección Trabajo en
+            progreso. La plantilla es la siguiente:
+            <a class="uline" href="https://mexihc.org/aihc_template.zip">https://mexihc.org/aihc_template.zip</a>
         </li>
     </ul>
 
-    <h3>Información Rápida</h3>
+    <p>Las propuestas deben enviarse a: ws.2024@mexihc.org</p>
+
+    <h3>DESPUÉS DE LA ACEPTACIÓN</h3>
     <p>
-        CLICH 2023 se llevará a cabo en persona (con participación híbrida) del 30 de octubre al 1 de noviembre de 2023 en
-        Puebla, México. La presentación puede realizarse en persona o de forma remota. Al menos un autor debe registrarse
-        para la conferencia, ya sea virtual o presencialmente.
+        Los organizadores de los talleres deben desarrollar la página web con la convocatoria para presentar trabajos.
+        Deben promover la convocatoria entre sus contactos y listas de correo adicionales y convenientes.
     </p>
 
-    <h3>Preparación de la Submisión</h3>
-    <p>En su propuesta, por favor incluya:</p>
+    <h3 id="cwt-dates">Fechas importantes</h3>
     <ul>
-        <li>El título del taller o tutorial</li>
-        <li>Duración recomendada del taller o tutorial (mínimo una hora, máximo tres horas)</li>
-        <li>Objetivos de aprendizaje del taller o tutorial</li>
-        <li>La audiencia(s) a la que está dirigido el taller o tutorial</li>
-        <li>Los temas tratados y la profundidad con la que se abordarán</li>
-        <li>Resumen de los materiales proporcionados a los participantes</li>
-        <li>Una breve biografía del instructor o los instructores</li>
-        <li>Información sobre el modelo de entrega del taller (por ejemplo, presencial o híbrido). Se recomienda
-            encarecidamente la asistencia presencial del presentador del taller o tutorial.</li>
+        <li><strong>17 de mayo de 2024</strong> – Fecha límite para propuestas de talleres y tutoriales</li>
+        <li><strong>24 de mayo de 2024</strong> – Notificación de aceptación</li>
+        <li><strong>6 al 8 de noviembre de 2024</strong> - Conferencia MexIHC</li>
     </ul>
-
-    <h3>Proceso de Selección</h3>
-    <p>
-        Los talleres y tutoriales serán revisados por un comité que decidirá su aceptación final. Una vez aceptada la
-        propuesta, será responsabilidad de los autores del taller o tutorial 1) promocionar el evento a través de los medios
-        elegidos (por ejemplo, un sitio web, Twitter), 2) gestionar el proceso de aceptación de submisiones y selección de
-        participantes, y 3) si se desea que los documentos de posición sean publicados en las actas de ACM o en la revista
-        AMEXIHC, los autores del taller o tutorial deberán proponer un comité de programa.
-    </p>
-
-    <h3>Anonimato</h3>
-    <p>
-        Las submisiones de talleres y tutoriales no se envían de forma anónima, es decir, los instructores no eliminan sus
-        nombres y afiliaciones de los materiales de envío.
-    </p>
-
-    <h3>Publicación</h3>
-    <p>
-        Las propuestas de talleres y tutoriales aceptadas pueden elegir una de las siguientes opciones de publicación:
-    </p>
-
+    <p>Los organizadores de talleres deben considerar que la fecha límite para la entrega de trabajos de los talleres será:</p>
     <ul>
-        <li>Actas de la Conferencia publicadas en ACM DL. Solo las submisiones en inglés pueden ser publicadas en esta
-            opción. Si su submisión fue aceptada en español o portugués y desea publicar aquí, deberá traducir su submisión
-            original al inglés. </li>
-        <li><a href="http://aihc.amexihc.org/index.php/aihc" class="uline">Avances en Interacción Humano-Computadora.</a>
-            Solo las submisiones en español o inglés pueden ser publicadas en esta opción. Si su submisión fue aceptada en
-            portugués y desea publicar aquí, deberá traducir su submisión original al español o inglés.</li>
+        <li><strong>9 de agosto de 2024</strong> – Fecha límite para envíos de talleres y tutoriales</li>
+        <li><strong>23 de agosto de 2024</strong> – Notificación de aceptación</li>
+        <li><strong>13 de septiembre de 2024</strong> – Entrega final (Camera Ready)</li>
     </ul>
 
     <h3 class="my-4">{{ $t("organizers.workshops_and_tutorials_chairs_title") }}</h3>
@@ -148,38 +106,41 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/cesar.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/rene.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
-                    <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/cesar.png&quot;);">
+                    <div class="colored-shadow"
+                        style="background-image: url(&quot;./assets/img/people/rene.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    César Collazos
+                    René F. Navarro
                 </template>
                 <template #institution>
-                    U. Cauca, CO
+                    Universidad de Sonora
                 </template>
                 <template #email>
+                    ws.2024@mexihc.org
                 </template>
             </OrganizerItem>
         </div>
-
         <div class="col-md-4">
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/luciana.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/adriana.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
-                    <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/luciana.png&quot;);">
+                    <div class="colored-shadow"
+                        style="background-image: url(&quot;./assets/img/people/adriana.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Luciana Sá Brito
+                    Adriana Iñiguez
                 </template>
                 <template #institution>
-                    Universidade Federal do Rio de Janeiro, Brasil
+                    Universidad de Guadalajara
                 </template>
                 <template #email>
+                    ws.2024@mexihc.org
                 </template>
             </OrganizerItem>
         </div>

@@ -90,9 +90,10 @@ export default {
                                             Jessica Beltrán
                                         </template>
                                         <template #institution>
-                                            Institución
+                                            Universidad Autónoma de Coahuila, MX
                                         </template>
                                         <template #email>
+                                            chairs.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -112,9 +113,10 @@ export default {
                                             Dagoberto Cruz
                                         </template>
                                         <template #institution>
-                                            Institución
+                                            University of California San Diego, USA
                                         </template>
                                         <template #email>
+                                            chairs.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -151,9 +153,10 @@ export default {
                                             Mónica Tentori
                                         </template>
                                         <template #institution>
-                                            Institución
+                                            CICESE, México
                                         </template>
                                         <template #email>
+                                            tpc.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -176,6 +179,7 @@ export default {
                                             Universidad de Colima, MX
                                         </template>
                                         <template #email>
+                                            tpc.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -192,12 +196,13 @@ export default {
                                             </div>
                                         </template>
                                         <template #name>
-                                            Vicky
+                                            Victoria Meza
                                         </template>
                                         <template #institution>
-                                            Institución
+                                            Universidad Autónoma de Baja California, MX
                                         </template>
                                         <template #email>
+                                            tpc.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>                                
@@ -205,130 +210,6 @@ export default {
                         </div>
                     </div>
                 </div>                
-                <!--
-                <div class="container mt-4 px-5 mt-6" id="program-chairs">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
-                                <h3>{{ $t("organizers.local_chairs_title") }}</h3>
-                                <p class="text-secondary font-weight-normal pe-3">
-                                    {{ $t("organizers.local_chairs_description") }}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-9">
-                            <div class="row">
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/josefina.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/josefina.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Josefina Guerrero García
-                                        </template>
-                                        <template #institution>
-                                            BUAP, MX
-                                        </template>
-                                        <template #email>
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/ivan.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/ivan.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Iván Olmos Pineda
-                                        </template>
-                                        <template #institution>
-                                            BUAP, MX
-                                        </template>
-                                        <template #email>
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="container mt-4 px-5 mt-6" id="graduate-consortium-chairs">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
-                                <h3>{{ $t("organizers.program_chairs_title") }}</h3>
-                                <p class="text-secondary font-weight-normal pe-3">
-                                    {{ $t("organizers.program_chairs_description") }}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-9">
-                            <div class="row">
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/pablo.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/pablo.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Pablo Torres
-                                        </template>
-                                        <template #institution>
-                                            UTPL, EC
-                                        </template>
-                                        <template #email>
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/vanessa.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/vanessa.png&quot;);"></div>
-                                        </template>
-                                        <template #name>
-                                            Vanessa Agredo Delgado
-                                        </template>
-                                        <template #institution>
-                                            UNICOMFACAUCA, CO
-                                        </template>
-                                        <template #email>
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-                -->
                 <div class="container mt-4 px-5 mt-6" id="registration-chairs">
                     <div class="row">
                         <div class="col-xl-3">
@@ -357,9 +238,10 @@ export default {
                                             Valeria Soto
                                         </template>
                                         <template #institution>
-                                            Institución
+                                            Universidad Autónoma de Coahuila, MX
                                         </template>
                                         <template #email>
+                                            gc.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -379,9 +261,10 @@ export default {
                                             Raymundo Cornejo
                                         </template>
                                         <template #institution>
-                                            Institucion
+                                            Universidad Autónoma de Chihuahua
                                         </template>
                                         <template #email>
+                                            gc.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -418,9 +301,10 @@ export default {
                                             Niels Martínez
                                         </template>
                                         <template #institution>
-                                            Institución
+                                            Universidad Autónoma de Coahuila, MX
                                         </template>
                                         <template #email>
+                                            sdc.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -440,9 +324,10 @@ export default {
                                             Carlos Toxtli
                                         </template>
                                         <template #institution>
-                                            Institucion
+                                            Clemson University, USA
                                         </template>
                                         <template #email>
+                                            sdc.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -479,9 +364,10 @@ export default {
                                             René Navarro
                                         </template>
                                         <template #institution>
-                                            Institución
+                                            UNISON, MX
                                         </template>
                                         <template #email>
+                                            ws.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -501,9 +387,10 @@ export default {
                                             Adriana Iñiguez
                                         </template>
                                         <template #institution>
-                                            Institución
+                                            Universidad de Guadalajara, MX
                                         </template>
                                         <template #email>
+                                            ws.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>                                                                
@@ -540,9 +427,10 @@ export default {
                                             José Mercado Chan
                                         </template>
                                         <template #institution>
-                                            Institución
+                                            CICESE-UT3, MX
                                         </template>
                                         <template #email>
+                                            posters.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -565,6 +453,7 @@ export default {
                                             Universidad de Colima
                                         </template>
                                         <template #email>
+                                            posters.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div> 
@@ -572,11 +461,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/miguel.png" alt=""
+                                                <img src="/assets/img/nophoto.png" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/miguel.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
@@ -586,6 +475,7 @@ export default {
                                             Algoma University, CAN
                                         </template>
                                         <template #email>
+                                            posters.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>                                                               
@@ -595,20 +485,21 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/adolfo.png" alt=""
+                                                <img src="/assets/img/nophoto.png" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/adolfo.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
                                             Adolfo Mejía
                                         </template>
                                         <template #institution>
-                                            Institución
+                                            Universidad Autónoma de Coahuila
                                         </template>
                                         <template #email>
+                                            posters.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>                             
@@ -645,10 +536,10 @@ export default {
                                             Arturo Morales 
                                         </template>
                                         <template #institution>
-                                            Institución
+                                            CICESE, México
                                         </template>
                                         <template #email>
-                                            
+                                            publicity.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -656,11 +547,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/pablo.png" alt=""
+                                                <img src="/assets/img/nophoto.png" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/pablo.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
@@ -670,7 +561,7 @@ export default {
                                             Institución
                                         </template>
                                         <template #email>
-                                            
+                                            publicity.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -689,10 +580,10 @@ export default {
                                             Rosario Peralta 
                                         </template>
                                         <template #institution>
-                                            Institución
+                                            UNCA, MX
                                         </template>
                                         <template #email>
-                                            
+                                            publicity.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>                                                                
@@ -732,6 +623,7 @@ export default {
                                             Universidad de Colima, MX
                                         </template>
                                         <template #email>
+                                            web.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>                             
@@ -767,9 +659,10 @@ export default {
                                             Luis Castro
                                         </template>
                                         <template #institution>
-                                            Instituto Tecnológico de Sonora, MX
+                                            ITSON, MX
                                         </template>
                                         <template #email>
+                                            registration.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -796,18 +689,18 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/arian.jpg" alt=""
+                                                <img src="/assets/img/nophoto.png" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/arian.jpg&quot;);">
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
                                             Arian Martínez
                                         </template>
                                         <template #institution>
-                                            Institución
+                                            Microsoft, USA
                                         </template>
                                         <template #email>
                                             <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
@@ -842,11 +735,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/edgar.png" alt=""
+                                                <img src="/assets/img/nophoto.png" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/edgar.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>

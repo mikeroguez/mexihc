@@ -116,6 +116,7 @@
                                     Universidad de Colima, MX
                                 </template>
                                 <template #email>
+                                    web.2024@mexihc.org
                                 </template>
                                 </OrganizerItem>
                             </div>

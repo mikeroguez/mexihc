@@ -78,7 +78,7 @@ export default {
         </li>
     </ul>
 
-    <p>Proposals should be submitted to: ws.2024[at]mexihc.org</p>
+    <p>Proposals should be submitted to: ws.2024@mexihc.org</p>
 
     <h3>AFTER ACCEPTANCE</h3>
     <p>
@@ -105,6 +105,27 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
+                        <img src="/assets/img/people/rene.png" alt="" class="img-fluid shadow rounded-3">
+                    </div>
+                    <div class="colored-shadow"
+                        style="background-image: url(&quot;./assets/img/people/rene.png&quot;);">
+                    </div>
+                </template>
+                <template #name>
+                    René F. Navarro
+                </template>
+                <template #institution>
+                    Universidad de Sonora
+                </template>
+                <template #email>
+                    ws.2024@mexihc.org
+                </template>
+            </OrganizerItem>
+        </div>        
+        <div class="col-md-4">
+            <OrganizerItem>
+                <template #image>
+                    <div class="d-block blur-shadow-image">
                         <img src="/assets/img/people/adriana.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
                     <div class="colored-shadow"
@@ -118,27 +139,7 @@ export default {
                     Universidad de Guadalajara
                 </template>
                 <template #email>
-                </template>
-            </OrganizerItem>
-        </div>
-
-        <div class="col-md-4">
-            <OrganizerItem>
-                <template #image>
-                    <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
-                    </div>
-                    <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                    </div>
-                </template>
-                <template #name>
-                    René F. Navarro
-                </template>
-                <template #institution>
-                    Universidad de Sonora
-                </template>
-                <template #email>
+                    ws.2024@mexihc.org
                 </template>
             </OrganizerItem>
         </div>
