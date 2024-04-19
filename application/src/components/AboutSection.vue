@@ -1,12 +1,38 @@
 <script>
+import { /*ref*/shallowRef, watch, defineAsyncComponent } from 'vue'
+import { useI18n } from 'vue-i18n'
+import Tr from '@/i18n/translation'
 
-	import Tr from '@/i18n/translation'
+export default {
+  setup() {
+    const { locale } = useI18n()
+    const currentComponent = shallowRef(null)
 
-	export default {
-		setup() {
-			return { Tr }
-		}
-	}
+    const loadComponent = async (newLocale) => {
+      currentComponent.value = await getComponentForLocale(newLocale)
+    }
+
+    watch(locale, loadComponent, { immediate: true })
+
+    async function getComponentForLocale(locale) {
+      switch (locale) {
+        case 'en':
+          return defineAsyncComponent(() => import('@/components/locales/en/About.vue'))
+        case 'es':
+          return defineAsyncComponent(() => import('@/components/locales/es/About.vue'))
+        case 'pt':
+          return defineAsyncComponent(() => import('@/components/locales/pt/About.vue'))
+        default:
+          return null
+      }
+    }
+
+    return {
+      currentComponent,
+	  Tr
+    }
+  }
+}
 </script>
 
 <template>
@@ -18,7 +44,9 @@
 						<!-- <h2 class="text-dark mb-0">Titulo Negro</h2> -->
 						<h2 id="about_clihc" class="text-primary text-gradient text-center">{{ $t("about.about_title") }}</h2>
 						<p>
-							{{ $t("about.about_text") }}
+							<template v-if="currentComponent">
+                            	<component :is="currentComponent" />
+                        	</template>  
 						</p>
 					</div>
 				</div>
@@ -39,17 +67,15 @@
 											{{ $t("about.call") }}
 										</RouterLink>								
 									</th>
-									<td><span class="text-bold">{{ $t("about.closed") }}</span></td>
+									<td><span class="text-bold text-primary text-gradient">{{ $t("about.open") }}</span></td>
 								</tr>
 								<tr>
 									<th scope="row">
-										<RouterLink :to="Tr.i18nRoute({ name: 'registration' })" 
-												class="uline"
-											>
+										<span class="">
 											{{ $t("about.registration") }}
-										</RouterLink>										
+										</span>										
 									</th>
-									<td><span class="text-bold text-primary text-gradient">{{ $t("about.open") }}</span></td>
+									<td><span class="">{{ $t("nav.pending") }}</span></td>
 								</tr>
 								<tr>
 									<th scope="row">{{ $t("about.proceedings") }}</th>

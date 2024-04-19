@@ -39,28 +39,27 @@ export default {
 		<!-- Jumbotron -->
 		<header class="header-2">
 			<div class="page-header section-height-100 relative"
-				style="background-image: url('./assets/img/banner-2.png')">
+				style="background-image: url('./assets/img/banner.png')">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-8 z-index-2 border-radius-xl mx-auto py-3 mt-7 mb-4 blur shadow-blur">
+						<div class="col-lg-8 z-index-2 border-radius-xl mx-auto pt-5 pb-4 mt-7 mb-4 blur shadow-blur">
 							<div class="row">
 								<div class="col-md-12 text-center">
 									<h1 class="pt-3">
-										<img src="/assets/img/logos/clihc2023.svg" height="55" alt=""
-											style="position: relative; top: -2px;"><br>
-										CLIHC 2023
+										<img src="/assets/img/jumbotron-text.svg" alt="MexIHC 2024. Tenth Mexican Conference on Human-Computer Interaction"
+											style="position: relative; top: -2px;"
+											class="img-fluid custom-img"	
+										>
 									</h1>
-									<p class="lead mt-3">
-										{{ $t("jumbotron.conference") }}
-									</p>
-									<p class="lead mt-2">
-										<strong>
+									<p class="mt-2">
+										<strong>											
+											Saltillo, Coahuila, México<br>
 											{{ $t("jumbotron.date") }} <br>
-											Puebla, México<br>
+											Universidad Autónoma de Coahuila
 										</strong>
 									</p>
 									<p class="lead pt-2">
-										<RouterLink :to="Tr.i18nRoute({ name: 'registration' })" 
+										<RouterLink :to="Tr.i18nRoute({ name: 'call-for-participation'})" 
 												class="btn btn-lg  bg-gradient-yellow  btn-round"
 											>
 											{{ $t("jumbotron.button") }}

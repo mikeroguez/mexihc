@@ -15,6 +15,8 @@ export default {
 </script>
 
 <template>
+    <p>To be announced...</p>
+    <!--
     <div class="row mb-4">
         <SpeakerItem>
             <template #image>
@@ -85,4 +87,5 @@ export default {
             he's an ACM SIGCHI CHI Academy member and chairs the IFIP Technical Assembly.
         </SpeakerItem>
     </div>
+    -->
 </template>

@@ -18,172 +18,130 @@ export default {
 <template>
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> <del>July 31st</del> <del>August 11th EXTENDED</del> <strong class="text-danger"> {{ $t("about.closed") }}</strong><br>
-            <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-dates'})" class="uline">
-                See all important dates
-            </RouterLink>            
-        </div>
+            <div class="ms-2 me-auto">
+                <strong class="text-primary text-gradient">Deadline for workshop & tutorial proposals:</strong> May 17th, 2024
+                <span class="text-bold">({{ $t("about.open") }})</span><br>
+
+                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-dates' })"
+                    class="uline">
+                    See all important dates
+                </RouterLink>
+            </div>
         </li>
     </ol>
 
     <p>
-        CLIHC tutorials and workshops are in-depth presentations of fundamental or state-of-the-art topics presented
-        by researchers or practitioners within the field of HCI. The tutorials and workshops empower attendees to
-        learn new skills and offer possibilities to meet new people and discuss topics of shared interest. The scope
-        for tutorials and workshops is broad and includes topics, such as new technologies, research approaches and
-        methodologies, design practices, user/consumer insights, investigations into new
-        services/applications/interfaces, statistics, and much more. Virtual or Augmented Reality, wearable
-        computing, and generally applications with technology on the go in mind are highly recommended.
+        In order to promote the access to the knowledge of experts and encourage the exchange of experiences, the
+        Organizing Committee of the MexIHC conference conveys the following call for participation on interdisciplinary,
+        relevant, current and practical topics on different areas of research in the area of Human-Computer Interaction.
+        The modalities of participation are:
     </p>
+
+    <h3>Workshop</h3>
     <p>
-        A tutorial and workshop should focus on its topic in detail and include references to the "must-read" papers
-        or materials within its domain. A participatory approach in which the tutorial participants actively engage
-        in exercises is welcomed, though not required. The expected audience will vary in terms of prior knowledge,
-        but will largely consist of researchers, PhD students, practitioners, and educators. Tutorial and workshop
-        proposal submissions by members of the industry are welcomed as well.
+        Every subject related to Human-Computer Interaction, such as those listed in the conference, with a duration of
+        3 up to 8 hours.
     </p>
+
+    <h3>Tutorial</h3>
     <p>
-        The overall conference theme in 2023 is Culture and Artificial Intelligence, so we invite tutorials and
-        workshop to discuss ethical aspects in their work, as part of their problem definitions, system design,
-        experiment design, instrument and metric adoption and conclusions.
+        A conference, an interactive mini-workshop, a training session or any other modality which explore new forms of
+        interaction with duration from 1 up to 3 hours.
+    </p>
+
+    <h3>GUIDELINES FOR PROPOSALS</h3>
+    <p>
+        Proposals for workshops and tutorials should contain the necessary information to enable the workshops chairs to
+        judge its importance, quality and interest of the community in the proposed topics. These should not exceed two
+        pages. When to propose a workshop, please provide (at least) the following information:
+    </p>
+
+    <ul>
+        <li>Title and goals of the workshop or tutorial.</li>
+        <li>Time required to deliver the workshop or tutorial.</li>
+        <li>The relevance of the workshop or tutorial in connection with the themes of the conference.</li>
+        <li>A brief description of the content (eg. objectives, scope).</li>
+        <li>The specific topics to be addressed at the workshop (brief agenda).</li>
+        <li>The target audience.</li>
+        <li>Expected number of participants (maximum of participants).</li>
+        <li>Names, affiliations, e-mail and short biographies of the organizers of the workshop, who must have
+            experience in the topics of the workshop.</li>
+        <li>Special requirements with respect to logistics (eg. stands for posters, more than one video projector,
+            etc.).</li>
+        <li>A bio of the organizers with relevant information regarding their expertise to the theme of the
+            workshop/tutorial (publications, projects, etc.).</li>
+        <li>The proposal can be written in Spanish or English, and have an extension of 3-4 pages.</li>
+        <li>Accepted works will be published within Journal Avances en Interacción Humano-Computadora (AIHC) de la
+            <a class="uline" href="http://aihc.amexihc.org/index.php/aihc">AmexIHC</a> in the section Work in progress.
+            The template is the
+            following: https://mexihc.org/aihc_template.zip
+        </li>
+    </ul>
+
+    <p>Proposals should be submitted to: ws.2024@mexihc.org</p>
+
+    <h3>AFTER ACCEPTANCE</h3>
+    <p>
+        Organizers of workshops should develop the Web Page with the call for papers. They should promote the call for
+        papers among their contacts, and additional and convenient mailing-lists
     </p>
 
     <h3 id="cwt-dates">Important Dates</h3>
     <ul>
-        <li>Submission deadline: <del>July 31st</del> August 11th EXTENDED</li>
-        <li>Notification: August 28th</li>
-        <li>Camera ready: September 14th</li>
-        <li>Event Oct 30 - 31, Nov 1</li>
+        <li><strong>May 17th, 2024</strong> – Deadline for workshop & tutorial proposals</li>
+        <li><strong>May 24th, 2024</strong> – Notification acceptance</li>
+        <li><strong>November 6th-8th, 2024</strong> - MexIHC Conference</li>
     </ul>
-
-    <h3>Submission Platform</h3>
-
-    <p>
-        All materials must be submitted electronically to the <a
-        href="https://easychair.org/conferences/?conf=clihc2023" class="uline">EasyChair Conference System</a>, to
-        the Workshop and Tutorials’ track, by the deadline.
-    </p>
-
-    <h3>Submission Format and Length</h3>
-
+    <p>Workshops organizers should consider that the submission for workshop papers would be</p>
     <ul>
-        <li>
-        Submission format to be used for each category will follow the <a
-            href="https://www.acm.org/publications/proceedings-template" class="uline">new ACM Master Article
-            format</a>. Authors may
-        choose to work in one of the following formats:
-        <ul>
-            <li>Microsoft Word</li>
-            <li>LaTeX (recommended)</li>
-        </ul>
-        </li>
-        <li>
-        Maximum 4 pages (excluding references)
-        </li>
-        <li>
-        CLIHC accepts submissions in Spanish, English, and Portuguese but only submissions in English can go to
-        ACM DL and only submissions in Spanish and English can go to the AMEXIHC journal.
-        </li>
-        <li>
-        <a href="http://www.sigaccess.org/welcome-to-sigaccess/resources/accessible-pdf-author-guide/"
-            class="uline">Guide to Accessible Submissions</a>
-        </li>
-    </ul>
-
-    <h3>Quick Facts</h3>
-    <p>
-        CLICH 2023 will be held in person (with hybrid participation) during October 30th-Nov 1st, 2023 in Puebla,
-        México. The presentation could be done in person or remotely. At least one author must register for the
-        conference, whether virtual or face-to-face.
-    </p>
-
-    <h3>Preparing the Submission</h3>
-    <p>In your proposal please include:</p>
-    <ul>
-        <li>The title of the tutorial or workshop</li>
-        <li>Length of the tutorial or workshop (recommended at least one hour, three hours maximum)</li>
-        <li>Learning goals of the tutorial or workshop</li>
-        <li>The intended audience(s) of the tutorial or workshop</li>
-        <li>The covered topics and the depths to which you will cover them</li>
-        <li>Overview of the materials provided to the participants</li>
-        <li>A brief biography of the instructor(s)</li>
-        <li>Information on the delivery model of the tutorial (e.g., in presence or hybrid). The physical attendance
-        of tutorial/workshop presenter(s) is highly recommended.</li>
-    </ul>
-
-    <h3>Selection Process</h3>
-    <p>
-        The tutorial and workshop will be reviewed by a committee who will decide the final acceptance. Once the
-        submission is accepted, it will be the responsibility of the workshop authors to 1) advertise the event
-        (workshop or tutorial) via their chosen media (e.g., a website, twitter), 2) manage the process to accept
-        submissions and select who participates or not in the event and 3)If it is desirable that the position
-        papers be published in the ACM proceedings or the AMEXIHC journal, it will be necessary for the workshop
-        authors to propose a program committee
-    </p>
-
-    <h3>Anonymity</h3>
-    <p>
-        Tutorial and workshop submissions are not submitted anonymously, i.e. instructors do not remove their names
-        and affiliations from their submission materials.
-    </p>
-
-    <h3>Publication</h3>
-    <p>
-        Accepted tutorial and workshop proposals can choose one of the following publication media:
-    </p>
-
-    <ul>
-        <li>Conference Proceedings published in ACM DL. Only English submissions can be published in this medium. If
-        your submission was accepted in Spanish or Portuguese and wish to publish here, you will have to translate
-        your original submission to English. </li>
-        <li><a href="http://aihc.amexihc.org/index.php/aihc" class="uline">Avances en Interacción
-            Humano-Computadora</a>. Only Spanish or English submissions can be published in this medium. If your
-        submission was accepted in Portuguese and wish to publish here, you will have to translate your original
-        submission to either Spanish or English.</li>
-    </ul>
+        <li><strong>Aug 9th, 2024</strong> – Deadline for workshop & tutorial submissions</li>
+        <li><strong>Ago 23th, 2024</strong> – Notification acceptance</li>
+        <li><strong>Sep 13th, 2024</strong> – Camera Ready</li>
+    </ul>    
 
     <h3 class="my-4">{{ $t("organizers.workshops_and_tutorials_chairs_title") }}</h3>
     <div class="row">
         <div class="col-md-4">
-        <OrganizerItem>
-            <template #image>
-            <div class="d-block blur-shadow-image">
-                <img src="/assets/img/people/cesar.png" alt="" class="img-fluid shadow rounded-3">
-            </div>
-            <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/cesar.png&quot;);">
-            </div>
-            </template>
-            <template #name>
-            César Collazos
-            </template>
-            <template #institution>
-            U. Cauca, CO
-            </template>
-            <template #email>
-            </template>
-        </OrganizerItem>
-        </div>
-
+            <OrganizerItem>
+                <template #image>
+                    <div class="d-block blur-shadow-image">
+                        <img src="/assets/img/people/rene.png" alt="" class="img-fluid shadow rounded-3">
+                    </div>
+                    <div class="colored-shadow"
+                        style="background-image: url(&quot;./assets/img/people/rene.png&quot;);">
+                    </div>
+                </template>
+                <template #name>
+                    René F. Navarro
+                </template>
+                <template #institution>
+                    Universidad de Sonora
+                </template>
+                <template #email>
+                    ws.2024@mexihc.org
+                </template>
+            </OrganizerItem>
+        </div>        
         <div class="col-md-4">
-        <OrganizerItem>
-            <template #image>
-            <div class="d-block blur-shadow-image">
-                <img src="/assets/img/people/luciana.png" alt="" class="img-fluid shadow rounded-3">
-            </div>
-            <div class="colored-shadow"
-                style="background-image: url(&quot;./assets/img/people/luciana.png&quot;);">
-            </div>
-            </template>
-            <template #name>
-            Luciana Sá Brito
-            </template>
-            <template #institution>
-            Universidade Federal do Rio de Janeiro, Brasil
-            </template>
-            <template #email>
-            </template>
-        </OrganizerItem>
+            <OrganizerItem>
+                <template #image>
+                    <div class="d-block blur-shadow-image">
+                        <img src="/assets/img/people/adriana.png" alt="" class="img-fluid shadow rounded-3">
+                    </div>
+                    <div class="colored-shadow"
+                        style="background-image: url(&quot;./assets/img/people/adriana.png&quot;);">
+                    </div>
+                </template>
+                <template #name>
+                    Adriana Iñiguez
+                </template>
+                <template #institution>
+                    Universidad de Guadalajara
+                </template>
+                <template #email>
+                    ws.2024@mexihc.org
+                </template>
+            </OrganizerItem>
         </div>
     </div>
 </template>

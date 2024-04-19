@@ -43,16 +43,16 @@
         "accepted_papers": "Artículos aceptados",
         "accepted_papers_message": "",        
         "pending": "Pendiente",
-        "copyright": "© 2023 Conferencia Latinoamericana de Interacción Humano-Computadora, una conferencia de LAIHC.",
+        "copyright": "© 2024 Conferencia Mexicana sobre Interacción Humano-Computadora, una conferencia de AMexIHC.",
         "back_to_top": "Volver arriba"
     },
     "jumbotron":{
         "conference": "XI Conferencia Latinoamericana de Interacción Humano-Computadora.",
-        "date": "30, 31 de octubre y 1 de noviembre",
-        "button": "Tarifas e registro"
+        "date": "6, 7 y 8 de Noviembre",
+        "button": "Convocatoria de participación"
     },
     "about":{
-        "about_title": "Acerca de CLIHC",
+        "about_title": "Acerca del MexIHC 2024",
         "about_text": "La Conferencia Latinoamericana de Interacción Humano-Computadora (CLIHC) es gestionada por la Comunidad Latinoamericana de HCI de SIGCHI (LAIHC). CLIHC es una conferencia destacada que reúne a las comunidades de investigación de HCI de América Latina e internacionales para discutir e intercambiar ideas, métodos, enfoques y técnicas para diseñar experiencias de usuario interactivas, fomentando el intercambio intercultural y la cooperación entre personas con diferentes antecedentes y necesidades. Esta conferencia tiene su origen en Río de Janeiro en 2003 (Brasil), con ediciones posteriores en Cuernavaca en 2005 (México), Río de Janeiro en 2007 (Brasil), Mérida en 2009 (México), Porto de Galinhas en 2011 (Brasil), Guanacaste en 2013 (Costa Rica), Córdoba en 2015 (Argentina), Antigua en 2017 (Guatemala) y Ciudad de Panamá en 2019 (Panamá), y la Conferencia Virtual en 2021 (en línea).",
         "call": "Convocatoria de participación",
         "registration": "Llamada a registro",
@@ -62,7 +62,7 @@
     },
     "organizers": {
         "title": "Organizadores",
-        "intro": "El objetivo principal de la Conferencia Latinoamericana de Interacción Humano-Computadora (CLIHC) 2023 es fomentar la colaboración, la discusión y el intercambio de conocimiento entre investigadores internacionales y latinoamericanos en HCI. La conferencia tiene como objetivo promover el diseño y desarrollo de inteligencia artificial centrada en el ser humano y culturalmente consciente, y proporcionar una plataforma para la presentación y discusión de nuevas ideas, métodos y técnicas para el diseño de experiencias interactivas para el usuario. La conferencia se llevará a cabo en Puebla, México, y está organizada por un diverso grupo de expertos de América Latina y más allá.",
+        "intro": "",
         "general_committee_link": "Comité general",
         "general_committee_title": "Comité general",
         "program_committee_link": "Comité de programa",

@@ -1,30 +1,31 @@
 body {
-    background-color: #F1F7ED;
+    background-color: #edeae8;
 }
 .scrolled{
-    background-color: rgba(35, 100, 169, 0.3) !important;
-    background-image: linear-gradient(10deg, rgba(35, 100, 169, 0.8) 30%, rgb(61, 165, 217, 0) 100%);
+    background-color: rgba(253, 200, 108, 0.3) !important;
+    background-image: linear-gradient(10deg, rgba(253, 200, 108, 0.8) 30%, rgb(253, 200, 108, 0.8) 100%);
 }
 
 nav.scrolled li.nav-item:not(.active) a, nav.scrolled a.navbar-brand {
-    color: white;
+    color: #57331D;
 }
 
 .bg-gradient-yellow {
-    background-image: linear-gradient(310deg, #F9B204 0%, #F79101 100%);
-    color: #39384c;
+    /*background-image: linear-gradient(310deg, #B77841 0%, #FDC86C 100%);*/
+    background-color: #FDC86C;
+    color: #57331D;
 }
 
 .text-gradient.text-primary {
-    background-image: linear-gradient(310deg, #F9B204 0%, #d57500 100%);
+    background-image: linear-gradient(310deg, #AD4A20 0%, #AD4A20 100%);
 }
 
 h1, .h1, .h1, h2, .h2, .h2, h3, .h3, .h3, h4, .h4, .h4, h5, .h5, .h5, h6, .h6, .h6 {
-    color: #39384c;
+    color: #57331D;
 }
 
 .text-dark {
-    color: #39384c !important;
+    color: #57331D !important;
 }
 
 .alert-warning {
@@ -36,4 +37,16 @@ h1, .h1, .h1, h2, .h2, .h2, h3, .h3, .h3, h4, .h4, .h4, h5, .h5, .h5, h6, .h6, .
 
 .active{
     font-weight: bolder !important;
+}
+
+.custom-img {
+    height: auto; /* Altura fija para tamaños pequeños */
+    width: 80%;  /* El ancho es automático y proporcional */
+}
+
+@media (min-width: 768px) { /* Breakpoint para dispositivos md de Bootstrap */
+    .custom-img {
+        height: 100px; /* La altura es automática y proporcional */
+        width: auto;  /* Ancho fijo para dispositivos medianos y grandes */
+    }
 }
