@@ -12,11 +12,11 @@ export default {
       // Determina la imagen en función del idioma
       switch (locale.value) {
         case 'en':
-          return '/assets/img/jumbotron-text-en.svg';
+          return 'assets/img/jumbotron-text-en.svg';
         case 'es':
-          return '/assets/img/jumbotron-text-es.svg';
+          return 'assets/img/jumbotron-text-es.svg';
         default:
-          return '/assets/img/jumbotron-text-en.svg'; // Un fallback por defecto
+          return 'assets/img/jumbotron-text-en.svg'; // Un fallback por defecto
       }
     });
 

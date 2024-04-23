@@ -53,7 +53,7 @@
 									</RouterLink>
 									<ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
 										aria-labelledby="navbarDropdown1">
-										<!--
+										
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers' })" 
 												class="dropdown-item border-radius-md"
@@ -64,13 +64,14 @@
 															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
 															{{ $t("nav.cfp") }}
 														</span>
-														<i18n path="nav.cfp_message" tag="span" class="text-sm text-dark">
-															{{ $t("about.closed") }}
-														</i18n>
+														<span class="text-sm text-dark">
+															{{ $t("nav.cfp_message") }}
+														</span>
 													</div>
 												</div>
 											</RouterLink>											
 										</li>
+										<!--
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters' })" 
 												class="dropdown-item border-radius-md"

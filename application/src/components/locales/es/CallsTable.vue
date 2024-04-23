@@ -13,14 +13,11 @@
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
-                <!--
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers'})" class="uline">
                     Convocatoria de trabajos (CFP)
                 </RouterLink>
-                -->
-                Convocatoria de trabajos (CFP)
             </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> a ser anunciada...<br>
+            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> 14 de junio de 2024 <strong>(Abierta)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -43,7 +40,7 @@
                     Convocatoria de talleres y tutoriales (CWT)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Decha límite para propuestas:</strong> 17 de mayo del 2024 <strong>(Abierta)</strong><br>
+            <strong class="text-primary text-gradient">Decha límite para propuestas:</strong> 17 de mayo de 2024 <strong>(Abierta)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">

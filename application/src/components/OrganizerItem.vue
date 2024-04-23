@@ -4,7 +4,7 @@
             <slot name="image"></slot>
         </div>
         <div class="card-body">
-            <h3 class="mt-3">                
+            <h3 class="mt-3 h4">                
                 <slot name="name"></slot>
             </h3>
             <p>
