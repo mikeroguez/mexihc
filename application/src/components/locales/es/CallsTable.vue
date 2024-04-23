@@ -17,47 +17,56 @@
                     Convocatoria de trabajos (CFP)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>3 de julio PRORROGADA</del><strong class="text-danger"> Cerrada</strong><br>
+            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> 14 de junio de 2024 <strong>(Abierta)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
+                <!--
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters'})" class="uline">
                     Convocatoria de pósteres (CPT)
                 </RouterLink>                
+                -->
+                Convocatoria de pósteres (CPT)
             </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong><del>11 de agosto EXTENDIDA</del><strong class="text-danger"> Closed</strong><br>
+            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> a ser anunciada...<br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
-            <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' })" class="uline">
-                Convocatoria de talleres y tutoriales (CWT)
-            </RouterLink>
+                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' })" class="uline">
+                    Convocatoria de talleres y tutoriales (CWT)
+                </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>11 de agosto EXTENDIDA</del><strong class="text-danger"> Closed</strong><br>
+            <strong class="text-primary text-gradient">Decha límite para propuestas:</strong> 17 de mayo de 2024 <strong>(Abierta)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
-            <RouterLink :to="Tr.i18nRoute({ name: 'student-design-competition' })" class="uline">
+                <!--
+                <RouterLink :to="Tr.i18nRoute({ name: 'student-design-competition' })" class="uline">
+                    Competencia de diseño para estudiantes (SDC)
+                </RouterLink>
+                -->
                 Competencia de diseño para estudiantes (SDC)
-            </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>11 de agosto EXTENDIDA</del><strong class="text-danger"> Closed</strong><br>
+            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> a ser anunciada...<br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
-            <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium' })" class="uline">
+                <!--
+                <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium' })" class="uline">
+                    Coloquio de graduados (GC)
+                </RouterLink>
+                -->
                 Coloquio de graduados (GC)
-            </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>11 de agosto EXTENDIDA</del><strong class="text-danger"> Closed</strong><br>
+            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> a ser anunciada...<br>
         </div>
         </li>
     </ol>    

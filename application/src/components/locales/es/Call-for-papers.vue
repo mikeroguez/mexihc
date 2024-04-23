@@ -18,138 +18,161 @@ export default {
 <template>
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>3 de julio PRORROGADA</del> <strong class="text-danger">Cerrada</strong><br>
-            <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cpf-dates'})" class="uline">
-                Ver todas las fechas importantes
-            </RouterLink>            
-        </div>
+            <div class="ms-2 me-auto">
+                <strong class="text-primary text-gradient">Fecha límite de envío:</strong> 14 de junio de 2024
+                <strong>(Abierta)</strong><br>
+                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-dates' })" class="uline">
+                    Ver todas las fechas importantes
+                </RouterLink>
+            </div>
         </li>
     </ol>
 
     <p>
-        La XI Conferencia Latinoamericana de Interacción Humano-Computadora (CLIHC 2023) tiene como objetivo proporcionar un
-        foro destacado que reúna a las comunidades de investigación latinoamericanas e internacionales de Interacción
-        Humano-Computadora (HCI) para discutir y compartir ideas, métodos, enfoques y técnicas para el diseño,
-        implementación y evaluación de experiencias interactivas de usuario. De acuerdo con ediciones anteriores, creemos
-        que la HCI debe fomentar la producción de tecnología que pueda ser utilizada y beneficiar al mayor número posible de
-        personas, facilitando el intercambio intercultural y la cooperación entre personas con diferentes antecedentes y
-        necesidades.
+        Invitamos a contribuciones originales sobre el tema de la IHC en la era de las nuevas realidades, así como temas
+        relevantes en Interacción Humano-Computadora y Diseño de Interacción. Los artículos serán revisados de manera
+        anónima por los miembros del comité del programa MexIHC 2024. Las propuestas serán evaluadas en función de su
+        originalidad, la importancia de la contribución al campo y al tema, la corrección técnica y la presentación.
+    </p>
+
+    <h2>Tipo de contribuciones</h2>
+    <br>
+    <h3>Artículos completos (Hasta 8 páginas)</h3>
+    <p>
+        Los artículos completos deben describir trabajos originales que no hayan sido publicados previamente y
+        proporcionar resultados significativos de investigación científica. Los artículos completos pueden expandir
+        trabajos previamente publicados en forma de resúmenes o pósteres, pero deben presentar contenido novedoso y
+        significativamente ampliado, y deberían citar cualquier resumen previo de pósteres o trabajos en progreso. Los
+        artículos completos pueden estar escritos en inglés o español.
+    </p>
+
+    <h3>Artículos cortos o Notas (Hasta 4 páginas)</h3>
+    <p>
+        Los artículos cortos deben describir trabajos innovadores en progreso, sin resultados significativos aún, que
+        contribuyan a una investigación bien fundamentada. Los artículos cortos pueden estar escritos en inglés o
+        español.
     </p>
 
     <p>
-        Este año, CLIHC 2023 se llevará a cabo en Puebla, México, y en línea, y está abierto a presentaciones en las
-        siguientes categorías:
+        Al menos un autor de las contribuciones aceptadas debe registrarse como presentador antes de la fecha límite de
+        registro temprano. Otras pistas, como el Consorcio de Posgrado y los Pósteres, se anunciarán pronto. Por favor,
+        vuelva más tarde para obtener más información.
     </p>
 
+    <h2>Detalles de envío</h2>
+
+    <p>
+        Los artículos completos y cortos escritos en inglés o español deben utilizar <a
+            href="https://mexihc.org/aihc_template.zip" class="uline">a plantilla de revista "Avances en Interacción Humano-Computadora"</a> de AmexIHC.
+            Envíe su artículo utilizando la cuenta de <a href="https://www.easychair.org/my/conference?conf=mexihc2024">EasyChair para MexIHC 2024.</a>.
+    </p>
+
+    <h2 id="cfp-dates">Fechas importantes</h2>
     <ul>
-        <li>Artículo completo</li>
-        <li>Artículo corto</li>
+        <li>Fecha límite para envíos: 14 de junio de 2024</li>
+        <li>Notificación de aceptación: 20 de agosto de 2024</li>
+        <li>Envío final de versión lista para la publicación: 30 de agosto de 2024</li>
+        <li>Versión lista para la publicación: 25 de agosto de 2024</li>
+        <li>MexIHC 2024: del 6 al 8 de noviembre</li>
     </ul>
 
+    <h2>Envío anónimo</h2>
+
     <p>
-        Se invita a los autores a preparar y enviar artículos que informen sobre proyectos de investigación, diseños
-        innovadores, estudios de usuarios, modelos de interacción, estudios de campo, estudios de caso y otros. Se anima a
-        académicos, investigadores, profesionales de la industria, así como a estudiantes de pregrado y posgrado a
-        participar en la selección revisada por pares de los trabajos que se presentarán en la conferencia o en línea, del
-        30 de octubre al 1 de noviembre de 2023.
+        MexIHC 2024 utilizará un proceso de revisión completamente anónimo para Artículos Completos y Cortos, en el que
+        los autores deben anonimizar sus envíos de papel. No debe anonimizar las referencias a su trabajo anterior
+        (estas son necesarias como parte del proceso de revisión). Más bien, debe referirse a todo trabajo anterior en
+        tercera persona. Aunque puede que no sea posible eliminar todas las pistas sobre quiénes son los autores,
+        esperamos que los autores hagan su mejor esfuerzo.
     </p>
 
-    <p>Los temas de las presentaciones pueden abarcar todos los aspectos de la HCI, incluyendo, pero no limitándose a:</p>
+    <h2>Publicación</h2>
 
-    <ol>
-        <li>Computación afectiva</li>
-        <li>Interacción cerebro-computadora (BCI)</li>
-        <li>CSCW y computación social</li>
-        <li>Métodos de diseño</li>
-        <li>Educación e HCI</li>
-        <li>Interacción encarnada</li>
-        <li>HCI para el desarrollo (HCI4D)</li>
-        <li>Salud y HCI</li>
-        <li>Inclusión y accesibilidad</li>
-        <li>Interfaces de usuario innovadoras</li>
-        <li>Interfaces e interacción en juegos</li>
-        <li>Computación móvil</li>
-        <li>Percepción y visualización</li>
-        <li>Interacción humano-robot y telepresencia</li>
-        <li>Experiencia del usuario (UX) y usabilidad</li>
-    </ol>
-
-    <h3>Envío y Fechas Importantes</h3>
     <p>
-        Todos los manuscritos deben enviarse completamente anonimizados (para anonimizar su artículo, considere las <a
-            href="https://chi2021.acm.org/for-authors/presenting/papers/chi-anonymization-policy" class="uline">pautas
-            proporcionadas por CHI</a>). Por favor, tenga en cuenta una audiencia internacional: evite términos locales y
-        utilice el sistema internacional de unidades. Además, considere seguir las <a
-            href="./accessibility-recommendations-for-authors" class="uline">recomendaciones de accesibilidad</a>.
+        Todos los artículos completos y cortos aceptados serán publicados en un número especial de <a
+            href="https://aihc.amexihc.org/">la revista AMexIHC Avances en Interacción Humano-Computadora</a>.
     </p>
 
-    <h4 id="cpf-dates">Fechas Importantes (artículos completos y cortos)</h4>
+    <h2>Temas de interés</h2>
+
+    <p>
+        MexIHC 2024 busca contribuciones de trabajos sobre (pero no limitados a) las siguientes áreas clave:
+    </p>
+
+    <h3>IA en HCI</h3>
     <ul>
-        <li>Envío de resúmenes: <del>12 de junio</del> <strong class="text-danger">26 de junio PRORROGADA</strong></li>
-        <li>Envío de artículos: <del>19 de junio</del> <strong class="text-danger">3 de julio PRORROGADA</strong></li>
-        <li>Notificación: 31 de julio</li>
-        <li>Versión final: 25 de agosto</li>
-        <li>Evento: 30 y 31 de octubre, 1 de noviembre</li>
-    </ul>
-    <p>Los plazos son a medianoche AoE (Anywhere on Earth).</p>
-
-    <h3>Código de Ética</h3>
-    <p>
-        Nos adherimos al <a href="https://www.acm.org/code-of-ethics" class="uline">Código de Ética de ACM</a>. Esperamos
-        que todas las presentaciones, la investigación subyacente y el comportamiento durante el proceso de revisión y la
-        conferencia cumplan con los principios y responsabilidades establecidos en el código.
-    </p>
-
-    <h3>Proceso de Envío</h3>
-    <p>
-        Las presentaciones de ponencias completas y cortas se realizarán a través del <a
-            href="https://easychair.org/conferences/?conf=clihc2023" class="uline">Sistema de Conferencias EasyChair</a>.
-    </p>
-
-    <p>
-        El formato de envío a utilizar para cada categoría seguirá el <a
-            href="https://www.acm.org/publications/proceedings-template" class="uline">nuevo formato de artículo maestro de
-            ACM</a>. Los autores pueden elegir trabajar en uno de los siguientes formatos:
-    </p>
-
-    <ul>
-        <li>Microsoft Word</li>
-        <li>LaTeX (recomendado)</li>
+        <li>Diseño de experiencia de usuario impulsado por IA</li>
+        <li>Consideraciones éticas en IA para HCI</li>
+        <li>Procesamiento de lenguaje natural en interfaces</li>
+        <li>Reconocimiento y respuesta emocional</li>
+        <li>IA y accesibilidad</li>
+        <li>Interfaces de usuario predictivas</li>
+        <li>Impacto de la IA en los procesos cognitivos humanos</li>
     </ul>
 
-    <h3>Categorías de Envío</h3>
+    <h3>Evaluación de aplicaciones interactivas</h3>
+    <ul>
+        <li>Nuevos métodos y metodologías</li>
+        <li>Herramientas para evaluación</li>
+        <li>Estudios de caso</li>
+        <li>Evaluación de accesibilidad</li>
+        <li>Aspectos teóricos de HCI</li>
+    </ul>
 
-    <h4>Artículos Completos (10 páginas)</h4>
-    <p>
-        Los proyectos de investigación que han alcanzado una etapa madura y presentan una contribución original al estado
-        del arte son bienvenidos a presentarse en la categoría de ponencias completas. Las presentaciones deben ser
-        relevantes para el tema de la conferencia y no pueden haber sido publicadas ni estar en revisión en ninguna otra
-        conferencia o revista. La longitud máxima para las ponencias completas es de 10 páginas, incluyendo referencias, y
-        los artículos deben estar escritos en inglés, portugués o español.
-    </p>
+    <h3>Teorías para HCI</h3>
+    <ul>
+        <li>Discusiones teóricas o desafíos a las teorías actuales</li>
+        <li>Modelado formal</li>
+    </ul>
 
-    <h4>Artículos Cortos (4 páginas)</h4>
-    <p>
-        Los proyectos de investigación que deseen informar sobre resultados preliminares, parciales o complementarios
-        originales pueden enviar sus artículos a la categoría de ponencias cortas, que tiene una longitud máxima de 4
-        páginas, incluyendo referencias. Los artículos enviados deben estar escritos en inglés, portugués y español. El
-        contenido debe ser relevante para la conferencia y no debe haber sido publicado ni estar en proceso de revisión en
-        ninguna otra conferencia o revista.
-    </p>
+    <h3>Diseño</h3>
+    <ul>
+        <li>Nuevos métodos y metodologías</li>
+        <li>Estudios de caso</li>
+        <li>Herramientas para diseño</li>
+        <li>Visualización de información</li>
+        <li>Interfaces adaptativas</li>
+        <li>Diseño universal</li>
+        <li>Diseño participativo</li>
+    </ul>
 
-    <p>
-        Los artículos serán revisados por al menos dos revisores en un proceso de doble ciego. Tenga en cuenta que los
-        artículos enviados deben ser anonimizados, incluyendo referencias al trabajo previo de los autores.
-    </p>
+    <h3>Evaluación de usuarios</h3>
+    <ul>
+        <li>Nuevos métodos y metodologías</li>
+        <li>Herramientas para evaluaciones</li>
+        <li>Estudios de caso</li>
+        <li>Evaluación de la experiencia del usuario</li>
+        <li>Evaluación de usuarios con discapacidad</li>
+        <li>Error humano y estudios cognitivos</li>
+        <li>Evaluación contextual y etnometodologías</li>
+        <li>Investigación de usuarios de juegos</li>
+    </ul>
 
-    <p>
-        Estamos trabajando para asegurar que los artículos aceptados se publiquen en la Biblioteca Digital de ACM. Además,
-        los mejores artículos serán recomendados para presentar una versión extendida y ser publicados en un libro de
-        edición especial de la prestigiosa serie de Interacción Humano-Computadora (<a
-            href="https://www.springer.com/series/6033" class="uline">Human–Computer Interaction Series</a>), publicado por
-        Springer y regularmente indexado en la lista maestra de libros de la Web of Science.
-    </p>
+    <h3>Educación en HCI</h3>
+    <ul>
+        <li>Estudios de caso de educación en HCI</li>
+        <li>HCI para mejorar la enseñanza/aprendizaje</li>
+    </ul>
+
+    <h3>Temas relacionados con HCI</h3>
+    <ul>
+        <li>IA en HCI</li>
+        <li>Usabilidad</li>
+        <li>Accesibilidad</li>
+        <li>Ergonomía</li>
+        <li>Gráficos por computadora</li>
+        <li>Realidad Virtual</li>
+        <li>Realidad Aumentada</li>
+        <li>Interacción multimodal</li>
+        <li>Redes Sociales</li>
+        <li>Dispositivos Móviles</li>
+        <li>HCI en el Contexto Médico</li>
+        <li>Videojuegos</li>
+        <li>Aplicaciones Lúdicas y Estéticas</li>
+        <li>Aspectos culturales en el diseño</li>
+        <li>Interacción Cerebro-Computadora</li>
+        <li>e-Gobierno</li>
+    </ul>
 
     <h3 class="my-4">{{ $t("organizers.program_chairs_title") }}</h3>
     <div class="row">
@@ -157,18 +180,20 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/pablo.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/pedro.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
-                    <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/pablo.png&quot;);">
+                    <div class="colored-shadow"
+                        style="background-image: url(&quot;./assets/img/people/pedro.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Pablo Torres
+                    Pedro C. Santana-Mancilla
                 </template>
                 <template #institution>
-                    UTPL, EC
+                    Universidad de Colima, MX
                 </template>
                 <template #email>
+                    tpc.2024@mexihc.org
                 </template>
             </OrganizerItem>
         </div>
@@ -177,18 +202,42 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/vanessa.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/vicky.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
-                    <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/vanessa.png&quot;);">
+                    <div class="colored-shadow"
+                        style="background-image: url(&quot;./assets/img/people/vicky.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Vanessa Agredo Delgado
+                    Victoria Meza-Kubo
                 </template>
                 <template #institution>
-                    FUNAD, CO
+                    Universidad Autónoma de Baja California, MX
                 </template>
                 <template #email>
+                    tpc.2024@mexihc.org
+                </template>
+            </OrganizerItem>
+        </div>
+
+        <div class="col-md-4">
+            <OrganizerItem>
+                <template #image>
+                    <div class="d-block blur-shadow-image">
+                        <img src="/assets/img/people/monica.png" alt="" class="img-fluid shadow rounded-3">
+                    </div>
+                    <div class="colored-shadow"
+                        style="background-image: url(&quot;./assets/img/people/monica.png&quot;);">
+                    </div>
+                </template>
+                <template #name>
+                    Monica Tentori
+                </template>
+                <template #institution>
+                    CICESE, MX
+                </template>
+                <template #email>
+                    tpc.2024@mexihc.org
                 </template>
             </OrganizerItem>
         </div>

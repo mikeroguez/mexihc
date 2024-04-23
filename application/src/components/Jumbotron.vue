@@ -1,5 +1,5 @@
 <script>
-import { /*ref*/shallowRef, watch, defineAsyncComponent } from 'vue'
+import { /*ref*/shallowRef, watch, defineAsyncComponent, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Tr from '@/i18n/translation'
 
@@ -7,6 +7,30 @@ export default {
   setup() {
     const { locale } = useI18n()
     const currentComponent = shallowRef(null)
+
+    const imageUrl = computed(() => {
+      // Determina la imagen en función del idioma
+      switch (locale.value) {
+        case 'en':
+          return 'assets/img/jumbotron-text-en.svg';
+        case 'es':
+          return 'assets/img/jumbotron-text-es.svg';
+        default:
+          return 'assets/img/jumbotron-text-en.svg'; // Un fallback por defecto
+      }
+    });
+
+    const imageAlt = computed(() => {
+      // Determina la imagen en función del idioma
+      switch (locale.value) {
+        case 'en':
+          return 'MexIHC 2024. Tenth Mexican Conference on Human-Computer Interaction';
+        case 'es':
+          return 'MexIHC 2024. Décima conferencia mexicana sobre Interacción Humano-Computadora';
+        default:
+          return 'MexIHC 2024. Tenth Mexican Conference on Human-Computer Interaction'; // Un fallback por defecto
+      }
+    });
 
     const loadComponent = async (newLocale) => {
       currentComponent.value = await getComponentForLocale(newLocale)
@@ -29,7 +53,9 @@ export default {
 
     return {
       currentComponent,
-	  Tr
+	  Tr,
+	  imageUrl,
+	  imageAlt
     }
   }
 }
@@ -46,7 +72,8 @@ export default {
 							<div class="row">
 								<div class="col-md-12 text-center">
 									<h1 class="pt-3">
-										<img src="/assets/img/jumbotron-text.svg" alt="MexIHC 2024. Tenth Mexican Conference on Human-Computer Interaction"
+										<img :src="imageUrl" 
+											:alt="imageAlt"
 											style="position: relative; top: -2px;"
 											class="img-fluid custom-img"	
 										>

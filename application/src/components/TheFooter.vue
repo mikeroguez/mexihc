@@ -68,12 +68,12 @@
                     <div>
                         <h3 class="text-gradient text-primary text-sm">{{ $t("nav.for_authors_title") }}</h3>
                         <ul class="flex-column ms-n3 nav">
-                            <!--
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers' })" class="nav-link uline">
                                     {{ $t("nav.cfp") }}
                                 </RouterLink>
                             </li>
+                            <!--
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters' })" class="nav-link uline">
                                     {{ $t("nav.cpt") }}
@@ -157,7 +157,7 @@
                             {{ $t("nav.copyright") }}
                         </p>
                         <p class="my-0  text-sm">
-                            <a class="uline" href="CHANGELOG.md">v2024.0.0.1</a>
+                            <a class="uline" href="CHANGELOG.md">v2024.0.0.2</a>
                         </p>
                     </div>
                 </div>

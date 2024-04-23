@@ -1,199 +1,248 @@
 <script>
-  import OrganizerItem from '@/components/OrganizerItem.vue';
+import OrganizerItem from '@/components/OrganizerItem.vue';
 
-  import Tr from '@/i18n/translation'
+import Tr from '@/i18n/translation'
 
-  export default {
+export default {
     components: {
         OrganizerItem
     },
     setup() {
-      return {
-          Tr
-      }
+        return {
+            Tr
+        }
     }
-  }
+}
 </script>
 
 <template>
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> <del>July 3rd EXTENDED</del><strong class="text-danger"> Closed</strong><br>
-            <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cpf-dates'})" class="uline">
-                See all important dates
-            </RouterLink>            
-        </div>
+            <div class="ms-2 me-auto">
+                <strong class="text-primary text-gradient">Deadline for submission:</strong> June 14th, 2024 <strong>(Open)</strong><br>
+                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-dates' })" class="uline">
+                    See all important dates
+                </RouterLink>
+            </div>
         </li>
-    </ol>  
-
-    <p>
-        The XI Latin American Conference on Human-Computer Interaction (CLIHC 2023), aims to provide a premier forum
-        that brings together the Latin American and international Human-Computer Interaction (HCI) research
-        communities to discuss and share ideas, methods, approaches, and techniques for designing, implementing, and
-        evaluating interactive user experiences. In accordance with previous editions, we believe that HCI must
-        foster the production of technology that can be used by and benefit as many people as possible, enabling
-        intercultural exchange and cooperation between people with different backgrounds and needs.
-    </p>
-
-    <p>
-        This year, CLIHC 2023 will take place in Puebla, Mexico and online, is open to submissions in the following
-        categories:
-    </p>
-
-    <ul>
-        <li>Full papers</li>
-        <li>Short papers</li>
-    </ul>
-
-    <p>
-        Authors are invited to prepare and submit articles reporting on research projects, innovative designs, user
-        studies, models of interaction, field studies, case studies, and others. Academics, researchers,
-        practitioners and professionals from industry, as well as undergraduate and graduate students are welcome to
-        participate in the peer-reviewed selection of the works that will be presented at the conference or online,
-        from Oct. 30 to Nov 1, 2023.
-    </p>
-
-    <p>Topics of submissions may cover all aspects of HCI, including, but not limited to:</p>
-
-    <ol>
-        <li>Affective computing</li>
-        <li>Brain computer interaction (BCI)</li>
-        <li>CSCW and social computing</li>
-        <li>Design methods</li>
-        <li>Education and HCI</li>
-        <li>Embodied interaction</li>
-        <li>HCI for development (HCI4D)</li>
-        <li>Health and HCI</li>
-        <li>Inclusion and accessibility</li>
-        <li>Innovative user interfaces</li>
-        <li>Interfaces and interaction in games</li>
-        <li>Mobile computing</li>
-        <li>Perception and visualization</li>
-        <li>Human-robot interaction and telepresence</li>
-        <li>User experience (UX) and usability</li>
     </ol>
 
-    <h3>Submission and Important Dates</h3>
     <p>
-        All manuscripts must be submitted fully anonymized (to anonymize your paper, please consider the <a
-        href="https://chi2021.acm.org/for-authors/presenting/papers/chi-anonymization-policy"
-        class="uline">guidelines
-        provided by CHI</a>). Please consider an international audience: e.g., avoid local terms, and use the
-        international system of units. In addition, consider following <a
-        href="./accessibility-recommendations-for-authors" class="uline">accessibility guidelines</a>.
+        We invite original contributions on the theme of HCI in the age of new realities, and
+        relevant topics in Human-Computer Interaction and Interaction Design. Papers will
+        be anonymously peer-reviewed by the members of the MexIHC 2024 program
+        committee. Submissions will be evaluated based on their originality, significance of
+        the contribution to the field and theme, technical correctness, and presentation.
     </p>
 
-    <h4 id="cpf-dates">Important Dates (Full and Short Papers)</h4>
+    <h2>Type of submissions</h2>
+    <br>    
+    <h3>Full papers (Up to 8 pages)</h3>
+    <p>
+        Full papers should describe original work that has not previously been published and
+        provide significant scientific research results. Full papers may expand upon
+        previously published work-in-progress papers and posters, but must present novel
+        and significantly extended content, and should cite any previous abstracts for
+        posters or working-progress papers. Full papers could be written in English or
+        Spanish.
+    </p>
+
+    <h3>Short papers or Notes (Up to 4 pages)</h3>
+    <p>
+        Short papers should describe innovative work in progress, without significant results
+        yet, that contribute to well-founded research. Short papers could be written in
+        English or Spanish.
+    </p>
+
+    <p>
+        At least one author of accepted submissions must register as the presenter by the
+        early registration deadline. Other tracks such as Graduate Consortium, and Posters,
+        will be announced soon. Please check back for more information at a later time.
+    </p>
+
+    <h2>Submission details</h2>
+
+    <p>
+        Submissions for full and short papers written in English or Spanish should use <a
+            href="https://mexihc.org/aihc_template.zip" class="uline">the
+            AmexIHC “Avances en Interacción Humano-Computadora” Journal Template</a>.
+        Submit your paper using <a href="https://www.easychair.org/my/conference?conf=mexihc2024">the Easychair account
+            for MexIHC 2024</a>.
+    </p>
+
+    <h2 id="cfp-dates">Important Dates</h2>
     <ul>
-        <li>Abstract submission: <del>June 12th</del> <strong class="text-danger">June 26th EXTENDED</strong></li>
-        <li>Paper submission: <del>June 19th</del> <strong class="text-danger">July 3rd EXTENDED</strong></li>
-        <li>Notification: July 31st</li>
+        <li>Deadline for submissions: June 14th, 2024</li>
+        <li>Notification of acceptance: August 20th, 2024</li>
+        <li>Camera-ready final submissions: August 30th, 2024</li>
         <li>Camera ready: August 25th</li>
-        <li>Event Oct 30 - 31, Nov 1</li>
+        <li>MexIHC 2024: November 6th - 8th</li>
     </ul>
-    <p>Deadlines are at midnight AoE (Anywhere on Earth).</p>
 
-    <h3>Code of Ethics</h3>
-    <p>
-        We abide by the <a href="https://www.acm.org/code-of-ethics" class="uline">ACM Code of Ethics</a>. We expect
-        that all
-        submissions, underlying research, and behavior during
-        the review process and conference comply with the principles and responsibilities outlined by the code.
-    </p>
-
-    <h3>Submission Process</h3>
-    <p>
-        Full and short paper submissions are to be made through <a
-        href="https://easychair.org/conferences/?conf=clihc2023" class="uline">EasyChair Conference System</a>.
-    </p>
+    <h2>Anonymous submission</h2>
 
     <p>
-        Submission format to be used for each category will follow the <a
-        href="https://www.acm.org/publications/proceedings-template" class="uline">new ACM Master Article
-        format</a>. Authors may
-        choose to work in one of the following formats:
+        MexIHC 2024 will utilize a fully-anonymous review process for Full and Short Papers, in which the authors must
+        anonymize their paper submissions. You should not anonymize references to your prior work (these are needed as
+        part of the review process). Rather, you should refer to all prior work in the third person. While it may not be
+        possible to remove all clues to who the authors are, we expect authors to do their best.
     </p>
 
+    <h2>Publication</h2>
+
+    <p>
+        All accepted full and short papers will be published in a Special Issue of <a
+            href="https://aihc.amexihc.org/">the AMexIHC journal Avances en Interacción Humano-Computadora</a>.
+    </p>
+    
+    <h2>Topics of interest</h2>
+
+    <p>
+        MexIHC 2024 seeks paper contributions on (but not limited to) the following key areas:
+    </p>
+
+    <h3>AI in HCI</h3>
     <ul>
-        <li>Microsoft Word</li>
-        <li>LaTeX (recommended)</li>
+        <li>AI-driven user experience design</li>
+        <li>Ethical considerations in AI for HCI</li>
+        <li>Natural Language Processing in interfaces</li>
+        <li>Emotion recognition and response</li>
+        <li>AI and accessibility</li>
+        <li>Predictive user interfaces</li>
+        <li>Impact of AI on human cognitive processes</li>
     </ul>
 
-    <h3>Submission Categories</h3>
+    <h3>Evaluation of Interactive Applications</h3>
+    <ul>
+        <li>New methods and methodologies</li>
+        <li>Tools for evaluation</li>
+        <li>Case studies</li>
+        <li>Accessibility evaluation</li>
+        <li>Theoretical aspects of HCI</li>
+    </ul>
+    
+    <h3>Theories for HCI</h3>
+    <ul>
+        <li>Theoretical discussions or challenges to current theories</li>
+        <li>Formal modeling</li>
+    </ul>
+    
+    <h3>Design</h3>
+    <ul>
+        <li>New methods and methodologies</li>
+        <li>Case studies</li>
+        <li>Tools for designing</li>
+        <li>Information visualization</li>
+        <li>Adaptive interfaces</li>
+        <li>Universal design</li>
+        <li>Participatory design</li>
+    </ul>
+    
+    <h3>User evaluation</h3>
+    <ul>
+        <li>New methods and methodologies</li>
+        <li>Tools for evaluations</li>
+        <li>Case studies</li>
+        <li>Evaluation of user experience</li>
+        <li>User evaluation with people with disabilities</li>
+        <li>Human error and cognitive studies</li>
+        <li>Contextual evaluation and ethno-methodologies</li>
+        <li>Games user research</li>
+    </ul>
 
-    <h4>Full Papers (10 Pages)</h4>
-    <p>
-        Research projects that have achieved a mature stage and present an original contribution to the state of the
-        art are welcome to submit in the full paper category. Submissions must be relevant to the subject of the
-        conference, and may not have been published nor be under review in any other conference or journal. The
-        maximum length for full papers is 10 pages including references, and papers must be written in English,
-        Portuguese, or Spanish.
-    </p>
-
-    <h4>Short Papers (4 Pages)</h4>
-    <p>
-        Research projects wishing to report original preliminary, partial, or complementary results may submit their
-        papers to the short paper category which has a maximum length of 4 pages including references. Submitted
-        papers must be written in English, Portuguese and Spanish. Content must be relevant to the conference, and
-        may not have been published nor be in the review process in any other conference or journal.
-    </p>
-
-    <p>
-        The articles will be reviewed by at least two reviewers in a double-anonymous process. Please note that
-        submitted articles must be anonymized, including references to the authors’ own previous work.
-    </p>
-
-    <p>
-        We are working to ensure that accepted papers will be published in the ACM Digital Library.
-        In addition, best papers will be recommended for submitting an extended version and be published in a
-        special edition book of the prestigious <a href="https://www.springer.com/series/6033"
-        class="uline">Human–Computer Interaction Series</a>, published by Springer and regularly indexed in the
-        master book list of the Web of Science.
-    </p>
+    <h3>Education in HCI</h3>
+    <ul>
+        <li>Case studies of education in HCI</li>
+        <li>HCI to improve the teaching/learning</li>
+    </ul>
+    
+    <h3>Topics related to HCI</h3>
+    <ul>
+        <li>AI in HCI</li>
+        <li>Usability</li>
+        <li>Accessibility</li>
+        <li>Ergonomics</li>
+        <li>Computer Graphics</li>
+        <li>Virtual Reality</li>
+        <li>Augmented Reality</li>
+        <li>Multi-modal Interaction</li>
+        <li>Social Networks</li>
+        <li>Mobile Devices</li>
+        <li>HCI in the Medical Context</li>
+        <li>Video Games</li>
+        <li>Ludic and Aesthetic Applications</li>
+        <li>Cultural aspects in the design</li>
+        <li>Brain-Computer Interaction</li>
+        <li>e-Government</li>
+    </ul>
 
     <h3 class="my-4">{{ $t("organizers.program_chairs_title") }}</h3>
     <div class="row">
         <div class="col-md-4">
-        <OrganizerItem>
-            <template #image>
-            <div class="d-block blur-shadow-image">
-                <img src="/assets/img/people/pablo.png" alt="" class="img-fluid shadow rounded-3">
-            </div>
-            <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/pablo.png&quot;);">
-            </div>
-            </template>
-            <template #name>
-            Pablo Torres
-            </template>
-            <template #institution>
-            UTPL, EC
-            </template>
-            <template #email>
-            </template>
-        </OrganizerItem>
+            <OrganizerItem>
+                <template #image>
+                    <div class="d-block blur-shadow-image">
+                        <img src="/assets/img/people/pedro.png" alt="" class="img-fluid shadow rounded-3">
+                    </div>
+                    <div class="colored-shadow"
+                        style="background-image: url(&quot;./assets/img/people/pedro.png&quot;);">
+                    </div>
+                </template>
+                <template #name>
+                    Pedro C. Santana-Mancilla
+                </template>
+                <template #institution>
+                    Universidad de Colima, MX
+                </template>
+                <template #email>
+                    tpc.2024@mexihc.org
+                </template>
+            </OrganizerItem>
         </div>
 
         <div class="col-md-4">
-        <OrganizerItem>
-            <template #image>
-            <div class="d-block blur-shadow-image">
-                <img src="/assets/img/people/vanessa.png" alt="" class="img-fluid shadow rounded-3">
-            </div>
-            <div class="colored-shadow"
-                style="background-image: url(&quot;./assets/img/people/vanessa.png&quot;);">
-            </div>
-            </template>
-            <template #name>
-            Vanessa Agredo Delgado
-            </template>
-            <template #institution>
-            FUNAD, CO
-            </template>
-            <template #email>
-            </template>
-        </OrganizerItem>
+            <OrganizerItem>
+                <template #image>
+                    <div class="d-block blur-shadow-image">
+                        <img src="/assets/img/people/vicky.png" alt="" class="img-fluid shadow rounded-3">
+                    </div>
+                    <div class="colored-shadow"
+                        style="background-image: url(&quot;./assets/img/people/vicky.png&quot;);">
+                    </div>
+                </template>
+                <template #name>
+                    Victoria Meza-Kubo
+                </template>
+                <template #institution>
+                    Universidad Autónoma de Baja California, MX
+                </template>
+                <template #email>
+                    tpc.2024@mexihc.org
+                </template>
+            </OrganizerItem>
         </div>
+
+        <div class="col-md-4">
+            <OrganizerItem>
+                <template #image>
+                    <div class="d-block blur-shadow-image">
+                        <img src="/assets/img/people/monica.png" alt="" class="img-fluid shadow rounded-3">
+                    </div>
+                    <div class="colored-shadow"
+                        style="background-image: url(&quot;./assets/img/people/monica.png&quot;);">
+                    </div>
+                </template>
+                <template #name>
+                    Monica Tentori
+                </template>
+                <template #institution>
+                    CICESE, MX
+                </template>
+                <template #email>
+                    tpc.2024@mexihc.org
+                </template>
+            </OrganizerItem>
+        </div>        
 
     </div>
 </template>
