@@ -16,7 +16,7 @@
             Presentación Accesible</a> publicadas por <a class="uline" href="http://www.sigaccess.org/">ACM SIGACCESS</a>.
         Estas guías ofrecen recomendaciones actualizadas para escribir y presentar en la comunidad académica de
         accesibilidad, así como nueve pautas para preparar una presentación en una conferencia por <a class="uline"
-            href="https://cs.uiowa.edu/people/kyle-rector">Kyle Rector</a> para comunicar mejor su mensaje a todos los
+            href="https://dl.acm.org/profile/81339523613">Kyle Rector</a> para comunicar mejor su mensaje a todos los
         miembros del público.
     </p>
     <!-- end Language recommendations -->

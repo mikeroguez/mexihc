@@ -18,7 +18,7 @@
             href="http://www.sigaccess.org/">ACM SIGACCESS</a>. These guides provide up-to-date
         recommendations for writing and presenting in the academic accessibility community, as well as
         nine guidelines for preparing a conference presentation by <a class="uline"
-            href="https://cs.uiowa.edu/people/kyle-rector">Kyle Rector</a> to better communicate your
+            href="https://dl.acm.org/profile/81339523613">Kyle Rector</a> to better communicate your
         message to all audience members.
     </p>
     <!-- end Language recommendations -->

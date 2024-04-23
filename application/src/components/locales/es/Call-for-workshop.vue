@@ -37,19 +37,19 @@ export default {
         Las modalidades de participación son:
     </p>
 
-    <h3>Taller</h3>
+    <h2>Taller</h2>
     <p>
         Cada tema relacionado con la Interacción Humano-Computadora, como los que se enumeran en la conferencia, con una
         duración de 3 hasta 8 horas.
     </p>
 
-    <h3>Tutorial</h3>
+    <h2>Tutorial</h2>
     <p>
         Una conferencia, un mini-taller interactivo, una sesión de capacitación o cualquier otra modalidad que explore
         nuevas formas de interacción con una duración de 1 a 3 horas.
     </p>
 
-    <h3>GUÍA PARA PROPUESTAS</h3>
+    <h2>GUÍA PARA PROPUESTAS</h2>
     <p>
         Las propuestas para talleres y tutoriales deben contener la información necesaria para permitir a los
         responsables de los talleres evaluar su importancia, calidad e interés de la comunidad en los temas propuestos.
@@ -81,13 +81,13 @@ export default {
 
     <p>Las propuestas deben enviarse a: ws.2024@mexihc.org</p>
 
-    <h3>DESPUÉS DE LA ACEPTACIÓN</h3>
+    <h2>DESPUÉS DE LA ACEPTACIÓN</h2>
     <p>
         Los organizadores de los talleres deben desarrollar la página web con la convocatoria para presentar trabajos.
         Deben promover la convocatoria entre sus contactos y listas de correo adicionales y convenientes.
     </p>
 
-    <h3 id="cwt-dates">Fechas importantes</h3>
+    <h2 id="cwt-dates">Fechas importantes</h2>
     <ul>
         <li><strong>17 de mayo de 2024</strong> – Fecha límite para propuestas de talleres y tutoriales</li>
         <li><strong>24 de mayo de 2024</strong> – Notificación de aceptación</li>
@@ -100,7 +100,7 @@ export default {
         <li><strong>13 de septiembre de 2024</strong> – Entrega final (Camera Ready)</li>
     </ul>
 
-    <h3 class="my-4">{{ $t("organizers.workshops_and_tutorials_chairs_title") }}</h3>
+    <h2 class="my-4">{{ $t("organizers.workshops_and_tutorials_chairs_title") }}</h2>
     <div class="row">
         <div class="col-md-4">
             <OrganizerItem>

@@ -68,12 +68,12 @@
                     <div>
                         <h3 class="text-gradient text-primary text-sm">{{ $t("nav.for_authors_title") }}</h3>
                         <ul class="flex-column ms-n3 nav">
-                            <!--
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers' })" class="nav-link uline">
                                     {{ $t("nav.cfp") }}
                                 </RouterLink>
                             </li>
+                            <!--
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters' })" class="nav-link uline">
                                     {{ $t("nav.cpt") }}

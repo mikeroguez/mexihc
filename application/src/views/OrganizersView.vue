@@ -142,29 +142,6 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/monica.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/monica.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Mónica Tentori
-                                        </template>
-                                        <template #institution>
-                                            CICESE, México
-                                        </template>
-                                        <template #email>
-                                            tpc.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
                                                 <img src="/assets/img/people/pedro.png" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
@@ -173,7 +150,7 @@ export default {
                                             </div>
                                         </template>
                                         <template #name>
-                                            Pedro Santana
+                                            Pedro C. Santana-Mancilla
                                         </template>
                                         <template #institution>
                                             Universidad de Colima, MX
@@ -196,7 +173,7 @@ export default {
                                             </div>
                                         </template>
                                         <template #name>
-                                            Victoria Meza
+                                            Victoria Meza-Kubo
                                         </template>
                                         <template #institution>
                                             Universidad Autónoma de Baja California, MX
@@ -205,7 +182,30 @@ export default {
                                             tpc.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
-                                </div>                                
+                                </div>  
+
+                                <div class="col-md-4 m-auto mt-md-0 mt-4">
+                                    <OrganizerItem>
+                                        <template #image>
+                                            <div class="d-block blur-shadow-image">
+                                                <img src="/assets/img/people/monica.png" alt=""
+                                                    class="img-fluid shadow rounded-3">
+                                            </div>
+                                            <div class="colored-shadow"
+                                                style="background-image: url(&quot;./assets/img/people/monica.png&quot;);">
+                                            </div>
+                                        </template>
+                                        <template #name>
+                                            Mónica Tentori
+                                        </template>
+                                        <template #institution>
+                                            CICESE, México
+                                        </template>
+                                        <template #email>
+                                            tpc.2024@mexihc.org
+                                        </template>
+                                    </OrganizerItem>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -617,7 +617,7 @@ export default {
                                             </div>
                                         </template>
                                         <template #name>
-                                            Miguel A. Rodríguez Ortiz
+                                            Miguel A. Rodríguez-Ortiz
                                         </template>
                                         <template #institution>
                                             Universidad de Colima, MX

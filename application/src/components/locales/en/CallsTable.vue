@@ -13,14 +13,11 @@
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
-                <!--
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers' })" class="uline">
                     Call for papers (CFP)
                 </RouterLink>
-                -->
-                Call for papers (CFP)
             </div>
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> to be announced...<br>
+            <strong class="text-primary text-gradient">Deadline for submission:</strong> June 14th, 2024 <strong>(Open)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -43,7 +40,7 @@
                     Call for workshops and tutorial (CWT)
                 </RouterLink>
                 </div>
-                <strong class="text-primary text-gradient">Deadline for workshop & tutorial proposals:</strong> May 17th, 2024 <strong>(Open)</strong><br>
+                <strong class="text-primary text-gradient">Deadline for proposals:</strong> May 17th, 2024 <strong>(Open)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
