@@ -134,9 +134,9 @@
         <OrganizerItem>
             <template #image>
             <div class="d-block blur-shadow-image">
-                <img src="/assets/img/people/huizilopoztli.png" alt="" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
             </div>
-            <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/huizilopoztli.png&quot;);">
+            <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
             </div>
             </template>
             <template #name>
@@ -154,10 +154,10 @@
         <OrganizerItem>
             <template #image>
             <div class="d-block blur-shadow-image">
-                <img src="/assets/img/people/carolina.png" alt="" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
             </div>
             <div class="colored-shadow"
-                style="background-image: url(&quot;./assets/img/people/carolina.png&quot;);">
+                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
             </div>
             </template>
             <template #name>

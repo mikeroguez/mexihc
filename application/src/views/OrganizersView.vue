@@ -456,31 +456,7 @@ export default {
                                             posters.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
-                                </div> 
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            *Miguel García
-                                        </template>
-                                        <template #institution>
-                                            Algoma University, CAN
-                                        </template>
-                                        <template #email>
-                                            posters.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>                                                               
-                            </div>
-                            <div class="row mt-4">
+                                </div>
                                 <div class="col-md-4 m-auto mt-md-0 mt-4">
                                     <OrganizerItem>
                                         <template #image>
@@ -502,8 +478,8 @@ export default {
                                             posters.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
-                                </div>                             
-                            </div>                            
+                                </div>                                 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -547,18 +523,17 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
+                                                <img src="/assets/img/people/pablo.jpg" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/people/pablo.jpg&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
-                                            Pablo Bautista* 
+                                            Pablo Bautista 
                                         </template>
                                         <template #institution>
-                                            Institución
                                         </template>
                                         <template #email>
                                             publicity.2024@mexihc.org
@@ -689,11 +664,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
+                                                <img src="/assets/img/people/arian.jpg" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/people/arian.jpg&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
@@ -729,31 +704,7 @@ export default {
                                             <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
                                         </template>
                                     </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            *Edgar Cambranes
-                                        </template>
-                                        <template #institution>
-                                            Institución
-                                        </template>
-                                        <template #email>
-                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
-                                        </template>
-                                    </OrganizerItem>
-                                </div>  
-
+                                </div> 
                             </div>                            
                         </div>
                     </div>
