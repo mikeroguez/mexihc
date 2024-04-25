@@ -18,12 +18,17 @@
 			<div class="col-12">
 				<nav class="navbar navbar-expand-lg  blur blur-nav blur-rounded top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4 navbar-color-on-scroll justify-content-between">
 					<div class="container-fluid">
-						<a class="navbar-brand font-weight-bolder ms-sm-3" href="./" rel="tooltip"
-							title="Tenth Mexican conference on Human-Computer Interaction" data-placement="bottom"
-							tabindex="0">
+						<RouterLink :to="Tr.i18nRoute({ name: 'home'})" 
+							class="navbar-brand font-weight-bolder ms-sm-3"
+							rel="tooltip"
+							title="Tenth Mexican conference on Human-Computer Interaction" 
+							data-placement="bottom"
+							tabindex="0"
+						>
 							<img src="/assets/img/logos/mexihc2024.svg" height="25" alt="">
-							MexIHC 2024
-						</a>
+							MexIHC 2024			
+						</RouterLink>
+
 						<button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
 							data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
 							aria-label="Toggle navigation">

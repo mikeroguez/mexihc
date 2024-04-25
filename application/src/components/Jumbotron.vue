@@ -12,11 +12,11 @@ export default {
       // Determina la imagen en función del idioma
       switch (locale.value) {
         case 'en':
-          return './assets/img/jumbotron-text-en.svg';
+          return 'assets/img/jumbotron-text-en.svg';
         case 'es':
-          return './assets/img/jumbotron-text-es.svg';
+          return 'assets/img/jumbotron-text-es.svg';
         default:
-          return './assets/img/jumbotron-text-en.svg'; // Un fallback por defecto
+          return 'assets/img/jumbotron-text-en.svg'; // Un fallback por defecto
       }
     });
 
@@ -24,11 +24,11 @@ export default {
       // Determina la imagen en función del idioma
       switch (locale.value) {
         case 'en':
-          return 'MexIHC 2024. Tenth Mexican Conference on Human-Computer Interaction';
+          return 'MexIHC 2024. Tenth Mexican Internacional Conference on Human-Computer Interaction';
         case 'es':
-          return 'MexIHC 2024. Décima conferencia mexicana sobre Interacción Humano-Computadora';
+          return 'MexIHC 2024. Décima Conferencia Internacional Mexicana sobre Interacción Humano-Computadora';
         default:
-          return 'MexIHC 2024. Tenth Mexican Conference on Human-Computer Interaction'; // Un fallback por defecto
+          return 'MexIHC 2024. Tenth Mexican Internacional Conference on Human-Computer Interaction'; // Un fallback por defecto
       }
     });
 
