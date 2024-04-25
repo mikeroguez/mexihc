@@ -12,11 +12,11 @@ export default {
       // Determina la imagen en función del idioma
       switch (locale.value) {
         case 'en':
-          return '/assets/img/jumbotron-text-en.svg';
+          return './assets/img/jumbotron-text-en.svg';
         case 'es':
-          return '/assets/img/jumbotron-text-es.svg';
+          return './assets/img/jumbotron-text-es.svg';
         default:
-          return '/assets/img/jumbotron-text-en.svg'; // Un fallback por defecto
+          return './assets/img/jumbotron-text-en.svg'; // Un fallback por defecto
       }
     });
 
@@ -65,7 +65,7 @@ export default {
 		<!-- Jumbotron -->
 		<header class="header-2">
 			<div class="page-header section-height-100 relative"
-				style="background-image: url('/assets/img/banner.png')">
+				style="background-image: url('assets/img/banner.png')">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 z-index-2 border-radius-xl mx-auto pt-5 pb-4 mt-7 mb-4 blur shadow-blur">
