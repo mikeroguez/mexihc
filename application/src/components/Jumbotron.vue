@@ -82,7 +82,7 @@ export default {
 										<strong>											
 											Saltillo, Coahuila, México<br>
 											{{ $t("jumbotron.date") }} <br>
-											Universidad Autónoma de Coahuila
+											<img class="mt-4 w-50" src="/assets/img/logos/logos.png">
 										</strong>
 									</p>
 									<p class="lead pt-2">
