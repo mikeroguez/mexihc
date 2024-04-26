@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <base href="/2024/" />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<head>
+	<base href="/2024/" />
 
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/logos/mexihc2024.svg">
-    <link rel="icon" type="image/png" href="/assets/img/logos/mexihc2024.svg">
-    
-    <title>MexIHC 2024</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- CEO and Social Networks     -->
-    <meta property="og:locale" content="en-US">
-    <meta property="og:site_name" content="MexIHC">
-    <meta property="og:title" content="MexIHC 2024 - an AmexIHC conference">
-    <meta property="og:image" content="https://www.mexihc.org/2024/assets/img/nophoto.png">
-    <meta property="og:image:secure_url" content="https://www.mexihc.org/2024/assets/img/nophoto.png">
-    <meta property="og:url" content="https://www.mexihc.org/2024/">
-    <meta property="og:description" content="Tenth Mexican conference on Human-Computer Interaction">
-    <meta property="og:type" content="website">
-    <meta name="twitter:site" content="@mexihc">
-    <meta name="twitter:title" content="Mexican conference on HCI">
-    <meta name="twitter:description" content="Tenth Mexican conference on Human-Computer Interaction">
-    <meta name="twitter:url" content="https://twitter.com/mexihc">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://www.mexihc.org/2024/assets/img/nophoto.png">
-    <meta name="description" content="Tenth Mexican conference on Human-Computer Interaction">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/logos/mexihc2024.svg">
+	<link rel="icon" type="image/png" href="/assets/img/logos/mexihc2024.svg">
 
-	  <!-- Le fonts and icons     -->
-	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+	<title>MexIHC 2024</title>
 
-    <!-- Le fontawesome-->
-    <script src="https://kit.fontawesome.com/a6cebb9a9c.js" crossorigin="anonymous"></script>
+	<!-- CEO and Social Networks     -->
+	<meta property="og:locale" content="en-US">
+	<meta property="og:site_name" content="MexIHC">
+	<meta property="og:title" content="MexIHC 2024 - an AmexIHC conference">
+	<meta property="og:image" content="https://www.mexihc.org/2024/assets/img/nophoto.png">
+	<meta property="og:image:secure_url" content="https://www.mexihc.org/2024/assets/img/nophoto.png">
+	<meta property="og:url" content="https://www.mexihc.org/2024/">
+	<meta property="og:description" content="Tenth Mexican conference on Human-Computer Interaction">
+	<meta property="og:type" content="website">
+	<meta name="twitter:site" content="@mexihc">
+	<meta name="twitter:title" content="Mexican conference on HCI">
+	<meta name="twitter:description" content="Tenth Mexican conference on Human-Computer Interaction">
+	<meta name="twitter:url" content="https://twitter.com/mexihc">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="https://www.mexihc.org/2024/assets/img/nophoto.png">
+	<meta name="description" content="Tenth Mexican conference on Human-Computer Interaction">
 
+	<!-- Le fonts and icons     -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+
+	<!-- Le fontawesome-->
+	<script src="https://kit.fontawesome.com/a6cebb9a9c.js" crossorigin="anonymous"></script>
+
+    <script>
+		// Define dataLayer and the gtag function.
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+
+		// Set default consent to 'denied' as a placeholder
+		// Determine actual values based on your own requirements
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'ad_user_data': 'denied',
+			'ad_personalization': 'denied',
+			'analytics_storage': 'denied'
+		});
+	</script>
+	
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7V5EC85078"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7V5EC85078">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
 
-      gtag('config', 'G-7V5EC85078');
-    </script>
+		gtag('js', new Date());
+		gtag('config', 'G-7V5EC85078');
+	</script>
 
-  </head>
-  <body class="presentation-page">
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-    <script>
-      var myNav = document.getElementsByClassName('navbar-color-on-scroll');
-      var myIcon = document.getElementsByClassName('icon-language');
+</head>
 
-      window.onscroll = function() {
-          var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-          var scrollThreshold = 200;
-          
-          if (scrollTop >= scrollThreshold) {
-              myNav[0].classList.add("scrolled");
-          } else {
-              myNav[0].classList.remove("scrolled");
-          }
-      };
-    </script>
-  </body>
+<body class="presentation-page">
+	<div id="app"></div>
+	<script type="module" src="/src/main.js"></script>
+	<script>
+		var myNav = document.getElementsByClassName('navbar-color-on-scroll');
+		var myIcon = document.getElementsByClassName('icon-language');
+
+		window.onscroll = function () {
+			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			var scrollThreshold = 200;
+
+			if (scrollTop >= scrollThreshold) {
+				myNav[0].classList.add("scrolled");
+			} else {
+				myNav[0].classList.remove("scrolled");
+			}
+		};
+	</script>
+</body>
+
 </html>

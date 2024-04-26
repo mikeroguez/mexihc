@@ -4,6 +4,11 @@
         "es": "Español",
         "pt": "Português"
     },
+    "privacyConsent": {
+        "header-title": "Cookie settings",
+        "header-description": "We use cookies and similar technologies to help personalize content and offer a better experience. You can opt to customize them by clicking the preferences button.",
+        "modal-header": "Your privacy preferences"
+    },
     "nav": {
         "sitemap": "Sitemap",
         "facebook": "Facebook page",
