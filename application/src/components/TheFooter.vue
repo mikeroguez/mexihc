@@ -41,7 +41,7 @@
                         <h3 class="text-gradient text-primary text-sm">{{ $t("nav.about_title") }}</h3>
                         <ul class="flex-column ms-n3 nav">
                             <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'home', hash: '#about_clihc'})" class="nav-link uline">
+                                <RouterLink :to="Tr.i18nRoute({ name: 'home', hash: '#about_mexihc'})" class="nav-link uline">
                                     {{ $t("nav.about") }}
                                 </RouterLink>
                                 <RouterLink :to="Tr.i18nRoute({ name: 'organizers'})" class="nav-link uline">

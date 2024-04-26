@@ -9,7 +9,7 @@
         "facebook": "Página de Facebook",
         "twitter": "Perfil de Twitter",
         "about_title": "Acerca de esta conferencia",
-        "about": "Acerca de CLIHC",
+        "about": "Acerca de MexIHC",
         "home": "Inicio",
         "for_authors_title": "Para autores",
         "for_authors": "Para autores",
@@ -53,7 +53,7 @@
     },
     "about":{
         "about_title": "Acerca del MexIHC 2024",
-        "about_text": "La Conferencia Latinoamericana de Interacción Humano-Computadora (CLIHC) es gestionada por la Comunidad Latinoamericana de HCI de SIGCHI (LAIHC). CLIHC es una conferencia destacada que reúne a las comunidades de investigación de HCI de América Latina e internacionales para discutir e intercambiar ideas, métodos, enfoques y técnicas para diseñar experiencias de usuario interactivas, fomentando el intercambio intercultural y la cooperación entre personas con diferentes antecedentes y necesidades. Esta conferencia tiene su origen en Río de Janeiro en 2003 (Brasil), con ediciones posteriores en Cuernavaca en 2005 (México), Río de Janeiro en 2007 (Brasil), Mérida en 2009 (México), Porto de Galinhas en 2011 (Brasil), Guanacaste en 2013 (Costa Rica), Córdoba en 2015 (Argentina), Antigua en 2017 (Guatemala) y Ciudad de Panamá en 2019 (Panamá), y la Conferencia Virtual en 2021 (en línea).",
+        "about_text": "La Conferencia Latinoamericana de Interacción Humano-Computadora (MexIHC) es gestionada por la Comunidad Latinoamericana de HCI de SIGCHI (LAIHC). MexIHC es una conferencia destacada que reúne a las comunidades de investigación de HCI de América Latina e internacionales para discutir e intercambiar ideas, métodos, enfoques y técnicas para diseñar experiencias de usuario interactivas, fomentando el intercambio intercultural y la cooperación entre personas con diferentes antecedentes y necesidades. Esta conferencia tiene su origen en Río de Janeiro en 2003 (Brasil), con ediciones posteriores en Cuernavaca en 2005 (México), Río de Janeiro en 2007 (Brasil), Mérida en 2009 (México), Porto de Galinhas en 2011 (Brasil), Guanacaste en 2013 (Costa Rica), Córdoba en 2015 (Argentina), Antigua en 2017 (Guatemala) y Ciudad de Panamá en 2019 (Panamá), y la Conferencia Virtual en 2021 (en línea).",
         "call": "Convocatoria de participación",
         "registration": "Llamada a registro",
         "proceedings": "Memorias",
@@ -118,7 +118,7 @@
         "sponsors": "Agradecimiento especial",
         "sponsors_message": "Queremos agradecer a nuestros patrocinadores.",
         "virtual_venues": "Sedes virtuales",
-        "virtual_venues_message": "Universidades que participan como Sedes virtuales en el CLIHC 2023."        
+        "virtual_venues_message": "Universidades que participan como Sedes virtuales en el MexIHC 2023."        
     },
     "accepted_papers": {
         "title": "Artículos aceptados",

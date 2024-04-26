@@ -36,6 +36,7 @@ const router = createRouter({
             title: "MexIHC 2024 - Call for papers",
           },
         },
+        /*
         {
           path: 'call-for-posters',
           name: 'call-for-posters',
@@ -44,6 +45,7 @@ const router = createRouter({
             title: "MexIHC 2024 - Call for poster track",
           },
         },
+        */
         {
           path: 'call-for-workshops-and-tutorials',
           name: 'call-for-workshops-and-tutorials',
@@ -52,6 +54,7 @@ const router = createRouter({
             title: "MexIHC 2024 - Call for poster track",
           },
         },
+        /*
         {
           path: 'student-design-competition',
           name: 'student-design-competition',
@@ -68,7 +71,7 @@ const router = createRouter({
             title: "MexIHC 2024 - Call for poster track",
           },
         },
-        /*End: Nuevos */      
+        */
         {
           path: 'accessibility-recommendations-for-authors',
           name: 'accessibility-recommendations-for-authors',
@@ -85,6 +88,7 @@ const router = createRouter({
             title: "MexIHC 2024 - Organizers",
           },
         },
+        /*
         {
           path: 'schedule',
           name: 'schedule',
@@ -141,6 +145,7 @@ const router = createRouter({
             title: "MexIHC 2024 - Video archives",
           },
         }
+        */
       ]
     },
     {
@@ -154,7 +159,7 @@ const router = createRouter({
   ],
   scrollBehavior(to, from, savedPosition) {
       if (savedPosition) {
-          console.log('savedPosition')
+          /*console.log('savedPosition')*/
           return savedPosition;
       }
 
