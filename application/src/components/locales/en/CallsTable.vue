@@ -59,12 +59,9 @@
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
-                <!--
                 <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-call'})" class="uline">
                     Graduate Colloquium (GC)
                 </RouterLink>
-                -->
-                Graduate Consortium (GC)
             </div>
             <strong class="text-primary text-gradient">Deadline for submission:</strong> to be announced...<br>
         </div>

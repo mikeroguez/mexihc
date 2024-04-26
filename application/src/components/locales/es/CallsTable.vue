@@ -59,12 +59,9 @@
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
-                <!--
                 <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium' })" class="uline">
                     Coloquio de graduados (GC)
                 </RouterLink>
-                -->
-                Coloquio de graduados (GC)
             </div>
             <strong class="text-primary text-gradient">Fecha límite de envío:</strong> a ser anunciada...<br>
         </div>

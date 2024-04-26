@@ -91,12 +91,12 @@
                                     {{ $t("nav.sdc") }}
                                 </RouterLink>
                             </li> 
+                            -->
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium' })" class="nav-link uline">
                                     {{ $t("nav.cgc") }}
                                 </RouterLink>
-                            </li>
-                            -->
+                            </li>                            
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors'})" class="nav-link uline">
                                     {{ $t("nav.accessibility_for_autors") }}

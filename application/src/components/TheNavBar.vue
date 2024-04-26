@@ -130,6 +130,7 @@
 												</div>
 											</RouterLink>
 										</li>
+										-->
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium' })" 
 												class="dropdown-item border-radius-md"
@@ -141,13 +142,13 @@
 															{{ $t("nav.cgc") }}
 														</span>
 														<span class="text-sm text-dark">
-															{{ $t("about.closed") }}
+															{{ $t("nav.cgc_message") }}
 														</span>
 													</div>
 												</div>
 											</RouterLink>
 										</li>
-										-->
+										
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })" 
 												class="dropdown-item border-radius-md"

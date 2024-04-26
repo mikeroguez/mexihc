@@ -63,6 +63,7 @@ const router = createRouter({
             title: "MexIHC 2024 - Call for poster track",
           },
         },
+        */        
         {
           path: 'graduate-colloquium',
           name: 'graduate-colloquium',
@@ -71,7 +72,6 @@ const router = createRouter({
             title: "MexIHC 2024 - Call for poster track",
           },
         },
-        */
         {
           path: 'accessibility-recommendations-for-authors',
           name: 'accessibility-recommendations-for-authors',
