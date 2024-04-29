@@ -4,12 +4,17 @@
         "es": "Español",
         "pt": "Português"
     },
+    "privacyConsent": {
+        "header-title": "Configuración de cookies",
+        "header-description": "Utilizamos cookies y tecnologías similares para personalizar el contenido y ofrecer una mejor experiencia. Puedes optar por personalizarlas haciendo clic en el botón de preferencias.",
+        "modal-header": "Tus preferencias de privacidad"
+    },
     "nav": {
         "sitemap": "Mapa del sitio",
         "facebook": "Página de Facebook",
         "twitter": "Perfil de Twitter",
         "about_title": "Acerca de esta conferencia",
-        "about": "Acerca de CLIHC",
+        "about": "Acerca de MexIHC",
         "home": "Inicio",
         "for_authors_title": "Para autores",
         "for_authors": "Para autores",
@@ -23,7 +28,7 @@
         "sdc": "Competencia de diseño para estudiantes",
         "sdc_message": "Fecha límite: 11 de agosto de 2023 EXTENDIDA",
         "cgc": "Coloquio de graduados",
-        "cgc_message": "Fecha límite: 11 de agosto de 2023 EXTENDIDA",
+        "cgc_message": "Fecha límite: 8 de agosto de 2024, 12pm (medio día)",
         "accessibility_for_autors": "Recomendaciones de accesibilidad para autores",
         "accessibility_for_autors_message": "Ayúdanos a maximizar la experiencia para todos",
         "for_attendees_title": "Para los asistentes",
@@ -53,7 +58,7 @@
     },
     "about":{
         "about_title": "Acerca del MexIHC 2024",
-        "about_text": "La Conferencia Latinoamericana de Interacción Humano-Computadora (CLIHC) es gestionada por la Comunidad Latinoamericana de HCI de SIGCHI (LAIHC). CLIHC es una conferencia destacada que reúne a las comunidades de investigación de HCI de América Latina e internacionales para discutir e intercambiar ideas, métodos, enfoques y técnicas para diseñar experiencias de usuario interactivas, fomentando el intercambio intercultural y la cooperación entre personas con diferentes antecedentes y necesidades. Esta conferencia tiene su origen en Río de Janeiro en 2003 (Brasil), con ediciones posteriores en Cuernavaca en 2005 (México), Río de Janeiro en 2007 (Brasil), Mérida en 2009 (México), Porto de Galinhas en 2011 (Brasil), Guanacaste en 2013 (Costa Rica), Córdoba en 2015 (Argentina), Antigua en 2017 (Guatemala) y Ciudad de Panamá en 2019 (Panamá), y la Conferencia Virtual en 2021 (en línea).",
+        "about_text": "La Conferencia Latinoamericana de Interacción Humano-Computadora (MexIHC) es gestionada por la Comunidad Latinoamericana de HCI de SIGCHI (LAIHC). MexIHC es una conferencia destacada que reúne a las comunidades de investigación de HCI de América Latina e internacionales para discutir e intercambiar ideas, métodos, enfoques y técnicas para diseñar experiencias de usuario interactivas, fomentando el intercambio intercultural y la cooperación entre personas con diferentes antecedentes y necesidades. Esta conferencia tiene su origen en Río de Janeiro en 2003 (Brasil), con ediciones posteriores en Cuernavaca en 2005 (México), Río de Janeiro en 2007 (Brasil), Mérida en 2009 (México), Porto de Galinhas en 2011 (Brasil), Guanacaste en 2013 (Costa Rica), Córdoba en 2015 (Argentina), Antigua en 2017 (Guatemala) y Ciudad de Panamá en 2019 (Panamá), y la Conferencia Virtual en 2021 (en línea).",
         "call": "Convocatoria de participación",
         "registration": "Llamada a registro",
         "proceedings": "Memorias",
@@ -118,7 +123,7 @@
         "sponsors": "Agradecimiento especial",
         "sponsors_message": "Queremos agradecer a nuestros patrocinadores.",
         "virtual_venues": "Sedes virtuales",
-        "virtual_venues_message": "Universidades que participan como Sedes virtuales en el CLIHC 2023."        
+        "virtual_venues_message": "Universidades que participan como Sedes virtuales en el MexIHC 2023."        
     },
     "accepted_papers": {
         "title": "Artículos aceptados",

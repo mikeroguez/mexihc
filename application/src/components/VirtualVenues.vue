@@ -28,11 +28,11 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/logos/itson.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/logos/itson.png&quot;);">
+                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
@@ -42,11 +42,11 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/logos/uabc.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/logos/uabc.png&quot;);">
+                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
@@ -56,11 +56,11 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/logos/uaslp.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/logos/uaslp.png&quot;);">
+                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
@@ -70,11 +70,11 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/logos/umsnh.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/logos/umsnh.png&quot;);">
+                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
@@ -84,11 +84,11 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/logos/unca.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/logos/unca.png&quot;);">
+                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                 </div>
                             </template> 
                             <template #name>
@@ -98,11 +98,11 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/logos/upp.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/logos/upp.png&quot;);">
+                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>

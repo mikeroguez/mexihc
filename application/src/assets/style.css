@@ -40,13 +40,41 @@ h1, .h1, .h1, h2, .h2, .h2, h3, .h3, .h3, h4, .h4, .h4, h5, .h5, .h5, h6, .h6, .
 }
 
 .custom-img {
-    height: auto; /* Altura fija para tamaños pequeños */
-    width: 80%;  /* El ancho es automático y proporcional */
+    width: 80%;
+}
+
+.logos{
+    margin:25px;
+    width: 70%;
 }
 
 @media (min-width: 768px) { /* Breakpoint para dispositivos md de Bootstrap */
     .custom-img {
-        height: 100px; /* La altura es automática y proporcional */
-        width: auto;  /* Ancho fijo para dispositivos medianos y grandes */
+        width: 50%;
     }
+
+    .logos{
+        width: 40%;  
+    }
+}
+
+.cookie-comply__modal, .cookie-comply{
+    z-index: 2;    
+}
+
+.cookie-comply__modal-switches h3{
+    font-size: large;
+}
+
+.cookie-comply__back-arrow{
+    position: unset !important;
+}
+
+.cookie-comply__button-accept{
+    background-color: #FDC86C !important;
+    color: #57331D !important;
+}
+
+input:checked+.cookie-comply-slider{
+    background-color: #FDC86C !important;
 }

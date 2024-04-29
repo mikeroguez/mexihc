@@ -18,150 +18,149 @@ export default {
 <template>
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>31 de julio</del> <del>11 de agosto EXTENDIDA</del> <strong class="text-danger"> {{ $t("about.closed") }}</strong><br>
-            <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates'})" class="uline">
-                Ver todas las fechas importantes
-            </RouterLink>            
-        </div>
+            <div class="ms-2 me-auto">
+                <strong class="text-primary text-gradient">Fecha límite de envío:</strong> 8 de agosto de 2024 (12pm
+                (medio día) UTC-6) <strong>({{ $t("about.open") }})</strong><br>
+                <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' })" class="uline">
+                    Ver todas las fechas importantes
+                </RouterLink>
+            </div>
         </li>
-    </ol> 
+    </ol>
 
     <p>
-        El CLIHC 2023 es la conferencia bienal que tiene como objetivo reunir a la comunidad latinoamericana de HCI. El
-        Coloquio de Graduados del CLIHC 2023 brinda la oportunidad a estudiantes latinoamericanos de posgrado que trabajan
-        en HCI y campos relacionados de explorar y desarrollar sus intereses de investigación en un taller
-        interdisciplinario, bajo la guía de un panel de destacados investigadores.
+        Damos una cálida bienvenida tanto a estudiantes de maestría como de doctorado
+        actualmente inscritos en programas de posgrado centrados en la interacción humano-
+        computadora (HCI) a presentar sus propuestas de investigación para su consideración
+        en el Coloquio de Graduados de la X Conferencia Mexicana sobre Interacción Humano-
+        Computadora (MexIHC 2024).
     </p>
+
+    <h3>Objetivo</h3>
+    <p>
+        El Coloquio de Graduados MexIHC ofrece a los estudiantes de posgrado una
+        plataforma única para presentar su investigación a la comunidad académica de
+        Interacción Humano-Computadora (HCI) de México, fomentando conexiones con otros
+        estudiantes graduados, oportunidades de networking y mentoría de distinguidos líderes
+        internacionales en HCI, tanto de la industria como de la academia.
+    </p>
+
+    <h3>Participación en el Consorcio de Graduados MexIHC</h3>
 
     <p>
-        Invitamos a los estudiantes que consideren que se beneficiarían de este tipo de retroalimentación sobre su
-        tesis/proyecto final a solicitar esta oportunidad única de compartir su investigación con otros estudiantes en una
-        situación similar, así como con investigadores senior en el campo. Los solicitantes exitosos serán aquellos que
-        muestren un tema claro y enfoque de investigación, y hayan progresado en su trabajo, pero que aún estén en un punto
-        en el que puedan realizar cambios en su plan. Se espera la asistencia en persona para esta actividad.
+        Si estás interesado en unirte al consorcio de graduados, deberás completar un
+        formulario proporcionando detalles esenciales sobre ti, tu investigación, tus
+        motivaciones para participar y enviar un resumen de cuatro páginas que describa tu
+        trabajo. Como participante, debes estar preparado para:
     </p>
 
-    <p>
-        Además de indicar cómo se beneficiará de la participación, tanto usted como su asesor deben tener claro lo que
-        pueden aportar al Coloquio de Graduados. Ser aceptado en el Coloquio implica un compromiso de brindar y recibir
-        comentarios reflexivos con miras a dar forma a la HCI en América Latina y a los participantes en sus respectivos
-        campos.
-    </p>
-
-    <h3>Objetivos</h3>
     <ul>
-        <li>Ofrecer a los estudiantes de posgrado de HCI de América Latina la oportunidad de compartir y discutir su trabajo
-            ante investigadores experimentados.</li>
-        <li>Proporcionar comentarios sobre la investigación actual de los estudiantes y orientación sobre futuras
-            direcciones de investigación.</li>
-        <li>Ofrecer a cada estudiante comentarios y perspectivas frescas sobre su trabajo por parte de investigadores y
-            estudiantes de fuera de su propia institución.</li>
-        <li>Promover el desarrollo de una comunidad de académicos de apoyo y un espíritu de investigación colaborativa entre
-            estudiantes de posgrado de diferentes universidades de América Latina.</li>
-        <li>Permitir que la comunidad conozca los proyectos de investigación desarrollados por estudiantes de posgrado.</li>
+        <li>Realizar una presentación concisa de 10 minutos sobre tu investigación durante el consorcio.</li>
+        <li>Participar en animadas discusiones grupales centradas en tu trabajo y el de tus compañeros.</li>
+        <li>Beneficiarte de sesiones de mentoría personalizadas dirigidas por sobresalientes investigadores del área de
+            HCI.</li>
     </ul>
 
-    <h3>Durante el Coloquio de Graduados</h3>
+    <h3>Preparación de los materiales de presentación para el consorcio de graduados</h3>
 
     <p>
-        Los estudiantes aceptados presentarán su trabajo al grupo, con un tiempo sustancial dedicado a la discusión y
-        preguntas por parte de investigadores participantes y otros estudiantes. Se proporcionarán instrucciones detalladas
-        una vez aceptados.
+        La propuesta de investigación debe estar escrita en inglés o español, utilizando la <a
+            href="https://mexihc.org/aihc_template.zip" class="uline">Plantilla de la Revista &quot;Avances en
+            Interacción Humano-Computadora&quot;</a> de AMexIHC
+        (hasta 4 páginas), y el estudiante que presente en el coloquio debe ser el primer autor,
+        los artículos aceptados se publicarán en la <a href="https://publicaciones.amexihc.org/" class="uline">revista
+            AMexIHC</a>.
+    </p>
+    <p>
+        Los participantes deben estar preparados para dar una charla de <strong>10 minutos durante el
+            coloquio sobre su trabajo en curso</strong>. Se pueden proponer experimentos si corresponde;
+        se reciben cualquier evaluación preliminar y hallazgos, pero no es obligatorio. Al final
+        de cada charla, se llevará a cabo una discusión grupal.
     </p>
 
     <p>
-        Cada participante también deberá traer una versión pequeña de un póster que presente su trabajo (por ejemplo,
-        utilizando papel tamaño carta o A4) para compartirlo con mentores y otros estudiantes durante las sesiones del
-        Coloquio. Se espera la asistencia en persona para esta actividad.
+        Te animamos a leer las
+        <RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })" class="uline">
+            recomendaciones de accesibilidad para autores.
+        </RouterLink>
     </p>
 
-    <h3>Envío de propuestas</h3>
+    <h3>Requisitos del artículo</h3>
+    <p>
+        Los solicitantes deben enviar a través del formulario en línea un artículo de 4 páginas
+        explicando su investigación.
+    </p>
 
-    <P>
-        La propuesta debe incluir los siguientes cuatro componentes, todos escritos en inglés, portugués o español.
-    </P>
-    <ul>
+    <ol>
         <li>
-            Resumen extendido:
-            una descripción de investigación de 4 páginas (incluyendo referencias) que cubra los aspectos centrales de su
-            trabajo de posgrado. Este documento debe seguir la última versión del <a
-                href="https://www.acm.org/publications/proceedings-template" class="uline">formato de plantilla de artículo
-                principal de ACM</a>. Los puntos clave de este documento incluyen:
+            <p>
+                <strong>Explicación de la investigación.</strong> Si bien las versiones finales de los artículos
+                aceptados se publicarán en la revista AMexIHC, en el sitio web del Consorcio de
+                Graduados y se publicarán en la comunidad MexIHC.
+            </p>
+            <p>
+                La explicación de la investigación debe incluir:
+            </p>
             <ul>
-                <li>Su situación, es decir, el contexto del programa de posgrado en el que se realiza su trabajo
-                    (institución de origen, país, programa, año de estudio, etc.).</li>
-                <li>Contexto y motivación que impulsan su investigación.</li>
-                <li>Objetivos/preguntas de investigación.</li>
-                <li>Antecedentes/revisión de literatura de trabajos clave que enmarcan su investigación.</li>
-                <li>Hipótesis/tesis y/o declaración del problema.</li>
-                <li>Enfoque y métodos de investigación seguidos, incluyendo justificación relevante.</li>
-                <li>Resultados hasta la fecha y su validez.</li>
-                <li>Estado de la disertación y próximos pasos (es decir, lo que ha hecho y lo que le falta hacer).</li>
-                <li>Contribuciones actuales y esperadas.</li>
+                <li>Motivación para la investigación propuesta.</li>
+                <li>Antecedentes y trabajos relacionados (incluidas referencias clave).</li>
+                <li>Descripción de la investigación propuesta, incluidas las preguntas clave
+                    de investigación y/o hipótesis, así como la metodología planeada para la
+                    investigación.</li>
+                <li>Problemas específicos de investigación y/o desafíos que el estudiante
+                    quisiera discutir.</li>
             </ul>
         </li>
-
         <li>
-            Una declaración de un párrafo sobre los beneficios esperados de la participación tanto para usted como para los
-            demás participantes del coloquio (es decir, qué contribuirá y qué obtendrá) (máximo 1 página).
+            <p>
+                <strong>Requisitos de formato.</strong> Los artículos enviados deben estar escritos en inglés o
+                español, con formato según las pautas de formato de la revista Avances en
+                Interacción Humano-Computadora (AMexIHC), y enviados como un único
+                archivo PDF (incrustando todas las fuentes necesarias). El artículo no debe
+                tener más de 4 páginas de longitud, incluidas figuras y referencias. El título y el
+                resumen deben estar escritos en inglés si el artículo está en español.
+            </p>
         </li>
-
         <li>
-            Una carta de nominación de su asesor principal de tesis/proyecto final, que aborde el valor que tendría el
-            Coloquio de Graduados para usted, qué contribución es probable que haga al evento y por qué este es un buen
-            momento para que participe (máximo 1 página).
+            <p>
+                <strong>Envío anónimo.</strong> MexIHC 2024 utilizará un proceso de revisión completamente
+                anónimo, en el que los autores deben anonimizar sus envíos de artículos. No se
+                debe anonimizar las referencias a su trabajo previo (estas son necesarias como
+                parte del proceso de revisión). En su lugar, debe referirse a todo trabajo previo
+                en tercera persona. Aunque puede que no sea posible eliminar todas las pistas
+                sobre quiénes son los autores, esperamos que los autores hagan su mejor
+                esfuerzo.
+            </p>
         </li>
+    </ol>
 
-        <li>
-            Una versión concisa de su currículum vitae actual, enfatizando la formación académica, experiencia de
-            investigación y publicaciones relevantes (si las hubiera) (1-2 páginas).
-        </li>
-
-        <li>
-            Envíe su propuesta como un archivo PDF único a través del <a
-                href="https://easychair.org/conferences/?conf=clihc2023" class="uline">Sistema de Conferencias EasyChair
-            </a>, en la categoría del Coloquio de Graduados, antes de la fecha límite.
-        </li>
-
-    </ul>
+    <h3>Directrices de envío</h3>
     <p>
-        Su propuesta debe ser un trabajo original. No puede estar bajo revisión concurrente para su publicación en otra
-        conferencia o revista, ni haber sido publicada en otro lugar. Por favor, envíe referencias precisas y completas.
+        Los estudiantes son responsables de asegurarse de que sus envíos cumplan con el
+        formato estándar y sean imprimibles en una impresora estándar. Los miembros del
+        Comité de Programa del Consorcio de Graduados revisarán todos los envíos.
     </p>
     <p>
-        Las propuestas aceptadas pueden elegir uno de los siguientes medios de publicación:
+        Por favor, utiliza el <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc4K357Pa9qA06M9HCRYzJfcK_9HVA_sVQKGw3b3wKza5HzCQ/viewform"
+            class="uline">formulario de envío del Consorcio de Graduados</a> para enviar
+        propuestas.
     </p>
+
+    <h3>Criterios de selección</h3>
+    <p>
+        Esta convocatoria da la bienvenida a las presentaciones de todos los estudiantes de
+        posgrado. Los envíos serán evaluados en función de un resumen de investigación de
+        cuatro páginas. Los criterios principales para seleccionar trabajos serán la claridad y la
+        calidad del artículo presentado.
+    </p>
+
+    <h3 id="cgc-dates">Fechas importantes</h3>
     <ul>
-        <li>Actas de la conferencia publicadas en ACM DL. Solo se pueden publicar en este medio las propuestas en inglés. Si
-            su propuesta fue aceptada en español o portugués y desea publicar aquí, deberá traducir su propuesta original al
-            inglés.</li>
-        <li>Avances en Interacción Humano-Computadora. Solo se pueden publicar en este medio las propuestas en español o
-            inglés. Si su propuesta fue aceptada en portugués y desea publicar aquí, deberá traducir su propuesta original
-            al español o inglés.</li>
-    </ul>
-
-    <h3>Proceso de selección</h3>
-    <p>
-        La revisión y decisión de aceptación equilibrarán muchos factores. Esto incluye la calidad de su propuesta y en qué
-        etapa se encuentra en su programa de posgrado. Los candidatos que tengan una idea claramente desarrollada, que sean
-        considerados formalmente por su institución como trabajando en su tesis o proyecto final, y que aún tengan tiempo
-        para ser influenciados por su participación en el Coloquio, recibirán la consideración más fuerte.
-    </p>
-    <p>
-        Además de la evaluación de la calidad de la investigación, el proceso de selección también considerará factores
-        adicionales. El objetivo es identificar un grupo de estudiantes que se beneficiarán significativamente del Coloquio
-        y se apoyarán mutuamente en su crecimiento. Como grupo, los candidatos aceptados exhibirán una diversidad de
-        antecedentes y temas. Se tomará en cuenta su institución, y es poco probable que aceptemos más de dos estudiantes de
-        la misma institución y casi con certeza no aceptaremos más de un estudiante con el mismo asesor.
-    </p>
-
-    <h3 id="cgc-dates">Fechas importantes (CG)</h3>
-    <ul>
-        <li>Envío de propuestas para el CG: <del>31 de julio</del> 11 de agosto EXTENDIDA</li>
-        <li>Notificación: 28 de agosto</li>
-        <li>Versión final: 11 de septiembre</li>
-        <li>Coloquio de Graduados: Por determinar</li>
+        <li>Fecha límite de envío (12pm (medio día) UTC-6): 8 de agosto de 2024</li>
+        <li>Notificación de aceptación: 6 de septiembre de 2024</li>
+        <li>Envío de la versión final: 13 de septiembre de 2024</li>
+        <li>Consorcio: Por determinar</li>
     </ul>
 
 
@@ -171,19 +170,20 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/huizilopoztli.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/valeria.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
                     <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/people/huizilopoztli.png&quot;);">
+                        style="background-image: url(&quot;./assets/img/people/valeria.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Huizilopoztli Luna Garcia
+                    Valeria Soto Mendoza
                 </template>
                 <template #institution>
-                    UAZ, MX
+                    CIMA Universidad Autónoma de Coahuila, MX
                 </template>
                 <template #email>
+                    gc.2024@mexihc.org
                 </template>
             </OrganizerItem>
         </div>
@@ -192,20 +192,22 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/carolina.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/raymundo.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
                     <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/people/carolina.png&quot;);">
+                        style="background-image: url(&quot;./assets/img/people/raymundo.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Carolina Fuentes
+                    Raymundo Cornejo
                 </template>
                 <template #institution>
-                    Cardiff University, UK
+                    Universidad Autónoma de Chihuahua, UK
                 </template>
                 <template #email>
+                    gc.2024@mexihc.org
                 </template>
-        </OrganizerItem>
+            </OrganizerItem>
+        </div>
     </div>
-</div></template>
+</template>

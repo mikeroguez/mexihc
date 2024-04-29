@@ -18,12 +18,17 @@
 			<div class="col-12">
 				<nav class="navbar navbar-expand-lg  blur blur-nav blur-rounded top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4 navbar-color-on-scroll justify-content-between">
 					<div class="container-fluid">
-						<a class="navbar-brand font-weight-bolder ms-sm-3" href="./" rel="tooltip"
-							title="Tenth Mexican conference on Human-Computer Interaction" data-placement="bottom"
-							tabindex="0">
+						<RouterLink :to="Tr.i18nRoute({ name: 'home'})" 
+							class="navbar-brand font-weight-bolder ms-sm-3"
+							rel="tooltip"
+							title="Tenth Mexican conference on Human-Computer Interaction" 
+							data-placement="bottom"
+							tabindex="0"
+						>
 							<img src="/assets/img/logos/mexihc2024.svg" height="25" alt="">
-							MexIHC 2024
-						</a>
+							MexIHC 2024			
+						</RouterLink>
+
 						<button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
 							data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
 							aria-label="Toggle navigation">
@@ -61,10 +66,10 @@
 												<div class="d-flex">
 													<div>
 														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
 															{{ $t("nav.cfp") }}
 														</span>
-														<span class="text-sm text-dark">
+														<span class="text-sm text-dark text-wrap">
 															{{ $t("nav.cfp_message") }}
 														</span>
 													</div>
@@ -97,10 +102,10 @@
 												<div class="d-flex">
 													<div>
 														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
 															{{ $t("nav.cwt") }}
 														</span>
-														<span class="text-sm text-dark">
+														<span class="text-sm text-dark text-wrap">
 															{{ $t("nav.cwt_message") }}
 														</span>
 													</div>
@@ -125,6 +130,7 @@
 												</div>
 											</RouterLink>
 										</li>
+										-->
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium' })" 
 												class="dropdown-item border-radius-md"
@@ -136,13 +142,13 @@
 															{{ $t("nav.cgc") }}
 														</span>
 														<span class="text-sm text-dark">
-															{{ $t("about.closed") }}
+															{{ $t("nav.cgc_message") }}
 														</span>
 													</div>
 												</div>
 											</RouterLink>
 										</li>
-										-->
+										
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })" 
 												class="dropdown-item border-radius-md"
@@ -150,10 +156,10 @@
 												<div class="d-flex">
 													<div>
 														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
 															{{ $t("nav.accessibility_for_autors") }}
 														</span>
-														<span class="text-sm text-dark">
+														<span class="text-sm text-dark text-wrap">
 															{{ $t("nav.accessibility_for_autors_message") }}
 														</span>
 													</div>

@@ -25,3 +25,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Routing on sever for multilingual system
+
+## [2024.0.0.3] - 2024-04-29
+
+### Added
+
+- Call for Graduate Colloquium
+
+### Changed
+
+- Improvements on routing, media-files, responsive design and styling

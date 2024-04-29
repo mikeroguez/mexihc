@@ -18,10 +18,10 @@ export default {
     <div class="row mb-4">
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/people/roberto.png" alt="" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/roberto.png&quot;);">
+                <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                 </div>
             </template>
             <template #name>
@@ -36,10 +36,10 @@ export default {
 
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/people/marisol2.png" alt="" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/marisol2.png&quot;);">
+                <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                 </div>
             </template>
             <template #name>
@@ -55,10 +55,10 @@ export default {
     <div class="row">
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/people/claudia.png" alt="" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/claudia.png&quot;);">
+                <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                 </div>
             </template>
             <template #name>
@@ -73,10 +73,10 @@ export default {
 
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/people/philippe.png" alt="" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/philippe.png&quot;);">
+                <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                 </div>
             </template>
             <template #name>

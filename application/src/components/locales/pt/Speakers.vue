@@ -6,10 +6,10 @@ import SpeakerLargeItem from '@/components/SpeakerLargeItem.vue'
     <SpeakerLargeItem>
         <template #image>
             <img id="roberto-martinez" class="img border-radius-lg w-100 position-relative z-index-2"
-                src="/assets/img/people/roberto.png" alt="" />
+                src="/assets/img/nophoto.png" alt="" />
         </template>
         <template #image-shadow>
-            <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/roberto.png&quot;);">
+            <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
             </div>
         </template>
         <template #name>
@@ -36,10 +36,10 @@ import SpeakerLargeItem from '@/components/SpeakerLargeItem.vue'
     <SpeakerLargeItem>
         <template #image>
             <img id="marisol-wong" class="img border-radius-lg w-100 position-relative z-index-2"
-                src="/assets/img/people/marisol2.png" alt="" />
+                src="/assets/img/nophoto.png" alt="" />
         </template>
         <template #image-shadow>
-            <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/marisol2.png&quot;);">
+            <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
             </div>
         </template>
         <template #name>
@@ -65,10 +65,10 @@ import SpeakerLargeItem from '@/components/SpeakerLargeItem.vue'
     <SpeakerLargeItem>
         <template #image>
             <img id="claudia-lopez" class="img border-radius-lg w-100 position-relative z-index-2"
-                src="/assets/img/people/claudia.png" alt="" />
+                src="/assets/img/nophoto.png" alt="" />
         </template>
         <template #image-shadow>
-            <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/claudia.png&quot;);">
+            <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
             </div>
         </template>
         <template #name>
@@ -89,10 +89,10 @@ import SpeakerLargeItem from '@/components/SpeakerLargeItem.vue'
     <SpeakerLargeItem>
         <template #image>
             <img id="philippe-palanque" class="img border-radius-lg w-100 position-relative z-index-2"
-                src="/assets/img/people/philippe.png" alt="" />
+                src="/assets/img/nophoto.png" alt="" />
         </template>
         <template #image-shadow>
-            <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/philippe.png&quot;);">
+            <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
             </div>
         </template>
         <template #name>

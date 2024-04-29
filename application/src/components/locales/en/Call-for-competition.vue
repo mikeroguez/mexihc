@@ -215,10 +215,10 @@
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/christian.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
                     <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/people/christian.png&quot;);">
+                        style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                     </div>
                 </template>
                 <template #name>
@@ -236,10 +236,10 @@
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/iyubanit.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
                     <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/people/iyubanit.png&quot;);">
+                        style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                     </div>
                 </template>
                 <template #name>

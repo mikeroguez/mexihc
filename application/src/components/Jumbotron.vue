@@ -24,11 +24,11 @@ export default {
       // Determina la imagen en función del idioma
       switch (locale.value) {
         case 'en':
-          return 'MexIHC 2024. Tenth Mexican Conference on Human-Computer Interaction';
+          return 'MexIHC 2024. Tenth Mexican Internacional Conference on Human-Computer Interaction';
         case 'es':
-          return 'MexIHC 2024. Décima conferencia mexicana sobre Interacción Humano-Computadora';
+          return 'MexIHC 2024. Décima Conferencia Internacional Mexicana sobre Interacción Humano-Computadora';
         default:
-          return 'MexIHC 2024. Tenth Mexican Conference on Human-Computer Interaction'; // Un fallback por defecto
+          return 'MexIHC 2024. Tenth Mexican Internacional Conference on Human-Computer Interaction'; // Un fallback por defecto
       }
     });
 
@@ -65,7 +65,7 @@ export default {
 		<!-- Jumbotron -->
 		<header class="header-2">
 			<div class="page-header section-height-100 relative"
-				style="background-image: url('./assets/img/banner.png')">
+				style="background-image: url('assets/img/banner.png')">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 z-index-2 border-radius-xl mx-auto pt-5 pb-4 mt-7 mb-4 blur shadow-blur">
@@ -82,7 +82,7 @@ export default {
 										<strong>											
 											Saltillo, Coahuila, México<br>
 											{{ $t("jumbotron.date") }} <br>
-											Universidad Autónoma de Coahuila
+											<img class="logos" src="/assets/img/logos/logos.svg" alt="Asociación Mexicana de Interacción Humano-Computadora, Universidad Autónoma de Choahuila">
 										</strong>
 									</p>
 									<p class="lead pt-2">
