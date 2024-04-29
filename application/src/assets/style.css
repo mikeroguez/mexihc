@@ -78,3 +78,7 @@ h1, .h1, .h1, h2, .h2, .h2, h3, .h3, .h3, h4, .h4, .h4, h5, .h5, .h5, h6, .h6, .
 input:checked+.cookie-comply-slider{
     background-color: #FDC86C !important;
 }
+
+.cookie-comply{
+    position: fixed !important;
+}
