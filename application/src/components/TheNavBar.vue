@@ -66,10 +66,10 @@
 												<div class="d-flex">
 													<div>
 														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
 															{{ $t("nav.cfp") }}
 														</span>
-														<span class="text-sm text-dark">
+														<span class="text-sm text-dark text-wrap">
 															{{ $t("nav.cfp_message") }}
 														</span>
 													</div>
@@ -102,10 +102,10 @@
 												<div class="d-flex">
 													<div>
 														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
 															{{ $t("nav.cwt") }}
 														</span>
-														<span class="text-sm text-dark">
+														<span class="text-sm text-dark text-wrap">
 															{{ $t("nav.cwt_message") }}
 														</span>
 													</div>
@@ -130,6 +130,7 @@
 												</div>
 											</RouterLink>
 										</li>
+										-->
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium' })" 
 												class="dropdown-item border-radius-md"
@@ -141,13 +142,13 @@
 															{{ $t("nav.cgc") }}
 														</span>
 														<span class="text-sm text-dark">
-															{{ $t("about.closed") }}
+															{{ $t("nav.cgc_message") }}
 														</span>
 													</div>
 												</div>
 											</RouterLink>
 										</li>
-										-->
+										
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })" 
 												class="dropdown-item border-radius-md"
@@ -155,10 +156,10 @@
 												<div class="d-flex">
 													<div>
 														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
 															{{ $t("nav.accessibility_for_autors") }}
 														</span>
-														<span class="text-sm text-dark">
+														<span class="text-sm text-dark text-wrap">
 															{{ $t("nav.accessibility_for_autors_message") }}
 														</span>
 													</div>

@@ -57,3 +57,24 @@ h1, .h1, .h1, h2, .h2, .h2, h3, .h3, .h3, h4, .h4, .h4, h5, .h5, .h5, h6, .h6, .
         width: 40%;  
     }
 }
+
+.cookie-comply__modal, .cookie-comply{
+    z-index: 2;    
+}
+
+.cookie-comply__modal-switches h3{
+    font-size: large;
+}
+
+.cookie-comply__back-arrow{
+    position: unset !important;
+}
+
+.cookie-comply__button-accept{
+    background-color: #FDC86C !important;
+    color: #57331D !important;
+}
+
+input:checked+.cookie-comply-slider{
+    background-color: #FDC86C !important;
+}
