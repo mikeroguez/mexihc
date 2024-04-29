@@ -31,7 +31,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Call for Graduate Colloquium
+- Cookies consent
 
 ### Changed
 
 - Improvements on routing, media-files, responsive design and styling
+
+## [2024.0.0.4] - 2024-04-29
+
+### Changed
+
+- Improvements on styling for consent cookies and responsive design on navigation
