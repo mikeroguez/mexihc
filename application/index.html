@@ -35,22 +35,41 @@
 	<!-- Le fontawesome-->
 	<script src="https://kit.fontawesome.com/a6cebb9a9c.js" crossorigin="anonymous"></script>
 
-    <script>
+	<script>
 		// Define dataLayer and the gtag function.
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 
-		// Set default consent to 'denied' as a placeholder
-		// Determine actual values based on your own requirements
-		gtag('consent', 'default', {
+		// Helper function to get cookie by name
+		function getCookie(name) {
+			const value = `; ${document.cookie}`;
+			const parts = value.split(`; ${name}=`);
+			if (parts.length === 2) return parts.pop().split(';').shift();
+			return null; // Return null if the cookie is not found
+		}
+
+		// Set default consent settings based on existing cookies
+		const defaultConsent = {
 			'ad_storage': 'denied',
 			'ad_user_data': 'denied',
 			'ad_personalization': 'denied',
 			'analytics_storage': 'denied'
+		};
+
+		// Check for each consent cookie and update the default values if cookies exist
+		const consentTypes = ['ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage'];
+		consentTypes.forEach(type => {
+			const cookieValue = getCookie(`consent_${type}`);
+			if (cookieValue === 'granted') {
+				defaultConsent[type] = 'granted';
+			}
 		});
+
+		// Set the consent configuration with possibly updated values from cookies
+		gtag('consent', 'default', defaultConsent);
 	</script>
-	
-    <!-- Google tag (gtag.js) -->
+
+	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7V5EC85078">
 	</script>
 	<script>

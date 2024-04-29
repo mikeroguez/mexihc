@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import Tr from '@/i18n/translation'
 import { useI18n } from 'vue-i18n'
+import Cookies from 'js-cookie';
 
 export default {
     data() {
@@ -78,28 +79,26 @@ export default {
             this.activateAnalyticsStorage()
         },
         activateAnalyticsStorage() {
-            gtag('consent', 'update', {
-                'analytics_storage': 'granted'
-            });
-            console.log('Activa coockies de AnalyticsStorage')
+            this.setConsent('analytics_storage', 'granted');
         },
         activateAddStorage() {
-            gtag('consent', 'update', {
-                'ad_storage': 'granted'
-            });
-            console.log('Activa coockies de AddStorage')
+            this.setConsent('ad_storage', 'granted');
         },
         activateAddUserData() {
-            gtag('consent', 'update', {
-                'ad_user_data': 'granted'
-            });
-            console.log('Activa coockies de AddUserData')
+            this.setConsent('ad_user_data', 'granted');
         },
         activateAddPersonalization() {
-            gtag('consent', 'update', {
-                'ad_personalization': 'granted'
-            });
-            console.log('Activa coockies de AddPersonalization')
+            this.setConsent('ad_personalization', 'granted');
+        },
+        setConsent(type, consent) {
+            // Actualizar el consentimiento con Google Tag Manager
+            let consentUpdate = {};
+            consentUpdate[type] = consent; // Asegura que la propiedad dinámica se establece correctamente
+            gtag('consent', 'update', consentUpdate);
+
+            // Establecer la cookie
+            Cookies.set(`consent_${type}`, consent, { expires: 365 }); // Cookie válida por un año
+            console.log(`Cookie de consentimiento para ${type} establecida a ${consent}`);
         },
     }
 }
