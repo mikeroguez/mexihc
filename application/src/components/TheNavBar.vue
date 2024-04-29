@@ -138,10 +138,10 @@
 												<div class="d-flex">
 													<div>
 														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
 															{{ $t("nav.cgc") }}
 														</span>
-														<span class="text-sm text-dark">
+														<span class="text-sm text-dark text-wrap">
 															{{ $t("nav.cgc_message") }}
 														</span>
 													</div>
