@@ -21,13 +21,13 @@
         "organizers": "Organizadores",
         "cfp": "Convocatoria de trabajos",
         "cfp_message": "Fecha límite: 14 de junio de 2024",
-        "cpt": "Convocatoria de pósteres",
-        "cpt_message": "Fecha límite: 11 de agosto de 2023 EXTENDIDA",
+        "cpt": "Convocatoria a la sesión de pósteres",
+        "cpt_message": "Fecha límite: 8 de agosto del 2024",
         "cwt": "Convocatoria de talleres y tutoriales",
         "cwt_message": "Fecha límite para propuestas: 17 de mayo de 2024",
         "sdc": "Competencia de diseño para estudiantes",
         "sdc_message": "Fecha límite: 11 de agosto de 2023 EXTENDIDA",
-        "cgc": "Coloquio de graduados",
+        "cgc": "Convocatoria al coloquio de graduados",
         "cgc_message": "Fecha límite: 8 de agosto de 2024, 12pm (medio día)",
         "accessibility_for_autors": "Recomendaciones de accesibilidad para autores",
         "accessibility_for_autors_message": "Ayúdanos a maximizar la experiencia para todos",
@@ -109,10 +109,10 @@
     "calls": {
         "title": "Convocatoria de participación",
         "cfp": "Convocatoria de trabajos",
-        "cpt": "Convocatoria de pósteres",
+        "cpt": "Convocatoria a la sesión de pósteres",
         "cwt": "Convocatoria de talleres y tutoriales",
         "sdc": "Competencia de diseño para estudiantes",
-        "cgc": "Coloquio de graduados"
+        "cgc": "Convocatoria al coloquio de graduados"
     },
     "register": {
         "register_button": "Registra tu comprobante de pago"
