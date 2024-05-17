@@ -22,12 +22,12 @@
         "cfp": "Call for papers",
         "cfp_message": "Submission deadline: June 14th, 2024",
         "cpt": "Call for poster track",
-        "cpt_message": "Deadline: August 11th, 2023 EXTENDED",
+        "cpt_message": "Deadline: August 8th, 2024",
         "cwt": "Call for workshops and tutorials",
         "cwt_message": "Proposal deadline: May 17th, 2024",
         "sdc": "Student design competition",
         "sdc_message": "Deadline: August 11th, 2023 EXTENDED",
-        "cgc": "Graduate colloquium",
+        "cgc": "Call for graduate colloquium",
         "cgc_message": "Deadline: August 8th, 2024, 12pm (noon) UTC-6",
         "accessibility_for_autors": "Accessibility recommendations for authors",
         "accessibility_for_autors_message": "Help us to maximize the experience for everyone",
@@ -114,7 +114,7 @@
         "cpt": "Call for Poster Track",
         "cwt": "Call for Workshops and Tutorials",
         "sdc": "Student Design Competition",
-        "cgc": "Graduate Colloquium"
+        "cgc": "Call for Graduate Colloquium"
     },
     "register": {
         "register_button": "Register your payment receipt"

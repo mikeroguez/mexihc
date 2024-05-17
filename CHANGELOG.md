@@ -42,3 +42,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Improvements on styling for consent cookies and responsive design on navigation
+
+## [2024.0.0.5] - 2024-05-17
+
+### Added
+
+- Call for papers page

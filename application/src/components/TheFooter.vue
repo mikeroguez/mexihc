@@ -169,13 +169,11 @@ export default {
                                     {{ $t("nav.cfp") }}
                                 </RouterLink>
                             </li>
-                            <!--
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters' })" class="nav-link uline">
                                     {{ $t("nav.cpt") }}
                                 </RouterLink>                                
                             </li>                            
-                            -->
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' })"
                                     class="nav-link uline">
@@ -255,7 +253,7 @@ export default {
                             {{ $t("nav.copyright") }}
                         </p>
                         <p class="my-0  text-sm">
-                            <a class="uline" href="CHANGELOG.md">v2024.0.0.4</a>
+                            <a class="uline" href="CHANGELOG.md">v2024.0.0.5</a>
                         </p>
                     </div>
                 </div>
