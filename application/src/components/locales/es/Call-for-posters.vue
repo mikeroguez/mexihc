@@ -18,108 +18,100 @@ export default {
 <template>
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>31 de julio</del> <del>11 de agosto EXTENDIDA</del> <strong class="text-danger"> {{ $t("about.closed") }}</strong><br>
-            <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-dates'})" class="uline">
-                Ver todas las fechas importantes
-            </RouterLink>            
-        </div>
+            <div class="ms-2 me-auto">
+                <strong class="text-primary text-gradient">Fecha límite de envío:</strong> 8 de Agosto de 2024
+                <strong>({{ $t("about.open") }})</strong><br>
+                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-dates' })" class="uline">
+                    Ver todas las fechas importantes
+                </RouterLink>
+            </div>
         </li>
     </ol>
 
     <p>
-        Invitamos a profesionales, investigadores y estudiantes a presentar sus trabajos en la pista de pósters de CLIHC
-        2023. Los pósters brindan una excelente oportunidad para que académicos y profesionales obtengan comentarios
-        valiosos sobre trabajos en etapas tempranas y discutan posibles colaboraciones. Los pósters deben presentar trabajos
-        en progreso, resultados preliminares, estudios a pequeña escala, noticias científicas y profesionales de última hora
-        que muestren promesa, demostraciones de herramientas técnicas, etc. Las contribuciones se exhibirán en una sesión de
-        pósters durante la conferencia CLIHC. Los trabajos presentados en la pista de pósters pueden estar escritos en
-        inglés, español o portugués y deben estar redactados en forma de breves artículos de investigación autocontenidos.
+        Invitamos a profesionales, investigadores y estudiantes a enviar sus trabajos a la sección de posters en MexIHC
+        2024. Los posters brindan una gran oportunidad para que académicos y profesionales obtengan comentarios valiosos
+        sobre trabajos en etapas iniciales y discutan posibles colaboraciones. Los posters deben presentar trabajos en
+        progreso, resultados preliminares, estudios a pequeña escala, avances científicos y tecnológicos que sean
+        prometedores, demostraciones de herramientas técnicas, etc. Las contribuciones se exhibirán en una sesión
+        durante la conferencia MexIHC 2024. Los trabajos presentados en esta modalidad pueden estar escritos en inglés o
+        español (título y resumen en inglés).
     </p>
 
-    <h3 id="cpt-dates">Fechas Importante (Pósteres)</h3>
+    <h3 id="cpt-dates">Fechas importantes</h3>
     <ul>
-        <li>Envío de artículos de pósters: <del>31 de julio</del> 11 de agosto EXTENDIDA</li>
-        <li>Notificación: 28 de agosto</li>
-        <li>Versión final: 14 de septiembre</li>
-        <li>Evento: 30, 31 de octubre y 1 de noviembre</li>
+        <li>Fecha límite de recepción: Jueves 8 de agosto </li>
+        <li>Notificación de aceptación: Viernes 6 de septiembre</li>
+        <li>Versión final: Viernes 13 de septiembre</li>
     </ul>
 
-    <h3>Detalles de la Presentación</h3>
+    <h3>Detalles de envío</h3>
 
     <P>
         Los autores que deseen enviar un artículo deben:
     </P>
     <ul>
         <li>
-            Enviar un artículo de 4 páginas utilizando el <a href="https://www.acm.org/publications/proceedings-template"
-                class="uline">nuevo formato de artículo maestro de ACM</a>. Los autores pueden elegir trabajar en uno de los
-            siguientes formatos:
-            <ul>
-                <li>Microsoft Word</li>
-                <li>LaTeX (recomendado)</li>
-            </ul>
+            Cumplir con el <a class="uline" href="https://mexihc.org/aihc_template.zip">formato oficial de revista
+                AmexIHC</a> (hasta 4 páginas máximo).
         </li>
         <li>
-            Todos los materiales deben enviarse electrónicamente al <a
-                href="https://easychair.org/conferences/?conf=clihc2023" class="uline">Sistema de Conferencias
-                EasyChair</a>, a la pista de Talleres y Tutoriales, antes de la fecha límite.
+            Los trabajos aceptados serán publicados en la <a class="uline"
+                href="https://aihc.amexihc.org/index.php/aihc/about"></a>Revista de la AMexIHC “Avances en Interacción
+            Humano-Computadora”.
+        </li>
+        <li>
+            Las propuestas deberán enviarse por correo electrónico con asunto “Póster MexIHC 2024” a:
+            posters.2024@mexihc.org
+        </li>
+        <li>
+            Te invitamos a leer las
+            <RouterLink class="uline" :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })">
+                {{ $t("nav.accessibility_for_autors") }}
+            </RouterLink>.
         </li>
     </ul>
     <p>
-        Su presentación debe ser un trabajo original. No puede estar siendo revisado simultáneamente para su publicación en
-        otra conferencia o revista, ni haber sido publicado en otro lugar. Por favor, envíe referencias precisas y
-        completas.
+        La propuesta que se envíe debe ser original. No puede estar bajo revisión simultánea para su publicación en otra
+        conferencia o revista, ni haber sido publicada en otro lugar. Revise también que las referencias en su propuesta
+        sean precisas y estén completas.
     </p>
-    <p>
-        Los pósters aceptados pueden elegir uno de los siguientes medios de publicación:
-    </p>
-    <ul>
-        <li>Actas de la conferencia publicadas en ACM DL. Solo las presentaciones en inglés se pueden publicar en este
-            medio. Si su presentación fue aceptada en español o portugués y desea publicar aquí, deberá traducir su
-            presentación original al inglés.</li>
-        <li>Avances en Interacción Humano-Computadora. Solo las presentaciones en español o inglés se pueden publicar en
-            este medio. Si su presentación fue aceptada en portugués y desea publicar aquí, deberá traducir su presentación
-            original al español o inglés.</li>
-    </ul>
 
-    <h3>Proceso de Revisión</h3>
+    <h3>Proceso de revisión</h3>
     <p>
-        Los artículos serán revisados de forma anónima por pares por miembros del Subcomité del Programa de la Pista de
-        Pósters de CLIHC 2023 (por determinar). Las presentaciones serán evaluadas en función de su originalidad,
-        importancia de la contribución al campo, corrección técnica y presentación.
+        Los artículos serán revisados de forma anónima por miembros pares que formen parte del comité del programa
+        MexIHC 2024. Las presentaciones serán evaluadas en función de su originalidad, importancia de la contribución al
+        campo, corrección técnica y presentación.
     </p>
     <p>
-        Los encargados de los pósters enviarán instrucciones para la exhibición de los pósters a los autores de los trabajos
-        aceptados.
+        Los coordinadores de la sesión de posters enviarán las instrucciones de exhibición a los autores de los trabajos aceptados.
     </p>
 
     <h3>Asistencia</h3>
     <p>
-        Al menos un autor de cada presentación aceptada debe registrarse para la conferencia y presentar el póster, dando
-        preferencia a la presentación en persona. Sin embargo, también se podrían considerar opciones de presentación
-        virtual.
+        Al menos un autor de cada trabajo aceptado deberá registrarse al congreso y presentar el poster.
     </p>
 
-    <h3 class="my-4">{{ $t("organizers.posters_chairs_title") }}</h3>
+    <h3 class="my-4">Coordinadores de la Sesión de Pósteres</h3>
     <div class="row">
         <div class="col-md-4">
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/adolfo.jpg" alt="" class="img-fluid shadow rounded-3">
                     </div>
-                    <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                    <div class="colored-shadow"
+                        style="background-image: url(&quot;./assets/img/people/adolfo.jpg&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Jaime Muñoz Arteaga
+                    Adolfo Mejía
                 </template>
                 <template #institution>
-                    Universidad Autónoma de Aguascalientes, MX
+                    Universidad Autónoma de Coahuila
                 </template>
                 <template #email>
-                    posters@laihc.org
+                    posters.2024@mexihc.org
                 </template>
             </OrganizerItem>
         </div>
@@ -128,20 +120,45 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/adriana.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/jose.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
-                    <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/adriana.png&quot;);">
+                    <div class="colored-shadow"
+                        style="background-image: url(&quot;./assets/img/people/jose.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Adriana Iñiguez
+                    José Mercado Chan
                 </template>
                 <template #institution>
-                    Universidad de Guadalajara, MX
+                    CICESE-UT3, MX
                 </template>
                 <template #email>
-                    posters@laihc.org
+                    posters.2024@mexihc.org
                 </template>
             </OrganizerItem>
         </div>
-</div></template>
+
+        <div class="col-md-4">
+            <OrganizerItem>
+                <template #image>
+                    <div class="d-block blur-shadow-image">
+                        <img src="/assets/img/people/sanely.jpg" alt="" class="img-fluid shadow rounded-3">
+                    </div>
+                    <div class="colored-shadow"
+                        style="background-image: url(&quot;./assets/img/people/sanely.jpg&quot;);">
+                    </div>
+                </template>
+                <template #name>
+                    Sanely Gaytán
+                </template>
+                <template #institution>
+                    Universidad de Colima
+                </template>
+                <template #email>
+                    posters.2024@mexihc.org
+                </template>
+            </OrganizerItem>
+        </div>
+
+    </div>
+</template>
