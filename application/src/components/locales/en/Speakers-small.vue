@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-    <p>To be announced...</p>
+    <p class="fst-italic fw-light">Pending information...</p>
     <!--
     <div class="row mb-4">
         <SpeakerItem>

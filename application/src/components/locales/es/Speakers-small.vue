@@ -16,7 +16,7 @@ export default {
 
 <template>
     <div class="row mb-4">
-        Por anunciar...
+        <p class="fst-italic fw-light">Información pendiente...</p>
         <!--
         <SpeakerItem>
             <template #image>
