@@ -75,7 +75,8 @@
 	</table>
 
 	<h3 class="">About author registration</h3>
-
+	<p class="fst-italic fw-light">Pending information...</p>
+	<!--
 	<ol>
 		<li>
 			For publications with at least one professional author
@@ -91,7 +92,6 @@
 			</ol>
 		</li>
 	</ol>
-	<!--
     <section class="py-5 container" id="download-soft-ui">
         <div class="bg-gradient-dark position-relative border-radius-xl overflow-hidden">
             <img src="/assets/img/shapes/waves-white.svg" alt="" class="position-absolute start-0 top-md-0 w-100 opacity-6">
