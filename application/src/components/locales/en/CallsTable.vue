@@ -23,14 +23,11 @@
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
-                <!--
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-call'})" class="uline">
                     Call for poster track (CPT)
                 </RouterLink>
-                -->
-                Call for poster track (CPT)
             </div>
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> to be announced...<br>
+            <strong class="text-primary text-gradient">Deadline for submission:</strong> August 8th, 2024 <strong>(Open)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -46,14 +43,11 @@
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
-                <!--
                 <RouterLink :to="Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-call'})" class="uline">
                     Student design competition (SDC)
                 </RouterLink>
-                -->
-                Student design competition (SDC)
             </div>
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> to be announced...<br>
+            <strong class="text-primary text-gradient">Deadline for submission:</strong> August 16th, 2024 <strong>(Open)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -63,7 +57,7 @@
                     Graduate Colloquium (GC)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> to be announced...<br>
+            <strong class="text-primary text-gradient">Deadline for submission:</strong> August 8th, 2024 12:00 pm (noon) <strong>(Open)</strong><br>
         </div>
         </li>
     </ol>    
