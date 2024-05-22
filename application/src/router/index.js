@@ -52,7 +52,7 @@ const router = createRouter({
             title: "MexIHC 2024 - Call for poster track",
           },
         },
-        /*
+
         {
           path: 'student-design-competition',
           name: 'student-design-competition',
@@ -61,7 +61,6 @@ const router = createRouter({
             title: "MexIHC 2024 - Call for poster track",
           },
         },
-        */        
         {
           path: 'graduate-colloquium',
           name: 'graduate-colloquium',
@@ -110,7 +109,8 @@ const router = createRouter({
           meta: {
             title: "MexIHC 2024 - Schedule",
           },
-        },    
+        },
+        */    
         {
           path: 'getting-started',
           name: 'getting-started',
@@ -127,6 +127,7 @@ const router = createRouter({
             title: "MexIHC 2024 - Registration",
           },
         },
+        /*
         {
           path: 'accessibility-FAQ',
           name: 'accessibility-FAQ',

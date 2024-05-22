@@ -290,29 +290,6 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/niels.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/niels.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Niels Martínez
-                                        </template>
-                                        <template #institution>
-                                            Universidad Autónoma de Coahuila, MX
-                                        </template>
-                                        <template #email>
-                                            sdc.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
                                                 <img src="/assets/img/people/carlos.png" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
@@ -325,6 +302,29 @@ export default {
                                         </template>
                                         <template #institution>
                                             Clemson University, USA
+                                        </template>
+                                        <template #email>
+                                            sdc.2024@mexihc.org
+                                        </template>
+                                    </OrganizerItem>
+                                </div>
+                                                                
+                                <div class="col-md-4 m-auto mt-md-0 mt-4">
+                                    <OrganizerItem>
+                                        <template #image>
+                                            <div class="d-block blur-shadow-image">
+                                                <img src="/assets/img/people/niels.png" alt=""
+                                                    class="img-fluid shadow rounded-3">
+                                            </div>
+                                            <div class="colored-shadow"
+                                                style="background-image: url(&quot;./assets/img/people/niels.png&quot;);">
+                                            </div>
+                                        </template>
+                                        <template #name>
+                                            Niels Martínez
+                                        </template>
+                                        <template #institution>
+                                            Universidad Autónoma de Coahuila, MX
                                         </template>
                                         <template #email>
                                             sdc.2024@mexihc.org

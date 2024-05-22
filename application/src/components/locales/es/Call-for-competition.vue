@@ -18,217 +18,207 @@ export default {
 <template>
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>31 de julio</del> <del>11 de agosto EXTENDIDA</del> <strong class="text-danger"> {{ $t("about.closed") }}</strong><br>
-        </div>
+            <div class="ms-2 me-auto">
+                <strong class="text-primary text-gradient">Fecha límite de envío:</strong> 16 de agosto de 2024 <strong>
+                    ({{ $t("about.open") }})</strong><br>
+            </div>
         </li>
     </ol>
 
-    <h3 id="sdc-dates">Fechas Importantes</h3>
+    <h3>Objetivos</h3>
     <ul>
-        <li>Fecha límite de envío: <del>31 de julio</del> 11 de agosto EXTENDIDA</li>
-        <li>Notificación: 28 de agosto</li>
-        <li>Versión final: 14 de septiembre (para publicación en inglés en ACM DL o en español en "Avances en Interacción
-            Humano-Computadora")</li>
-        <li>Evento: 30 y 31 de octubre, 1 de noviembre</li>
-    </ul>
-    <p>
-        Las fechas límite son a medianoche AoE (en cualquier parte del mundo).
-    </p>
-
-    <h3>¿Qué es la competencia de diseño para estudiantes en CLIHC 2023?</h3>
-
-    <p>La Competencia de Diseño para Estudiantes tiene tres objetivos:</p>
-    <ul>
-        <li>Brindar una oportunidad para que los estudiantes de diversas áreas (por ejemplo, ciencias de la computación,
-            HCI, diseño industrial, diseño de productos, diseño visual, diseño de interacción, emprendimiento, etc.)
-            participen y demuestren sus habilidades de resolución de problemas y diseño en una competencia internacional con
-            sus pares.</li>
-        <li>Proporcionar una oportunidad para que los estudiantes que presenten en la competencia de diseño se encuentren
-            con la comunidad de CLIHC.</li>
-        <li>Proporcionar perspectivas refrescantes sobre cómo los equipos de diseño de diferentes disciplinas y diferentes
-            partes del mundo abordan un problema de diseño común.</li>
-    </ul>
-
-    <h3>El desafío de diseño: soluciones apropiadas para todos</h3>
-    <p>
-        Les pedimos que contribuyan a uno (o varios) de los 17 Objetivos de Desarrollo Sostenible identificados por las
-        Naciones Unidas:
-    </p>
-
-    <ul>
-        <li>Fin de la Pobreza</li>
-        <li>Hambre Cero</li>
-        <li>Salud y Bienestar</li>
-        <li>Educación de Calidad</li>
-        <li>Igualdad de Género</li>
-        <li>Agua Limpia y Saneamiento</li>
-        <li>Energía Asequible y No Contaminante</li>
-        <li>Trabajo Decente y Crecimiento Económico</li>
-        <li>Industria, Innovación e Infraestructura</li>
-        <li>Reducción de las Desigualdades</li>
-        <li>Ciudades y Comunidades Sostenibles</li>
-        <li>Producción y Consumo Responsables</li>
-        <li>Acción por el Clima</li>
-        <li>Vida Submarina</li>
-        <li>Vida de Ecosistemas Terrestres</li>
-        <li>Paz, Justicia e Instituciones Sólidas</li>
-        <li>Alianzas para Lograr los Objetivos</li>
-    </ul>
-
-    <p>
-        Su problema y su solución deben estar claramente vinculados a uno (o varios) de los objetivos. Involúcrense con los
-        usuarios potenciales e involúcrenlos en el proceso. Demuestren que el problema es relevante y que la solución
-        realmente resuelve el problema de manera sostenible. Observen cómo otros han intentado resolver el problema en el
-        pasado y propongan un enfoque nuevo e innovador. Asegúrense de cumplir con los criterios éticos.
-    </p>
-
-    <h3>Requisitos del equipo de estudiantes</h3>
-    <p>
-        Los equipos deben estar compuestos por al menos dos y no más de cuatro estudiantes. No hay límite en la cantidad de
-        equipos que pueden competir de una misma universidad u organización. Sin embargo, un estudiante no puede ser parte
-        de múltiples equipos.
-    </p>
-    <p>
-        Se invita a estudiantes de todas las etapas de su carrera universitaria, desde pregrado hasta posgrado, a
-        participar. Si bien no es un requisito obligatorio, se recomienda encarecidamente que los equipos sean
-        multidisciplinarios y/o multinacionales.
-    </p>
-    <p>
-        La Competencia de Diseño para Estudiantes es para estudiantes. Envíen una prueba de su condición de estudiante
-        enviando una nota firmada por su supervisor académico que verifique la siguiente información:
-    </p>
-    <ul>
-        <li>Su universidad</li>
-        <li>Si era estudiante de posgrado (es decir, a nivel de maestría o doctorado) o de pregrado (es decir, a nivel de
-            licenciatura) cuando se realizó el trabajo, o confirme que está actualmente inscrito/a en un programa académico
-            a tiempo completo o que volverá a ser estudiante en el próximo semestre.</li>
-    </ul>
-
-    <h3>Requisitos del equipo de supervisión</h3>
-
-    <ul>
-        <li>Grupos de hasta cuatro estudiantes con un supervisor.</li>
-        <li>Cada equipo debe tener al menos dos estudiantes y un supervisor.</li>
-        <li>Cada supervisor solo puede tener un equipo.</li>
-        <li>El supervisor puede ser un profesor o un profesional de la industria.</li>
-    </ul>
-
-    <p>
-        Los supervisores académicos, mentores, entrenadores o personas que brinden apoyo adicional no pueden ser
-        copresidentes, revisores o jueces de la competencia al mismo tiempo. <span class="text-danger">Los mentores no
-            pueden ser autores del artículo</span>.
-    </p>
-
-    <h3>Preparación de la Presentación y Estructura de la Competencia</h3>
-    <p>Las presentaciones pueden ser en inglés, español o portugués.</p>
-
-    <ol>
-        <li>
-            Envío para participar en la competencia, antes del 31 de julio
-            <ul>
-                <li>
-                    <strong>Presentación en diapositivas</strong>: PDF de una presentación con un máximo de 15 diapositivas
-                    (la primera diapositiva debe incluir el nombre de los estudiantes y el nombre del proyecto). La
-                    presentación puede incluir información relevante del artículo (descripción del problema y la solución,
-                    métodos de investigación y diseño, por qué su solución será utilizada por los usuarios potenciales).
-                </li>
-                <li>
-                    <strong>Artículo</strong>: un informe escrito de hasta 6 páginas, incluyendo referencias (formato:
-                    Plantillas de Envío de Artículos Maestros de ACM), el artículo debe incluir:
-                    <ul>
-                        <li>Una descripción clara del problema y la solución</li>
-                        <li>Una visión general de los métodos de investigación y diseño</li>
-                        <li>Las razones por las que su solución será utilizada por los usuarios potenciales</li>
-                        <li>Reconocimiento de soluciones parciales o incompletas</li>
-                        <li>Reconocimiento de cualquier ayuda externa recibida por parte del equipo de estudiantes (por
-                            ejemplo, asesores, expertos en el campo, soluciones existentes, usuarios)</li>
-                    </ul>
-                </li>
-            </ul>
+        <li>Proveer una oportunidad a los estudiantes de diferentes campos de Interacción
+            humano computadora (Ciencias de la computación, interacción y diseño visual,
+            psicología, ciencias sociales, etc.) a participar en una actividad practica y demostrar
+            sus habilidades en la resolución de problemas, diseño interactivo y experiencia de
+            usuario.
         </li>
         <li>
-            Envío tras la aceptación en la competencia, antes del 25 de agosto
-            <ul>
-                <li>
-                    <strong>Artículo</strong>: versión lista para su publicación (se proporcionarán instrucciones junto con
-                    el correo electrónico de aceptación).
-                </li>
-                <li>
-                    <strong>Video</strong>: ilustrando cómo su solución se adapta a la vida de los usuarios con ayuda de
-                    escenarios, o aborda aspectos humanos de los objetivos de desarrollo sostenible elegidos. También puede
-                    mostrar algunos detalles de la interfaz y la información presentada (máximo 5 minutos). El video puede
-                    incluir:
-                    <ul>
-                        <li>Ejemplos de datos contextuales significativos y su análisis (investigación primaria, secundaria
-                            o ambas)</li>
-                        <li>
-                            Fuentes clave de inspiración creativa (diseños y sistemas existentes)
-                            <ul>
-                                <li>Bosquejos de la solución en evolución</li>
-                            </ul>
-                        </li>
-                        <li>Escenarios que representen cómo la solución se adapta a la vida de los usuarios y resuelve
-                            problemas / involucra o entretiene a los usuarios</li>
-                        <li>Detalles de la interfaz y el diseño de la información, cuando corresponda</li>
-                        <li>Aspectos destacados de los resultados significativos de evaluación</li>
-                    </ul>
-                </li>
-            </ul>
+            Crear un espacio para soluciones para problemas reales utilizando diferentes
+            enfoques (investigación de diseño, lluvia de ideas, prototipos, implementación,
+            evaluación, etc.)
         </li>
-    </ol>
+        <li>
+            Fomentar una mayor interacción entre los representantes de la industria y los
+            estudiantes
+        </li>
+    </ul>
 
+    <h3>Desafío de diseño: Apoyo para poblaciones vulnerables</h3>
     <p>
-        Las presentaciones seleccionadas serán invitadas a mostrar su trabajo en la conferencia en una presentación final
-        (en persona o virtual). Asimismo, todos los estudiantes (autores del artículo) deben registrarse para la
-        conferencia, ya sea en persona o de manera virtual. Las presentaciones serán evaluadas por un panel de jueces y
-        deben incluir:
+        Según la Organización Mundial de la Salud, aproximadamente el 15% de la población
+        mundial tiene alguna forma de discapacidad o forma parte de una población vulnerable. Las
+        poblaciones vulnerables incluyen (1) niños y menores de edad; (2) personas con
+        trastornos/discapacidades del desarrollo; (3) personas con enfermedades crónicas (por
+        ejemplo, VIH, cáncer, enfermedades mentales); (4) pacientes traumatizados; (5) pacientes
+        terminales; (6) adultos mayores; (7) prisioneros; (8) personas económicamente
+        desfavorecidas, entre otros. La vulnerabilidad de estas personas se ve aumentada por la
+        raza, etnia, edad, sexo, y factores como ingresos, cobertura de seguro (o falta de ella), y la
+        ausencia de una fuente usual de servicios de atención. Sus problemas y necesidades de
+        salud y atención médica se entrecruzan con factores sociales, incluyendo vivienda, pobreza y
+        educación inadecuada. A pesar de los esfuerzos y metas del Gobierno Mexicano para reducir
+        o aliviar algunos de los desafíos de las poblaciones vulnerables (por ejemplo,
+        centros/servicios públicos para proporcionar servicios de educación especial), persisten
+        disparidades significativas, incluyendo factores de riesgo, acceso a servicios de atención
+        médica, morbilidad y mortalidad, en las poblaciones vulnerables.
     </p>
 
+    <p>
+        En esta Competencia de Diseño Estudiantil, te animamos a contribuir apoyando a las
+        poblaciones vulnerables: utiliza enfoques de diseño centrados en el ser humano para
+        desarrollar una nueva forma (por ejemplo, un producto, interfaz, sistema o servicio) para
+        apoyar, empoderar o aliviar los desafíos físicos, psicológicos o sociales alrededor de una
+        población vulnerable. El alcance de este desafío de diseño es amplio: por ejemplo, podrías
+
+        enfocarte en atención médica, educación, servicios públicos, caridad, alimentación, pobreza
+        o arte, solo por nombrar algunos. Puedes trabajar con una población vulnerable en particular
+        (por ejemplo, autismo) o puedes trabajar con múltiples poblaciones vulnerables que tengan
+        características comunes (por ejemplo, condiciones crónicas de salud). Puedes adoptar
+        diferentes estrategias de diseño, incluyendo diseño participativo, co-creación y co-diseño,
+        diseño de servicios, diseño para la innovación social, diseño inclusivo e innovación abierta.
+        Puedes idear un enfoque de diseño participativo y de co-creación utilizando tecnologías
+        existentes o puedes encontrar oportunidades en desarrollos tecnológicos contemporáneos,
+        como impresión 3D, fabricación digital, percepción ciudadana, economía colaborativa, big
+        data, redes sociales, IoT, gamificación, nuevos sensores y actuadores, y Realidad
+        Aumentada, por nombrar solo algunos.
+    </p>
+
+    <p>Recomendamos especialmente que se consideren los siguientes criterios:</p>
+
     <ul>
-        <li>El proceso de diseño que se siguió</li>
-        <li>Una descripción concisa de la solución propuesta</li>
-        <li>Referencia a principios y teorías de diseño, cuando corresponda</li>
-        <li>Reconocimiento de soluciones parciales o incompletas</li>
+        <li>¿La solución de diseño aborda uno o más desafíos reales de la población vulnerable?</li>
+        <li>¿La solución de diseño utiliza la tecnología de una manera apropiada y novedosa?</li>
+        <li>¿Se identificó y citó adecuadamente el trabajo previo más relevante?</li>
+        <li>¿Fue el análisis, la síntesis, el diseño y la evaluación sistemáticos y suficientes?</li>
+        <li>¿Fueron éticamente apropiados el proceso de investigación y la participación de las
+            partes interesadas (por ejemplo, se siguieron las directrices institucionales)?</li>
+        <li>¿Estuvieron involucrados verdaderos interesados en el proceso de investigación,
+            desarrollo y evaluación?</li>
+        <li>¿Exploró el equipo todo el entorno de las partes interesadas, condiciones y contextos?</li>
+        <li>¿La solución de diseño estuvo bien elaborada y presentada de manera efectiva?</li>
+    </ul>
+    <h3 id="sdc-dates">Fechas importantes</h3>
+    <ul>
+        <li>Fecha límite de recepción de trabajos: 16 de agosto de 2024.</li>
+        <li>Fecha límite de camera ready: 13 de septiembre de 2024.</li>
+    </ul>
+
+    <h3>Características de los equipos</h3>
+    <ul>
+        <li>Un grupo de cuatro estudiantes y un supervisor (máximo 5 participantes).</li>
+        <li>Cada equipo deberá tener al menos un estudiante y un supervisor.</li>
+        <li>Cada supervisor podrá asesorar únicamente a un equipo.</li>
+        <li>El supervisor puede pertenecer a un ambiente académico o industrial.</li>
     </ul>
 
     <p>
-        Todas las presentaciones deben incluir información de título y autor, incluidas las afiliaciones. Asegúrense de que
-        las presentaciones no contengan material confidencial o protegido y no citen publicaciones confidenciales o
-        protegidas.
+        Las propuestas son bienvenidas a estudiantes que estén cursando cualquier periodo en sus
+        universidades, desde licenciatura a posgrado. Se recomienda mas no es obligatorio, que el
+        equipo sea multidisciplinario.
     </p>
 
+    <h3>Detalles de envío</h3>
     <p>
-        Los artículos aceptados pueden elegir uno de los siguientes medios de publicación:
+        Cada equipo deberá enviar una presentación de un máximo de <strong>15 diapositivas</strong> y un reporte
+        escrito de hasta <strong>cuatro páginas</strong> con el siguiente formato <a class="uline"
+            href="https://drive.google.com/file/d/1MGeTyj5zWwj9W7KeORBbJjM1MzuSHbVC/view">Proceedings Format</a>
+        describiendo
+        con más detalle los puntos planteados en la presentación, sea en español o inglés, en
+        formato PDF. Ambos documentos deben describir:
     </p>
 
     <ul>
-        <li>Actas de la conferencia publicadas en ACM DL. Solo las presentaciones en inglés pueden publicarse en este medio.
-            Si su presentación fue aceptada en español o portugués y desea publicarla aquí, deberá traducir su presentación
-            original al inglés.</li>
-        <li>Avances en Interacción Humano-Computadora. Solo las presentaciones en español o inglés pueden publicarse en este
-            medio. Si su presentación fue aceptada en portugués y desea publicarla aquí, deberá traducir su presentación
-            original al español o inglés.</li>
+        <li>El problema a tratar</li>
+        <li>El impacto social de la propuesta en un contexto de México.</li>
+        <li>El Proceso utilizado durante el proyecto.</li>
+        <li>La Metodología, métodos y técnicas utilizadas.</li>
+        <li>La descripción del público objetivo.</li>
+        <li>La solución propuesta.</li>
     </ul>
+
+    <p>
+        Además, animamos al equipo a proporcionar un vídeo complementario (máximo 5 minutos)
+        que ilustre cómo su solución se adapta a las vidas de los usuarios de la población vulnerable
+        con la ayuda de escenarios. Aunque el vídeo complementario es opcional, puede ayudar al
+        jurado a comprender mejor la solución propuesta. En todo caso, el proceso de selección se
+        basará en los dos expedientes preceptivos (presentación e informe escrito).
+    </p>
+
+    <p>
+        Al igual que con otras presentaciones enviadas a MexIHC 2024, las propuestas del Concurso
+        de Diseño Estudiantil no debieron haber sido aceptadas previamente para su presentación o
+        publicación en ningún otro evento.
+    </p>
+
+    <p>Favor de mandar las propuestas a <strong>sdc.2024@mexihc.org</strong></p>
+
+    <h3>Proceso de selección</h3>
+    <p>Las propuestas se evaluarán tomando en cuenta los siguientes puntos:</p>
+    <ul>
+        <li>Calidad del trabajo.</li>
+        <li>Propuesta novedosa.</li>
+        <li>Importancia de la contribución al área de interacción humano computadora.</li>
+        <li>Claridad en la escritura del documento.</li>
+        <li>Solidez del argumento sobre el impacto físico, psicológico o social esperado de la
+            propuesta.</li>
+    </ul>
+
+    <p>
+        La confidencialidad de los envíos se mantiene durante el proceso de revisión. Todas las
+        presentaciones rechazadas se mantendrán confidenciales a perpetuidad. Todos los
+        materiales enviados para las presentaciones aceptadas se mantendrán confidenciales hasta
+        el inicio de la conferencia, con la excepción del título y la información del autor que se
+        publicarán en el sitio web antes de la conferencia. Los envíos no deben contener información
+        confidencial, privada o de propiedad exclusiva que no pueda divulgarse en el momento de la
+        publicación.
+    </p>
+
+    <p>
+        Un jurado formado por investigadores y representantes de la industria elegirá los cinco
+        mejores proyectos a partir de los dos expedientes presentados. Los cinco proyectos finalistas
+        serán invitados al evento MexIHC 2024.
+    </p>
+
+    <p><strong>Propuestas enviadas fuera de las fechas señalas no serán consideradas.</strong>.</p>
+
+    <h3>En la conferencia</h3>
+    <p>
+        Los mejores cinco proyectos serán invitados como una presentación oral corta en la
+        conferencia.
+    </p>
+    <p>
+        La presentación deberá ser en Inglés o Español y al menos dos representantes del equipo,
+        deberán realizar la presentación del proyecto durante el evento. Un jurado de cuatro
+        personas representativas de la industria y la academia seleccionaran a los tres proyectos
+        ganadores.
+    </p>
+
+    <h3>Publicación</h3>
+    <p>
+        Todos los trabajos aceptados serán publicados en <a class="uline"
+            href="https://aihc.amexihc.org/index.php/aihc/about">AMexIHC publication journal</a>.
+    </p>
+
     <h3 class="my-4">{{ $t("organizers.student_design_competition_title") }}</h3>
     <div class="row">
         <div class="col-md-4">
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/carlos.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
                     <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                        style="background-image: url(&quot;./assets/img/people/carlos.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Christian Sturm
+                    Carlos Toxtli
                 </template>
                 <template #institution>
-                    DE
+                    Clemson University, USA
                 </template>
                 <template #email>
+                    sdc.2024@mexihc.org
                 </template>
             </OrganizerItem>
         </div>
@@ -237,21 +227,23 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/niels.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
                     <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                        style="background-image: url(&quot;./assets/img/people/niels.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Iyubanit Rodriguez
+                    Niels Martínez
                 </template>
                 <template #institution>
-                    CR
+                    Universidad Autónoma de Coahuila, MX
                 </template>
                 <template #email>
+                    sdc.2024@mexihc.org
                 </template>
             </OrganizerItem>
-    </div>
+        </div>
 
-</div></template>
+    </div>
+</template>

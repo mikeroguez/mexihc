@@ -10,10 +10,9 @@ export default {
 
 <template>
 	<p>
-		Bienvenidos al XI Congreso Latinoamericano de Interacción Humano-Computadora (CLIHC 2023). Nos complace darles la
-		bienvenida a este destacado evento que reúne a comunidades de investigación de HCI de América Latina e
-		internacionales. Esta página "Primeros pasos" está diseñada para proporcionar información esencial para su
-		participación en la conferencia.
+		Bienvenidos a MexIHC 2024, la Décima Conferencia Internacional Mexicana sobre Interacción Humano-Computadora,
+		organizada por la <a class="uline" href="https://www.amexihc.org/">Asociación Mexicana de Interacción Humano-Computadora (AMexIHC)</a>. En esta página "Primeros
+		pasos", encontrarás toda la información necesaria para tu participación en la conferencia.
 	</p>
 
 	<ol class="list-group list-group-numbered">
@@ -25,8 +24,7 @@ export default {
 						Registro y Pago:
 					</RouterLink>
 				</div>
-				Obtenga información para inscribirse y pagar, asegurando su asistencia al CLIHC 2023, con instrucciones para
-				pagos con o sin factura.
+				Obtenga información para inscribirse y pagar, asegurando su asistencia a MexIHC 2024.
 			</div>
 		</li>
 		<!--
@@ -71,35 +69,19 @@ export default {
 	<h2 id="rates-and-registration" class="mt-5 h3">Registro y Pago</h2>
 	<div>
 		<p>Para asistir a la conferencia, el primer paso es el proceso de pago y registro. Te recomendamos consultar la
-			información relacionada con <RouterLink :to="Tr.i18nRoute({ name: 'registration' })" class="uline">{{ $t("nav.rates_and_registration") }}</RouterLink>, donde encontrarás detalles sobre las diferentes tarifas según
-			las opciones de participación, así como el costo de los talleres e información para el registro de autores.</p>
+			información relacionada con <RouterLink :to="Tr.i18nRoute({ name: 'registration' })" class="uline">{{
+						$t("nav.rates_and_registration") }}</RouterLink>, donde encontrarás detalles sobre las diferentes
+			tarifas según
+			las opciones de participación, así como el costo de los talleres e información para el registro de autores.
+		</p>
 
 		<h3 class="h4">Instrucciones de Pago:</h3>
 
-		<p>Los pagos para el Congreso CLIHC2023 se manejarán de la siguiente manera:</p>
+		<p class="fst-italic fw-light">Información pendiente...</p>
 
-		<ul>
-			<li><strong>Pago sin factura:</strong> Debes proporcionar la ficha referenciada y el comprobante de pago.</li>
-
-			<li><strong>Solicitud de factura:</strong> Los requisitos varían según el origen del pago:</li>
-				<ul>
-					<li><strong>Para pagos dentro de México</strong>, debes proporcionar la ficha referenciada, el comprobante de pago, una
-					constancia de situación fiscal (a nombre de la persona a la que se emitirá la factura), indicar el uso del
-					DFDI (por lo general, "Gastos en General"), y proporcionar el correo electrónico al cual se enviará la
-					factura.</li>
-
-					<li><strong>Para pagos desde el extranjero</strong>, se requiere la ficha referenciada, el comprobante de pago, los datos
-					necesarios para el comprobante y el correo electrónico al cual deseas que se envíe el comprobante. Se
-					emitirá una factura y se adjuntará un comprobante, similar al ejemplo que se proporcionó anteriormente.</li>
-				</ul>
-		</ul>
-
-		<p>Asegúrate de enviar toda la información necesaria para generar las facturas de manera oportuna. Además, ten en
-			cuenta que <strong>el pago del registro a la conferencia es un requisito previo para la inscripción en tutoriales y
-			talleres, y debe realizarse por separado.</strong></p>
 	</div>
 
-<!--
+	<!--
 	<h2 id="accommodation" class="mt-5 h3">Hospedaje</h2>
 <p>
 	Pendiente
