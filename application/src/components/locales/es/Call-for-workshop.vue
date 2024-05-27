@@ -20,7 +20,7 @@ export default {
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
                 <strong class="text-primary text-gradient">Fecha límite para propuestas de talleres y
-                    tutoriales:</strong> 17 de mayo de 2024 <strong> ({{ $t("about.open") }})</strong><br>
+                    tutoriales:</strong> <del>17 de mayo</del> 7 de junio de 2024 (extendida) <strong> ({{ $t("about.open") }})</strong><br>
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-dates' })"
                     class="uline">
                     Ver todas las fechas importantes
@@ -89,8 +89,8 @@ export default {
 
     <h2 id="cwt-dates">Fechas importantes</h2>
     <ul>
-        <li><strong>17 de mayo de 2024</strong> – Fecha límite para propuestas de talleres y tutoriales</li>
-        <li><strong>24 de mayo de 2024</strong> – Notificación de aceptación</li>
+        <li><strong><del>17 de mayo</del> 7 de junio de 2024 (extendida)</strong> – Fecha límite para propuestas de talleres y tutoriales</li>
+        <li><strong><del>24 de mayo</del> 14 de junio de 2024 (extendida)</strong> – Notificación de aceptación</li>
         <li><strong>6 al 8 de noviembre de 2024</strong> - Conferencia MexIHC</li>
     </ul>
     <p>Los organizadores de talleres deben considerar que la fecha límite para la entrega de trabajos de los talleres será:</p>
