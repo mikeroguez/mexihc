@@ -37,7 +37,7 @@
                     Convocatoria de talleres y tutoriales (CWT)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Decha límite para propuestas:</strong> 17 de mayo de 2024 <strong>(Abierta)</strong><br>
+            <strong class="text-primary text-gradient">Decha límite para propuestas:</strong> <del>17 de mayo</del> 7 de junio de 2024 (extendida) <strong>(Abierta)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">

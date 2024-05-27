@@ -37,7 +37,7 @@
                     Call for workshops and tutorial (CWT)
                 </RouterLink>
                 </div>
-                <strong class="text-primary text-gradient">Deadline for proposals:</strong> May 17th, 2024 <strong>(Open)</strong><br>
+                <strong class="text-primary text-gradient">Deadline for proposals:</strong> <del>May 17th</del> June 7th, 2024 (extended) <strong>(Open)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
