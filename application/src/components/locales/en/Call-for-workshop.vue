@@ -19,7 +19,7 @@ export default {
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Deadline for workshop & tutorial proposals:</strong> May 17th, 2024
+                <strong class="text-primary text-gradient">Deadline for workshop & tutorial proposals:</strong> <del>May 17th</del> June 7th, 2024 (extended)
                 <span class="text-bold">({{ $t("about.open") }})</span><br>
 
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-dates' })"
@@ -88,8 +88,8 @@ export default {
 
     <h2 id="cwt-dates">Important Dates</h2>
     <ul>
-        <li><strong>May 17th, 2024</strong> – Deadline for workshop & tutorial proposals</li>
-        <li><strong>May 24th, 2024</strong> – Notification acceptance</li>
+        <li><strong><del>>May 17th</del> June 7th, 2024 (extended)</strong> – Deadline for workshop & tutorial proposals</li>
+        <li><strong><del>May 24th</del> June 14th, 2024 (extended)</strong> – Notification acceptance</li>
         <li><strong>November 6th-8th, 2024</strong> - MexIHC Conference</li>
     </ul>
     <p>Workshops organizers should consider that the submission for workshop papers would be</p>
