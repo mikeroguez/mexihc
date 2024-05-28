@@ -67,11 +67,11 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/sponsors/skye.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/sponsors/skye.png&quot;);">
+                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
@@ -81,11 +81,11 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/sponsors/sperientia.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/sponsors/sperientia.png&quot;);">
+                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
@@ -95,11 +95,11 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/sponsors/cocktail.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/sponsors/cocktail.png&quot;);">
+                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
