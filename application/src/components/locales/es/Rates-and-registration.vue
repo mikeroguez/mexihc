@@ -94,7 +94,7 @@
 	</ol>
     <section class="py-5 container" id="download-soft-ui">
         <div class="bg-gradient-dark position-relative border-radius-xl overflow-hidden">
-            <img src="/assets/img/shapes/waves-white.svg" alt="" class="position-absolute start-0 top-md-0 w-100 opacity-6">
+            <img src="/assets/img/shapes/cactus.svg" alt="" class="position-absolute start-0 top-md-0 w-100 opacity-6">
             <div class="container py-7 postion-relative z-index-2 position-relative">
                 <div class="row">
                     <div class="col-md-7 mx-auto text-center">                        
