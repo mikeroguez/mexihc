@@ -62,3 +62,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Workshop & Tutorials deadline change
+
+## [2024.0.0.8] - 2024-05-28
+
+### Changed
+
+- Texture change waves to cactus
