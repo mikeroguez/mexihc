@@ -148,7 +148,7 @@
 												</div>
 											</RouterLink>
 										</li>
-										
+										<!--
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })" 
 												class="dropdown-item border-radius-md"
@@ -166,7 +166,7 @@
 												</div>
 											</RouterLink>
 										</li>
-										
+										-->
 									</ul>
 								</li>
 								<li class="nav-item dropdown dropdown-hover mx-2">
