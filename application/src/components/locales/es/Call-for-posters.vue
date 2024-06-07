@@ -57,7 +57,7 @@ export default {
         </li>
         <li>
             Los trabajos aceptados serán publicados en la <a class="uline"
-                href="https://aihc.amexihc.org/index.php/aihc/about"></a>Revista de la AMexIHC “Avances en Interacción
+                href="https://revistaaihc.mx/"></a>Revista de la AMexIHC “Avances en Interacción
             Humano-Computadora”.
         </li>
         <li>

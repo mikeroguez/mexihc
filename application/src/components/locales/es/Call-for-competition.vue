@@ -121,7 +121,7 @@ export default {
     <p>
         Cada equipo deberá enviar una presentación de un máximo de <strong>15 diapositivas</strong> y un reporte
         escrito de hasta <strong>cuatro páginas</strong> con el siguiente formato <a class="uline"
-            href="https://drive.google.com/file/d/1MGeTyj5zWwj9W7KeORBbJjM1MzuSHbVC/view">Proceedings Format</a>
+            href="https://mexihc.org/aihc_template.zip">Proceedings Format</a>
         describiendo
         con más detalle los puntos planteados en la presentación, sea en español o inglés, en
         formato PDF. Ambos documentos deben describir:
@@ -196,7 +196,7 @@ export default {
     <h3>Publicación</h3>
     <p>
         Todos los trabajos aceptados serán publicados en <a class="uline"
-            href="https://aihc.amexihc.org/index.php/aihc/about">AMexIHC publication journal</a>.
+            href="https://revistaaihc.mx/">AMexIHC publication journal</a>.
     </p>
 
     <h3 class="my-4">{{ $t("organizers.student_design_competition_title") }}</h3>

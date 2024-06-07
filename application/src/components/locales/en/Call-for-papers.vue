@@ -92,7 +92,7 @@ export default {
 
     <p>
         All accepted full and short papers will be published in a Special Issue of <a
-            href="https://aihc.amexihc.org/">the AMexIHC journal Avances en Interacción Humano-Computadora</a>.
+            href="https://revistaaihc.mx/">the AMexIHC journal Avances en Interacción Humano-Computadora</a>.
     </p>
     
     <h2>Topics of interest</h2>
