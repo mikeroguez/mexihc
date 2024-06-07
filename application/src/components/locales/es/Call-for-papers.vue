@@ -90,7 +90,7 @@ export default {
 
     <p>
         Todos los artículos completos y cortos aceptados serán publicados en un número especial de <a
-            href="https://aihc.amexihc.org/">la revista AMexIHC Avances en Interacción Humano-Computadora</a>.
+            href="https://revistaaihc.mx/">la revista AMexIHC Avances en Interacción Humano-Computadora</a>.
     </p>
 
     <h2>Temas de interés</h2>

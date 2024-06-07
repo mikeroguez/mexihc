@@ -131,7 +131,7 @@ export default {
     <p>
         Each group must submit a presentation with a maximum of <strong>15 slides</strong>, a written report of up to
         <strong>4 pages</strong> in the following format <a class="uline"
-            href="https://drive.google.com/file/d/1MGeTyj5zWwj9W7KeORBbJjM1MzuSHbVC/view">Proceedings Format</a>
+            href="https://mexihc.org/aihc_template.zip">Proceedings Format</a>
         describing in more detail the points
         raised in the presentation; both in Spanish or English, and in PDF format. Both documents
         should describe:
@@ -202,7 +202,7 @@ export default {
 
     <h3>Archives</h3>
     <p>
-        The accepted submissions will be published in <a class="uline" href="https://aihc.amexihc.org/index.php/aihc/about">the AMexIHC publication journal</a>.
+        The accepted submissions will be published in <a class="uline" href="https://revistaaihc.mx/">the AMexIHC publication journal</a>.
     </p>
 
     <h3 class="my-4">{{ $t("organizers.student_design_competition_title") }}</h3>
