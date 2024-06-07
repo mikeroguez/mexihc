@@ -68,3 +68,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Texture change waves to cactus
+
+## [2024.0.0.9] - 2024-06-06
+
+### Changed
+
+- Fix paga titles
+- Change aihc journal link
+- Change SDC template link
