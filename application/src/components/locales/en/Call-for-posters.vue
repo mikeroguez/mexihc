@@ -56,7 +56,7 @@ export default {
         </li>
         <li>
             Accepted papers will be published in the <a class="uline"
-                href="https://aihc.amexihc.org/index.php/aihc/about"></a>AMexIHC publication “Avances en Interacción
+                href="https://revistaaihc.mx/"></a>AMexIHC publication “Avances en Interacción
             Humano-Computadora”.
         </li>
         <li>
