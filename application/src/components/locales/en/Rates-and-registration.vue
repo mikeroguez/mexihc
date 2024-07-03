@@ -97,7 +97,7 @@
 	<p>To register to the event, please follow the next steps:</p>
 
 	<ol>
-		<li>Filling out the form with your information using the registration system</li>
+		<li>Filling out the form with your information using the <a class="uline" href="https://conferencias.app/">registration system</a></li>
 		<li>Make the payment (bank transfer preferably or deposit below) using the bank details provided and the Registration Code provided by the registration system.</li>
 		<li>Send a copy of payment invoice to registration.2022@mexihc.org (especially deposits at the bank)</li>
 		<li>Also, if you need a fiscal invoice (factura), you can request it through the system and it will be emailed to you.</li>
@@ -113,14 +113,14 @@
 		Cuenta: 88823590201 <br>
 		Concepto: {Registration code}
 	</p>
-	<!--
+	
     <section class="py-5 container" id="download-soft-ui">
         <div class="bg-gradient-dark position-relative border-radius-xl overflow-hidden">
             <img src="/assets/img/shapes/cactus.svg" alt="" class="position-absolute start-0 top-md-0 w-100 opacity-6">
             <div class="container py-7 postion-relative z-index-2 position-relative">
                 <div class="row">
                     <div class="col-md-7 mx-auto text-center">                        
-                        <a href="https://true-werewolf-eternal.ngrok-free.app/" class="btn btn-lg  bg-gradient-yellow  btn-round">
+                        <a href="https://conferencias.app/" class="btn btn-lg  bg-gradient-yellow  btn-round">
                           {{ $t("register.register_button") }}
                         </a>
                     </div>
@@ -128,5 +128,5 @@
             </div>
         </div>
     </section>
-	-->
+	
 </template>
