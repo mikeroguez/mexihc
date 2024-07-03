@@ -82,7 +82,7 @@ export default {
 		<ol>
 			<li>Complete el formulario con su información utilizando el <a class="uline" href="https://conferencias.app/">sistema de registro</a>.</li>
 			<li>Realice el pago (preferentemente transferencia bancaria o depósito) utilizando los datos bancarios proporcionados y el Código de Registro proporcionado por el sistema de registro.</li>
-			<li>Envíe una copia de la factura de pago a registration.2022@mexihc.org (especialmente para depósitos en el banco).</li>
+			<li>Envíe una copia de la factura de pago a registration.2024@mexihc.org (especialmente para depósitos en el banco).</li>
 			<li>Además, si necesita una factura fiscal, puede solicitarla a través del sistema y se le enviará por correo electrónico.</li>
 			<li>Los pagos realizados desde fuera de México pueden usar PayPal para completar el registro. Las instrucciones aparecerán en la página de confirmación.</li>
 		</ol>
