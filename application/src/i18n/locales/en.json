@@ -20,7 +20,7 @@
         "for_authors": "For authors",
         "organizers": "Organizers",
         "cfp": "Call for papers",
-        "cfp_message": "Submission deadline: June 14th, 2024",
+        "cfp_message": "Submission deadline: July 1st, 2024 (extended)",
         "cpt": "Call for poster track",
         "cpt_message": "Deadline: August 8th, 2024",
         "cwt": "Call for workshops and tutorials",
@@ -49,7 +49,14 @@
         "accepted_papers_message": "",
         "pending": "Pending",
         "copyright": "© 2024 Mexican Conference on Human-Computer Interaction, an AMexIHC conference.",
-        "back_to_top": "Back to top of page"
+        "back_to_top": "Back to top of page",
+        "workshop_calls": "Calls for papers for accepted workshops",
+        "workshop_title": "Calls for Papers for Accepted Workshops",
+        "workshop_calls_message": "Calls and information for accepted workshops",
+        "tutorial": "Tutorials",
+        "tutorial_title": "Tutorials",
+        "tutorial_message": "Information on available tutorials"
+
     },
     "jumbotron":{
         "conference": "XI Latin American Conference on Human Computer Interaction",

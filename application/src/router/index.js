@@ -52,7 +52,22 @@ const router = createRouter({
             title: "MexIHC 2024 - Call for Workshops and Tutorials",
           },
         },
-
+        {
+          path: 'calls-for-accepted-workshops',
+          name: 'calls-for-accepted-workshops',
+          component: () => import('../views/AcceptedWorkshopsView.vue'), 
+          meta: {
+            title: "MexIHC 2024 - Call for Accepted Workshops",
+          },
+        },
+        {
+          path: 'accepted-tutorials',
+          name: 'accepted-tutorials',
+          component: () => import('../views/AcceptedTutorialsView.vue'), 
+          meta: {
+            title: "MexIHC 2024 - Accepted Tutorials",
+          },
+        },
         {
           path: 'student-design-competition',
           name: 'student-design-competition',

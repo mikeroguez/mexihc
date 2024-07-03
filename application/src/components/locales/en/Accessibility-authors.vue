@@ -105,7 +105,7 @@
     <h2 id="accessible-slide-author-recommendations">Accessible Slide Author Recommendations</h2>
     <p>
         Your presentations will be available as part of the digital products generated at
-        CLIHC 2023, therefore is possible that people who will read them, use a screen
+        MexIHC 2024, therefore is possible that people who will read them, use a screen
         reader, so we encourage you to consult the <a class="uline"
             href="http://www.sigaccess.org/welcome-to-sigaccess/resources/accessible-presentation-guide/">Accessible
             Presentation Guide</a>, published

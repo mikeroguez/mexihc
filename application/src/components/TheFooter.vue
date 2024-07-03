@@ -189,7 +189,12 @@ export default {
                                 <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium' })" class="nav-link uline">
                                     {{ $t("nav.cgc") }}
                                 </RouterLink>
-                            </li>                            
+                            </li>
+                            <li class="nav-item">
+                                <RouterLink :to="Tr.i18nRoute({ name: 'calls-for-accepted-workshops' })" class="nav-link uline">
+                                    {{ $t("nav.workshop_calls") }}
+                                </RouterLink>
+                            </li>
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })"
                                     class="nav-link uline">
@@ -208,6 +213,13 @@ export default {
                                     class="nav-link uline"
                                 >
                                     {{ $t("nav.getting_started") }}
+                                </RouterLink>
+                            </li>
+                            <li class="nav-item">
+                                <RouterLink :to="Tr.i18nRoute({ name: 'accepted-tutorials' })" 
+                                    class="nav-link uline"
+                                >
+                                    {{ $t("nav.tutorial") }}
                                 </RouterLink>
                             </li>
                             <li class="nav-item">

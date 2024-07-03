@@ -25,7 +25,7 @@ export default {
         </li>
     </ol>
 
-    <h3>Goals</h3>
+    <h2>Goals</h2>
     <ul>
         <li>Provide an opportunity for students of Human-Computer Interaction and related fields
             (e. g. Computer Science, interaction and visual design, Psychology, Social Sciences,
@@ -42,7 +42,7 @@ export default {
         </li>
     </ul>
 
-    <h3>The Design Challenge: Supporting Vulnerable Populations</h3>
+    <h2>The Design Challenge: Supporting Vulnerable Populations</h2>
     <p>
         According to the World Health Organization, about 15% of the world’s population, have some
         form of disability or they are part of a vulnerable population. Vulnerable populations include
@@ -107,13 +107,13 @@ export default {
             Was the design solution well-crafted and effectively presented?
         </li>
     </ul>
-    <h3 id="sdc-dates">Important Dates</h3>
+    <h2 id="sdc-dates">Important Dates</h2>
     <ul>
         <li>Deadline for submission of works: August 16th, 2024.</li>
         <li>Deadline for camera ready: September 13th, 2024.</li>
     </ul>
 
-    <h3>Student Team Requirements</h3>
+    <h2>Student Team Requirements</h2>
     <ul>
         <li>Groups of up 4 students with one supervisor (5 participants max).</li>
         <li>Each team must have at least one student and one supervisor.</li>
@@ -127,7 +127,7 @@ export default {
         that the teams put forward a multidisciplinary team.
     </p>
 
-    <h3>SUBMISSION DETAILS</h3>
+    <h2>SUBMISSION DETAILS</h2>
     <p>
         Each group must submit a presentation with a maximum of <strong>15 slides</strong>, a written report of up to
         <strong>4 pages</strong> in the following format <a class="uline"
@@ -161,7 +161,7 @@ export default {
 
     <p>Please send your proposal to <strong>sdc.2024@mexihc.org</strong></p>
 
-    <h3>Selection Process</h3>
+    <h2>Selection Process</h2>
     <p>Submissions will be evaluated based on:</p>
     <ul>
         <li>Quality of work.</li>
@@ -189,7 +189,7 @@ export default {
 
     <p>Late submissions will <strong>NOT be considered</strong>.</p>
 
-    <h3>At the conference</h3>
+    <h2>At the conference</h2>
     <p>
         The best five projects proposals will be invited as a short oral presentation during the
         conference.
@@ -200,12 +200,12 @@ export default {
         representatives from industry and academia will choose the three winning projects.
     </p>
 
-    <h3>Archives</h3>
+    <h2>Archives</h2>
     <p>
         The accepted submissions will be published in <a class="uline" href="https://revistaaihc.mx/">the AMexIHC publication journal</a>.
     </p>
 
-    <h3 class="my-4">{{ $t("organizers.student_design_competition_title") }}</h3>
+    <h2 class="my-4">{{ $t("organizers.student_design_competition_title") }}</h2>
     <div class="row">
         <div class="col-md-4">
             <OrganizerItem>

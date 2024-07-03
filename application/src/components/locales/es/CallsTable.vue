@@ -17,7 +17,7 @@
                     Convocatoria de trabajos (CFP)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> 14 de junio de 2024 <strong>(Abierta)</strong><br>
+            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>14 de junio</del> 1 de julio de 2024 (extendida) <strong>(Cerrada)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -37,7 +37,7 @@
                     Convocatoria de talleres y tutoriales (CWT)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Decha límite para propuestas:</strong> <del>17 de mayo</del> 7 de junio de 2024 (extendida) <strong>(Abierta)</strong><br>
+            <strong class="text-primary text-gradient">Decha límite para propuestas:</strong> <del>17 de mayo</del> 7 de junio de 2024 (extendida) <strong>(Cerrada)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -60,5 +60,15 @@
             <strong class="text-primary text-gradient">Fecha límite de envío:</strong> 8 de agosto de 2024, 12:00 pm (medio día) <strong>(Abierta)</strong><br>
         </div>
         </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">
+                <RouterLink :to="Tr.i18nRoute({ name: 'calls-for-accepted-workshops' })" class="uline">
+                    {{ $t("nav.workshop_calls") }}
+                </RouterLink>                
+            </div>
+            <strong class="text-primary text-gradient">Consulta las páginas web de cada taller para fechas y detalles.</strong><br>
+        </div>
+        </li>        
     </ol>    
 </template>

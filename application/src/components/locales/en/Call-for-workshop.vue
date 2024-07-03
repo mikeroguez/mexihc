@@ -19,8 +19,9 @@ export default {
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Deadline for workshop & tutorial proposals:</strong> <del>May 17th</del> June 7th, 2024 (extended)
-                <span class="text-bold">({{ $t("about.open") }})</span><br>
+                <strong class="text-primary text-gradient">Deadline for workshop & tutorial proposals:</strong> <del>May
+                    17th</del> June 7th, 2024 (extended)
+                <span class="text-bold">({{ $t("about.closed") }})</span><br>
 
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-dates' })"
                     class="uline">
@@ -88,7 +89,8 @@ export default {
 
     <h2 id="cwt-dates">Important Dates</h2>
     <ul>
-        <li><strong><del>>May 17th</del> June 7th, 2024 (extended)</strong> – Deadline for workshop & tutorial proposals</li>
+        <li><strong><del>>May 17th</del> June 7th, 2024 (extended)</strong> – Deadline for workshop & tutorial proposals
+        </li>
         <li><strong><del>May 24th</del> June 14th, 2024 (extended)</strong> – Notification acceptance</li>
         <li><strong>November 6th-8th, 2024</strong> - MexIHC Conference</li>
     </ul>
@@ -97,7 +99,21 @@ export default {
         <li><strong>Aug 9th, 2024</strong> – Deadline for workshop & tutorial submissions</li>
         <li><strong>Ago 23th, 2024</strong> – Notification acceptance</li>
         <li><strong>Sep 13th, 2024</strong> – Camera Ready</li>
-    </ul>    
+    </ul>
+
+    <h2>Accepted Workshops and Tutorials</h2>
+    <ul>
+        <li>
+            <RouterLink :to="Tr.i18nRoute({ name: 'calls-for-accepted-workshops' })" class="uline">
+                {{ $t("nav.workshop_calls") }}
+            </RouterLink>
+        </li>
+        <li>
+            <RouterLink :to="Tr.i18nRoute({ name: 'accepted-tutorials' })" class="uline">
+                {{ $t("nav.tutorial") }}
+            </RouterLink>
+        </li>        
+    </ul>
 
     <h2 class="my-4">{{ $t("organizers.workshops_and_tutorials_chairs_title") }}</h2>
     <div class="row">
@@ -121,7 +137,7 @@ export default {
                     ws.2024@mexihc.org
                 </template>
             </OrganizerItem>
-        </div>        
+        </div>
         <div class="col-md-4">
             <OrganizerItem>
                 <template #image>

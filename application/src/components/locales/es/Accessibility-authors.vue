@@ -92,7 +92,7 @@
     <!-- Accessible slide author recommendations -->
     <h2 id="accessible-slide-author-recommendations">Recomendaciones para la Creación de Diapositivas Accesibles</h2>
     <p>
-        Sus presentaciones estarán disponibles como parte de los productos digitales generados en CLIHC 2023, por lo tanto,
+        Sus presentaciones estarán disponibles como parte de los productos digitales generados en MexIHC 2024, por lo tanto,
         es posible que las personas que las lean utilicen un lector de pantalla, por lo que le recomendamos que consulte <a
             class="uline" href="http://www.sigaccess.org/welcome-to-sigaccess/resources/accessible-presentation-guide/">la
             Guía de Presentación Accesible</a>, publicada por <a class="uline" href="http://www.sigaccess.org/">ACM

@@ -9,89 +9,111 @@
 </script>
 
 <template>
-    <h3 class="">To attend the entire conference</h3>
+    <h2 class="">Authors</h2>
 
 	<table class="table table-striped">
-		<caption>Cost table for attending the entire conference</caption>
+		<caption>Cost table for authors</caption>
 		<thead>
 			<tr>
 				<th scope="col">Description</th>
-				<th scope="col">MX</th>
-				<th scope="col">USD</th>
+				<th scope="col">Cost</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td>Professionals</td>
-				<td><span class="fst-italic fw-light">Pending</span></td>
-				<td><span class="fst-italic fw-light">Pending</span></td>
+				<td>Full paper or short paper</td>
+				<td><span class="fst-italic fw-light">$4,000 MXN</span></td>
 			</tr>
 			<tr>
-				<td>Student authors</td>
-				<td><span class="fst-italic fw-light">Pending</span></td>
-				<td><span class="fst-italic fw-light">Pending</span></td>
+				<td>Additional paper (same presenter)</td>
+				<td><span class="fst-italic fw-light">$1,500 MXN</span></td>
 			</tr>
 			<tr>
-				<td>Non-author students</td>
-				<td><span class="fst-italic fw-light">Pending</span></td>
-				<td><span class="fst-italic fw-light">Pending</span></td>
+				<td>Workshop paper</td>
+				<td><span class="fst-italic fw-light">$3,000 MXN</span></td>
+			</tr>
+			<tr>
+				<td>Postgraduate consortium</td>
+				<td><span class="fst-italic fw-light">$2,000 MXN</span></td>
+			</tr>
+			<tr>
+				<td>Poster</td>
+				<td><span class="fst-italic fw-light">$1,600 MXN</span></td>
+			</tr>
+			<tr>
+				<td>Student Design Competition</td>
+				<td>
+					<span class="fst-italic fw-light">Professor: $800 MXN</span><br>
+					<span class="fst-italic fw-light">Students: $500 MXN</span>
+				</td>
 			</tr>
 		</tbody>
-		<tfoot>
-			<tr>
-				<td span="3"><strong>Note:</strong> Gala dinner and meals are not included in the registration fee.</td>
-			</tr>
-		</tfoot>
 	</table>
 
-	<h3 class="">To attend Tutorials/Workshops (limited seats)</h3>
+	<h3 class="h5">Rate includes:</h3>
+	<ul>
+		<li>Publication on the AMexIHC journal.</li>
+		<li>Access to keynotes, conferences, SDC and posters.</li>
+		<li>AMexIHC membership.</li>
+	</ul>
+	
+	<hr>
+	
+	<h2 class="">Attendees</h2>
 
 	<table class="table table-striped">
-		<caption>Cost table for attending Tutorials/Workshops (limited seats)</caption>
+		<caption>Cost table for attendeess</caption>
 		<thead>
 			<tr>
 				<th scope="col">Description</th>
-				<th scope="col">MX</th>
-				<th scope="col">USD</th>
+				<th scope="col">Cost</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td>Professionals </td>
-				<td><span class="fst-italic fw-light">Pending</span></td>
-				<td><span class="fst-italic fw-light">Pending</span></td>
+				<td>Professor/Student/General</td>
+				<td><span class="fst-italic fw-light">$0 MXN</span></td>
 			</tr>
 			<tr>
-				<td>students</td>
-				<td><span class="fst-italic fw-light">Pending</span></td>
-				<td><span class="fst-italic fw-light">Pending</span></td>
+				<td>With kit and certificate</td>
+				<td><span class="fst-italic fw-light">$500 MXN</span></td>
 			</tr>
 		</tbody>
 		<tfoot>
 			<tr>
-				<td span="3"><strong>Note:</strong> Conference registration is a prerequisite for Tutorial and Workshop registration.</td>
+				<td span="3"><strong>Note:</strong> Limited seats</td>
 			</tr>
-		</tfoot>
+		</tfoot>		
 	</table>
 
-	<h3 class="">About author registration</h3>
-	<p class="fst-italic fw-light">Pending information...</p>
-	<!--
+	<h3 class="h4">Rate includes:</h3>
+	<ul>
+		<li>Access to keynotes, conferences, SDC and posters.</li>
+	</ul>
+	
+	<hr>
+	
+	<h2 class="">Bank account information</h2>
+	<p>To register to the event, please follow the next steps:</p>
+
 	<ol>
-		<li>
-			For publications with at least one professional author
-			<ol type="a">
-				<li>Each paper to be presented must have at least one professional author registered.</li>
-				<li>If multiple papers are associated with the same professional author, then for each additional publication, the registered author must pay (cancel) the publication fee, or alternatively, another professional author must register.</li>
-			</ol>
-		</li>
-		<li>
-			For publications where all authors are students
-			<ol type="a">
-				<li>Each paper to be presented must have at least one author registered.</li>
-			</ol>
-		</li>
+		<li>Filling out the form with your information using the registration system</li>
+		<li>Make the payment (bank transfer preferably or deposit below) using the bank details provided and the Registration Code provided by the registration system.</li>
+		<li>Send a copy of payment invoice to registration.2022@mexihc.org (especially deposits at the bank)</li>
+		<li>Also, if you need a fiscal invoice (factura), you can request it through the system and it will be emailed to you.</li>
+		<li>Payments made from outside Mexico can use PayPal to complete the registration. Instructions will appear in the confirmation page.</li>
 	</ol>
+
+	<p>From payments from Mexican bank accounts, please use:</p>
+
+	<p class="text-bold">
+		Nombre: ASOCIACION MEXICANA DE INTERACCION HUMANO COMPUTADORA AC <br>
+		Banco: BANCO DEL BAJIO <br>
+		Clabe interbancaria: 030767900000120128 <br>
+		Cuenta: 88823590201 <br>
+		Concepto: {Registration code}
+	</p>
+	<!--
     <section class="py-5 container" id="download-soft-ui">
         <div class="bg-gradient-dark position-relative border-radius-xl overflow-hidden">
             <img src="/assets/img/shapes/cactus.svg" alt="" class="position-absolute start-0 top-md-0 w-100 opacity-6">

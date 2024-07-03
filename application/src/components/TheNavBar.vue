@@ -148,7 +148,25 @@
 												</div>
 											</RouterLink>
 										</li>
-										
+
+										<li>
+											<RouterLink :to="Tr.i18nRoute({ name: 'calls-for-accepted-workshops' })" 
+												class="dropdown-item border-radius-md"
+											>
+												<div class="d-flex">
+													<div>
+														<span
+															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
+															{{ $t("nav.workshop_calls") }}
+														</span>
+														<span class="text-sm text-dark text-wrap">
+															{{ $t("nav.workshop_calls_message") }}
+														</span>
+													</div>
+												</div>
+											</RouterLink>
+										</li>
+
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })" 
 												class="dropdown-item border-radius-md"
@@ -166,7 +184,6 @@
 												</div>
 											</RouterLink>
 										</li>
-										
 									</ul>
 								</li>
 								<li class="nav-item dropdown dropdown-hover mx-2">
@@ -196,6 +213,23 @@
 											</RouterLink>
 										</li>
 										<li>
+											<RouterLink :to="Tr.i18nRoute({ name: 'accepted-tutorials' })" 
+												class="dropdown-item border-radius-md"
+											>
+												<div class="d-flex">
+													<div>
+														<span
+															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
+															{{ $t("nav.tutorial") }}
+														</span>
+														<span class="text-sm text-dark text-wrap">
+															{{ $t("nav.tutorial_message") }}
+														</span>
+													</div>
+												</div>
+											</RouterLink>
+										</li>
+										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'registration' })" 
 												class="dropdown-item border-radius-md"
 											>											
@@ -212,6 +246,7 @@
 												</div>
 											</RouterLink>
 										</li>
+
 										<!--
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'accessibility-FAQ' })" 

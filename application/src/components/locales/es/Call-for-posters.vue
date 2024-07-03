@@ -38,14 +38,14 @@ export default {
         español (título y resumen en inglés).
     </p>
 
-    <h3 id="cpt-dates">Fechas importantes</h3>
+    <h2 id="cpt-dates">Fechas importantes</h2>
     <ul>
         <li>Fecha límite de recepción: Jueves 8 de agosto </li>
         <li>Notificación de aceptación: Viernes 6 de septiembre</li>
         <li>Versión final: Viernes 13 de septiembre</li>
     </ul>
 
-    <h3>Detalles de envío</h3>
+    <h2>Detalles de envío</h2>
 
     <P>
         Los autores que deseen enviar un artículo deben:
@@ -77,7 +77,7 @@ export default {
         sean precisas y estén completas.
     </p>
 
-    <h3>Proceso de revisión</h3>
+    <h2>Proceso de revisión</h2>
     <p>
         Los artículos serán revisados de forma anónima por miembros pares que formen parte del comité del programa
         MexIHC 2024. Las presentaciones serán evaluadas en función de su originalidad, importancia de la contribución al
@@ -87,12 +87,12 @@ export default {
         Los coordinadores de la sesión de posters enviarán las instrucciones de exhibición a los autores de los trabajos aceptados.
     </p>
 
-    <h3>Asistencia</h3>
+    <h2>Asistencia</h2>
     <p>
         Al menos un autor de cada trabajo aceptado deberá registrarse al congreso y presentar el poster.
     </p>
 
-    <h3 class="my-4">Coordinadores de la Sesión de Pósteres</h3>
+    <h2 class="my-4">Coordinadores de la Sesión de Pósteres</h2>
     <div class="row">
         <div class="col-md-4">
             <OrganizerItem>

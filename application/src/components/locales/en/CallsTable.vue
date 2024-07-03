@@ -17,7 +17,7 @@
                     Call for papers (CFP)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> June 14th, 2024 <strong>(Open)</strong><br>
+            <strong class="text-primary text-gradient">Deadline for submission:</strong> <del>June 14th</del> July 1st, 2024 (extendida) <strong>(Closed)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -37,7 +37,7 @@
                     Call for workshops and tutorial (CWT)
                 </RouterLink>
                 </div>
-                <strong class="text-primary text-gradient">Deadline for proposals:</strong> <del>May 17th</del> June 7th, 2024 (extended) <strong>(Open)</strong><br>
+                <strong class="text-primary text-gradient">Deadline for proposals:</strong> <del>May 17th</del> June 7th, 2024 (extended) <strong>(Closed)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -60,5 +60,15 @@
             <strong class="text-primary text-gradient">Deadline for submission:</strong> August 8th, 2024 12:00 pm (noon) <strong>(Open)</strong><br>
         </div>
         </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">
+                <RouterLink :to="Tr.i18nRoute({ name: 'calls-for-accepted-workshops' })" class="uline">
+                    {{ $t("nav.workshop_calls") }}
+                </RouterLink>                
+            </div>
+            <strong class="text-primary text-gradient">See the webpages of each workshop for dates and details.</strong><br>
+        </div>
+        </li>        
     </ol>    
 </template>

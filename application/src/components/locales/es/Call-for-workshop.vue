@@ -20,7 +20,7 @@ export default {
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
                 <strong class="text-primary text-gradient">Fecha límite para propuestas de talleres y
-                    tutoriales:</strong> <del>17 de mayo</del> 7 de junio de 2024 (extendida) <strong> ({{ $t("about.open") }})</strong><br>
+                    tutoriales:</strong> <del>17 de mayo</del> 7 de junio de 2024 (extendida) <strong> ({{ $t("about.closed") }})</strong><br>
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-dates' })"
                     class="uline">
                     Ver todas las fechas importantes
@@ -98,6 +98,20 @@ export default {
         <li><strong>9 de agosto de 2024</strong> – Fecha límite para envíos de talleres y tutoriales</li>
         <li><strong>23 de agosto de 2024</strong> – Notificación de aceptación</li>
         <li><strong>13 de septiembre de 2024</strong> – Entrega final (Camera Ready)</li>
+    </ul>
+    
+    <h2>Accepted Workshops and Tutorials</h2>
+    <ul>
+        <li>
+            <RouterLink :to="Tr.i18nRoute({ name: 'calls-for-accepted-workshops' })" class="uline">
+                {{ $t("nav.workshop_calls") }}
+            </RouterLink>
+        </li>
+        <li>
+            <RouterLink :to="Tr.i18nRoute({ name: 'accepted-tutorials' })" class="uline">
+                {{ $t("nav.tutorial") }}
+            </RouterLink>
+        </li>        
     </ul>
 
     <h2 class="my-4">{{ $t("organizers.workshops_and_tutorials_chairs_title") }}</h2>
