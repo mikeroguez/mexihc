@@ -76,3 +76,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix paga titles
 - Change aihc journal link
 - Change SDC template link
+
+## [2024.0.0.10] - 2024-07-02
+
+### Changed
+
+- Rates and Registration update
+- CFP Closed
+- Table caption CSS updated

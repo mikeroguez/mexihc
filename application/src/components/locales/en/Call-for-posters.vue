@@ -37,14 +37,14 @@ export default {
         poster track can be written either in English or Spanish (title and abstract in English).
     </p>
 
-    <h3 id="cpt-dates">Important Dates</h3>
+    <h2 id="cpt-dates">Important Dates</h2>
     <ul>
         <li>Submission deadline: Thursday, August 8th </li>
         <li>Notification of acceptance: Friday, September 6th</li>
         <li>Camera-ready final submissions: Friday, September 13th</li>
     </ul>
 
-    <h3>Submission Details</h3>
+    <h2>Submission Details</h2>
 
     <P>
         Authors wishing to submit a paper must:
@@ -74,7 +74,7 @@ export default {
         conference or journal, nor has it been published elsewhere. Please submit accurate and complete references.
     </p>
 
-    <h3>Review Process</h3>
+    <h2>Review Process</h2>
     <p>
         Papers will be anonymously peer-reviewed by the members of the MexIHC 2024 program committee. Submissions will
         be evaluated based on their originality, significance of the contribution to the field, technical correctness,
@@ -84,12 +84,12 @@ export default {
         The Poster chairs will send poster exhibition instructions to the authors of the accepted papers.
     </p>
 
-    <h3>Attendance</h3>
+    <h2>Attendance</h2>
     <p>
         At least one author of each accepted submission must register for the conference and present the poster.
     </p>
 
-    <h3 class="my-4">Poster Chairs</h3>
+    <h2 class="my-4">Poster Chairs</h2>
     <div class="row">
         <div class="col-md-4">
             <OrganizerItem>

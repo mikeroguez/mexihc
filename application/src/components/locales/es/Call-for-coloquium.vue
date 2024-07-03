@@ -36,7 +36,7 @@ export default {
         Computadora (MexIHC 2024).
     </p>
 
-    <h3>Objetivo</h3>
+    <h2>Objetivo</h2>
     <p>
         El Coloquio de Graduados MexIHC ofrece a los estudiantes de posgrado una
         plataforma única para presentar su investigación a la comunidad académica de
@@ -45,7 +45,7 @@ export default {
         internacionales en HCI, tanto de la industria como de la academia.
     </p>
 
-    <h3>Participación en el Consorcio de Graduados MexIHC</h3>
+    <h2>Participación en el Consorcio de Graduados MexIHC</h2>
 
     <p>
         Si estás interesado en unirte al consorcio de graduados, deberás completar un
@@ -61,7 +61,7 @@ export default {
             HCI.</li>
     </ul>
 
-    <h3>Preparación de los materiales de presentación para el consorcio de graduados</h3>
+    <h2>Preparación de los materiales de presentación para el consorcio de graduados</h2>
 
     <p>
         La propuesta de investigación debe estar escrita en inglés o español, utilizando la <a
@@ -85,7 +85,7 @@ export default {
         </RouterLink>
     </p>
 
-    <h3>Requisitos del artículo</h3>
+    <h2>Requisitos del artículo</h2>
     <p>
         Los solicitantes deben enviar a través del formulario en línea un artículo de 4 páginas
         explicando su investigación.
@@ -134,7 +134,7 @@ export default {
         </li>
     </ol>
 
-    <h3>Directrices de envío</h3>
+    <h2>Directrices de envío</h2>
     <p>
         Los estudiantes son responsables de asegurarse de que sus envíos cumplan con el
         formato estándar y sean imprimibles en una impresora estándar. Los miembros del
@@ -147,7 +147,7 @@ export default {
         propuestas.
     </p>
 
-    <h3>Criterios de selección</h3>
+    <h2>Criterios de selección</h2>
     <p>
         Esta convocatoria da la bienvenida a las presentaciones de todos los estudiantes de
         posgrado. Los envíos serán evaluados en función de un resumen de investigación de
@@ -155,7 +155,7 @@ export default {
         calidad del artículo presentado.
     </p>
 
-    <h3 id="cgc-dates">Fechas importantes</h3>
+    <h2 id="cgc-dates">Fechas importantes</h2>
     <ul>
         <li>Fecha límite de envío (12pm (medio día) UTC-6): 8 de agosto de 2024</li>
         <li>Notificación de aceptación: 6 de septiembre de 2024</li>
@@ -164,7 +164,7 @@ export default {
     </ul>
 
 
-    <h3 class="my-4">{{ $t("organizers.graduate_colloquium_chairs_title") }}</h3>
+    <h2 class="my-4">{{ $t("organizers.graduate_colloquium_chairs_title") }}</h2>
     <div class="row">
         <div class="col-md-4">
             <OrganizerItem>
