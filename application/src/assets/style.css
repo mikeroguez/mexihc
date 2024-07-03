@@ -82,3 +82,7 @@ input:checked+.cookie-comply-slider{
 .cookie-comply{
     position: fixed !important;
 }
+
+caption {
+color: #53526C !important;
+}

@@ -20,7 +20,7 @@ export default {
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
                 <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>14 de junio</del> 1 de julio de 2024 (extendida)
-                <strong>(Abierta)</strong><br>
+                <strong>(Cerrada)</strong><br>
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-dates' })" class="uline">
                     Ver todas las fechas importantes
                 </RouterLink>

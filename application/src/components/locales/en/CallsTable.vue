@@ -17,7 +17,7 @@
                     Call for papers (CFP)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> <del>June 14th</del> July 1st, 2024 (extendida) <strong>(Open)</strong><br>
+            <strong class="text-primary text-gradient">Deadline for submission:</strong> <del>June 14th</del> July 1st, 2024 (extendida) <strong>(Closed)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">

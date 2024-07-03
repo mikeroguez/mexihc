@@ -25,7 +25,7 @@ export default {
         </li>
     </ol>
 
-    <h3>Objetivos</h3>
+    <h2>Objetivos</h2>
     <ul>
         <li>Proveer una oportunidad a los estudiantes de diferentes campos de Interacción
             humano computadora (Ciencias de la computación, interacción y diseño visual,
@@ -44,7 +44,7 @@ export default {
         </li>
     </ul>
 
-    <h3>Desafío de diseño: Apoyo para poblaciones vulnerables</h3>
+    <h2>Desafío de diseño: Apoyo para poblaciones vulnerables</h2>
     <p>
         Según la Organización Mundial de la Salud, aproximadamente el 15% de la población
         mundial tiene alguna forma de discapacidad o forma parte de una población vulnerable. Las
@@ -97,13 +97,13 @@ export default {
         <li>¿Exploró el equipo todo el entorno de las partes interesadas, condiciones y contextos?</li>
         <li>¿La solución de diseño estuvo bien elaborada y presentada de manera efectiva?</li>
     </ul>
-    <h3 id="sdc-dates">Fechas importantes</h3>
+    <h2 id="sdc-dates">Fechas importantes</h2>
     <ul>
         <li>Fecha límite de recepción de trabajos: 16 de agosto de 2024.</li>
         <li>Fecha límite de camera ready: 13 de septiembre de 2024.</li>
     </ul>
 
-    <h3>Características de los equipos</h3>
+    <h2>Características de los equipos</h2>
     <ul>
         <li>Un grupo de cuatro estudiantes y un supervisor (máximo 5 participantes).</li>
         <li>Cada equipo deberá tener al menos un estudiante y un supervisor.</li>
@@ -117,7 +117,7 @@ export default {
         equipo sea multidisciplinario.
     </p>
 
-    <h3>Detalles de envío</h3>
+    <h2>Detalles de envío</h2>
     <p>
         Cada equipo deberá enviar una presentación de un máximo de <strong>15 diapositivas</strong> y un reporte
         escrito de hasta <strong>cuatro páginas</strong> con el siguiente formato <a class="uline"
@@ -152,7 +152,7 @@ export default {
 
     <p>Favor de mandar las propuestas a <strong>sdc.2024@mexihc.org</strong></p>
 
-    <h3>Proceso de selección</h3>
+    <h2>Proceso de selección</h2>
     <p>Las propuestas se evaluarán tomando en cuenta los siguientes puntos:</p>
     <ul>
         <li>Calidad del trabajo.</li>
@@ -181,7 +181,7 @@ export default {
 
     <p><strong>Propuestas enviadas fuera de las fechas señalas no serán consideradas.</strong>.</p>
 
-    <h3>En la conferencia</h3>
+    <h2>En la conferencia</h2>
     <p>
         Los mejores cinco proyectos serán invitados como una presentación oral corta en la
         conferencia.
@@ -193,13 +193,13 @@ export default {
         ganadores.
     </p>
 
-    <h3>Publicación</h3>
+    <h2>Publicación</h2>
     <p>
         Todos los trabajos aceptados serán publicados en <a class="uline"
             href="https://revistaaihc.mx/">AMexIHC publication journal</a>.
     </p>
 
-    <h3 class="my-4">{{ $t("organizers.student_design_competition_title") }}</h3>
+    <h2 class="my-4">{{ $t("organizers.student_design_competition_title") }}</h2>
     <div class="row">
         <div class="col-md-4">
             <OrganizerItem>
