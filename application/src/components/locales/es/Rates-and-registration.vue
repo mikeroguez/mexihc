@@ -97,9 +97,9 @@
 	<p>Para registrarse en el evento, por favor siga los siguientes pasos:</p>
 
 	<ol>
-		<li>Complete el formulario con su información utilizando el sistema de registro.</li>
+		<li>Complete el formulario con su información utilizando el <a class="uline" href="https://conferencias.app/">sistema de registro</a>.</li>
 		<li>Realice el pago (preferentemente transferencia bancaria o depósito) utilizando los datos bancarios proporcionados y el Código de Registro proporcionado por el sistema de registro.</li>
-		<li>Envíe una copia de la factura de pago a registration.2022@mexihc.org (especialmente para depósitos en el banco).</li>
+		<li>Envíe una copia de la factura de pago a registration.2024@mexihc.org (especialmente para depósitos en el banco).</li>
 		<li>Además, si necesita una factura fiscal, puede solicitarla a través del sistema y se le enviará por correo electrónico.</li>
 		<li>Los pagos realizados desde fuera de México pueden usar PayPal para completar el registro. Las instrucciones aparecerán en la página de confirmación.</li>
 	</ol>
@@ -113,14 +113,14 @@
 		Cuenta: 88823590201 <br>
 		Concepto: {Registration code}
 	</p>
-	<!--
+
     <section class="py-5 container" id="download-soft-ui">
         <div class="bg-gradient-dark position-relative border-radius-xl overflow-hidden">
             <img src="/assets/img/shapes/cactus.svg" alt="" class="position-absolute start-0 top-md-0 w-100 opacity-6">
             <div class="container py-7 postion-relative z-index-2 position-relative">
                 <div class="row">
                     <div class="col-md-7 mx-auto text-center">                        
-                        <a href="https://true-werewolf-eternal.ngrok-free.app/" class="btn btn-lg  bg-gradient-yellow  btn-round">
+                        <a href="https://conferencias.app/" class="btn btn-lg  bg-gradient-yellow  btn-round">
                           {{ $t("register.register_button") }}
                         </a>
                     </div>
@@ -128,5 +128,5 @@
             </div>
         </div>
     </section>
-	-->
+
 </template>
