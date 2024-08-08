@@ -19,8 +19,8 @@ export default {
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Deadline for submission:</strong> August 8th, 2024 (12pm
-                (noon) UTC-6) <strong>({{ $t("about.open") }})</strong><br>
+                <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>8th</del> 15th, 2024 (12pm
+                (noon) UTC-6) (extended)<strong>({{ $t("about.open") }})</strong><br>
                 <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' })" class="uline">
                     See all important dates
                 </RouterLink>
@@ -148,7 +148,7 @@ export default {
 
     <h2 id="cgc-dates">Important dates</h2>
     <ul>
-        <li>Submission deadline (12pm (noon) UTC-6): August 8th, 2024</li>
+        <li>Submission deadline (12pm (noon) UTC-6): August <del>8th</del> 15th, 2024 (extended)</li>
         <li>Notification of acceptance: September 6th, 2024</li>
         <li>Camera-ready submission: September 13th, 2024</li>
         <li>Consortium: TBD</li>

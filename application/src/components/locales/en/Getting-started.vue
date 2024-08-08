@@ -76,7 +76,25 @@ export default {
 
 		<h3 class="h4">Payment Instructions:</h3>
 
-		<p class="fst-italic fw-light">Pending information...</p>
+		<p>To register to the event, please follow the next steps:</p>
+
+		<ol>
+			<li>Filling out the form with your information using the <a class="uline" href="https://conferencias.app/">registration system</a></li>
+			<li>Make the payment (bank transfer preferably or deposit below) using the bank details provided and the Registration Code provided by the registration system.</li>
+			<li>Send a copy of payment invoice to registration.2024@mexihc.org (especially deposits at the bank)</li>
+			<li>Also, if you need a fiscal invoice (factura), you can request it through the system and it will be emailed to you.</li>
+			<li>Payments made from outside Mexico can use PayPal to complete the registration. Instructions will appear in the confirmation page.</li>
+		</ol>
+
+		<p>From payments from Mexican bank accounts, please use:</p>
+
+		<p class="text-bold">
+			Nombre: ASOCIACION MEXICANA DE INTERACCION HUMANO COMPUTADORA AC <br>
+			Banco: BANCO DEL BAJIO <br>
+			Clabe interbancaria: 030767900000120128 <br>
+			Cuenta: 88823590201 <br>
+			Concepto: {Registration code}
+		</p>
 	</div>
 
 	<!--
