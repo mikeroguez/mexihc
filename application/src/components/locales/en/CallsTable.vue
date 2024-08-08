@@ -27,7 +27,7 @@
                     Call for poster track (CPT)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> August 8th, 2024 <strong>(Open)</strong><br>
+            <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>8th</del> 30th, 2024 (extended) <strong>(Open)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -57,7 +57,7 @@
                     Graduate Colloquium (GC)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> August 8th, 2024 12:00 pm (noon) <strong>(Open)</strong><br>
+            <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>8th</del> 15th, 2024 (extended) 12:00 pm (noon) <strong>(Open)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
