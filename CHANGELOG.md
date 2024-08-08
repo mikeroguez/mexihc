@@ -84,3 +84,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Rates and Registration update
 - CFP Closed
 - Table caption CSS updated
+
+## [2024.0.0.11] - 2024-07-03
+
+### Added
+
+- Call to action and links to registration form
+- Adds Payment information on Getting Started section
+
+### Changed
+
+- CFP & CFWT closed on Navigation
+
+## [2024.0.0.12] - 2024-07-03
+
+### Changed
+
+- Typo in about section
+- Change in the registration email
+
+## [2024.0.0.13] - 2024-08-07
+
+### Changed
+
+- CFP & CGQ extension on deadline

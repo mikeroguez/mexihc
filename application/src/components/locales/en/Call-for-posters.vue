@@ -19,7 +19,7 @@ export default {
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Deadline for submission:</strong> August 8th, 2024
+                <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>8th</del> 30th, 2024 (extended)
                 <strong>({{ $t("about.open") }})</strong><br>
                 <RouterLink :class="uline" :to="Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-dates' })" class="uline">
                     See all important dates
@@ -39,7 +39,7 @@ export default {
 
     <h2 id="cpt-dates">Important Dates</h2>
     <ul>
-        <li>Submission deadline: Thursday, August 8th </li>
+        <li>Submission deadline: Wednesday, August <del>8th</del> 30th (extended) </li>
         <li>Notification of acceptance: Friday, September 6th</li>
         <li>Camera-ready final submissions: Friday, September 13th</li>
     </ul>

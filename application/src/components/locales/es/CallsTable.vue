@@ -27,7 +27,7 @@
                     Convocatoria de pósteres (CPT)
                 </RouterLink>                
             </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> 8 de agosto de 2024 <strong>(Abierta)</strong><br>
+            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>8</del> 30 de agosto de 2024 (extendida)<strong>(Abierta)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -57,7 +57,7 @@
                     Coloquio de graduados (GC)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> 8 de agosto de 2024, 12:00 pm (medio día) <strong>(Abierta)</strong><br>
+            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>8</del> 15 de agosto de 2024 (extended), 12:00 pm (medio día) <strong>(Abierta)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">

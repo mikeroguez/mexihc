@@ -69,8 +69,8 @@
 															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
 															{{ $t("nav.cfp") }}
 														</span>
-														<span class="text-sm text-dark text-wrap">
-															{{ $t("nav.cfp_message") }}
+														<span class="text-sm font-italic text-dark text-wrap">
+															{{ $t("about.closed") }}
 														</span>
 													</div>
 												</div>
@@ -105,8 +105,8 @@
 															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
 															{{ $t("nav.cwt") }}
 														</span>
-														<span class="text-sm text-dark text-wrap">
-															{{ $t("nav.cwt_message") }}
+														<span class="text-sm font-italic text-dark text-wrap">
+															{{ $t("about.closed") }}
 														</span>
 													</div>
 												</div>
