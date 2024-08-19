@@ -19,7 +19,7 @@ export default {
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Deadline for submission:</strong> August 16th, 2024 <strong>
+                <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>16th</del> 30th, 2024 (Extended)<strong>
                     ({{ $t("about.open") }})</strong><br>
             </div>
         </li>
@@ -109,7 +109,7 @@ export default {
     </ul>
     <h2 id="sdc-dates">Important Dates</h2>
     <ul>
-        <li>Deadline for submission of works: August 16th, 2024.</li>
+        <li>Deadline for submission of works: August <del>16th</del> 30th, 2024. (Extended)</li>
         <li>Deadline for camera ready: September 13th, 2024.</li>
     </ul>
 
