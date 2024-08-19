@@ -47,7 +47,7 @@
                     Student design competition (SDC)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> August 16th, 2024 <strong>(Open)</strong><br>
+            <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>16th</del> 30th, 2024 (Extended) <strong>(Open)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
