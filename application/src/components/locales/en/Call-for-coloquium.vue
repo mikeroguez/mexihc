@@ -193,7 +193,7 @@ export default {
                     Raymundo Cornejo
                 </template>
                 <template #institution>
-                    Universidad Autónoma de Chihuahua, UK
+                    Universidad Autónoma de Chihuahua, MX
                 </template>
                 <template #email>
                     gc.2024@mexihc.org
