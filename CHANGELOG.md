@@ -114,3 +114,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - SDC extension on deadline
+
+## [2024.0.0.15] - 2024-08-19
+
+### Changed
+
+- Update text on Call for Colloquium page
