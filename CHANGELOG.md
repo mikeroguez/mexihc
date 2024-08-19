@@ -108,3 +108,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - CFP & CGQ extension on deadline
+
+## [2024.0.0.14] - 2024-08-19
+
+### Changed
+
+- SDC extension on deadline
