@@ -19,7 +19,7 @@ export default {
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Fecha límite de envío:</strong> 16 de agosto de 2024 <strong>
+                <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>16</del> 30 de agosto de 2024 (Extendida)<strong>
                     ({{ $t("about.open") }})</strong><br>
             </div>
         </li>
@@ -99,7 +99,7 @@ export default {
     </ul>
     <h2 id="sdc-dates">Fechas importantes</h2>
     <ul>
-        <li>Fecha límite de recepción de trabajos: 16 de agosto de 2024.</li>
+        <li>Fecha límite de recepción de trabajos: <del>16</del> 30 de agosto de 2024. (Extendida)</li>
         <li>Fecha límite de camera ready: 13 de septiembre de 2024.</li>
     </ul>
 
