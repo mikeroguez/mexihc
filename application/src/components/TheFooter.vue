@@ -260,7 +260,7 @@ export default {
                             {{ $t("nav.copyright") }}
                         </p>
                         <p class="my-0  text-sm">
-                            <a class="uline" href="CHANGELOG.md">v2024.0.0.14</a>
+                            <a class="uline" href="CHANGELOG.md">v2024.0.0.15</a>
                         </p>
                     </div>
                 </div>

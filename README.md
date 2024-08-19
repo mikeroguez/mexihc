@@ -1,4 +1,4 @@
-# MexIHC Versión 2024.0.0.14
+# MexIHC Versión 2024.0.0.15
 
 ## Sitio web para el MexIHC 2024
 
