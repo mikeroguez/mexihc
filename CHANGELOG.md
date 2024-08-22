@@ -120,3 +120,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Update text on Call for Colloquium page
+
+## [2024.0.0.16] - 2024-08-22
+
+### Changed
+
+- Update text Accepted Tutorials
