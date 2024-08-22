@@ -54,4 +54,5 @@
         prácticos y ejemplos del mundo real, los asistentes adquirirán experiencia en el uso de ChatGPT para simular
         datos, crear visualizaciones, depurar código e interpretar resultados.
     </p>
+    <p><a href="https://sites.google.com/view/mexihc-programando-en-r-usando">Sitio web del taller</a></p>
 </template>

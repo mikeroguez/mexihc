@@ -53,4 +53,5 @@ export default {
         errors, and optimize data analysis tasks. Through practical exercises and real-world examples, attendees will
         gain experience in using ChatGPT to simulate data, create visualizations, debug code, and interpret results.
     </p>
+    <p><a href="https://sites.google.com/view/mexihc-programando-en-r-usando">Workshop website</a></p>
 </template>
