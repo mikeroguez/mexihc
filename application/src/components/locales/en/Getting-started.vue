@@ -10,8 +10,10 @@ export default {
 
 <template>
 	<p>
-		Welcome to MexIHC 2024, the Tenth Mexican International Conference on Human-Computer Interaction, organized by the 
-		<a class="uline" href="https://www.amexihc.org/">Mexican Association of Human-Computer Interaction (AMexIHC)</a>. On this "First Steps" page, you will find all
+		Welcome to MexIHC 2024, the Tenth Mexican International Conference on Human-Computer Interaction, organized by
+		the
+		<a class="uline" href="https://www.amexihc.org/">Mexican Association of Human-Computer Interaction
+			(AMexIHC)</a>. On this "First Steps" page, you will find all
 		the necessary information for your participation in the conference.
 	</p>
 
@@ -27,19 +29,21 @@ export default {
 				Get information on how to register and pay, ensuring your attendance at MexIHC 2024.
 			</div>
 		</li>
-		<!--
 		<li class="list-group-item d-flex justify-content-between align-items-start">
 			<div class="ms-2 me-auto">
 				<div class="fw-bold">
-					<RouterLink :to="Tr.i18nRoute({ name: 'getting-started', hash: '#accommodation' })"
-						class="uline">
-						Accommodation:
+					<RouterLink :to="Tr.i18nRoute({ name: 'getting-started', hash: '#host-hotel' })" class="uline">
+						Host Hotel: Quinta Dorada Hotel & Suites
 					</RouterLink>
 				</div>
-				Discover lodging options in Puebla, Mexico, to make your stay at the conference comfortable and enjoyable.
-				We will provide information on nearby hotels and recommendations.
+				This quiet hotel is located in the northern part of the city, just a few kilometers from key attractions
+				and Plan de Guadalupe International Airport. It offers modern rooms with free Wi-Fi, flat-screen TVs,
+				and desks; some with balconies. Suites feature a sitting area, kitchenette, and minibar. Amenities
+				include a buffet breakfast, free transport, and an outdoor pool. The hotel also has a French bistro,
+				garden, and 24-hour business center.
 			</div>
 		</li>
+		<!--
 		<li class="list-group-item d-flex justify-content-between align-items-start">
 			<div class="ms-2 me-auto">
 				<div class="fw-bold">
@@ -79,11 +83,15 @@ export default {
 		<p>To register to the event, please follow the next steps:</p>
 
 		<ol>
-			<li>Filling out the form with your information using the <a class="uline" href="https://conferencias.app/">registration system</a></li>
-			<li>Make the payment (bank transfer preferably or deposit below) using the bank details provided and the Registration Code provided by the registration system.</li>
+			<li>Filling out the form with your information using the <a class="uline"
+					href="https://conferencias.app/">registration system</a></li>
+			<li>Make the payment (bank transfer preferably or deposit below) using the bank details provided and the
+				Registration Code provided by the registration system.</li>
 			<li>Send a copy of payment invoice to registration.2024@mexihc.org (especially deposits at the bank)</li>
-			<li>Also, if you need a fiscal invoice (factura), you can request it through the system and it will be emailed to you.</li>
-			<li>Payments made from outside Mexico can use PayPal to complete the registration. Instructions will appear in the confirmation page.</li>
+			<li>Also, if you need a fiscal invoice (factura), you can request it through the system and it will be
+				emailed to you.</li>
+			<li>Payments made from outside Mexico can use PayPal to complete the registration. Instructions will appear
+				in the confirmation page.</li>
 		</ol>
 
 		<p>From payments from Mexican bank accounts, please use:</p>
@@ -97,12 +105,35 @@ export default {
 		</p>
 	</div>
 
-	<!--
-<h2 id="accommodation" class="mt-5 h3">Accommodation:</h2>
-<p>
-	Pending
-</p>
 
+	<h2 id="host-hotel" class="mt-5 h3">Hotel sede: Quinta Dorada Hotel & Suites</h2>
+	<p>Book at <strong><a href="https://www.quintadorada.com.mx/">Quinta Dorada Hotels & Suites</a></strong> by mentioning the event <em>"MexIHC 2024: Tenth Mexican International
+		Conference on Human-Computer Interaction"</em> and enjoy the following exclusive benefits:</p>
+	<ul>
+		<li><strong>Special rate</strong> from November 5th to 9th</li>
+		<li>American-style buffet <strong>breakfast included</strong></li>
+		<li>Excellent location, close to major shopping centers</li>
+		<li>
+			Special Rates:
+			<ul>
+				<li><strong>Room for 1 or 2 persons: $1,843.31 MXN</strong> per day (taxes included: 16% VAT and 3% ISH)</li>
+				<li><strong>Room for 3 or 4 persons: $2,200.31 MXN</strong> per day (taxes included: 16% VAT and 3% ISH)</li>
+			</ul>
+		</li>
+	</ul>
+	<p><strong>To receive the special rate, mention the event when booking through the following channels:</strong></p>
+	<ul>
+		<li><strong>Email:</strong> gerenciareservaciones@quintadorada.com.mx</li>
+		<li><strong>Phone:</strong> +52 (844) 450 50 50</li>
+	</ul>
+
+	<strong>Address:</strong>
+	<p>
+		Periférico Luis Echeverría #1416<br>
+		Col. Guanajuato Oriente<br>
+		Saltillo, Coahuila, Mexico
+	</p>
+	<!--
 <h2 id="how-to-get-there" class="mt-5 h3">How to Get There:</h2>
 <p>
 	Pending

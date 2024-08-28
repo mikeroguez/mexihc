@@ -67,45 +67,31 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/logos/sistemas.png" alt="" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                    style="background-image: url(&quot;./assets/img/logos/sistemas.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
-                                <a class="uline" href="https://en.skye.group/">Skye Group</a>
+                                <a class="uline" href="http://www.uadec.mx/sistemas/">Facultad de Sistemas</a>
                             </template>
                         </SponsorItem> 
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/logos/cima.png" alt="" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                    style="background-image: url(&quot;./assets/img/logos/cima.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
-                                <a class="uline" href="https://www.sperientia.com/">Sperientia [studio+lab] <sup>&#174;</sup></a>
+                                <a class="uline" href="http://www.uadec.mx/cima/">Centro de Investigación en matemáticas Aplicadas (CIMA)</a>
                             </template>
-                        </SponsorItem>
-
-                        <SponsorItem>
-                            <template #image>
-                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
-                            </template>
-                            <template #image-shadow>
-                                <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                </div>
-                            </template>                                
-                            <template #name>
-                                <a class="uline" href="https://the-cocktail.com/">The Cocktail</a>
-                            </template>
-                        </SponsorItem>                        
+                        </SponsorItem>                     
 
                     </div>
                 </div>
