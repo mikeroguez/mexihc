@@ -59,8 +59,8 @@ export default {
               <li class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#roberto-martinez'})" class="uline">
-                      Dr. Roberto Martinez-Maldonado
+                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#saiph-savage'})" class="uline">
+                      Saiph Savage
                     </RouterLink>
                   </div>
                 </div>
@@ -69,28 +69,8 @@ export default {
               <li class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#marisol-wong'})" class="uline">
-                      Dr. Marisol Wong-Villacres
-                    </RouterLink>
-                  </div>
-                </div>
-              </li>
-
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#claudia-lopez'})" class="uline">
-                      Dr. Claudia López Moncada
-                    </RouterLink>
-                  </div>
-                </div>
-              </li>
-
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#philippe-palanque'})" class="uline">
-                      Dr. Philippe Palanque 
+                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#jesus-favela'})" class="uline">
+                      Jesús Favela
                     </RouterLink>
                   </div>
                 </div>
