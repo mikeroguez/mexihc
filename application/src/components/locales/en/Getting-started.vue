@@ -43,19 +43,18 @@ export default {
 				garden, and 24-hour business center.
 			</div>
 		</li>
-		<!--
 		<li class="list-group-item d-flex justify-content-between align-items-start">
 			<div class="ms-2 me-auto">
 				<div class="fw-bold">
-					<RouterLink :to="Tr.i18nRoute({ name: 'getting-started', hash: '#how-to-get-there' })"
-						class="uline">
-						How to Get There:
+					<RouterLink :to="Tr.i18nRoute({ name: 'getting-started', hash: '#infoteca' })" class="uline">
+						Conference Venue: Central Infoteca
 					</RouterLink>
 				</div>
-				Get clear directions and details on how to reach the conference venues, both at BUAP (Benemérita Universidad
-				Autónoma de Puebla) and Tec de Monterrey, Campus Puebla.
+				Find the exact location of the Infoteca on the Arteaga campus of the Universidad Autónoma de Coahuila
+				(UAdeC), the venue for the MexIHC 2024 conference.
 			</div>
 		</li>
+		<!--
 		<li class="list-group-item d-flex justify-content-between align-items-start">
 			<div class="ms-2 me-auto">
 				<div class="fw-bold">
@@ -107,8 +106,10 @@ export default {
 
 
 	<h2 id="host-hotel" class="mt-5 h3">Hotel sede: Quinta Dorada Hotel & Suites</h2>
-	<p>Book at <strong><a href="https://www.quintadorada.com.mx/">Quinta Dorada Hotels & Suites</a></strong> by mentioning the event <em>"MexIHC 2024: Tenth Mexican International
-		Conference on Human-Computer Interaction"</em> and enjoy the following exclusive benefits:</p>
+	<img src="/assets/img/quintaDorada.png" width="100%">
+	<p>Book at <strong><a href="https://www.quintadorada.com.mx/">Quinta Dorada Hotels & Suites</a></strong> by
+		mentioning the event <em>"MexIHC 2024: Tenth Mexican International
+			Conference on Human-Computer Interaction"</em> and enjoy the following exclusive benefits:</p>
 	<ul>
 		<li><strong>Special rate</strong> from November 5th to 9th</li>
 		<li>American-style buffet <strong>breakfast included</strong></li>
@@ -116,8 +117,10 @@ export default {
 		<li>
 			Special Rates:
 			<ul>
-				<li><strong>Room for 1 or 2 persons: $1,843.31 MXN</strong> per day (taxes included: 16% VAT and 3% ISH)</li>
-				<li><strong>Room for 3 or 4 persons: $2,200.31 MXN</strong> per day (taxes included: 16% VAT and 3% ISH)</li>
+				<li><strong>Room for 1 or 2 persons: $1,843.31 MXN</strong> per day (taxes included: 16% VAT and 3% ISH)
+				</li>
+				<li><strong>Room for 3 or 4 persons: $2,200.31 MXN</strong> per day (taxes included: 16% VAT and 3% ISH)
+				</li>
 			</ul>
 		</li>
 	</ul>
@@ -131,14 +134,39 @@ export default {
 	<p>
 		Periférico Luis Echeverría #1416<br>
 		Col. Guanajuato Oriente<br>
-		Saltillo, Coahuila, Mexico
+		Saltillo, Coahuila, Mexico<br>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.918905681929!2d-100.97917472384009!3d25.440974577554943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86880d5015192a87%3A0x59511576653affdd!2sQuinta%20Dorada%20Hotel%20%26%20Suites!5e0!3m2!1ses!2smx!4v1725029865543!5m2!1ses!2smx"
+			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade">
+		</iframe>
 	</p>
-	<!--
-<h2 id="how-to-get-there" class="mt-5 h3">How to Get There:</h2>
-<p>
-	Pending
-</p>
 
+	<h2 id="infoteca" class="mt-5 h3">Conference Venue: Central Infoteca</h2>
+	<p>
+		The MexIHC 2024 conference will be held at the <strong>Infoteca of the Universidad Autónoma de Coahuila (UAdeC)</strong>, located
+		on the Arteaga campus.
+	</p>
+	<p>
+		<strong>Address:</strong>
+		Boulevard Fundadores Km 13,<br>
+		Ciudad Universitaria,<br>
+		23354 Arteaga, Coahuila, Mexico.
+	</p>
+	<p>
+		<strong>Location on campus:</strong>
+		The Infoteca is located in the heart of the UAdeC's Ciudad Universitaria, easily accessible from the campus's
+		main entrance. This strategic location provides convenient access to all the facilities needed for the
+		conference.
+	</p>
+	<p>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14410.770497964844!2d-100.8711317!3d25.4485379!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86880e2435a2ff73%3A0xdf82eb57c2cecf26!2sInfoteca%20Central!5e0!3m2!1ses!2smx!4v1725029727854!5m2!1ses!2smx"
+			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade">
+		</iframe>
+	</p>	
+	<!--
 <h2 id="frequently-asked-questions" class="mt-5 h3">Frequently Asked Questions:</h2>
 <p>
 	Pending
