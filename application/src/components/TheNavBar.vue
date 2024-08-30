@@ -70,7 +70,7 @@
 															{{ $t("nav.cfp") }}
 														</span>
 														<span class="text-sm font-italic text-dark text-wrap">
-															{{ $t("about.closed") }}
+															{{ $t("nav.cfp_message") }}
 														</span>
 													</div>
 												</div>

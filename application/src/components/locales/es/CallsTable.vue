@@ -17,7 +17,7 @@
                     Convocatoria de trabajos (CFP)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>14 de junio</del> 1 de julio de 2024 (extendida) <strong>(Cerrada)</strong><br>
+            <strong class="text-primary text-gradient">Envío final de versión lista para la publicación:</strong> <del>30 de agosto</del> 4 de septiembre de 2024 (extendida)<br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
