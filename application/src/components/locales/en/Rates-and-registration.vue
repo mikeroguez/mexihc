@@ -90,7 +90,38 @@
 	<ul>
 		<li>Access to keynotes, conferences, SDC and posters.</li>
 	</ul>
-	
+
+	<h2 class="">Tutorials</h2>
+
+	<table class="table table-striped">
+		<caption>Cost table for tutorials</caption>
+		<thead>
+			<tr>
+				<th scope="col">Description</th>
+				<th scope="col">Cost</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Registered authors</td>
+				<td><span class="fst-italic fw-light">$450 MXN</span></td>
+			</tr>
+			<tr>
+				<td>Tutorial only</td>
+				<td><span class="fst-italic fw-light">$800 MXN</span></td>
+			</tr>
+			<tr>
+				<td>Undergraduate students</td>
+				<td><span class="fst-italic">$150 MXN</span></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td span="3"><strong>Note:</strong> Limited seats</td>
+			</tr>
+		</tfoot>		
+	</table>
+		
 	<hr>
 	
 	<h2 class="">Bank account information</h2>

@@ -166,10 +166,28 @@ export default {
 			referrerpolicy="no-referrer-when-downgrade">
 		</iframe>
 	</p>	
-	<!--
-<h2 id="frequently-asked-questions" class="mt-5 h3">Frequently Asked Questions:</h2>
-<p>
-	Pending
-</p>
--->
+
+	<h2 id="frequently-asked-questions" class="mt-5 h3">Transportation from Monterrey Airport</h2>
+	<p>If you arrive at thel <strong>Monterrey International Airport</strong>, there are several options to get to Saltillo:</p>
+
+	<ul>
+		<li>
+			<strong>Direct buses to Saltillo:</strong>
+			<p>Within the airport, you can take Grupo Senda buses that go directly to Saltillo. You can buy your tickets at <a href="https://ticket.gruposenda.com/es/" class="uline">Grupo Senda</a>.</p>
+		</li>
+		<li>
+			<strong>Buses to Monterrey Central Bus Station:</strong>
+			<p>There are also buses that take you to the Monterrey Central Bus Station, where you can take another bus to Saltillo.</p>
+		</li>
+		<li>
+			<strong>Taxis with invoicing:</strong><br>
+			<p>Some taxi services at the airport offer the option to provide a fiscal invoice. Be sure to ask if you need a receipt.</p>
+			<img src="/assets/img/taxi.jpg" width="80%">
+		</li>
+	</ul>
+
+	<h2 id="frequently-asked-questions" class="mt-5 h3">Things to Do in Saltillo</h2>	
+	<p>
+		Saltillo is a city rich in history and culture. Make the most of your stay by exploring its many attractions. For more details on what to do in the city, visit the official tourism site of Coahuila: <a href="https://hazturismoencoahuila.mx/saltillo" class="uline">Things to Do in Saltillo</a>.
+	</p>
 </template>

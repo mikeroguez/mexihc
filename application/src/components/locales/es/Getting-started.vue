@@ -167,10 +167,28 @@ export default {
 			referrerpolicy="no-referrer-when-downgrade">
 		</iframe>
 	</p>
-	<!--
-<h2 id="frequently-asked-questions" class="mt-5 h3">Preguntas Frecuentes</h2>
-<p>
-	Pendiente
-</p>
--->
+
+	<h2 id="frequently-asked-questions" class="mt-5 h3">Transporte desde el Aeropuerto de Monterrey</h2>
+	<p>Si llegas al <strong>Aeropuerto Internacional de Monterrey</strong>, tienes varias opciones para llegar a Saltillo:</p>
+
+	<ul>
+		<li>
+			<strong>Autobuses directos a Saltillo:</strong>
+			<p>Dentro del aeropuerto, puedes tomar autobuses de Grupo Senda con corridas directas a Saltillo. Compra tus boletos en <a href="https://ticket.gruposenda.com/es/" class="uline">Grupo Senda</a>.</p>
+		</li>
+		<li>
+			<strong>Autobuses a la Central de Monterrey:</strong>
+			<p>También hay autobuses que te llevarán a la Central de Autobuses de Monterrey, desde donde puedes tomar un autobús hacia Saltillo.</p>
+		</li>
+		<li>
+			<strong>Taxis con facturación:</strong><br>
+			<p>Algunos servicios de taxi en el aeropuerto ofrecen la posibilidad de facturación. Asegúrate de preguntar si necesitas un recibo fiscal.</p>
+			<img src="/assets/img/taxi.jpg" width="80%">
+		</li>
+	</ul>
+
+	<h2 id="frequently-asked-questions" class="mt-5 h3">Qué hacer en Saltillo</h2>	
+	<p>
+		Saltillo es una ciudad llena de historia y cultura. Aprovecha tu estancia para explorar sus diversas atracciones. Para más detalles sobre qué hacer en la ciudad, visita el sitio oficial de turismo de Coahuila: <a href="https://hazturismoencoahuila.mx/saltillo" class="uline">Qué hacer en Saltillo</a>.
+	</p>
 </template>
