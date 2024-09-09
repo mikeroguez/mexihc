@@ -54,19 +54,24 @@ export default {
 				(UAdeC), the venue for the MexIHC 2024 conference.
 			</div>
 		</li>
-		<!--
 		<li class="list-group-item d-flex justify-content-between align-items-start">
 			<div class="ms-2 me-auto">
 				<div class="fw-bold">
-					<RouterLink :to="Tr.i18nRoute({ name: 'getting-started', hash: '#frequently-asked-questions' })"
-						class="uline">
-						Frequently Asked Questions:
+					<RouterLink :to="Tr.i18nRoute({ name: 'getting-started', hash: '#transporte' })" class="uline">
+						Transportation from Monterrey Airport
 					</RouterLink>
 				</div>
-				Find answers to the most common questions you may have about your participation in the conference.
 			</div>
 		</li>
-		-->
+		<li class="list-group-item d-flex justify-content-between align-items-start">
+			<div class="ms-2 me-auto">
+				<div class="fw-bold">
+					<RouterLink :to="Tr.i18nRoute({ name: 'getting-started', hash: '#quehacer' })" class="uline">
+						Things to Do in Saltillo
+					</RouterLink>
+				</div>
+			</div>
+		</li>
 	</ol>
 
 	<h2 id="rates-and-registration" class="mt-5 h3">Registration and Payment:</h2>
@@ -167,7 +172,7 @@ export default {
 		</iframe>
 	</p>	
 
-	<h2 id="frequently-asked-questions" class="mt-5 h3">Transportation from Monterrey Airport</h2>
+	<h2 id="transporte" class="mt-5 h3">Transportation from Monterrey Airport</h2>
 	<p>If you arrive at thel <strong>Monterrey International Airport</strong>, there are several options to get to Saltillo:</p>
 
 	<ul>
@@ -186,7 +191,7 @@ export default {
 		</li>
 	</ul>
 
-	<h2 id="frequently-asked-questions" class="mt-5 h3">Things to Do in Saltillo</h2>	
+	<h2 id="quehacer" class="mt-5 h3">Things to Do in Saltillo</h2>	
 	<p>
 		Saltillo is a city rich in history and culture. Make the most of your stay by exploring its many attractions. For more details on what to do in the city, visit the official tourism site of Coahuila: <a href="https://hazturismoencoahuila.mx/saltillo" class="uline">Things to Do in Saltillo</a>.
 	</p>

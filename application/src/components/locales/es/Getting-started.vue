@@ -53,19 +53,26 @@ export default {
 				Consulta la ubicación exacta de la Infoteca en el campus Arteaga de la Universidad Autónoma de Coahuila (UAdeC), sede de la conferencia MexIHC 2024.
 			</div>
 		</li>
-		<!--
 		<li class="list-group-item d-flex justify-content-between align-items-start">
 			<div class="ms-2 me-auto">
 				<div class="fw-bold">
-					<RouterLink :to="Tr.i18nRoute({ name: 'getting-started', hash: '#frequently-asked-questions' })"
+					<RouterLink :to="Tr.i18nRoute({ name: 'getting-started', hash: '#transporte' })"
 						class="uline">
-						Preguntas Frecuentes:
+						Transporte desde el Aeropuerto de Monterrey
 					</RouterLink>
 				</div>
-				Encuentre respuestas a las preguntas más comunes que pueda tener sobre su participación en la conferencia.
 			</div>
 		</li>
-		-->
+		<li class="list-group-item d-flex justify-content-between align-items-start">
+			<div class="ms-2 me-auto">
+				<div class="fw-bold">
+					<RouterLink :to="Tr.i18nRoute({ name: 'getting-started', hash: '#quehacer' })"
+						class="uline">
+						Qué hacer en Saltillo
+					</RouterLink>
+				</div>
+			</div>
+		</li>
 	</ol>
 
 	<h2 id="rates-and-registration" class="mt-5 h3">Registro y Pago</h2>
@@ -168,7 +175,7 @@ export default {
 		</iframe>
 	</p>
 
-	<h2 id="frequently-asked-questions" class="mt-5 h3">Transporte desde el Aeropuerto de Monterrey</h2>
+	<h2 id="transporte" class="mt-5 h3">Transporte desde el Aeropuerto de Monterrey</h2>
 	<p>Si llegas al <strong>Aeropuerto Internacional de Monterrey</strong>, tienes varias opciones para llegar a Saltillo:</p>
 
 	<ul>
@@ -187,7 +194,7 @@ export default {
 		</li>
 	</ul>
 
-	<h2 id="frequently-asked-questions" class="mt-5 h3">Qué hacer en Saltillo</h2>	
+	<h2 id="quehacer" class="mt-5 h3">Qué hacer en Saltillo</h2>	
 	<p>
 		Saltillo es una ciudad llena de historia y cultura. Aprovecha tu estancia para explorar sus diversas atracciones. Para más detalles sobre qué hacer en la ciudad, visita el sitio oficial de turismo de Coahuila: <a href="https://hazturismoencoahuila.mx/saltillo" class="uline">Qué hacer en Saltillo</a>.
 	</p>
