@@ -19,8 +19,7 @@ export default {
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>14 de junio</del> 1 de julio de 2024 (extendida)
-                <strong>(Cerrada)</strong><br>
+                <strong class="text-primary text-gradient">Envío final de versión lista para la publicación:</strong> <del>30 de agosto</del> 4 de septiembre de 2024 (extendida)<br>
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-dates' })" class="uline">
                     Ver todas las fechas importantes
                 </RouterLink>
@@ -71,7 +70,7 @@ export default {
     <ul>
         <li>Fecha límite para envíos: <del>14 de junio</del> 1 de julio de 2024 (extendida)</li>
         <li>Notificación de aceptación: 20 de agosto de 2024</li>
-        <li>Envío final de versión lista para la publicación: 30 de agosto de 2024</li>
+        <li>Envío final de versión lista para la publicación: <del>30 de agosto</del> 4 de septiembre de 2024 (extendida)</li>
         <li>Versión lista para la publicación: 25 de agosto de 2024</li>
         <li>MexIHC 2024: del 6 al 8 de noviembre</li>
     </ul>

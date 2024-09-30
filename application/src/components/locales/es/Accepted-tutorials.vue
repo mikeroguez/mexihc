@@ -45,6 +45,7 @@
         básicos. El mini robot ensamblado servirá como un prototipo funcional para investigaciones en IHC, especialmente
         en áreas como robótica social, interfaces tangibles y educación.
     </p>
+    <p><a href="https://turing.iimas.unam.mx/~ricardo/mexihc2024/">Sitio web del taller</a></p>
 
     <h3 id="second">Utilizando ChatGPT para apoyar la programación en R en la investigación en IHC</h3>
     <p>

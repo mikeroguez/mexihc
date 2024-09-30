@@ -88,7 +88,7 @@
 															{{ $t("nav.cpt") }}
 														</span>
 														<span class="text-sm text-dark">
-															{{ $t("nav.cpt_message") }}
+															{{ $t("about.closed") }}
 														</span>
 													</div>
 												</div>
@@ -124,7 +124,7 @@
 															{{ $t("nav.sdc") }}
 														</span>
 														<span class="text-sm text-dark">
-															{{ $t("nav.sdc_message") }}
+															{{ $t("about.closed") }}
 														</span>
 													</div>
 												</div>
@@ -142,7 +142,7 @@
 															{{ $t("nav.cgc") }}
 														</span>
 														<span class="text-sm text-dark text-wrap">
-															{{ $t("nav.cgc_message") }}
+															{{ $t("about.closed") }}
 														</span>
 													</div>
 												</div>

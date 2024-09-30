@@ -17,7 +17,7 @@
                     Convocatoria de trabajos (CFP)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>14 de junio</del> 1 de julio de 2024 (extendida) <strong>(Cerrada)</strong><br>
+            <strong class="text-primary text-gradient">Envío final de versión lista para la publicación:</strong> <del>30 de agosto</del> 4 de septiembre de 2024 (extendida) <strong>(Cerrada)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -27,7 +27,7 @@
                     Convocatoria de pósteres (CPT)
                 </RouterLink>                
             </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>8</del> 30 de agosto de 2024 (extendida)<strong>(Abierta)</strong><br>
+            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>8</del> 30 de agosto de 2024 (extendida)<strong>(Cerrada)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -47,7 +47,7 @@
                     Competencia de diseño para estudiantes (SDC)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>16</del> 30 de agosto de 2024 (Extendida) <strong>(Abierta)</strong><br>
+            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>16</del> 30 de agosto de 2024 (Extendida) <strong>(Cerrada)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -57,7 +57,7 @@
                     Coloquio de graduados (GC)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>8</del> 15 de agosto de 2024 (extended), 12:00 pm (medio día) <strong>(Abierta)</strong><br>
+            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>8</del> 15 de agosto de 2024 (extended), 12:00 pm (medio día) <strong>(Cerrada)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">

@@ -41,8 +41,8 @@ export default {
     <h2 id="cpt-dates">Fechas importantes</h2>
     <ul>
         <li>Fecha límite de recepción: Miércoles <del>8</del> 30 de agosto (extendida)</li>
-        <li>Notificación de aceptación: Viernes 6 de septiembre</li>
-        <li>Versión final: Viernes 13 de septiembre</li>
+        <li>Notificación de aceptación: Viernes <del>6</del> 13 de septiembre</li>
+        <li>Versión final: Viernes <del>13</del> 20 de septiembre</li>
     </ul>
 
     <h2>Detalles de envío</h2>

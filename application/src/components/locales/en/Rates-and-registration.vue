@@ -90,7 +90,38 @@
 	<ul>
 		<li>Access to keynotes, conferences, SDC and posters.</li>
 	</ul>
-	
+
+	<h2 class="">Tutorials</h2>
+
+	<table class="table table-striped">
+		<caption>Cost table for tutorials</caption>
+		<thead>
+			<tr>
+				<th scope="col">Description</th>
+				<th scope="col">Cost</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Registered authors</td>
+				<td><span class="fst-italic fw-light">$450 MXN</span></td>
+			</tr>
+			<tr>
+				<td>Tutorial only</td>
+				<td><span class="fst-italic fw-light">$800 MXN</span></td>
+			</tr>
+			<tr>
+				<td>Undergraduate students</td>
+				<td><span class="fst-italic">$150 MXN</span></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td span="3"><strong>Note:</strong> Limited seats</td>
+			</tr>
+		</tfoot>		
+	</table>
+		
 	<hr>
 	
 	<h2 class="">Bank account information</h2>
@@ -113,7 +144,7 @@
 		Cuenta: 88823590201 <br>
 		Concepto: {Registration code}
 	</p>
-	
+	<!--
     <section class="py-5 container" id="download-soft-ui">
         <div class="bg-gradient-dark position-relative border-radius-xl overflow-hidden">
             <img src="/assets/img/shapes/cactus.svg" alt="" class="position-absolute start-0 top-md-0 w-100 opacity-6">
@@ -128,5 +159,5 @@
             </div>
         </div>
     </section>
-	
+	-->
 </template>

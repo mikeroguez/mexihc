@@ -45,6 +45,7 @@ export default {
         a functional prototype for HCI research, especially in areas such as social robotics, tangible interfaces, and
         education.
     </p>
+    <p><a href="https://turing.iimas.unam.mx/~ricardo/mexihc2024/">Workshop website</a></p>
 
     <h3 id="second">Utilizando ChatGPT para apoyar la programación en R en la investigación en IHC</h3>
     <p>
