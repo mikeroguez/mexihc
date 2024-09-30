@@ -88,7 +88,7 @@
 															{{ $t("nav.cpt") }}
 														</span>
 														<span class="text-sm text-dark">
-															{{ $t("nav.cpt_message") }}
+															{{ $t("about.closed") }}
 														</span>
 													</div>
 												</div>
@@ -124,7 +124,7 @@
 															{{ $t("nav.sdc") }}
 														</span>
 														<span class="text-sm text-dark">
-															{{ $t("nav.sdc_message") }}
+															{{ $t("about.closed") }}
 														</span>
 													</div>
 												</div>
@@ -142,7 +142,7 @@
 															{{ $t("nav.cgc") }}
 														</span>
 														<span class="text-sm text-dark text-wrap">
-															{{ $t("nav.cgc_message") }}
+															{{ $t("about.closed") }}
 														</span>
 													</div>
 												</div>
@@ -265,7 +265,7 @@
 									-->
 									</ul>
 								</li>
-								<!--
+								
 								<li class="nav-item dropdown dropdown-hover mx-2">
 									<RouterLink :to="Tr.i18nRoute({ name: 'registration' })" 
 										class="nav-link ps-2 d-flex cursor-pointer align-items-center"
@@ -279,6 +279,7 @@
 									</RouterLink>
 									<ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
 										aria-labelledby="navbarDropdown3">
+										<!--
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'schedule' })" 
 												class="dropdown-item border-radius-md"
@@ -296,6 +297,7 @@
 												</div>												
 											</RouterLink>
 										</li>
+									-->
 										<li>
 											<RouterLink class="dropdown-item border-radius-md" :to="Tr.i18nRoute({ name: 'keynote-speakers' })">
 												<div class="d-flex">
@@ -311,6 +313,7 @@
 												</div>
 											</RouterLink>
 										</li>
+										<!--
 										<li>
 											<RouterLink class="dropdown-item border-radius-md" :to="Tr.i18nRoute({ name: 'accepted-papers' })">
 												<div class="d-flex">
@@ -323,9 +326,10 @@
 												</div>
 											</RouterLink>
 										</li>
+										-->
 									</ul>
 								</li>
-								
+								<!--
 								<li class="nav-item mx-2">
 									<a class="nav-link ps-2 d-flex cursor-pointer align-items-center"
 										href="./video-archives">

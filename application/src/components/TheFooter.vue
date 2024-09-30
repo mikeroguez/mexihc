@@ -144,12 +144,12 @@ export default {
                                     {{ $t("nav.organizers") }}
                                 </RouterLink>
                             </li>
-                            <!--                            
                             <li class="nav-item">
                                 <RouterLink class="nav-link uline" :to="Tr.i18nRoute({ name: 'keynote-speakers' })">
                                     {{ $t("nav.keynotes") }}
                                 </RouterLink>
                             </li>
+                            <!--                            
                             <li class="nav-item">
                                 <a class="nav-link uline" href="./video-archives">
                                     Video archives

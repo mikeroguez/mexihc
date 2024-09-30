@@ -15,6 +15,9 @@
                                 <h2 class="mt-3 h4">
                                     <slot name="name"></slot>
                                 </h2>
+                                <h3 class="mt-3 h5">
+                                    <slot name="puesto"></slot>
+                                </h3>                                
                             </div>
                         </div>                        
                     </div>

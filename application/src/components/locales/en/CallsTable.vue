@@ -17,7 +17,7 @@
                     Call for papers (CFP)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> <del>June 14th</del> July 1st, 2024 (extendida) <strong>(Closed)</strong><br>
+            <strong class="text-primary text-gradient">Camera-ready final submissions:</strong> <del>August 30th</del> September 4th, 2024 (extended) <strong>(Closed)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -27,7 +27,7 @@
                     Call for poster track (CPT)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>8th</del> 30th, 2024 (extended) <strong>(Open)</strong><br>
+            <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>8th</del> 30th, 2024 (extended) <strong>(Closed)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -47,7 +47,7 @@
                     Student design competition (SDC)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>16th</del> 30th, 2024 (Extended) <strong>(Open)</strong><br>
+            <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>16th</del> 30th, 2024 (Extended) <strong>(Closed)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -57,7 +57,7 @@
                     Graduate Colloquium (GC)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>8th</del> 15th, 2024 (extended) 12:00 pm (noon) <strong>(Open)</strong><br>
+            <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>8th</del> 15th, 2024 (extended) 12:00 pm (noon) <strong>(Closed)</strong><br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">

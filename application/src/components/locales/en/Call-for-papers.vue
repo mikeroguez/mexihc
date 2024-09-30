@@ -19,7 +19,7 @@ export default {
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Deadline for submission:</strong> <del>June 14th</del> July 1st, 2024 (extended)<strong>(Closed)</strong><br>
+                <strong class="text-primary text-gradient">Camera-ready final submissions:</strong> <del>August 30th</del> September 4th, 2024 (extended)<br>
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-dates' })" class="uline">
                     See all important dates
                 </RouterLink>
@@ -74,7 +74,7 @@ export default {
     <ul>
         <li>Deadline for submissions: <del>June 14th</del> July 1st, 2024</li>
         <li>Notification of acceptance: August 20th, 2024</li>
-        <li>Camera-ready final submissions: August 30th, 2024</li>
+        <li>Camera-ready final submissions: <del>August 30th</del> September 4th, 2024 (extended)</li>
         <li>Camera ready: August 25th</li>
         <li>MexIHC 2024: November 6th - 8th</li>
     </ul>

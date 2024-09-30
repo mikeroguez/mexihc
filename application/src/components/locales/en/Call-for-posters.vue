@@ -40,8 +40,8 @@ export default {
     <h2 id="cpt-dates">Important Dates</h2>
     <ul>
         <li>Submission deadline: Wednesday, August <del>8th</del> 30th (extended) </li>
-        <li>Notification of acceptance: Friday, September 6th</li>
-        <li>Camera-ready final submissions: Friday, September 13th</li>
+        <li>Notification of acceptance: Friday, September <del>6th</del> 13th</li>
+        <li>Camera-ready final submissions: Friday, September <del>13th</del> 20th</li>
     </ul>
 
     <h2>Submission Details</h2>

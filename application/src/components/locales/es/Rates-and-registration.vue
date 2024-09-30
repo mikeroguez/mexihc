@@ -90,6 +90,37 @@
 	<ul>
 		<li>Acceso a conferencias magistrales, conferencias, SDC y pósters.</li>
 	</ul>
+
+	<h2 class="">Tutoriales</h2>
+
+	<table class="table table-striped">
+		<caption>Tabla de costos a tutoriales</caption>
+		<thead>
+			<tr>
+				<th scope="col">Descripción</th>
+				<th scope="col">Costo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Autores registrados</td>
+				<td><span class="fst-italic fw-light">$450 MXN</span></td>
+			</tr>
+			<tr>
+				<td>Solo tutorial</td>
+				<td><span class="fst-italic fw-light">$800 MXN</span></td>
+			</tr>
+			<tr>
+				<td>Estudiantes de licenciatura</td>
+				<td><span class="fst-italic">$150 MXN</span></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td span="3"><strong>Nota:</strong> Asientos limitados</td>
+			</tr>
+		</tfoot>		
+	</table>
 	
 	<hr>
 	
