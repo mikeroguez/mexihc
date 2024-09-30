@@ -89,8 +89,8 @@ export default {
 		<p>Para registrarse en el evento, por favor siga los siguientes pasos:</p>
 
 		<ol>
-			<li>Complete el formulario con su información utilizando el <a class="uline"
-					href="https://conferencias.app/">sistema de registro</a>.</li>
+			<li>Complete el formulario con su información utilizando el <!--<a class="uline"
+					href="https://conferencias.app/">-->sistema de registro<!--</a>-->.</li>
 			<li>Realice el pago (preferentemente transferencia bancaria o depósito) utilizando los datos bancarios
 				proporcionados y el Código de Registro proporcionado por el sistema de registro.</li>
 			<li>Envíe una copia de la factura de pago a registration.2024@mexihc.org (especialmente para depósitos en el

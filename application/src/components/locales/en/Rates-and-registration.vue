@@ -144,7 +144,7 @@
 		Cuenta: 88823590201 <br>
 		Concepto: {Registration code}
 	</p>
-	
+	<!--
     <section class="py-5 container" id="download-soft-ui">
         <div class="bg-gradient-dark position-relative border-radius-xl overflow-hidden">
             <img src="/assets/img/shapes/cactus.svg" alt="" class="position-absolute start-0 top-md-0 w-100 opacity-6">
@@ -159,5 +159,5 @@
             </div>
         </div>
     </section>
-	
+	-->
 </template>
