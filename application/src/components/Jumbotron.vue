@@ -86,7 +86,7 @@ export default {
 										</strong>
 									</p>
 									<p class="lead pt-2">
-										<RouterLink :to="Tr.i18nRoute({ name: 'call-for-participation'})" 
+										<RouterLink :to="Tr.i18nRoute({ name: 'getting-started'})" 
 												class="btn btn-lg  bg-gradient-yellow  btn-round"
 											>
 											{{ $t("jumbotron.button") }}
