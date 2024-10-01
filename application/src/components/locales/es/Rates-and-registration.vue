@@ -135,7 +135,7 @@
 		<li>Los pagos realizados desde fuera de México pueden usar PayPal para completar el registro. Las instrucciones aparecerán en la página de confirmación.</li>
 	</ol>
 
-	<p>Para pagos desde cuentas bancarias mexicanas, utilice:</p>
+	<p>Para pagos desde cuentas bancarias mexicanas, utilice <strong>(Fecha límite 18 de octubre)</strong>:</p>
 
 	<p class="text-bold">
 		Nombre: ASOCIACION MEXICANA DE INTERACCION HUMANO COMPUTADORA AC <br>

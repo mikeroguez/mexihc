@@ -135,7 +135,7 @@
 		<li>Payments made from outside Mexico can use PayPal to complete the registration. Instructions will appear in the confirmation page.</li>
 	</ol>
 
-	<p>From payments from Mexican bank accounts, please use:</p>
+	<p>From payments from Mexican bank accounts, please use <strong>(Deadline october 18th)</strong>:</p>
 
 	<p class="text-bold">
 		Nombre: ASOCIACION MEXICANA DE INTERACCION HUMANO COMPUTADORA AC <br>
