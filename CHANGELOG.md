@@ -151,3 +151,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Change main CTA to "Getting started to attend!"
+
+## [2024.0.0.20] - 2024-10-1
+
+### Added
+
+- Registration deadline.
