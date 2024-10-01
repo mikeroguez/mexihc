@@ -145,3 +145,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Activate link to registration form
+
+## [2024.0.0.19] - 2024-10-1
+
+### Changed
+
+- Change main CTA to "Getting started to attend!"
