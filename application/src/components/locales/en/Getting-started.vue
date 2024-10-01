@@ -87,8 +87,8 @@ export default {
 		<p>To register to the event, please follow the next steps:</p>
 
 		<ol>
-			<li>Filling out the form with your information using the <!--<a class="uline"
-					href="https://conferencias.app/">-->registration system<!--</a>--></li>
+			<li>Filling out the form with your information using the <a class="uline"
+					href="https://conferencias.app/">registration system</a></li>
 			<li>Make the payment (bank transfer preferably or deposit below) using the bank details provided and the
 				Registration Code provided by the registration system.</li>
 			<li>Send a copy of payment invoice to registration.2024@mexihc.org (especially deposits at the bank)</li>
