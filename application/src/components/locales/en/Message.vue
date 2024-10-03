@@ -1,8 +1,8 @@
 <template>
     <div class="alert alert-warning col-md-8 m-auto" role="alert">
-        <p>Attention to all interested participants in CLIHC 2023!</p>
+        <p>Attention to all interested participants in MexIHC 2024!</p>
         <p>
-            We want to inform you that we have extended the submission deadline for works until <strong>August 11th.</strong> 
+            Deadline for registration and payment: <strong>October 18th.</strong> 
         </p>
     </div>
 </template>
