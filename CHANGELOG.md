@@ -157,3 +157,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Registration deadline.
+
+## [2024.0.0.21] - 2024-10-3
+
+### Added
+
+- Registration deadline message in jumbotron.
