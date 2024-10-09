@@ -16,6 +16,15 @@ nav.scrolled li.nav-item:not(.active) a, nav.scrolled a.navbar-brand {
     color: #57331D;
 }
 
+.bg-posters {
+    background-color: #F6E1CC !important; /* Cambia este valor por el color que desees */
+}
+
+.bg-keynotes {
+    background-color: #FEBF90 !important; /* Cambia este valor por el color que desees */
+    color:black !important;
+}
+
 .text-gradient.text-primary {
     background-image: linear-gradient(310deg, #AD4A20 0%, #AD4A20 100%);
 }
