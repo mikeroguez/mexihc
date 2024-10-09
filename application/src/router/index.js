@@ -100,7 +100,6 @@ const router = createRouter({
             title: "MexIHC 2024 - Organizers",
           },
         },
-        /*
         {
           path: 'schedule',
           name: 'schedule',
@@ -109,7 +108,6 @@ const router = createRouter({
             title: "MexIHC 2024 - Schedule",
           },
         },    
-        */
         {
           path: 'keynote-speakers',
           name: 'keynote-speakers',

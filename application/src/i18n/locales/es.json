@@ -103,7 +103,10 @@
         "industry_session_chair_title" : "Responsable de la sesión industrial",
         "industry_session_chair_description" : "Responsable de la sesión industrial",
         "steering_committee_title": "Comité directivo",
-        "steering_committee_description": "Comité directivo"        
+        "steering_committee_description": "Comité directivo",
+        "name": "Nombre",
+        "institution": "Institución",
+        "country": "País"                
     },
     "accessibility": {
         "title": "Recomendaciones de accesibilidad para autores",

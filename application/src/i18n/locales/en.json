@@ -106,7 +106,10 @@
         "industry_session_chair_title" : "Industry Day Chair",
         "industry_session_chair_description" : "Industry Day Chair",
         "steering_committee_title": "Steering committee",
-        "steering_committee_description": "Steering committee"
+        "steering_committee_description": "Steering committee",
+        "name": "Name",
+        "institution": "Institution",
+        "country": "Country"
     },
     "accessibility": {
         "title": "Accessibility Recommendations for Authors",
