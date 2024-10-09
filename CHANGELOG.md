@@ -163,3 +163,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Registration deadline message in jumbotron.
+
+## [2024.0.0.22] - 2024-10-9
+
+### Added
+
+- Adds Program Committee
+- Adds Schedule
+- add some corrections

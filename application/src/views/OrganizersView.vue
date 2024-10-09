@@ -1,16 +1,16 @@
 <script setup>
-    import TheHeader from '@/components/Header.vue';
-    import OrganizerItem from '@/components/OrganizerItem.vue';
-    import Tr from '@/i18n/translation'
+import TheHeader from '@/components/Header.vue';
+import OrganizerItem from '@/components/OrganizerItem.vue';
+import Tr from '@/i18n/translation'
 </script>
 
 <script>
 export default {
-  setup() {
-    return {
-      Tr
+    setup() {
+        return {
+            Tr
+        }
     }
-  }
 }
 </script>
 
@@ -30,7 +30,9 @@ export default {
                             <li class="list-group-item d-flex justify-content-between align-items-start">
                                 <div class="ms-2 me-auto">
                                     <div class="fw-bold">
-                                        <RouterLink :to="Tr.i18nRoute({ name: 'organizers', hash: '#general-committee'})" class="uline">
+                                        <RouterLink
+                                            :to="Tr.i18nRoute({ name: 'organizers', hash: '#general-committee' })"
+                                            class="uline">
                                             {{ $t("organizers.general_committee_link") }}
                                         </RouterLink>
                                     </div>
@@ -39,9 +41,11 @@ export default {
                             <li class="list-group-item d-flex justify-content-between align-items-start">
                                 <div class="ms-2 me-auto">
                                     <div class="fw-bold">
-                                        <RouterLink :to="Tr.i18nRoute({ name: 'organizers', hash: '#program-committee'})" class="uline">
+                                        <RouterLink
+                                            :to="Tr.i18nRoute({ name: 'organizers', hash: '#program-committee' })"
+                                            class="uline">
                                             {{ $t("organizers.program_committee_link") }}
-                                        </RouterLink>                                            
+                                        </RouterLink>
                                     </div>
                                 </div>
                             </li>
@@ -50,7 +54,8 @@ export default {
                         <p>
                             {{ $t("organizers.intro") }}
                         </p>
-                        <h2 id="general-committee" class="text-primary text-gradient text-center py-4">{{ $t("organizers.general_committee_title") }}
+                        <h2 id="general-committee" class="text-primary text-gradient text-center py-4">{{
+                            $t("organizers.general_committee_title") }}
                         </h2>
                     </div>
                 </div>
@@ -124,7 +129,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="container mt-4 px-5 mt-6" id="program-chairs">
                     <div class="row">
                         <div class="col-xl-3">
@@ -182,7 +187,7 @@ export default {
                                             tpc.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
-                                </div>  
+                                </div>
 
                                 <div class="col-md-4 m-auto mt-md-0 mt-4">
                                     <OrganizerItem>
@@ -209,7 +214,7 @@ export default {
                             </div>
                         </div>
                     </div>
-                </div>                
+                </div>
                 <div class="container mt-4 px-5 mt-6" id="registration-chairs">
                     <div class="row">
                         <div class="col-xl-3">
@@ -308,7 +313,7 @@ export default {
                                         </template>
                                     </OrganizerItem>
                                 </div>
-                                                                
+
                                 <div class="col-md-4 m-auto mt-md-0 mt-4">
                                     <OrganizerItem>
                                         <template #image>
@@ -334,7 +339,7 @@ export default {
                             </div>
                         </div>
                     </div>
-                </div>                
+                </div>
 
                 <div class="container mt-4 px-5 mt-6" id="workshops_and_tutorials-chairs">
                     <div class="row">
@@ -393,7 +398,7 @@ export default {
                                             ws.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
-                                </div>                                                                
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -432,7 +437,7 @@ export default {
                                             posters.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
-                                </div>                                 
+                                </div>
 
                                 <div class="col-md-4 m-auto mt-md-0 mt-4">
                                     <OrganizerItem>
@@ -509,7 +514,7 @@ export default {
                                             </div>
                                         </template>
                                         <template #name>
-                                            Arturo Morales 
+                                            Arturo Morales
                                         </template>
                                         <template #institution>
                                             CICESE, México
@@ -531,7 +536,7 @@ export default {
                                             </div>
                                         </template>
                                         <template #name>
-                                            Pablo Bautista 
+                                            Pablo Bautista
                                         </template>
                                         <template #institution>
                                         </template>
@@ -552,7 +557,7 @@ export default {
                                             </div>
                                         </template>
                                         <template #name>
-                                            Rosario Peralta 
+                                            Rosario Peralta
                                         </template>
                                         <template #institution>
                                             UNCA, MX
@@ -561,7 +566,7 @@ export default {
                                             publicity.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
-                                </div>                                                                
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -601,11 +606,11 @@ export default {
                                             web.2024@mexihc.org
                                         </template>
                                     </OrganizerItem>
-                                </div>                             
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="container mt-4 px-5 mt-6" id="registration-chairs">
                     <div class="row">
                         <div class="col-xl-3">
@@ -644,7 +649,7 @@ export default {
                             </div>
                         </div>
                     </div>
-                </div>                                         
+                </div>
 
                 <div class="container mt-4 px-5" id="industry-day">
                     <div class="row">
@@ -704,17 +709,17 @@ export default {
                                             <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
                                         </template>
                                     </OrganizerItem>
-                                </div> 
-                            </div>                            
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <p class="mt-5">
-                        <RouterLink :to="Tr.i18nRoute({ name: 'organizers', hash: '#top'})" class="uline">
+                        <RouterLink :to="Tr.i18nRoute({ name: 'organizers', hash: '#top' })" class="uline">
                             {{ $t("nav.back_to_top") }}
-                        </RouterLink>                    
+                        </RouterLink>
                     </p>
                     <hr>
-                </div>                
+                </div>
             </div>
         </div>
     </section>
@@ -725,17 +730,173 @@ export default {
                     <h2 id="program-committee" class="text-primary text-gradient text-center py-4 mt-5">
                         {{ $t("organizers.program_committee_title") }}
                     </h2>
-                    
-                   
-                    {{ $t("nav.pending") }}
 
-                <p>
-                    <RouterLink :to="Tr.i18nRoute({ name: 'organizers', hash: '#top'})" class="uline">
-                        {{ $t("nav.back_to_top") }}
-                    </RouterLink>                    
-                </p>
+
+                    <table class="table table-striped text-center align-middle w-100" style="table-layout: fixed;">
+                        <thead>
+                            <tr>
+                                <th scope="col">{{ $t("organizers.name") }}</th>
+                                <th scope="col">{{ $t("organizers.institution") }}</th>
+                                <th scope="col">{{ $t("organizers.country") }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Adriana Lorena Iñiguez Carrillo</td>
+                                <td>Universidad de Guadalajara</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Ana Isabel Martínez García</td>
+                                <td>CICESE</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Arturo Morales-Tellez</td>
+                                <td>CICESE</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Aurora Ruiz-Rodríguez</td>
+                                <td>University of Twente</td>
+                                <td>The Netherlands</td>
+                            </tr>
+                            <tr>
+                                <td>Carlos Toxtli</td>
+                                <td>Clemson University</td>
+                                <td>USA</td>
+                            </tr>
+                            <tr>
+                                <td>Cristina Ramírez Fernández</td>
+                                <td>Tecnológico Nacional de México</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Franceli L. Cibrian</td>
+                                <td>Chapman University</td>
+                                <td>USA</td>
+                            </tr>
+                            <tr>
+                                <td>Gilberto Borrego Soto</td>
+                                <td>ITSON</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria Ivonne Monarca Pintle</td>
+                                <td>Sperentia</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>J. Antonio Garcia-Macias</td>
+                                <td>CICESE</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Jesús Adolfo Mejía de Dios</td>
+                                <td>Universidad Autónoma de Coahuila</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Jesus Favela</td>
+                                <td>CICESE</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>José Mercado Chan</td>
+                                <td>CICESE</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Juan Pablo García Vázquez</td>
+                                <td>UABC</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Karina Caro</td>
+                                <td>UABC</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Laura Sanely Gaytán Lugo</td>
+                                <td>Universidad de Colima</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Lizbeth Escobedo</td>
+                                <td>Dalhousie University</td>
+                                <td>Canada</td>
+                            </tr>
+                            <tr>
+                                <td>Luis A. Castro</td>
+                                <td>ITSON</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Marcela D. Rodríguez</td>
+                                <td>UABC</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>María Del Rosario Peralta Calvo</td>
+                                <td>Universidad de la Cañada</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Mario Moreno</td>
+                                <td>Universidad de la Mixteca</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Pablo Armando Alcaraz Valencia</td>
+                                <td>Universidad de Colima</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Ramón René Palacio Cinco</td>
+                                <td>ITSON</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Raymundo Cornejo</td>
+                                <td>UACH</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Saiph Savage</td>
+                                <td>Northeastern University</td>
+                                <td>USA</td>
+                            </tr>
+                            <tr>
+                                <td>Sandra Nava-Muñoz</td>
+                                <td>UASLP</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Silvia Berenice Fajardo Flores</td>
+                                <td>Universidad de Colima</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Soraia Silva Prietch</td>
+                                <td>Universidade Federal de Mato Grosso</td>
+                                <td>Brazil</td>
+                            </tr>
+                            <tr>
+                                <td>Valeria Soto-Mendoza</td>
+                                <td>UAdeC</td>
+                                <td>Mexico</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>
+                        <RouterLink :to="Tr.i18nRoute({ name: 'organizers', hash: '#top' })" class="uline">
+                            {{ $t("nav.back_to_top") }}
+                        </RouterLink>
+                    </p>
+                </div>
+
             </div>
-
         </div>
-    </div>
-</section></template>
+    </section>
+</template>
