@@ -241,7 +241,8 @@ export default {
                                 <RouterLink class="nav-link uline" :to="Tr.i18nRoute({ name: 'accepted-papers' })">
                                     {{ $t("nav.accepted_papers") }}
                                 </RouterLink>
-                            </li>                            
+                            </li>
+                            -->                            
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'registration' })" 
                                     class="nav-link uline"
@@ -249,7 +250,6 @@ export default {
                                     {{ $t("nav.schedule") }}
                                 </RouterLink>
                             </li>
-                            -->
                         </ul>
                     </div>
                 </div>
