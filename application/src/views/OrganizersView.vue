@@ -713,6 +713,163 @@ export default {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="container mt-4 px-5" id="industry-day">
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
+                                <h3>{{ $t("organizers.local_chair_title") }}</h3>
+                                <p class="text-secondary font-weight-normal pe-3">
+                                    {{ $t("organizers.local_chair_description") }}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-9">
+                            <div class="row p-0">
+
+                                <div class="col-md-4 m-auto mt-md-0 mt-4">
+                                    <OrganizerItem>
+                                        <template #image>
+                                            <div class="d-block blur-shadow-image">
+                                                <img src="/assets/img/nophoto.png" alt=""
+                                                    class="img-fluid shadow rounded-3">
+                                            </div>
+                                            <div class="colored-shadow"
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                            </div>
+                                        </template>
+                                        <template #name>
+                                            Irma Delia García Calvillo
+                                        </template>
+                                        <template #institution>
+                                            CIMA/UAdeC
+                                        </template>
+                                        <template #email>
+                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
+                                        </template>
+                                    </OrganizerItem>
+                                </div>
+
+                                <div class="col-md-4 m-auto mt-md-0 mt-4">
+                                    <OrganizerItem>
+                                        <template #image>
+                                            <div class="d-block blur-shadow-image">
+                                                <img src="/assets/img/nophoto.png" alt=""
+                                                    class="img-fluid shadow rounded-3">
+                                            </div>
+                                            <div class="colored-shadow"
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                            </div>
+                                        </template>
+                                        <template #name>
+                                            Vanesa Avalos Gaytan
+                                        </template>
+                                        <template #institution>
+                                            CIMA/UAdeC
+                                        </template>
+                                        <template #email>
+                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
+                                        </template>
+                                    </OrganizerItem>
+                                </div>
+                                <div class="col-md-4 m-auto mt-md-0 mt-4">
+                                    <OrganizerItem>
+                                        <template #image>
+                                            <div class="d-block blur-shadow-image">
+                                                <img src="/assets/img/nophoto.png" alt=""
+                                                    class="img-fluid shadow rounded-3">
+                                            </div>
+                                            <div class="colored-shadow"
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                            </div>
+                                        </template>
+                                        <template #name>
+                                            Yajaira Cardona Valdés
+                                        </template>
+                                        <template #institution>
+                                            CIMA/UAdeC
+                                        </template>
+                                        <template #email>
+                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
+                                        </template>
+                                    </OrganizerItem>
+                                </div>
+
+                            </div>
+                            <div class="row p-0 mt-4">
+
+                                <div class="col-md-4 m-auto mt-md-0 mt-4">
+                                    <OrganizerItem>
+                                        <template #image>
+                                            <div class="d-block blur-shadow-image">
+                                                <img src="/assets/img/nophoto.png" alt=""
+                                                    class="img-fluid shadow rounded-3">
+                                            </div>
+                                            <div class="colored-shadow"
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                            </div>
+                                        </template>
+                                        <template #name>
+                                            Oliver Avalos Rosales
+                                        </template>
+                                        <template #institution>
+                                            CIMA/UAdeC
+                                        </template>
+                                        <template #email>
+                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
+                                        </template>
+                                    </OrganizerItem>
+                                </div>
+
+                                <div class="col-md-4 m-auto mt-md-0 mt-4">
+                                    <OrganizerItem>
+                                        <template #image>
+                                            <div class="d-block blur-shadow-image">
+                                                <img src="/assets/img/nophoto.png" alt=""
+                                                    class="img-fluid shadow rounded-3">
+                                            </div>
+                                            <div class="colored-shadow"
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                            </div>
+                                        </template>
+                                        <template #name>
+                                            Jesus Alejandro Navarro Acosta
+                                        </template>
+                                        <template #institution>
+                                            CIMA/UAdeC
+                                        </template>
+                                        <template #email>
+                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
+                                        </template>
+                                    </OrganizerItem>
+                                </div>
+                                <div class="col-md-4 m-auto mt-md-0 mt-4">
+                                    <OrganizerItem>
+                                        <template #image>
+                                            <div class="d-block blur-shadow-image">
+                                                <img src="/assets/img/nophoto.png" alt=""
+                                                    class="img-fluid shadow rounded-3">
+                                            </div>
+                                            <div class="colored-shadow"
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                            </div>
+                                        </template>
+                                        <template #name>
+                                            Felix Saucedo Zendejo
+                                        </template>
+                                        <template #institution>
+                                            CIMA/UAdeC
+                                        </template>
+                                        <template #email>
+                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
+                                        </template>
+                                    </OrganizerItem>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                     <p class="mt-5">
                         <RouterLink :to="Tr.i18nRoute({ name: 'organizers', hash: '#top' })" class="uline">
                             {{ $t("nav.back_to_top") }}

@@ -59,11 +59,11 @@ export default {
             </tr>
             <tr>
                 <th scope="row">9:00 - 9:30</th>
-                <td colspan="5">Registration</td>
+                <td rowspan="3" class="bg-posters"><strong>Industry Day</strong></td>
+                <td colspan="4">Registration</td>
             </tr>
             <tr>
                 <th scope="row">9:30 - 12:00</th>
-                <td>Tutorial:<br><strong>ChatGPT y R</strong></td>
                 <td>Workshop:<br><strong>IMSABI</strong></td>
                 <td>Workshop:<br><strong>Responsible AI</strong></td>
                 <td>Tutorial:<br><strong>Building a Mini Robot</strong></td>
@@ -71,7 +71,7 @@ export default {
             </tr>
             <tr>
                 <th scope="row">12:00 - 12:30</th>
-                <td colspan="5">Toast</td>
+                <td colspan="4">Toast</td>
             </tr>
             <tr>
                 <th scope="row">12:30 - 15:00</th>
@@ -79,7 +79,7 @@ export default {
                 <td>Taller:<br><strong>IMSABI</strong></td>
                 <td>Taller:<br><strong>Responsible AI</strong></td>
                 <td>Tutorial:<br><strong>Building a Mini Robot</strong></td>
-                <td></td>
+                <td>Tutorial:<br><strong>ChatGPT y R</strong></td>
             </tr>
             <tr>
                 <th scope="row">15:15</th>

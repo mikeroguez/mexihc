@@ -102,6 +102,8 @@
         "acccessibility_chairs_description" : "Responsables de supervisar medidas integrales de accesibilidad durante la conferencia.",
         "industry_session_chair_title" : "Responsable de la sesión industrial",
         "industry_session_chair_description" : "Responsable de la sesión industrial",
+        "local_chair_title" : "Responsables locales",
+        "local_chair_description" : "Responables de las actividades en la sede local",
         "steering_committee_title": "Comité directivo",
         "steering_committee_description": "Comité directivo",
         "name": "Nombre",
