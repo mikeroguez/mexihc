@@ -181,3 +181,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Schedule, adds Industry Day
+
+## [2024.0.0.24] - 2024-10-22
+
+### Added
+
+- Adds Industry Day Schedule
