@@ -195,3 +195,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Dr. Favela's keynote name
 - Friday bus schedule change
 - Adds Virtual Venues for Industry Day
+
+## [2024.0.0.26] - 2024-10-31
+
+### Changed
+
+- Schedule, changes in the program, swap AI Companions in Ride-Hailing: Enhancing Sense of Safety with Voice Chatbots and Videos de TikTok en la Percepción del Consumidor acerca de la Calidad de Productos y Servicios
