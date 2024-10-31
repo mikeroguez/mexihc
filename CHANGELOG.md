@@ -187,3 +187,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Adds Industry Day Schedule
+
+## [2024.0.0.25] - 2024-10-31
+
+### Added
+
+- Dr. Favela's keynote name
+- Friday bus schedule change
+- Adds Virtual Venues for Industry Day
