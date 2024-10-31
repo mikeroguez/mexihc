@@ -15,6 +15,6 @@ import TheSupport from '@/components/Support.vue'
   <TheDescription />
   
   <TheSpetialThanks />
-  <!-- <TheVirtualVenues /> -->
+  <TheVirtualVenues />
   <!-- <TheSupport /> -->
 </template>
