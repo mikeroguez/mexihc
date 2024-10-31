@@ -145,8 +145,7 @@ export default {
                     <td rowspan="22" class="text-bold bg-posters">Posters</td>
                 </tr>
                 <tr>
-                    <td class="text-bold">AI Companions in Ride-Hailing: Enhancing Sense of Safety with Voice Chatbots
-                    </td>
+                    <td class="text-bold">Videos de TikTok en la Percepción del Consumidor acerca de la Calidad de Productos y Servicios <span class="text-danger">(cambio)</span></td>
                 </tr>
                 <tr>
                     <td class="text-bold">AI Assistants in the Workplace: Goal-Oriented Recommendations Using LLM</td>
@@ -295,9 +294,7 @@ export default {
                     <td class="text-bold">Mapping the Crowdsourcing Workforce in Latin America and the Caribbean</td>
                 </tr>
                 <tr>
-                    <td class="text-bold">Videos de TikTok en la Percepción del Consumidor acerca de la Calidad de
-                        Productos
-                        y Servicios</td>
+                    <td class="text-bold">AI Companions in Ride-Hailing: Enhancing Sense of Safety with Voice Chatbots <span class="text-danger">(cambio)</span></td>
                 </tr>
                 <tr>
                     <td class="text-bold">Percepción de usabilidad y aceptación de un dispositivo de asistencia del
