@@ -253,16 +253,12 @@ export default {
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">8:15</th>
+                    <th scope="row">9:00</th>
                     <td colspan="2">Autobús Hotel-Infoteca</td>
                 </tr>
                 <tr>
-                    <th scope="row">9:00 - 10:00</th>
-                    <td colspan="2">Libre</td>
-                </tr>
-                <tr>
                     <th scope="row">10:00 - 11:30</th>
-                    <td colspan="2" class="text-bold bg-keynotes">Keynote: Jesús Favela</td>
+                    <td colspan="2" class="text-bold bg-keynotes">Keynote: Jesús Favela.<br> La importancia de la Interacción Humano-Computadora en la Inteligencia Artificial Centrada en el Humano</td>
                 </tr>
                 <tr>
                     <th scope="row">11:30 - 12:00</th>

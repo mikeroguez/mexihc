@@ -28,87 +28,31 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/logos/usjo.png" alt="" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                    style="background-image: url(&quot;./assets/img/logos/usjo.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
-                                <a href="https://itson.mx/Paginas/index.aspx" class="uline">Instituto Tecnológico de Sonora</a>
+                                Universidad de la Sierra Juárez
                             </template>
                         </SponsorItem> 
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/logos/uaslp.png" alt="" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                    style="background-image: url(&quot;./assets/img/logos/uaslp.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
-                                <a href="https://www.uabc.mx/" class="uline">Universidad Autónoma de Baja California</a>
+                                Facultad de Ingeniería, Universidad Autónoma de San Luis Potosí
                             </template>
-                        </SponsorItem>
-
-                        <SponsorItem>
-                            <template #image>
-                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
-                            </template>
-                            <template #image-shadow>
-                                <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                </div>
-                            </template>                                
-                            <template #name>
-                                <a href="https://www.uaslp.mx/" class="uline">Universidad Autónoma de San Luis Potosí</a>
-                            </template>
-                        </SponsorItem>
-
-                        <SponsorItem>
-                            <template #image>
-                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
-                            </template>
-                            <template #image-shadow>
-                                <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                </div>
-                            </template>                                
-                            <template #name>
-                                <a href="https://www.umich.mx/" class="uline">Universidad Michoacana de San Nicolás de Hidalgo</a>
-                            </template>
-                        </SponsorItem>
-
-                        <SponsorItem>
-                            <template #image>
-                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
-                            </template>
-                            <template #image-shadow>
-                                <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                </div>
-                            </template> 
-                            <template #name>
-                                <a href="https://www.unca.edu.mx/" class="uline">Universidad de la Cañada</a>
-                            </template>
-                        </SponsorItem>
-
-                        <SponsorItem>
-                            <template #image>
-                                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
-                            </template>
-                            <template #image-shadow>
-                                <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                </div>
-                            </template>                                
-                            <template #name>
-                                <a href="https://www.uppuebla.edu.mx/" class="uline">Universidad Politécnica de Puebla</a>
-                            </template>
-                        </SponsorItem>                        
+                        </SponsorItem>                    
 
                     </div>
                 </div>
