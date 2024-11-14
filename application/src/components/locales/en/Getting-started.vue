@@ -159,18 +159,21 @@ export default {
 		23354 Arteaga, Coahuila, Mexico.
 	</p>
 	<p>
-		<strong>Location on campus:</strong>
-		The Infoteca is located in the heart of the UAdeC's Ciudad Universitaria, easily accessible from the campus's
-		main entrance. This strategic location provides convenient access to all the facilities needed for the
-		conference.
-	</p>
-	<p>
 		<iframe
 			src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14410.770497964844!2d-100.8711317!3d25.4485379!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86880e2435a2ff73%3A0xdf82eb57c2cecf26!2sInfoteca%20Central!5e0!3m2!1ses!2smx!4v1725029727854!5m2!1ses!2smx"
 			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
 			referrerpolicy="no-referrer-when-downgrade">
 		</iframe>
+	</p>
+	<p>
+		<strong>Location on campus:</strong>
+		The Infoteca is located in the heart of the UAdeC's Ciudad Universitaria, easily accessible from the campus's
+		main entrance. This strategic location provides convenient access to all the facilities needed for the
+		conference.
 	</p>	
+	<p>
+		<img src="/assets/img/croquis.jpg" width="100%">
+	</p>
 
 	<h2 id="transporte" class="mt-5 h3">Transportation from Monterrey Airport</h2>
 	<p>If you arrive at thel <strong>Monterrey International Airport</strong>, there are several options to get to Saltillo:</p>

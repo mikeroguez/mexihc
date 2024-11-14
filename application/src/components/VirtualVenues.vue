@@ -54,6 +54,19 @@ export default {
                             </template>
                         </SponsorItem>                    
 
+                        <SponsorItem>
+                            <template #image>
+                                <img src="/assets/img/logos/itson.png" alt="" class="img-fluid shadow rounded-3">
+                            </template>
+                            <template #image-shadow>
+                                <div class="colored-shadow"
+                                    style="background-image: url(&quot;./assets/img/logos/itson.png&quot;);">
+                                </div>
+                            </template>                                
+                            <template #name>
+                                Instituto Tecnológico de Sonora
+                            </template>
+                        </SponsorItem>
                     </div>
                 </div>
             </div>
