@@ -279,7 +279,7 @@
 									</RouterLink>
 									<ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
 										aria-labelledby="navbarDropdown3">
-										
+										<!--
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'schedule' })" 
 												class="dropdown-item border-radius-md"
@@ -297,7 +297,7 @@
 												</div>												
 											</RouterLink>
 										</li>
-								
+										-->
 										<li>
 											<RouterLink class="dropdown-item border-radius-md" :to="Tr.i18nRoute({ name: 'keynote-speakers' })">
 												<div class="d-flex">
