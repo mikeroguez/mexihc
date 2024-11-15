@@ -67,19 +67,15 @@ export default {
 											{{ $t("about.call") }}
 										</RouterLink>								
 									</th>
-									<td><span class="text-bold text-primary text-gradient">{{ $t("about.open") }}</span></td>
+									<td><span class="text-bold text-primary text-gradient">{{ $t("about.closed") }}</span></td>
 								</tr>
 								<tr>
 									<th scope="row">
-										<span class="">
+										<RouterLink :to="Tr.i18nRoute({ name: 'registration'})" class="uline">
 											{{ $t("about.registration") }}
-										</span>										
+										</RouterLink>										
 									</th>
-									<td><span class="">{{ $t("nav.pending") }}</span></td>
-								</tr>
-								<tr>
-									<th scope="row">{{ $t("about.proceedings") }}</th>
-									<td>{{ $t("nav.pending") }}</td>
+									<td><span class="text-bold text-primary text-gradient">{{ $t("about.closed") }}</span></td>
 								</tr>
 								<!--
 								<tr>
