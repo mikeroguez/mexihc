@@ -1,6 +1,6 @@
-# MexIHC Versión 2024.0.0.26
+# MexIHC Versión 2026.0.0.1
 
-## Sitio web para el MexIHC 2024
+## Sitio web para el MexIHC 2026
 
 Sitio [web de difusión de MexIHC 2024](https://www.mexihc.org/2024/) organizado por la [Asociación Mexicana de Interacción Humano-Computadora)](https://www.amexihc.org/).
 
