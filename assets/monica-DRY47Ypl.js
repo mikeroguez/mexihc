@@ -1,0 +1,1 @@
+const e=""+new URL("img/people/pedro.png",import.meta.url).href,p=""+new URL("img/people/vicky.png",import.meta.url).href,o=""+new URL("img/people/monica.png",import.meta.url).href;export{e as _,p as a,o as b};
