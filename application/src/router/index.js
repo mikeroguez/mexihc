@@ -16,7 +16,7 @@ const router = createRouter({
           name: 'home',
           component: HomeView, 
           meta: {
-            title: "MexIHC 2024 - An AmexIHC Conference",
+            title: "MexIHC 2026 - An AmexIHC Conference",
           },
         },        
         {
@@ -24,7 +24,7 @@ const router = createRouter({
           name: 'call-for-participation',
           component: () => import('../views/CallsView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Call for Participation",
+            title: "MexIHC 2026 - Call for Participation",
           },
         },
         /*Begin: Nuevos */
@@ -33,7 +33,7 @@ const router = createRouter({
           name: 'call-for-papers',
           component: () => import('../views/CallsForPapersView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Call for Papers",
+            title: "MexIHC 2026 - Call for Papers",
           },
         },
         {
@@ -41,7 +41,7 @@ const router = createRouter({
           name: 'call-for-posters',
           component: () => import('../views/CallsForPostersView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Call for Poster Track",
+            title: "MexIHC 2026 - Call for Poster Track",
           },
         },
         {
@@ -49,7 +49,7 @@ const router = createRouter({
           name: 'call-for-workshops-and-tutorials',
           component: () => import('../views/CallsForWorkshopsAndTutorialsView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Call for Workshops and Tutorials",
+            title: "MexIHC 2026 - Call for Workshops and Tutorials",
           },
         },
         {
@@ -57,7 +57,7 @@ const router = createRouter({
           name: 'calls-for-accepted-workshops',
           component: () => import('../views/AcceptedWorkshopsView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Call for Accepted Workshops",
+            title: "MexIHC 2026 - Call for Accepted Workshops",
           },
         },
         {
@@ -65,7 +65,7 @@ const router = createRouter({
           name: 'accepted-tutorials',
           component: () => import('../views/AcceptedTutorialsView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Accepted Tutorials",
+            title: "MexIHC 2026 - Accepted Tutorials",
           },
         },
         {
@@ -73,7 +73,7 @@ const router = createRouter({
           name: 'student-design-competition',
           component: () => import('../views/CallsForCompetitionView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Call for Student Design Competition",
+            title: "MexIHC 2026 - Call for Student Design Competition",
           },
         },
         {
@@ -81,7 +81,7 @@ const router = createRouter({
           name: 'graduate-colloquium',
           component: () => import('../views/CallsForColloquiumView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Call for Graduate Colloquium",
+            title: "MexIHC 2026 - Call for Graduate Colloquium",
           },
         },
         {
@@ -89,7 +89,7 @@ const router = createRouter({
           name: 'accessibility-recommendations-for-authors',
           component: () => import('../views/AccessibilityForAuthorsView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Accessibility Recommendations for Authors",
+            title: "MexIHC 2026 - Accessibility Recommendations for Authors",
           },
         },
         {
@@ -97,7 +97,7 @@ const router = createRouter({
           name: 'organizers',
           component: () => import('../views/OrganizersView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Organizers",
+            title: "MexIHC 2026 - Organizers",
           },
         },
         /*
@@ -106,7 +106,7 @@ const router = createRouter({
           name: 'schedule',
           component: () => import('../views/ScheduleView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Schedule",
+            title: "MexIHC 2026 - Schedule",
           },
         },
         */    
@@ -115,7 +115,7 @@ const router = createRouter({
           name: 'keynote-speakers',
           component: () => import('../views/SpeakersView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Keynote speakers",
+            title: "MexIHC 2026 - Keynote speakers",
           },
         },
         /*
@@ -124,7 +124,7 @@ const router = createRouter({
           name: 'accepted-papers',
           component: () => import('../views/AcceptedPapersView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Schedule",
+            title: "MexIHC 2026 - Schedule",
           },
         },
         */    
@@ -133,7 +133,7 @@ const router = createRouter({
           name: 'getting-started',
           component: () => import('../views/GettingStartedView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Getting Started",
+            title: "MexIHC 2026 - Getting Started",
           },
         },
         {
@@ -141,7 +141,7 @@ const router = createRouter({
           name: 'registration',
           component: () => import('../views/RegistrationView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Registration",
+            title: "MexIHC 2026 - Registration",
           },
         },
         /*
@@ -150,7 +150,7 @@ const router = createRouter({
           name: 'accessibility-FAQ',
           component: () => import('../views/AccessibilityFAQView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Accessibility FAQs",
+            title: "MexIHC 2026 - Accessibility FAQs",
           },
         },        
         {
@@ -158,7 +158,7 @@ const router = createRouter({
           name: 'videoArchives',
           component: () => import('../views/VideoArchivesView.vue'), 
           meta: {
-            title: "MexIHC 2024 - Video archives",
+            title: "MexIHC 2026 - Video archives",
           },
         }
         */

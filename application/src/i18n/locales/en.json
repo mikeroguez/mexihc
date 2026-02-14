@@ -16,8 +16,8 @@
         "about_title": "About This Conference",
         "about": "About MexIHC",
         "home": "Home",
-        "for_authors_title": "For Authors",
-        "for_authors": "For authors",
+        "for_authors_title": "Calls",
+        "for_authors": "Calls",
         "organizers": "Organizers",
         "cfp": "Call for papers",
         "cfp_message": "Camera ready extended to sempember 4th",
@@ -48,23 +48,24 @@
         "accepted_papers": "Accepted papers",
         "accepted_papers_message": "",
         "pending": "Pending",
-        "copyright": "© 2024 Mexican Conference on Human-Computer Interaction, an AMexIHC conference.",
+        "copyright": "© 2026 Mexican Conference on Human-Computer Interaction, an AMexIHC conference.",
         "back_to_top": "Back to top of page",
         "workshop_calls": "Calls for papers for accepted workshops",
         "workshop_title": "Calls for Papers for Accepted Workshops",
         "workshop_calls_message": "Calls and information for accepted workshops",
         "tutorial": "Tutorials",
         "tutorial_title": "Tutorials",
-        "tutorial_message": "Information on available tutorials"
+        "tutorial_message": "Information on available tutorials",
+        "coming_soon": "Coming soon"
 
     },
     "jumbotron":{
         "conference": "XI Latin American Conference on Human Computer Interaction",
-        "date": "November 6, 7 & 8",
+        "date": "November 4, 5 & 6, 2026",
         "button": "Getting started to attend!"
     },
     "about":{
-        "about_title": "About MexIHC 2024",
+        "about_title": "About MexIHC 2026",
         "about_text": "The Latin American Conference on Human-Computer Interaction (MexIHC) is managed by the SIGCHI Latin American HCI Community (LAIHC). MexIHC is a premier conference that brings together the Latin American and international HCI research communities to discuss and exchange ideas, methods, approaches, and techniques for designing interactive user experiences and encourages intercultural exchange and cooperation between people with different backgrounds and needs. This conference has its origin in Rio de Janeiro 2003 (Brazil), following editions in Cuernavaca 2005 (Mexico), Rio de Janeiro 2007 (Brazil), Merida 2009 (Mexico), Porto de Galinhas 2011 (Brazil), Guanacaste 2013 (Costa Rica), Córdoba 2015 (Argentina), Antigua 2017 (Guatemala), and Panama City 2019 (Panama) and Virtual Conference 2021 (Online).",
         "call": "Call for participation",
         "registration": "Registration call",
