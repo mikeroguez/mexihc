@@ -70,16 +70,8 @@ export default {
 									<td><span class="text-bold text-primary text-gradient">{{ $t("about.open") }}</span></td>
 								</tr>
 								<tr>
-									<th scope="row">
-										<span class="">
-											{{ $t("about.registration") }}
-										</span>										
-									</th>
-									<td><span class="">{{ $t("nav.pending") }}</span></td>
-								</tr>
-								<tr>
-									<th scope="row">{{ $t("about.proceedings") }}</th>
-									<td>{{ $t("nav.pending") }}</td>
+									<th scope="row">{{ $t("about.registration") }}</th>
+									<td><span class="text-bold text-primary text-gradient">{{ $t("nav.coming_soon") }}</span></td>
 								</tr>
 								<!--
 								<tr>

@@ -1,8 +1,6 @@
 <template>
-    <div class="alert alert-warning col-md-8 m-auto" role="alert">
-        <p>Attention to all interested participants in MexIHC 2024!</p>
-        <p>
-            Deadline for registration and payment: <strong>October 18th.</strong> 
-        </p>
+    <div class="alert alert-warning mexihc-postit col-md-8 m-auto" role="alert">
+        <p>MexIHC 2026 is coming to Ensenada, Baja California.</p>
+        <p>Updates for calls, registration, and program details will be published soon.</p>
     </div>
 </template>

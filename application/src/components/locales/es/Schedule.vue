@@ -57,11 +57,11 @@ export default {
             <thead>
                 <tr>
                     <th scope="col" style="width: 10%;"></th>
-                    <th scope="col" style="width: 18%;">Aula 1</th>
-                    <th scope="col" style="width: 18%;">Aula 2</th>
-                    <th scope="col" style="width: 18%;">Aula 3</th>
-                    <th scope="col" style="width: 18%;">Aula 4</th>
-                    <th scope="col" style="width: 18%;">Aula 5</th>
+                    <th scope="col" style="width: 18%;">Sala de videoconferencias 1</th>
+                    <th scope="col" style="width: 18%;">Sala de usos múltiples 1</th>
+                    <th scope="col" style="width: 18%;">Sala de usos múltiples 2</th>
+                    <th scope="col" style="width: 18%;">Sala de competitividad (facultad de sistemas)</th>
+                    <th scope="col" style="width: 18%;">Sala de trabajo 2</th>
                 </tr>
             </thead>
             <tbody>
@@ -112,7 +112,7 @@ export default {
             <thead>
                 <tr>
                     <th scope="col"></th>
-                    <th scope="col" colspan="2">Aula 1</th>
+                    <th scope="col" colspan="2">Sala de videoconferencias 1</th>
                     <th scope="col">Lobby</th>
                 </tr>
             </thead>
@@ -247,7 +247,7 @@ export default {
             <thead>
                 <tr>
                     <th scope="col"></th>
-                    <th scope="col" colspan="2">Aula 1</th>
+                    <th scope="col" colspan="2">Sala de videoconferencias 1</th>
                 </tr>
             </thead>
             <tbody>

@@ -5,7 +5,7 @@ import SponsorItem from '@/components/SponsorItem.vue'
 export default {
     components: {
         SponsorItem
-    },    
+    },
     setup() {
         return { Tr }
     }
@@ -24,7 +24,7 @@ export default {
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <div class="row">                      
+                    <div class="row">
 
                         <SponsorItem>
                             <template #image>
@@ -34,11 +34,11 @@ export default {
                                 <div class="colored-shadow"
                                     style="background-image: url(&quot;./assets/img/logos/usjo.png&quot;);">
                                 </div>
-                            </template>                                
+                            </template>
                             <template #name>
                                 Universidad de la Sierra Juárez
                             </template>
-                        </SponsorItem> 
+                        </SponsorItem>
 
                         <SponsorItem>
                             <template #image>
@@ -48,12 +48,42 @@ export default {
                                 <div class="colored-shadow"
                                     style="background-image: url(&quot;./assets/img/logos/uaslp.png&quot;);">
                                 </div>
-                            </template>                                
+                            </template>
                             <template #name>
                                 Facultad de Ingeniería, Universidad Autónoma de San Luis Potosí
                             </template>
-                        </SponsorItem>                    
+                        </SponsorItem>
 
+                    </div>
+                    <div class="row">
+
+                        <SponsorItem>
+                            <template #image>
+                                <img src="/assets/img/logos/itson.png" alt="" class="img-fluid shadow rounded-3">
+                            </template>
+                            <template #image-shadow>
+                                <div class="colored-shadow"
+                                    style="background-image: url(&quot;./assets/img/logos/itson.png&quot;);">
+                                </div>
+                            </template>
+                            <template #name>
+                                Instituto Tecnológico de Sonora
+                            </template>
+                        </SponsorItem>
+
+                        <SponsorItem>
+                            <template #image>
+                                <img src="/assets/img/logos/UCol.png" alt="" class="img-fluid shadow rounded-3">
+                            </template>
+                            <template #image-shadow>
+                                <div class="colored-shadow"
+                                    style="background-image: url(&quot;./assets/img/logos/uaslp.png&quot;);">
+                                </div>
+                            </template>
+                            <template #name>
+                                Universidad de Colima
+                            </template>
+                        </SponsorItem>
                     </div>
                 </div>
             </div>

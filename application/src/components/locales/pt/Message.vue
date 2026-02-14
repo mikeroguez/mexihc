@@ -1,8 +1,6 @@
 <template>
-    <div class="alert alert-warning col-md-8 m-auto" role="alert">
-        <p>Atenção a todos os interessados em participar do CLIHC 2023!</p>
-        <p>
-            Queremos informar que estendemos o prazo de recebimento dos trabalhos até <strong>11 de agosto.</strong>
-        </p>
+    <div class="alert alert-warning mexihc-postit col-md-8 m-auto" role="alert">
+        <p>MexIHC 2026 chegará a Ensenada, Baja California.</p>
+        <p>Em breve publicaremos atualizações sobre chamadas, inscrição e programação.</p>
     </div>
 </template>

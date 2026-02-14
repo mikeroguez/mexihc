@@ -1,8 +1,6 @@
 <template>
-    <div class="alert alert-warning col-md-8 m-auto" role="alert">
-        <p>¡Atención a todos los interesados en MexIHC 2024! </p>
-        <p>
-            Fecha límite para el registro y pago: <strong>18 de octubre</strong>.
-        </p>
+    <div class="alert alert-warning mexihc-postit col-md-8 m-auto" role="alert">
+        <p>MexIHC 2026 llega a Ensenada, Baja California.</p>
+        <p>Pronto publicaremos actualizaciones de convocatorias, registro y programa.</p>
     </div>
 </template>

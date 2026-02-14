@@ -84,21 +84,21 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/jessica.png" alt=""
+                                                <img src="/assets/img/nophoto.png" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/jessica.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
-                                            Jessica Beltrán
+                                            Alberto L. Morán
                                         </template>
                                         <template #institution>
-                                            Universidad Autónoma de Coahuila, MX
+                                            Universidad Autónoma de Baja California (UABC)
                                         </template>
                                         <template #email>
-                                            chairs.2024@mexihc.org
+                                            General Chairs
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -107,21 +107,44 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/dagoberto.png" alt=""
+                                                <img src="/assets/img/people/jesus_fa.jpg" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/dagoberto.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/people/jesus_fa.jpg&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
-                                            Dagoberto Cruz
+                                            Jesús Favela
                                         </template>
                                         <template #institution>
-                                            University of California San Diego, USA
+                                            Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE)
                                         </template>
                                         <template #email>
-                                            chairs.2024@mexihc.org
+                                            General Chairs
+                                        </template>
+                                    </OrganizerItem>
+                                </div>
+
+                                <div class="col-md-4 m-auto mt-md-0 mt-4">
+                                    <OrganizerItem>
+                                        <template #image>
+                                            <div class="d-block blur-shadow-image">
+                                                <img src="/assets/img/people/sanely.jpg" alt=""
+                                                    class="img-fluid shadow rounded-3">
+                                            </div>
+                                            <div class="colored-shadow"
+                                                style="background-image: url(&quot;./assets/img/people/sanely.jpg&quot;);">
+                                            </div>
+                                        </template>
+                                        <template #name>
+                                            Laura S. Gaytán-Lugo
+                                        </template>
+                                        <template #institution>
+                                            Universidad de Colima (UCOL)
+                                        </template>
+                                        <template #email>
+                                            General Chairs
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -147,240 +170,6 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/pedro.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/pedro.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Pedro C. Santana-Mancilla
-                                        </template>
-                                        <template #institution>
-                                            Universidad de Colima, MX
-                                        </template>
-                                        <template #email>
-                                            tpc.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/vicky.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/vicky.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Victoria Meza-Kubo
-                                        </template>
-                                        <template #institution>
-                                            Universidad Autónoma de Baja California, MX
-                                        </template>
-                                        <template #email>
-                                            tpc.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/monica.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/monica.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Mónica Tentori
-                                        </template>
-                                        <template #institution>
-                                            CICESE, México
-                                        </template>
-                                        <template #email>
-                                            tpc.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container mt-4 px-5 mt-6" id="registration-chairs">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
-                                <h3>{{ $t("organizers.graduate_colloquium_chairs_title") }}</h3>
-                                <p class="text-secondary font-weight-normal pe-3">
-                                    {{ $t("organizers.graduate_colloquium_chairs_description") }}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-9">
-                            <div class="row">
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/valeria.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/valeria.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Valeria Soto
-                                        </template>
-                                        <template #institution>
-                                            Universidad Autónoma de Coahuila, MX
-                                        </template>
-                                        <template #email>
-                                            gc.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/raymundo.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/raymundo.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Raymundo Cornejo
-                                        </template>
-                                        <template #institution>
-                                            Universidad Autónoma de Chihuahua
-                                        </template>
-                                        <template #email>
-                                            gc.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container mt-4 px-5 mt-6" id="sdc-chairs">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
-                                <h3>{{ $t("organizers.student_design_competition_title") }}</h3>
-                                <p class="text-secondary font-weight-normal pe-3">
-                                    {{ $t("organizers.student_design_competition_description") }}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-9">
-                            <div class="row">
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/carlos.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/carlos.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Carlos Toxtli
-                                        </template>
-                                        <template #institution>
-                                            Clemson University, USA
-                                        </template>
-                                        <template #email>
-                                            sdc.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/niels.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/niels.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Niels Martínez
-                                        </template>
-                                        <template #institution>
-                                            Universidad Autónoma de Coahuila, MX
-                                        </template>
-                                        <template #email>
-                                            sdc.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container mt-4 px-5 mt-6" id="workshops_and_tutorials-chairs">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
-                                <h3>{{ $t("organizers.workshops_and_tutorials_chairs_title") }}</h3>
-                                <p class="text-secondary font-weight-normal pe-3">
-                                    {{ $t("organizers.workshops_and_tutorials_chairs_description") }}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-9">
-                            <div class="row">
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/rene.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/rene.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            René Navarro
-                                        </template>
-                                        <template #institution>
-                                            UNISON, MX
-                                        </template>
-                                        <template #email>
-                                            ws.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
                                                 <img src="/assets/img/people/adriana.png" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
@@ -389,13 +178,59 @@ export default {
                                             </div>
                                         </template>
                                         <template #name>
-                                            Adriana Iñiguez
+                                            Adriana L. Iñiguez-Carrillo
                                         </template>
                                         <template #institution>
-                                            Universidad de Guadalajara, MX
+                                            Universidad de Guadalajara (UdG)
                                         </template>
                                         <template #email>
-                                            ws.2024@mexihc.org
+                                            Program Chairs
+                                        </template>
+                                    </OrganizerItem>
+                                </div>
+
+                                <div class="col-md-4 m-auto mt-md-0 mt-4">
+                                    <OrganizerItem>
+                                        <template #image>
+                                            <div class="d-block blur-shadow-image">
+                                                <img src="/assets/img/nophoto.png" alt=""
+                                                    class="img-fluid shadow rounded-3">
+                                            </div>
+                                            <div class="colored-shadow"
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                            </div>
+                                        </template>
+                                        <template #name>
+                                            Mayra Donaji Barrera-Machuca
+                                        </template>
+                                        <template #institution>
+                                            University of Calgary (UCalgary)
+                                        </template>
+                                        <template #email>
+                                            Program Chairs
+                                        </template>
+                                    </OrganizerItem>
+                                </div>
+
+                                <div class="col-md-4 m-auto mt-md-0 mt-4">
+                                    <OrganizerItem>
+                                        <template #image>
+                                            <div class="d-block blur-shadow-image">
+                                                <img src="/assets/img/nophoto.png" alt=""
+                                                    class="img-fluid shadow rounded-3">
+                                            </div>
+                                            <div class="colored-shadow"
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                            </div>
+                                        </template>
+                                        <template #name>
+                                            Marcela D. Rodríguez
+                                        </template>
+                                        <template #institution>
+                                            Universidad Autónoma de Baja California (UABC)
+                                        </template>
+                                        <template #email>
+                                            Program Chairs
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -403,91 +238,7 @@ export default {
                         </div>
                     </div>
                 </div>
-
-                <div class="container mt-4 px-5 mt-6" id="posters-chairs">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
-                                <h3>{{ $t("organizers.posters_chairs_title") }}</h3>
-                                <p class="text-secondary font-weight-normal pe-3">
-                                    {{ $t("organizers.posters_chairs_description") }}
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-9">
-                            <div class="row">
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/adolfo.jpg" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/adolfo.jpg&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Adolfo Mejía
-                                        </template>
-                                        <template #institution>
-                                            Universidad Autónoma de Coahuila
-                                        </template>
-                                        <template #email>
-                                            posters.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/jose.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/jose.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            José Mercado Chan
-                                        </template>
-                                        <template #institution>
-                                            CICESE-UT3, MX
-                                        </template>
-                                        <template #email>
-                                            posters.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/sanely.jpg" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/sanely.jpg&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Sanely Gaytán
-                                        </template>
-                                        <template #institution>
-                                            Universidad de Colima
-                                        </template>
-                                        <template #email>
-                                            posters.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Hidden committee blocks per update request -->
 
                 <div class="container mt-4 px-5 mt-6" id="publicity-chairs">
                     <div class="row">
@@ -506,28 +257,6 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/arturo.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/arturo.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Arturo Morales
-                                        </template>
-                                        <template #institution>
-                                            CICESE, México
-                                        </template>
-                                        <template #email>
-                                            publicity.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                                <div class="col-md-4 mx-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
                                                 <img src="/assets/img/people/pablo.jpg" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
@@ -539,9 +268,10 @@ export default {
                                             Pablo Bautista
                                         </template>
                                         <template #institution>
+                                            Universidad de Colima (UCOL)
                                         </template>
                                         <template #email>
-                                            publicity.2024@mexihc.org
+                                            Publicity Chairs
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -549,21 +279,21 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/rosario.png" alt=""
+                                                <img src="/assets/img/nophoto.png" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/rosario.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
-                                            Rosario Peralta
+                                            Pablo M. Schiaffino-Rivas
                                         </template>
                                         <template #institution>
-                                            UNCA, MX
+                                            Universidad de Colima (UCOL)
                                         </template>
                                         <template #email>
-                                            publicity.2024@mexihc.org
+                                            Publicity Chairs
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -600,10 +330,10 @@ export default {
                                             Miguel A. Rodríguez-Ortiz
                                         </template>
                                         <template #institution>
-                                            Universidad de Colima, MX
+                                            Universidad de Colima (UCOL)
                                         </template>
                                         <template #email>
-                                            web.2024@mexihc.org
+                                            Web Chair
                                         </template>
                                     </OrganizerItem>
                                 </div>
@@ -611,272 +341,13 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="container mt-4 px-5 mt-6" id="registration-chairs">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
-                                <h3>{{ $t("organizers.registration_chairs_title") }}</h3>
-                                <p class="text-secondary font-weight-normal pe-3">
-                                    {{ $t("organizers.registration_chairs_description") }}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-9">
-                            <div class="row">
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/luis.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/luis.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Luis Castro
-                                        </template>
-                                        <template #institution>
-                                            ITSON, MX
-                                        </template>
-                                        <template #email>
-                                            registration.2024@mexihc.org
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container mt-4 px-5" id="industry-day">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
-                                <h3>{{ $t("organizers.industry_session_chair_title") }}</h3>
-                                <p class="text-secondary font-weight-normal pe-3">
-                                    {{ $t("organizers.industry_session_chair_description") }}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-9">
-                            <div class="row p-0">
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/arian.jpg" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/arian.jpg&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Arian Martínez
-                                        </template>
-                                        <template #institution>
-                                            Microsoft, USA
-                                        </template>
-                                        <template #email>
-                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/victor.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/victor.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Victor García
-                                        </template>
-                                        <template #institution>
-                                            BBVA, MX
-                                        </template>
-                                        <template #email>
-                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container mt-4 px-5" id="industry-day">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
-                                <h3>{{ $t("organizers.local_chair_title") }}</h3>
-                                <p class="text-secondary font-weight-normal pe-3">
-                                    {{ $t("organizers.local_chair_description") }}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-9">
-                            <div class="row p-0">
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Irma Delia García Calvillo
-                                        </template>
-                                        <template #institution>
-                                            CIMA/UAdeC
-                                        </template>
-                                        <template #email>
-                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Vanesa Avalos Gaytan
-                                        </template>
-                                        <template #institution>
-                                            CIMA/UAdeC
-                                        </template>
-                                        <template #email>
-                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Yajaira Cardona Valdés
-                                        </template>
-                                        <template #institution>
-                                            CIMA/UAdeC
-                                        </template>
-                                        <template #email>
-                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                            </div>
-                            <div class="row p-0 mt-4">
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Oliver Avalos Rosales
-                                        </template>
-                                        <template #institution>
-                                            CIMA/UAdeC
-                                        </template>
-                                        <template #email>
-                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Jesus Alejandro Navarro Acosta
-                                        </template>
-                                        <template #institution>
-                                            CIMA/UAdeC
-                                        </template>
-                                        <template #email>
-                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Felix Saucedo Zendejo
-                                        </template>
-                                        <template #institution>
-                                            CIMA/UAdeC
-                                        </template>
-                                        <template #email>
-                                            <!--<a class="uline" href="mailto:tpc.2022@mexihc.org">tpc.2022@mexihc.org</a>-->
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <p class="mt-5">
-                        <RouterLink :to="Tr.i18nRoute({ name: 'organizers', hash: '#top' })" class="uline">
-                            {{ $t("nav.back_to_top") }}
-                        </RouterLink>
-                    </p>
-                    <hr>
-                </div>
+                <!-- Hidden committee blocks per update request -->
+                <p class="mt-5">
+                    <RouterLink :to="Tr.i18nRoute({ name: 'organizers', hash: '#top' })" class="uline">
+                        {{ $t("nav.back_to_top") }}
+                    </RouterLink>
+                </p>
+                <hr>
             </div>
         </div>
     </section>
@@ -884,11 +355,12 @@ export default {
         <div class="row">
             <div class="row justify-content-center my-3">
                 <div class="col-lg-8">
-                    <h2 id="program-committee" class="text-primary text-gradient text-center py-4 mt-5">
+                    <h2 id="program-committee" class="text-center py-4 mt-5" style="color: #011638;">
                         {{ $t("organizers.program_committee_title") }}
                     </h2>
 
 
+                    <!--
                     <table class="table table-striped text-center align-middle w-100" style="table-layout: fixed;">
                         <thead>
                             <tr>
@@ -1045,6 +517,10 @@ export default {
                             </tr>
                         </tbody>
                     </table>
+                    -->
+                    <p class="text-center">
+                        <em>{{ $t("nav.coming_soon") }}</em>
+                    </p>
 
                     <p>
                         <RouterLink :to="Tr.i18nRoute({ name: 'organizers', hash: '#top' })" class="uline">

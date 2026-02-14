@@ -19,7 +19,7 @@ export default {
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Envío final de versión lista para la publicación:</strong> <del>30 de agosto</del> 4 de septiembre de 2024 (extendida)<br>
+                <strong class="text-primary text-gradient">Fecha límite para envíos:</strong> 1 de junio de 2026<br>
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-dates' })" class="uline">
                     Ver todas las fechas importantes
                 </RouterLink>
@@ -30,7 +30,7 @@ export default {
     <p>
         Invitamos a contribuciones originales sobre el tema de la IHC en la era de las nuevas realidades, así como temas
         relevantes en Interacción Humano-Computadora y Diseño de Interacción. Los artículos serán revisados de manera
-        anónima por los miembros del comité del programa MexIHC 2024. Las propuestas serán evaluadas en función de su
+        anónima por los miembros del comité del programa MexIHC 2026. Las propuestas serán evaluadas en función de su
         originalidad, la importancia de la contribución al campo y al tema, la corrección técnica y la presentación.
     </p>
 
@@ -63,22 +63,21 @@ export default {
     <p>
         Los artículos completos y cortos escritos en inglés o español deben utilizar <a
             href="https://mexihc.org/aihc_template.zip" class="uline">a plantilla de revista "Avances en Interacción Humano-Computadora"</a> de AmexIHC.
-            Envíe su artículo utilizando la cuenta de <a href="https://www.easychair.org/my/conference?conf=mexihc2024">EasyChair para MexIHC 2024.</a>.
+            La página de envío para MexIHC 2026 es <a href="https://easychair.org/conferences/?conf=mexihc2026">https://easychair.org/conferences/?conf=mexihc2026</a>.
     </p>
 
     <h2 id="cfp-dates">Fechas importantes</h2>
     <ul>
-        <li>Fecha límite para envíos: <del>14 de junio</del> 1 de julio de 2024 (extendida)</li>
-        <li>Notificación de aceptación: 20 de agosto de 2024</li>
-        <li>Envío final de versión lista para la publicación: <del>30 de agosto</del> 4 de septiembre de 2024 (extendida)</li>
-        <li>Versión lista para la publicación: 25 de agosto de 2024</li>
-        <li>MexIHC 2024: del 6 al 8 de noviembre</li>
+        <li>Fecha límite para envíos: 1 de junio de 2026</li>
+        <li>Notificación de aceptación: 7 de agosto de 2026</li>
+        <li>Envío final de versión lista para la publicación: 1 de septiembre de 2026</li>
+        <li>MexIHC 2026: del 4 al 6 de noviembre de 2026</li>
     </ul>
 
     <h2>Envío anónimo</h2>
 
     <p>
-        MexIHC 2024 utilizará un proceso de revisión completamente anónimo para Artículos Completos y Cortos, en el que
+        MexIHC 2026 utilizará un proceso de revisión completamente anónimo para Artículos Completos y Cortos, en el que
         los autores deben anonimizar sus envíos de papel. No debe anonimizar las referencias a su trabajo anterior
         (estas son necesarias como parte del proceso de revisión). Más bien, debe referirse a todo trabajo anterior en
         tercera persona. Aunque puede que no sea posible eliminar todas las pistas sobre quiénes son los autores,
@@ -95,7 +94,7 @@ export default {
     <h2>Temas de interés</h2>
 
     <p>
-        MexIHC 2024 busca contribuciones de trabajos sobre (pero no limitados a) las siguientes áreas clave:
+        MexIHC 2026 busca contribuciones de trabajos sobre (pero no limitados a) las siguientes áreas clave:
     </p>
 
     <h3>IA en HCI</h3>
@@ -179,20 +178,20 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/pedro.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/adriana.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
                     <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/people/pedro.png&quot;);">
+                        style="background-image: url(&quot;./assets/img/people/adriana.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Pedro C. Santana-Mancilla
+                    Adriana L. Iñiguez-Carrillo
                 </template>
                 <template #institution>
-                    Universidad de Colima, MX
+                    Universidad de Guadalajara (UdG)
                 </template>
                 <template #email>
-                    tpc.2024@mexihc.org
+                    Program Chairs
                 </template>
             </OrganizerItem>
         </div>
@@ -201,20 +200,20 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/vicky.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
                     <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/people/vicky.png&quot;);">
+                        style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Victoria Meza-Kubo
+                    Mayra Donaji Barrera-Machuca
                 </template>
                 <template #institution>
-                    Universidad Autónoma de Baja California, MX
+                    University of Calgary (UCalgary)
                 </template>
                 <template #email>
-                    tpc.2024@mexihc.org
+                    Program Chairs
                 </template>
             </OrganizerItem>
         </div>
@@ -223,20 +222,20 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/monica.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
                     <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/people/monica.png&quot;);">
+                        style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Monica Tentori
+                    Marcela D. Rodríguez
                 </template>
                 <template #institution>
-                    CICESE, MX
+                    Universidad Autónoma de Baja California (UABC)
                 </template>
                 <template #email>
-                    tpc.2024@mexihc.org
+                    Program Chairs
                 </template>
             </OrganizerItem>
         </div>

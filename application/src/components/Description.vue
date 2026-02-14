@@ -38,7 +38,7 @@ export default {
 <template>
     <section class="py-5 container" id="download-soft-ui">
         <div class="bg-gradient-dark position-relative border-radius-xl overflow-hidden">
-            <img src="/assets/img/shapes/cactus.svg" alt="" class="position-absolute start-0 top-md-0 w-100 opacity-6">
+            <img src="/assets/img/shapes/waves-white.svg" alt="" class="position-absolute start-0 top-md-0 w-100 opacity-6">
             <div class="container py-7 postion-relative z-index-2 position-relative">
                 <div class="row">
                     <div class="col-md-7 mx-auto text-center">
@@ -50,12 +50,13 @@ export default {
                         <a href="./accepted-papers" class="btn bg-gradient-yellow btn-round btn-lg">Accepted papers</a>
                         <a href="./schedule" class="btn bg-gradient-yellow btn-round btn-lg">Schedule</a>
                         <a href="./video-archives" class="btn bg-gradient-yellow btn-round btn-lg">Video archives</a>
-                        -->
+                        
                         <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' })" 
 												class="btn btn-lg  bg-gradient-yellow  btn-round"
                           >
                           {{ $t("calls.cwt") }}
-                        </RouterLink>           
+                        </RouterLink>
+                        -->
                     </div>
                 </div>
             </div>
