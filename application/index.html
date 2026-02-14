@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<base href="/" />
+	<base href="/mexihc/" />
 
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -10,15 +10,15 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/logos/mexihc2024.svg">
 	<link rel="icon" type="image/png" href="/assets/img/logos/mexihc2024.svg">
 
-	<title>MexIHC 2024</title>
+	<title>MexIHC 2026</title>
 
 	<!-- CEO and Social Networks     -->
 	<meta property="og:locale" content="en-US">
 	<meta property="og:site_name" content="MexIHC">
-	<meta property="og:title" content="MexIHC 2024 - an AmexIHC conference">
-	<meta property="og:image" content="https://www.mexihc.org/2024/assets/img/nophoto.png">
-	<meta property="og:image:secure_url" content="https://www.mexihc.org/2024/assets/img/nophoto.png">
-	<meta property="og:url" content="https://www.mexihc.org/2024/">
+	<meta property="og:title" content="MexIHC 2026 - an AmexIHC conference">
+	<meta property="og:image" content="https://www.mexihc.org/mexihc/assets/img/nophoto.png">
+	<meta property="og:image:secure_url" content="https://www.mexihc.org/mexihc/assets/img/nophoto.png">
+	<meta property="og:url" content="https://www.mexihc.org/mexihc/">
 	<meta property="og:description" content="Tenth Mexican conference on Human-Computer Interaction">
 	<meta property="og:type" content="website">
 	<meta name="twitter:site" content="@mexihc">
@@ -26,7 +26,7 @@
 	<meta name="twitter:description" content="Tenth Mexican conference on Human-Computer Interaction">
 	<meta name="twitter:url" content="https://twitter.com/mexihc">
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:image" content="https://www.mexihc.org/2024/assets/img/nophoto.png">
+	<meta name="twitter:image" content="https://www.mexihc.org/mexihc/assets/img/nophoto.png">
 	<meta name="description" content="Tenth Mexican conference on Human-Computer Interaction">
 
 	<!-- Le fonts and icons     -->
@@ -85,6 +85,18 @@
 <body class="presentation-page">
 	<div id="app"></div>
 	<script type="module" src="/src/main.js"></script>
+	<script>
+		if (sessionStorage.redirect) {
+			const redirect = sessionStorage.redirect;
+			delete sessionStorage.redirect;
+			const redirectUrl = new URL(redirect);
+			const appBaseUrl = new URL('/mexihc/', location.origin);
+			if (redirectUrl.origin === appBaseUrl.origin) {
+				const path = redirectUrl.pathname + redirectUrl.search + redirectUrl.hash;
+				history.replaceState(null, null, path);
+			}
+		}
+	</script>
 	<script>
 		var myNav = document.getElementsByClassName('navbar-color-on-scroll');
 		var myIcon = document.getElementsByClassName('icon-language');
