@@ -116,20 +116,19 @@ export default {
                     <div>
                         <ul class="d-flex flex-row ms-n3 nav">
                             <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://www.facebook.com/mexihc" target="_blank">
+                                <a class="nav-link pe-1" href="https://www.facebook.com/mexihc" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-facebook text-lg opacity-8"></i>
                                     <span class="sr-only">{{ $t("nav.facebook") }}</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://twitter.com/mexihc" target="_blank">
-                                    <i class="fab fa-twitter text-lg opacity-8"></i>
+                                <a class="nav-link pe-1" href="https://x.com/mexihc" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-x-twitter text-lg opacity-8"></i>
                                     <span class="sr-only">{{ $t("nav.twitter") }}</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <a href="https://www.laihc.org/" class="p-0 m-0"><img src="/assets/img/logos/amexihc.svg" alt="aMexIHC" class="mt-0" :width="100" /></a>
                 </div>
 
                 <div class="col-sm-4 col-md-3 mb-4">
@@ -211,11 +210,16 @@ export default {
 
                 <div class="col-12 my-4">
                     <div class="text-center">
+                        <p class="my-2">
+                            <a href="https://www.amexihc.org/" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/img/logos/amexihc.svg" alt="AMexIHC" width="120">
+                            </a>
+                        </p>
                         <p class="my-0 text-sm">
                             {{ $t("nav.copyright") }}
                         </p>
                         <p class="my-0  text-sm">
-                            <a class="uline" href="CHANGELOG.md">v2024.0.0.26</a>
+                            <a class="uline" href="CHANGELOG.md">v2026.0.0.1</a>
                         </p>
                     </div>
                 </div>

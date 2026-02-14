@@ -73,8 +73,9 @@
 				this.isScrolled = nextIsScrolled
 			}
 		},
-		setup() {
-			return { Tr }
+	setup() {
+			const baseUrl = import.meta.env.BASE_URL
+			return { Tr, baseUrl }
 		}
 	}
 </script>
@@ -99,7 +100,7 @@
 							data-placement="bottom"
 							tabindex="0"
 						>
-							<img src="/assets/img/logos/mexihc2026.svg" height="25" alt="">
+							<img :src="isScrolled ? `${baseUrl}assets/img/logos/mexihc2026_white.svg` : `${baseUrl}assets/img/logos/mexihc2026.svg`" height="25" alt="">
 							MexIHC 2026			
 						</RouterLink>
 
@@ -401,7 +402,17 @@
 .mexihc-navbar.is-scrolled .nav-link.router-link-exact-active,
 .mexihc-navbar.is-scrolled .nav-link:hover {
 	color: #F0EFEC !important;
-	border-bottom-color: #870058 !important;
+	border-bottom-color: #F0EFEC !important;
+}
+
+.mexihc-navbar.is-scrolled .nav-link.active-section {
+	border-bottom-color: #F0EFEC !important;
+}
+
+.mexihc-navbar.is-scrolled .locale-link.active,
+.mexihc-navbar.is-scrolled .locale-link.router-link-active,
+.mexihc-navbar.is-scrolled .locale-link.router-link-exact-active {
+	border-bottom-color: #F0EFEC !important;
 }
 
 @keyframes mexihc-nav-detach {
