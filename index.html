@@ -87,6 +87,18 @@
 <body class="presentation-page">
 	<div id="app"></div>
 	<script>
+		if (sessionStorage.redirect) {
+			const redirect = sessionStorage.redirect;
+			delete sessionStorage.redirect;
+			const redirectUrl = new URL(redirect);
+			const appBaseUrl = new URL('/', location.href);
+			if (redirectUrl.origin === appBaseUrl.origin) {
+				const path = redirectUrl.pathname + redirectUrl.search + redirectUrl.hash;
+				history.replaceState(null, null, path);
+			}
+		}
+	</script>
+	<script>
 		var myNav = document.getElementsByClassName('navbar-color-on-scroll');
 		var myIcon = document.getElementsByClassName('icon-language');
 
