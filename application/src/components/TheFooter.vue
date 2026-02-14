@@ -129,6 +129,7 @@ export default {
                             </li>
                         </ul>
                     </div>
+                    <a href="https://www.laihc.org/" class="p-0 m-0"><img src="/assets/img/logos/amexihc.svg" alt="aMexIHC" class="mt-0" :width="100" /></a>
                 </div>
 
                 <div class="col-sm-4 col-md-3 mb-4">
