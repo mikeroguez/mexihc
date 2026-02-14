@@ -328,10 +328,12 @@
 .mexihc-navbar.is-scrolled.bg-gradient-dark {
 	background-image:
 		url('/assets/img/shapes/waves-white.svg'),
-		linear-gradient(90deg, #011638 0%, #194a8a 100%) !important;
-	background-repeat: repeat, no-repeat;
-	background-position: center, center;
-	background-size: 520px auto, cover;
+		url('/assets/img/shapes/waves-white.svg'),
+		linear-gradient(90deg, #870058 0%, #A3326A 100%) !important;
+	background-repeat: repeat, repeat, no-repeat;
+	background-position: center, 180px center, center;
+	background-size: 300px auto, 300px auto, cover;
+	background-blend-mode: screen, screen, normal;
 }
 
 .navbar .nav-link.active-section {
