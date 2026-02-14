@@ -17,9 +17,10 @@
                     Convocatoria de trabajos (CFP)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Envío final de versión lista para la publicación:</strong> <del>30 de agosto</del> 4 de septiembre de 2024 (extendida) <strong>(Cerrada)</strong><br>
+            <strong class="text-primary text-gradient">Fecha límite para envíos:</strong> 1 de junio de 2026<br>
         </div>
         </li>
+        <!-- Hidden calls until publication
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
@@ -70,5 +71,6 @@
             <strong class="text-primary text-gradient">Consulta las páginas web de cada taller para fechas y detalles.</strong><br>
         </div>
         </li>        
+        -->
     </ol>    
 </template>

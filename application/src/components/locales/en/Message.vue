@@ -1,5 +1,6 @@
 <template>
-    <div class="alert alert-warning col-md-8 m-auto" role="alert">
-        <p>See you at MexIHC 2026 in Ensenada! Thank you for joining us and making MexIHC 2024 a success!</p>
+    <div class="alert alert-warning mexihc-postit col-md-8 m-auto" role="alert">
+        <p>MexIHC 2026 is coming to Ensenada, Baja California.</p>
+        <p>Updates for calls, registration, and program details will be published soon.</p>
     </div>
 </template>

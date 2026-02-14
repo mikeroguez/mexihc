@@ -140,22 +140,12 @@ export default {
                                     class="nav-link uline">
                                     {{ $t("nav.about") }}
                                 </RouterLink>
+                            </li>
+                            <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'organizers' })" class="nav-link uline">
                                     {{ $t("nav.organizers") }}
                                 </RouterLink>
                             </li>
-                            <li class="nav-item">
-                                <RouterLink class="nav-link uline" :to="Tr.i18nRoute({ name: 'keynote-speakers' })">
-                                    {{ $t("nav.keynotes") }}
-                                </RouterLink>
-                            </li>
-                            <!--                            
-                            <li class="nav-item">
-                                <a class="nav-link uline" href="./video-archives">
-                                    Video archives
-                                </a>
-                            </li>
-                            -->
                         </ul>
                     </div>
                 </div>
@@ -169,6 +159,7 @@ export default {
                                     {{ $t("nav.cfp") }}
                                 </RouterLink>
                             </li>
+                            <!--
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters' })" class="nav-link uline">
                                     {{ $t("nav.cpt") }}
@@ -201,54 +192,17 @@ export default {
                                     {{ $t("nav.accessibility_for_autors") }}
                                 </RouterLink>
                             </li>
+                            -->
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-sm-4 col-md-3 mb-4">
                     <div>
                         <h3 class="text-gradient text-primary text-sm">{{ $t("nav.for_attendees_title") }}</h3>
                         <ul class="flex-column ms-n3 nav">
                             <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'getting-started' })" 
-                                    class="nav-link uline"
-                                >
-                                    {{ $t("nav.getting_started") }}
-                                </RouterLink>
-                            </li>
-                            <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'accepted-tutorials' })" 
-                                    class="nav-link uline"
-                                >
-                                    {{ $t("nav.tutorial") }}
-                                </RouterLink>
-                            </li>
-                            <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'registration' })" 
-                                    class="nav-link uline"
-                                >
-                                    {{ $t("nav.rates_and_registration") }}
-                                </RouterLink>
-                            </li>
-                            <!--
-                            <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'accessibility-FAQ' })" 
-                                    class="nav-link uline"
-                                >
-                                    {{ $t("nav.accessibility_faqs") }}
-                                </RouterLink>
-                            </li>
-                            <li class="nav-item">
-                                <RouterLink class="nav-link uline" :to="Tr.i18nRoute({ name: 'accepted-papers' })">
-                                    {{ $t("nav.accepted_papers") }}
-                                </RouterLink>
-                            </li>
-                            -->                            
-                            <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'registration' })" 
-                                    class="nav-link uline"
-                                >
-                                    {{ $t("nav.schedule") }}
-                                </RouterLink>
+                                <span class="nav-link"><em>{{ $t("nav.coming_soon") }}</em></span>
                             </li>
                         </ul>
                     </div>
@@ -260,7 +214,7 @@ export default {
                             {{ $t("nav.copyright") }}
                         </p>
                         <p class="my-0  text-sm">
-                            <a class="uline" href="CHANGELOG.md">v2024.0.0.26</a>
+                            <a class="uline" href="CHANGELOG.md">v2026.0.0.1</a>
                         </p>
                     </div>
                 </div>

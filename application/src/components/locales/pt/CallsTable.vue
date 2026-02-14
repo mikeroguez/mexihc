@@ -17,9 +17,10 @@
                     Chamada de trabalhos (CFP)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Prazo de envio:</strong>  <del>3 de julho PRORROGADO</del><strong class="text-danger"> Fechada</strong><br>
+            <strong class="text-primary text-gradient">Prazo de envio:</strong> 1 de junho de 2026<br>
         </div>
         </li>
+        <!-- Hidden calls until publication
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
@@ -60,5 +61,6 @@
             <strong class="text-primary text-gradient">Prazo de envio:</strong> <del>11 de Agosto PRORROGADO</del><strong class="text-danger"> Fechada</strong><br>
         </div>
         </li>
+        -->
     </ol>    
 </template>

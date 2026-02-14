@@ -11,10 +11,10 @@ import TheSupport from '@/components/Support.vue'
 <template>
   <TheJumbotron />
   <TheAboutSection />
-  <TheSpeakers />
+  <!-- <TheSpeakers /> -->
   <TheDescription />
   
-  <TheSpetialThanks />
-  <TheVirtualVenues />
+  <!-- <TheSpetialThanks /> -->
+  <!-- <TheVirtualVenues /> -->
   <!-- <TheSupport /> -->
 </template>

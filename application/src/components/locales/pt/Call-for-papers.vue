@@ -153,18 +153,19 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/pablo.jpg" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/adriana.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
-                    <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/pablo.jpg&quot;);">
+                    <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/adriana.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Pablo Torres
+                    Adriana L. Iñiguez-Carrillo
                 </template>
                 <template #institution>
-                    UTPL, EC
+                    Universidad de Guadalajara (UdG)
                 </template>
                 <template #email>
+                    Program Chairs
                 </template>
             </OrganizerItem>
         </div>
@@ -179,12 +180,34 @@ export default {
                     </div>
                 </template>
                 <template #name>
-                    Vanessa Agredo Delgado
+                    Mayra Donaji Barrera-Machuca
                 </template>
                 <template #institution>
-                    FUNAD, CO
+                    University of Calgary (UCalgary)
                 </template>
                 <template #email>
+                    Program Chairs
+                </template>
+            </OrganizerItem>
+        </div>
+
+        <div class="col-md-4">
+            <OrganizerItem>
+                <template #image>
+                    <div class="d-block blur-shadow-image">
+                        <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
+                    </div>
+                    <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                    </div>
+                </template>
+                <template #name>
+                    Marcela D. Rodríguez
+                </template>
+                <template #institution>
+                    Universidad Autónoma de Baja California (UABC)
+                </template>
+                <template #email>
+                    Program Chairs
                 </template>
             </OrganizerItem>
         </div>

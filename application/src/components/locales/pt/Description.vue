@@ -7,6 +7,6 @@
         A Conferência Latino-Americana de Interação Humano-Computador (CLIHC) é o principal fórum para pesquisadores e
         profissionais na América Latina apresentarem e discutirem os últimos avanços em Interação Humano-Computador.
         Organizada pela Associação Latino-Americana de Interação Humano-Computador (<a href="http://www.laihc.org/"
-        class="uline lightLink">LAIHC</a>), esta conferência bienal reúne os principais especialistas para explorar
+        class="uline-dark">LAIHC</a>), esta conferência bienal reúne os principais especialistas para explorar
     abordagens inovadoras e tendências emergentes no campo.
 </p></template>

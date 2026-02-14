@@ -16,11 +16,11 @@
         "about_title": "Acerca de esta conferencia",
         "about": "Acerca de MexIHC",
         "home": "Inicio",
-        "for_authors_title": "Para autores",
-        "for_authors": "Para autores",
+        "for_authors_title": "Convocatorias",
+        "for_authors": "Convocatorias",
         "organizers": "Organizadores",
         "cfp": "Convocatoria de trabajos",
-        "cfp_message": "Entrega final extendida hasta el 4 de septiembre",
+        "cfp_message": "Fecha límite: 1 de junio de 2026",
         "cpt": "Convocatoria a la sesión de pósteres",
         "cpt_message": "Fecha límite: 30 de agosto del 2024 (extendida)",
         "cwt": "Convocatoria de talleres y tutoriales",
@@ -48,22 +48,23 @@
         "accepted_papers": "Artículos aceptados",
         "accepted_papers_message": "",        
         "pending": "Pendiente",
-        "copyright": "© 2024 Conferencia Mexicana sobre Interacción Humano-Computadora, una conferencia de AMexIHC.",
+        "copyright": "© 2026 Conferencia Mexicana sobre Interacción Humano-Computadora, una conferencia de AMexIHC.",
         "back_to_top": "Volver arriba",
         "workshop_calls": "Convocatorias de trabajos para talleres aceptados",
         "workshop_title": "Convocatorias de trabajos para talleres aceptados",
         "workshop_calls_message": "Convocatorias e información de talleres aceptados",
         "tutorial": "Tutoriales",
         "tutorial_title": "Tutoriales",
-        "tutorial_message": "Información de tutoriales disponibles"
+        "tutorial_message": "Información de tutoriales disponibles",
+        "coming_soon": "Próximamente"
     },
     "jumbotron":{
         "conference": "XI Conferencia Latinoamericana de Interacción Humano-Computadora.",
-        "date": "6, 7 y 8 de Noviembre",
-        "button": "Primeros pasos para asistir!"
+        "date": "4, 5 y 6 de noviembre de 2026",
+        "button": "Convocatoria de trabajos"
     },
     "about":{
-        "about_title": "Acerca del MexIHC 2024",
+        "about_title": "Acerca del MexIHC 2026",
         "about_text": "La Conferencia Latinoamericana de Interacción Humano-Computadora (MexIHC) es gestionada por la Comunidad Latinoamericana de HCI de SIGCHI (LAIHC). MexIHC es una conferencia destacada que reúne a las comunidades de investigación de HCI de América Latina e internacionales para discutir e intercambiar ideas, métodos, enfoques y técnicas para diseñar experiencias de usuario interactivas, fomentando el intercambio intercultural y la cooperación entre personas con diferentes antecedentes y necesidades. Esta conferencia tiene su origen en Río de Janeiro en 2003 (Brasil), con ediciones posteriores en Cuernavaca en 2005 (México), Río de Janeiro en 2007 (Brasil), Mérida en 2009 (México), Porto de Galinhas en 2011 (Brasil), Guanacaste en 2013 (Costa Rica), Córdoba en 2015 (Argentina), Antigua en 2017 (Guatemala) y Ciudad de Panamá en 2019 (Panamá), y la Conferencia Virtual en 2021 (en línea).",
         "call": "Convocatoria de participación",
         "registration": "Llamada a registro",
