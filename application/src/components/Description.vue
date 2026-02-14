@@ -50,12 +50,13 @@ export default {
                         <a href="./accepted-papers" class="btn bg-gradient-yellow btn-round btn-lg">Accepted papers</a>
                         <a href="./schedule" class="btn bg-gradient-yellow btn-round btn-lg">Schedule</a>
                         <a href="./video-archives" class="btn bg-gradient-yellow btn-round btn-lg">Video archives</a>
-                        -->
+                        
                         <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' })" 
 												class="btn btn-lg  bg-gradient-yellow  btn-round"
                           >
                           {{ $t("calls.cwt") }}
-                        </RouterLink>           
+                        </RouterLink>
+                        -->
                     </div>
                 </div>
             </div>

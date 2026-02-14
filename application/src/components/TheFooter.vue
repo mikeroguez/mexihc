@@ -141,6 +141,11 @@ export default {
                                     {{ $t("nav.about") }}
                                 </RouterLink>
                             </li>
+                            <li class="nav-item">
+                                <RouterLink :to="Tr.i18nRoute({ name: 'organizers' })" class="nav-link uline">
+                                    {{ $t("nav.organizers") }}
+                                </RouterLink>
+                            </li>
                         </ul>
                     </div>
                 </div>

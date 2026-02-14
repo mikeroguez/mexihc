@@ -20,7 +20,7 @@
         "for_authors": "Calls",
         "organizers": "Organizers",
         "cfp": "Call for papers",
-        "cfp_message": "Camera ready extended to sempember 4th",
+        "cfp_message": "Deadline: June 1, 2026",
         "cpt": "Call for poster track",
         "cpt_message": "Deadline: August 30th, 2024 (extended)",
         "cwt": "Call for workshops and tutorials",
@@ -62,7 +62,7 @@
     "jumbotron":{
         "conference": "XI Latin American Conference on Human Computer Interaction",
         "date": "November 4, 5 & 6, 2026",
-        "button": "Getting started to attend!"
+        "button": "Call for Papers"
     },
     "about":{
         "about_title": "About MexIHC 2026",

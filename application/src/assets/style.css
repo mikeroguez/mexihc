@@ -23,10 +23,16 @@ body {
   color: var(--mexihc-night);
 }
 
-a,
+a {
+  color: var(--mexihc-magenta) !important;
+}
+
 .text-gradient.text-primary {
   color: var(--mexihc-magenta) !important;
-  background-image: none;
+  background-image: none !important;
+  -webkit-text-fill-color: currentColor !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: border-box !important;
 }
 
 a.uline-dark {

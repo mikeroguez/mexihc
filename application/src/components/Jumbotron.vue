@@ -59,7 +59,7 @@ export default {
                     {{ $t("jumbotron.date") }}
                   </strong>
                 </p>
-                <RouterLink :to="Tr.i18nRoute({ name: 'getting-started'})" class="btn btn-lg bg-gradient-yellow btn-round">
+                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers'})" class="btn btn-lg bg-gradient-yellow btn-round">
                   {{ $t("jumbotron.button") }}
                 </RouterLink>
 

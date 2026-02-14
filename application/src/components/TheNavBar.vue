@@ -140,7 +140,7 @@
 															{{ $t("nav.cfp") }}
 														</span>
 														<span class="text-sm font-italic text-dark text-wrap">
-															{{ $t("about.closed") }}
+															{{ $t("nav.cfp_message") }}
 														</span>
 													</div>
 												</div>
@@ -263,6 +263,15 @@
 										-->
 									</ul>
 								</li>
+								<li class="nav-item mx-2">
+									<RouterLink
+										:to="Tr.i18nRoute({ name: 'organizers' })"
+										class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+										:class="{ 'active-section': isRoute('organizers') }"
+									>
+										{{ $t("nav.organizers") }}
+									</RouterLink>
+								</li>
 							</ul>
 							<LanguageSwitcher/>
 						</div>
@@ -344,7 +353,25 @@
 .navbar .locale-link.router-link-active,
 .navbar .locale-link.router-link-exact-active {
 	font-weight: 700 !important;
+	opacity: 1 !important;
 	border-bottom: 2px solid #870058 !important;
+}
+
+.navbar .locale-link {
+	font-weight: 300 !important;
+	opacity: 0.8;
+}
+
+.navbar .icon-language.nav-link {
+	cursor: default;
+	pointer-events: none;
+	border-bottom: 2px solid transparent !important;
+}
+
+.navbar .icon-language.nav-link:hover,
+.navbar .icon-language.nav-link:focus {
+	color: inherit !important;
+	border-bottom-color: transparent !important;
 }
 
 .mexihc-navbar.is-detaching {

@@ -17,9 +17,10 @@
                     Call for papers (CFP)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Camera-ready final submissions:</strong> <del>August 30th</del> September 4th, 2024 (extended) <strong>(Closed)</strong><br>
+            <strong class="text-primary text-gradient">Deadline for submissions:</strong> June 1, 2026<br>
         </div>
         </li>
+        <!-- Hidden calls until publication
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
@@ -70,5 +71,6 @@
             <strong class="text-primary text-gradient">See the webpages of each workshop for dates and details.</strong><br>
         </div>
         </li>        
+        -->
     </ol>    
 </template>

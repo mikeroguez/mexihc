@@ -15,7 +15,7 @@
         "for_authors": "Para autores",
         "organizers": "Organizadores",
         "cfp": "Chamada de trabalhos",
-        "cfp_message": "Prazo: 3 de julho de 2023",
+        "cfp_message": "Prazo: 1 de junho de 2026",
         "cpt": "Chamada para pôsteres",
         "cpt_message": "Prazo: 11 de agosto de 2023 PRORROGADA",
         "cwt": "Chamada para workshops e tutoriais",
@@ -50,7 +50,7 @@
     "jumbotron":{
         "conference": "XI Conferência Latino-Americana de Interação Humano-Computador",
         "date": "30, 31 de outubro e 1 de novembro",
-        "button": "Registrar-se agora"
+        "button": "Chamada de trabalhos"
     },
     "about":{
         "about_title": "Sobre o CLIHC",
