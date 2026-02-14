@@ -1,7 +1,7 @@
 <script>
 import { /*ref*/shallowRef, watch, defineAsyncComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
-import Tr from '@/i18n/translation'
+import ConferenceMilestones from '@/components/ConferenceMilestones.vue'
 
 export default {
   setup() {
@@ -28,9 +28,11 @@ export default {
     }
 
     return {
-      currentComponent,
-	  Tr
+      currentComponent
     }
+  },
+  components: {
+    ConferenceMilestones
   }
 }
 </script>
@@ -55,34 +57,11 @@ export default {
 
 		<div class="container">
 			<div class="row">
-				<div class="row justify-content-center my-3">
-					<div class="col-lg-6">
-						<!-- <h2 class="text-dark mb-0">Titulo Negro</h2> -->
-
-						<table class="table table-striped">
-							<tbody>
-								<tr>
-									<th scope="row">
-										<RouterLink :to="Tr.i18nRoute({ name: 'call-for-participation'})" class="uline">
-											{{ $t("about.call") }}
-										</RouterLink>								
-									</th>
-									<td><span class="text-bold text-primary text-gradient">{{ $t("about.open") }}</span></td>
-								</tr>
-								<tr>
-									<th scope="row">{{ $t("about.registration") }}</th>
-									<td><span class="text-bold text-primary text-gradient">{{ $t("nav.coming_soon") }}</span></td>
-								</tr>
-								<!--
-								<tr>
-									<th scope="row">Video archives</th>
-									<td>Pending</td>
-								</tr>
-								-->
-							</tbody>
-						</table>
+					<div class="row justify-content-center my-3">
+						<div class="col-lg-8">
+							<ConferenceMilestones />
+						</div>
 					</div>
-				</div>
 			</div>
 		</div>
 	</section>

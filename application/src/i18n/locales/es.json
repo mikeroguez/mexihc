@@ -66,11 +66,19 @@
     "about":{
         "about_title": "Acerca del MexIHC 2026",
         "about_text": "La Conferencia Latinoamericana de Interacción Humano-Computadora (MexIHC) es gestionada por la Comunidad Latinoamericana de HCI de SIGCHI (LAIHC). MexIHC es una conferencia destacada que reúne a las comunidades de investigación de HCI de América Latina e internacionales para discutir e intercambiar ideas, métodos, enfoques y técnicas para diseñar experiencias de usuario interactivas, fomentando el intercambio intercultural y la cooperación entre personas con diferentes antecedentes y necesidades. Esta conferencia tiene su origen en Río de Janeiro en 2003 (Brasil), con ediciones posteriores en Cuernavaca en 2005 (México), Río de Janeiro en 2007 (Brasil), Mérida en 2009 (México), Porto de Galinhas en 2011 (Brasil), Guanacaste en 2013 (Costa Rica), Córdoba en 2015 (Argentina), Antigua en 2017 (Guatemala) y Ciudad de Panamá en 2019 (Panamá), y la Conferencia Virtual en 2021 (en línea).",
+        "milestones_title": "Hitos de la conferencia",
+        "timeline_title": "Línea de tiempo interactiva",
+        "workshop_proposals": "Propuestas de talleres",
+        "workshop_desc": "Envíos para actividades preconferencia.",
         "call": "Convocatoria de participación",
+        "call_desc": "Artículos, casos y propuestas de investigación en IHC.",
         "registration": "Llamada a registro",
+        "registration_desc": "Las tarifas y periodos de registro se publicarán pronto.",
         "proceedings": "Memorias",
+        "proceedings_desc": "Aún no disponibles / planificadas.",
         "open": "Abierta",
-        "closed": "Cerrada"
+        "closed": "Cerrada",
+        "planned": "Planificado"
     },
     "organizers": {
         "title": "Organizadores",

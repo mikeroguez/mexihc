@@ -55,11 +55,19 @@
     "about":{
         "about_title": "Sobre o CLIHC",
         "about_text": "A Conferência Latino-Americana de Interação Humano-Computador (CLIHC) é gerenciada pela Comunidade Latino-Americana de HCI do SIGCHI (LAIHC). A CLIHC é uma conferência de destaque que reúne as comunidades de pesquisa de HCI da América Latina e internacional para discutir e trocar ideias, métodos, abordagens e técnicas para projetar experiências de usuário interativas, incentivando o intercâmbio intercultural e a cooperação entre pessoas com diferentes origens e necessidades. Esta conferência teve sua origem no Rio de Janeiro em 2003 (Brasil), com edições subsequentes em Cuernavaca em 2005 (México), Rio de Janeiro em 2007 (Brasil), Mérida em 2009 (México), Porto de Galinhas em 2011 (Brasil), Guanacaste em 2013 (Costa Rica), Córdoba em 2015 (Argentina), Antigua em 2017 (Guatemala), Cidade do Panamá em 2019 (Panamá) e Conferência Virtual em 2021 (Online).",
+        "milestones_title": "Marcos da conferência",
+        "timeline_title": "Linha do tempo interativa",
+        "workshop_proposals": "Propostas de workshops",
+        "workshop_desc": "Submissões para atividades pré-conferência.",
         "call": "Chamada para participação",
+        "call_desc": "Artigos, casos e contribuições de pesquisa em IHC.",
         "registration": "Chamada para registro",
+        "registration_desc": "As janelas de registro e taxas serão publicadas em breve.",
         "proceedings": "Proceedings",
+        "proceedings_desc": "Ainda não disponíveis / Planejado.",
         "open": "Aberta",
-        "closed": "Fechada"
+        "closed": "Fechada",
+        "planned": "Planejado"
     },
     "organizers": {
         "title": "Organizadores",
