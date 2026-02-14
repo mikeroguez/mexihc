@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.0.0.1] - 2026-02-14
+
+### Added
+
+- MexIHC 2026 visual refresh across home and shared UI (hero, header, backgrounds, navbar behavior and footer links).
+- Organizers navigation entry in header and footer.
+- Updated assets for 2026 branding (banner, logos and venue/media resources).
+
+### Changed
+
+- CFP call-to-action in jumbotron now points to `Call for Papers`.
+- Home status table updated:
+  - `Call for participation` -> `Open`
+  - `Registration call` -> `Coming soon` (no link)
+- Calls table now shows only `Call for Papers` as published; other calls are hidden.
+- CFP content updated for 2026:
+  - New key dates (submission, notification, camera-ready, conference dates)
+  - EasyChair submission URL updated to `https://easychair.org/conferences/?conf=mexihc2026`
+  - Program Chairs aligned with Organizers (Adriana L. Iñiguez-Carrillo, Mayra Donaji Barrera-Machuca, Marcela D. Rodríguez).
+- Organizers page (General Committee section) reduced to the published 2026 committee members and labels.
+- Navigation CFP badge/message updated with the current deadline.
+
+### Fixed
+
+- `text-primary text-gradient` readability by restoring visible text color where gradient styles were making text appear transparent.
+- Language switcher emphasis in navbar:
+  - selected language shown bold
+  - non-selected language shown light
+  - language icon no longer has hover interaction.
+
 ## [2024.0.0.1] - 2024-04-19
 
 ### Added
