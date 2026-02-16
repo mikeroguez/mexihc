@@ -17,7 +17,7 @@ const items = computed(() => [
     descriptionKey: 'about.registration_desc',
     status: 'coming_soon',
     iconClass: 'fas fa-user-check',
-    routeName: null
+    routeName: 'registration'
   }
 ])
 
@@ -45,7 +45,10 @@ const badgeClassByType = {
         :key="item.key"
         :to="item.routeName ? Tr.i18nRoute({ name: item.routeName }) : undefined"
         class="milestone-card"
-        :class="{ 'milestone-card-link': item.routeName }"
+        :class="[
+          `milestone-card-${item.status}`,
+          { 'milestone-card-link': item.routeName },
+        ]"
       >
         <div class="milestone-icon">
           <i :class="item.iconClass"></i>
@@ -81,11 +84,12 @@ const badgeClassByType = {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  border-radius: 16px;
-  border: 1px solid #d6d0c8;
-  background-color: #f3f1ed;
-  box-shadow: 0 1px 0 rgba(20, 32, 56, 0.04);
-  padding: 0.7rem 0.85rem;
+  border-radius: 14px;
+  border: 1px solid rgba(1, 22, 56, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 24px rgba(1, 22, 56, 0.08);
+  backdrop-filter: blur(8px);
+  padding: 0.82rem 0.9rem;
 }
 
 .milestone-card-link {
@@ -95,9 +99,9 @@ const badgeClassByType = {
 }
 
 .milestone-card-link:hover {
-  border-color: #c9bcc6;
-  background-color: #f6f3f0;
-  box-shadow: 0 2px 10px rgba(1, 22, 56, 0.08);
+  border-color: rgba(135, 0, 88, 0.32);
+  box-shadow: 0 14px 28px rgba(1, 22, 56, 0.13);
+  transform: translateY(-1px);
 }
 
 .milestone-card-link:hover .milestone-title {
@@ -118,29 +122,29 @@ const badgeClassByType = {
 }
 
 .milestone-icon {
-  width: 46px;
-  height: 46px;
-  border-radius: 11px;
-  border: 1px solid #cfd6e2;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid rgba(73, 99, 137, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #8f9eb5;
-  font-size: 1.02rem;
+  color: #496389;
+  font-size: 1rem;
   flex: 0 0 auto;
-  background: #eceff4;
+  background: rgba(73, 99, 137, 0.08);
 }
 
 .milestone-card-open .milestone-icon {
-  border-color: #96e4d4;
-  color: #21b69c;
-  background: #effffb;
+  border-color: #79e2cf;
+  color: #148a74;
+  background: #c8f6ec;
 }
 
 .milestone-card-coming-soon .milestone-icon {
-  border-color: #edcf71;
-  color: #e79b08;
-  background: #fff8e5;
+  border-color: #dfc55e;
+  color: #bf6e08;
+  background: #fff3bf;
 }
 
 .milestone-content {
@@ -151,15 +155,15 @@ const badgeClassByType = {
 .milestone-title {
   margin: 0;
   color: #1c2a46;
-  font-size: 1.08rem;
+  font-size: 1.02rem;
   font-weight: 700;
   line-height: 1.15;
 }
 
 .milestone-description {
   margin: 0.15rem 0 0;
-  color: #667793;
-  font-size: 0.86rem;
+  color: #535b68;
+  font-size: 0.85rem;
   line-height: 1.3;
 }
 
@@ -168,11 +172,11 @@ const badgeClassByType = {
   border: 1px solid #d6deea;
   color: #8f9cb3;
   background: #ecf1f7;
-  padding: 0.22rem 0.7rem;
+  padding: 0.2rem 0.56rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 0.68rem;
-  font-weight: 700;
+  font-size: 0.72rem;
+  font-weight: 800;
   white-space: nowrap;
 }
 
@@ -196,7 +200,7 @@ const badgeClassByType = {
   .milestone-card {
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 0.7rem;
+    padding: 0.7rem 0.75rem;
   }
 
   .milestone-icon {
