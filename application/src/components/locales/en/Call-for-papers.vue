@@ -75,7 +75,7 @@ export default {
         Submissions for full and short papers written in English or Spanish should use <a
             href="https://mexihc.org/aihc_template.zip" class="uline">the
             AmexIHC “Avances en Interacción Humano-Computadora” Journal Template</a>.
-        The submission Web page for MexIHC 2026 is <a href="https://easychair.org/conferences/?conf=mexihc2026">https://easychair.org/conferences/?conf=mexihc2026</a>.
+        The submission Web page for MexIHC 2026 is <a href="https://easychair.org/conferences/?conf=mexihc2026" class="uline">https://easychair.org/conferences/?conf=mexihc2026</a>.
     </p>
 
     <h2 id="cfp-dates">Important Dates</h2>
@@ -99,7 +99,7 @@ export default {
 
     <p>
         All accepted full and short papers will be published in a Special Issue of <a
-            href="https://revistaaihc.mx/">the AMexIHC journal Avances en Interacción Humano-Computadora</a>.
+            href="https://revistaaihc.mx/" class="uline">the AMexIHC journal Avances en Interacción Humano-Computadora</a>.
     </p>
     
     <h2>Topics of interest</h2>
