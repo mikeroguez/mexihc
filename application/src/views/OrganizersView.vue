@@ -2,513 +2,381 @@
 import TheHeader from '@/components/Header.vue';
 import OrganizerItem from '@/components/OrganizerItem.vue';
 import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue';
-import Tr from '@/i18n/translation'
-</script>
+import Tr from '@/i18n/translation';
+import { useI18n } from 'vue-i18n';
 
-<script>
-export default {
-    setup() {
-        return {
-            Tr
-        }
-    }
-}
+const { t, te } = useI18n();
+const fallbackPhoto = '/assets/img/nophoto.png';
+
+const photoByName = {
+  'Jesús Favela': '/assets/img/people/jesus_fa.jpg',
+  'Laura S. Gaytán-Lugo': '/assets/img/people/sanely.jpg',
+  'Adriana L. Iñiguez-Carrillo': '/assets/img/people/adriana.png',
+  'Mayra Donaji Barrera-Machuca': '/assets/img/people/mayraBarrera.png',
+  'Pedro C. Santana-Mancilla': '/assets/img/people/pedro.png',
+  'Victor García': '/assets/img/people/victor.png',
+  'Jessica Beltrán': '/assets/img/people/jessica.png',
+  'Victoria Meza-Kubo': '/assets/img/people/vicky.png',
+  'Luis A. Castro': '/assets/img/people/luis.png',
+  'Pablo Bautista': '/assets/img/people/pablo.jpg',
+  'Miguel A. Rodríguez-Ortíz': '/assets/img/people/mike.png',
+  'Cuauhtemoc Rivera-Loaiza' : '/assets/img/people/temo.png',
+  'Lizbeth Escobedo': '/assets/img/people/liz.jpg'
+};
+
+const generalSections = [
+  {
+    id: 'general-chairs',
+    title: 'General Chairs',
+    titleKey: 'organizers.conference_chairs_title',
+    descriptionKey: 'organizers.conference_chairs_description',
+    members: [
+      {
+        name: 'Alberto L. Morán',
+        affiliation: 'Universidad Autónoma de Baja California',
+        short: 'UABC'
+      },
+      {
+        name: 'Jesús Favela',
+        affiliation: 'Centro de Investigación Científica y de Educación Superior de Ensenada',
+        short: 'CICESE'
+      },
+      {
+        name: 'Laura S. Gaytán-Lugo',
+        affiliation: 'Universidad de Colima',
+        short: 'UCOL'
+      }
+    ]
+  },
+  {
+    id: 'program-chairs',
+    title: 'Program Chairs',
+    titleKey: 'organizers.program_chairs_title',
+    descriptionKey: 'organizers.program_chairs_description',
+    members: [
+      {
+        name: 'Adriana L. Iñiguez-Carrillo',
+        affiliation: 'Universidad de Guadalajara',
+        short: 'UdG'
+      },
+      {
+        name: 'Mayra Donaji Barrera-Machuca',
+        affiliation: 'University of Calgary',
+        short: 'UCalgary'
+      },
+      {
+        name: 'Marcela D. Rodríguez',
+        affiliation: 'Universidad Autónoma de Baja California',
+        short: 'UABC'
+      }
+    ]
+  },
+  {
+    id: 'graduate-colloquium',
+    title: 'Coloquio de Graduados',
+    titleKey: 'organizers.graduate_colloquium_chairs_title',
+    descriptionKey: 'organizers.graduate_colloquium_chairs_description',
+    members: [
+      {
+        name: 'David Abdel Mejía',
+        affiliation: 'Universidad Autónoma de Baja California',
+        short: 'UABC'
+      },
+      {
+        name: 'Ramón Palacio',
+        affiliation: 'Instituto Tecnológico de Sonora',
+        short: 'ITSON'
+      }
+    ]
+  },
+  {
+    id: 'sdc',
+    title: 'Student Design Competition / SDC Chairs',
+    titleKey: 'organizers.student_design_competition_title',
+    descriptionKey: 'organizers.student_design_competition_description',
+    members: [
+      {
+        name: 'Lizbeth Escobedo',
+        affiliation: 'Dalhousie University',
+        short: ''
+      },
+      {
+        name: 'Cuauhtemoc Rivera-Loaiza',
+        affiliation: 'Universidad Michoacana de San Nicolás de Hidalgo',
+        short: 'UMich'
+      }
+    ]
+  },
+  {
+    id: 'poster-chairs',
+    title: 'Poster Chairs',
+    titleKey: 'organizers.posters_chairs_title',
+    descriptionKey: 'organizers.posters_chairs_description',
+    members: [
+      {
+        name: 'Cristina Ramírez',
+        affiliation: 'Instituto Tecnológico de Ensenada',
+        short: 'TecNM-ITE'
+      },
+      {
+        name: 'Gilberto Borrego',
+        affiliation: 'Instituto Tecnológico de Sonora',
+        short: 'ITSON'
+      }
+    ]
+  },
+  {
+    id: 'workshops',
+    title: 'Talleres',
+    descriptionKey: 'organizers.workshops_and_tutorials_chairs_description',
+    members: [
+      {
+        name: 'Sandra Nava',
+        affiliation: 'Universidad Autónoma de San Luis Potosí',
+        short: 'UASLP'
+      }
+    ]
+  },
+  {
+    id: 'tutoriales',
+    title: 'Tutoriales',
+    descriptionKey: 'organizers.workshops_and_tutorials_chairs_description',
+    members: [
+      {
+        name: 'José Ángel González Fraga',
+        affiliation: 'Universidad Autónoma de Baja California',
+        short: 'UABC'
+      },
+      {
+        name: 'Tony García Macías',
+        affiliation: 'Centro de Investigación Científica y de Educación Superior de Ensenada',
+        short: 'CICESE'
+      }
+    ]
+  },
+  {
+    id: 'panel-chair',
+    title: 'Panel Chair',
+    description: 'Responsible for coordinating and moderating panel sessions.',
+    members: [
+      {
+        name: 'Pedro C. Santana-Mancilla',
+        affiliation: 'Universidad de Colima',
+        short: 'UCOL'
+      }
+    ]
+  },
+  {
+    id: 'industry-session',
+    title: 'Sesión Industrial',
+    titleKey: 'organizers.industry_session_chair_title',
+    descriptionKey: 'organizers.industry_session_chair_description',
+    members: [
+      {
+        name: 'Victor García',
+        affiliation: 'BBVA',
+        short: ''
+      },
+      {
+        name: 'Jessica Beltrán',
+        affiliation: 'Universidad Autónoma de Coahuila',
+        short: 'U. A. Coahuila'
+      },
+      {
+        name: 'Viridiana Silva',
+        affiliation: 'Daikin Applied Americas',
+        short: ''
+      }
+    ]
+  },
+  {
+    id: 'local-chairs',
+    title: 'Local Chairs',
+    titleKey: 'organizers.local_chairs_title',
+    descriptionKey: 'organizers.local_chairs_description',
+    members: [
+      {
+        name: 'Karina Caro',
+        affiliation: 'Universidad Autónoma de Baja California',
+        short: 'UABC'
+      },
+      {
+        name: 'Ana Martínez',
+        affiliation: 'Centro de Investigación Científica y de Educación Superior de Ensenada',
+        short: 'CICESE'
+      },
+      {
+        name: 'Victoria Meza-Kubo',
+        affiliation: 'Universidad Autónoma de Baja California',
+        short: 'UABC'
+      }
+    ]
+  },
+  {
+    id: 'registration-chair',
+    title: 'Registration Chair',
+    description:
+      'Handles attendee registration logistics, inquiries, and registration process coordination.',
+    members: [
+      {
+        name: 'Luis A. Castro',
+        affiliation: 'Instituto Tecnológico de Sonora',
+        short: 'ITSON'
+      }
+    ]
+  },
+  {
+    id: 'publicity-chairs',
+    title: 'Publicity Chairs',
+    titleKey: 'organizers.publicity_chair_title',
+    descriptionKey: 'organizers.publicity_chair_description',
+    members: [
+      {
+        name: 'Pablo Bautista',
+        affiliation: 'Universidad de Colima',
+        short: 'UCOL'
+      },
+      {
+        name: 'Pablo M. Schiaffino-Rivas',
+        affiliation: 'Universidad de Colima',
+        short: 'UCOL'
+      }
+    ]
+  },
+  {
+    id: 'web-chair',
+    title: 'Web Chair',
+    titleKey: 'organizers.web_chairs_title',
+    descriptionKey: 'organizers.web_chairs_description',
+    members: [
+      {
+        name: 'Miguel A. Rodríguez-Ortíz',
+        affiliation: 'Universidad de Colima',
+        short: 'UCOL'
+      }
+    ]
+  }
+];
+
+const committeeLinks = [
+  {
+    label: t('organizers.general_committee_link'),
+    to: Tr.i18nRoute({ name: 'organizers', hash: '#general-committee' })
+  },
+  {
+    label: t('organizers.program_committee_link'),
+    to: Tr.i18nRoute({ name: 'organizers', hash: '#program-committee' })
+  }
+];
+
+const memberPhoto = (name) => photoByName[name] || fallbackPhoto;
+
+const affiliationText = (affiliation, short) => {
+  if (!short) {
+    return affiliation;
+  }
+  return `${affiliation} (${short})`;
+};
+
+const getLocalizedText = (key, fallback = '') => {
+  if (!key) {
+    return fallback;
+  }
+  return te(key) ? t(key) : fallback;
+};
 </script>
 
 <template>
-    <TheHeader>
-        <template #page-name>
-            {{ $t("organizers.title") }}
-        </template>
-    </TheHeader>
+  <TheHeader>
+    <template #page-name>
+      {{ $t('organizers.title') }}
+    </template>
+  </TheHeader>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="row justify-content-center my-3">
-                    <div class="col-lg-8">
-                        <InPageNavigationPanel
-                            :links="[
-                                {
-                                    label: $t('organizers.general_committee_link'),
-                                    to: Tr.i18nRoute({ name: 'organizers', hash: '#general-committee' })
-                                },
-                                {
-                                    label: $t('organizers.program_committee_link'),
-                                    to: Tr.i18nRoute({ name: 'organizers', hash: '#program-committee' })
-                                }
-                            ]"
-                        />
-
-                        <p>
-                            {{ $t("organizers.intro") }}
-                        </p>
-                        <h2 id="general-committee" class="text-primary text-gradient text-center py-4">{{
-                            $t("organizers.general_committee_title") }}
-                        </h2>
-                    </div>
-                </div>
-            </div>
+  <section>
+    <div class="container">
+      <div class="row justify-content-center my-3">
+        <div class="col-lg-8">
+          <InPageNavigationPanel :links="committeeLinks" />
+          <p>{{ $t('organizers.intro') }}</p>
+          <h2 id="general-committee" class="text-primary text-gradient text-center py-4">
+            {{ $t('organizers.general_committee_title') }}
+          </h2>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="container">
-        <div class="row">
-            <div class="col-lg-12 mx-auto">
-
-                <div class="container mt-4 px-5 mt-6" id="conference-committee">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
-                                <h3>{{ $t("organizers.conference_chairs_title") }}</h3>
-                                <p class="text-secondary font-weight-normal pe-3">
-                                    {{ $t("organizers.conference_chairs_description") }}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-9">
-                            <div class="row">
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Alberto L. Morán
-                                        </template>
-                                        <template #institution>
-                                            Universidad Autónoma de Baja California (UABC)
-                                        </template>
-                                        <template #email>
-                                            General Chairs
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/jesus_fa.jpg" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/jesus_fa.jpg&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Jesús Favela
-                                        </template>
-                                        <template #institution>
-                                            Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE)
-                                        </template>
-                                        <template #email>
-                                            General Chairs
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/sanely.jpg" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/sanely.jpg&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Laura S. Gaytán-Lugo
-                                        </template>
-                                        <template #institution>
-                                            Universidad de Colima (UCOL)
-                                        </template>
-                                        <template #email>
-                                            General Chairs
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container mt-4 px-5 mt-6" id="program-chairs">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
-                                <h3>{{ $t("organizers.program_chairs_title") }}</h3>
-                                <p class="text-secondary font-weight-normal pe-3">
-                                    {{ $t("organizers.program_chairs_description") }}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-9">
-                            <div class="row">
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/adriana.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/adriana.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Adriana L. Iñiguez-Carrillo
-                                        </template>
-                                        <template #institution>
-                                            Universidad de Guadalajara (UdG)
-                                        </template>
-                                        <template #email>
-                                            Program Chairs
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/mayraBarrera.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/mayraBarrera.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Mayra Donaji Barrera-Machuca
-                                        </template>
-                                        <template #institution>
-                                            University of Calgary (UCalgary)
-                                        </template>
-                                        <template #email>
-                                            Program Chairs
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Marcela D. Rodríguez
-                                        </template>
-                                        <template #institution>
-                                            Universidad Autónoma de Baja California (UABC)
-                                        </template>
-                                        <template #email>
-                                            Program Chairs
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Hidden committee blocks per update request -->
-
-                <div class="container mt-4 px-5 mt-6" id="publicity-chairs">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
-                                <h3>{{ $t("organizers.publicity_chair_title") }}</h3>
-                                <p class="text-secondary font-weight-normal pe-3">
-                                    {{ $t("organizers.publicity_chair_description") }}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-9">
-                            <div class="row">
-                                <div class="col-md-4 mx-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/pablo.jpg" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/pablo.jpg&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Pablo Bautista
-                                        </template>
-                                        <template #institution>
-                                            Universidad de Colima (UCOL)
-                                        </template>
-                                        <template #email>
-                                            Publicity Chairs
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                                <div class="col-md-4 mx-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Pablo M. Schiaffino-Rivas
-                                        </template>
-                                        <template #institution>
-                                            Universidad de Colima (UCOL)
-                                        </template>
-                                        <template #email>
-                                            Publicity Chairs
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container mt-4 px-5 mt-6" id="web-chair">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
-                                <h3>{{ $t("organizers.web_chairs_title") }}</h3>
-                                <p class="text-secondary font-weight-normal pe-3">
-                                    {{ $t("organizers.web_chairs_description") }}
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-9">
-                            <div class="row">
-                                <div class="col-md-4 m-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/mike.png" alt=""
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/mike.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Miguel A. Rodríguez-Ortiz
-                                        </template>
-                                        <template #institution>
-                                            Universidad de Colima (UCOL)
-                                        </template>
-                                        <template #email>
-                                            Web Chair
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Hidden committee blocks per update request -->
-                <hr>
+  <section class="container">
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <div
+          v-for="section in generalSections"
+          :id="section.id"
+          :key="section.id"
+          class="container mt-4 px-5 mt-6"
+        >
+          <div class="row">
+            <div class="col-xl-3">
+              <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
+                <h3>{{ getLocalizedText(section.titleKey, section.title) }}</h3>
+                <p class="text-secondary font-weight-normal pe-3">
+                  {{ getLocalizedText(section.descriptionKey, section.description || '') }}
+                </p>
+              </div>
             </div>
-        </div>
-    </section>
-    <section class="container">
-        <div class="row">
-            <div class="row justify-content-center my-3">
-                <div class="col-lg-8">
-                    <h2 id="program-committee" class="text-center py-4 mt-5" style="color: #011638;">
-                        {{ $t("organizers.program_committee_title") }}
-                    </h2>
 
-
-                    <!--
-                    <table class="table table-striped text-center align-middle w-100" style="table-layout: fixed;">
-                        <thead>
-                            <tr>
-                                <th scope="col">{{ $t("organizers.name") }}</th>
-                                <th scope="col">{{ $t("organizers.institution") }}</th>
-                                <th scope="col">{{ $t("organizers.country") }}</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Adriana Lorena Iñiguez Carrillo</td>
-                                <td>Universidad de Guadalajara</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Ana Isabel Martínez García</td>
-                                <td>CICESE</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Arturo Morales-Tellez</td>
-                                <td>CICESE</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Aurora Ruiz-Rodríguez</td>
-                                <td>University of Twente</td>
-                                <td>The Netherlands</td>
-                            </tr>
-                            <tr>
-                                <td>Carlos Toxtli</td>
-                                <td>Clemson University</td>
-                                <td>USA</td>
-                            </tr>
-                            <tr>
-                                <td>Cristina Ramírez Fernández</td>
-                                <td>Tecnológico Nacional de México</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Franceli L. Cibrian</td>
-                                <td>Chapman University</td>
-                                <td>USA</td>
-                            </tr>
-                            <tr>
-                                <td>Gilberto Borrego Soto</td>
-                                <td>ITSON</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Gloria Ivonne Monarca Pintle</td>
-                                <td>Sperentia</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>J. Antonio Garcia-Macias</td>
-                                <td>CICESE</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Jesús Adolfo Mejía de Dios</td>
-                                <td>Universidad Autónoma de Coahuila</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Jesus Favela</td>
-                                <td>CICESE</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>José Mercado Chan</td>
-                                <td>CICESE</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Juan Pablo García Vázquez</td>
-                                <td>UABC</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Karina Caro</td>
-                                <td>UABC</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Laura Sanely Gaytán Lugo</td>
-                                <td>Universidad de Colima</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Lizbeth Escobedo</td>
-                                <td>Dalhousie University</td>
-                                <td>Canada</td>
-                            </tr>
-                            <tr>
-                                <td>Luis A. Castro</td>
-                                <td>ITSON</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Marcela D. Rodríguez</td>
-                                <td>UABC</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>María Del Rosario Peralta Calvo</td>
-                                <td>Universidad de la Cañada</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Mario Moreno</td>
-                                <td>Universidad de la Mixteca</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Pablo Armando Alcaraz Valencia</td>
-                                <td>Universidad de Colima</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Ramón René Palacio Cinco</td>
-                                <td>ITSON</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Raymundo Cornejo</td>
-                                <td>UACH</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Saiph Savage</td>
-                                <td>Northeastern University</td>
-                                <td>USA</td>
-                            </tr>
-                            <tr>
-                                <td>Sandra Nava-Muñoz</td>
-                                <td>UASLP</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Silvia Berenice Fajardo Flores</td>
-                                <td>Universidad de Colima</td>
-                                <td>Mexico</td>
-                            </tr>
-                            <tr>
-                                <td>Soraia Silva Prietch</td>
-                                <td>Universidade Federal de Mato Grosso</td>
-                                <td>Brazil</td>
-                            </tr>
-                            <tr>
-                                <td>Valeria Soto-Mendoza</td>
-                                <td>UAdeC</td>
-                                <td>Mexico</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    -->
-                    <p class="text-center">
-                        <em>{{ $t("nav.coming_soon") }}</em>
-                    </p>
-
+            <div class="col-xl-9">
+              <div class="row">
+                <div
+                  v-for="member in section.members"
+                  :key="`${section.id}-${member.name}`"
+                  class="col-md-4 m-auto mt-md-0 mt-4"
+                >
+                  <OrganizerItem>
+                    <template #image>
+                      <div class="d-block blur-shadow-image">
+                        <img
+                          :src="memberPhoto(member.name)"
+                          :alt="member.name"
+                          class="img-fluid shadow rounded-3"
+                        >
+                      </div>
+                      <div
+                        class="colored-shadow"
+                        :style="`background-image: url('${memberPhoto(member.name)}');`"
+                      />
+                    </template>
+                    <template #name>
+                      {{ member.name }}
+                    </template>
+                    <template #institution>
+                      {{ affiliationText(member.affiliation, member.short) }}
+                    </template>
+                    <template #email>
+                      {{ getLocalizedText(section.titleKey, section.title) }}
+                    </template>
+                  </OrganizerItem>
                 </div>
-
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+        <hr>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row justify-content-center my-3">
+      <div class="col-lg-8">
+        <h2 id="program-committee" class="text-center py-4 mt-5" style="color: #011638">
+          {{ $t('organizers.program_committee_title') }}
+        </h2>
+        <p class="text-center">
+          <em>{{ $t('nav.coming_soon') }}</em>
+        </p>
+      </div>
+    </div>
+  </section>
 </template>
