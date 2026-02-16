@@ -34,20 +34,22 @@ const badgeClassByType = {
   coming_soon: 'milestone-badge-coming-soon',
   planned: 'milestone-badge-planned'
 }
+
+const isLinkEnabled = (item) => item.status === 'open' && Boolean(item.routeName)
 </script>
 
 <template>
   <section class="milestones-wrap" aria-label="Conference milestones">
     <div class="milestones-list">
       <component
-        :is="item.routeName ? 'RouterLink' : 'article'"
+        :is="isLinkEnabled(item) ? 'RouterLink' : 'article'"
         v-for="item in items"
         :key="item.key"
-        :to="item.routeName ? Tr.i18nRoute({ name: item.routeName }) : undefined"
+        :to="isLinkEnabled(item) ? Tr.i18nRoute({ name: item.routeName }) : undefined"
         class="milestone-card"
         :class="[
           `milestone-card-${item.status}`,
-          { 'milestone-card-link': item.routeName },
+          { 'milestone-card-link': isLinkEnabled(item) },
         ]"
       >
         <div class="milestone-icon">
