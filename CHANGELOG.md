@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.1.3] - 2026-02-16
+
+### Changed
+
+- Mobile navbar behavior refined for scrolled state: when the collapse menu is open it now keeps a rounded-rectangle shape instead of becoming circular.
+- Mobile navbar close animation timing adjusted to prevent radius flicker during collapse.
+- Navbar toggler icon color (hamburger and close state) in guinda/scrolled mode updated to `#F0EFEC` for better contrast.
+- In guinda/scrolled mode, submenu text and active submenu state were updated to use light colors and a translucent light highlight.
+
 ## [2026.1.2] - 2026-02-16
 
 ### Added
