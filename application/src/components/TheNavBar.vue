@@ -8,21 +8,38 @@
 		data() {
 			return {
 				isScrolled: false,
+				isMenuOpen: false,
 				transitionPhase: '',
-				transitionTimeout: null
+				transitionTimeout: null,
+				navigationCollapseEl: null
 			}
 		},
 		mounted() {
 			this.onScroll()
 			window.addEventListener('scroll', this.onScroll, { passive: true })
+			this.navigationCollapseEl = document.getElementById('navigation')
+			if (this.navigationCollapseEl) {
+				this.navigationCollapseEl.addEventListener('show.bs.collapse', this.onMenuShow)
+				this.navigationCollapseEl.addEventListener('hidden.bs.collapse', this.onMenuHide)
+			}
 		},
 		beforeUnmount() {
 			window.removeEventListener('scroll', this.onScroll)
 			if (this.transitionTimeout) {
 				clearTimeout(this.transitionTimeout)
 			}
+			if (this.navigationCollapseEl) {
+				this.navigationCollapseEl.removeEventListener('show.bs.collapse', this.onMenuShow)
+				this.navigationCollapseEl.removeEventListener('hidden.bs.collapse', this.onMenuHide)
+			}
 		},
 		methods: {
+			onMenuShow() {
+				this.isMenuOpen = true
+			},
+			onMenuHide() {
+				this.isMenuOpen = false
+			},
 			isRouteIn(routeNames) {
 				return routeNames.includes(this.$route.name)
 			},
@@ -95,6 +112,7 @@
 			class="navbar navbar-expand-lg blur z-index-fixed navbar-color-on-scroll justify-content-between mexihc-navbar"
 			:class="{
 				'is-scrolled': isScrolled,
+				'is-menu-open': isMenuOpen,
 				'is-detaching': transitionPhase === 'detaching',
 				'is-attaching': transitionPhase === 'attaching',
 				'bg-gradient-dark': isScrolled
@@ -324,7 +342,7 @@
 	box-shadow: none !important;
 	background: rgba(240, 239, 236, 0.98) !important;
 	transform: translateY(0);
-	transition: background-color 220ms ease, border-color 220ms ease;
+	transition: background-color 220ms ease, border-color 220ms ease, border-radius 220ms ease;
 }
 
 .mexihc-navbar .container-fluid {
@@ -410,10 +428,13 @@
 .mexihc-navbar.is-scrolled .nav-link,
 .mexihc-navbar.is-scrolled.navbar .nav-link,
 .mexihc-navbar.is-scrolled .nav-link svg,
-.mexihc-navbar.is-scrolled .navbar-toggler,
-.mexihc-navbar.is-scrolled .navbar-toggler .navbar-toggler-bar {
+.mexihc-navbar.is-scrolled .navbar-toggler {
 	color: #F0EFEC !important;
 	fill: #F0EFEC !important;
+}
+
+.mexihc-navbar.is-scrolled .navbar-toggler .navbar-toggler-bar {
+	background: #F0EFEC !important;
 }
 
 .mexihc-navbar.is-scrolled .nav-link .arrow {
@@ -435,6 +456,26 @@
 .mexihc-navbar.is-scrolled .locale-link.router-link-active,
 .mexihc-navbar.is-scrolled .locale-link.router-link-exact-active {
 	border-bottom-color: #F0EFEC !important;
+}
+
+.mexihc-navbar.is-scrolled .dropdown-item,
+.mexihc-navbar.is-scrolled .dropdown-item .dropdown-header,
+.mexihc-navbar.is-scrolled .dropdown-item .text-dark,
+.mexihc-navbar.is-scrolled .dropdown-item .text-sm,
+.mexihc-navbar.is-scrolled .dropdown-item .font-italic {
+	color: #F0EFEC !important;
+}
+
+.mexihc-navbar.is-scrolled .dropdown-item.active-submenu,
+.mexihc-navbar.is-scrolled .dropdown-item.router-link-active,
+.mexihc-navbar.is-scrolled .dropdown-item.router-link-exact-active {
+	background: rgba(240, 239, 236, 0.18) !important;
+}
+
+.mexihc-navbar.is-scrolled .dropdown-item.active-submenu .dropdown-header,
+.mexihc-navbar.is-scrolled .dropdown-item.router-link-active .dropdown-header,
+.mexihc-navbar.is-scrolled .dropdown-item.router-link-exact-active .dropdown-header {
+	color: #F0EFEC !important;
 }
 
 @keyframes mexihc-nav-detach {
@@ -485,6 +526,10 @@
 		transform: translateY(16px);
 		border-radius: 999px;
 		box-shadow: 0 8px 18px rgba(1, 22, 56, 0.16) !important;
+	}
+
+	.mexihc-navbar.is-scrolled.is-menu-open {
+		border-radius: 1rem;
 	}
 }
 </style>
