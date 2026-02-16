@@ -1,17 +1,26 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import TheNavBar from '@/components/TheNavBar.vue'
 import TheFooter from '@/components/TheFooter.vue'
 
 const { t } = useI18n()
+
+const focusMainContent = () => {
+  requestAnimationFrame(() => {
+    const mainContent = document.getElementById('main-content')
+    if (mainContent) {
+      mainContent.focus()
+    }
+  })
+}
 </script>
 
 <template>
   <main role="main">
-    <router-link :to="{ hash: '#main-content' }" class="visually-hidden-focusable">
+    <a href="#main-content" class="visually-hidden-focusable" @click="focusMainContent">
       {{ t('nav.skip_to_content') }}
-    </router-link>
+    </a>
     <TheNavBar />
     <div id="main-content" tabindex="-1">
       <RouterView />
