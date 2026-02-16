@@ -331,11 +331,6 @@ export default {
                     </div>
                 </div>
                 <!-- Hidden committee blocks per update request -->
-                <p class="mt-5">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'organizers', hash: '#top' })" class="uline">
-                        {{ $t("nav.back_to_top") }}
-                    </RouterLink>
-                </p>
                 <hr>
             </div>
         </div>
@@ -511,11 +506,6 @@ export default {
                         <em>{{ $t("nav.coming_soon") }}</em>
                     </p>
 
-                    <p>
-                        <RouterLink :to="Tr.i18nRoute({ name: 'organizers', hash: '#top' })" class="uline">
-                            {{ $t("nav.back_to_top") }}
-                        </RouterLink>
-                    </p>
                 </div>
 
             </div>

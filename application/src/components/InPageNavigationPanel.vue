@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
@@ -23,6 +23,8 @@ const props = defineProps({
 })
 
 const { locale } = useI18n()
+const showBackToAnchors = ref(false)
+const panelRef = ref(null)
 
 const copyByLocale = {
   es: {
@@ -35,6 +37,8 @@ const copyByLocale = {
     inDays: (days) => `En ${days} días`,
     tomorrow: 'Mañana',
     defaultAllDates: 'Ver todas las fechas importantes',
+    backToAnchors: 'Volver al menú de secciones',
+    backToAnchorsShort: 'Menú',
   },
   en: {
     linksTitle: 'On this page',
@@ -46,6 +50,8 @@ const copyByLocale = {
     inDays: (days) => `In ${days} days`,
     tomorrow: 'Tomorrow',
     defaultAllDates: 'See all important dates',
+    backToAnchors: 'Back to sections menu',
+    backToAnchorsShort: 'Menu',
   },
   pt: {
     linksTitle: 'Nesta página',
@@ -57,6 +63,8 @@ const copyByLocale = {
     inDays: (days) => `Em ${days} dias`,
     tomorrow: 'Amanhã',
     defaultAllDates: 'Veja todas as datas importantes',
+    backToAnchors: 'Voltar ao menu de seções',
+    backToAnchorsShort: 'Menu',
   },
 }
 
@@ -120,10 +128,39 @@ const relativeLabel = (isoDate) => {
   if (days === 1) return text.value.tomorrow
   return text.value.inDays(days)
 }
+
+const handleScroll = () => {
+  showBackToAnchors.value = window.scrollY > 380
+}
+
+const scrollToAnchors = () => {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const behavior = prefersReducedMotion ? 'auto' : 'smooth'
+  const navbar = document.querySelector('.mexihc-navbar')
+  const navHeight = navbar ? navbar.getBoundingClientRect().height : 0
+  const safetyGap = 12
+  const offset = navHeight + safetyGap
+
+  if (panelRef.value) {
+    const targetY = window.scrollY + panelRef.value.getBoundingClientRect().top - offset
+    window.scrollTo({ top: Math.max(0, targetY), behavior })
+    return
+  }
+  window.scrollTo({ top: 0, behavior })
+}
+
+onMounted(() => {
+  handleScroll()
+  window.addEventListener('scroll', handleScroll, { passive: true })
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
-  <section v-if="links.length || hasWidget" class="in-page-nav my-3">
+  <section v-if="links.length || hasWidget" ref="panelRef" class="in-page-nav my-3">
     <nav v-if="links.length" class="in-page-nav-links" aria-label="In-page navigation">
       <h2 class="in-page-nav-title">{{ text.linksTitle }}</h2>
       <ol class="in-page-nav-list">
@@ -162,6 +199,19 @@ const relativeLabel = (isoDate) => {
       </RouterLink>
     </aside>
   </section>
+
+  <button
+    v-if="showBackToAnchors && (links.length || hasWidget)"
+    type="button"
+    class="anchors-float-btn"
+    :aria-label="text.backToAnchors"
+    :title="text.backToAnchors"
+    @click="scrollToAnchors"
+  >
+    <span class="anchors-float-symbol" aria-hidden="true">@</span>
+    <span class="anchors-float-arrow" aria-hidden="true">↑</span>
+    <span class="visually-hidden">{{ text.backToAnchorsShort }}</span>
+  </button>
 </template>
 
 <style scoped>
@@ -278,6 +328,49 @@ const relativeLabel = (isoDate) => {
   text-underline-offset: 2px;
 }
 
+.anchors-float-btn {
+  position: fixed;
+  left: max(0.8rem, env(safe-area-inset-left));
+  bottom: 1.2rem;
+  width: 2.85rem;
+  height: 2.85rem;
+  border: 1px solid rgba(1, 22, 56, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 26px rgba(1, 22, 56, 0.2);
+  color: #870058;
+  font-size: 1rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.05rem;
+  cursor: pointer;
+  z-index: 1025;
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.anchors-float-btn:hover,
+.anchors-float-btn:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(135, 0, 88, 0.42);
+  box-shadow: 0 16px 30px rgba(1, 22, 56, 0.24);
+  outline: 2px solid rgba(135, 0, 88, 0.34);
+  outline-offset: 2px;
+}
+
+.anchors-float-symbol {
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
+.anchors-float-arrow {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
 @media (max-width: 991.98px) {
   .in-page-nav {
     grid-template-columns: 1fr;
@@ -297,6 +390,19 @@ const relativeLabel = (isoDate) => {
 
   .next-date-value {
     font-size: 1rem;
+  }
+
+  .anchors-float-btn {
+    left: auto;
+    right: max(0.8rem, env(safe-area-inset-right));
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anchors-float-btn {
+    transition: none;
   }
 }
 </style>
