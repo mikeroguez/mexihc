@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.1.4] - 2026-02-16
+
+### Changed
+
+- Added a global skip-link strategy so `Skip to main content` lands on the first meaningful content block on each route.
+- Updated skip-link focus/scroll behavior for better keyboard accessibility and visible target focus.
+- Aligned `Call for Papers` view with the global skip-link approach (removed route-specific anchor handling).
+- Updated footer release link to point to the changelog using the app base path.
+- Refreshed project documentation in `README.md` with real setup, build, preview, and deploy instructions.
+- Bumped application version to `2026.1.4` in `package.json` and `package-lock.json`.
+
 ## [2026.1.3] - 2026-02-16
 
 ### Changed
