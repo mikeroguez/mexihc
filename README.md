@@ -1,4 +1,4 @@
-# MexIHC Versión 2026.1.2
+# MexIHC Versión 2026.1.3
 
 ## Sitio web para el MexIHC 2026
 
