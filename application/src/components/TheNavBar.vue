@@ -71,6 +71,14 @@
 					}, 320)
 				}
 				this.isScrolled = nextIsScrolled
+			},
+			rssFeedPathForLocale(locale) {
+				if (locale === 'es') return `${this.baseUrl}rss-es.xml`
+				if (locale === 'en') return `${this.baseUrl}rss-en.xml`
+				return `${this.baseUrl}rss.xml`
+			},
+			currentRssFeed() {
+				return this.rssFeedPathForLocale(this.$i18n?.locale)
 			}
 		},
 	setup() {
@@ -100,13 +108,13 @@
 							data-placement="bottom"
 							tabindex="0"
 						>
-							<img :src="isScrolled ? `${baseUrl}assets/img/logos/mexihc2026_white.svg` : `${baseUrl}assets/img/logos/mexihc2026.svg`" height="25" alt="">
+							<img :src="isScrolled ? `${baseUrl}assets/img/logos/mexihc2026_white.svg` : `${baseUrl}assets/img/logos/mexihc2026.svg`" height="25" alt="MexIHC 2026 logo">
 							MexIHC 2026			
 						</RouterLink>
 
 						<button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
 							data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
-							aria-label="Toggle navigation">
+							:aria-label="$t('nav.toggle_navigation')">
 							<span class="navbar-toggler-icon mt-2">
 								<span class="navbar-toggler-bar bar1"></span>
 								<span class="navbar-toggler-bar bar2"></span>
@@ -272,6 +280,19 @@
 									>
 										{{ $t("nav.organizers") }}
 									</RouterLink>
+								</li>
+								<li class="nav-item mx-2">
+									<a
+										:href="currentRssFeed()"
+										class="nav-link ps-2 d-flex cursor-pointer align-items-center gap-1"
+										target="_blank"
+										rel="noopener noreferrer"
+										type="application/rss+xml"
+										:title="$t('nav.rss')"
+									>
+										<i class="fas fa-rss" aria-hidden="true"></i>
+										<span>{{ $t("nav.rss") }}</span>
+									</a>
 								</li>
 							</ul>
 							<LanguageSwitcher/>

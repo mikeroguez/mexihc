@@ -18,7 +18,7 @@ export default {
     <div class="row mb-4">
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/nophoto.png" alt="Foto de perfil do Dr. Roberto Martinez-Maldonado (não disponível)" class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
                 <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
@@ -36,7 +36,7 @@ export default {
 
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/nophoto.png" alt="Foto de perfil da Dra. Marisol Wong-Villacres (não disponível)" class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
                 <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
@@ -55,7 +55,7 @@ export default {
     <div class="row">
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/nophoto.png" alt="Foto de perfil da Dra. Claudia López Moncada (não disponível)" class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
                 <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
@@ -73,7 +73,7 @@ export default {
 
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/nophoto.png" alt="Foto de perfil do Dr. Philippe Palanque (não disponível)" class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
                 <div class="colored-shadow" style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">

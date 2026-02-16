@@ -12,6 +12,9 @@
   --mexihc-mist: #bdb8c2;
   --mexihc-paper: #f0efec;
   --mexihc-white: #ffffff;
+  --mexihc-link: #6c0047;
+  --mexihc-link-hover: #4f0035;
+  --mexihc-focus: #b11f7a;
 }
 
 body {
@@ -24,7 +27,17 @@ body {
 }
 
 a {
-  color: var(--mexihc-magenta) !important;
+  color: var(--mexihc-link) !important;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.14em;
+}
+
+a:visited {
+  color: var(--mexihc-link) !important;
+}
+
+a:hover {
+  color: var(--mexihc-link-hover) !important;
 }
 
 .text-gradient.text-primary {
@@ -50,6 +63,48 @@ a.uline-dark:focus {
   -webkit-text-fill-color: transparent !important;
   position: relative;
   z-index: 1;
+}
+
+a.uline {
+  transition: color 0.18s ease, text-shadow 0.18s ease, filter 0.18s ease;
+}
+
+a.uline:hover,
+a.uline:focus-visible {
+  color: var(--mexihc-link-hover) !important;
+  text-decoration: none !important;
+  background-image: linear-gradient(100deg, #870058 0%, #af4972 52%, #496389 100%) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: 0 0 0.01px rgba(1, 22, 56, 0.22);
+  filter: saturate(1.08);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid rgba(177, 31, 122, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.visually-hidden-focusable:focus {
+  position: fixed !important;
+  top: 0.6rem;
+  left: 0.6rem;
+  z-index: 1060;
+  width: auto !important;
+  height: auto !important;
+  padding: 0.4rem 0.7rem !important;
+  background: #ffffff;
+  border: 1px solid rgba(1, 22, 56, 0.25);
+  border-radius: 8px;
+  color: #011638 !important;
+  box-shadow: 0 10px 20px rgba(1, 22, 56, 0.16);
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
@@ -201,6 +256,35 @@ nav.scrolled .nav-link {
   margin-bottom: 0;
 }
 
+.mexihc-postit .mexihc-postit-rss-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.36rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(90, 63, 38, 0.3);
+  background: linear-gradient(140deg, rgba(255, 248, 229, 0.95), rgba(255, 237, 191, 0.86));
+  color: #4c311c !important;
+  font-weight: 700;
+  text-decoration: none !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+}
+
+.mexihc-postit .mexihc-postit-rss-link svg {
+  width: 0.92rem;
+  height: 0.92rem;
+  flex-shrink: 0;
+  fill: #d65b00;
+}
+
+.mexihc-postit .mexihc-postit-rss-link:hover,
+.mexihc-postit .mexihc-postit-rss-link:focus-visible {
+  color: #2f1d11 !important;
+  background: linear-gradient(136deg, #fff1cc 0%, #ffd98a 52%, #ffcb63 100%);
+  border-color: rgba(121, 74, 26, 0.44);
+  text-decoration: none !important;
+}
+
 .active {
   font-weight: bolder !important;
 }
@@ -264,6 +348,18 @@ nav.scrolled .nav-link {
   filter: drop-shadow(0 10px 20px rgba(4, 21, 50, 0.28));
 }
 
+h1[id],
+h2[id],
+h3[id],
+h4[id],
+h5[id],
+h6[id],
+section[id],
+article[id],
+div[id] {
+  scroll-margin-top: 6.1rem;
+}
+
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -308,6 +404,16 @@ input:checked + .cookie-comply-slider {
   color: #011638 !important;
 }
 
+.footer .nav-link {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer .nav-link:hover,
+.footer .nav-link:focus-visible {
+  color: var(--mexihc-link-hover) !important;
+}
+
 .footer .text-gradient.text-primary {
   background-image: none !important;
   -webkit-text-fill-color: #011638 !important;
@@ -337,5 +443,12 @@ caption {
 
   .mexihc-hero-logo {
     max-width: 155px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
   }
 }

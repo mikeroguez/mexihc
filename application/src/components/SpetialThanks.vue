@@ -67,7 +67,7 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/logos/sistemas.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/logos/sistemas.png" alt="Logotipo de la Facultad de Sistemas" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
@@ -81,7 +81,7 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/logos/cima.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/logos/cima.png" alt="Logotipo del Centro de Investigación en Matemáticas Aplicadas" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"

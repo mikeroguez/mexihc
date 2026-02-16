@@ -101,6 +101,14 @@ export default {
             Cookies.set(`consent_${type}`, consent, { expires: 365 }); // Cookie válida por un año
             console.log(`Cookie de consentimiento para ${type} establecida a ${consent}`);
         },
+        rssFeedPathForLocale(locale) {
+            if (locale === 'es') return `${this.baseUrl}rss-es.xml`
+            if (locale === 'en') return `${this.baseUrl}rss-en.xml`
+            return `${this.baseUrl}rss.xml`
+        },
+        currentRssFeed() {
+            return this.rssFeedPathForLocale(this.$i18n?.locale)
+        },
     }
 }
 </script>
@@ -155,6 +163,11 @@ export default {
                                 <RouterLink :to="Tr.i18nRoute({ name: 'organizers' })" class="nav-link uline">
                                     {{ $t("nav.organizers") }}
                                 </RouterLink>
+                            </li>
+                            <li class="nav-item">
+                                <a :href="currentRssFeed()" class="nav-link uline" target="_blank" rel="noopener noreferrer" type="application/rss+xml">
+                                    {{ $t("nav.rss") }}
+                                </a>
                             </li>
                         </ul>
                     </div>

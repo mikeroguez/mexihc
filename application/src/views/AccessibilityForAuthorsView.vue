@@ -104,7 +104,7 @@
                                 <OrganizerItem>
                                 <template #image>
                                     <div class="d-block blur-shadow-image">
-                                    <img src="/assets/img/people/mike.png" alt="" class="img-fluid shadow rounded-3">
+                                    <img src="/assets/img/people/mike.png" alt="Fotografía de Miguel Angel Rodríguez Ortiz" class="img-fluid shadow rounded-3">
                                     </div>
                                     <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/mike.png&quot;);">
                                     </div>

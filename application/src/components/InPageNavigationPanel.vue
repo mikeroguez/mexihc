@@ -193,7 +193,7 @@ onBeforeUnmount(() => {
       <RouterLink
         v-if="allDatesTo"
         :to="allDatesTo"
-        class="next-date-all-dates"
+        class="next-date-all-dates uline"
       >
         {{ allDatesLabel || text.defaultAllDates }}
       </RouterLink>
@@ -326,6 +326,11 @@ onBeforeUnmount(() => {
   color: #870058 !important;
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.next-date-all-dates:hover,
+.next-date-all-dates:focus-visible {
+  color: #4f0035 !important;
 }
 
 .anchors-float-btn {

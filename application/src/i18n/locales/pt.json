@@ -11,6 +11,8 @@
         "about_title": "Sobre esta conferência",
         "about": "Sobre o CLIHC",
         "home": "Início",
+        "skip_to_content": "Ir para o conteúdo principal",
+        "toggle_navigation": "Alternar navegação",
         "for_authors_title": "Para autores",
         "for_authors": "Para autores",
         "organizers": "Organizadores",
@@ -45,7 +47,10 @@
         "pending": "Pendente",
         "coming_soon": "Em breve",
         "copyright": "© 2023 Conferência Latino-Americana de Interação Humano-Computador, uma conferência da LAIHC.",
-        "back_to_top": "Voltar ao topo da página"
+        "back_to_top": "Voltar ao topo da página",
+        "rss": "RSS notícias",
+        "rss_es": "RSS espanhol",
+        "rss_en": "RSS inglês"
     },
     "jumbotron":{
         "conference": "XI Conferência Latino-Americana de Interação Humano-Computador",
