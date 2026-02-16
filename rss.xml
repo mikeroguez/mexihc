@@ -3,29 +3,20 @@
   <channel>
     <title>MexIHC 2026 - News (Multilingual)</title>
     <link>https://www.mexihc.org/mexihc/</link>
-    <description>Official multilingual RSS feed for MexIHC 2026 updates. Use rss-es.xml and
-      rss-en.xml for language-specific feeds.</description>
+    <description>Official multilingual RSS feed for MexIHC 2026 updates. Use rss-es.xml and rss-en.xml for language-specific feeds.</description>
     <language>en-US</language>
     <lastBuildDate>Mon, 16 Feb 2026 12:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
-    <atom:link href="https://www.mexihc.org/mexihc/rss.xml" rel="self" type="application/rss+xml" />
-    <atom:link href="https://www.mexihc.org/mexihc/rss-es.xml" rel="alternate"
-      type="application/rss+xml" hreflang="es" />
-    <atom:link href="https://www.mexihc.org/mexihc/rss-en.xml" rel="alternate"
-      type="application/rss+xml" hreflang="en" />
-    <image>
-      <url>https://www.mexihc.org/mexihc/assets/img/logos/mexihc-guinda.jpeg</url>
-      <title>MexIHC 2026</title>
-      <link>https://www.mexihc.org/mexihc/</link>
-    </image>
+    <atom:link href="https://www.mexihc.org/mexihc/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://www.mexihc.org/mexihc/rss-es.xml" rel="alternate" type="application/rss+xml" hreflang="es"/>
+    <atom:link href="https://www.mexihc.org/mexihc/rss-en.xml" rel="alternate" type="application/rss+xml" hreflang="en"/>
 
     <item>
       <title>[ES] Convocatoria de trabajos abierta para MexIHC 2026</title>
       <link>https://www.mexihc.org/mexihc/es/call-for-papers</link>
       <guid isPermaLink="true">https://www.mexihc.org/mexihc/es/call-for-papers</guid>
-      <description>Consulta lineamientos, temas de interés y fechas importantes de la convocatoria
-        de trabajos.</description>
-      <pubDate>Mon, 16 Feb 2026 12:00:00 GMT</pubDate>
+      <description>Consulta lineamientos, temas de interés y fechas importantes de la convocatoria de trabajos.</description>
+      <pubDate>Mon, 12 Jan 2026 12:00:00 GMT</pubDate>
     </item>
 
     <item>
@@ -33,7 +24,7 @@
       <link>https://www.mexihc.org/mexihc/en/call-for-papers</link>
       <guid isPermaLink="true">https://www.mexihc.org/mexihc/en/call-for-papers</guid>
       <description>Check submission guidelines, topics, and important dates for the Call for Papers.</description>
-      <pubDate>Mon, 16 Feb 2026 12:00:00 GMT</pubDate>
+      <pubDate>Mon, 12 Jan 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>
