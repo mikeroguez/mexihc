@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.1.2] - 2026-02-16
+
+### Added
+
+- Official MexIHC logo asset pack added (multiple SVG variants) and new decorative line shape asset.
+- New organizer image assets added, including Mayra Barrera and an updated `nophoto` placeholder.
+- New `.env.github` environment file for GitHub Pages base-path configuration.
+
+### Changed
+
+- Jumbotron, navbar, and footer now use the official MexIHC logo assets.
+- Build/deploy configuration now uses dynamic base path by environment (`github` / `production`) through Vite.
+- Social metadata and RSS feed content/images were refreshed in `index.html` and RSS XML files.
+- Organizers and localized Call for Papers pages (`es`, `en`, `pt`) were updated with current photo references.
+
+### Removed
+
+- Legacy logo asset `application/public/assets/img/logos/mexihc2024.svg` was removed.
+
 ## [2026.1.1] - 2026-02-16
 
 ### Changed
