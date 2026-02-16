@@ -1,11 +1,13 @@
 <script>
 import OrganizerItem from '@/components/OrganizerItem.vue';
+import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue';
 
 import Tr from '@/i18n/translation'
 
 export default {
     components: {
-        OrganizerItem
+        OrganizerItem,
+        InPageNavigationPanel
     },
     setup() {
         return {
@@ -16,18 +18,25 @@ export default {
 </script>
 
 <template>
-    <ol class="list-group list-group-numbered my-3">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Fecha límite para propuestas de talleres y
-                    tutoriales:</strong> <del>17 de mayo</del> 7 de junio de 2024 (extendida) <strong> ({{ $t("about.closed") }})</strong><br>
-                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-dates' })"
-                    class="uline">
-                    Ver todas las fechas importantes
-                </RouterLink>
-            </div>
-        </li>
-    </ol>
+    <InPageNavigationPanel
+        :links="[
+            { label: 'Guía para propuestas', to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-guidelines' }) },
+            { label: 'Fechas importantes', to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-dates' }) },
+            { label: 'Después de la aceptación', to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-after' }) },
+            { label: 'Accepted Workshops and Tutorials', to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-accepted' }) }
+        ]"
+        :milestones="[
+            { label: 'Fecha límite para propuestas', date: '2024-06-07' },
+            { label: 'Notificación de aceptación', date: '2024-06-14' },
+            { label: 'Fecha límite de envíos a talleres', date: '2024-08-09' },
+            { label: 'Notificación de envíos de talleres', date: '2024-08-23' },
+            { label: 'Entrega final', date: '2024-09-13' },
+            { label: 'Inicio de MexIHC 2024', date: '2024-11-06', kind: 'conference-start' },
+            { label: 'Cierre de MexIHC 2024', date: '2024-11-08', kind: 'conference-end' }
+        ]"
+        :all-dates-to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-dates' })"
+        all-dates-label="Ver todas las fechas importantes"
+    />
 
     <p>
         Para promover el acceso al conocimiento de expertos y fomentar el intercambio de experiencias, el Comité
@@ -49,7 +58,7 @@ export default {
         nuevas formas de interacción con una duración de 1 a 3 horas.
     </p>
 
-    <h2>GUÍA PARA PROPUESTAS</h2>
+    <h2 id="cwt-guidelines">GUÍA PARA PROPUESTAS</h2>
     <p>
         Las propuestas para talleres y tutoriales deben contener la información necesaria para permitir a los
         responsables de los talleres evaluar su importancia, calidad e interés de la comunidad en los temas propuestos.
@@ -81,7 +90,7 @@ export default {
 
     <p>Las propuestas deben enviarse a: ws.2024@mexihc.org</p>
 
-    <h2>DESPUÉS DE LA ACEPTACIÓN</h2>
+    <h2 id="cwt-after">DESPUÉS DE LA ACEPTACIÓN</h2>
     <p>
         Los organizadores de los talleres deben desarrollar la página web con la convocatoria para presentar trabajos.
         Deben promover la convocatoria entre sus contactos y listas de correo adicionales y convenientes.
@@ -100,7 +109,7 @@ export default {
         <li><strong>13 de septiembre de 2024</strong> – Entrega final (Camera Ready)</li>
     </ul>
     
-    <h2>Accepted Workshops and Tutorials</h2>
+    <h2 id="cwt-accepted">Accepted Workshops and Tutorials</h2>
     <ul>
         <li>
             <RouterLink :to="Tr.i18nRoute({ name: 'calls-for-accepted-workshops' })" class="uline">

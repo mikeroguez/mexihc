@@ -1,11 +1,13 @@
 <script>
 import OrganizerItem from '@/components/OrganizerItem.vue';
+import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue';
 
 import Tr from '@/i18n/translation'
 
 export default {
     components: {
-        OrganizerItem
+        OrganizerItem,
+        InPageNavigationPanel
     },
     setup() {
         return {
@@ -16,16 +18,23 @@ export default {
 </script>
 
 <template>
-    <ol class="list-group list-group-numbered my-3">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Deadline for submissions:</strong> June 1, 2026<br>
-                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-dates' })" class="uline">
-                    See all important dates
-                </RouterLink>
-            </div>
-        </li>
-    </ol>
+    <InPageNavigationPanel
+        :links="[
+            { label: 'Type of submissions', to: Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-types' }) },
+            { label: 'Submission details', to: Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-submission' }) },
+            { label: 'Important Dates', to: Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-dates' }) },
+            { label: 'Publication', to: Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-publication' }) }
+        ]"
+        :milestones="[
+            { label: 'Submission deadline', date: '2026-06-01' },
+            { label: 'Notification of acceptance', date: '2026-08-07' },
+            { label: 'Camera-ready final submissions', date: '2026-09-01' },
+            { label: 'MexIHC 2026 starts', date: '2026-11-04', kind: 'conference-start' },
+            { label: 'MexIHC 2026 ends', date: '2026-11-06', kind: 'conference-end' }
+        ]"
+        :all-dates-to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-dates' })"
+        all-dates-label="See all important dates"
+    />
 
     <p>
         We invite original contributions on the theme of HCI in the age of new realities, and
@@ -35,7 +44,7 @@ export default {
         the contribution to the field and theme, technical correctness, and presentation.
     </p>
 
-    <h2>Type of submissions</h2>
+    <h2 id="cfp-types">Type of submissions</h2>
     <br>    
     <h3>Full papers (Up to 8 pages)</h3>
     <p>
@@ -60,7 +69,7 @@ export default {
         will be announced soon. Please check back for more information at a later time.
     </p>
 
-    <h2>Submission details</h2>
+    <h2 id="cfp-submission">Submission details</h2>
 
     <p>
         Submissions for full and short papers written in English or Spanish should use <a
@@ -86,7 +95,7 @@ export default {
         possible to remove all clues to who the authors are, we expect authors to do their best.
     </p>
 
-    <h2>Publication</h2>
+    <h2 id="cfp-publication">Publication</h2>
 
     <p>
         All accepted full and short papers will be published in a Special Issue of <a

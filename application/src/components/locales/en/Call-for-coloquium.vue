@@ -1,11 +1,13 @@
 <script>
 import OrganizerItem from '@/components/OrganizerItem.vue';
+import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue';
 
 import Tr from '@/i18n/translation'
 
 export default {
     components: {
-        OrganizerItem
+        OrganizerItem,
+        InPageNavigationPanel
     },
     setup() {
         return {
@@ -16,17 +18,23 @@ export default {
 </script>
 
 <template>
-    <ol class="list-group list-group-numbered my-3">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>8th</del> 15th, 2024 (12pm
-                (noon) UTC-6) (extended)<strong>({{ $t("about.open") }})</strong><br>
-                <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' })" class="uline">
-                    See all important dates
-                </RouterLink>
-            </div>
-        </li>
-    </ol>
+    <InPageNavigationPanel
+        :links="[
+            { label: 'Objective', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-objective' }) },
+            { label: 'Participation', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-participation' }) },
+            { label: 'Paper requirements', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-paper-requirements' }) },
+            { label: 'Important Dates', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' }) }
+        ]"
+        :milestones="[
+            { label: 'Submission deadline', date: '2024-08-15' },
+            { label: 'Notification of acceptance', date: '2024-09-13' },
+            { label: 'Camera-ready final submissions', date: '2024-09-20' },
+            { label: 'MexIHC 2024 starts', date: '2024-11-06', kind: 'conference-start' },
+            { label: 'MexIHC 2024 ends', date: '2024-11-08', kind: 'conference-end' }
+        ]"
+        :all-dates-to="Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' })"
+        all-dates-label="See all important dates"
+    />
 
     <p>
         We warmly welcome both master's and doctoral students currently enrolled in graduate
@@ -35,7 +43,7 @@ export default {
         on Human-Computer Interaction (MexIHC 2024).
     </p>
 
-    <h2>Objective</h2>
+    <h2 id="cgc-objective">Objective</h2>
     <p>
         The MexIHC Graduate Colloquium offers graduate students a unique platform to
         present their research to Mexico's Human-Computer Interaction (HCI) academic
@@ -44,7 +52,7 @@ export default {
         both industry and academia.
     </p>
 
-    <h2>Participating in the MexIHC Graduate Consortium</h2>
+    <h2 id="cgc-participation">Participating in the MexIHC Graduate Consortium</h2>
 
     <p>
         If you're interested in joining the graduate consortium, you'll need to fill out a form
@@ -82,7 +90,7 @@ export default {
         </RouterLink>
     </p>
 
-    <h2>Paper requirements</h2>
+    <h2 id="cgc-paper-requirements">Paper requirements</h2>
     <p>
         Applicants must submit via the online form a 4-page paper explaining their research.
     </p>

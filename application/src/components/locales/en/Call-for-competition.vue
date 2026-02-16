@@ -1,11 +1,13 @@
 <script>
 import OrganizerItem from '@/components/OrganizerItem.vue';
+import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue';
 
 import Tr from '@/i18n/translation'
 
 export default {
     components: {
-        OrganizerItem
+        OrganizerItem,
+        InPageNavigationPanel
     },
     setup() {
         return {
@@ -16,16 +18,24 @@ export default {
 </script>
 
 <template>
-    <ol class="list-group list-group-numbered my-3">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>16th</del> 30th, 2024 (Extended)<strong>
-                    ({{ $t("about.open") }})</strong><br>
-            </div>
-        </li>
-    </ol>
+    <InPageNavigationPanel
+        :links="[
+            { label: 'Goals', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-goals' }) },
+            { label: 'Important Dates', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-dates' }) },
+            { label: 'Submission details', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-submission' }) },
+            { label: 'Selection process', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-selection' }) }
+        ]"
+        :milestones="[
+            { label: 'Submission deadline', date: '2024-08-30' },
+            { label: 'Camera-ready deadline', date: '2024-09-13' },
+            { label: 'MexIHC 2024 starts', date: '2024-11-06', kind: 'conference-start' },
+            { label: 'MexIHC 2024 ends', date: '2024-11-08', kind: 'conference-end' }
+        ]"
+        :all-dates-to="Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-dates' })"
+        all-dates-label="See all important dates"
+    />
 
-    <h2>Goals</h2>
+    <h2 id="sdc-goals">Goals</h2>
     <ul>
         <li>Provide an opportunity for students of Human-Computer Interaction and related fields
             (e. g. Computer Science, interaction and visual design, Psychology, Social Sciences,
@@ -127,7 +137,7 @@ export default {
         that the teams put forward a multidisciplinary team.
     </p>
 
-    <h2>SUBMISSION DETAILS</h2>
+    <h2 id="sdc-submission">SUBMISSION DETAILS</h2>
     <p>
         Each group must submit a presentation with a maximum of <strong>15 slides</strong>, a written report of up to
         <strong>4 pages</strong> in the following format <a class="uline"
@@ -161,7 +171,7 @@ export default {
 
     <p>Please send your proposal to <strong>sdc.2024@mexihc.org</strong></p>
 
-    <h2>Selection Process</h2>
+    <h2 id="sdc-selection">Selection Process</h2>
     <p>Submissions will be evaluated based on:</p>
     <ul>
         <li>Quality of work.</li>
