@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<base href="/mexihc/" />
+	<base href="%BASE_URL%" />
 
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -93,7 +93,7 @@
 			const redirect = sessionStorage.redirect;
 			delete sessionStorage.redirect;
 			const redirectUrl = new URL(redirect);
-			const appBaseUrl = new URL('/mexihc/', location.origin);
+			const appBaseUrl = new URL('%BASE_URL%', location.origin);
 			if (redirectUrl.origin === appBaseUrl.origin) {
 				const path = redirectUrl.pathname + redirectUrl.search + redirectUrl.hash;
 				history.replaceState(null, null, path);
