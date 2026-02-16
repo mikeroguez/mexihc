@@ -77,6 +77,15 @@
 				const enterThreshold = 24
 				const exitThreshold = 8
 				const nextIsScrolled = this.isScrolled ? y > exitThreshold : y > enterThreshold
+				if (this.isMenuOpen) {
+					if (this.transitionTimeout) {
+						clearTimeout(this.transitionTimeout)
+						this.transitionTimeout = null
+					}
+					this.transitionPhase = ''
+					this.isScrolled = nextIsScrolled
+					return
+				}
 				if (nextIsScrolled !== this.isScrolled) {
 					this.transitionPhase = nextIsScrolled ? 'detaching' : 'attaching'
 					if (this.transitionTimeout) {
@@ -113,8 +122,8 @@
 			:class="{
 				'is-scrolled': isScrolled,
 				'is-menu-open': isMenuOpen,
-				'is-detaching': transitionPhase === 'detaching',
-				'is-attaching': transitionPhase === 'attaching',
+				'is-detaching': transitionPhase === 'detaching' && !isMenuOpen,
+				'is-attaching': transitionPhase === 'attaching' && !isMenuOpen,
 				'bg-gradient-dark': isScrolled
 			}"
 		>
