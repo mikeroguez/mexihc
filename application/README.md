@@ -1,29 +1,56 @@
-# .
+# MexIHC 2026 Website
 
-This template should help get you started developing with Vue 3 in Vite.
+Official website for MexIHC 2026, built with Vue 3 and Vite.
 
-## Recommended IDE Setup
+## Current Version
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- `2026.1.4`
 
-## Customize configuration
+## Requirements
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Node.js 18+ (recommended: current LTS)
+- npm 9+
 
-## Project Setup
+## Setup
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Development
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+Local URL (default): `http://localhost:5173/`
+
+## Build
 
 ```sh
 npm run build
 ```
+
+Additional build targets:
+
+```sh
+npm run build:github
+npm run build:prod
+```
+
+## Preview
+
+```sh
+npm run preview
+```
+
+## Deploy (GitHub Pages)
+
+```sh
+npm run deploy
+```
+
+## Release Notes
+
+- Root changelog: `../CHANGELOG.md`
+- Public changelog path: `public/CHANGELOG.md`
