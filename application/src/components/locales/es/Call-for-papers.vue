@@ -72,7 +72,7 @@ export default {
     <p>
         Los artículos completos y cortos escritos en inglés o español deben utilizar <a
             href="https://mexihc.org/aihc_template.zip" class="uline">a plantilla de revista "Avances en Interacción Humano-Computadora"</a> de AmexIHC.
-            La página de envío para MexIHC 2026 es <a href="https://easychair.org/conferences/?conf=mexihc2026">https://easychair.org/conferences/?conf=mexihc2026</a>.
+            La página de envío para MexIHC 2026 es <a href="https://easychair.org/conferences/?conf=mexihc2026" class="uline">https://easychair.org/conferences/?conf=mexihc2026</a>.
     </p>
 
     <h2 id="cfp-dates">Fechas importantes</h2>
@@ -97,7 +97,7 @@ export default {
 
     <p>
         Todos los artículos completos y cortos aceptados serán publicados en un número especial de <a
-            href="https://revistaaihc.mx/">la revista AMexIHC Avances en Interacción Humano-Computadora</a>.
+            href="https://revistaaihc.mx/" class="uline">la revista AMexIHC Avances en Interacción Humano-Computadora</a>.
     </p>
 
     <h2>Temas de interés</h2>
