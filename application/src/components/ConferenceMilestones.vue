@@ -8,7 +8,7 @@ const items = computed(() => [
     titleKey: 'about.call',
     descriptionKey: 'about.call_desc',
     status: 'open',
-    iconClass: 'far fa-file-alt',
+    iconClass: 'fas fa-file-alt',
     routeName: 'call-for-participation'
   },
   {
@@ -16,7 +16,7 @@ const items = computed(() => [
     titleKey: 'about.registration',
     descriptionKey: 'about.registration_desc',
     status: 'coming_soon',
-    iconClass: 'fas fa-user-check',
+    iconClass: 'fas fa-user-clock',
     routeName: 'registration'
   }
 ])
@@ -73,6 +73,12 @@ const isLinkEnabled = (item) => item.status === 'open' && Boolean(item.routeName
 
 <style scoped>
 .milestones-wrap {
+  --mxh-navy: #011638;
+  --mxh-wine: #870058;
+  --mxh-ivory: #f0efec;
+  --mxh-navy-soft: rgba(1, 22, 56, 0.1);
+  --mxh-wine-soft: rgba(135, 0, 88, 0.12);
+  --mxh-ivory-soft: rgba(240, 239, 236, 0.8);
   margin: 0 auto;
   max-width: 700px;
 }
@@ -87,9 +93,9 @@ const isLinkEnabled = (item) => item.status === 'open' && Boolean(item.routeName
   align-items: center;
   gap: 0.75rem;
   border-radius: 14px;
-  border: 1px solid rgba(1, 22, 56, 0.1);
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 10px 24px rgba(1, 22, 56, 0.08);
+  border: 1px solid rgba(1, 22, 56, 0.14);
+  background: rgba(240, 239, 236, 0.92);
+  box-shadow: 0 10px 24px rgba(1, 22, 56, 0.09);
   backdrop-filter: blur(8px);
   padding: 0.82rem 0.9rem;
 }
@@ -101,8 +107,8 @@ const isLinkEnabled = (item) => item.status === 'open' && Boolean(item.routeName
 }
 
 .milestone-card-link:hover {
-  border-color: rgba(135, 0, 88, 0.32);
-  box-shadow: 0 14px 28px rgba(1, 22, 56, 0.13);
+  border-color: rgba(135, 0, 88, 0.38);
+  box-shadow: 0 14px 28px rgba(1, 22, 56, 0.16);
   transform: translateY(-1px);
 }
 
@@ -119,34 +125,34 @@ const isLinkEnabled = (item) => item.status === 'open' && Boolean(item.routeName
 }
 
 .milestone-card-link:focus-visible {
-  outline: 2px solid rgba(135, 0, 88, 0.35);
+  outline: 2px solid rgba(135, 0, 88, 0.4);
   outline-offset: 2px;
 }
 
 .milestone-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  border: 1px solid rgba(73, 99, 137, 0.25);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--mxh-navy-soft);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #496389;
+  color: var(--mxh-navy);
   font-size: 1rem;
   flex: 0 0 auto;
-  background: rgba(73, 99, 137, 0.08);
+  background: var(--mxh-ivory-soft);
 }
 
 .milestone-card-open .milestone-icon {
-  border-color: #79e2cf;
-  color: #148a74;
-  background: #c8f6ec;
+  border-color: rgba(135, 0, 88, 0.28);
+  color: var(--mxh-wine);
+  background: var(--mxh-wine-soft);
 }
 
 .milestone-card-coming-soon .milestone-icon {
-  border-color: #dfc55e;
-  color: #bf6e08;
-  background: #fff3bf;
+  border-color: rgba(1, 22, 56, 0.24);
+  color: var(--mxh-navy);
+  background: rgba(1, 22, 56, 0.1);
 }
 
 .milestone-content {
@@ -156,7 +162,7 @@ const isLinkEnabled = (item) => item.status === 'open' && Boolean(item.routeName
 
 .milestone-title {
   margin: 0;
-  color: #1c2a46;
+  color: var(--mxh-navy);
   font-size: 1.02rem;
   font-weight: 700;
   line-height: 1.15;
@@ -164,16 +170,16 @@ const isLinkEnabled = (item) => item.status === 'open' && Boolean(item.routeName
 
 .milestone-description {
   margin: 0.15rem 0 0;
-  color: #535b68;
+  color: rgba(1, 22, 56, 0.7);
   font-size: 0.85rem;
   line-height: 1.3;
 }
 
 .milestone-badge {
   border-radius: 999px;
-  border: 1px solid #d6deea;
-  color: #8f9cb3;
-  background: #ecf1f7;
+  border: 1px solid rgba(1, 22, 56, 0.18);
+  color: rgba(1, 22, 56, 0.72);
+  background: rgba(1, 22, 56, 0.08);
   padding: 0.2rem 0.56rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -183,19 +189,19 @@ const isLinkEnabled = (item) => item.status === 'open' && Boolean(item.routeName
 }
 
 .milestone-badge-open {
-  border-color: #79e2cf;
-  color: #148a74;
-  background: #c8f6ec;
+  border-color: rgba(135, 0, 88, 0.3);
+  color: var(--mxh-wine);
+  background: var(--mxh-wine-soft);
 }
 
 .milestone-badge-coming-soon {
-  border-color: #dfc55e;
-  color: #bf6e08;
-  background: #fff3bf;
+  border-color: rgba(1, 22, 56, 0.24);
+  color: var(--mxh-navy);
+  background: rgba(1, 22, 56, 0.1);
 }
 
 .milestone-badge-planned {
-  color: #91a0b8;
+  color: rgba(1, 22, 56, 0.68);
 }
 
 @media (max-width: 767px) {
@@ -208,7 +214,7 @@ const isLinkEnabled = (item) => item.status === 'open' && Boolean(item.routeName
   .milestone-icon {
     width: 46px;
     height: 46px;
-    border-radius: 11px;
+    border-radius: 50%;
     font-size: 1rem;
   }
 
