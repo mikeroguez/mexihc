@@ -108,8 +108,7 @@
 							data-placement="bottom"
 							tabindex="0"
 						>
-							<img :src="isScrolled ? `${baseUrl}assets/img/logos/mexihc2026_white.svg` : `${baseUrl}assets/img/logos/mexihc2026.svg`" height="25" alt="MexIHC 2026 logo">
-							MexIHC 2026			
+							<img :src="isScrolled ? `${baseUrl}assets/img/logos/logo-medium-white.svg` : `${baseUrl}assets/img/logos/logo-medium.svg`" height="25" alt="MexIHC 2026">
 						</RouterLink>
 
 						<button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"

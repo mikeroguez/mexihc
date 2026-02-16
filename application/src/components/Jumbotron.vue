@@ -42,17 +42,10 @@ export default {
         <div class="row">
           <div class="col-lg-9 mx-auto pt-5 pb-4 mt-7 mb-4 mexihc-hero-card">
             <div class="row align-items-center g-4">
-              <div class="col-md-4 text-center">
-                <img
-                  src="/assets/img/logos/mexihc2026.svg"
-                  alt="Logotipo MexIHC 2026"
-                  class="img-fluid mexihc-hero-logo"
-                >
-              </div>
-
-              <div class="col-md-8 text-center text-md-start">
-                <h1 class="pt-2 mexihc-hero-title">MexIHC 2026</h1>
-                <p class="mexihc-hero-subtitle mb-2">{{ $t("jumbotron.conference") }}</p>
+              <div class="col-md-12 text-center text-md-start">
+                <h1 class="pt-2 mexihc-hero-title">
+                  <img src="/assets/img/logos/logo-big.svg" width="61.8%" :alt="$t('jumbotron.conference')" />
+                </h1>
                 <p class="mb-3">
                   <strong>
                     Ensenada, Baja California, México<br>
