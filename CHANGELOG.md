@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.1.1] - 2026-02-16
+
+### Changed
+
+- Home milestone cards now disable navigation for items marked as `Coming soon` (registration is no longer clickable).
+- Jumbotron post-it RSS link now uses the Font Awesome RSS icon in all locales (`es`, `en`, `pt`) for visual consistency with navbar icons.
+- Call for Papers EasyChair submission URL (`https://easychair.org/conferences/?conf=mexihc2026`) now uses the shared underline/hover link style (`uline`) in Spanish and English pages.
+- Call for Papers AMexIHC journal publication URL (`https://revistaaihc.mx/`) now uses the shared underline/hover link style (`uline`) in Spanish and English pages.
+
 ## [2026.1.0] - 2026-02-15
 
 ### Added
