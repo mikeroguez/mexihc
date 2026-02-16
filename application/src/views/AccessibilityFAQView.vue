@@ -51,7 +51,7 @@ export default {
   <section>
     <div class="container">
       <div class="row">
-        <div class="row justify-content-center mt-5">
+        <div class="row justify-content-center my-3">
           <div class="col-lg-8">
 
             <template v-if="contentComponent">

@@ -37,7 +37,7 @@ export default {
 
 <template>
   <header class="header-2">
-    <div class="page-header section-height-100 relative mexihc-hero-bg">
+    <div class="page-header section-height-100 relative mexihc-hero-bg-home">
       <div class="container">
         <div class="row">
           <div class="col-lg-9 mx-auto pt-5 pb-4 mt-7 mb-4 mexihc-hero-card">

@@ -100,6 +100,18 @@ const badgeClassByType = {
   box-shadow: 0 2px 10px rgba(1, 22, 56, 0.08);
 }
 
+.milestone-card-link:hover .milestone-title {
+  color: #870058 !important;
+}
+
+.milestone-card-link:hover .milestone-title span {
+  color: #870058 !important;
+}
+
+.milestone-card-link:hover .milestone-description {
+  color: #5c6f8f;
+}
+
 .milestone-card-link:focus-visible {
   outline: 2px solid rgba(135, 0, 88, 0.35);
   outline-offset: 2px;

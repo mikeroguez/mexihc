@@ -17,9 +17,9 @@
 body {
   font-family: 'Inter', sans-serif !important;
   background:
-    radial-gradient(circle at 10% 10%, rgba(142, 7, 86, 0.18), transparent 38%),
-    radial-gradient(circle at 90% 0%, rgba(73, 99, 137, 0.3), transparent 42%),
-    linear-gradient(180deg, #f2eff3 0%, var(--mexihc-paper) 42%, #f7f5f6 100%);
+    radial-gradient(circle at 10% -14%, rgba(142, 7, 86, 0.1), transparent 42%),
+    radial-gradient(circle at 90% -18%, rgba(73, 99, 137, 0.2), transparent 46%),
+    linear-gradient(180deg, #f4f1f4 0%, var(--mexihc-paper) 44%, #f7f5f6 100%);
   color: var(--mexihc-night);
 }
 
@@ -216,10 +216,27 @@ nav.scrolled .nav-link {
 
 .mexihc-hero-bg {
   background-image:
-    linear-gradient(120deg, rgba(4, 21, 50, 0.88), rgba(34, 49, 73, 0.8)),
+    linear-gradient(120deg, rgba(4, 21, 50, 0.5), rgba(34, 49, 73, 0.5)),
     url('/assets/img/banner-2026.png');
   background-size: cover;
   background-position: center;
+}
+
+.mexihc-hero-bg-home {
+  background-image:
+    linear-gradient(120deg, rgba(4, 21, 50, 0.25), rgba(34, 49, 73, 0.25)),
+    url('/assets/img/banner-2026.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.mexihc-secondary-bg {
+  background-image:
+    linear-gradient(120deg, rgba(4, 21, 50, 0.5), rgba(34, 49, 73, 0.5)),
+    url('/assets/img/banner-2026.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .mexihc-hero-card {
