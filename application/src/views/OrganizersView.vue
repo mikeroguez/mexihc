@@ -1,6 +1,7 @@
 <script setup>
 import TheHeader from '@/components/Header.vue';
 import OrganizerItem from '@/components/OrganizerItem.vue';
+import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue';
 import Tr from '@/i18n/translation'
 </script>
 
@@ -26,30 +27,18 @@ export default {
             <div class="row">
                 <div class="row justify-content-center my-3">
                     <div class="col-lg-8">
-                        <ol class="list-group list-group-numbered mb-4">
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto">
-                                    <div class="fw-bold">
-                                        <RouterLink
-                                            :to="Tr.i18nRoute({ name: 'organizers', hash: '#general-committee' })"
-                                            class="uline">
-                                            {{ $t("organizers.general_committee_link") }}
-                                        </RouterLink>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto">
-                                    <div class="fw-bold">
-                                        <RouterLink
-                                            :to="Tr.i18nRoute({ name: 'organizers', hash: '#program-committee' })"
-                                            class="uline">
-                                            {{ $t("organizers.program_committee_link") }}
-                                        </RouterLink>
-                                    </div>
-                                </div>
-                            </li>
-                        </ol>
+                        <InPageNavigationPanel
+                            :links="[
+                                {
+                                    label: $t('organizers.general_committee_link'),
+                                    to: Tr.i18nRoute({ name: 'organizers', hash: '#general-committee' })
+                                },
+                                {
+                                    label: $t('organizers.program_committee_link'),
+                                    to: Tr.i18nRoute({ name: 'organizers', hash: '#program-committee' })
+                                }
+                            ]"
+                        />
 
                         <p>
                             {{ $t("organizers.intro") }}
@@ -67,7 +56,7 @@ export default {
         <div class="row">
             <div class="col-lg-12 mx-auto">
 
-                <div class="container mt-4 px-5 mt-6" id="program-chairs">
+                <div class="container mt-4 px-5 mt-6" id="conference-committee">
                     <div class="row">
                         <div class="col-xl-3">
                             <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
@@ -342,11 +331,6 @@ export default {
                     </div>
                 </div>
                 <!-- Hidden committee blocks per update request -->
-                <p class="mt-5">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'organizers', hash: '#top' })" class="uline">
-                        {{ $t("nav.back_to_top") }}
-                    </RouterLink>
-                </p>
                 <hr>
             </div>
         </div>
@@ -522,11 +506,6 @@ export default {
                         <em>{{ $t("nav.coming_soon") }}</em>
                     </p>
 
-                    <p>
-                        <RouterLink :to="Tr.i18nRoute({ name: 'organizers', hash: '#top' })" class="uline">
-                            {{ $t("nav.back_to_top") }}
-                        </RouterLink>
-                    </p>
                 </div>
 
             </div>

@@ -115,7 +115,7 @@ export default {
 
 
 	<h2 id="host-hotel" class="mt-5 h3">Hotel sede: Quinta Dorada Hotel & Suites</h2>
-	<img src="/assets/img/quintaDorada.png" width="100%">
+	<img src="/assets/img/quintaDorada.png" width="100%" alt="Fachada del hotel sede Quinta Dorada">
 	<p>
 		Reserva en <strong><a href="https://www.quintadorada.com.mx/">Quinta Dorada Hotels & Suites</a></strong>
 		mencionando el evento <em>"MexIHC 2024: Décima
@@ -151,6 +151,7 @@ export default {
 		Col. Guanajuato Oriente<br>
 		Saltillo, Coahuila<br>
 		<iframe
+			title="Mapa del hotel sede Quinta Dorada"
 			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.918905681929!2d-100.97917472384009!3d25.440974577554943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86880d5015192a87%3A0x59511576653affdd!2sQuinta%20Dorada%20Hotel%20%26%20Suites!5e0!3m2!1ses!2smx!4v1725029865543!5m2!1ses!2smx"
 			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
 			referrerpolicy="no-referrer-when-downgrade">
@@ -166,6 +167,7 @@ export default {
 	</p>
 	<p>
 		<iframe
+			title="Mapa de la sede de la conferencia Infoteca Central"
 			src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14410.770497964844!2d-100.8711317!3d25.4485379!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86880e2435a2ff73%3A0xdf82eb57c2cecf26!2sInfoteca%20Central!5e0!3m2!1ses!2smx!4v1725029727854!5m2!1ses!2smx"
 			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
 			referrerpolicy="no-referrer-when-downgrade">
@@ -175,7 +177,7 @@ export default {
 		<strong>Ubicación dentro del campus:</strong> La Infoteca se encuentra en el corazón de la Ciudad Universitaria de la UAdeC, fácilmente accesible desde la entrada principal del campus. Esta ubicación estratégica permite un acceso cómodo a todas las instalaciones necesarias para el desarrollo de la conferencia.	
 	</p>
 	<p>
-		<img src="/assets/img/croquis.jpg" width="100%">
+		<img src="/assets/img/croquis.jpg" width="100%" alt="Croquis de ubicación de la sede en el campus">
 	</p>
 
 
@@ -194,7 +196,7 @@ export default {
 		<li>
 			<strong>Taxis con facturación:</strong><br>
 			<p>Algunos servicios de taxi en el aeropuerto ofrecen la posibilidad de facturación. Asegúrate de preguntar si necesitas un recibo fiscal.</p>
-			<img src="/assets/img/taxi.jpg" width="80%">
+			<img src="/assets/img/taxi.jpg" width="80%" alt="Zona de taxis en aeropuerto de Monterrey">
 		</li>
 	</ul>
 

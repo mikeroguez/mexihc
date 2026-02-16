@@ -1,11 +1,13 @@
 <script>
 import OrganizerItem from '@/components/OrganizerItem.vue';
+import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue';
 
 import Tr from '@/i18n/translation'
 
 export default {
     components: {
-        OrganizerItem
+        OrganizerItem,
+        InPageNavigationPanel
     },
     setup() {
         return {
@@ -16,17 +18,23 @@ export default {
 </script>
 
 <template>
-    <ol class="list-group list-group-numbered my-3">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>8</del> 30 de Agosto de 2024 (extendida)
-                <strong>({{ $t("about.open") }})</strong><br>
-                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-dates' })" class="uline">
-                    Ver todas las fechas importantes
-                </RouterLink>
-            </div>
-        </li>
-    </ol>
+    <InPageNavigationPanel
+        :links="[
+            { label: 'Fechas importantes', to: Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-dates' }) },
+            { label: 'Detalles de envío', to: Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-submission' }) },
+            { label: 'Proceso de revisión', to: Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-review' }) },
+            { label: 'Asistencia', to: Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-attendance' }) }
+        ]"
+        :milestones="[
+            { label: 'Fecha límite de recepción', date: '2024-08-30' },
+            { label: 'Notificación de aceptación', date: '2024-09-13' },
+            { label: 'Versión final', date: '2024-09-20' },
+            { label: 'Inicio de MexIHC 2024', date: '2024-11-06', kind: 'conference-start' },
+            { label: 'Cierre de MexIHC 2024', date: '2024-11-08', kind: 'conference-end' }
+        ]"
+        :all-dates-to="Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-dates' })"
+        all-dates-label="Ver todas las fechas importantes"
+    />
 
     <p>
         Invitamos a profesionales, investigadores y estudiantes a enviar sus trabajos a la sección de posters en MexIHC
@@ -45,7 +53,7 @@ export default {
         <li>Versión final: Viernes <del>13</del> 20 de septiembre</li>
     </ul>
 
-    <h2>Detalles de envío</h2>
+    <h2 id="cpt-submission">Detalles de envío</h2>
 
     <P>
         Los autores que deseen enviar un artículo deben:
@@ -77,7 +85,7 @@ export default {
         sean precisas y estén completas.
     </p>
 
-    <h2>Proceso de revisión</h2>
+    <h2 id="cpt-review">Proceso de revisión</h2>
     <p>
         Los artículos serán revisados de forma anónima por miembros pares que formen parte del comité del programa
         MexIHC 2024. Las presentaciones serán evaluadas en función de su originalidad, importancia de la contribución al
@@ -87,7 +95,7 @@ export default {
         Los coordinadores de la sesión de posters enviarán las instrucciones de exhibición a los autores de los trabajos aceptados.
     </p>
 
-    <h2>Asistencia</h2>
+    <h2 id="cpt-attendance">Asistencia</h2>
     <p>
         Al menos un autor de cada trabajo aceptado deberá registrarse al congreso y presentar el poster.
     </p>

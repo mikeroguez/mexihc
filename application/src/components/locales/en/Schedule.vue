@@ -72,9 +72,9 @@ export default {
                 <tr>
                     <th scope="row">9:00 - 9:30</th>
                     <td rowspan="3" class="bg-posters"><strong>
-                            <a href="#" @click.prevent="openIndustryDayModal" class="text-decoration-underline fw-bold">
+                            <button type="button" @click="openIndustryDayModal" class="btn btn-link p-0 text-decoration-underline fw-bold align-baseline">
                                 Industry Day
-                            </a>
+                            </button>
                         </strong></td>
                     <td colspan="4">Registration</td>
                 </tr>
