@@ -451,3 +451,17 @@ caption {
     transition: none !important;
   }
 }
+
+#main-content {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  scroll-margin-top: 5rem;
+}
+
+[data-skip-target="true"]:focus {
+  outline: 3px solid rgba(177, 31, 122, 0.6);
+  outline-offset: 0.3rem;
+}
