@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.1.0] - 2026-02-15
+
+### Added
+
+- RSS feeds integration for site content discovery.
+- In-page navigation panel for calls and organizers, including a dynamic next-deadline widget.
+- Accessible floating back-to-anchors control for long pages.
+
+### Changed
+
+- Full UI refresh across pages, including localized content updates.
+- Home page status table replaced with milestone cards, with i18n integration and reference captures.
+- Calls list and home milestone widget styles unified for visual and UX consistency.
+- Footer layout and presentation refined.
+- Breadcrumbs visual treatment and structure improved.
+- 2026 branding and social metadata aligned across header, navbar, footer, and share links.
+- Removed redundant organizers back-to-top links after introducing shared floating navigation.
+
+### Fixed
+
+- Navbar detached gradient texture visibility improved without changing the base color palette.
+
 ## [2026.0.0.2] - 2026-02-14
 
 ### Added

@@ -1,11 +1,13 @@
 <script>
 import OrganizerItem from '@/components/OrganizerItem.vue';
+import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue';
 
 import Tr from '@/i18n/translation'
 
 export default {
     components: {
-        OrganizerItem
+        OrganizerItem,
+        InPageNavigationPanel
     },
     setup() {
         return {
@@ -16,17 +18,23 @@ export default {
 </script>
 
 <template>
-    <ol class="list-group list-group-numbered my-3">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Deadline for submission:</strong> August <del>8th</del> 30th, 2024 (extended)
-                <strong>({{ $t("about.open") }})</strong><br>
-                <RouterLink :class="uline" :to="Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-dates' })" class="uline">
-                    See all important dates
-                </RouterLink>
-            </div>
-        </li>
-    </ol>
+    <InPageNavigationPanel
+        :links="[
+            { label: 'Important Dates', to: Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-dates' }) },
+            { label: 'Submission Details', to: Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-submission' }) },
+            { label: 'Review Process', to: Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-review' }) },
+            { label: 'Attendance', to: Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-attendance' }) }
+        ]"
+        :milestones="[
+            { label: 'Submission deadline', date: '2024-08-30' },
+            { label: 'Notification of acceptance', date: '2024-09-13' },
+            { label: 'Camera-ready final submissions', date: '2024-09-20' },
+            { label: 'MexIHC 2024 starts', date: '2024-11-06', kind: 'conference-start' },
+            { label: 'MexIHC 2024 ends', date: '2024-11-08', kind: 'conference-end' }
+        ]"
+        :all-dates-to="Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-dates' })"
+        all-dates-label="See all important dates"
+    />
 
     <p>
         We invite practitioners, researchers, and students to submit their work to the poster track at MexIHC 2024.
@@ -44,7 +52,7 @@ export default {
         <li>Camera-ready final submissions: Friday, September <del>13th</del> 20th</li>
     </ul>
 
-    <h2>Submission Details</h2>
+    <h2 id="cpt-submission">Submission Details</h2>
 
     <P>
         Authors wishing to submit a paper must:
@@ -74,7 +82,7 @@ export default {
         conference or journal, nor has it been published elsewhere. Please submit accurate and complete references.
     </p>
 
-    <h2>Review Process</h2>
+    <h2 id="cpt-review">Review Process</h2>
     <p>
         Papers will be anonymously peer-reviewed by the members of the MexIHC 2024 program committee. Submissions will
         be evaluated based on their originality, significance of the contribution to the field, technical correctness,
@@ -84,7 +92,7 @@ export default {
         The Poster chairs will send poster exhibition instructions to the authors of the accepted papers.
     </p>
 
-    <h2>Attendance</h2>
+    <h2 id="cpt-attendance">Attendance</h2>
     <p>
         At least one author of each accepted submission must register for the conference and present the poster.
     </p>

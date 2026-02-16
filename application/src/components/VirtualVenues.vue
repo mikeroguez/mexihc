@@ -28,7 +28,7 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/logos/usjo.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/logos/usjo.png" alt="Logotipo de la Universidad de la Sierra Juárez" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
@@ -42,7 +42,7 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/logos/uaslp.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/logos/uaslp.png" alt="Logotipo de la Universidad Autónoma de San Luis Potosí" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
@@ -59,7 +59,7 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/logos/itson.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/logos/itson.png" alt="Logotipo del Instituto Tecnológico de Sonora" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
@@ -73,7 +73,7 @@ export default {
 
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/logos/UCol.png" alt="" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/logos/UCol.png" alt="Logotipo de la Universidad de Colima" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"

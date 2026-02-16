@@ -35,7 +35,8 @@ export default {
         };
     },
     setup() {
-        return { Tr }
+        const baseUrl = import.meta.env.BASE_URL
+        return { Tr, baseUrl }
     },
     methods: {
         onAccept() {
@@ -100,6 +101,14 @@ export default {
             Cookies.set(`consent_${type}`, consent, { expires: 365 }); // Cookie válida por un año
             console.log(`Cookie de consentimiento para ${type} establecida a ${consent}`);
         },
+        rssFeedPathForLocale(locale) {
+            if (locale === 'es') return `${this.baseUrl}rss-es.xml`
+            if (locale === 'en') return `${this.baseUrl}rss-en.xml`
+            return `${this.baseUrl}rss.xml`
+        },
+        currentRssFeed() {
+            return this.rssFeedPathForLocale(this.$i18n?.locale)
+        },
     }
 }
 </script>
@@ -109,33 +118,41 @@ export default {
         <hr class="horizontal dark mb-5">
         <div class="container">
             <div class=" row">
-                <div class="col-md-3 mb-4 ms-auto">
+                <div class="col-md-3 mb-3 ms-auto">
                     <div>
-                        <h2 class="text-gradient text-primary font-weight-bolder fs-5">{{ $t("nav.sitemap") }}</h2>
+                        <RouterLink :to="Tr.i18nRoute({ name: 'home' })"
+                            class="d-inline-flex align-items-center gap-2 text-decoration-none">
+                            <img :src="`${baseUrl}assets/img/logos/mexihc2026.svg`" alt="MexIHC 2026" width="30">
+                            <span class="fw-bold text-dark fs-5">MexIHC 2026</span>
+                        </RouterLink>
                     </div>
-                    <div>
+                    <div class="mt-1">
                         <ul class="d-flex flex-row ms-n3 nav">
                             <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://www.facebook.com/mexihc" target="_blank">
+                                <a class="nav-link pe-1" href="https://www.facebook.com/mexihc" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-facebook text-lg opacity-8"></i>
                                     <span class="sr-only">{{ $t("nav.facebook") }}</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://twitter.com/mexihc" target="_blank">
-                                    <i class="fab fa-twitter text-lg opacity-8"></i>
+                                <a class="nav-link pe-1" href="https://x.com/mexihc" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-x-twitter text-lg opacity-8"></i>
                                     <span class="sr-only">{{ $t("nav.twitter") }}</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <a href="https://www.laihc.org/" class="p-0 m-0"><img src="/assets/img/logos/amexihc.svg" alt="aMexIHC" class="mt-0" :width="100" /></a>
                 </div>
 
-                <div class="col-sm-4 col-md-3 mb-4">
+                <div class="col-sm-4 col-md-3 mb-3">
                     <div>
                         <h3 class="text-gradient text-primary text-sm">{{ $t("nav.about_title") }}</h3>
                         <ul class="flex-column ms-n3 nav">
+                            <li class="nav-item">
+                                <RouterLink :to="Tr.i18nRoute({ name: 'home' })" class="nav-link uline">
+                                    {{ $t("nav.home") }}
+                                </RouterLink>
+                            </li>
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'home', hash: '#about_mexihc' })"
                                     class="nav-link uline">
@@ -147,11 +164,16 @@ export default {
                                     {{ $t("nav.organizers") }}
                                 </RouterLink>
                             </li>
+                            <li class="nav-item">
+                                <a :href="currentRssFeed()" class="nav-link uline" target="_blank" rel="noopener noreferrer" type="application/rss+xml">
+                                    {{ $t("nav.rss") }}
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-sm-4 col-md-3 mb-4">
+                <div class="col-sm-4 col-md-3 mb-3">
                     <div>
                         <h3 class="text-gradient text-primary text-sm">{{ $t("nav.for_authors_title") }}</h3>
                         <ul class="flex-column ms-n3 nav">
@@ -198,7 +220,7 @@ export default {
                     </div>
                 </div>
 
-                <div class="col-sm-4 col-md-3 mb-4">
+                <div class="col-sm-4 col-md-3 mb-3">
                     <div>
                         <h3 class="text-gradient text-primary text-sm">{{ $t("nav.for_attendees_title") }}</h3>
                         <ul class="flex-column ms-n3 nav">
@@ -209,13 +231,19 @@ export default {
                     </div>
                 </div>
 
-                <div class="col-12 my-4">
-                    <div class="text-center">
+                <div class="col-12 mt-1 mb-3">
+                    <div class="d-flex flex-column align-items-center gap-1">
+                        <p class="mb-1 text-xs text-uppercase fw-bold">Organiza</p>
+                        <p class="my-0">
+                            <a href="https://www.amexihc.org/" target="_blank" rel="noopener noreferrer">
+                                <img :src="`${baseUrl}assets/img/logos/amexihc.svg`" alt="AMexIHC" width="110">
+                            </a>
+                        </p>
                         <p class="my-0 text-sm">
                             {{ $t("nav.copyright") }}
                         </p>
                         <p class="my-0  text-sm">
-                            <a class="uline" href="CHANGELOG.md">v2026.0.0.2</a>
+                            <a class="uline" href="CHANGELOG.md">v2026.1.0</a>
                         </p>
                     </div>
                 </div>

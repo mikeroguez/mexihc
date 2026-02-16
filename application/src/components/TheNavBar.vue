@@ -71,10 +71,19 @@
 					}, 320)
 				}
 				this.isScrolled = nextIsScrolled
+			},
+			rssFeedPathForLocale(locale) {
+				if (locale === 'es') return `${this.baseUrl}rss-es.xml`
+				if (locale === 'en') return `${this.baseUrl}rss-en.xml`
+				return `${this.baseUrl}rss.xml`
+			},
+			currentRssFeed() {
+				return this.rssFeedPathForLocale(this.$i18n?.locale)
 			}
 		},
-		setup() {
-			return { Tr }
+	setup() {
+			const baseUrl = import.meta.env.BASE_URL
+			return { Tr, baseUrl }
 		}
 	}
 </script>
@@ -99,13 +108,13 @@
 							data-placement="bottom"
 							tabindex="0"
 						>
-							<img src="/assets/img/logos/mexihc2026.svg" height="25" alt="">
+							<img :src="isScrolled ? `${baseUrl}assets/img/logos/mexihc2026_white.svg` : `${baseUrl}assets/img/logos/mexihc2026.svg`" height="25" alt="MexIHC 2026 logo">
 							MexIHC 2026			
 						</RouterLink>
 
 						<button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
 							data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
-							aria-label="Toggle navigation">
+							:aria-label="$t('nav.toggle_navigation')">
 							<span class="navbar-toggler-icon mt-2">
 								<span class="navbar-toggler-bar bar1"></span>
 								<span class="navbar-toggler-bar bar2"></span>
@@ -272,6 +281,19 @@
 										{{ $t("nav.organizers") }}
 									</RouterLink>
 								</li>
+								<li class="nav-item mx-2">
+									<a
+										:href="currentRssFeed()"
+										class="nav-link ps-2 d-flex cursor-pointer align-items-center gap-1"
+										target="_blank"
+										rel="noopener noreferrer"
+										type="application/rss+xml"
+										:title="$t('nav.rss')"
+									>
+										<i class="fas fa-rss" aria-hidden="true"></i>
+										<span>{{ $t("nav.rss") }}</span>
+									</a>
+								</li>
 							</ul>
 							<LanguageSwitcher/>
 						</div>
@@ -327,10 +349,12 @@
 .mexihc-navbar.is-scrolled.bg-gradient-dark {
 	background-image:
 		url('/assets/img/shapes/waves-white.svg'),
-		linear-gradient(90deg, #011638 0%, #194a8a 100%) !important;
-	background-repeat: repeat, no-repeat;
-	background-position: center, center;
-	background-size: 520px auto, cover;
+		url('/assets/img/shapes/waves-white.svg'),
+		linear-gradient(90deg, #870058 0%, #A3326A 100%) !important;
+	background-repeat: repeat, repeat, no-repeat;
+	background-position: center, 180px center, center;
+	background-size: 300px auto, 300px auto, cover;
+	background-blend-mode: screen, screen, normal;
 }
 
 .navbar .nav-link.active-section {
@@ -401,7 +425,17 @@
 .mexihc-navbar.is-scrolled .nav-link.router-link-exact-active,
 .mexihc-navbar.is-scrolled .nav-link:hover {
 	color: #F0EFEC !important;
-	border-bottom-color: #870058 !important;
+	border-bottom-color: #F0EFEC !important;
+}
+
+.mexihc-navbar.is-scrolled .nav-link.active-section {
+	border-bottom-color: #F0EFEC !important;
+}
+
+.mexihc-navbar.is-scrolled .locale-link.active,
+.mexihc-navbar.is-scrolled .locale-link.router-link-active,
+.mexihc-navbar.is-scrolled .locale-link.router-link-exact-active {
+	border-bottom-color: #F0EFEC !important;
 }
 
 @keyframes mexihc-nav-detach {

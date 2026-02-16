@@ -1,11 +1,13 @@
 <script>
 import OrganizerItem from '@/components/OrganizerItem.vue';
+import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue';
 
 import Tr from '@/i18n/translation'
 
 export default {
     components: {
-        OrganizerItem
+        OrganizerItem,
+        InPageNavigationPanel
     },
     setup() {
         return {
@@ -16,17 +18,23 @@ export default {
 </script>
 
 <template>
-    <ol class="list-group list-group-numbered my-3">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>8</del> 15 de agosto de 2024 (12pm
-                (medio día) UTC-6) (extendida)<strong>({{ $t("about.open") }})</strong><br>
-                <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' })" class="uline">
-                    Ver todas las fechas importantes
-                </RouterLink>
-            </div>
-        </li>
-    </ol>
+    <InPageNavigationPanel
+        :links="[
+            { label: 'Objetivo', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-objective' }) },
+            { label: 'Participación', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-participation' }) },
+            { label: 'Requisitos del artículo', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-paper-requirements' }) },
+            { label: 'Fechas importantes', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' }) }
+        ]"
+        :milestones="[
+            { label: 'Fecha límite de envío', date: '2024-08-15' },
+            { label: 'Notificación de aceptación', date: '2024-09-13' },
+            { label: 'Versión final', date: '2024-09-20' },
+            { label: 'Inicio de MexIHC 2024', date: '2024-11-06', kind: 'conference-start' },
+            { label: 'Cierre de MexIHC 2024', date: '2024-11-08', kind: 'conference-end' }
+        ]"
+        :all-dates-to="Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' })"
+        all-dates-label="Ver todas las fechas importantes"
+    />
 
     <p>
         Damos una cálida bienvenida tanto a estudiantes de maestría como de doctorado
@@ -36,7 +44,7 @@ export default {
         Computadora (MexIHC 2024).
     </p>
 
-    <h2>Objetivo</h2>
+    <h2 id="cgc-objective">Objetivo</h2>
     <p>
         El Coloquio de Graduados MexIHC ofrece a los estudiantes de posgrado una
         plataforma única para presentar su investigación a la comunidad académica de
@@ -45,7 +53,7 @@ export default {
         internacionales en HCI, tanto de la industria como de la academia.
     </p>
 
-    <h2>Participación en el Consorcio de Graduados MexIHC</h2>
+    <h2 id="cgc-participation">Participación en el Consorcio de Graduados MexIHC</h2>
 
     <p>
         Si estás interesado en unirte al consorcio de graduados, deberás completar un
@@ -85,7 +93,7 @@ export default {
         </RouterLink>
     </p>
 
-    <h2>Requisitos del artículo</h2>
+    <h2 id="cgc-paper-requirements">Requisitos del artículo</h2>
     <p>
         Los solicitantes deben enviar a través del formulario en línea un artículo de 4 páginas
         explicando su investigación.

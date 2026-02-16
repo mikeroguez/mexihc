@@ -18,7 +18,7 @@ export default {
     <div class="row mb-4">
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/people/saiph.jpg" alt="" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/people/saiph.jpg" alt="Photo of Saiph Savage" class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
                 <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/saiph.jpg&quot;);">
@@ -39,7 +39,7 @@ export default {
 
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/people/jesus_fa.jpg" alt="" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/people/jesus_fa.jpg" alt="Photo of Jesús Favela" class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
                 <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/jesus_fa.jpg&quot;);"></div>

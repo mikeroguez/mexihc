@@ -1,11 +1,13 @@
 <script>
 import OrganizerItem from '@/components/OrganizerItem.vue';
+import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue';
 
 import Tr from '@/i18n/translation'
 
 export default {
     components: {
-        OrganizerItem
+        OrganizerItem,
+        InPageNavigationPanel
     },
     setup() {
         return {
@@ -16,16 +18,23 @@ export default {
 </script>
 
 <template>
-    <ol class="list-group list-group-numbered my-3">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Fecha límite para envíos:</strong> 1 de junio de 2026<br>
-                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-dates' })" class="uline">
-                    Ver todas las fechas importantes
-                </RouterLink>
-            </div>
-        </li>
-    </ol>
+    <InPageNavigationPanel
+        :links="[
+            { label: 'Tipo de contribuciones', to: Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-types' }) },
+            { label: 'Detalles de envío', to: Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-submission' }) },
+            { label: 'Fechas importantes', to: Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-dates' }) },
+            { label: 'Publicación', to: Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-publication' }) }
+        ]"
+        :milestones="[
+            { label: 'Fecha límite para envíos', date: '2026-06-01' },
+            { label: 'Notificación de aceptación', date: '2026-08-07' },
+            { label: 'Versión final para publicación', date: '2026-09-01' },
+            { label: 'Inicio de MexIHC 2026', date: '2026-11-04', kind: 'conference-start' },
+            { label: 'Cierre de MexIHC 2026', date: '2026-11-06', kind: 'conference-end' }
+        ]"
+        :all-dates-to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-dates' })"
+        all-dates-label="Ver todas las fechas importantes"
+    />
 
     <p>
         Invitamos a contribuciones originales sobre el tema de la IHC en la era de las nuevas realidades, así como temas
@@ -34,7 +43,7 @@ export default {
         originalidad, la importancia de la contribución al campo y al tema, la corrección técnica y la presentación.
     </p>
 
-    <h2>Tipo de contribuciones</h2>
+    <h2 id="cfp-types">Tipo de contribuciones</h2>
     <br>
     <h3>Artículos completos (Hasta 8 páginas)</h3>
     <p>
@@ -58,7 +67,7 @@ export default {
         vuelva más tarde para obtener más información.
     </p>
 
-    <h2>Detalles de envío</h2>
+    <h2 id="cfp-submission">Detalles de envío</h2>
 
     <p>
         Los artículos completos y cortos escritos en inglés o español deben utilizar <a
@@ -84,7 +93,7 @@ export default {
         esperamos que los autores hagan su mejor esfuerzo.
     </p>
 
-    <h2>Publicación</h2>
+    <h2 id="cfp-publication">Publicación</h2>
 
     <p>
         Todos los artículos completos y cortos aceptados serán publicados en un número especial de <a

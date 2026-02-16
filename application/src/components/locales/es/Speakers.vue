@@ -6,7 +6,7 @@ import SpeakerLargeItem from '@/components/SpeakerLargeItem.vue'
     <SpeakerLargeItem>
         <template #image>
             <img id="saiph-savage" class="img border-radius-lg w-100 position-relative z-index-2"
-                src="/assets/img/people/saiph.jpg" alt="" />
+                src="/assets/img/people/saiph.jpg" alt="Fotografía de Saiph Savage" />
         </template>
         <template #image-shadow>
             <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/saiph.jpg&quot;);">
@@ -62,7 +62,7 @@ import SpeakerLargeItem from '@/components/SpeakerLargeItem.vue'
     <SpeakerLargeItem>
         <template #image>
             <img id="jesus-favela" class="img border-radius-lg w-100 position-relative z-index-2"
-                src="/assets/img/people/jesus_fa.jpg" alt="" />
+                src="/assets/img/people/jesus_fa.jpg" alt="Fotografía de Jesús Favela" />
         </template>
         <template #image-shadow>
             <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/jesus_fa.jpg&quot;);">

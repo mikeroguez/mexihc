@@ -1,11 +1,13 @@
 <script>
 import OrganizerItem from '@/components/OrganizerItem.vue';
+import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue';
 
 import Tr from '@/i18n/translation'
 
 export default {
     components: {
-        OrganizerItem
+        OrganizerItem,
+        InPageNavigationPanel
     },
     setup() {
         return {
@@ -16,16 +18,24 @@ export default {
 </script>
 
 <template>
-    <ol class="list-group list-group-numbered my-3">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>16</del> 30 de agosto de 2024 (Extendida)<strong>
-                    ({{ $t("about.open") }})</strong><br>
-            </div>
-        </li>
-    </ol>
+    <InPageNavigationPanel
+        :links="[
+            { label: 'Objetivos', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-goals' }) },
+            { label: 'Fechas importantes', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-dates' }) },
+            { label: 'Detalles de envío', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-submission' }) },
+            { label: 'Proceso de selección', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-selection' }) }
+        ]"
+        :milestones="[
+            { label: 'Fecha límite de recepción de trabajos', date: '2024-08-30' },
+            { label: 'Fecha límite de camera ready', date: '2024-09-13' },
+            { label: 'Inicio de MexIHC 2024', date: '2024-11-06', kind: 'conference-start' },
+            { label: 'Cierre de MexIHC 2024', date: '2024-11-08', kind: 'conference-end' }
+        ]"
+        :all-dates-to="Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-dates' })"
+        all-dates-label="Ver todas las fechas importantes"
+    />
 
-    <h2>Objetivos</h2>
+    <h2 id="sdc-goals">Objetivos</h2>
     <ul>
         <li>Proveer una oportunidad a los estudiantes de diferentes campos de Interacción
             humano computadora (Ciencias de la computación, interacción y diseño visual,
@@ -117,7 +127,7 @@ export default {
         equipo sea multidisciplinario.
     </p>
 
-    <h2>Detalles de envío</h2>
+    <h2 id="sdc-submission">Detalles de envío</h2>
     <p>
         Cada equipo deberá enviar una presentación de un máximo de <strong>15 diapositivas</strong> y un reporte
         escrito de hasta <strong>cuatro páginas</strong> con el siguiente formato <a class="uline"
@@ -152,7 +162,7 @@ export default {
 
     <p>Favor de mandar las propuestas a <strong>sdc.2024@mexihc.org</strong></p>
 
-    <h2>Proceso de selección</h2>
+    <h2 id="sdc-selection">Proceso de selección</h2>
     <p>Las propuestas se evaluarán tomando en cuenta los siguientes puntos:</p>
     <ul>
         <li>Calidad del trabajo.</li>

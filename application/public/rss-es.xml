@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MexIHC 2026 - Noticias (ES)</title>
+    <link>https://www.mexihc.org/mexihc/es/</link>
+    <description>Canal RSS oficial de noticias y actualizaciones de MexIHC 2026 en español.</description>
+    <language>es-MX</language>
+    <lastBuildDate>Mon, 16 Feb 2026 12:00:00 GMT</lastBuildDate>
+    <generator>MexIHC Vite Site</generator>
+    <atom:link href="https://www.mexihc.org/mexihc/rss-es.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Convocatoria de trabajos abierta para MexIHC 2026</title>
+      <link>https://www.mexihc.org/mexihc/es/call-for-papers</link>
+      <guid isPermaLink="true">https://www.mexihc.org/mexihc/es/call-for-papers</guid>
+      <description>Consulta lineamientos, temas de interés y fechas importantes de la convocatoria de trabajos.</description>
+      <pubDate>Mon, 12 Jan 2026 12:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Fechas de la conferencia MexIHC 2026 confirmadas</title>
+      <link>https://www.mexihc.org/mexihc/es/</link>
+      <guid isPermaLink="true">https://www.mexihc.org/mexihc/es/</guid>
+      <description>MexIHC 2026 se realizará del 4 al 6 de noviembre de 2026 en Ensenada, Baja California.</description>
+      <pubDate>Wed, 07 Jan 2026 12:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
