@@ -6,22 +6,23 @@ import Tr from '@/i18n/translation';
 import { useI18n } from 'vue-i18n';
 
 const { t, te } = useI18n();
-const fallbackPhoto = '/assets/img/nophoto.png';
+const assetUrl = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+const fallbackPhoto = assetUrl('/assets/img/nophoto.png');
 
 const photoByName = {
-  'Jesús Favela': '/assets/img/people/jesus_fa.jpg',
-  'Laura S. Gaytán-Lugo': '/assets/img/people/sanely.jpg',
-  'Adriana L. Iñiguez-Carrillo': '/assets/img/people/adriana.png',
-  'Mayra Donaji Barrera-Machuca': '/assets/img/people/mayraBarrera.png',
-  'Pedro C. Santana-Mancilla': '/assets/img/people/pedro.png',
-  'Victor García': '/assets/img/people/victor.png',
-  'Jessica Beltrán': '/assets/img/people/jessica.png',
-  'Victoria Meza-Kubo': '/assets/img/people/vicky.png',
-  'Luis A. Castro': '/assets/img/people/luis.png',
-  'Pablo Bautista': '/assets/img/people/pablo.jpg',
-  'Miguel A. Rodríguez-Ortíz': '/assets/img/people/mike.png',
-  'Cuauhtemoc Rivera-Loaiza' : '/assets/img/people/temo.png',
-  'Lizbeth Escobedo': '/assets/img/people/liz.jpg'
+  'Jesús Favela': assetUrl('/assets/img/people/jesus_fa.jpg'),
+  'Laura S. Gaytán-Lugo': assetUrl('/assets/img/people/sanely.jpg'),
+  'Adriana L. Iñiguez-Carrillo': assetUrl('/assets/img/people/adriana.png'),
+  'Mayra Donaji Barrera-Machuca': assetUrl('/assets/img/people/mayraBarrera.png'),
+  'Pedro C. Santana-Mancilla': assetUrl('/assets/img/people/pedro.png'),
+  'Victor García': assetUrl('/assets/img/people/victor.png'),
+  'Jessica Beltrán': assetUrl('/assets/img/people/jessica.png'),
+  'Victoria Meza-Kubo': assetUrl('/assets/img/people/vicky.png'),
+  'Luis A. Castro': assetUrl('/assets/img/people/luis.png'),
+  'Pablo Bautista': assetUrl('/assets/img/people/pablo.jpg'),
+  'Miguel A. Rodríguez-Ortíz': assetUrl('/assets/img/people/mike.png'),
+  'Cuauhtemoc Rivera-Loaiza': assetUrl('/assets/img/people/temo.png'),
+  'Lizbeth Escobedo': assetUrl('/assets/img/people/liz.jpg')
 };
 
 const generalSections = [
