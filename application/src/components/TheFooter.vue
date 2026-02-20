@@ -122,7 +122,7 @@ export default {
                     <div>
                         <RouterLink :to="Tr.i18nRoute({ name: 'home' })"
                             class="d-inline-flex align-items-center gap-2 text-decoration-none">
-                            <img :src="`${baseUrl}assets/img/logos/logo-medium.svg`" alt="MexIHC 2026" width="150">
+                            <img :src="`${baseUrl}assets/img/logos/logo-med-20.svg`" alt="MexIHC 2026" width="200">
                         </RouterLink>
                     </div>
                     <div class="mt-1">

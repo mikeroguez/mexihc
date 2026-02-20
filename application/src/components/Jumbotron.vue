@@ -42,10 +42,12 @@ export default {
         <div class="row">
           <div class="col-lg-9 mx-auto pt-5 pb-4 mt-7 mb-4 mexihc-hero-card">
             <div class="row align-items-center g-4">
-              <div class="col-md-12 text-center text-md-start">
+              <div class="col-md-6 text-center text-md-start">
                 <h1 class="pt-2 mexihc-hero-title">
-                  <img src="/assets/img/logos/logo-big.svg" width="61.8%" :alt="$t('jumbotron.conference')" />
+                  <img src="/assets/img/logos/logo-big.svg" width="90%" :alt="$t('jumbotron.conference')" />
                 </h1>
+              </div>
+              <div class="col-md-6 text-center text-md-start">
                 <p class="mb-3">
                   <strong>
                     Ensenada, Baja California, México<br>

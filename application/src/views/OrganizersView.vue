@@ -22,7 +22,8 @@ const photoByName = {
   'Pablo Bautista': assetUrl('/assets/img/people/pablo.jpg'),
   'Miguel A. Rodríguez-Ortíz': assetUrl('/assets/img/people/mike.png'),
   'Cuauhtemoc Rivera-Loaiza': assetUrl('/assets/img/people/temo.png'),
-  'Lizbeth Escobedo': assetUrl('/assets/img/people/liz.jpg')
+  'Lizbeth Escobedo': assetUrl('/assets/img/people/liz.jpg'),
+  'Pablo M. Schiaffino-Rivas':assetUrl('/assets/img/people/pablo2.png')
 };
 
 const generalSections = [

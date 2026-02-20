@@ -197,7 +197,7 @@ nav.scrolled .nav-link {
 .mexihc-postit {
   position: relative;
   z-index: 1 !important;
-  top: -22px;
+  top: -17px;
   border: 1px solid rgba(165, 118, 62, 0.25) !important;
   border-radius: 4px 10px 6px 12px !important;
   color: #5a3f26 !important;
@@ -326,7 +326,8 @@ nav.scrolled .nav-link {
   z-index: 2;
   border-radius: 16px;
   padding: 2.5rem !important;
-  background: linear-gradient(145deg, rgba(250, 248, 248, 0.94), rgba(255, 255, 255, 0.92));
+  background: linear-gradient(145deg, rgba(250, 248, 248, 0.68), rgba(255, 255, 255, 0.66));
+  border: 1px solid rgba(250, 248, 248, 0.94);
   box-shadow: 0 22px 40px rgba(4, 21, 50, 0.34);
   backdrop-filter: blur(7px);
 }
