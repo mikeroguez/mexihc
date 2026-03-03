@@ -29,8 +29,8 @@ export default {
             { label: 'Submission deadline', date: '2026-06-01' },
             { label: 'Notification of acceptance', date: '2026-08-07' },
             { label: 'Camera-ready final submissions', date: '2026-09-01' },
-            { label: 'MexIHC 2026 starts', date: '2026-11-04', kind: 'conference-start' },
-            { label: 'MexIHC 2026 ends', date: '2026-11-06', kind: 'conference-end' }
+            { label: 'MexIHC 2026 starts', date: '2026-10-27', kind: 'conference-start' },
+            { label: 'MexIHC 2026 ends', date: '2026-10-30', kind: 'conference-end' }
         ]"
         :all-dates-to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-dates' })"
         all-dates-label="See all important dates"
@@ -83,7 +83,7 @@ export default {
         <li>Deadline for submissions: June 1, 2026</li>
         <li>Notification of acceptance: August 7, 2026</li>
         <li>Camera-ready final submissions: September 1, 2026</li>
-        <li>MexIHC 2026: November 4-6, 2026</li>
+        <li>MexIHC 2026: October 27-30, 2026</li>
     </ul>
 
     <h2>Anonymous submission</h2>

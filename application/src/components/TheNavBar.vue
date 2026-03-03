@@ -55,7 +55,6 @@
 					'student-design-competition',
 					'graduate-colloquium',
 					'calls-for-accepted-workshops',
-					'accessibility-recommendations-for-authors',
 				])
 			},
 			isAttendeesSectionActive() {
@@ -181,7 +180,6 @@
 												</div>
 											</RouterLink>											
 										</li>
-										<!--
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters' })" 
 												class="dropdown-item border-radius-md"
@@ -194,7 +192,7 @@
 															{{ $t("nav.cpt") }}
 														</span>
 														<span class="text-sm text-dark">
-															{{ $t("about.closed") }}
+															{{ $t("nav.cpt_message") }}
 														</span>
 													</div>
 												</div>
@@ -213,7 +211,7 @@
 															{{ $t("nav.cwt") }}
 														</span>
 														<span class="text-sm font-italic text-dark text-wrap">
-															{{ $t("about.closed") }}
+															{{ $t("nav.cwt_message") }}
 														</span>
 													</div>
 												</div>
@@ -232,7 +230,7 @@
 															{{ $t("nav.sdc") }}
 														</span>
 														<span class="text-sm text-dark">
-															{{ $t("about.closed") }}
+															{{ $t("nav.sdc_message") }}
 														</span>
 													</div>
 												</div>
@@ -251,7 +249,7 @@
 															{{ $t("nav.cgc") }}
 														</span>
 														<span class="text-sm text-dark text-wrap">
-															{{ $t("about.closed") }}
+															{{ $t("nav.cgc_message") }}
 														</span>
 													</div>
 												</div>
@@ -277,25 +275,6 @@
 											</RouterLink>
 										</li>
 
-										<li>
-											<RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })" 
-												class="dropdown-item border-radius-md"
-												:class="{ 'active-submenu': isRoute('accessibility-recommendations-for-authors') }"
-											>
-												<div class="d-flex">
-													<div>
-														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
-															{{ $t("nav.accessibility_for_autors") }}
-														</span>
-														<span class="text-sm text-dark text-wrap">
-															{{ $t("nav.accessibility_for_autors_message") }}
-														</span>
-													</div>
-												</div>
-											</RouterLink>
-										</li>
-										-->
 									</ul>
 								</li>
 								<li class="nav-item mx-2">
@@ -467,6 +446,11 @@
 	border-bottom-color: #F0EFEC !important;
 }
 
+.mexihc-navbar.is-scrolled .dropdown-menu {
+	background-color: #223048 !important;
+	border-color: rgba(240, 239, 236, 0.18) !important;
+}
+
 .mexihc-navbar.is-scrolled .dropdown-item,
 .mexihc-navbar.is-scrolled .dropdown-item .dropdown-header,
 .mexihc-navbar.is-scrolled .dropdown-item .text-dark,
@@ -479,6 +463,23 @@
 .mexihc-navbar.is-scrolled .dropdown-item.router-link-active,
 .mexihc-navbar.is-scrolled .dropdown-item.router-link-exact-active {
 	background: rgba(240, 239, 236, 0.18) !important;
+}
+
+.mexihc-navbar.is-scrolled .dropdown-item:hover,
+.mexihc-navbar.is-scrolled .dropdown-item:focus-visible {
+	background: rgba(240, 239, 236, 0.92) !important;
+	color: #223048 !important;
+}
+
+.mexihc-navbar.is-scrolled .dropdown-item:hover .dropdown-header,
+.mexihc-navbar.is-scrolled .dropdown-item:hover .text-dark,
+.mexihc-navbar.is-scrolled .dropdown-item:hover .text-sm,
+.mexihc-navbar.is-scrolled .dropdown-item:hover .font-italic,
+.mexihc-navbar.is-scrolled .dropdown-item:focus-visible .dropdown-header,
+.mexihc-navbar.is-scrolled .dropdown-item:focus-visible .text-dark,
+.mexihc-navbar.is-scrolled .dropdown-item:focus-visible .text-sm,
+.mexihc-navbar.is-scrolled .dropdown-item:focus-visible .font-italic {
+	color: #223048 !important;
 }
 
 .mexihc-navbar.is-scrolled .dropdown-item.active-submenu .dropdown-header,

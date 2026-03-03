@@ -181,7 +181,6 @@ export default {
                                     {{ $t("nav.cfp") }}
                                 </RouterLink>
                             </li>
-                            <!--
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters' })" class="nav-link uline">
                                     {{ $t("nav.cpt") }}
@@ -208,13 +207,6 @@ export default {
                                     {{ $t("nav.workshop_calls") }}
                                 </RouterLink>
                             </li>
-                            <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })"
-                                    class="nav-link uline">
-                                    {{ $t("nav.accessibility_for_autors") }}
-                                </RouterLink>
-                            </li>
-                            -->
                         </ul>
                     </div>
                 </div>

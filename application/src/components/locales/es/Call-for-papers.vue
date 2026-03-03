@@ -29,8 +29,8 @@ export default {
             { label: 'Fecha límite para envíos', date: '2026-06-01' },
             { label: 'Notificación de aceptación', date: '2026-08-07' },
             { label: 'Versión final para publicación', date: '2026-09-01' },
-            { label: 'Inicio de MexIHC 2026', date: '2026-11-04', kind: 'conference-start' },
-            { label: 'Cierre de MexIHC 2026', date: '2026-11-06', kind: 'conference-end' }
+            { label: 'Inicio de MexIHC 2026', date: '2026-10-27', kind: 'conference-start' },
+            { label: 'Cierre de MexIHC 2026', date: '2026-10-30', kind: 'conference-end' }
         ]"
         :all-dates-to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cfp-dates' })"
         all-dates-label="Ver todas las fechas importantes"
@@ -80,7 +80,7 @@ export default {
         <li>Fecha límite para envíos: 1 de junio de 2026</li>
         <li>Notificación de aceptación: 7 de agosto de 2026</li>
         <li>Envío final de versión lista para la publicación: 1 de septiembre de 2026</li>
-        <li>MexIHC 2026: del 4 al 6 de noviembre de 2026</li>
+        <li>MexIHC 2026: del 27 al 30 de octubre de 2026</li>
     </ul>
 
     <h2>Envío anónimo</h2>
