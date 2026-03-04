@@ -224,7 +224,7 @@ export default {
 
                 <div class="col-12 mt-1 mb-3">
                     <div class="d-flex flex-column align-items-center gap-1">
-                        <p class="mb-1 text-xs text-uppercase fw-bold">Organiza</p>
+                        <p class="mb-1 text-xs text-uppercase fw-bold">{{ $t("nav.organized_by") }}</p>
                         <p class="my-0">
                             <a href="https://www.amexihc.org/" target="_blank" rel="noopener noreferrer">
                                 <img :src="`${baseUrl}assets/img/logos/amexihc.svg`" alt="AMexIHC" width="110">

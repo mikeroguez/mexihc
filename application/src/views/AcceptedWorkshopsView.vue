@@ -23,7 +23,7 @@ export default {
     <div class="container">
       <div class="row justify-content-center my-3">
         <div class="col-lg-8">
-          <p class="mb-0">To be confirmed</p>
+          <p class="mb-0">To be announced</p>
         </div>
       </div>
     </div>
