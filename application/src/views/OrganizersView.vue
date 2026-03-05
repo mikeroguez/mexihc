@@ -25,6 +25,8 @@ const photoByName = {
   'Lizbeth Escobedo': assetUrl('/assets/img/people/liz.jpg'),
   'Pablo M. Schiaffino-Rivas':assetUrl('/assets/img/people/pablo2.png'),
   'Alberto L. Morán': assetUrl('/assets/img/people/albertoMoran.png'),
+  'Tony García Macías': assetUrl('/assets/img/people/tonyGarcia.png'),
+  'Juan Pablo García Vázquez': assetUrl('/assets/img/people/pabloGarcia.jpg'),
 };
 
 const generalSections = [
@@ -137,6 +139,11 @@ const generalSections = [
         name: 'Sandra Nava',
         affiliation: 'Universidad Autónoma de San Luis Potosí',
         short: 'UASLP'
+      },
+      {
+        name: 'Juan Pablo García Vázquez',
+        affiliation: 'Universidad Autónoma de Baja California',
+        short: 'UABC'
       }
     ]
   },
