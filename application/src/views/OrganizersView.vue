@@ -27,6 +27,8 @@ const photoByName = {
   'Alberto L. Morán': assetUrl('/assets/img/people/albertoMoran.png'),
   'Tony García Macías': assetUrl('/assets/img/people/tonyGarcia.png'),
   'Juan Pablo García Vázquez': assetUrl('/assets/img/people/pabloGarcia.jpg'),
+  'Cristina Ramírez': assetUrl('/assets/img/people/cristina.png'),
+  'Sandra Nava': assetUrl('/assets/img/people/sandra.png'),
 };
 
 const generalSections = [
