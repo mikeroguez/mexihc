@@ -52,32 +52,29 @@ export default {
                 <h1 class="pt-2 mexihc-hero-title">
                   <img
                     src="/assets/img/logos/logo-big.svg"
-                    class="img-fluid"
-                    style="max-width: 520px"
+                    class="img-fluid mexihc-hero-brand-mark"
                     :alt="$t('jumbotron.conference')"
                   />
                 </h1>
 
                 <!-- Logos instituciones -->
-                <div
-                  class="d-flex align-items-center gap-5 mt-4 justify-content-center"
-                >
+                <div class="mexihc-hero-logos">
                   <img
                     src="/assets/img/logos/cicese.svg"
                     alt="CICESE"
-                    style="height: 50px; width: auto"
+                    class="mexihc-hero-logo-cicese"
                   />
 
                   <img
                     src="/assets/img/logos/amexihc.svg"
                     alt="AMEXIHC"
-                    style="height: 30px; width: auto"
+                    class="mexihc-hero-logo-amexihc"
                   />
 
                   <img
                     src="/assets/img/logos/uabc.svg"
                     alt="UABC"
-                    style="height: 65px; width: auto"
+                    class="mexihc-hero-logo-uabc"
                   />
                 </div>
               </div>
