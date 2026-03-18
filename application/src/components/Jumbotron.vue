@@ -93,10 +93,11 @@ export default {
                 >
                   {{ $t("jumbotron.button") }}
                 </RouterLink>
-
+                <!--
                 <template v-if="currentComponent">
                   <component :is="currentComponent" />
                 </template>
+                -->
               </div>
             </div>
           </div>
