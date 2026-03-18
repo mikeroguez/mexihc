@@ -1,38 +1,44 @@
 <script>
-import { shallowRef, watch, defineAsyncComponent } from 'vue'
-import { useI18n } from 'vue-i18n'
-import Tr from '@/i18n/translation'
+import { shallowRef, watch, defineAsyncComponent } from "vue";
+import { useI18n } from "vue-i18n";
+import Tr from "@/i18n/translation";
 
 export default {
   setup() {
-    const { locale } = useI18n()
-    const currentComponent = shallowRef(null)
+    const { locale } = useI18n();
+    const currentComponent = shallowRef(null);
 
     const loadComponent = async (newLocale) => {
-      currentComponent.value = await getComponentForLocale(newLocale)
-    }
+      currentComponent.value = await getComponentForLocale(newLocale);
+    };
 
-    watch(locale, loadComponent, { immediate: true })
+    watch(locale, loadComponent, { immediate: true });
 
     async function getComponentForLocale(nextLocale) {
       switch (nextLocale) {
-        case 'en':
-          return defineAsyncComponent(() => import('@/components/locales/en/Message.vue'))
-        case 'es':
-          return defineAsyncComponent(() => import('@/components/locales/es/Message.vue'))
-        case 'pt':
-          return defineAsyncComponent(() => import('@/components/locales/pt/Message.vue'))
+        case "en":
+          return defineAsyncComponent(
+            () => import("@/components/locales/en/Message.vue"),
+          );
+        case "es":
+          return defineAsyncComponent(
+            () => import("@/components/locales/es/Message.vue"),
+          );
+        case "pt":
+          return defineAsyncComponent(
+            () => import("@/components/locales/pt/Message.vue"),
+          );
         default:
-          return null
+          return null;
       }
     }
 
     return {
       currentComponent,
-      Tr
-    }
-  }
-}
+      Tr,
+    };
+  },
+};
 </script>
 
 <template>
@@ -44,17 +50,50 @@ export default {
             <div class="row align-items-center g-4">
               <div class="col-md-6 text-center text-md-start">
                 <h1 class="pt-2 mexihc-hero-title">
-                  <img src="/assets/img/logos/logo-big.svg" width="90%" :alt="$t('jumbotron.conference')" />
+                  <img
+                    src="/assets/img/logos/logo-big.svg"
+                    class="img-fluid"
+                    style="max-width: 520px"
+                    :alt="$t('jumbotron.conference')"
+                  />
                 </h1>
+
+                <!-- Logos instituciones -->
+                <div
+                  class="d-flex align-items-center gap-5 mt-4 justify-content-center"
+                >
+                  <img
+                    src="/assets/img/logos/cicese.svg"
+                    alt="CICESE"
+                    style="height: 50px; width: auto"
+                  />
+
+                  <img
+                    src="/assets/img/logos/amexihc.svg"
+                    alt="AMEXIHC"
+                    style="height: 30px; width: auto"
+                  />
+
+                  <img
+                    src="/assets/img/logos/uabc.svg"
+                    alt="UABC"
+                    style="height: 65px; width: auto"
+                  />
+                </div>
               </div>
+
               <div class="col-md-6 text-center text-md-start">
                 <p class="mb-3">
                   <strong>
-                    Ensenada, Baja California, México<br>
+                    Ensenada, Baja California, México<br />
                     {{ $t("jumbotron.date") }}
                   </strong>
                 </p>
-                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers'})" class="btn btn-lg bg-gradient-yellow btn-round">
+
+                <RouterLink
+                  :to="Tr.i18nRoute({ name: 'call-for-papers' })"
+                  class="btn btn-lg bg-gradient-yellow btn-round"
+                >
                   {{ $t("jumbotron.button") }}
                 </RouterLink>
 
