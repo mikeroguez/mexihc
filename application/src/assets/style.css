@@ -137,6 +137,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .navbar .nav-link {
   font-size: 0.82rem;
   font-weight: 600;
+  line-height: 1.1;
+  padding-bottom: 0.2rem;
   border-bottom: 2px solid transparent;
   transition: border-color 0.2s ease, color 0.2s ease;
 }
