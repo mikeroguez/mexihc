@@ -50,7 +50,7 @@ export default {
         Os autores são convidados a preparar e enviar artigos relatando projetos de pesquisa, designs inovadores, estudos de
         usuários, modelos de interação, estudos de campo, estudos de caso e outros. Acadêmicos, pesquisadores, profissionais
         da indústria, bem como estudantes de graduação e pós-graduação são bem-vindos para participar da seleção revisada
-        por pares dos trabalhos que serão apresentados na conferência ou online, de 30 de outubro a 1 de novembro de 2023.
+        por pares dos trabalhos que serão apresentados na conferência ou online, de 27 a 30 de outubro de 2026.
     </p>
 
     <p>Os tópicos das submissões podem abranger todos os aspectos da IHC, incluindo, mas não se limitando a:</p>
@@ -88,7 +88,7 @@ export default {
         <li>Envío de artículos: <del>19 de junho</del> <strong class="text-danger">3 de julho PRORROGADO</strong></li>
         <li>Notificação: 31 de julho</li>
         <li>Versão final: 25 de agosto</li>
-        <li>Evento: 30 a 31 de outubro, 1 de novembro</li>
+        <li>Evento: 27 a 30 de outubro de 2026</li>
     </ul>
     <p>Os prazos são à meia-noite AoE (Anywhere on Earth).</p>
 

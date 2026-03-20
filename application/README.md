@@ -4,7 +4,7 @@ Official website for MexIHC 2026, built with Vue 3 and Vite.
 
 ## Current Version
 
-- `2026.1.4`
+- `2026.1.5`
 
 ## Requirements
 

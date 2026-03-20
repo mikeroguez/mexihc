@@ -122,7 +122,7 @@ export default {
                     <div>
                         <RouterLink :to="Tr.i18nRoute({ name: 'home' })"
                             class="d-inline-flex align-items-center gap-2 text-decoration-none">
-                            <img :src="`${baseUrl}assets/img/logos/logo-medium.svg`" alt="MexIHC 2026" width="150">
+                            <img :src="`${baseUrl}assets/img/logos/logo-med-20.svg`" alt="MexIHC 2026" width="200">
                         </RouterLink>
                     </div>
                     <div class="mt-1">
@@ -181,7 +181,6 @@ export default {
                                     {{ $t("nav.cfp") }}
                                 </RouterLink>
                             </li>
-                            <!--
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters' })" class="nav-link uline">
                                     {{ $t("nav.cpt") }}
@@ -208,13 +207,6 @@ export default {
                                     {{ $t("nav.workshop_calls") }}
                                 </RouterLink>
                             </li>
-                            <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })"
-                                    class="nav-link uline">
-                                    {{ $t("nav.accessibility_for_autors") }}
-                                </RouterLink>
-                            </li>
-                            -->
                         </ul>
                     </div>
                 </div>
@@ -232,7 +224,7 @@ export default {
 
                 <div class="col-12 mt-1 mb-3">
                     <div class="d-flex flex-column align-items-center gap-1">
-                        <p class="mb-1 text-xs text-uppercase fw-bold">Organiza</p>
+                        <p class="mb-1 text-xs text-uppercase fw-bold">{{ $t("nav.organized_by") }}</p>
                         <p class="my-0">
                             <a href="https://www.amexihc.org/" target="_blank" rel="noopener noreferrer">
                                 <img :src="`${baseUrl}assets/img/logos/amexihc.svg`" alt="AMexIHC" width="110">
@@ -242,7 +234,7 @@ export default {
                             {{ $t("nav.copyright") }}
                         </p>
                         <p class="my-0  text-sm">
-                            <a class="uline" :href="`${baseUrl}CHANGELOG.md`">v2026.1.4</a>
+                            <a class="uline" :href="`${baseUrl}CHANGELOG.md`">v2026.1.5</a>
                         </p>
                     </div>
                 </div>

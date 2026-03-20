@@ -137,6 +137,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .navbar .nav-link {
   font-size: 0.82rem;
   font-weight: 600;
+  line-height: 1.1;
+  padding-bottom: 0.2rem;
   border-bottom: 2px solid transparent;
   transition: border-color 0.2s ease, color 0.2s ease;
 }
@@ -197,7 +199,7 @@ nav.scrolled .nav-link {
 .mexihc-postit {
   position: relative;
   z-index: 1 !important;
-  top: -22px;
+  top: -17px;
   border: 1px solid rgba(165, 118, 62, 0.25) !important;
   border-radius: 4px 10px 6px 12px !important;
   color: #5a3f26 !important;
@@ -326,7 +328,8 @@ nav.scrolled .nav-link {
   z-index: 2;
   border-radius: 16px;
   padding: 2.5rem !important;
-  background: linear-gradient(145deg, rgba(250, 248, 248, 0.94), rgba(255, 255, 255, 0.92));
+  background: linear-gradient(145deg, rgba(250, 248, 248, 0.68), rgba(255, 255, 255, 0.66));
+  border: 1px solid rgba(250, 248, 248, 0.94);
   box-shadow: 0 22px 40px rgba(4, 21, 50, 0.34);
   backdrop-filter: blur(7px);
 }
@@ -335,6 +338,10 @@ nav.scrolled .nav-link {
   font-size: clamp(2rem, 3.2vw, 3rem);
   letter-spacing: 0.04em;
   margin-bottom: 0.2rem;
+}
+
+.mexihc-hero-brand-mark {
+  width: min(100%, 520px);
 }
 
 .mexihc-hero-subtitle {
@@ -464,4 +471,71 @@ caption {
 [data-skip-target="true"]:focus {
   outline: 3px solid rgba(177, 31, 122, 0.6);
   outline-offset: 0.3rem;
+}
+
+
+.mexihc-hero-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.mexihc-hero-logos img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.mexihc-hero-logo-cicese {
+  height: 50px;
+}
+
+.mexihc-hero-logo-amexihc {
+  height: 30px;
+}
+
+.mexihc-hero-logo-uabc {
+  height: 65px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .mexihc-hero-logos {
+    gap: 0.875rem 1.5rem;
+  }
+
+  .mexihc-hero-logo-cicese {
+    height: 44px;
+  }
+
+  .mexihc-hero-logo-amexihc {
+    height: 28px;
+  }
+
+  .mexihc-hero-logo-uabc {
+    height: 56px;
+  }
+}
+
+/* Móvil */
+@media (max-width: 576px) {
+  .mexihc-hero-logos {
+    gap: 0.75rem 1.25rem;
+  }
+
+  .mexihc-hero-logo-cicese {
+    height: 38px;
+  }
+
+  .mexihc-hero-logo-amexihc {
+    height: 24px;
+  }
+
+  .mexihc-hero-logo-uabc {
+    height: 48px;
+  }
 }
