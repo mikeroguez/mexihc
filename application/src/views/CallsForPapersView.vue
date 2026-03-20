@@ -1,6 +1,5 @@
 <script>
 import TheHeader from '@/components/Header.vue';
-
 import Tr from '@/i18n/translation'
 
 import { shallowRef, watch, defineAsyncComponent } from 'vue'

@@ -85,14 +85,6 @@ const router = createRouter({
           },
         },
         {
-          path: 'accessibility-recommendations-for-authors',
-          name: 'accessibility-recommendations-for-authors',
-          component: () => import('../views/AccessibilityForAuthorsView.vue'), 
-          meta: {
-            title: "MexIHC 2026 - Accessibility Recommendations for Authors",
-          },
-        },
-        {
           path: 'organizers',
           name: 'organizers',
           component: () => import('../views/OrganizersView.vue'), 
