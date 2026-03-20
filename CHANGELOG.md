@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.1.5] - 2026-03-20
+
+### Added
+
+- Added university logos to the hero section (`CICESE` and `UABC`).
+- Added and refreshed organizer photos and profiles, including Juan Pablo García Vázquez, Pablo Schiaffino, Sandra, Cristina, Abdel, Karina, Gilberto, Alberto Morán, and Tony García.
+- Added `application/AGENTS.md` with repository workflow, conventions, and delivery checklist for collaborators.
+
+### Changed
+
+- Improved the navbar language switcher and RSS access in the shared navigation.
+- Updated 2026 branding assets in shared UI, including the main logo set used in the hero and footer.
+- Aligned conference naming, 2026 dates, and calls navigation across localized content and shared views.
+- Refined organizer pages and shared views to keep content, labels, and asset references consistent across locales.
+- Prepared the jumbotron message area so it can be re-enabled later without reworking the component.
+- Bumped project version references to `2026.1.5` in documentation, package metadata, and footer release link.
+
+### Fixed
+
+- Prevented hero logos from overflowing on mobile layouts.
+- Corrected organizer image paths to respect the configured base path in GitHub Pages deployments.
+
 ## [2026.1.4] - 2026-02-16
 
 ### Changed
