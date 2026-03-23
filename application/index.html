@@ -1,120 +1,220 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <base href="%BASE_URL%" />
 
-<head>
-	<base href="%BASE_URL%" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/img/logos/mexihc2026.svg"
+    />
+    <link rel="icon" type="image/png" href="assets/img/logos/mexihc2026.svg" />
 
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/logos/mexihc2026.svg">
-	<link rel="icon" type="image/png" href="assets/img/logos/mexihc2026.svg">
+    <title>MexIHC 2026</title>
 
-	<title>MexIHC 2026</title>
+    <!-- SEO and Social Metadata -->
 
-	<!-- CEO and Social Networks     -->
-	<meta property="og:locale" content="en-US">
-	<meta property="og:site_name" content="MexIHC 2026">
-	<meta property="og:title" content="MexIHC 2026 - An AMexIHC Conference">
-	<meta property="og:image" content="https://www.mexihc.org/mexihc/assets/img/logos/mexihc-guinda.jpeg">
-	<meta property="og:image:secure_url" content="https://www.mexihc.org/mexihc/assets/img/logos/mexihc-guinda.jpeg">
-	<meta property="og:url" content="https://www.mexihc.org/mexihc/">
-	<meta property="og:description" content="XI Latin American Conference on Human-Computer Interaction. November 4-6, 2026.">
-	<meta property="og:type" content="website">
-	<meta name="twitter:site" content="@mexihc">
-	<meta name="twitter:title" content="MexIHC 2026 - An AMexIHC Conference">
-	<meta name="twitter:description" content="XI Latin American Conference on Human-Computer Interaction. November 4-6, 2026.">
-	<meta name="twitter:url" content="https://www.mexihc.org/mexihc/">
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:image" content="https://www.mexihc.org/mexihc/assets/img/logos/mexihc-guinda.jpeg">
-	<meta name="description" content="XI Latin American Conference on Human-Computer Interaction. November 4-6, 2026.">
-	<link rel="alternate" type="application/rss+xml" title="MexIHC 2026 News (All languages)" href="rss.xml">
-	<link rel="alternate" type="application/rss+xml" title="MexIHC 2026 Noticias (Español)" href="rss-es.xml" hreflang="es">
-	<link rel="alternate" type="application/rss+xml" title="MexIHC 2026 News (English)" href="rss-en.xml" hreflang="en">
+    <!-- Basic SEO -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<!-- Le fonts and icons     -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <title>
+      MexIHC 2026 – Mexican International Conference on Human-Computer
+      Interaction
+    </title>
 
-	<!-- Le fontawesome-->
-	<script src="https://kit.fontawesome.com/a6cebb9a9c.js" crossorigin="anonymous"></script>
+    <meta
+      name="description"
+      content="Eleventh Mexican International Conference on Human-Computer Interaction (MexIHC 2026), organized by AMexIHC. October 27–30, 2026."
+    />
+    <meta
+      name="keywords"
+      content="HCI, Human Computer Interaction, MexIHC, AMexIHC, HCI conference, interaction design, usability, UX research, Mexico HCI conference"
+    />
+    <meta name="author" content="AMexIHC" />
 
-	<script>
-		// Define dataLayer and the gtag function.
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
+    <meta name="robots" content="index, follow" />
 
-		// Helper function to get cookie by name
-		function getCookie(name) {
-			const value = `; ${document.cookie}`;
-			const parts = value.split(`; ${name}=`);
-			if (parts.length === 2) return parts.pop().split(';').shift();
-			return null; // Return null if the cookie is not found
-		}
+    <link rel="canonical" href="https://www.mexihc.org/2026/en" />
 
-		// Set default consent settings based on existing cookies
-		const defaultConsent = {
-			'ad_storage': 'denied',
-			'ad_user_data': 'denied',
-			'ad_personalization': 'denied',
-			'analytics_storage': 'denied'
-		};
+    <!-- Language alternatives -->
+    <link rel="alternate" hreflang="en" href="https://www.mexihc.org/2026/en" />
+    <link rel="alternate" hreflang="es" href="https://www.mexihc.org/2026/es" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://www.mexihc.org/2026"
+    />
 
-		// Check for each consent cookie and update the default values if cookies exist
-		const consentTypes = ['ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage'];
-		consentTypes.forEach(type => {
-			const cookieValue = getCookie(`consent_${type}`);
-			if (cookieValue === 'granted') {
-				defaultConsent[type] = 'granted';
-			}
-		});
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="MexIHC 2026" />
+    <meta
+      property="og:title"
+      content="MexIHC 2026 – Mexican International Conference on Human-Computer Interaction"
+    />
+    <meta
+      property="og:description"
+      content="Eleventh Mexican International Conference on Human-Computer Interaction (MexIHC 2026). October 27–30, 2026."
+    />
+    <meta property="og:url" content="https://www.mexihc.org/2026/en" />
+    <meta
+      property="og:image"
+      content="https://www.mexihc.org/2026/assets/img/logos/mexihc-guinda.jpeg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://www.mexihc.org/2026/assets/img/logos/mexihc-guinda.jpeg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="MexIHC 2026 Conference Logo" />
 
-		// Set the consent configuration with possibly updated values from cookies
-		gtag('consent', 'default', defaultConsent);
-	</script>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@mexihc" />
+    <meta
+      name="twitter:title"
+      content="MexIHC 2026 – Mexican International Conference on Human-Computer Interaction"
+    />
+    <meta
+      name="twitter:description"
+      content="Eleventh Mexican International Conference on Human-Computer Interaction (MexIHC 2026). October 27–30, 2026."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.mexihc.org/2026/assets/img/logos/mexihc-guinda.jpeg"
+    />
+    <meta name="twitter:url" content="https://www.mexihc.org/2026/en" />
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7V5EC85078">
-	</script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
+    <!-- RSS feeds -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="MexIHC 2026 News (All languages)"
+      href="https://www.mexihc.org/2026/rss.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="MexIHC 2026 Noticias (Español)"
+      href="https://www.mexihc.org/2026/rss-es.xml"
+      hreflang="es"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="MexIHC 2026 News (English)"
+      href="https://www.mexihc.org/2026/rss-en.xml"
+      hreflang="en"
+    />
 
-		gtag('js', new Date());
-		gtag('config', 'G-7V5EC85078');
-	</script>
+    <!-- Le fonts and icons     -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      rel="stylesheet"
+    />
 
-</head>
+    <!-- Le fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/a6cebb9a9c.js"
+      crossorigin="anonymous"
+    ></script>
 
-<body class="presentation-page">
-	<div id="app"></div>
-	<script type="module" src="/src/main.js"></script>
-	<script>
-		if (sessionStorage.redirect) {
-			const redirect = sessionStorage.redirect;
-			delete sessionStorage.redirect;
-			const redirectUrl = new URL(redirect);
-			const appBaseUrl = new URL('%BASE_URL%', location.origin);
-			if (redirectUrl.origin === appBaseUrl.origin) {
-				const path = redirectUrl.pathname + redirectUrl.search + redirectUrl.hash;
-				history.replaceState(null, null, path);
-			}
-		}
-	</script>
-	<script>
-		var myNav = document.getElementsByClassName('navbar-color-on-scroll');
-		var myIcon = document.getElementsByClassName('icon-language');
+    <script>
+      // Define dataLayer and the gtag function.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-		window.onscroll = function () {
-			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-			var scrollThreshold = 200;
+      // Helper function to get cookie by name
+      function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(";").shift();
+        return null; // Return null if the cookie is not found
+      }
 
-			if (scrollTop >= scrollThreshold) {
-				myNav[0].classList.add("scrolled");
-			} else {
-				myNav[0].classList.remove("scrolled");
-			}
-		};
-	</script>
-</body>
+      // Set default consent settings based on existing cookies
+      const defaultConsent = {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+      };
 
+      // Check for each consent cookie and update the default values if cookies exist
+      const consentTypes = [
+        "ad_storage",
+        "ad_user_data",
+        "ad_personalization",
+        "analytics_storage",
+      ];
+      consentTypes.forEach((type) => {
+        const cookieValue = getCookie(`consent_${type}`);
+        if (cookieValue === "granted") {
+          defaultConsent[type] = "granted";
+        }
+      });
+
+      // Set the consent configuration with possibly updated values from cookies
+      gtag("consent", "default", defaultConsent);
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7V5EC85078"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+      gtag("config", "G-7V5EC85078");
+    </script>
+  </head>
+
+  <body class="presentation-page">
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      if (sessionStorage.redirect) {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        const redirectUrl = new URL(redirect);
+        const appBaseUrl = new URL("%BASE_URL%", location.origin);
+        if (redirectUrl.origin === appBaseUrl.origin) {
+          const path =
+            redirectUrl.pathname + redirectUrl.search + redirectUrl.hash;
+          history.replaceState(null, null, path);
+        }
+      }
+    </script>
+    <script>
+      var myNav = document.getElementsByClassName("navbar-color-on-scroll");
+      var myIcon = document.getElementsByClassName("icon-language");
+
+      window.onscroll = function () {
+        var scrollTop =
+          document.documentElement.scrollTop || document.body.scrollTop;
+        var scrollThreshold = 200;
+
+        if (scrollTop >= scrollThreshold) {
+          myNav[0].classList.add("scrolled");
+        } else {
+          myNav[0].classList.remove("scrolled");
+        }
+      };
+    </script>
+  </body>
 </html>

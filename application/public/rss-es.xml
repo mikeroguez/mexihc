@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MexIHC 2026 - Noticias (ES)</title>
-    <link>https://www.mexihc.org/mexihc/es/</link>
+    <link>https://www.mexihc.org/2026/es/</link>
     <description>Canal RSS oficial de noticias y actualizaciones de MexIHC 2026 en español.</description>
     <language>es-MX</language>
     <lastBuildDate>Mon, 16 Feb 2026 12:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
-    <atom:link href="https://www.mexihc.org/mexihc/rss-es.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.mexihc.org/2026/rss-es.xml" rel="self" type="application/rss+xml" />
     <image>
-      <url>https://www.mexihc.org/mexihc/assets/img/logos/mexihc-guinda.jpeg</url>
+      <url>https://www.mexihc.org/2026/assets/img/logos/mexihc-guinda.jpeg</url>
       <title>MexIHC 2026</title>
-      <link>https://www.mexihc.org/mexihc/es/</link>
+      <link>https://www.mexihc.org/2026/es/</link>
     </image>
 
     <item>
       <title>Convocatoria de trabajos abierta para MexIHC 2026</title>
-      <link>https://www.mexihc.org/mexihc/es/call-for-papers</link>
-      <guid isPermaLink="true">https://www.mexihc.org/mexihc/es/call-for-papers</guid>
+      <link>https://www.mexihc.org/2026/es/call-for-papers</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/call-for-papers</guid>
       <description>Consulta lineamientos, temas de interés y fechas importantes de la convocatoria
         de trabajos.</description>
       <pubDate>Mon, 16 Feb 2026 12:00:00 GMT</pubDate>
@@ -25,8 +25,8 @@
 
     <item>
       <title>Fechas de la conferencia MexIHC 2026 confirmadas</title>
-      <link>https://www.mexihc.org/mexihc/es/</link>
-      <guid isPermaLink="true">https://www.mexihc.org/mexihc/es/</guid>
+      <link>https://www.mexihc.org/2026/es/</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/</guid>
       <description>MexIHC 2026 se realizará del 27 al 30 de octubre de 2026 en Ensenada, Baja
         California.</description>
       <pubDate>Wed, 07 Jan 2026 12:00:00 GMT</pubDate>
