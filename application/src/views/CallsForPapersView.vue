@@ -25,8 +25,6 @@ export default {
           return defineAsyncComponent(() => import('@/components/locales/en/Call-for-papers.vue'))
         case 'es':
           return defineAsyncComponent(() => import('@/components/locales/es/Call-for-papers.vue'))
-        case 'pt':
-          return defineAsyncComponent(() => import('@/components/locales/pt/Call-for-papers.vue'))
         default:
           return null
       }

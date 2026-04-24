@@ -48,8 +48,7 @@
 
             const rssFeedPathForLocale = (locale) => {
                 if (locale === 'es') return `${baseUrl}rss-es.xml`
-                if (locale === 'en') return `${baseUrl}rss-en.xml`
-                return `${baseUrl}rss.xml`
+                return `${baseUrl}rss-en.xml`
             }
 
             const currentRssFeed = () => rssFeedPathForLocale(locale.value)

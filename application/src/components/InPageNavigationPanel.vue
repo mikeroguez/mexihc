@@ -53,19 +53,6 @@ const copyByLocale = {
     backToAnchors: 'Back to sections menu',
     backToAnchorsShort: 'Menu',
   },
-  pt: {
-    linksTitle: 'Nesta página',
-    widgetTitle: 'Próxima data-chave',
-    nextStage: 'Etapa seguinte',
-    conferenceEnded: 'A conferência já terminou.',
-    noUpcoming: 'Não há mais datas pendentes.',
-    today: 'Hoje',
-    inDays: (days) => `Em ${days} dias`,
-    tomorrow: 'Amanhã',
-    defaultAllDates: 'Veja todas as datas importantes',
-    backToAnchors: 'Voltar ao menu de seções',
-    backToAnchorsShort: 'Menu',
-  },
 }
 
 const text = computed(() => copyByLocale[locale.value] || copyByLocale.en)

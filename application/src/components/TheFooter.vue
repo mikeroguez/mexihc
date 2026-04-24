@@ -103,8 +103,7 @@ export default {
         },
         rssFeedPathForLocale(locale) {
             if (locale === 'es') return `${this.baseUrl}rss-es.xml`
-            if (locale === 'en') return `${this.baseUrl}rss-en.xml`
-            return `${this.baseUrl}rss.xml`
+            return `${this.baseUrl}rss-en.xml`
         },
         currentRssFeed() {
             return this.rssFeedPathForLocale(this.$i18n?.locale)

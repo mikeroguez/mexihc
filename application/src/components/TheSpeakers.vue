@@ -14,14 +14,12 @@ export default {
 
     watch(locale, loadComponents, { immediate: true })
 
-    async function getContentForLocale(locale) {
+    async function getSpeakersForLocale(locale) {
       switch (locale) {
         case 'en':
           return defineAsyncComponent(() => import('@/components/locales/en/Speakers-small.vue'))
         case 'es':
           return defineAsyncComponent(() => import('@/components/locales/es/Speakers-small.vue'))
-        case 'pt':
-          return defineAsyncComponent(() => import('@/components/locales/pt/Speakers-small.vue'))
         default:
           return null
       }

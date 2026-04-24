@@ -1,8 +1,7 @@
 {
     "locale": {
         "en": "English",
-        "es": "Español",
-        "pt": "Português"
+        "es": "Español"
     },
     "privacyConsent": {
         "header-title": "Configuración de cookies",
@@ -25,8 +24,8 @@
         "cfp_message": "Fecha límite: 1 de junio de 2026",
         "cpt": "Convocatoria a la sesión de pósteres",
         "cpt_message": "To be announced",
-        "cwt": "Convocatoria de talleres y tutoriales",
-        "cwt_message": "To be announced",
+        "cwt": "Convocatoria de tutoriales",
+        "cwt_message": "Fecha límite: 1 de junio de 2026",
         "sdc": "Competencia de diseño para estudiantes",
         "sdc_message": "To be announced",
         "cgc": "Convocatoria al coloquio de graduados",
@@ -136,7 +135,7 @@
         "title": "Convocatoria de participación",
         "cfp": "Convocatoria de trabajos",
         "cpt": "Convocatoria a la sesión de pósteres",
-        "cwt": "Convocatoria de talleres y tutoriales",
+        "cwt": "Convocatoria de tutoriales",
         "sdc": "Competencia de diseño para estudiantes",
         "cgc": "Convocatoria al coloquio de graduados"
     },

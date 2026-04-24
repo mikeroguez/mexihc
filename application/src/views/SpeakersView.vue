@@ -27,8 +27,6 @@ export default {
           return defineAsyncComponent(() => import('@/components/locales/en/Speakers.vue'))
         case 'es':
           return defineAsyncComponent(() => import('@/components/locales/es/Speakers.vue'))
-        case 'pt':
-          return defineAsyncComponent(() => import('@/components/locales/pt/Speakers.vue'))
         default:
           return null
       }

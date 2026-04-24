@@ -11,6 +11,15 @@ const calls = [
     iconClass: 'fas fa-file-alt',
     deadline: 'Fecha límite para envíos: 1 de junio de 2026',
   },
+  {
+    key: 'cwt',
+    title: 'Convocatoria de tutoriales',
+    to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' }),
+    statusLabel: 'Abierta',
+    statusType: 'open',
+    iconClass: 'fas fa-chalkboard-teacher',
+    deadline: 'Fecha límite para propuestas: 1 de junio de 2026',
+  },
 ]
 </script>
 

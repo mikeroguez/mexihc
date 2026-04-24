@@ -20,8 +20,6 @@ export default {
           return defineAsyncComponent(() => import('@/components/locales/en/Description.vue'))
         case 'es':
           return defineAsyncComponent(() => import('@/components/locales/es/Description.vue'))
-        case 'pt':
-          return defineAsyncComponent(() => import('@/components/locales/pt/Description.vue'))
         default:
           return null
       }

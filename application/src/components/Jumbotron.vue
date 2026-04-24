@@ -24,10 +24,6 @@ export default {
           return defineAsyncComponent(
             () => import("@/components/locales/es/Message.vue"),
           );
-        case "pt":
-          return defineAsyncComponent(
-            () => import("@/components/locales/pt/Message.vue"),
-          );
         default:
           return null;
       }

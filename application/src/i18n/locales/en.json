@@ -1,8 +1,7 @@
 {
     "locale": {
         "en": "English",
-        "es": "Español",
-        "pt": "Português"
+        "es": "Español"
     },
     "privacyConsent": {
         "header-title": "Cookie settings",
@@ -25,8 +24,8 @@
         "cfp_message": "Deadline: June 1, 2026",
         "cpt": "Call for poster track",
         "cpt_message": "To be announced",
-        "cwt": "Call for workshops and tutorials",
-        "cwt_message": "To be announced",
+        "cwt": "Call for tutorials",
+        "cwt_message": "Deadline: June 1, 2026",
         "sdc": "Student design competition",
         "sdc_message": "To be announced",
         "cgc": "Call for graduate colloquium",
@@ -139,7 +138,7 @@
         "title": "Call for Participation",
         "cfp": "Call for Papers",
         "cpt": "Call for Poster Track",
-        "cwt": "Call for Workshops and Tutorials",
+        "cwt": "Call for tutorials",
         "sdc": "Student Design Competition",
         "cgc": "Call for Graduate Colloquium"
     },

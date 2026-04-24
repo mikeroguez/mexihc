@@ -26,8 +26,6 @@ export default {
           return defineAsyncComponent(() => import('@/components/locales/en/Accessibility-faq.vue'))
         case 'es':
           return defineAsyncComponent(() => import('@/components/locales/es/Accessibility-faq.vue'))
-        case 'pt':
-          return defineAsyncComponent(() => import('@/components/locales/pt/Accessibility-faq.vue'))
         default:
           return null
       }

@@ -20,106 +20,101 @@ export default {
 <template>
     <InPageNavigationPanel
         :links="[
-            { label: 'Guidelines for proposals', to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-guidelines' }) },
-            { label: 'Important Dates', to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-dates' }) },
-            { label: 'After acceptance', to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-after' }) },
-            { label: 'Accepted Workshops and Tutorials', to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-accepted' }) }
+            { label: 'Objective', to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-objective' }) },
+            { label: 'Themes', to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-themes' }) },
+            { label: 'Guidelines', to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-guidelines' }) },
+            { label: 'Important Dates', to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-dates' }) }
         ]"
         :milestones="[
-            { label: 'Deadline for workshop & tutorial proposals', date: '2024-06-07' },
-            { label: 'Notification of acceptance', date: '2024-06-14' },
-            { label: 'Workshop/tutorial submissions deadline', date: '2024-08-09' },
-            { label: 'Workshop/tutorial notification', date: '2024-08-23' },
-            { label: 'Camera-ready final submissions', date: '2024-09-13' },
-            { label: 'MexIHC 2024 starts', date: '2024-11-06', kind: 'conference-start' },
-            { label: 'MexIHC 2024 ends', date: '2024-11-08', kind: 'conference-end' }
+            { label: 'Proposal submission deadline', date: '2026-06-01' },
+            { label: 'Acceptance notification', date: '2026-08-07' },
+            { label: 'MexIHC 2026 Start', date: '2026-10-27', kind: 'conference-start' },
+            { label: 'MexIHC 2026 End', date: '2026-10-30', kind: 'conference-end' }
         ]"
         :all-dates-to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials', hash: '#cwt-dates' })"
         all-dates-label="See all important dates"
     />
 
     <p>
-        In order to promote the access to the knowledge of experts and encourage the exchange of experiences, the
-        Organizing Committee of the MexIHC conference conveys the following call for participation on interdisciplinary,
-        relevant, current and practical topics on different areas of research in the area of Human-Computer Interaction.
-        The modalities of participation are:
+        The MexIHC 2026 organizing committee invites the academic, scientific, and professional community to submit tutorial proposals on topics related to Human-Computer Interaction (HCI) and related areas.
     </p>
 
-    <h2>Workshop</h2>
+    <h2 id="cwt-objective">Objective</h2>
     <p>
-        Every subject related to Human-Computer Interaction, such as those listed in the conference, with a duration of
-        3 up to 8 hours.
+        The tutorials aim to offer intensive training spaces that allow participants to acquire theoretical, methodological, or practical knowledge in current, emerging, or frontier topics in HCI.
     </p>
 
-    <h2>Tutorial</h2>
+    <h2>Format and Duration</h2>
     <p>
-        A conference, an interactive mini-workshop, a training session or any other modality which explore new forms of
-        interaction with duration from 1 up to 3 hours.
+        Tutorials can be delivered in the form of: interactive mini-workshops, training sessions, or any innovative modality oriented towards active learning. Each tutorial should have a duration of 2 to 4 hours.
     </p>
 
-    <h2 id="cwt-guidelines">GUIDELINES FOR PROPOSALS</h2>
+    <h2>Dates and Venue</h2>
     <p>
-        Proposals for workshops and tutorials should contain the necessary information to enable the workshops chairs to
-        judge its importance, quality and interest of the community in the proposed topics. These should not exceed two
-        pages. When to propose a workshop, please provide (at least) the following information:
+        The tutorials will be held within the framework of MexIHC 2026 at the facilities of CICESE and UABC on October 27 and 28.
+    </p>
+    <p>
+        <strong>NOTE:</strong> One day is dedicated to tutorials; however, depending on the demand and quality of the proposals received, the organizing committee may enable up to two days for their delivery.
+    </p>
+
+    <h2 id="cwt-themes">Themes</h2>
+    <p>
+        Tutorial proposals are accepted in any area related to Human-Computer Interaction (HCI), including but not limited to:
+    </p>
+    
+    <h3>General lines:</h3>
+    <ul>
+        <li>Interface design and evaluation</li>
+        <li>User experience (UX)</li>
+        <li>Accessibility and digital inclusion</li>
+        <li>Information visualization</li>
+        <li>Multimodal interaction</li>
+        <li>Human-centered artificial intelligence</li>
+        <li>Emerging technologies applied to interaction</li>
+    </ul>
+
+    <h3>Emerging topics of special interest:</h3>
+    <ul>
+        <li>Design for Agentic AI and human–agent ecosystems</li>
+        <li>Generative (GenUI) and adaptive interfaces</li>
+        <li>Human-robot interaction (HRI) in public and industrial environments</li>
+        <li>Ubiquitous, multimodal computing and "Zero-UI" paradigms</li>
+        <li>Sustainable and circular HCI</li>
+    </ul>
+    <p>
+        For a broader list of suggested topics, it is recommended to consult the conference call for papers.
+    </p>
+
+    <h2 id="cwt-guidelines">Guidelines for Proposals</h2>
+    <p>
+        Tutorial proposals must contain the necessary information to allow the coordinators to evaluate their importance, quality, and community interest in the proposed topics. They must not exceed two pages. When proposing a tutorial, please provide (at minimum) the following information:
     </p>
 
     <ul>
-        <li>Title and goals of the workshop or tutorial.</li>
-        <li>Time required to deliver the workshop or tutorial.</li>
-        <li>The relevance of the workshop or tutorial in connection with the themes of the conference.</li>
-        <li>A brief description of the content (eg. objectives, scope).</li>
-        <li>The specific topics to be addressed at the workshop (brief agenda).</li>
-        <li>The target audience.</li>
-        <li>Expected number of participants (maximum of participants).</li>
-        <li>Names, affiliations, e-mail and short biographies of the organizers of the workshop, who must have
-            experience in the topics of the workshop.</li>
-        <li>Special requirements with respect to logistics (eg. stands for posters, more than one video projector,
-            etc.).</li>
-        <li>A bio of the organizers with relevant information regarding their expertise to the theme of the
-            workshop/tutorial (publications, projects, etc.).</li>
-        <li>The proposal can be written in Spanish or English, and have an extension of 3-4 pages.</li>
-        <li>Accepted works will be published within Journal Avances en Interacción Humano-Computadora (AIHC) de la
-            <a class="uline" href="http://aihc.amexihc.org/index.php/aihc">AmexIHC</a> in the section Work in progress.
-            The template is the
-            following: https://mexihc.org/aihc_template.zip
-        </li>
+        <li>Title and objectives of the tutorial.</li>
+        <li>Estimated duration of the tutorial.</li>
+        <li>Relevance of the tutorial in relation to the conference themes.</li>
+        <li>Brief description of the content (e.g., objectives, scope).</li>
+        <li>Target audience.</li>
+        <li>Estimated number of participants (maximum).</li>
+        <li>Names, affiliations, email, and a brief biography of the tutorial organizers, who must have experience in the topics covered.</li>
+        <li>Special requirements regarding logistics (e.g., poster stands, more than one video projector, etc.).</li>
+        <li>Biography of the organizers with relevant information about their experience in the tutorial topic (publications, projects, etc.).</li>
     </ul>
-
-    <p>Proposals should be submitted to: ws.2024@mexihc.org</p>
-
-    <h2 id="cwt-after">AFTER ACCEPTANCE</h2>
     <p>
-        Organizers of workshops should develop the Web Page with the call for papers. They should promote the call for
-        papers among their contacts, and additional and convenient mailing-lists
+        Proposals may be written in Spanish or English. Proposals should be sent via email to the coordinators.
+    </p>
+
+    <h2>After Acceptance</h2>
+    <p>
+        Organizers of accepted tutorials should promote them (as well as the conference in general) among their contacts and use additional and accessible mailing lists. Tutorial coordinators will indicate the date and time of each tutorial delivery, as well as the deadline for sharing the material to be used.
     </p>
 
     <h2 id="cwt-dates">Important Dates</h2>
     <ul>
-        <li><strong><del>>May 17th</del> June 7th, 2024 (extended)</strong> – Deadline for workshop & tutorial proposals
-        </li>
-        <li><strong><del>May 24th</del> June 14th, 2024 (extended)</strong> – Notification acceptance</li>
-        <li><strong>November 6th-8th, 2024</strong> - MexIHC Conference</li>
-    </ul>
-    <p>Workshops organizers should consider that the submission for workshop papers would be</p>
-    <ul>
-        <li><strong>Aug 9th, 2024</strong> – Deadline for workshop & tutorial submissions</li>
-        <li><strong>Ago 23th, 2024</strong> – Notification acceptance</li>
-        <li><strong>Sep 13th, 2024</strong> – Camera Ready</li>
-    </ul>
-
-    <h2 id="cwt-accepted">Accepted Workshops and Tutorials</h2>
-    <ul>
-        <li>
-            <RouterLink :to="Tr.i18nRoute({ name: 'calls-for-accepted-workshops' })" class="uline">
-                {{ $t("nav.workshop_calls") }}
-            </RouterLink>
-        </li>
-        <li>
-            <RouterLink :to="Tr.i18nRoute({ name: 'accepted-tutorials' })" class="uline">
-                {{ $t("nav.tutorial") }}
-            </RouterLink>
-        </li>        
+        <li><strong>June 1, 2026</strong> – Deadline for tutorial proposals</li>
+        <li><strong>August 7, 2026</strong> – Acceptance notification</li>
+        <li><strong>October 27 and 28, 2026</strong> – Tutorial delivery</li>
     </ul>
 
     <h2 class="my-4">{{ $t("organizers.workshops_and_tutorials_chairs_title") }}</h2>
@@ -128,20 +123,20 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/rene.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/nophoto.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
                     <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/people/rene.png&quot;);">
+                        style="background-image: url(&quot;/assets/img/nophoto.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    René F. Navarro
+                    José Ángel González Fraga
                 </template>
                 <template #institution>
-                    Universidad de Sonora
+                    Universidad Autónoma de Baja California
                 </template>
                 <template #email>
-                    ws.2024@mexihc.org
+                    angel_fraga@uabc.edu.mx
                 </template>
             </OrganizerItem>
         </div>
@@ -149,20 +144,20 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/adriana.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/tonyGarcia.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
                     <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/people/adriana.png&quot;);">
+                        style="background-image: url(&quot;/assets/img/people/tonyGarcia.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Adriana Iñiguez
+                    J. Antonio García Macías
                 </template>
                 <template #institution>
-                    Universidad de Guadalajara
+                    CICESE
                 </template>
                 <template #email>
-                    ws.2024@mexihc.org
+                    jagm@cicese.edu.mx
                 </template>
             </OrganizerItem>
         </div>

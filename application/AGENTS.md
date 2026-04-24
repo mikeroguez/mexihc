@@ -4,7 +4,7 @@ Guía operativa para agentes que colaboren en este repositorio.
 
 ## 1) Objetivo del proyecto
 
-Sitio oficial de **MexIHC 2026** construido con **Vue 3 + Vite** y contenido multilenguaje (**es/en/pt**).
+Sitio oficial de **MexIHC 2026** construido con **Vue 3 + Vite** y contenido multilenguaje (**es/en**).
 
 Objetivo de cada cambio:
 - mantener consistencia visual y de contenido;
@@ -29,7 +29,7 @@ Comandos principales:
 
 - `src/views/` -> vistas por ruta
 - `src/components/` -> componentes reutilizables
-- `src/components/locales/{es,en,pt}/` -> contenido por idioma
+- `src/components/locales/{es,en}/` -> contenido por idioma
 - `src/i18n/` -> configuración de internacionalización y diccionarios
 - `public/assets/img/` -> imágenes públicas (logos, personas, banners)
 - `src/router/index.js` -> enrutamiento
@@ -38,7 +38,7 @@ Comandos principales:
 
 1. Mantén los cambios enfocados en una sola intención.
 2. No reestructures archivos sin justificación funcional.
-3. Si agregas contenido visible, valida impacto en `es`, `en` y `pt`.
+3. Si agregas contenido visible, valida impacto en `es` y `en`.
 4. Si agregas imágenes nuevas:
    - usa nombres de archivo descriptivos y estables;
    - referencia desde rutas públicas (`/assets/img/...`) de forma consistente;
@@ -86,5 +86,4 @@ Ejemplos:
 
 - Migraciones grandes de arquitectura.
 - Cambios de diseño masivos no solicitados.
-- Actualización de dependencias sin ticket/objetivo explícito.
-
+- Actualización de dependencias sin ticket/objetivo esplicito.

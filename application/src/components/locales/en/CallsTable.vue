@@ -11,6 +11,15 @@ const calls = [
     iconClass: 'fas fa-file-alt',
     deadline: 'Submission deadline: June 1, 2026',
   },
+  {
+    key: 'cwt',
+    title: 'Call for tutorials',
+    to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' }),
+    statusLabel: 'Open',
+    statusType: 'open',
+    iconClass: 'fas fa-chalkboard-teacher',
+    deadline: 'Proposal deadline: June 1, 2026',
+  },
 ]
 </script>
 

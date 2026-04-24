@@ -26,8 +26,6 @@ export default {
           return defineAsyncComponent(() => import('@/components/locales/en/Rates-and-registration.vue'))
         case 'es':
           return defineAsyncComponent(() => import('@/components/locales/es/Rates-and-registration.vue'))
-        case 'pt':
-          return defineAsyncComponent(() => import('@/components/locales/pt/Rates-and-registration.vue'))
         default:
           return null
       }

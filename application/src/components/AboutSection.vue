@@ -14,14 +14,12 @@ export default {
 
     watch(locale, loadComponent, { immediate: true })
 
-    async function getComponentForLocale(locale) {
+    async function getAboutForLocale(locale) {
       switch (locale) {
         case 'en':
           return defineAsyncComponent(() => import('@/components/locales/en/About.vue'))
         case 'es':
           return defineAsyncComponent(() => import('@/components/locales/es/About.vue'))
-        case 'pt':
-          return defineAsyncComponent(() => import('@/components/locales/pt/About.vue'))
         default:
           return null
       }

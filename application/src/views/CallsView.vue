@@ -26,8 +26,6 @@ export default {
           return defineAsyncComponent(() => import('@/components/locales/en/CallsTable.vue'))
         case 'es':
           return defineAsyncComponent(() => import('@/components/locales/es/CallsTable.vue'))
-        case 'pt':
-          return defineAsyncComponent(() => import('@/components/locales/pt/CallsTable.vue'))
         default:
           return null
       }

@@ -26,8 +26,6 @@ export default {
           return defineAsyncComponent(() => import('@/components/locales/en/Getting-started.vue'))
         case 'es':
           return defineAsyncComponent(() => import('@/components/locales/es/Getting-started.vue'))
-        case 'pt':
-          return defineAsyncComponent(() => import('@/components/locales/pt/Getting-started.vue'))
         default:
           return null
       }

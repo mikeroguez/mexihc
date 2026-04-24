@@ -26,8 +26,6 @@ export default {
                     return defineAsyncComponent(() => import('@/components/locales/en/Schedule.vue'))
                 case 'es':
                     return defineAsyncComponent(() => import('@/components/locales/es/Schedule.vue'))
-                case 'pt':
-                    return defineAsyncComponent(() => import('@/components/locales/pt/Schedule.vue'))
                 default:
                     return null
             }
