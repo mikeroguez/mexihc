@@ -35,6 +35,10 @@ const photoByName = {
   "David Abdel Mejía": assetUrl("/assets/img/people/abdel.png"),
   "Karina Caro": assetUrl("/assets/img/people/karina.png"),
   "Gilberto Borrego": assetUrl("/assets/img/people/gilberto.png"),
+  "Marcela D. Rodríguez": assetUrl("/assets/img/people/marcela.png"),
+  "José Ángel González Fraga": assetUrl("/assets/img/people/joseAngel.png"),
+  "Ramón Palacio": assetUrl("/assets/img/people/ramonRene.png"),
+
 };
 
 const generalSections = [
