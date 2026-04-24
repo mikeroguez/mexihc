@@ -1,6 +1,6 @@
 {
   "name": "mexihc2026",
-  "version": "2026.1.5",
+  "version": "2026.1.6",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
