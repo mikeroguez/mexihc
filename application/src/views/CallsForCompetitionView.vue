@@ -1,13 +1,35 @@
 <script>
 import TheHeader from '@/components/Header.vue'
 import Tr from '@/i18n/translation'
+import { shallowRef, watch, defineAsyncComponent } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 export default {
   components: {
     TheHeader
   },
   setup() {
-    return { Tr }
+    const { locale } = useI18n()
+    const Component = shallowRef(null)
+
+    const loadComponents = async (newLocale) => {
+      Component.value = await getCompetitionForLocale(newLocale)
+    }
+
+    watch(locale, loadComponents, { immediate: true })
+
+    async function getCompetitionForLocale(locale) {
+      switch (locale) {
+        case 'en':
+          return defineAsyncComponent(() => import('@/components/locales/en/Call-for-competition.vue'))
+        case 'es':
+          return defineAsyncComponent(() => import('@/components/locales/es/Call-for-competition.vue'))
+        default:
+          return null
+      }
+    }
+
+    return { Tr, Component }
   }
 }
 </script>
@@ -21,9 +43,13 @@ export default {
 
   <section>
     <div class="container">
-      <div class="row justify-content-center my-3">
-        <div class="col-lg-8">
-          <p class="mb-0">To be announced</p>
+      <div class="row">
+        <div class="row justify-content-center my-3">
+          <div class="col-lg-8">
+            <template v-if="Component">
+              <component :is="Component" />
+            </template>
+          </div>
         </div>
       </div>
     </div>

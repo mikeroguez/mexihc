@@ -26,8 +26,8 @@
         "cpt_message": "To be announced",
         "cwt": "Convocatoria de tutoriales",
         "cwt_message": "Fecha límite: 1 de junio de 2026",
-        "sdc": "Competencia de diseño para estudiantes",
-        "sdc_message": "To be announced",
+        "sdc": "Concurso de diseño estudiantil",
+        "sdc_message": "Fecha límite: 16 de agosto de 2026",
         "cgc": "Convocatoria al coloquio de graduados",
         "cgc_message": "To be announced",
         "accessibility_for_autors": "Recomendaciones de accesibilidad para autores",
@@ -136,7 +136,7 @@
         "cfp": "Convocatoria de trabajos",
         "cpt": "Convocatoria a la sesión de pósteres",
         "cwt": "Convocatoria de tutoriales",
-        "sdc": "Competencia de diseño para estudiantes",
+        "sdc": "Concurso de diseño estudiantil",
         "cgc": "Convocatoria al coloquio de graduados"
     },
     "register": {

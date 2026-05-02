@@ -20,6 +20,15 @@ const calls = [
     iconClass: 'fas fa-chalkboard-teacher',
     deadline: 'Proposal deadline: June 1, 2026',
   },
+  {
+    key: 'sdc',
+    title: 'Student Design Competition',
+    to: Tr.i18nRoute({ name: 'student-design-competition' }),
+    statusLabel: 'Open',
+    statusType: 'open',
+    iconClass: 'fas fa-lightbulb',
+    deadline: 'Submission deadline: August 16, 2026',
+  },
 ]
 </script>
 

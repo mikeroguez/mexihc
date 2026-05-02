@@ -20,6 +20,15 @@ const calls = [
     iconClass: 'fas fa-chalkboard-teacher',
     deadline: 'Fecha límite para propuestas: 1 de junio de 2026',
   },
+  {
+    key: 'sdc',
+    title: 'Concurso de diseño estudiantil',
+    to: Tr.i18nRoute({ name: 'student-design-competition' }),
+    statusLabel: 'Abierta',
+    statusType: 'open',
+    iconClass: 'fas fa-lightbulb',
+    deadline: 'Fecha límite para envíos: 16 de agosto de 2026',
+  },
 ]
 </script>
 

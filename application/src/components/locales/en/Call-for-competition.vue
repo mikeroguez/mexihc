@@ -21,15 +21,15 @@ export default {
     <InPageNavigationPanel
         :links="[
             { label: 'Goals', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-goals' }) },
-            { label: 'Important Dates', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-dates' }) },
+            { label: 'Important dates', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-dates' }) },
             { label: 'Submission details', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-submission' }) },
             { label: 'Selection process', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-selection' }) }
         ]"
         :milestones="[
-            { label: 'Submission deadline', date: '2024-08-30' },
-            { label: 'Camera-ready deadline', date: '2024-09-13' },
-            { label: 'MexIHC 2024 starts', date: '2024-11-06', kind: 'conference-start' },
-            { label: 'MexIHC 2024 ends', date: '2024-11-08', kind: 'conference-end' }
+            { label: 'Submission deadline', date: '2026-08-16' },
+            { label: 'Camera-ready deadline', date: '2026-09-13' },
+            { label: 'MexIHC 2026 starts', date: '2026-10-27', kind: 'conference-start' },
+            { label: 'MexIHC 2026 ends', date: '2026-10-30', kind: 'conference-end' }
         ]"
         :all-dates-to="Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-dates' })"
         all-dates-label="See all important dates"
@@ -37,182 +37,95 @@ export default {
 
     <h2 id="sdc-goals">Goals</h2>
     <ul>
-        <li>Provide an opportunity for students of Human-Computer Interaction and related fields
-            (e. g. Computer Science, interaction and visual design, Psychology, Social Sciences,
-            etc.) to participate in a practical activity and to demonstrate their skills in problem
-            solving, interaction design and user experience.
-        </li>
-        <li>
-            Create an exhibition space of solutions to a real-world challenge using myriad
-            approaches (design research, brainstorming, prototyping, implementation, evaluation,
-            etc.).
-        </li>
-        <li>
-            Foster greater interaction between industry representatives and students.
-        </li>
+        <li>Provide students from different human-computer interaction related fields with an opportunity to participate in a practical activity and demonstrate their skills in problem solving, interaction design, and user experience.</li>
+        <li>Create a space for addressing real problems through different approaches, including design research, brainstorming, prototyping, implementation, and evaluation.</li>
+        <li>Foster greater interaction between industry representatives and students.</li>
     </ul>
 
-    <h2>The Design Challenge: Supporting Vulnerable Populations</h2>
+    <h2>The Design Challenge: Human-Centered Artificial Intelligence for the Common Good</h2>
     <p>
-        According to the World Health Organization, about 15% of the world’s population, have some
-        form of disability or they are part of a vulnerable population. Vulnerable populations include
-        (1) Children and minors; (2) individuals with developmental disorders/disabilities; (3)
-        individuals with chronic health conditions (e.g., HIV, Cancer, mental illness); (4) traumatized
-        patients; (5) terminally ill patients; (6) older adults; (7) prisoners; (8) economically
-        disadvantaged persons; among others. The vulnerability of these individuals is enhanced by
-        race, ethnicity, age, sex, and factors such as income, insurance coverage (or lack thereof),
-        and absence of a usual source of care services. Their health and healthcare problems and
-        needs intersect with social factors, including housing, poverty, and inadequate education.
-        Despite efforts and goals in the Mexican Government to reduce or alleviate some of the
-        challenges of vulnerable populations (e.g., public centers/schools to provide special education
-        services), significant disparities, including risk factors, access to healthcare services,
-        morbidity, and mortality, continue in vulnerable populations.
+        Over the last decade, artificial intelligence has moved from a speculative frontier to one of the central drivers of global development. However, its implementations do not happen in a technical vacuum; they are embedded in social contexts marked by historical inequalities, broad informal economies, and persistent digital divides. For AI to become a common good rather than a new vector of exclusion, it is necessary to move from passive adoption to situated implementation that responds to local urgencies.
+    </p>
+    <p>
+        The transformative potential of AI in the region, from optimizing essential public services to democratizing access to knowledge, depends on ethical governance and a framework of technological sovereignty. The point is not simply to automate processes, but to use computational capacity to dismantle bureaucratic barriers, improve preventive medicine in rural areas, and strengthen institutional transparency. The challenge for universities, governments, and civil society is to ensure that innovation does not only increase productivity, but also acts as a catalyst for social justice and collective well-being.
+    </p>
+    <p>
+        In this edition of the Student Design Competition, we invite you to submit a project in which artificial intelligence is used to promote the common good of a population sector that has been historically or recently vulnerable, while incorporating user-centered design as a fundamental part of the proposal. This challenge has been intentionally framed in an open way to encourage broad student participation and accommodate different interests. The project must be non-profit for its creators, but it may address any topic that promotes the use of AI within the field of human-computer interaction.
     </p>
 
-    <p>
-        In this Student Design Competition, we encourage you to contribute by ‘Supporting
-        Vulnerable Populations’: use human-centered design approaches to develop a new way (e.g.,
-        a product, interface, system or service) to support, empower, or alleviate the physical,
-        psychological or social challenges around a vulnerable population. The scope of this design
-        challenge is broad: for example, you could focus on healthcare, education, public services,
-        charity, food, poverty, or art, just to name a few. You can either work with a particular
-        vulnerable population (e.g., autism) or you could work with multiple vulnerable populations
-        that have common characteristics (e.g., chronic healthcare conditions). You may adopt
-        different design strategies, including participatory design, co-creation and co-design, service
-        design, design for social innovation, inclusive design and open innovation. You may come up
-        with a participatory design and co-creation approach using existing technologies or you may
-
-        find opportunity in contemporary developments in technology, such as 3D printing, digital
-        fabrication, citizen sensing, the sharing economy, big data, social networks, IoT, gamification,
-        new sensors and actuators, and Augmented Reality, to name just a few.
-    </p>
-
-    <p>We particularly encourage that the following criteria be considered:</p>
-
-    <ul>
-        <li>Does the design solution address a real challenge or challenges of a vulnerable
-            population or populations?
-        </li>
-        <li>
-            Does the design solution use technology in an appropriate and novel way?
-        </li>
-        <li>
-            Was relevant prior work properly identified and cited?
-        </li>
-        <li>
-            Were analysis, synthesis, design and evaluation both systematic and sufficient?
-        </li>
-        <li>
-            Were the research process and the involvement of stakeholders ethically appropriate
-            (e.g., were institutional guidelines followed)?
-        </li>
-        <li>
-            Were genuine stakeholders involved in the process of research, development and
-            evaluation?
-        </li>
-        <li>
-            Did the team explore the entire ecosystem of stakeholders, conditions, and contexts?
-        </li>
-        <li>
-            Was the design solution well-crafted and effectively presented?
-        </li>
-    </ul>
     <h2 id="sdc-dates">Important Dates</h2>
     <ul>
-        <li>Deadline for submission of works: August <del>16th</del> 30th, 2024. (Extended)</li>
-        <li>Deadline for camera ready: September 13th, 2024.</li>
+        <li>Submission deadline: August 16, 2026.</li>
+        <li>Camera-ready deadline: September 13, 2026.</li>
     </ul>
 
-    <h2>Student Team Requirements</h2>
+    <h2>Team Requirements</h2>
     <ul>
-        <li>Groups of up 4 students with one supervisor (5 participants max).</li>
-        <li>Each team must have at least one student and one supervisor.</li>
-        <li>Each supervisor can have only one team.</li>
-        <li>The supervisor may be a professor or industry professional.</li>
+        <li>A group of up to 4 students and 1 supervisor, for a maximum of 5 participants.</li>
+        <li>Each team must include at least one student and one supervisor.</li>
+        <li>The supervisor may come from academia or industry.</li>
     </ul>
 
     <p>
-        Submissions are invited from all students at all stages of their university careers, from
-        undergraduate to postgraduate. While not a mandatory requirement, it is strongly encouraged
-        that the teams put forward a multidisciplinary team.
+        Proposals are welcome from students at any stage of their university education, from undergraduate to graduate level. Multidisciplinary teams are recommended, but not required.
     </p>
 
-    <h2 id="sdc-submission">SUBMISSION DETAILS</h2>
+    <h2 id="sdc-submission">Submission Details</h2>
     <p>
-        Each group must submit a presentation with a maximum of <strong>15 slides</strong>, a written report of up to
-        <strong>4 pages</strong> in the following format <a class="uline"
-            href="https://mexihc.org/aihc_template.zip">Proceedings Format</a>
-        describing in more detail the points
-        raised in the presentation; both in Spanish or English, and in PDF format. Both documents
-        should describe:
+        Each team must submit a presentation of up to <strong>15 slides</strong> and a written report of up to <strong>4 pages</strong>, following the <a class="uline"
+            href="https://mexihc.org/aihc_template.zip">Proceedings Format</a>, providing more detail on the points raised in the presentation. Both documents must be submitted in Spanish or English, in PDF format, and must describe:
     </p>
 
     <ul>
-        <li>The Problem addressed.</li>
-        <li>The Social impact of the proposed solution in the Mexican context.</li>
-        <li>The Process used during the project.</li>
-        <li>The Methodology, methods, and techniques used.</li>
-        <li>The Description of the target audience.</li>
-        <li>The Proposed solution.</li>
+        <li>The problem being addressed.</li>
+        <li>The social impact of the proposal in a global context.</li>
+        <li>The process used during the project.</li>
+        <li>The methodology, methods, and techniques used.</li>
+        <li>The description of the target audience.</li>
+        <li>The proposed solution.</li>
     </ul>
 
     <p>
-        Additionally, we encourage the team to provide a supplementary video (max 5 minutes),
-        illustrating how your solution fits the lives of the users of a vulnerable population with the help
-        of scenarios. Even though the supplementary video is optional, it can help the jury to
-        understand your proposed solution better. In any case, the selection process will be based on
-        the two mandatory files (presentation and written report).
+        We also encourage teams to provide an optional supplementary video of up to 5 minutes illustrating how the solution fits into the lives of users from the vulnerable population through scenarios. Although the video is optional, it can help the jury better understand the proposed solution. In all cases, the selection process will be based on the two mandatory files: the presentation and the written report.
     </p>
 
     <p>
-        As with other submissions sent to MexIHC 2024, the Students Design Competition entries
-        should not have been previously accepted for presentation or publication in any other event.
+        As with other submissions to MexIHC 2026, Student Design Competition proposals must be original and must not have been previously accepted for presentation or publication at any other event.
     </p>
 
-    <p>Please send your proposal to <strong>sdc.2024@mexihc.org</strong></p>
+    <p>Please send proposals to <strong>sdc.2026@mexihc.org</strong></p>
 
     <h2 id="sdc-selection">Selection Process</h2>
-    <p>Submissions will be evaluated based on:</p>
+    <p>Submissions will be evaluated according to the following criteria:</p>
     <ul>
-        <li>Quality of work.</li>
-        <li>Novelty of approach.</li>
-        <li>Significance of the contribution to the field of HCI.</li>
-        <li>Clarity of written document.</li>
-        <li>Strength of the case for the expected physical, psychological or social impact of the
-            proposal.</li>
+        <li>Quality of the work.</li>
+        <li>Novelty of the proposal.</li>
+        <li>Importance of the contribution to the field of human-computer interaction.</li>
+        <li>Clarity of the written document.</li>
+        <li>Strength of the argument regarding the expected physical, psychological, or social impact of the proposal.</li>
     </ul>
 
     <p>
-        Confidentiality of submissions is maintained during the review process. All rejected
-        submissions will be kept confidential in perpetuity. All submitted materials for accepted
-        submissions will be kept confidential until the start of the conference, with the exception of
-        title and author information which will be published on the website prior to the conference.
-        Submissions should not contain sensitive, private, or proprietary information that cannot be
-        disclosed at publication time.
+        The confidentiality of submissions will be maintained during the review process. All rejected submissions will remain confidential indefinitely. Materials from accepted submissions will remain confidential until the beginning of the conference, except for the title and author information, which may be published on the website beforehand. Submissions must not include confidential, private, or proprietary information that cannot be disclosed at publication time.
     </p>
 
     <p>
-        A jury made up of researchers and industry representatives will choose the best five projects
-        based on the two files submitted. The five projects selected will be invited to be presented
-        during MexIHC 2024.
+        A jury composed of researchers and industry representatives will select the top five projects based on the two submitted files. These five finalist projects will be invited to MexIHC 2026.
     </p>
 
-    <p>Late submissions will <strong>NOT be considered</strong>.</p>
+    <p><strong>Submissions sent after the stated deadlines will not be considered.</strong></p>
+
+    <h2>Publication</h2>
+    <p>
+        Accepted works will be published on the official conference website and will receive a participation diploma. The top three places will receive their corresponding recognition during the conference.
+    </p>
 
     <h2>At the conference</h2>
     <p>
-        The best five projects proposals will be invited as a short oral presentation during the
-        conference.
+        The top five projects will be invited to give a short oral presentation during the conference.
     </p>
     <p>
-        The presentation should be in English or Spanish. At least two representatives of each team
-        must be present during the event to make the presentation of their project. A jury of four
-        representatives from industry and academia will choose the three winning projects.
-    </p>
-
-    <h2>Archives</h2>
-    <p>
-        The accepted submissions will be published in <a class="uline" href="https://revistaaihc.mx/">the AMexIHC publication journal</a>.
+        The presentation may be delivered in English or Spanish, and at least two team representatives must present the project during the event. A four-member jury representing industry and academia will choose the three winning projects.
     </p>
 
     <h2 class="my-4">{{ $t("organizers.student_design_competition_title") }}</h2>
@@ -233,7 +146,7 @@ export default {
                     Clemson University, USA
                 </template>
                 <template #email>
-                    sdc.2024@mexihc.org
+                    sdc.2026@mexihc.org
                 </template>
             </OrganizerItem>
         </div>
@@ -254,7 +167,7 @@ export default {
                     Universidad Autónoma de Coahuila, MX
                 </template>
                 <template #email>
-                    sdc.2024@mexihc.org
+                    sdc.2026@mexihc.org
                 </template>
             </OrganizerItem>
         </div>

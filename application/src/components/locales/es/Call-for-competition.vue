@@ -26,10 +26,10 @@ export default {
             { label: 'Proceso de selección', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-selection' }) }
         ]"
         :milestones="[
-            { label: 'Fecha límite de recepción de trabajos', date: '2024-08-30' },
-            { label: 'Fecha límite de camera ready', date: '2024-09-13' },
-            { label: 'Inicio de MexIHC 2024', date: '2024-11-06', kind: 'conference-start' },
-            { label: 'Cierre de MexIHC 2024', date: '2024-11-08', kind: 'conference-end' }
+            { label: 'Fecha límite de recepción de trabajos', date: '2026-08-16' },
+            { label: 'Fecha límite para camera ready', date: '2026-09-13' },
+            { label: 'Inicio de MexIHC 2026', date: '2026-10-27', kind: 'conference-start' },
+            { label: 'Cierre de MexIHC 2026', date: '2026-10-30', kind: 'conference-end' }
         ]"
         :all-dates-to="Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-dates' })"
         all-dates-label="Ver todas las fechas importantes"
@@ -37,176 +37,95 @@ export default {
 
     <h2 id="sdc-goals">Objetivos</h2>
     <ul>
-        <li>Proveer una oportunidad a los estudiantes de diferentes campos de Interacción
-            humano computadora (Ciencias de la computación, interacción y diseño visual,
-            psicología, ciencias sociales, etc.) a participar en una actividad practica y demostrar
-            sus habilidades en la resolución de problemas, diseño interactivo y experiencia de
-            usuario.
-        </li>
-        <li>
-            Crear un espacio para soluciones para problemas reales utilizando diferentes
-            enfoques (investigación de diseño, lluvia de ideas, prototipos, implementación,
-            evaluación, etc.)
-        </li>
-        <li>
-            Fomentar una mayor interacción entre los representantes de la industria y los
-            estudiantes
-        </li>
+        <li>Proveer a los estudiantes de diferentes campos de interacción humano-computadora una oportunidad para participar en una actividad práctica y demostrar sus habilidades en la resolución de problemas, el diseño interactivo y la experiencia de usuario.</li>
+        <li>Crear un espacio para solucionar problemas reales utilizando diferentes enfoques, incluyendo investigación de diseño, lluvia de ideas, prototipos, implementación y evaluación.</li>
+        <li>Fomentar una mayor interacción entre los representantes de la industria y los estudiantes.</li>
     </ul>
 
-    <h2>Desafío de diseño: Apoyo para poblaciones vulnerables</h2>
+    <h2>Desafío de diseño: Inteligencia Artificial Centrada en las Personas: Su uso para el bien de la sociedad</h2>
     <p>
-        Según la Organización Mundial de la Salud, aproximadamente el 15% de la población
-        mundial tiene alguna forma de discapacidad o forma parte de una población vulnerable. Las
-        poblaciones vulnerables incluyen (1) niños y menores de edad; (2) personas con
-        trastornos/discapacidades del desarrollo; (3) personas con enfermedades crónicas (por
-        ejemplo, VIH, cáncer, enfermedades mentales); (4) pacientes traumatizados; (5) pacientes
-        terminales; (6) adultos mayores; (7) prisioneros; (8) personas económicamente
-        desfavorecidas, entre otros. La vulnerabilidad de estas personas se ve aumentada por la
-        raza, etnia, edad, sexo, y factores como ingresos, cobertura de seguro (o falta de ella), y la
-        ausencia de una fuente usual de servicios de atención. Sus problemas y necesidades de
-        salud y atención médica se entrecruzan con factores sociales, incluyendo vivienda, pobreza y
-        educación inadecuada. A pesar de los esfuerzos y metas del Gobierno Mexicano para reducir
-        o aliviar algunos de los desafíos de las poblaciones vulnerables (por ejemplo,
-        centros/servicios públicos para proporcionar servicios de educación especial), persisten
-        disparidades significativas, incluyendo factores de riesgo, acceso a servicios de atención
-        médica, morbilidad y mortalidad, en las poblaciones vulnerables.
+        En la última década, la inteligencia artificial ha dejado de ser una frontera especulativa para convertirse en uno de los ejes del desarrollo global. Sin embargo, sus implementaciones no ocurren en un vacío técnico, sino sobre un tejido social marcado por desigualdades históricas, una amplia economía informal y una brecha digital persistente. Para que la IA se traduzca en bien común y no en un nuevo vector de exclusión, es necesario pasar de una adopción pasiva a una implementación situada que responda a las urgencias locales.
+    </p>
+    <p>
+        El potencial transformador de la IA en la región, desde la optimización de servicios públicos esenciales hasta la democratización del conocimiento, depende de una gobernanza ética y de un marco de soberanía tecnológica. No se trata solo de automatizar procesos, sino de aprovechar la capacidad computacional para desarticular barreras burocráticas, mejorar la medicina preventiva en zonas rurales y fortalecer la transparencia institucional. El reto para universidades, gobiernos y sociedad civil es lograr que la innovación no solo incremente la productividad, sino que funcione como catalizador de justicia social y bienestar colectivo.
+    </p>
+    <p>
+        En esta edición del Concurso de Diseño Estudiantil te invitamos a presentar un proyecto en el que el uso de la inteligencia artificial promueva el bien común de un sector de la población históricamente o recientemente vulnerable, incorporando la metodología del Diseño Centrado en el Usuario como parte fundamental de la propuesta. El reto ha sido diseñado de forma abierta para incentivar la participación de estudiantes con distintos perfiles e inquietudes. El proyecto debe ser sin fines de lucro para sus creadores, pero puede abordar cualquier temática que promueva el uso de IA dentro del ámbito de la interacción humano-computadora.
     </p>
 
-    <p>
-        En esta Competencia de Diseño Estudiantil, te animamos a contribuir apoyando a las
-        poblaciones vulnerables: utiliza enfoques de diseño centrados en el ser humano para
-        desarrollar una nueva forma (por ejemplo, un producto, interfaz, sistema o servicio) para
-        apoyar, empoderar o aliviar los desafíos físicos, psicológicos o sociales alrededor de una
-        población vulnerable. El alcance de este desafío de diseño es amplio: por ejemplo, podrías
-
-        enfocarte en atención médica, educación, servicios públicos, caridad, alimentación, pobreza
-        o arte, solo por nombrar algunos. Puedes trabajar con una población vulnerable en particular
-        (por ejemplo, autismo) o puedes trabajar con múltiples poblaciones vulnerables que tengan
-        características comunes (por ejemplo, condiciones crónicas de salud). Puedes adoptar
-        diferentes estrategias de diseño, incluyendo diseño participativo, co-creación y co-diseño,
-        diseño de servicios, diseño para la innovación social, diseño inclusivo e innovación abierta.
-        Puedes idear un enfoque de diseño participativo y de co-creación utilizando tecnologías
-        existentes o puedes encontrar oportunidades en desarrollos tecnológicos contemporáneos,
-        como impresión 3D, fabricación digital, percepción ciudadana, economía colaborativa, big
-        data, redes sociales, IoT, gamificación, nuevos sensores y actuadores, y Realidad
-        Aumentada, por nombrar solo algunos.
-    </p>
-
-    <p>Recomendamos especialmente que se consideren los siguientes criterios:</p>
-
-    <ul>
-        <li>¿La solución de diseño aborda uno o más desafíos reales de la población vulnerable?</li>
-        <li>¿La solución de diseño utiliza la tecnología de una manera apropiada y novedosa?</li>
-        <li>¿Se identificó y citó adecuadamente el trabajo previo más relevante?</li>
-        <li>¿Fue el análisis, la síntesis, el diseño y la evaluación sistemáticos y suficientes?</li>
-        <li>¿Fueron éticamente apropiados el proceso de investigación y la participación de las
-            partes interesadas (por ejemplo, se siguieron las directrices institucionales)?</li>
-        <li>¿Estuvieron involucrados verdaderos interesados en el proceso de investigación,
-            desarrollo y evaluación?</li>
-        <li>¿Exploró el equipo todo el entorno de las partes interesadas, condiciones y contextos?</li>
-        <li>¿La solución de diseño estuvo bien elaborada y presentada de manera efectiva?</li>
-    </ul>
     <h2 id="sdc-dates">Fechas importantes</h2>
     <ul>
-        <li>Fecha límite de recepción de trabajos: <del>16</del> 30 de agosto de 2024. (Extendida)</li>
-        <li>Fecha límite de camera ready: 13 de septiembre de 2024.</li>
+        <li>Fecha límite de recepción de trabajos: 16 de agosto de 2026.</li>
+        <li>Fecha límite para camera ready: 13 de septiembre de 2026.</li>
     </ul>
 
     <h2>Características de los equipos</h2>
     <ul>
-        <li>Un grupo de cuatro estudiantes y un supervisor (máximo 5 participantes).</li>
-        <li>Cada equipo deberá tener al menos un estudiante y un supervisor.</li>
-        <li>Cada supervisor podrá asesorar únicamente a un equipo.</li>
-        <li>El supervisor puede pertenecer a un ambiente académico o industrial.</li>
+        <li>Un grupo de hasta 4 estudiantes y un supervisor, con un máximo de 5 participantes.</li>
+        <li>Cada equipo deberá contar con al menos un estudiante y un supervisor.</li>
+        <li>El supervisor puede pertenecer al ámbito académico o industrial.</li>
     </ul>
 
     <p>
-        Las propuestas son bienvenidas a estudiantes que estén cursando cualquier periodo en sus
-        universidades, desde licenciatura a posgrado. Se recomienda mas no es obligatorio, que el
-        equipo sea multidisciplinario.
+        Las propuestas son bienvenidas para estudiantes que cursen cualquier etapa de sus estudios universitarios, desde licenciatura hasta posgrado. Se recomienda, aunque no es obligatorio, que el equipo sea multidisciplinario.
     </p>
 
     <h2 id="sdc-submission">Detalles de envío</h2>
     <p>
-        Cada equipo deberá enviar una presentación de un máximo de <strong>15 diapositivas</strong> y un reporte
-        escrito de hasta <strong>cuatro páginas</strong> con el siguiente formato <a class="uline"
-            href="https://mexihc.org/aihc_template.zip">Proceedings Format</a>
-        describiendo
-        con más detalle los puntos planteados en la presentación, sea en español o inglés, en
-        formato PDF. Ambos documentos deben describir:
+        Cada equipo deberá enviar una presentación de máximo <strong>15 diapositivas</strong> y un reporte escrito de hasta <strong>4 páginas</strong>, siguiendo el formato <a class="uline"
+            href="https://mexihc.org/aihc_template.zip">Proceedings Format</a>, describiendo con mayor detalle los puntos planteados en la presentación. Ambos documentos deberán enviarse en español o inglés, en formato PDF, y deben describir:
     </p>
 
     <ul>
-        <li>El problema a tratar</li>
-        <li>El impacto social de la propuesta en un contexto de México.</li>
-        <li>El Proceso utilizado durante el proyecto.</li>
-        <li>La Metodología, métodos y técnicas utilizadas.</li>
+        <li>El problema a tratar.</li>
+        <li>El impacto social de la propuesta en un contexto global.</li>
+        <li>El proceso utilizado durante el proyecto.</li>
+        <li>La metodología, los métodos y las técnicas utilizadas.</li>
         <li>La descripción del público objetivo.</li>
         <li>La solución propuesta.</li>
     </ul>
 
     <p>
-        Además, animamos al equipo a proporcionar un vídeo complementario (máximo 5 minutos)
-        que ilustre cómo su solución se adapta a las vidas de los usuarios de la población vulnerable
-        con la ayuda de escenarios. Aunque el vídeo complementario es opcional, puede ayudar al
-        jurado a comprender mejor la solución propuesta. En todo caso, el proceso de selección se
-        basará en los dos expedientes preceptivos (presentación e informe escrito).
+        Además, se anima al equipo a proporcionar un video complementario de máximo 5 minutos que ilustre cómo su solución se adapta a la vida de los usuarios de la población vulnerable mediante escenarios. Aunque este video es opcional, puede ayudar al jurado a comprender mejor la solución propuesta. En cualquier caso, el proceso de selección se basará en los dos documentos obligatorios: la presentación y el informe escrito.
     </p>
 
     <p>
-        Al igual que con otras presentaciones enviadas a MexIHC 2024, las propuestas del Concurso
-        de Diseño Estudiantil no debieron haber sido aceptadas previamente para su presentación o
-        publicación en ningún otro evento.
+        Al igual que otras contribuciones enviadas a MexIHC 2026, las propuestas del Concurso de Diseño Estudiantil deben ser originales y no haber sido aceptadas previamente para presentación o publicación en ningún otro evento.
     </p>
 
-    <p>Favor de mandar las propuestas a <strong>sdc.2024@mexihc.org</strong></p>
+    <p>Favor de mandar las propuestas a <strong>sdc.2026@mexihc.org</strong></p>
 
     <h2 id="sdc-selection">Proceso de selección</h2>
     <p>Las propuestas se evaluarán tomando en cuenta los siguientes puntos:</p>
     <ul>
         <li>Calidad del trabajo.</li>
         <li>Propuesta novedosa.</li>
-        <li>Importancia de la contribución al área de interacción humano computadora.</li>
-        <li>Claridad en la escritura del documento.</li>
-        <li>Solidez del argumento sobre el impacto físico, psicológico o social esperado de la
-            propuesta.</li>
+        <li>Importancia de la contribución al área de interacción humano-computadora.</li>
+        <li>Claridad en la redacción del documento.</li>
+        <li>Solidez del argumento sobre el impacto físico, psicológico o social esperado de la propuesta.</li>
     </ul>
 
     <p>
-        La confidencialidad de los envíos se mantiene durante el proceso de revisión. Todas las
-        presentaciones rechazadas se mantendrán confidenciales a perpetuidad. Todos los
-        materiales enviados para las presentaciones aceptadas se mantendrán confidenciales hasta
-        el inicio de la conferencia, con la excepción del título y la información del autor que se
-        publicarán en el sitio web antes de la conferencia. Los envíos no deben contener información
-        confidencial, privada o de propiedad exclusiva que no pueda divulgarse en el momento de la
-        publicación.
+        La confidencialidad de los envíos se mantiene durante el proceso de revisión. Todas las presentaciones rechazadas se mantendrán confidenciales a perpetuidad. Los materiales de las propuestas aceptadas se mantendrán confidenciales hasta el inicio de la conferencia, con excepción del título y la información de autoría, que podrán publicarse en el sitio web antes del evento. Los envíos no deben contener información confidencial, privada o propietaria que no pueda divulgarse en el momento de la publicación.
     </p>
 
     <p>
-        Un jurado formado por investigadores y representantes de la industria elegirá los cinco
-        mejores proyectos a partir de los dos expedientes presentados. Los cinco proyectos finalistas
-        serán invitados al evento MexIHC 2024.
+        Un jurado integrado por investigadores y representantes de la industria elegirá los cinco mejores proyectos a partir de los dos expedientes presentados. Los cinco proyectos finalistas serán invitados al evento MexIHC 2026.
     </p>
 
-    <p><strong>Propuestas enviadas fuera de las fechas señalas no serán consideradas.</strong>.</p>
-
-    <h2>En la conferencia</h2>
-    <p>
-        Los mejores cinco proyectos serán invitados como una presentación oral corta en la
-        conferencia.
-    </p>
-    <p>
-        La presentación deberá ser en Inglés o Español y al menos dos representantes del equipo,
-        deberán realizar la presentación del proyecto durante el evento. Un jurado de cuatro
-        personas representativas de la industria y la academia seleccionaran a los tres proyectos
-        ganadores.
-    </p>
+    <p><strong>Las propuestas enviadas fuera de las fechas señaladas no serán consideradas.</strong></p>
 
     <h2>Publicación</h2>
     <p>
-        Todos los trabajos aceptados serán publicados en <a class="uline"
-            href="https://revistaaihc.mx/">AMexIHC publication journal</a>.
+        Los trabajos aceptados serán publicados en el sitio web oficial de la conferencia y recibirán un diploma de participación. Los tres primeros lugares recibirán su reconocimiento correspondiente durante la conferencia.
+    </p>
+
+    <h2>En la conferencia</h2>
+    <p>
+        Los cinco mejores proyectos serán invitados a presentar una exposición oral corta durante la conferencia.
+    </p>
+    <p>
+        La presentación podrá realizarse en inglés o en español, y al menos dos representantes del equipo deberán presentar el proyecto durante el evento. Un jurado de cuatro personas, representativas de la industria y la academia, seleccionará los tres proyectos ganadores.
     </p>
 
     <h2 class="my-4">{{ $t("organizers.student_design_competition_title") }}</h2>
@@ -228,7 +147,7 @@ export default {
                     Clemson University, USA
                 </template>
                 <template #email>
-                    sdc.2024@mexihc.org
+                    sdc.2026@mexihc.org
                 </template>
             </OrganizerItem>
         </div>
@@ -250,7 +169,7 @@ export default {
                     Universidad Autónoma de Coahuila, MX
                 </template>
                 <template #email>
-                    sdc.2024@mexihc.org
+                    sdc.2026@mexihc.org
                 </template>
             </OrganizerItem>
         </div>
