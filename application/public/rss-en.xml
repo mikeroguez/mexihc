@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/en/</link>
     <description>Official RSS feed for MexIHC 2026 news and updates in English.</description>
     <language>en-US</language>
-    <lastBuildDate>Fri, 24 Apr 2026 13:50:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 04:22:04 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-en.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/</link>
     </image>
+
+    <item>
+      <title>Student Design Competition is open for MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/student-design-competition</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/en/student-design-competition</guid>
+      <description>Check the 2026 Student Design Competition call and submit your proposal before August 16, 2026.</description>
+      <pubDate>Sat, 02 May 2026 04:22:04 GMT</pubDate>
+    </item>
 
     <item>
       <title>Call for Tutorials is open for MexIHC 2026</title>
