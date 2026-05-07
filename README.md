@@ -1,8 +1,8 @@
-# MexIHC Versión 2026.1.5
+# MexIHC Versión 2026.1.7
 
 ## Sitio web para el MexIHC 2026
 
-Sitio [web de difusión de MexIHC 2024](https://www.mexihc.org/2024/) organizado por la [Asociación Mexicana de Interacción Humano-Computadora)](https://www.amexihc.org/).
+Sitio web de difusión de MexIHC 2026, organizado por la [Asociación Mexicana de Interacción Humano-Computadora](https://www.amexihc.org/).
 
 ### Technology used
 
@@ -10,7 +10,7 @@ Sitio [web de difusión de MexIHC 2024](https://www.mexihc.org/2024/) organizado
 
 ### What is this repository for?
 
-- Llevar el control del desarrollo del sitio MexIHC 2024
+- Llevar el control del desarrollo del sitio MexIHC 2026
 - [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 - [Flujo de trabajo de Gitflow](https://www.atlassian.com/es/git/tutorials/comparing-workflows/gitflow-workflow)
 - [A successful Git branching model (original)](https://nvie.com/posts/a-successful-git-branching-model/)

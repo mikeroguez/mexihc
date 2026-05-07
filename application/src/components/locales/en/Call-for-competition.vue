@@ -134,16 +134,16 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/carlos.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/liz.jpg" alt="" class="img-fluid shadow rounded-3">
                     </div>
-                    <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/carlos.png&quot;);">
+                    <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/liz.jpg&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Carlos Toxtli
+                    Lizbeth Escobedo
                 </template>
                 <template #institution>
-                    Clemson University, USA
+                    Dalhousie University
                 </template>
                 <template #email>
                     sdc.2026@mexihc.org
@@ -155,16 +155,16 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/niels.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/temo.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
-                    <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/niels.png&quot;);">
+                    <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/temo.png&quot;);">
                     </div>
                 </template>
                 <template #name>
-                    Niels Martínez
+                    Cuauhtemoc Rivera-Loaiza
                 </template>
                 <template #institution>
-                    Universidad Autónoma de Coahuila, MX
+                    Universidad Michoacana de San Nicolás de Hidalgo (UMich)
                 </template>
                 <template #email>
                     sdc.2026@mexihc.org
