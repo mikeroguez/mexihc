@@ -13,12 +13,12 @@ const calls = [
   },
   {
     key: 'cwt',
-    title: 'Convocatoria de tutoriales',
+    title: 'Convocatoria de talleres',
     to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' }),
     statusLabel: 'Abierta',
     statusType: 'open',
     iconClass: 'fas fa-chalkboard-teacher',
-    deadline: 'Fecha límite para propuestas: 1 de junio de 2026',
+    deadline: 'Fecha límite para propuestas: 25 de mayo de 2026',
   },
   {
     key: 'sdc',

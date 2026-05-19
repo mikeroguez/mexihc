@@ -13,12 +13,12 @@ const calls = [
   },
   {
     key: 'cwt',
-    title: 'Call for tutorials',
+    title: 'Call for workshops',
     to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' }),
     statusLabel: 'Open',
     statusType: 'open',
     iconClass: 'fas fa-chalkboard-teacher',
-    deadline: 'Proposal deadline: June 1, 2026',
+    deadline: 'Proposal deadline: May 25, 2026',
   },
   {
     key: 'sdc',
