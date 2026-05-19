@@ -19,6 +19,7 @@ const PAGE_MAP = {
   'call-for-participation': { parent: PARENT_GROUPS.calls, currentKey: 'calls.title' },
   'call-for-papers': { parent: PARENT_GROUPS.calls, currentKey: 'calls.cfp' },
   'call-for-posters': { parent: PARENT_GROUPS.calls, currentKey: 'calls.cpt' },
+  'call-for-workshops': { parent: PARENT_GROUPS.calls, currentKey: 'calls.cws' },
   'call-for-workshops-and-tutorials': { parent: PARENT_GROUPS.calls, currentKey: 'calls.cwt' },
   'calls-for-accepted-workshops': { parent: PARENT_GROUPS.calls, currentKey: 'nav.workshop_title' },
   'accepted-tutorials': { parent: PARENT_GROUPS.attendees, currentKey: 'nav.tutorial_title' },

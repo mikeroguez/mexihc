@@ -51,6 +51,7 @@
 					'call-for-participation',
 					'call-for-papers',
 					'call-for-posters',
+					'call-for-workshops',
 					'call-for-workshops-and-tutorials',
 					'student-design-competition',
 					'graduate-colloquium',
@@ -191,6 +192,24 @@
 											</RouterLink>											
 										</li>
 
+										<li>
+											<RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops' })" 
+												class="dropdown-item border-radius-md"
+												:class="{ 'active-submenu': isRoute('call-for-workshops') }"
+											>
+												<div class="d-flex">
+													<div>
+														<span
+															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
+															{{ $t("nav.cws") }}
+														</span>
+														<span class="text-sm font-italic text-dark text-wrap">
+															{{ $t("nav.cws_message") }}
+														</span>
+													</div>
+												</div>
+											</RouterLink>
+										</li>
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' })" 
 												class="dropdown-item border-radius-md"

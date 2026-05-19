@@ -45,11 +45,19 @@ const router = createRouter({
           },
         },
         {
+          path: 'call-for-workshops',
+          name: 'call-for-workshops',
+          component: () => import('../views/CallsForWorkshopsView.vue'), 
+          meta: {
+            title: "MexIHC 2026 - Call for Workshops",
+          },
+        },
+        {
           path: 'call-for-workshops-and-tutorials',
           name: 'call-for-workshops-and-tutorials',
           component: () => import('../views/CallsForWorkshopsAndTutorialsView.vue'), 
           meta: {
-            title: "MexIHC 2026 - Call for Workshops and Tutorials",
+            title: "MexIHC 2026 - Call for Tutorials",
           },
         },
         {
