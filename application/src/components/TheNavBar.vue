@@ -267,25 +267,6 @@
 											</RouterLink>
 										</li>
 
-										<li>
-											<RouterLink :to="Tr.i18nRoute({ name: 'calls-for-accepted-workshops' })" 
-												class="dropdown-item border-radius-md"
-												:class="{ 'active-submenu': isRoute('calls-for-accepted-workshops') }"
-											>
-												<div class="d-flex">
-													<div>
-														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
-															{{ $t("nav.workshop_calls") }}
-														</span>
-														<span class="text-sm text-dark text-wrap">
-															{{ $t("nav.workshop_calls_message") }}
-														</span>
-													</div>
-												</div>
-											</RouterLink>
-										</li>
-
 									</ul>
 								</li>
 								<li class="nav-item mx-2">

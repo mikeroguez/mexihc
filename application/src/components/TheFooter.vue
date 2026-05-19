@@ -206,11 +206,6 @@ export default {
                                     {{ $t("nav.cgc") }}
                                 </RouterLink>
                             </li>
-                            <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'calls-for-accepted-workshops' })" class="nav-link uline">
-                                    {{ $t("nav.workshop_calls") }}
-                                </RouterLink>
-                            </li>
                         </ul>
                     </div>
                 </div>

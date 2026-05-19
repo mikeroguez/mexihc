@@ -266,14 +266,14 @@ export default {
         <template #image>
           <div class="d-block blur-shadow-image">
             <img
-              src="/assets/img/nophoto.png"
+              src="/assets/img/people/marcela.png"
               alt=""
               class="img-fluid shadow rounded-3"
             />
           </div>
           <div
             class="colored-shadow"
-            style="background-image: url(&quot;./assets/img/nophoto.png&quot;)"
+            style="background-image: url(&quot;./assets/img/people/marcela.png&quot;)"
           ></div>
         </template>
         <template #name> Marcela D. Rodríguez </template>
