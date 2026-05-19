@@ -5,7 +5,33 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [2026.1.7] - 2026-05-06
+
+### Changed
+- Corregidos los `Student Design Competition Chairs` en la convocatoria del concurso estudiantil, en español e inglés, para alinearlos con la página de organizadores:
+  `Lizbeth Escobedo` (`Dalhousie University`) y `Cuauhtemoc Rivera-Loaiza` (`Universidad Michoacana de San Nicolás de Hidalgo (UMich)`).
+- Actualizadas las fotografías de esa sección para usar los retratos publicados de `Lizbeth Escobedo` y `Cuauhtemoc Rivera-Loaiza`.
+- Sincronizada la versión `2026.1.7` en `README.md`, `application/package.json`, `application/package-lock.json` y el footer del sitio.
+
+## [2026.1.6] - 2026-04-24
+
+### Added
+- Nueva sección de Convocatoria de Tutoriales 2026 en español e inglés.
+- Navegación interna y perfiles de coordinadores para tutoriales.
+- Canal RSS específico para noticias en español e inglés.
+
+### Fixed
+- Corregida la carga dinámica de componentes en la vista de convocatorias (CallsView), registro, ponentes y FAQ.
+- Restaurada la visibilidad de la tabla de convocatorias.
+
+### Removed
+- Eliminado completamente el soporte del idioma portugués (locales, i18n y componentes) para simplificar el sitio a ES/EN.
+- Eliminado feed RSS en portugués.
+
+## [2026.1.5] - 2026-02-16
+
+### Added
+- Mejoras menores en la configuración de despliegue y dependencias.
 
 ## [2026.1.4] - 2026-02-16
 
