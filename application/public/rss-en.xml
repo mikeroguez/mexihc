@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/en/</link>
     <description>Official RSS feed for MexIHC 2026 news and updates in English.</description>
     <language>en-US</language>
-    <lastBuildDate>Tue, 19 May 2026 19:35:59 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 19:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-en.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/</link>
     </image>
+
+    <item>
+      <title>Workshop deadline extended for MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/call-for-workshops</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/call-for-workshops#extension-2026-05-26</guid>
+      <description>The workshop proposal deadline was extended from May 25, 2026 to June 8, 2026. The acceptance notification moved from May 29, 2026 to June 12, 2026.</description>
+      <pubDate>Tue, 26 May 2026 19:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Student Design Competition is open for MexIHC 2026</title>
@@ -34,7 +42,7 @@
       <title>Call for Workshops is open for MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/call-for-workshops</link>
       <guid isPermaLink="true">https://www.mexihc.org/2026/en/call-for-workshops</guid>
-      <description>Check the MexIHC 2026 Call for Workshops and submit your proposal before May 25, 2026.</description>
+      <description>Check the MexIHC 2026 Call for Workshops and submit your proposal before June 8, 2026.</description>
       <pubDate>Tue, 19 May 2026 19:35:59 GMT</pubDate>
     </item>
 
