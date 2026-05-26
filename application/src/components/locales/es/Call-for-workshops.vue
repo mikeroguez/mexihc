@@ -27,8 +27,8 @@ export default {
             { label: 'Envío de propuestas', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-submission' }) }
         ]"
         :milestones="[
-            { label: 'Fecha límite para propuestas de taller', date: '2026-05-25' },
-            { label: 'Notificación de aceptación del taller', date: '2026-05-29' },
+            { label: 'Fecha límite extendida para propuestas de taller', date: '2026-06-08' },
+            { label: 'Notificación extendida de aceptación del taller', date: '2026-06-12' },
             { label: 'Límite para recepción de trabajos', date: '2026-08-05' },
             { label: 'Notificación de aceptación de trabajos', date: '2026-08-24' },
             { label: 'Entrega de versión final', date: '2026-09-14' },
@@ -38,6 +38,8 @@ export default {
         :all-dates-to="Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-dates' })"
         all-dates-label="Ver todas las fechas importantes"
     />
+
+    <p><strong>Actualización:</strong> la convocatoria de talleres fue extendida. La fecha límite pasó del <del>25 de mayo de 2026</del> al <strong>8 de junio de 2026</strong>, y la notificación de aceptación cambió del <del>29 de mayo de 2026</del> al <strong>12 de junio de 2026</strong>.</p>
 
     <p>
         Con el objetivo de promover el acceso al conocimiento especializado y fomentar el intercambio de experiencias, el Comité Organizador de MexIHC 2026 invita a investigadores, académicos y profesionales a presentar propuestas de talleres sobre temas interdisciplinarios, actuales y prácticos en el campo de la Interacción Humano-Computadora (IHC).
@@ -83,8 +85,8 @@ export default {
 
     <h2 id="cws-dates">Fechas importantes</h2>
     <ul>
-        <li><strong>25 de mayo de 2026</strong> – Fecha límite para propuestas de taller</li>
-        <li><strong>29 de mayo de 2026</strong> – Notificación de aceptación del taller</li>
+        <li><del>25 de mayo de 2026</del> <strong>8 de junio de 2026</strong> – Fecha límite para propuestas de taller <strong>(extendida)</strong></li>
+        <li><del>29 de mayo de 2026</del> <strong>12 de junio de 2026</strong> – Notificación de aceptación del taller <strong>(extendida)</strong></li>
         <li><strong>5 de agosto de 2026</strong> – Límite para recepción de trabajos de participantes</li>
         <li><strong>24 de agosto de 2026</strong> – Notificación de aceptación de trabajos</li>
         <li><strong>14 de septiembre de 2026</strong> – Entrega de versión final (camera ready)</li>

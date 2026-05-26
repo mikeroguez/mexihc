@@ -27,8 +27,8 @@ export default {
             { label: 'Submission', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-submission' }) }
         ]"
         :milestones="[
-            { label: 'Workshop proposal deadline', date: '2026-05-25' },
-            { label: 'Workshop acceptance notification', date: '2026-05-29' },
+            { label: 'Extended workshop proposal deadline', date: '2026-06-08' },
+            { label: 'Extended workshop acceptance notification', date: '2026-06-12' },
             { label: 'Participant submission deadline', date: '2026-08-05' },
             { label: 'Participant acceptance notification', date: '2026-08-24' },
             { label: 'Camera-ready deadline', date: '2026-09-14' },
@@ -38,6 +38,8 @@ export default {
         :all-dates-to="Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-dates' })"
         all-dates-label="See all important dates"
     />
+
+    <p><strong>Update:</strong> the workshop call was extended. The proposal deadline moved from <del>May 25, 2026</del> to <strong>June 8, 2026</strong>, and the acceptance notification moved from <del>May 29, 2026</del> to <strong>June 12, 2026</strong>.</p>
 
     <p>
         To promote access to specialized knowledge and foster the exchange of experiences, the MexIHC 2026 Organizing Committee invites researchers, academics, and professionals to submit workshop proposals on interdisciplinary, timely, and practical topics in the field of Human-Computer Interaction (HCI).
@@ -83,8 +85,8 @@ export default {
 
     <h2 id="cws-dates">Important Dates</h2>
     <ul>
-        <li><strong>May 25, 2026</strong> – Workshop proposal deadline</li>
-        <li><strong>May 29, 2026</strong> – Workshop acceptance notification</li>
+        <li><del>May 25, 2026</del> <strong>June 8, 2026</strong> – Workshop proposal deadline <strong>(extended)</strong></li>
+        <li><del>May 29, 2026</del> <strong>June 12, 2026</strong> – Workshop acceptance notification <strong>(extended)</strong></li>
         <li><strong>August 5, 2026</strong> – Deadline for participant submissions</li>
         <li><strong>August 24, 2026</strong> – Notification of accepted participant submissions</li>
         <li><strong>September 14, 2026</strong> – Camera-ready deadline</li>

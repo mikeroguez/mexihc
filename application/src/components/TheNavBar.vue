@@ -203,9 +203,18 @@
 															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
 															{{ $t("nav.cws") }}
 														</span>
-														<span class="text-sm font-italic text-dark text-wrap">
-															{{ $t("nav.cws_message") }}
-														</span>
+														<span class="text-sm font-italic text-dark text-wrap mexihc-deadline-change">
+													<template v-if="$i18n.locale === 'es'">
+														<span class="mexihc-deadline-badge">Extendida</span>
+														<span class="mexihc-deadline-old">25 de mayo de 2026</span>
+														<span class="mexihc-deadline-new">8 de junio de 2026</span>
+													</template>
+													<template v-else>
+														<span class="mexihc-deadline-badge">Extended</span>
+														<span class="mexihc-deadline-old">May 25, 2026</span>
+														<span class="mexihc-deadline-new">June 8, 2026</span>
+													</template>
+												</span>
 													</div>
 												</div>
 											</RouterLink>
@@ -548,6 +557,46 @@
 		border-radius: 0;
 		box-shadow: none;
 	}
+}
+
+.mexihc-deadline-change {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.mexihc-deadline-badge {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.08rem 0.45rem;
+	border-radius: 999px;
+	border: 1px solid rgba(135, 0, 88, 0.26);
+	font-size: 0.67rem;
+	font-style: normal;
+	font-weight: 800;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #6f0049;
+	background: #f7d7ea;
+	box-shadow: 0 1px 2px rgba(1, 22, 56, 0.08);
+}
+
+.mexihc-deadline-old {
+	text-decoration: line-through;
+	opacity: 0.7;
+}
+
+.mexihc-deadline-new {
+	font-style: normal;
+	font-weight: 700;
+}
+
+.mexihc-navbar.is-scrolled .mexihc-deadline-badge {
+	border-color: rgba(240, 239, 236, 0.32);
+	color: #223048;
+	background: #f0efec;
+	box-shadow: none;
 }
 
 @media (max-width: 991.98px) {

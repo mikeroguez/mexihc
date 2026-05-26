@@ -18,7 +18,10 @@ const calls = [
     statusLabel: 'Abierta',
     statusType: 'open',
     iconClass: 'fas fa-users-cog',
-    deadline: 'Fecha límite para propuestas: 25 de mayo de 2026',
+    deadlinePrefix: 'Fecha límite para propuestas:',
+    oldDeadline: '25 de mayo de 2026',
+    deadline: '8 de junio de 2026',
+    deadlineBadge: 'Extendida',
   },
   {
     key: 'cwt',
@@ -55,7 +58,15 @@ const calls = [
 
       <div class="call-card-content">
         <h2 class="call-card-title">{{ item.title }}</h2>
-        <p class="call-card-deadline">{{ item.deadline }}</p>
+        <p class="call-card-deadline">
+          <template v-if="item.oldDeadline">
+            <span>{{ item.deadlinePrefix }}</span>
+            <span class="call-card-deadline-badge">{{ item.deadlineBadge }}</span>
+            <span class="call-card-deadline-old">{{ item.oldDeadline }}</span>
+            <span class="call-card-deadline-new">{{ item.deadline }}</span>
+          </template>
+          <template v-else>{{ item.deadline }}</template>
+        </p>
       </div>
 
       <div class="call-card-right">
@@ -128,7 +139,35 @@ const calls = [
   margin: 0.35rem 0 0;
   color: rgba(1, 22, 56, 0.7);
   line-height: 1.35;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
 }
+
+.call-card-deadline-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.08rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--mxh-wine);
+  background: var(--mxh-wine-soft);
+}
+
+.call-card-deadline-old {
+  text-decoration: line-through;
+  opacity: 0.72;
+}
+
+.call-card-deadline-new {
+  font-weight: 700;
+  color: var(--mxh-navy);
+}
+
 
 .call-card-right {
   margin-left: auto;
