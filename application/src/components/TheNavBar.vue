@@ -206,13 +206,13 @@
 														<span class="text-sm font-italic text-dark text-wrap mexihc-deadline-change">
 													<template v-if="$i18n.locale === 'es'">
 														<span class="mexihc-deadline-badge">Extendida</span>
-														<span class="mexihc-deadline-old">25 de mayo de 2026</span>
-														<span class="mexihc-deadline-new">8 de junio de 2026</span>
+														<span class="mexihc-deadline-old">25 de mayo</span>
+														<span class="mexihc-deadline-new">8 de junio</span>
 													</template>
 													<template v-else>
 														<span class="mexihc-deadline-badge">Extended</span>
-														<span class="mexihc-deadline-old">May 25, 2026</span>
-														<span class="mexihc-deadline-new">June 8, 2026</span>
+														<span class="mexihc-deadline-old">May 25</span>
+														<span class="mexihc-deadline-new">June 8</span>
 													</template>
 												</span>
 													</div>
@@ -588,8 +588,8 @@
 }
 
 .mexihc-deadline-new {
-	font-style: normal;
-	font-weight: 700;
+	font-style: inherit;
+	font-weight: 400;
 }
 
 .mexihc-navbar.is-scrolled .mexihc-deadline-badge {
