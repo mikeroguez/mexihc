@@ -166,8 +166,17 @@
 															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
 															{{ $t("nav.cfp") }}
 														</span>
-														<span class="text-sm font-italic text-dark text-wrap">
-															{{ $t("nav.cfp_message") }}
+														<span class="text-sm font-italic text-dark text-wrap mexihc-deadline-change">
+															<template v-if="$i18n.locale === 'es'">
+																<span class="mexihc-deadline-badge">Extendida</span>
+																<span class="mexihc-deadline-old">1 de junio</span>
+																<span class="mexihc-deadline-new">15 de junio</span>
+															</template>
+															<template v-else>
+																<span class="mexihc-deadline-badge">Extended</span>
+																<span class="mexihc-deadline-old">June 1</span>
+																<span class="mexihc-deadline-new">June 15</span>
+															</template>
 														</span>
 													</div>
 												</div>

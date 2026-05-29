@@ -38,7 +38,7 @@ export default {
       },
     ]"
     :milestones="[
-      { label: 'Submission deadline', date: '2026-06-01' },
+      { label: 'Submission deadline', date: '2026-06-15' },
       { label: 'Notification of acceptance', date: '2026-08-07' },
       { label: 'Camera-ready final submissions', date: '2026-09-01' },
       {
@@ -53,6 +53,12 @@ export default {
     "
     all-dates-label="See all important dates"
   />
+
+  <p>
+    <strong>Update:</strong> the Call for Papers has been extended. The
+    submission deadline moved from <del>June 1, 2026</del> to
+    <strong>June 15, 2026</strong>.
+  </p>
 
   <p>
     We invite original contributions on the theme of HCI in the age of new
@@ -105,7 +111,7 @@ export default {
 
   <h2 id="cfp-dates">Important Dates</h2>
   <ul>
-    <li>Deadline for submissions: June 1, 2026</li>
+    <li><del>June 1, 2026</del> <strong>June 15, 2026</strong> – Deadline for submissions <strong>(extended)</strong></li>
     <li>Notification of acceptance: August 7, 2026</li>
     <li>Camera-ready final submissions: September 1, 2026</li>
     <li>MexIHC 2026: October 27-30, 2026</li>

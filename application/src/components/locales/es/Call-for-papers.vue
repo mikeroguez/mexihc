@@ -38,7 +38,7 @@ export default {
       },
     ]"
     :milestones="[
-      { label: 'Fecha límite para envíos', date: '2026-06-01' },
+      { label: 'Fecha límite para envíos', date: '2026-06-15' },
       { label: 'Notificación de aceptación', date: '2026-08-07' },
       { label: 'Versión final para publicación', date: '2026-09-01' },
       {
@@ -57,6 +57,12 @@ export default {
     "
     all-dates-label="Ver todas las fechas importantes"
   />
+
+  <p>
+    <strong>Actualización:</strong> la convocatoria de trabajos fue extendida.
+    La fecha límite para envíos pasó del <del>1 de junio de 2026</del> al
+    <strong>15 de junio de 2026</strong>.
+  </p>
 
   <p>
     Invitamos a contribuciones originales sobre el tema de la IHC en la era de
@@ -110,7 +116,7 @@ export default {
 
   <h2 id="cfp-dates">Fechas importantes</h2>
   <ul>
-    <li>Fecha límite para envíos: 1 de junio de 2026</li>
+    <li><del>1 de junio de 2026</del> <strong>15 de junio de 2026</strong> – Fecha límite para envíos <strong>(extendida)</strong></li>
     <li>Notificación de aceptación: 7 de agosto de 2026</li>
     <li>
       Envío final de versión lista para la publicación: 1 de septiembre de 2026

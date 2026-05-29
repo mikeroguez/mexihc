@@ -1,22 +1,60 @@
 <script setup>
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import Tr from '@/i18n/translation'
 
-const calls = [
+const getLocalDateKey = () => {
+  const now = new Date()
+  const year = now.getFullYear()
+  const month = String(now.getMonth() + 1).padStart(2, '0')
+  const day = String(now.getDate()).padStart(2, '0')
+
+  return `${year}-${month}-${day}`
+}
+
+const todayKey = ref(getLocalDateKey())
+let dateRefreshTimer
+
+onMounted(() => {
+  dateRefreshTimer = window.setInterval(() => {
+    todayKey.value = getLocalDateKey()
+  }, 60 * 1000)
+})
+
+onBeforeUnmount(() => {
+  window.clearInterval(dateRefreshTimer)
+})
+
+const getCallStatus = (deadlineDate) => {
+  if (todayKey.value > deadlineDate) {
+    return {
+      statusLabel: 'Closed',
+      statusType: 'closed',
+    }
+  }
+
+  return {
+    statusLabel: 'Open',
+    statusType: 'open',
+  }
+}
+
+const calls = computed(() => [
   {
     key: 'cfp',
     title: 'Call for papers (CFP)',
     to: Tr.i18nRoute({ name: 'call-for-papers' }),
-    statusLabel: 'Open',
-    statusType: 'open',
+    ...getCallStatus('2026-06-15'),
     iconClass: 'fas fa-file-alt',
-    deadline: 'Submission deadline: June 1, 2026',
+    deadlinePrefix: 'Submission deadline:',
+    oldDeadline: 'June 1, 2026',
+    deadline: 'June 15, 2026',
+    deadlineBadge: 'Extended',
   },
   {
     key: 'cws',
     title: 'Call for workshops',
     to: Tr.i18nRoute({ name: 'call-for-workshops' }),
-    statusLabel: 'Open',
-    statusType: 'open',
+    ...getCallStatus('2026-06-08'),
     iconClass: 'fas fa-users-cog',
     deadlinePrefix: 'Proposal deadline:',
     oldDeadline: 'May 25, 2026',
@@ -27,8 +65,7 @@ const calls = [
     key: 'cwt',
     title: 'Call for tutorials',
     to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' }),
-    statusLabel: 'Open',
-    statusType: 'open',
+    ...getCallStatus('2026-06-01'),
     iconClass: 'fas fa-chalkboard-teacher',
     deadline: 'Proposal deadline: June 1, 2026',
   },
@@ -36,12 +73,11 @@ const calls = [
     key: 'sdc',
     title: 'Student Design Competition',
     to: Tr.i18nRoute({ name: 'student-design-competition' }),
-    statusLabel: 'Open',
-    statusType: 'open',
+    ...getCallStatus('2026-08-16'),
     iconClass: 'fas fa-lightbulb',
     deadline: 'Submission deadline: August 16, 2026',
   },
-]
+])
 </script>
 
 <template>
@@ -192,6 +228,12 @@ const calls = [
   border-color: rgba(135, 0, 88, 0.3);
   color: var(--mxh-wine);
   background: var(--mxh-wine-soft);
+}
+
+.call-card-status-closed {
+  border-color: rgba(1, 22, 56, 0.18);
+  color: rgba(1, 22, 56, 0.62);
+  background: rgba(1, 22, 56, 0.08);
 }
 
 .call-card-status-coming-soon {

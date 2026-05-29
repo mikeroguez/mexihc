@@ -25,6 +25,8 @@ const props = defineProps({
 const { locale } = useI18n()
 const showBackToAnchors = ref(false)
 const panelRef = ref(null)
+const todayTs = ref(getTodayTs())
+let dateRefreshTimer
 
 const copyByLocale = {
   es: {
@@ -67,11 +69,11 @@ const normalizedMilestones = computed(() => {
     .sort((a, b) => a.ts - b.ts || a.index - b.index)
 })
 
-const todayTs = computed(() => {
+function getTodayTs() {
   const now = new Date()
   now.setHours(0, 0, 0, 0)
   return now.getTime()
-})
+}
 
 const nextMilestone = computed(() => {
   return normalizedMilestones.value.find((item) => item.ts >= todayTs.value) || null
@@ -138,10 +140,14 @@ const scrollToAnchors = () => {
 
 onMounted(() => {
   handleScroll()
+  dateRefreshTimer = window.setInterval(() => {
+    todayTs.value = getTodayTs()
+  }, 60 * 1000)
   window.addEventListener('scroll', handleScroll, { passive: true })
 })
 
 onBeforeUnmount(() => {
+  window.clearInterval(dateRefreshTimer)
   window.removeEventListener('scroll', handleScroll)
 })
 </script>

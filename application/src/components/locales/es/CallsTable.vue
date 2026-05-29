@@ -1,22 +1,60 @@
 <script setup>
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import Tr from '@/i18n/translation'
 
-const calls = [
+const getLocalDateKey = () => {
+  const now = new Date()
+  const year = now.getFullYear()
+  const month = String(now.getMonth() + 1).padStart(2, '0')
+  const day = String(now.getDate()).padStart(2, '0')
+
+  return `${year}-${month}-${day}`
+}
+
+const todayKey = ref(getLocalDateKey())
+let dateRefreshTimer
+
+onMounted(() => {
+  dateRefreshTimer = window.setInterval(() => {
+    todayKey.value = getLocalDateKey()
+  }, 60 * 1000)
+})
+
+onBeforeUnmount(() => {
+  window.clearInterval(dateRefreshTimer)
+})
+
+const getCallStatus = (deadlineDate) => {
+  if (todayKey.value > deadlineDate) {
+    return {
+      statusLabel: 'Cerrada',
+      statusType: 'closed',
+    }
+  }
+
+  return {
+    statusLabel: 'Abierta',
+    statusType: 'open',
+  }
+}
+
+const calls = computed(() => [
   {
     key: 'cfp',
     title: 'Convocatoria de trabajos (CFP)',
     to: Tr.i18nRoute({ name: 'call-for-papers' }),
-    statusLabel: 'Abierta',
-    statusType: 'open',
+    ...getCallStatus('2026-06-15'),
     iconClass: 'fas fa-file-alt',
-    deadline: 'Fecha límite para envíos: 1 de junio de 2026',
+    deadlinePrefix: 'Fecha límite para envíos:',
+    oldDeadline: '1 de junio de 2026',
+    deadline: '15 de junio de 2026',
+    deadlineBadge: 'Extendida',
   },
   {
     key: 'cws',
     title: 'Convocatoria de talleres',
     to: Tr.i18nRoute({ name: 'call-for-workshops' }),
-    statusLabel: 'Abierta',
-    statusType: 'open',
+    ...getCallStatus('2026-06-08'),
     iconClass: 'fas fa-users-cog',
     deadlinePrefix: 'Fecha límite para propuestas:',
     oldDeadline: '25 de mayo de 2026',
@@ -27,8 +65,7 @@ const calls = [
     key: 'cwt',
     title: 'Convocatoria de tutoriales',
     to: Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' }),
-    statusLabel: 'Abierta',
-    statusType: 'open',
+    ...getCallStatus('2026-06-01'),
     iconClass: 'fas fa-chalkboard-teacher',
     deadline: 'Fecha límite para propuestas: 1 de junio de 2026',
   },
@@ -36,12 +73,11 @@ const calls = [
     key: 'sdc',
     title: 'Concurso de diseño estudiantil',
     to: Tr.i18nRoute({ name: 'student-design-competition' }),
-    statusLabel: 'Abierta',
-    statusType: 'open',
+    ...getCallStatus('2026-08-16'),
     iconClass: 'fas fa-lightbulb',
     deadline: 'Fecha límite para envíos: 16 de agosto de 2026',
   },
-]
+])
 </script>
 
 <template>
@@ -192,6 +228,12 @@ const calls = [
   border-color: rgba(135, 0, 88, 0.3);
   color: var(--mxh-wine);
   background: var(--mxh-wine-soft);
+}
+
+.call-card-status-closed {
+  border-color: rgba(1, 22, 56, 0.18);
+  color: rgba(1, 22, 56, 0.62);
+  background: rgba(1, 22, 56, 0.08);
 }
 
 .call-card-status-coming-soon {
