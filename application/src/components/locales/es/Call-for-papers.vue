@@ -38,7 +38,7 @@ export default {
       },
     ]"
     :milestones="[
-      { label: 'Fecha límite para envíos', date: '2026-06-15' },
+      { label: 'Fecha límite extendida para envíos', date: '2026-06-15' },
       { label: 'Notificación de aceptación', date: '2026-08-07' },
       { label: 'Versión final para publicación', date: '2026-09-01' },
       {

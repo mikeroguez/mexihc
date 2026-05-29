@@ -38,7 +38,7 @@ export default {
       },
     ]"
     :milestones="[
-      { label: 'Submission deadline', date: '2026-06-15' },
+      { label: 'Extended submission deadline', date: '2026-06-15' },
       { label: 'Notification of acceptance', date: '2026-08-07' },
       { label: 'Camera-ready final submissions', date: '2026-09-01' },
       {
