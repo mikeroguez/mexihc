@@ -1,8 +1,13 @@
-# MexIHC Versión 2026.1.7
+# MexIHC Versión 2026.1.8
 
 ## Sitio web para el MexIHC 2026
 
 Sitio web de difusión de MexIHC 2026, organizado por la [Asociación Mexicana de Interacción Humano-Computadora](https://www.amexihc.org/).
+
+
+### Versión actual
+
+La versión `2026.1.8` consolida las actualizaciones publicadas desde el commit `3e36ddf967bf91c90869ecce5eec909f19e21eec`: convocatorias de tutoriales, talleres, concurso de diseño estudiantil y coloquio de graduados; RSS por idioma y multilingüe; extensiones públicas de CFP y talleres; y sincronización de versión en paquetes y footer.
 
 ### Technology used
 

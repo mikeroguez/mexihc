@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.1.8] - 2026-06-03
+
+### Added
+- Nueva convocatoria del Coloquio de Graduados / Consorcio de Posgrado 2026 en español e inglés, con navegación interna, fechas importantes y responsables actualizados.
+- Concurso de Diseño Estudiantil 2026 en español e inglés, incluyendo RSS y responsables sincronizados con la página de organizadores.
+- Convocatoria de Talleres 2026 separada de Tutoriales, con plantilla oficial, fechas, responsables y entradas RSS.
+- Entradas RSS multilingües y por idioma para nuevas convocatorias y actualizaciones de fechas.
+
+### Changed
+- Extensión pública de la convocatoria de trabajos: fecha límite actualizada del 1 de junio al 15 de junio de 2026 en UI, tabla de convocatorias, navbar y RSS.
+- Extensión pública de la convocatoria de talleres: fecha límite actualizada del 25 de mayo al 8 de junio de 2026 y notificación al 12 de junio de 2026.
+- Tabla de convocatorias con estados automáticos de abierta/cerrada según la fecha límite.
+- Navbar y footer sincronizados con las convocatorias publicadas y sus mensajes de fecha.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.8`.
+
+### Fixed
+- Correcciones de contenido y assets en organizadores y convocatorias, incluyendo la fotografía de Marcela D. Rodríguez y responsables del concurso estudiantil.
+- Ajustes de RSS para mantener enlaces, fechas y feeds por idioma consistentes.
+
 ## [2026.1.7] - 2026-05-06
 
 ### Changed
