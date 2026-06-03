@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/en/</link>
     <description>Official RSS feed for MexIHC 2026 news and updates in English.</description>
     <language>en-US</language>
-    <lastBuildDate>Fri, 29 May 2026 19:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 18:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-en.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/</link>
     </image>
+
+    <item>
+      <title>Call for Graduate Colloquium is open for MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/graduate-colloquium</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/en/graduate-colloquium</guid>
+      <description>Check the MexIHC 2026 Graduate Colloquium call. The submission deadline is August 9, 2026.</description>
+      <pubDate>Wed, 03 Jun 2026 18:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Call for Papers deadline extended for MexIHC 2026</title>

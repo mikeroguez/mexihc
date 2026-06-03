@@ -22,146 +22,86 @@ export default {
         :links="[
             { label: 'Objective', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-objective' }) },
             { label: 'Participation', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-participation' }) },
-            { label: 'Paper requirements', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-paper-requirements' }) },
-            { label: 'Important Dates', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' }) }
+            { label: 'Submission materials', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-materials' }) },
+            { label: 'Submission and selection', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-submission' }) },
+            { label: 'Important dates', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' }) }
         ]"
         :milestones="[
-            { label: 'Submission deadline', date: '2024-08-15' },
-            { label: 'Notification of acceptance', date: '2024-09-13' },
-            { label: 'Camera-ready final submissions', date: '2024-09-20' },
-            { label: 'MexIHC 2024 starts', date: '2024-11-06', kind: 'conference-start' },
-            { label: 'MexIHC 2024 ends', date: '2024-11-08', kind: 'conference-end' }
+            { label: 'Submission deadline', date: '2026-08-09' },
+            { label: 'Acceptance notification', date: '2026-09-04' },
+            { label: 'Camera-ready submission', date: '2026-09-13' },
+            { label: 'MexIHC 2026 starts', date: '2026-10-27', kind: 'conference-start' },
+            { label: 'MexIHC 2026 ends', date: '2026-10-30', kind: 'conference-end' }
         ]"
         :all-dates-to="Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' })"
         all-dates-label="See all important dates"
     />
 
     <p>
-        We warmly welcome both master's and doctoral students currently enrolled in graduate
-        programs focused on human-computer interaction (HCI) to submit their research
-        proposals for consideration in the Graduate Colloquium of the X Mexican Conference
-        on Human-Computer Interaction (MexIHC 2024).
+        We warmly welcome master's and doctoral students currently enrolled in graduate programs focused on <strong>Human-Computer Interaction (HCI)</strong> to submit their research proposals for consideration in the Graduate Colloquium of the <strong>XI Mexican Conference on Human-Computer Interaction (MexIHC 2026)</strong>.
     </p>
 
     <h2 id="cgc-objective">Objective</h2>
     <p>
-        The MexIHC Graduate Colloquium offers graduate students a unique platform to
-        present their research to Mexico's Human-Computer Interaction (HCI) academic
-        community, fostering connections with fellow graduate scholars, networking
-        opportunities, and mentorship from distinguished international leaders in HCI, spanning
-        both industry and academia.
+        The MexIHC Graduate Colloquium offers graduate students a unique platform to present their research projects to Mexico's HCI academic community. This space fosters connections with other graduate students, creates networking opportunities, and provides personalized mentorship from distinguished international leaders in the field, from both industry and academia.
     </p>
 
-    <h2 id="cgc-participation">Participating in the MexIHC Graduate Consortium</h2>
-
+    <h2 id="cgc-participation">Participation in the Graduate Colloquium</h2>
     <p>
-        If you're interested in joining the graduate consortium, you'll need to fill out a form
-        providing essential details about yourself, your research, your motivations for
-        participating, and submit a four-page abstract outlining your work. As a participant, you
-        should be ready to:
+        Interested students should provide essential information and a four-page abstract describing their research work. As a participant, you should be prepared to:
     </p>
 
     <ul>
-        <li>Deliver a concise 10-minute presentation on your research during the consortium.</li>
-        <li>Engage in lively group discussions centered around your work and that of your peers.</li>
-        <li>Benefit from personalized mentoring sessions led by esteemed HCI researchers.</li>
+        <li><strong>Concise presentation:</strong> deliver a 10-minute presentation about your research during the event.</li>
+        <li><strong>Academic discussion:</strong> actively participate in group feedback sessions centered on your work and your peers' work.</li>
+        <li><strong>Mentorship:</strong> benefit from personalized advice led by HCI researchers.</li>
     </ul>
 
-    <h2>Preparing the submission materials to the graduate consortium</h2>
+    <h2 id="cgc-materials">Guidelines for Preparing Materials</h2>
 
+    <h3 id="cgc-paper-requirements">Paper requirements</h3>
     <p>
-        The research proposal must be written in English or Spanish, using <a
-            href="https://mexihc.org/aihc_template.zip" class="uline">the AmexIHC
-            "Avances en Interacción Humano-Computadora" Journal Template</a> (up to 4 pages), and
-        the student presenting at the colloquium should be the first author, the accepted papers
-        will be published in the <a href="https://publicaciones.amexihc.org/" class="uline">AMexIHC journal</a>.
+        Applicants must submit a paper of <strong>up to 4 pages</strong>, including figures, tables, and references, explaining the development of their research. The student presenting at the colloquium must be listed as the <strong>first author</strong>.
     </p>
     <p>
-        Student participants should be prepared to give a <strong>10-minute talk during the
-            colloquium about their work in progress</strong>. Proposed experiments if appropriate; Any
-        preliminary evaluation and findings are welcomed, but this is not required. At the end of
-        each talk, a group discussion will be held.
-    </p>
-
-    <p>
-        We encourage you to read the
-        <RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })" class="uline">
-            Accessibility recommendations for authors.
-        </RouterLink>
-    </p>
-
-    <h2 id="cgc-paper-requirements">Paper requirements</h2>
-    <p>
-        Applicants must submit via the online form a 4-page paper explaining their research.
-    </p>
-
-    <ol>
-        <li>
-            <p>
-                <strong>Research Explanation.</strong> While final versions of accepted papers will be
-                published in the AMexIHC journal, on the Graduate Consortium website and
-                publicized in the MexIHC community.
-            </p>
-            <p>
-                The research explanation should include:
-            </p>
-            <ul>
-                <li>Motivation for the proposed research</li>
-                <li>Background and related work (including key references)</li>
-                <li>Description of proposed research, including key research questions and/or
-                    hypothesis, as well as the planned methodology to be used for
-                    investigating</li>
-                <li>Specific research issues and/or challenges the student would like to
-                    discuss</li>
-            </ul>
-        </li>
-        <li>
-            <p>
-                <strong>Format Requirements.</strong> Submitted papers must be written in English or Spanish,
-                formatted according to Avances en Interacción Humano-Computadora
-                (AMexIHC) format guidelines, and submitted as a single PDF file (embedding all
-                required fonts). The paper should be no more than 4 pages in length including
-                figures and references. The title and the abstract must be written in English if the
-                paper is in Spanish.
-            </p>
-        </li>
-        <li>
-            <p>
-                <strong>Anonymous submission.</strong> MexIHC 2024 will utilize a fully-anonymous review
-                process for Full and Short Papers, in which the authors must anonymize their
-                paper submissions. You should not anonymize references to your prior work
-                (these are needed as part of the review process). Rather, you should refer to all
-                prior work in the third person. While it may not be possible to remove all clues to
-                who the authors are, we expect authors to do their best.
-            </p>
-        </li>
-    </ol>
-
-    <h2>Submission guidelines</h2>
-    <p>
-        Students are responsible for ensuring that their submissions adhere to standard
-        formatting and are printable on a standard printer. The Program Committee members of
-        the Graduate Consortium will review all submissions.
+        Accepted proposals will be published in the <a href="https://publicaciones.amexihc.org/" class="uline"><em>Avances en Interacción Humano-Computadora</em> (AMexIHC)</a> journal and shared on the event website.
     </p>
     <p>
-        Please use the <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4K357Pa9qA06M9HCRYzJfcK_9HVA_sVQKGw3b3wKza5HzCQ/viewform" class="uline">Graduate Consortium submission form</a> to submit proposals.
+        <strong>Progress note:</strong> experiments may be proposed where applicable, and preliminary evaluations and findings are welcome, but they are not required for submission. Authors are encouraged to use the <a href="https://mexihc.org/aihc_template.zip" class="uline">AMexIHC journal template</a>.
     </p>
 
-    <h2>Selection criteria</h2>
+    <p>The paper should include:</p>
+    <ul>
+        <li>Motivation for the proposed research.</li>
+        <li>Background and related work, including key references.</li>
+        <li>Description of the proposed research, research questions or hypotheses, and planned methodology.</li>
+        <li>Specific issues, challenges, or research questions the student would like to discuss during the colloquium.</li>
+    </ul>
+
+    <h3>Format requirements</h3>
+    <ul>
+        <li>The paper may be written in Spanish or English.</li>
+        <li>It must be submitted as a single PDF file with embedded fonts.</li>
+        <li>If the paper is written in Spanish, the title and abstract must also be provided in English.</li>
+        <li>The maximum length is 4 pages, including figures, tables, and references.</li>
+    </ul>
+
+    <h2 id="cgc-submission">Submission Guidelines and Selection Criteria</h2>
     <p>
-        This call welcomes submissions from all graduate students. Submissions will be
-        evaluated based on a four-page research summary. The primary criteria for selecting
-        works will be clarity and quality of the submitted paper.
+        Students are responsible for ensuring that their submissions follow the requested format and are printable on a standard printer. Members of the Graduate Colloquium Program Committee will review all submissions.
+    </p>
+    <p>
+        This call is open to the entire graduate student community. Abstracts will be evaluated based on conceptual and methodological clarity, the technical quality of the written proposal, and the potential impact of the project in HCI.
     </p>
 
     <h2 id="cgc-dates">Important dates</h2>
     <ul>
-        <li>Submission deadline (12pm (noon) UTC-6): August <del>8th</del> 15th, 2024 (extended)</li>
-        <li>Notification of acceptance: September 6th, 2024</li>
-        <li>Camera-ready submission: September 13th, 2024</li>
-        <li>Consortium: TBD</li>
+        <li><strong>August 9, 2026</strong> - Submission deadline</li>
+        <li><strong>August 18-31, 2026</strong> - Review period</li>
+        <li><strong>September 4, 2026</strong> - Acceptance notification</li>
+        <li><strong>September 13, 2026</strong> - Camera-ready submission</li>
+        <li><strong>To be determined</strong> - Graduate Colloquium</li>
     </ul>
-
 
     <h2 class="my-4">{{ $t("organizers.graduate_colloquium_chairs_title") }}</h2>
     <div class="row">
@@ -169,20 +109,15 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/valeria.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/abdel.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
-                    <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/people/valeria.png&quot;);">
-                    </div>
+                    <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/abdel.png&quot;);"></div>
                 </template>
                 <template #name>
-                    Valeria Soto Mendoza
+                    David Abdel Mejía
                 </template>
                 <template #institution>
-                    CIMA Universidad Autónoma de Coahuila, MX
-                </template>
-                <template #email>
-                    gc.2024@mexihc.org
+                    Universidad Autónoma de Baja California
                 </template>
             </OrganizerItem>
         </div>
@@ -191,20 +126,15 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/raymundo.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/ramonRene.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
-                    <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/people/raymundo.png&quot;);">
-                    </div>
+                    <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/ramonRene.png&quot;);"></div>
                 </template>
                 <template #name>
-                    Raymundo Cornejo
+                    Ramón Palacio
                 </template>
                 <template #institution>
-                    Universidad Autónoma de Chihuahua, MX
-                </template>
-                <template #email>
-                    gc.2024@mexihc.org
+                    Instituto Tecnológico de Sonora
                 </template>
             </OrganizerItem>
         </div>
