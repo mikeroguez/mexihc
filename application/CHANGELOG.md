@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.1.9] - 2026-06-03
+
+### Fixed
+- Corregidos los enlaces a la plantilla de la revista AMexIHC en todas las convocatorias publicadas para usar `http://mexihc.org/aihc_template.docx`.
+- Corregidos los enlaces a la revista AIHC en las convocatorias para usar `https://revistaaihc.mx/index.php/aihc`.
+- Reparados enlaces de publicación en la convocatoria de pósteres para que el texto de la revista quede dentro del vínculo.
+
+### Changed
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.9`.
+
 ## [2026.1.8] - 2026-06-03
 
 ### Added

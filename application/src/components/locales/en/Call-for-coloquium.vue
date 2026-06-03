@@ -64,10 +64,10 @@ export default {
         Applicants must submit a paper of <strong>up to 4 pages</strong>, including figures, tables, and references, explaining the development of their research. The student presenting at the colloquium must be listed as the <strong>first author</strong>.
     </p>
     <p>
-        Accepted proposals will be published in the <a href="https://publicaciones.amexihc.org/" class="uline"><em>Avances en Interacción Humano-Computadora</em> (AMexIHC)</a> journal and shared on the event website.
+        Accepted proposals will be published in the <a href="https://revistaaihc.mx/index.php/aihc" class="uline"><em>Avances en Interacción Humano-Computadora</em> (AMexIHC)</a> journal and shared on the event website.
     </p>
     <p>
-        <strong>Progress note:</strong> experiments may be proposed where applicable, and preliminary evaluations and findings are welcome, but they are not required for submission. Authors are encouraged to use the <a href="https://mexihc.org/aihc_template.zip" class="uline">AMexIHC journal template</a>.
+        <strong>Progress note:</strong> experiments may be proposed where applicable, and preliminary evaluations and findings are welcome, but they are not required for submission. Authors are encouraged to use the <a href="http://mexihc.org/aihc_template.docx" class="uline">AMexIHC journal template</a>.
     </p>
 
     <p>The paper should include:</p>

@@ -100,7 +100,7 @@ export default {
   <p>
     Submissions for full and short papers written in English or Spanish should
     use
-    <a href="https://mexihc.org/aihc_template.docx" class="uline"
+    <a href="http://mexihc.org/aihc_template.docx" class="uline"
       >the AmexIHC “Avances en Interacción Humano-Computadora” Journal
       Template</a
     >. The submission Web page for MexIHC 2026 is
@@ -132,7 +132,7 @@ export default {
 
   <p>
     All accepted full and short papers will be published in a Special Issue of
-    <a href="https://revistaaihc.mx/" class="uline"
+    <a href="https://revistaaihc.mx/index.php/aihc" class="uline"
       >the AMexIHC journal Avances en Interacción Humano-Computadora</a
     >.
   </p>

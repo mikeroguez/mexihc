@@ -60,12 +60,12 @@ export default {
     <ul>
         <li>
             Format their papers (four pages maximum) following the official <a class="uline"
-                href="https://mexihc.org/aihc_template.zip">AmexIHC Journal Format</a>.
+                href="http://mexihc.org/aihc_template.docx">AmexIHC Journal Format</a>.
         </li>
         <li>
             Accepted papers will be published in the <a class="uline"
-                href="https://revistaaihc.mx/"></a>AMexIHC publication “Avances en Interacción
-            Humano-Computadora”.
+                href="https://revistaaihc.mx/index.php/aihc">AMexIHC publication “Avances en Interacción
+                Humano-Computadora”</a>.
         </li>
         <li>
             Proposals should be submitted by email with subject “MexIHC 2024 Poster” to: posters.2024@mexihc.org

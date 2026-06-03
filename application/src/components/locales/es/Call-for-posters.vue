@@ -60,13 +60,13 @@ export default {
     </P>
     <ul>
         <li>
-            Cumplir con el <a class="uline" href="https://mexihc.org/aihc_template.zip">formato oficial de revista
+            Cumplir con el <a class="uline" href="http://mexihc.org/aihc_template.docx">formato oficial de revista
                 AmexIHC</a> (hasta 4 páginas máximo).
         </li>
         <li>
             Los trabajos aceptados serán publicados en la <a class="uline"
-                href="https://revistaaihc.mx/"></a>Revista de la AMexIHC “Avances en Interacción
-            Humano-Computadora”.
+                href="https://revistaaihc.mx/index.php/aihc">Revista de la AMexIHC “Avances en Interacción
+                Humano-Computadora”</a>.
         </li>
         <li>
             Las propuestas deberán enviarse por correo electrónico con asunto “Póster MexIHC 2024” a:
