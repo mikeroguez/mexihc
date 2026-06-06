@@ -94,6 +94,14 @@ export default {
         This call is open to the entire graduate student community. Abstracts will be evaluated based on conceptual and methodological clarity, the technical quality of the written proposal, and the potential impact of the project in HCI.
     </p>
 
+    <p>
+        We invite you to read the
+        <RouterLink class="uline" :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })">
+            Accessibility Recommendations for Authors
+        </RouterLink>
+        when preparing your submission.
+    </p>
+
     <h2 id="cgc-dates">Important dates</h2>
     <ul>
         <li><strong>August 9, 2026</strong> - Submission deadline</li>

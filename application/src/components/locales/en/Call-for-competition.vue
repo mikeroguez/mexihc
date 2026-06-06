@@ -95,6 +95,14 @@ export default {
 
     <p>Please send proposals to <strong>sdc.2026@mexihc.org</strong></p>
 
+    <p>
+        We invite you to read the
+        <RouterLink class="uline" :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })">
+            Accessibility Recommendations for Authors
+        </RouterLink>
+        when preparing your submission.
+    </p>
+
     <h2 id="sdc-selection">Selection Process</h2>
     <p>Submissions will be evaluated according to the following criteria:</p>
     <ul>

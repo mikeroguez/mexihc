@@ -6,7 +6,7 @@
     <description>Official multilingual RSS feed for MexIHC 2026 updates. Use rss-es.xml and
       rss-en.xml for language-specific feeds.</description>
     <language>en-US</language>
-    <lastBuildDate>Sat, 06 Jun 2026 18:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 23:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss.xml" rel="self" type="application/rss+xml" />
     <atom:link href="https://www.mexihc.org/2026/rss-es.xml" rel="alternate"
@@ -18,6 +18,54 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/</link>
     </image>
+
+    <item>
+      <title>[ES] Recomendaciones de accesibilidad para autores de MexIHC 2026 actualizadas</title>
+      <link>https://www.mexihc.org/2026/es/accessibility-recommendations-for-authors</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/accessibility-recommendations-for-authors</guid>
+      <description>Consulta las recomendaciones de accesibilidad para autores de MexIHC 2026, alineadas con WCAG 2.2. Incluye guías de lenguaje inclusivo, documentos accesibles, presentaciones y videos con subtítulos.</description>
+      <pubDate>Sat, 06 Jun 2026 23:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] MexIHC 2026 Accessibility Recommendations for Authors updated</title>
+      <link>https://www.mexihc.org/2026/en/accessibility-recommendations-for-authors</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/en/accessibility-recommendations-for-authors</guid>
+      <description>Check the updated accessibility recommendations for MexIHC 2026 authors, aligned with WCAG 2.2. Includes inclusive language guidance, accessible documents, presentations, and videos with subtitles.</description>
+      <pubDate>Sat, 06 Jun 2026 23:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[ES] Gillian Hayes, segunda ponente principal confirmada de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/keynote-speakers#gillian-hayes</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/keynote-speakers#gillian-hayes</guid>
+      <description>Conoce la charla y biografía de Gillian Hayes, segunda ponente principal confirmada de MexIHC 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 21:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] Gillian Hayes announced as the second MexIHC 2026 keynote speaker</title>
+      <link>https://www.mexihc.org/2026/en/keynote-speakers#gillian-hayes</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/en/keynote-speakers#gillian-hayes</guid>
+      <description>Read the talk abstract and biography of Gillian Hayes, the second confirmed keynote speaker for MexIHC 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 21:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[ES] Roberto Martínez-Maldonado, primer ponente principal confirmado de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/keynote-speakers#roberto-martinez-maldonado</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/keynote-speakers#roberto-martinez-maldonado</guid>
+      <description>Conoce la charla y biografía de Roberto Martínez-Maldonado, primer ponente principal confirmado de MexIHC 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 20:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] Roberto Martínez-Maldonado announced as the first MexIHC 2026 keynote speaker</title>
+      <link>https://www.mexihc.org/2026/en/keynote-speakers#roberto-martinez-maldonado</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/en/keynote-speakers#roberto-martinez-maldonado</guid>
+      <description>Read the talk abstract and biography of Roberto Martínez-Maldonado, the first confirmed keynote speaker for MexIHC 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 20:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>[ES] Convocatoria a la sesión de pósteres abierta para MexIHC 2026</title>

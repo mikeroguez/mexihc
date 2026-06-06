@@ -114,6 +114,14 @@ export default {
     >.
   </p>
 
+  <p>
+    Te invitamos a leer las
+    <RouterLink class="uline" :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })">
+      Recomendaciones de accesibilidad para autores
+    </RouterLink>
+    al preparar tu envío.
+  </p>
+
   <h2 id="cfp-dates">Fechas importantes</h2>
   <ul>
     <li><del>1 de junio de 2026</del> <strong>15 de junio de 2026</strong> – Fecha límite para envíos <strong>(extendida)</strong></li>

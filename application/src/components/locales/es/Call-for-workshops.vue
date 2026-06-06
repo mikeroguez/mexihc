@@ -98,6 +98,14 @@ export default {
         Las propuestas deberán enviarse por correo a <a href="mailto:ws.2026@mexihc.org">ws.2026@mexihc.org</a>. Para preparar el documento, utilice el <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">template oficial de talleres</a>.
     </p>
 
+    <p>
+        Te invitamos a leer las
+        <RouterLink class="uline" :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })">
+            Recomendaciones de accesibilidad para autores
+        </RouterLink>
+        al preparar tu propuesta.
+    </p>
+
     <h2 class="my-4">Responsables de talleres</h2>
     <div class="row">
         <div class="col-md-4">

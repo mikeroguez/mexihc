@@ -14,6 +14,11 @@ export default {
 }
 </script>
 
+<script setup>
+import { RouterLink } from 'vue-router'
+import Tr from '@/i18n/translation'
+</script>
+
 <template>
     <InPageNavigationPanel
         :links="[
@@ -67,9 +72,9 @@ export default {
         </li>
         <li>
             Te invitamos a leer las
-            <a class="uline" href="https://www.mexihc.org/2024/es/accessibility-recommendations-for-authors">
+            <RouterLink class="uline" :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })">
                 Recomendaciones de accesibilidad para autores
-            </a>.
+            </RouterLink>.
         </li>
     </ul>
     <p>

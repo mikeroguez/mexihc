@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/es/</link>
     <description>Canal RSS oficial de noticias y actualizaciones de MexIHC 2026 en español.</description>
     <language>es-MX</language>
-    <lastBuildDate>Sat, 06 Jun 2026 18:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 23:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-es.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,30 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/es/</link>
     </image>
+
+    <item>
+      <title>Recomendaciones de accesibilidad para autores de MexIHC 2026 actualizadas</title>
+      <link>https://www.mexihc.org/2026/es/accessibility-recommendations-for-authors</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/accessibility-recommendations-for-authors</guid>
+      <description>Consulta las recomendaciones de accesibilidad para autores de MexIHC 2026, alineadas con WCAG 2.2. Incluye guías de lenguaje inclusivo, documentos accesibles, presentaciones y videos con subtítulos.</description>
+      <pubDate>Sat, 06 Jun 2026 23:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Gillian Hayes, segunda ponente principal confirmada de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/keynote-speakers#gillian-hayes</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/keynote-speakers#gillian-hayes</guid>
+      <description>Conoce la charla y biografía de Gillian Hayes, segunda ponente principal confirmada de MexIHC 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 21:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Roberto Martínez-Maldonado, primer ponente principal confirmado de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/keynote-speakers#roberto-martinez-maldonado</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/keynote-speakers#roberto-martinez-maldonado</guid>
+      <description>Conoce la charla y biografía de Roberto Martínez-Maldonado, primer ponente principal confirmado de MexIHC 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 20:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Convocatoria a la sesión de pósteres abierta para MexIHC 2026</title>

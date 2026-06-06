@@ -105,6 +105,14 @@ export default {
         La propuesta puede redactarse en español. Las propuestas deben enviarse vía correo electrónico a los coordinadores.
     </p>
 
+    <p>
+        Te invitamos a leer las
+        <RouterLink class="uline" :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })">
+            Recomendaciones de accesibilidad para autores
+        </RouterLink>
+        al preparar tu propuesta.
+    </p>
+
     <h2>Tras aceptación</h2>
     <p>
         Los organizadores de los tutoriales aceptados deberán promocionarlos (así como la conferencia en general) entre sus contactos y utilizar listas de correo adicionales y accesibles. Los coordinadores de tutoriales les indicarán la fecha y hora de impartición de cada tutorial, así como la fecha límite para compartir el material que será utilizado.

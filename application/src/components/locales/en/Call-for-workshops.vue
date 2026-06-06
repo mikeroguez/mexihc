@@ -98,6 +98,14 @@ export default {
         Proposals must be submitted by email to <a href="mailto:ws.2026@mexihc.org">ws.2026@mexihc.org</a>. To prepare the document, use the <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">official workshop template</a>.
     </p>
 
+    <p>
+        We invite you to read the
+        <RouterLink class="uline" :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })">
+            Accessibility Recommendations for Authors
+        </RouterLink>
+        when preparing your proposal.
+    </p>
+
     <h2 class="my-4">Workshops Chairs</h2>
     <div class="row">
         <div class="col-md-4">

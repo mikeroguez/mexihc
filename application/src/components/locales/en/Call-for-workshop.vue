@@ -105,6 +105,14 @@ export default {
         Proposals may be written in Spanish or English. Proposals should be sent via email to the coordinators.
     </p>
 
+    <p>
+        We invite you to read the
+        <RouterLink class="uline" :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })">
+            Accessibility Recommendations for Authors
+        </RouterLink>
+        when preparing your proposal.
+    </p>
+
     <h2>After Acceptance</h2>
     <p>
         Organizers of accepted tutorials should promote them (as well as the conference in general) among their contacts and use additional and accessible mailing lists. Tutorial coordinators will indicate the date and time of each tutorial delivery, as well as the deadline for sharing the material to be used.

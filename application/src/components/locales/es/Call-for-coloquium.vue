@@ -94,6 +94,14 @@ export default {
         Esta convocatoria está abierta a toda la comunidad estudiantil de posgrado. Los resúmenes serán evaluados con base en la claridad conceptual y metodológica, la calidad técnica de la propuesta escrita y el potencial de impacto del proyecto en el área de HCI.
     </p>
 
+    <p>
+        Te invitamos a leer las
+        <RouterLink class="uline" :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })">
+            Recomendaciones de accesibilidad para autores
+        </RouterLink>
+        al preparar tu envío.
+    </p>
+
     <h2 id="cgc-dates">Fechas importantes</h2>
     <ul>
         <li><strong>9 de agosto de 2026</strong> - Fecha límite de envío</li>
