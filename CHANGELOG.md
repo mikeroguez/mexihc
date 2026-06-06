@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.1.15] - 2026-06-06
+
+### Changed
+- Tarjeta del ponente principal ahora es _sticky_ durante el scroll de la biografía, para que la fotografía permanezca visible al leer el texto largo.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.15`.
+
 ## [2026.1.14] - 2026-06-06
 
 ### Added
