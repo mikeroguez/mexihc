@@ -33,7 +33,7 @@
         "cgc": "Call for graduate colloquium",
         "cgc_message": "Deadline: August 9, 2026",
         "accessibility_for_autors": "Accessibility recommendations for authors",
-        "accessibility_for_autors_message": "To be announced",
+        "accessibility_for_autors_message": "Help us maximize the experience for everyone",
         "for_attendees_title": "For Attendees",
         "for_attendees": "For attendees",
         "getting_started_title": "Getting Started",
@@ -47,7 +47,7 @@
         "schedule": "Schedule",
         "schedule_message": "Check the schedule of the conference",
         "keynotes": "Keynote speakers",
-        "keynotes_message": "From de international HCI community",
+        "keynotes_message": "Meet the invited speakers sharing leading perspectives on HCI.",
         "accepted_papers": "Accepted papers",
         "accepted_papers_message": "",
         "pending": "Pending",
@@ -131,10 +131,10 @@
     },
     "accessibility": {
         "title": "Accessibility Recommendations for Authors",
-        "language_recommendations": "Language recommendations",
-        "accessible_document": "Accessible document author recommendations",
-        "accessible_slide": "Accessible slide author recommendations",
-        "accessible_video": "Accessible video author recommendations"
+        "language_recommendations": "Inclusive Language",
+        "accessible_document": "Accessible Documents",
+        "accessible_slide": "Accessible Presentations",
+        "accessible_video": "Videos with Subtitles"
     },
     "calls": {
         "title": "Call for Participation",
@@ -150,7 +150,7 @@
     },
     "home": {
         "keynotes": "Keynote speakers",
-        "keynotes_message": "The conference program includes great speakers from the international HCI community.",
+        "keynotes_message": "Meet the invited speakers sharing leading perspectives on HCI.",
         "sponsors": "Special Thanks",
         "sponsors_message": "We want to thank to our sponsors.",
         "virtual_venues": "Virtual Venues Industry Day",
