@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.1.10] - 2026-06-06
+
+### Added
+- Nueva convocatoria a la sesión de pósteres de MexIHC 2026 en español e inglés, con fechas importantes, lineamientos de envío, revisión, asistencia y responsables.
+- Entradas RSS para la convocatoria de pósteres en los feeds en español, inglés y multilingüe.
+
+### Changed
+- Navbar y tabla de convocatorias actualizados con la fecha límite del 30 de agosto de 2026 y acceso a la convocatoria de pósteres.
+- Perfiles de responsables de pósteres alineados con el estilo y tamaño de las demás convocatorias.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.10`.
+
+### Fixed
+- Corregido el enlace de recomendaciones de accesibilidad que interrumpía el renderizado del contenido y las tarjetas de responsables.
+- Normalizados los enlaces HTTPS de plantillas de todas las convocatorias para descargar archivos ZIP: plantilla AMexIHC general y plantilla específica de talleres.
+
 ## [2026.1.9] - 2026-06-03
 
 ### Fixed

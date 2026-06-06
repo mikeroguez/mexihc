@@ -4,7 +4,7 @@ Official website for MexIHC 2026, built with Vue 3 and Vite.
 
 ## Current Version
 
-- `2026.1.6`
+- `2026.1.10`
 
 ## Requirements
 
@@ -52,5 +52,6 @@ npm run deploy
 
 ## Release Notes
 
-- Root changelog: `./CHANGELOG.md`
+- Application changelog: `./CHANGELOG.md`
+- Repository changelog: `../CHANGELOG.md`
 - Public changelog path: `public/CHANGELOG.md`
