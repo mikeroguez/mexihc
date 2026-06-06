@@ -206,6 +206,11 @@ export default {
                                     {{ $t("nav.cgc") }}
                                 </RouterLink>
                             </li>
+                            <li class="nav-item">
+                                <RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })" class="nav-link uline">
+                                    {{ $t("nav.accessibility_for_autors") }}
+                                </RouterLink>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -215,7 +220,9 @@ export default {
                         <h3 class="text-gradient text-primary text-sm">{{ $t("nav.for_attendees_title") }}</h3>
                         <ul class="flex-column ms-n3 nav">
                             <li class="nav-item">
-                                <span class="nav-link"><em>{{ $t("nav.coming_soon") }}</em></span>
+                                <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers' })" class="nav-link uline">
+                                    {{ $t("nav.keynotes") }}
+                                </RouterLink>
                             </li>
                         </ul>
                     </div>
@@ -233,7 +240,7 @@ export default {
                             {{ $t("nav.copyright") }}
                         </p>
                         <p class="my-0  text-sm">
-                            <a class="uline" :href="`${baseUrl}CHANGELOG.md`">v2026.1.10</a>
+                            <a class="uline" :href="`${baseUrl}CHANGELOG.md`">v2026.1.14</a>
                         </p>
                     </div>
                 </div>

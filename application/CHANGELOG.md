@@ -5,6 +5,50 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.1.14] - 2026-06-06
+
+### Added
+- Entradas RSS de las recomendaciones de accesibilidad para autores en los tres feeds (ES, EN y multilingüe).
+- Enlace a las recomendaciones de accesibilidad para autores en todas las convocatorias activas: artículos, pósteres, coloquio de graduados, concurso de diseño estudiantil, talleres y tutoriales (ES y EN).
+
+### Changed
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.14`.
+
+## [2026.1.13] - 2026-06-06
+
+### Changed
+- Página de recomendaciones de accesibilidad para autores (ES/EN) renovada con contenido actualizado: lenguaje inclusivo con referencia a Sharif et al. (ASSETS 2022), checklists por sección (documentos, presentaciones, videos) con ítems detallados, botones de herramientas por aplicación, y cajas informativas para LaTeX, Apple Pages/Keynote y verificación de PDF.
+- Labels de navegación interna de la página de accesibilidad actualizados a nombres cortos en ES y EN.
+- Estilos de los nuevos elementos integrados con la paleta de colores y variables CSS del sitio (`--mexihc-indigo`, `--mexihc-magenta`, `--mexihc-paper`, `--mexihc-mist`, `--mexihc-slate`).
+- Nota de fuentes (WCAG 2.2, ACM SIGACCESS) reemplaza al badge anterior.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.13`.
+
+## [2026.1.12] - 2026-06-06
+
+### Added
+- Gillian Hayes anunciada como segunda ponente principal de MexIHC 2026, con resumen de la charla y biografía en español e inglés.
+- Tarjeta bilingüe de Gillian Hayes en el home con imagen genérica y enlace directo a su perfil.
+- Entradas RSS del anuncio de Gillian Hayes en los feeds en español, inglés y multilingüe.
+
+### Changed
+- Índice de la página de ponentes principales migrado al componente compartido de navegación interna usado por las convocatorias.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.12`.
+
+## [2026.1.11] - 2026-06-06
+
+### Added
+- Roberto Martínez-Maldonado anunciado como primer ponente principal de MexIHC 2026, con fotografía, resumen de la charla y biografía en español e inglés.
+- Entradas RSS del anuncio del keynote en los feeds en español, inglés y multilingüe.
+- Accesos a la página de ponentes principales desde el navbar y el footer.
+
+### Changed
+- Sección de ponentes principales activada en el home con una tarjeta bilingüe enlazada al perfil completo.
+- Página de ponentes actualizada para mostrar únicamente la información confirmada de la edición 2026.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.11`.
+
+### Fixed
+- Corregida la carga dinámica del componente de ponentes en el home.
+
 ## [2026.1.10] - 2026-06-06
 
 ### Added
