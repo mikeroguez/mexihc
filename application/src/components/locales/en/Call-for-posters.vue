@@ -1,7 +1,6 @@
 <script>
-import OrganizerItem from '@/components/OrganizerItem.vue';
-import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue';
-
+import OrganizerItem from '@/components/OrganizerItem.vue'
+import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue'
 import Tr from '@/i18n/translation'
 
 export default {
@@ -10,9 +9,7 @@ export default {
         InPageNavigationPanel
     },
     setup() {
-        return {
-            Tr
-        }
+        return { Tr }
     }
 }
 </script>
@@ -26,76 +23,69 @@ export default {
             { label: 'Attendance', to: Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-attendance' }) }
         ]"
         :milestones="[
-            { label: 'Submission deadline', date: '2024-08-30' },
-            { label: 'Notification of acceptance', date: '2024-09-13' },
-            { label: 'Camera-ready final submissions', date: '2024-09-20' },
-            { label: 'MexIHC 2024 starts', date: '2024-11-06', kind: 'conference-start' },
-            { label: 'MexIHC 2024 ends', date: '2024-11-08', kind: 'conference-end' }
+            { label: 'Submission deadline', date: '2026-08-30' },
+            { label: 'Acceptance notification', date: '2026-09-14' },
+            { label: 'Camera-ready submission', date: '2026-09-20' },
+            { label: 'MexIHC 2026 starts', date: '2026-10-27', kind: 'conference-start' },
+            { label: 'MexIHC 2026 ends', date: '2026-10-30', kind: 'conference-end' }
         ]"
         :all-dates-to="Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-dates' })"
         all-dates-label="See all important dates"
     />
 
     <p>
-        We invite practitioners, researchers, and students to submit their work to the poster track at MexIHC 2024.
-        Posters provide a great opportunity for academics and practitioners to get valuable feedback on early-stage work
-        and discuss potential collaborations. Posters must present work in progress, preliminary results, small-scale
-        studies, late-breaking scientific and professional news showing promise, a demonstration of a technical tool,
-        etc. Contributions will be exhibited in a poster session during the MexIHC conference. Works submitted to the
-        poster track can be written either in English or Spanish (title and abstract in English).
+        We invite practitioners, researchers, and students to submit their work to the poster track at MexIHC 2026.
+        Posters provide a great opportunity for academics and practitioners to receive valuable feedback on early-stage
+        work and discuss potential collaborations. Posters should present work in progress, preliminary results,
+        small-scale studies, promising scientific and technological advances, demonstrations of technical tools, etc.
+        Contributions will be exhibited during a session at MexIHC 2026. Papers submitted to this track may be written
+        in English or Spanish (title and abstract in English).
     </p>
 
     <h2 id="cpt-dates">Important Dates</h2>
     <ul>
-        <li>Submission deadline: Wednesday, August <del>8th</del> 30th (extended) </li>
-        <li>Notification of acceptance: Friday, September <del>6th</del> 13th</li>
-        <li>Camera-ready final submissions: Friday, September <del>13th</del> 20th</li>
+        <li>Submission deadline: Sunday, August 30, 2026</li>
+        <li>Acceptance notification: Monday, September 14, 2026</li>
+        <li>Camera-ready submission: Sunday, September 20, 2026</li>
     </ul>
 
     <h2 id="cpt-submission">Submission Details</h2>
-
-    <P>
-        Authors wishing to submit a paper must:
-    </P>
+    <p>Authors wishing to submit a paper must:</p>
     <ul>
         <li>
-            Format their papers (four pages maximum) following the official <a class="uline"
-                href="http://mexihc.org/aihc_template.docx">AmexIHC Journal Format</a>.
+            Follow the official <a class="uline" href="https://mexihc.org/aihc_template.zip">AMexIHC Journal format</a>
+            (four pages maximum).
         </li>
         <li>
-            Accepted papers will be published in the <a class="uline"
-                href="https://revistaaihc.mx/index.php/aihc">AMexIHC publication “Avances en Interacción
-                Humano-Computadora”</a>.
+            Accepted papers will be published in the AMexIHC journal "Avances en Interacción Humano-Computadora."
         </li>
         <li>
-            Proposals should be submitted by email with subject “MexIHC 2024 Poster” to: posters.2024@mexihc.org
+            Proposals must be submitted through EasyChair at
+            <a class="uline" href="https://easychair.org/cfp/MexIHC2026Posters">https://easychair.org/cfp/MexIHC2026Posters</a>.
         </li>
         <li>
             We encourage you to read the
-            <RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })">
-                {{ $t("nav.accessibility_for_autors") }}
-            </RouterLink>.
+            <a class="uline" href="https://www.mexihc.org/2024/es/accessibility-recommendations-for-authors">
+                Accessibility recommendations for authors
+            </a>.
         </li>
     </ul>
     <p>
-        Your submission must be original work. It cannot be under concurrent review for publication by another
-        conference or journal, nor has it been published elsewhere. Please submit accurate and complete references.
+        The submitted proposal must be original. It cannot be under concurrent review for publication by another
+        conference or journal, nor have been published elsewhere. Please also ensure that the references in your
+        proposal are accurate and complete.
     </p>
 
     <h2 id="cpt-review">Review Process</h2>
     <p>
-        Papers will be anonymously peer-reviewed by the members of the MexIHC 2024 program committee. Submissions will
-        be evaluated based on their originality, significance of the contribution to the field, technical correctness,
+        Papers will be anonymously peer-reviewed by members of the MexIHC 2026 program committee. Submissions will be
+        evaluated based on their originality, significance of the contribution to the field, technical correctness,
         and presentation.
     </p>
-    <p>
-        The Poster chairs will send poster exhibition instructions to the authors of the accepted papers.
-    </p>
+    <p>The poster chairs will send exhibition instructions to the authors of accepted papers.</p>
 
     <h2 id="cpt-attendance">Attendance</h2>
-    <p>
-        At least one author of each accepted submission must register for the conference and present the poster.
-    </p>
+    <p>At least one author of each accepted paper must register for the conference and present the poster.</p>
 
     <h2 class="my-4">Poster Chairs</h2>
     <div class="row">
@@ -103,66 +93,26 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/adolfo.jpg" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/cristina.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
-                    <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/people/adolfo.jpg&quot;);">
-                    </div>
+                    <div class="colored-shadow" style="background-image: url('/assets/img/people/cristina.png');"></div>
                 </template>
-                <template #name>
-                    Adolfo Mejía
-                </template>
-                <template #institution>
-                    Universidad Autónoma de Coahuila
-                </template>
-                <template #email>
-                    posters.2024@mexihc.org
-                </template>
+                <template #name>Cristina Ramírez Fernández</template>
+                <template #institution>Instituto Tecnológico de Ensenada (TecNM - ITE)</template>
+                <template #email><a class="uline" href="mailto:cramirez@ite.edu.mx">cramirez@ite.edu.mx</a></template>
             </OrganizerItem>
-        </div>        
-
+        </div>
         <div class="col-md-4">
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/jose.png" alt="" class="img-fluid shadow rounded-3">
+                        <img src="/assets/img/people/gilberto.png" alt="" class="img-fluid shadow rounded-3">
                     </div>
-                    <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/jose.png&quot;);">
-                    </div>
+                    <div class="colored-shadow" style="background-image: url('/assets/img/people/gilberto.png');"></div>
                 </template>
-                <template #name>
-                    José Mercado Chan
-                </template>
-                <template #institution>
-                    CICESE-UT3, MX
-                </template>
-                <template #email>
-                    posters.2024@mexihc.org
-                </template>
+                <template #name>Gilberto Borrego Soto</template>
+                <template #institution>Instituto Tecnológico de Sonora (ITSON)</template>
             </OrganizerItem>
         </div>
-
-        <div class="col-md-4">
-            <OrganizerItem>
-                <template #image>
-                    <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/sanely.jpg" alt="" class="img-fluid shadow rounded-3">
-                    </div>
-                    <div class="colored-shadow"
-                        style="background-image: url(&quot;./assets/img/people/sanely.jpg&quot;);">
-                    </div>
-                </template>
-                <template #name>
-                    Sanely Gaytán
-                </template>
-                <template #institution>
-                    Universidad de Colima
-                </template>
-                <template #email>
-                    posters.2024@mexihc.org
-                </template>
-            </OrganizerItem>
-        </div>
-
     </div>
 </template>

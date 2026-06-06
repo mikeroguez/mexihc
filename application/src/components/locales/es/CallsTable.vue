@@ -51,6 +51,14 @@ const calls = computed(() => [
     deadlineBadge: 'Extendida',
   },
   {
+    key: 'cpt',
+    title: 'Convocatoria a la sesión de pósteres',
+    to: Tr.i18nRoute({ name: 'call-for-posters' }),
+    ...getCallStatus('2026-08-30'),
+    iconClass: 'fas fa-image',
+    deadline: 'Fecha límite para envíos: 30 de agosto de 2026',
+  },
+  {
     key: 'cws',
     title: 'Convocatoria de talleres',
     to: Tr.i18nRoute({ name: 'call-for-workshops' }),

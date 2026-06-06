@@ -6,7 +6,7 @@
     <description>Official multilingual RSS feed for MexIHC 2026 updates. Use rss-es.xml and
       rss-en.xml for language-specific feeds.</description>
     <language>en-US</language>
-    <lastBuildDate>Wed, 03 Jun 2026 18:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 18:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss.xml" rel="self" type="application/rss+xml" />
     <atom:link href="https://www.mexihc.org/2026/rss-es.xml" rel="alternate"
@@ -18,6 +18,22 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/</link>
     </image>
+
+    <item>
+      <title>[ES] Convocatoria a la sesión de pósteres abierta para MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/call-for-posters</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/call-for-posters</guid>
+      <description>Consulta la convocatoria a la sesión de pósteres de MexIHC 2026. La fecha límite para envíos es el 30 de agosto de 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 18:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] Call for Poster Track is open for MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/call-for-posters</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/en/call-for-posters</guid>
+      <description>Check the MexIHC 2026 Call for Poster Track. The submission deadline is August 30, 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 18:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>[ES] Convocatoria al Coloquio de Graduados abierta para MexIHC 2026</title>

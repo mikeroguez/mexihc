@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/es/</link>
     <description>Canal RSS oficial de noticias y actualizaciones de MexIHC 2026 en español.</description>
     <language>es-MX</language>
-    <lastBuildDate>Wed, 03 Jun 2026 18:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 18:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-es.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/es/</link>
     </image>
+
+    <item>
+      <title>Convocatoria a la sesión de pósteres abierta para MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/call-for-posters</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/call-for-posters</guid>
+      <description>Consulta la convocatoria a la sesión de pósteres de MexIHC 2026. La fecha límite para envíos es el 30 de agosto de 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 18:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Convocatoria al Coloquio de Graduados abierta para MexIHC 2026</title>
