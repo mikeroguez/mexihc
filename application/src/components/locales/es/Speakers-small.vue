@@ -1,60 +1,49 @@
-<script>
-import SpeakerItem from '../../SpeakerItem.vue'
+<script setup>
+import SpeakerItem from '@/components/SpeakerItem.vue'
 import Tr from '@/i18n/translation'
-
-export default {
-    components: {
-        SpeakerItem
-    },
-    setup() {
-        return {
-            Tr
-        }
-    }
-}
 </script>
 
 <template>
     <div class="row mb-4">
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/people/saiph.jpg" alt="Fotografía de Saiph Savage" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/people/roberto.png" alt="Fotografía de Roberto Martínez-Maldonado"
+                    class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/saiph.jpg&quot;);">
-                </div>
+                <div class="colored-shadow" style="background-image: url('/assets/img/people/roberto.png');"></div>
             </template>
             <template #name>
-                Saiph Savage
+                <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#roberto-martinez-maldonado' })"
+                    class="uline">
+                    Roberto Martínez-Maldonado
+                </RouterLink>
             </template>
+            <template #puesto>Profesor Asociado en Analíticas del Aprendizaje</template>
 
-            Profesora asistente y directora del Civic A.I. Lab en Northeastern University. Su investigación se centra en
-            desarrollar
-            tecnología cívica inteligente para organizar la acción colectiva y combatir la desinformación. Ha trabajado
-            en Intel
-            Labs y Microsoft Bing, y ha enseñado en universidades como West Virginia y Carnegie Mellon. Su trabajo ha
-            sido
-            reconocido en medios académicos y ha recibido varios premios y becas.
+            Universidad Monash, Australia. Su investigación aborda los aspectos sociotécnicos de la inteligencia
+            artificial en educación y el diseño de tecnologías centradas en las personas para apoyar el aprendizaje,
+            la colaboración y la agencia humana.
         </SpeakerItem>
 
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/people/jesus_fa.jpg" alt="Fotografía de Jesús Favela" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/nophoto.png" alt="Fotografía no disponible de Gillian Hayes"
+                    class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/jesus_fa.jpg&quot;);">
-                </div>
+                <div class="colored-shadow" style="background-image: url('/assets/img/nophoto.png');"></div>
             </template>
             <template #name>
-                Jesús Favela
+                <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#gillian-hayes' })" class="uline">
+                    Gillian Hayes
+                </RouterLink>
             </template>
-            Investigador en el Departamento de Ciencias de la Computación del CICESE y dirige el Laboratorio de Cómputo
-            Móvil y
-            Ubicuo. Estudió en la UNAM y obtuvo su maestría y doctorado en el MIT. Sus áreas de interés incluyen el
-            cómputo
-            ubicuo y la interacción humano-computadora. Ha sido presidente de la Sociedad Mexicana de Ciencias de la
-            Computación
-            y es miembro nivel 3 del SNI.
+            <template #puesto>Chancellor’s Professor y Profesora Kleist de Informática</template>
+
+            Universidad de California, Irvine. Su investigación se encuentra en la intersección de la computación
+            centrada en las personas, la accesibilidad y el cómputo móvil y ubicuo, con énfasis en la agencia, la
+            dignidad y el florecimiento en la vida cotidiana.
         </SpeakerItem>
     </div>
 </template>

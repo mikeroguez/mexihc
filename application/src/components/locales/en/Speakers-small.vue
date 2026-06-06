@@ -1,59 +1,48 @@
-<script>
-import SpeakerItem from '../../SpeakerItem.vue'
+<script setup>
+import SpeakerItem from '@/components/SpeakerItem.vue'
 import Tr from '@/i18n/translation'
-
-export default {
-    components: {
-        SpeakerItem
-    },
-    setup() {
-        return {
-            Tr
-        }
-    }
-}
 </script>
 
 <template>
     <div class="row mb-4">
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/people/saiph.jpg" alt="Photo of Saiph Savage" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/people/roberto.png" alt="Photo of Roberto Martínez-Maldonado"
+                    class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/saiph.jpg&quot;);">
-                </div>
+                <div class="colored-shadow" style="background-image: url('/assets/img/people/roberto.png');"></div>
             </template>
             <template #name>
-                Saiph Savage
+                <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#roberto-martinez-maldonado' })"
+                    class="uline">
+                    Roberto Martínez-Maldonado
+                </RouterLink>
             </template>
+            <template #puesto>Associate Professor in Learning Analytics</template>
 
-            Assistant Professor and Director of the Civic A.I. Lab at Northeastern University. Her research focuses on
-            developing
-            intelligent civic technology to organize collective action and combat misinformation. She has worked at
-            Intel Labs and
-            Microsoft Bing and has taught at universities like West Virginia and Carnegie Mellon. Her work has been
-            recognized in
-            academic and media outlets, and she has received multiple awards and scholarships.
+            Monash University, Australia. His research examines the sociotechnical dimensions of artificial intelligence
+            in education and human-centered technologies that support learning, collaboration, and human agency.
         </SpeakerItem>
 
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/people/jesus_fa.jpg" alt="Photo of Jesús Favela" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/nophoto.png" alt="Photo unavailable for Gillian Hayes"
+                    class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url(&quot;./assets/img/people/jesus_fa.jpg&quot;);"></div>
+                <div class="colored-shadow" style="background-image: url('/assets/img/nophoto.png');"></div>
             </template>
             <template #name>
-                Jesús Favela
+                <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#gillian-hayes' })" class="uline">
+                    Gillian Hayes
+                </RouterLink>
             </template>
-            Researcher in the Department of Computer Science at CICESE, leading the Mobile and Ubiquitous Computing
-            Laboratory.
-            He studied at UNAM and earned his Master's and Doctorate degrees at MIT. His interests include ubiquitous
-            computing
-            and human-computer interaction. He has served as President of the Mexican Society of Computer Science and is
-            a level
-            3 member of the SNI.
+            <template #puesto>Chancellor’s Professor and Kleist Professor of Informatics</template>
+
+            University of California, Irvine. Her research sits at the intersection of human-centered computing,
+            accessibility, and mobile and ubiquitous computing, with a focus on agency, dignity, and flourishing in
+            everyday life.
         </SpeakerItem>
     </div>
 </template>

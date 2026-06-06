@@ -9,7 +9,7 @@ export default {
     const contentComponent = shallowRef(null)
 
     const loadComponents = async (newLocale) => {
-      contentComponent.value = await getContentForLocale(newLocale)
+      contentComponent.value = await getSpeakersForLocale(newLocale)
     }
 
     watch(locale, loadComponents, { immediate: true })

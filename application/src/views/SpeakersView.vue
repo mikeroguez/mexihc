@@ -1,5 +1,6 @@
 <script>
 import TheHeader from '@/components/Header.vue';
+import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue'
 
 import Tr from '@/i18n/translation'
 
@@ -8,7 +9,8 @@ import { useI18n } from 'vue-i18n'
 
 export default {
   components: {
-    TheHeader
+    TheHeader,
+    InPageNavigationPanel
   },
   setup() {
   
@@ -53,27 +55,18 @@ export default {
         <div class="row justify-content-center my-3">
           <div class="col-lg-8">
 
-            <ol class="list-group list-group-numbered">
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#saiph-savage'})" class="uline">
-                      Saiph Savage
-                    </RouterLink>
-                  </div>
-                </div>
-              </li>
-
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#jesus-favela'})" class="uline">
-                      Jesús Favela
-                    </RouterLink>
-                  </div>
-                </div>
-              </li>
-            </ol>
+            <InPageNavigationPanel
+              :links="[
+                {
+                  label: 'Roberto Martínez-Maldonado',
+                  to: Tr.i18nRoute({ name: 'keynote-speakers', hash: '#roberto-martinez-maldonado' })
+                },
+                {
+                  label: 'Gillian Hayes',
+                  to: Tr.i18nRoute({ name: 'keynote-speakers', hash: '#gillian-hayes' })
+                }
+              ]"
+            />
 
             <template v-if="contentComponent">
                 <component :is="contentComponent" />

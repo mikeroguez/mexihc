@@ -11,7 +11,7 @@ import TheSupport from '@/components/Support.vue'
 <template>
   <TheJumbotron />
   <TheAboutSection />
-  <!-- <TheSpeakers /> -->
+  <TheSpeakers />
   <TheDescription />
   
   <!-- <TheSpetialThanks /> -->
