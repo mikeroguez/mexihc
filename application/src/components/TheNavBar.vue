@@ -1,7 +1,16 @@
 <script>
 	import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
 	import Tr from '@/i18n/translation'
+	import { callMilestones } from '@/data/callMilestones'
 	import { RouterLink } from 'vue-router';
+
+	const getLocalDateKey = () => {
+		const now = new Date()
+		const year = now.getFullYear()
+		const month = String(now.getMonth() + 1).padStart(2, '0')
+		const day = String(now.getDate()).padStart(2, '0')
+		return `${year}-${month}-${day}`
+	}
 
 	export default {
 		components: { LanguageSwitcher, RouterLink },
@@ -11,11 +20,16 @@
 				isMenuOpen: false,
 				transitionPhase: '',
 				transitionTimeout: null,
-				navigationCollapseEl: null
+				navigationCollapseEl: null,
+				dateRefreshTimer: null,
+				todayKey: getLocalDateKey()
 			}
 		},
 		mounted() {
 			this.onScroll()
+			this.dateRefreshTimer = window.setInterval(() => {
+				this.todayKey = this.getLocalDateKey()
+			}, 60 * 1000)
 			window.addEventListener('scroll', this.onScroll, { passive: true })
 			this.navigationCollapseEl = document.getElementById('navigation')
 			if (this.navigationCollapseEl) {
@@ -28,12 +42,33 @@
 			if (this.transitionTimeout) {
 				clearTimeout(this.transitionTimeout)
 			}
+			if (this.dateRefreshTimer) {
+				clearInterval(this.dateRefreshTimer)
+			}
 			if (this.navigationCollapseEl) {
 				this.navigationCollapseEl.removeEventListener('show.bs.collapse', this.onMenuShow)
 				this.navigationCollapseEl.removeEventListener('hidden.bs.collapse', this.onMenuHide)
 			}
 		},
 		methods: {
+			getLocalDateKey() {
+				return getLocalDateKey()
+			},
+			getNextMilestone(call) {
+				return call.milestones.find((milestone) => milestone.date >= this.todayKey) || null
+			},
+			getMilestoneLabel(milestone) {
+				const locale = this.$i18n.locale === 'es' ? 'es' : 'en'
+				return milestone.labels[locale]
+			},
+			formatMilestoneDate(dateKey) {
+				const locale = this.$i18n.locale === 'es' ? 'es-MX' : 'en-US'
+				return new Intl.DateTimeFormat(locale, {
+					day: 'numeric',
+					month: 'long',
+					year: 'numeric',
+				}).format(new Date(`${dateKey}T12:00:00`))
+			},
 			onMenuShow() {
 				this.isMenuOpen = true
 			},
@@ -55,6 +90,7 @@
 					'call-for-workshops-and-tutorials',
 					'student-design-competition',
 					'graduate-colloquium',
+					'accessibility-recommendations-for-authors',
 					'calls-for-accepted-workshops',
 				])
 			},
@@ -99,9 +135,9 @@
 				this.isScrolled = nextIsScrolled
 			},
 		},
-	setup() {
+		setup() {
 			const baseUrl = import.meta.env.BASE_URL
-			return { Tr, baseUrl }
+			return { Tr, baseUrl, callMilestones }
 		}
 	}
 </script>
@@ -152,143 +188,77 @@
 										{{ $t("nav.for_authors") }}
 										&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
 									</RouterLink>
-									<ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
+									<ul class="dropdown-menu dropdown-menu-animation dropdown-lg mexihc-calls-menu mt-0 mt-lg-3 p-3 border-radius-lg"
 										aria-labelledby="navbarDropdown1">
 										
-										<li>
-											<RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers' })" 
+										<li v-for="call in callMilestones" :key="call.key">
+											<RouterLink
+												:to="Tr.i18nRoute({ name: call.routeName })"
 												class="dropdown-item border-radius-md"
-												:class="{ 'active-submenu': isRoute('call-for-papers') }"
+												:class="{ 'active-submenu': isRoute(call.routeName) }"
 											>
 												<div class="d-flex">
 													<div>
-														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
-															{{ $t("nav.cfp") }}
+														<span class="fs-6 dropdown-header text-dark font-weight-bolder d-flex align-items-center p-0 text-wrap">
+															{{ $t(call.titleKey) }}
 														</span>
-														<span class="text-sm font-italic text-dark text-wrap mexihc-deadline-change">
-															<template v-if="$i18n.locale === 'es'">
-																<span class="mexihc-deadline-badge">Extendida</span>
-																<span class="mexihc-deadline-old">1 de junio</span>
-																<span class="mexihc-deadline-new">15 de junio</span>
+														<template v-if="getNextMilestone(call)">
+															<span class="mexihc-milestone-label text-sm text-dark text-wrap">
+																{{ getMilestoneLabel(getNextMilestone(call)) }}:
+															</span>
+															<span class="text-sm text-dark text-wrap mexihc-deadline-change">
+																<template v-if="getNextMilestone(call).previousDates?.length">
+																	<span class="mexihc-deadline-badge">
+																		{{ $i18n.locale === 'es' ? 'Extendida' : 'Extended' }}
+																	</span>
+																	<span
+																v-for="oldDate in getNextMilestone(call).previousDates"
+																:key="oldDate"
+																class="mexihc-deadline-old"
+																>
+																	{{ formatMilestoneDate(oldDate) }}
+																</span>
 															</template>
-															<template v-else>
-																<span class="mexihc-deadline-badge">Extended</span>
-																<span class="mexihc-deadline-old">June 1</span>
-																<span class="mexihc-deadline-new">June 15</span>
-															</template>
+																<span class="mexihc-deadline-new">
+																	{{ formatMilestoneDate(getNextMilestone(call).date) }}
+																</span>
+															</span>
+														</template>
+														<span v-else class="text-sm text-dark text-wrap">
+															{{ $i18n.locale === 'es' ? 'Etapas finalizadas' : 'All stages completed' }}
 														</span>
 													</div>
 												</div>
-											</RouterLink>											
-										</li>
-										<li>
-											<RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters' })" 
-												class="dropdown-item border-radius-md"
-												:class="{ 'active-submenu': isRoute('call-for-posters') }"
-											>
-												<div class="d-flex">
-													<div>
-														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-															{{ $t("nav.cpt") }}
-														</span>
-														<span class="text-sm text-dark">
-															{{ $t("nav.cpt_message") }}
-														</span>
-													</div>
-												</div>
-											</RouterLink>											
-										</li>
-
-										<li>
-											<RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops' })" 
-												class="dropdown-item border-radius-md"
-												:class="{ 'active-submenu': isRoute('call-for-workshops') }"
-											>
-												<div class="d-flex">
-													<div>
-														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
-															{{ $t("nav.cws") }}
-														</span>
-														<span class="text-sm font-italic text-dark text-wrap mexihc-deadline-change">
-													<template v-if="$i18n.locale === 'es'">
-														<span class="mexihc-deadline-badge">Extendida</span>
-														<span class="mexihc-deadline-old">25 de mayo</span>
-														<span class="mexihc-deadline-new">8 de junio</span>
-													</template>
-													<template v-else>
-														<span class="mexihc-deadline-badge">Extended</span>
-														<span class="mexihc-deadline-old">May 25</span>
-														<span class="mexihc-deadline-new">June 8</span>
-													</template>
-												</span>
-													</div>
-												</div>
-											</RouterLink>
-										</li>
-										<li>
-											<RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' })" 
-												class="dropdown-item border-radius-md"
-												:class="{ 'active-submenu': isRoute('call-for-workshops-and-tutorials') }"
-											>
-												<div class="d-flex">
-													<div>
-														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
-															{{ $t("nav.cwt") }}
-														</span>
-														<span class="text-sm font-italic text-dark text-wrap">
-															{{ $t("nav.cwt_message") }}
-														</span>
-													</div>
-												</div>
-											</RouterLink>
-										</li>
-
-										<li>
-											<RouterLink :to="Tr.i18nRoute({ name: 'student-design-competition' })" 
-												class="dropdown-item border-radius-md"
-												:class="{ 'active-submenu': isRoute('student-design-competition') }"
-											>
-												<div class="d-flex">
-													<div>
-														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-															{{ $t("nav.sdc") }}
-														</span>
-														<span class="text-sm text-dark">
-															{{ $t("nav.sdc_message") }}
-														</span>
-													</div>
-												</div>
-											</RouterLink>
-										</li>
-
-										<li>
-											<RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium' })" 
-												class="dropdown-item border-radius-md"
-												:class="{ 'active-submenu': isRoute('graduate-colloquium') }"
-											>
-												<div class="d-flex">
-													<div>
-														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0 text-wrap">
-															{{ $t("nav.cgc") }}
-														</span>
-														<span class="text-sm text-dark text-wrap">
-															{{ $t("nav.cgc_message") }}
-														</span>
-													</div>
-												</div>
-											</RouterLink>
-										</li>
+										</RouterLink>
+									</li>
+									<li class="mexihc-accessibility-menu-item">
+										<RouterLink
+											:to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })"
+											class="dropdown-item border-radius-md"
+											:class="{ 'active-submenu': isRoute('accessibility-recommendations-for-authors') }"
+										>
+											<span class="fs-6 dropdown-header text-dark font-weight-bolder p-0 text-wrap">
+												{{ $t('nav.accessibility_for_autors') }}
+											</span>
+											<span class="text-sm text-dark text-wrap">
+												{{ $t('nav.accessibility_for_autors_message') }}
+											</span>
+										</RouterLink>
+									</li>
 
 									</ul>
 								</li>
-								<li class="nav-item mx-2">
-									<RouterLink
+							<li class="nav-item mx-2">
+								<RouterLink
+									:to="Tr.i18nRoute({ name: 'keynote-speakers' })"
+									class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+									:class="{ 'active-section': isRoute('keynote-speakers') }"
+								>
+									{{ $t("nav.keynotes") }}
+								</RouterLink>
+							</li>
+							<li class="nav-item mx-2">
+								<RouterLink
 										:to="Tr.i18nRoute({ name: 'organizers' })"
 										class="nav-link ps-2 d-flex cursor-pointer align-items-center"
 										:class="{ 'active-section': isRoute('organizers') }"
@@ -575,6 +545,12 @@
 	gap: 0.35rem;
 }
 
+.mexihc-milestone-label {
+	display: inline;
+	margin-top: 0.1rem;
+	margin-right: 0.25rem;
+}
+
 .mexihc-deadline-badge {
 	display: inline-flex;
 	align-items: center;
@@ -606,6 +582,31 @@
 	color: #223048;
 	background: #f0efec;
 	box-shadow: none;
+}
+
+.mexihc-accessibility-menu-item {
+	margin-top: 0.35rem;
+	padding-top: 0.45rem;
+	border-top: 1px solid rgba(1, 22, 56, 0.12);
+}
+
+.mexihc-navbar.is-scrolled .mexihc-accessibility-menu-item {
+	border-top-color: rgba(240, 239, 236, 0.2);
+}
+
+@media (min-width: 992px) {
+	.mexihc-calls-menu {
+		width: min(36rem, calc(100vw - 2rem));
+		max-height: calc(100dvh - 7rem);
+		overflow-y: auto;
+		overscroll-behavior: contain;
+		scrollbar-gutter: stable;
+	}
+
+	.mexihc-calls-menu .dropdown-item {
+		padding-top: 0.38rem;
+		padding-bottom: 0.38rem;
+	}
 }
 
 @media (max-width: 991.98px) {
