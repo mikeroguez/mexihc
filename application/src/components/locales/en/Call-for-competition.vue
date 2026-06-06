@@ -73,7 +73,7 @@ export default {
     <h2 id="sdc-submission">Submission Details</h2>
     <p>
         Each team must submit a presentation of up to <strong>15 slides</strong> and a written report of up to <strong>4 pages</strong>, following the <a class="uline"
-            href="http://mexihc.org/aihc_template.docx">Proceedings Format</a>, providing more detail on the points raised in the presentation. Both documents must be submitted in Spanish or English, in PDF format, and must describe:
+            href="https://mexihc.org/aihc_template.zip">Proceedings Format</a>, providing more detail on the points raised in the presentation. Both documents must be submitted in Spanish or English, in PDF format, and must describe:
     </p>
 
     <ul>

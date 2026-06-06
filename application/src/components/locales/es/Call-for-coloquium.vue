@@ -67,7 +67,7 @@ export default {
         Las propuestas aceptadas se publicarán en la revista <a href="https://revistaaihc.mx/index.php/aihc" class="uline"><em>Avances en Interacción Humano-Computadora</em> (AMexIHC)</a> y se difundirán en el sitio web del evento.
     </p>
     <p>
-        <strong>Nota sobre el avance:</strong> se pueden proponer experimentos si corresponde, así como evaluaciones preliminares y hallazgos, pero estos últimos no son obligatorios para la postulación. Se recomienda utilizar la <a href="http://mexihc.org/aihc_template.docx" class="uline">plantilla de la revista AMexIHC</a>.
+        <strong>Nota sobre el avance:</strong> se pueden proponer experimentos si corresponde, así como evaluaciones preliminares y hallazgos, pero estos últimos no son obligatorios para la postulación. Se recomienda utilizar la <a href="https://mexihc.org/aihc_template.zip" class="uline">plantilla de la revista AMexIHC</a>.
     </p>
 
     <p>El artículo debe incluir:</p>

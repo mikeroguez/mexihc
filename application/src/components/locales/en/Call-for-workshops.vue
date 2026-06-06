@@ -57,7 +57,7 @@ export default {
 
     <h2 id="cws-guidelines">Proposal Guidelines</h2>
     <p>
-        Proposals must contain enough information to assess their relevance and interest to the community. The document may be submitted in Spanish or English, must be 3 to 4 pages long, and should be prepared using the <a href="/Template_Talleres_MexIHC_2026.docx">official MexIHC 2026 workshop template</a>.
+        Proposals must contain enough information to assess their relevance and interest to the community. The document may be submitted in Spanish or English, must be 3 to 4 pages long, and should be prepared using the <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">official MexIHC 2026 workshop template</a>.
     </p>
     <p>
         Each proposal must include at least the following information:
@@ -95,7 +95,7 @@ export default {
 
     <h2 id="cws-submission">Submission</h2>
     <p>
-        Proposals must be submitted by email to <a href="mailto:ws.2026@mexihc.org">ws.2026@mexihc.org</a>. To prepare the document, use the <a href="/Template_Talleres_MexIHC_2026.docx">official workshop template</a>.
+        Proposals must be submitted by email to <a href="mailto:ws.2026@mexihc.org">ws.2026@mexihc.org</a>. To prepare the document, use the <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">official workshop template</a>.
     </p>
 
     <h2 class="my-4">Workshops Chairs</h2>

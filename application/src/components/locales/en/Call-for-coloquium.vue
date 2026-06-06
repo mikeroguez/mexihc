@@ -67,7 +67,7 @@ export default {
         Accepted proposals will be published in the <a href="https://revistaaihc.mx/index.php/aihc" class="uline"><em>Avances en Interacción Humano-Computadora</em> (AMexIHC)</a> journal and shared on the event website.
     </p>
     <p>
-        <strong>Progress note:</strong> experiments may be proposed where applicable, and preliminary evaluations and findings are welcome, but they are not required for submission. Authors are encouraged to use the <a href="http://mexihc.org/aihc_template.docx" class="uline">AMexIHC journal template</a>.
+        <strong>Progress note:</strong> experiments may be proposed where applicable, and preliminary evaluations and findings are welcome, but they are not required for submission. Authors are encouraged to use the <a href="https://mexihc.org/aihc_template.zip" class="uline">AMexIHC journal template</a>.
     </p>
 
     <p>The paper should include:</p>

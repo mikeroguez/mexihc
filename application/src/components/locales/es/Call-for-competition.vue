@@ -73,7 +73,7 @@ export default {
     <h2 id="sdc-submission">Detalles de envío</h2>
     <p>
         Cada equipo deberá enviar una presentación de máximo <strong>15 diapositivas</strong> y un reporte escrito de hasta <strong>4 páginas</strong>, siguiendo el formato <a class="uline"
-            href="http://mexihc.org/aihc_template.docx">Proceedings Format</a>, describiendo con mayor detalle los puntos planteados en la presentación. Ambos documentos deberán enviarse en español o inglés, en formato PDF, y deben describir:
+            href="https://mexihc.org/aihc_template.zip">Proceedings Format</a>, describiendo con mayor detalle los puntos planteados en la presentación. Ambos documentos deberán enviarse en español o inglés, en formato PDF, y deben describir:
     </p>
 
     <ul>

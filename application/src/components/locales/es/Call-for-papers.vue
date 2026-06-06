@@ -105,7 +105,7 @@ export default {
 
   <p>
     Los artículos completos y cortos escritos en inglés o español deben utilizar
-    <a href="http://mexihc.org/aihc_template.docx" class="uline"
+    <a href="https://mexihc.org/aihc_template.zip" class="uline"
       >a plantilla de revista "Avances en Interacción Humano-Computadora"</a
     >
     de AmexIHC. La página de envío para MexIHC 2026 es

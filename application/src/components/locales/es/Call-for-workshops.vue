@@ -57,7 +57,7 @@ export default {
 
     <h2 id="cws-guidelines">Guía para la presentación de propuestas</h2>
     <p>
-        Las propuestas deben contener información suficiente para evaluar su relevancia e interés para la comunidad. El documento podrá entregarse en español o inglés, con una extensión de 3 a 4 páginas, y debe elaborarse usando el <a href="/Template_Talleres_MexIHC_2026.docx">template oficial de talleres de MexIHC 2026</a>.
+        Las propuestas deben contener información suficiente para evaluar su relevancia e interés para la comunidad. El documento podrá entregarse en español o inglés, con una extensión de 3 a 4 páginas, y debe elaborarse usando el <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">template oficial de talleres de MexIHC 2026</a>.
     </p>
     <p>
         Cada propuesta debe incluir como mínimo la siguiente información:
@@ -95,7 +95,7 @@ export default {
 
     <h2 id="cws-submission">Envío de propuestas</h2>
     <p>
-        Las propuestas deberán enviarse por correo a <a href="mailto:ws.2026@mexihc.org">ws.2026@mexihc.org</a>. Para preparar el documento, utilice el <a href="/Template_Talleres_MexIHC_2026.docx">template oficial de talleres</a>.
+        Las propuestas deberán enviarse por correo a <a href="mailto:ws.2026@mexihc.org">ws.2026@mexihc.org</a>. Para preparar el documento, utilice el <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">template oficial de talleres</a>.
     </p>
 
     <h2 class="my-4">Responsables de talleres</h2>
