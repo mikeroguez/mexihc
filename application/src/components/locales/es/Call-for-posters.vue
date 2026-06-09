@@ -67,8 +67,8 @@ import Tr from '@/i18n/translation'
             Humano-Computadora".
         </li>
         <li>
-            Las propuestas deberán enviarse por medio de la plataforma EasyChair a través del siguiente enlace:
-            <a class="uline" href="https://easychair.org/cfp/MexIHC2026Posters">https://easychair.org/cfp/MexIHC2026Posters</a>.
+            Las propuestas deberán enviarse por correo electrónico a
+            <a class="uline" href="mailto:posters.2026@mexihc.org">posters.2026@mexihc.org</a>.
         </li>
         <li>
             Te invitamos a leer las

@@ -1,4 +1,4 @@
-# MexIHC Versión 2026.1.15
+# MexIHC Versión 2026.1.16
 
 ## Sitio web para el MexIHC 2026
 
@@ -7,7 +7,7 @@ Sitio web de difusión de MexIHC 2026, organizado por la [Asociación Mexicana d
 
 ### Versión actual
 
-La versión `2026.1.15` agrega posicionamiento _sticky_ a la tarjeta de ponentes principales en la página de keynotes, para que la fotografía permanezca visible al desplazarse a través de la biografía.
+La versión `2026.1.16` actualiza la convocatoria de pósteres en español e inglés para recibir las propuestas por correo electrónico en `posters.2026@mexihc.org`, en lugar de EasyChair.
 
 ### Technology used
 

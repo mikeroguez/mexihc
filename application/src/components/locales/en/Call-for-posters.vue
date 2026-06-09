@@ -65,8 +65,8 @@ import Tr from '@/i18n/translation'
             Accepted papers will be published in the AMexIHC journal "Avances en Interacción Humano-Computadora."
         </li>
         <li>
-            Proposals must be submitted through EasyChair at
-            <a class="uline" href="https://easychair.org/cfp/MexIHC2026Posters">https://easychair.org/cfp/MexIHC2026Posters</a>.
+            Proposals must be submitted by email to
+            <a class="uline" href="mailto:posters.2026@mexihc.org">posters.2026@mexihc.org</a>.
         </li>
         <li>
             We encourage you to read the
