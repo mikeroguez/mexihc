@@ -69,10 +69,10 @@ import SpeakerLargeItem from '@/components/SpeakerLargeItem.vue'
     <SpeakerLargeItem>
         <template #image>
             <img id="gillian-hayes" class="img border-radius-lg w-100 position-relative z-index-2"
-                src="/assets/img/nophoto.png" alt="Photo unavailable for Gillian Hayes" />
+                src="/assets/img/people/gillian.png" alt="Gillian Hayes" />
         </template>
         <template #image-shadow>
-            <div class="colored-shadow" style="background-image: url('/assets/img/nophoto.png');"></div>
+            <div class="colored-shadow" style="background-image: url('/assets/img/people/gillian.png');"></div>
         </template>
         <template #name>Gillian Hayes</template>
         <template #puesto>Chancellor’s Professor and Kleist Professor of Informatics</template>

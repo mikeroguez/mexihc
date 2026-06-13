@@ -27,11 +27,11 @@ import Tr from '@/i18n/translation'
 
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/nophoto.png" alt="Photo unavailable for Gillian Hayes"
+                <img src="/assets/img/people/gillian.png" alt="Gillian Hayes"
                     class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url('/assets/img/nophoto.png');"></div>
+                <div class="colored-shadow" style="background-image: url('/assets/img/people/gillian.png');"></div>
             </template>
             <template #name>
                 <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#gillian-hayes' })" class="uline">
