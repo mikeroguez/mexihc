@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/es/</link>
     <description>Canal RSS oficial de noticias y actualizaciones de MexIHC 2026 en español.</description>
     <language>es-MX</language>
-    <lastBuildDate>Sat, 06 Jun 2026 23:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 12:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-es.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/es/</link>
     </image>
+
+    <item>
+      <title>Nueva prórroga en la convocatoria de trabajos de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/call-for-papers</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/es/call-for-papers#extension-2026-06-16</guid>
+      <description>La fecha límite para envíos de trabajos se extendió del 15 de junio de 2026 al 21 de junio de 2026.</description>
+      <pubDate>Tue, 16 Jun 2026 12:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Recomendaciones de accesibilidad para autores de MexIHC 2026 actualizadas</title>
@@ -99,7 +107,7 @@
       <link>https://www.mexihc.org/2026/es/call-for-papers</link>
       <guid isPermaLink="true">https://www.mexihc.org/2026/es/call-for-papers</guid>
       <description>Consulta lineamientos, temas de interés y fechas importantes de la convocatoria
-        de trabajos. La fecha límite para envíos es el 15 de junio de 2026.</description>
+        de trabajos. La fecha límite para envíos es el 21 de junio de 2026.</description>
       <pubDate>Mon, 16 Feb 2026 12:00:00 GMT</pubDate>
     </item>
 

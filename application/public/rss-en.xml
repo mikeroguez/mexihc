@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/en/</link>
     <description>Official RSS feed for MexIHC 2026 news and updates in English.</description>
     <language>en-US</language>
-    <lastBuildDate>Sat, 06 Jun 2026 23:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 12:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-en.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/</link>
     </image>
+
+    <item>
+      <title>Call for Papers deadline extended again for MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/call-for-papers</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/call-for-papers#extension-2026-06-16</guid>
+      <description>The paper submission deadline was extended from June 15, 2026 to June 21, 2026.</description>
+      <pubDate>Tue, 16 Jun 2026 12:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>MexIHC 2026 Accessibility Recommendations for Authors updated</title>
@@ -98,7 +106,7 @@
       <title>Call for Papers is open for MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/call-for-papers</link>
       <guid isPermaLink="true">https://www.mexihc.org/2026/en/call-for-papers</guid>
-      <description>Check submission guidelines, topics, and important dates for the Call for Papers. The submission deadline is June 15, 2026.</description>
+      <description>Check submission guidelines, topics, and important dates for the Call for Papers. The submission deadline is June 21, 2026.</description>
       <pubDate>Mon, 16 Feb 2026 12:00:00 GMT</pubDate>
     </item>
 

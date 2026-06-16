@@ -5,8 +5,8 @@ export const callMilestones = [
     routeName: 'call-for-papers',
     milestones: [
       {
-        date: '2026-06-15',
-        previousDates: ['2026-06-01'],
+        date: '2026-06-21',
+        previousDates: ['2026-06-01', '2026-06-15'],
         labels: { es: 'Fecha límite para envíos', en: 'Submission deadline' },
       },
       {
