@@ -10,11 +10,11 @@ export const callMilestones = [
         labels: { es: 'Fecha límite para envíos', en: 'Submission deadline' },
       },
       {
-        date: '2026-08-07',
+        date: '2026-08-22',
         labels: { es: 'Notificación de aceptación', en: 'Acceptance notification' },
       },
       {
-        date: '2026-09-01',
+        date: '2026-09-16',
         labels: { es: 'Versión final', en: 'Camera-ready submission' },
       },
     ],

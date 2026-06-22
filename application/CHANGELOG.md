@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.1.18] - 2026-06-22
+
+### Changed
+- Fechas posteriores al cierre de la convocatoria de trabajos recorridas 15 días: notificación de aceptación al 22 de agosto de 2026 y envío de versión lista para publicación al 16 de septiembre de 2026.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.18`.
+
 ## [2026.1.17] - 2026-06-16
 
 ### Changed

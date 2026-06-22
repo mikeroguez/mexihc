@@ -1,4 +1,4 @@
-# MexIHC Versión 2026.1.16
+# MexIHC Versión 2026.1.18
 
 ## Sitio web para el MexIHC 2026
 
@@ -7,7 +7,7 @@ Sitio web de difusión de MexIHC 2026, organizado por la [Asociación Mexicana d
 
 ### Versión actual
 
-La versión `2026.1.16` actualiza la convocatoria de pósteres en español e inglés para recibir las propuestas por correo electrónico en `posters.2026@mexihc.org`, en lugar de EasyChair.
+La versión `2026.1.18` recorre 15 días las fechas posteriores al cierre de la convocatoria de trabajos: la notificación de aceptación pasa al 22 de agosto de 2026 y el envío de la versión lista para publicación al 16 de septiembre de 2026.
 
 ### Technology used
 

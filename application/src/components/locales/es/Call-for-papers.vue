@@ -39,8 +39,8 @@ export default {
     ]"
     :milestones="[
       { label: 'Fecha límite extendida para envíos', date: '2026-06-21' },
-      { label: 'Notificación de aceptación', date: '2026-08-07' },
-      { label: 'Versión final para publicación', date: '2026-09-01' },
+      { label: 'Notificación de aceptación', date: '2026-08-22' },
+      { label: 'Versión final para publicación', date: '2026-09-16' },
       {
         label: 'Inicio de MexIHC 2026',
         date: '2026-10-27',
@@ -125,9 +125,9 @@ export default {
   <h2 id="cfp-dates">Fechas importantes</h2>
   <ul>
     <li><del>1 de junio de 2026</del> <del>15 de junio de 2026</del> <strong>21 de junio de 2026</strong> – Fecha límite para envíos <strong>(extendida)</strong></li>
-    <li>Notificación de aceptación: 7 de agosto de 2026</li>
+    <li>Notificación de aceptación: 22 de agosto de 2026</li>
     <li>
-      Envío final de versión lista para la publicación: 1 de septiembre de 2026
+      Envío final de versión lista para la publicación: 16 de septiembre de 2026
     </li>
     <li>MexIHC 2026: del 27 al 30 de octubre de 2026</li>
   </ul>
