@@ -1,36 +1,9 @@
 <script>
-import { shallowRef, watch, defineAsyncComponent } from "vue";
-import { useI18n } from "vue-i18n";
 import Tr from "@/i18n/translation";
 
 export default {
   setup() {
-    const { locale } = useI18n();
-    const currentComponent = shallowRef(null);
-
-    const loadComponent = async (newLocale) => {
-      currentComponent.value = await getComponentForLocale(newLocale);
-    };
-
-    watch(locale, loadComponent, { immediate: true });
-
-    async function getComponentForLocale(nextLocale) {
-      switch (nextLocale) {
-        case "en":
-          return defineAsyncComponent(
-            () => import("@/components/locales/en/Message.vue"),
-          );
-        case "es":
-          return defineAsyncComponent(
-            () => import("@/components/locales/es/Message.vue"),
-          );
-        default:
-          return null;
-      }
-    }
-
     return {
-      currentComponent,
       Tr,
     };
   },
@@ -89,9 +62,6 @@ export default {
                 >
                   {{ $t("jumbotron.button") }}
                 </RouterLink>
-                <template v-if="currentComponent">
-                  <component :is="currentComponent" />
-                </template>
               </div>
             </div>
           </div>
