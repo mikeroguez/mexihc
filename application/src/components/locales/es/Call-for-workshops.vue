@@ -24,19 +24,17 @@ export default {
             { label: 'Guía para propuestas', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-guidelines' }) },
             { label: 'Tras la aceptación', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-after-acceptance' }) },
             { label: 'Fechas importantes', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-dates' }) },
+            { label: 'Talleres aceptados', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-accepted-workshops' }) },
             { label: 'Envío de propuestas', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-submission' }) }
         ]"
         :milestones="[
             { label: 'Fecha límite extendida para propuestas de taller', date: '2026-06-08' },
-            { label: 'Notificación extendida de aceptación del taller', date: '2026-06-12' },
-            { label: 'Límite para recepción de trabajos', date: '2026-08-05' },
-            { label: 'Notificación de aceptación de trabajos', date: '2026-08-24' },
-            { label: 'Entrega de versión final', date: '2026-09-14' },
-            { label: 'Inicio de MexIHC 2026', date: '2026-10-27', kind: 'conference-start' },
-            { label: 'Cierre de MexIHC 2026', date: '2026-10-30', kind: 'conference-end' }
+            { label: 'Notificación extendida de aceptación del taller', date: '2026-06-12' }
         ]"
-        :all-dates-to="Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-dates' })"
-        all-dates-label="Ver todas las fechas importantes"
+        :all-dates-to="Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-accepted-workshops' })"
+        all-dates-label="Ver sitios de talleres"
+        completed-label="Recepción de propuestas de talleres cerrada"
+        completed-next-stage="Registro de participación a talleres"
     />
 
     <p><strong>Actualización:</strong> la convocatoria de talleres fue extendida. La fecha límite pasó del <del>25 de mayo de 2026</del> al <strong>8 de junio de 2026</strong>, y la notificación de aceptación cambió del <del>29 de mayo de 2026</del> al <strong>12 de junio de 2026</strong>.</p>
@@ -87,11 +85,13 @@ export default {
     <ul>
         <li><del>25 de mayo de 2026</del> <strong>8 de junio de 2026</strong> – Fecha límite para propuestas de taller <strong>(extendida)</strong></li>
         <li><del>29 de mayo de 2026</del> <strong>12 de junio de 2026</strong> – Notificación de aceptación del taller <strong>(extendida)</strong></li>
-        <li><strong>5 de agosto de 2026</strong> – Límite para recepción de trabajos de participantes</li>
-        <li><strong>24 de agosto de 2026</strong> – Notificación de aceptación de trabajos</li>
-        <li><strong>14 de septiembre de 2026</strong> – Entrega de versión final (camera ready)</li>
         <li><strong>27 al 30 de octubre de 2026</strong> – Celebración de MexIHC 2026</li>
     </ul>
+
+    <h2 id="cws-accepted-workshops">Talleres aceptados</h2>
+    <p>
+        En construcción.
+    </p>
 
     <h2 id="cws-submission">Envío de propuestas</h2>
     <p>

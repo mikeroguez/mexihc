@@ -24,19 +24,17 @@ export default {
             { label: 'Proposal Guidelines', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-guidelines' }) },
             { label: 'After Acceptance', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-after-acceptance' }) },
             { label: 'Important Dates', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-dates' }) },
+            { label: 'Accepted Workshops', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-accepted-workshops' }) },
             { label: 'Submission', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-submission' }) }
         ]"
         :milestones="[
             { label: 'Extended workshop proposal deadline', date: '2026-06-08' },
-            { label: 'Extended workshop acceptance notification', date: '2026-06-12' },
-            { label: 'Participant submission deadline', date: '2026-08-05' },
-            { label: 'Participant acceptance notification', date: '2026-08-24' },
-            { label: 'Camera-ready deadline', date: '2026-09-14' },
-            { label: 'MexIHC 2026 Start', date: '2026-10-27', kind: 'conference-start' },
-            { label: 'MexIHC 2026 End', date: '2026-10-30', kind: 'conference-end' }
+            { label: 'Extended workshop acceptance notification', date: '2026-06-12' }
         ]"
-        :all-dates-to="Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-dates' })"
-        all-dates-label="See all important dates"
+        :all-dates-to="Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-accepted-workshops' })"
+        all-dates-label="View workshop sites"
+        completed-label="Workshop proposal submissions closed"
+        completed-next-stage="Workshop participation registration"
     />
 
     <p><strong>Update:</strong> the workshop call was extended. The proposal deadline moved from <del>May 25, 2026</del> to <strong>June 8, 2026</strong>, and the acceptance notification moved from <del>May 29, 2026</del> to <strong>June 12, 2026</strong>.</p>
@@ -87,11 +85,13 @@ export default {
     <ul>
         <li><del>May 25, 2026</del> <strong>June 8, 2026</strong> – Workshop proposal deadline <strong>(extended)</strong></li>
         <li><del>May 29, 2026</del> <strong>June 12, 2026</strong> – Workshop acceptance notification <strong>(extended)</strong></li>
-        <li><strong>August 5, 2026</strong> – Deadline for participant submissions</li>
-        <li><strong>August 24, 2026</strong> – Notification of accepted participant submissions</li>
-        <li><strong>September 14, 2026</strong> – Camera-ready deadline</li>
         <li><strong>October 27-30, 2026</strong> – MexIHC 2026 conference dates</li>
     </ul>
+
+    <h2 id="cws-accepted-workshops">Accepted Workshops</h2>
+    <p>
+        Under construction.
+    </p>
 
     <h2 id="cws-submission">Submission</h2>
     <p>

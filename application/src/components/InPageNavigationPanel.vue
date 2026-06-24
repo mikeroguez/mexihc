@@ -20,6 +20,14 @@ const props = defineProps({
     type: String,
     default: '',
   },
+  completedLabel: {
+    type: String,
+    default: '',
+  },
+  completedNextStage: {
+    type: String,
+    default: '',
+  },
 })
 
 const { locale } = useI18n()
@@ -179,9 +187,15 @@ onBeforeUnmount(() => {
         </p>
       </template>
 
-      <p v-else class="next-date-ended mb-0">
-        {{ conferenceEnded ? text.conferenceEnded : text.noUpcoming }}
-      </p>
+      <template v-else>
+        <p class="next-date-ended mb-0">
+          {{ completedLabel || (conferenceEnded ? text.conferenceEnded : text.noUpcoming) }}
+        </p>
+
+        <p v-if="completedNextStage" class="next-date-following mt-3 mb-0">
+          {{ text.nextStage }}: {{ completedNextStage }}
+        </p>
+      </template>
 
       <RouterLink
         v-if="allDatesTo"
