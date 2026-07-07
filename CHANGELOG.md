@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.1.21] - 2026-07-07
+
+### Added
+- Entradas de noticias en los canales RSS (español, inglés y multilingüe) anunciando los talleres aceptados y las fechas límite centralizadas de recepción de trabajos de talleres.
+
+### Changed
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.21`.
+
 ## [2026.1.20] - 2026-07-07
 
 ### Added

@@ -1,4 +1,4 @@
-# MexIHC Versión 2026.1.20
+# MexIHC Versión 2026.1.21
 
 ## Sitio web para el MexIHC 2026
 
@@ -7,7 +7,7 @@ Sitio web de difusión de MexIHC 2026, organizado por la [Asociación Mexicana d
 
 ### Versión actual
 
-La versión `2026.1.20` corrige el error en la carga de la sección de descripción ("About"), reactiva el control centralizado de fechas para talleres (envío de trabajos de talleres al 20 de agosto, notificación al 28 de agosto y final al 14 de septiembre) y agrega los enlaces accesibles de los talleres aceptados y el correo de contacto para las coordinadoras de programa.
+La versión `2026.1.21` publica las actualizaciones de los talleres aceptados y sus fechas en los canales RSS de noticias (ES, EN y multilingüe).
 
 ### Technology used
 

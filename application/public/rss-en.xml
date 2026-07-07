@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/en/</link>
     <description>Official RSS feed for MexIHC 2026 news and updates in English.</description>
     <language>en-US</language>
-    <lastBuildDate>Tue, 16 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 18:55:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-en.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/</link>
     </image>
+
+    <item>
+      <title>Call for Papers of accepted workshops at MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/call-for-workshops</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/call-for-workshops#accepted-workshops-2026-07-07</guid>
+      <description>Check out the call for papers and websites of the accepted workshops for MexIHC 2026 (IMSaBi, Reimagining HCI, Aging at Home). The centralized deadline for submitting papers to workshops is August 20, 2026.</description>
+      <pubDate>Tue, 07 Jul 2026 18:55:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Call for Papers deadline extended again for MexIHC 2026</title>
