@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.1.20] - 2026-07-07
+
+### Added
+- Sección informativa bilingüe de convocatorias para envío de artículos a los talleres aceptados (IMSaBi, Reimaginar la IHC, Envejecimiento en casa) con enlaces accesibles.
+- Enlace al correo único de contacto de las coordinadoras de programa (`pc.2026@mexihc.org`) tanto en sus tarjetas de perfil como en los detalles de envío en la Convocatoria de Artículos.
+
+### Changed
+- Widget e hitos de la Convocatoria de Talleres reactivados y actualizados con las nuevas fechas del control centralizado de envío de trabajos (envío de artículos al 20 de agosto, notificación al 28 de agosto y final al 14 de septiembre).
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.20`.
+
+### Fixed
+- Corregida excepción en tiempo de ejecución (ReferenceError) al cargar la sección "Acerca de" de la página de inicio (llamada incorrecta a la función `getComponentForLocale`).
+
+## [2026.1.19] - 2026-06-24
+
+### Added
+- Sección bilingüe de talleres aceptados en construcción en la convocatoria de talleres.
+
+### Changed
+- Widget de la convocatoria de talleres actualizado para indicar que la recepción de propuestas ya cerró y que el siguiente hito es el registro de participación a talleres, con enlace a los sitios de talleres aceptados.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.19`.
+
 ## [2026.1.18] - 2026-06-22
 
 ### Changed
