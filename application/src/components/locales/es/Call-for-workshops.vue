@@ -29,7 +29,12 @@ export default {
         ]"
         :milestones="[
             { label: 'Fecha límite extendida para propuestas de taller', date: '2026-06-08' },
-            { label: 'Notificación extendida de aceptación del taller', date: '2026-06-12' }
+            { label: 'Notificación extendida de aceptación del taller', date: '2026-06-12' },
+            { label: 'Fecha límite para envío de artículos en Talleres', date: '2026-08-20' },
+            { label: 'Notificación de aceptación', date: '2026-08-28' },
+            { label: 'Camera Ready', date: '2026-09-14' },
+            { label: 'Inicio de MexIHC 2026', date: '2026-10-27', kind: 'conference-start' },
+            { label: 'Cierre de MexIHC 2026', date: '2026-10-30', kind: 'conference-end' }
         ]"
         :all-dates-to="Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-accepted-workshops' })"
         all-dates-label="Ver sitios de talleres"
@@ -85,13 +90,36 @@ export default {
     <ul>
         <li><del>25 de mayo de 2026</del> <strong>8 de junio de 2026</strong> – Fecha límite para propuestas de taller <strong>(extendida)</strong></li>
         <li><del>29 de mayo de 2026</del> <strong>12 de junio de 2026</strong> – Notificación de aceptación del taller <strong>(extendida)</strong></li>
+        <li><strong>20 de agosto de 2026</strong> – Fecha límite para envío de artículos en Talleres</li>
+        <li><strong>28 de agosto de 2026</strong> – Notificación de aceptación</li>
+        <li><strong>14 de septiembre de 2026</strong> – Envío de versión lista para publicación (Camera Ready)</li>
         <li><strong>27 al 30 de octubre de 2026</strong> – Celebración de MexIHC 2026</li>
     </ul>
 
-    <h2 id="cws-accepted-workshops">Talleres aceptados</h2>
+    <h2 id="cws-accepted-workshops">Convocatorias para trabajos de talleres aceptados</h2>
     <p>
-        En construcción.
+        En esta sección encontrarás las convocatorias para trabajos de los talleres aceptados en MexIHC 2026. A continuación, se presentan los enlaces a los sitios correspondientes de cada taller, donde podrás obtener más información sobre los temas de interés, fechas importantes y directrices para el envío de trabajos. Te invitamos a participar y contribuir con tu investigación en estos eventos especializados.
     </p>
+    <p>
+        Para más detalles sobre cada taller y para enviar tus trabajos, haz clic en el enlace correspondiente:
+    </p>
+    <ul>
+        <li class="mb-3">
+            <strong>Informática Médica para la Salud y Bienestar (IMSaBi)</strong><br>
+            Organizado por investigadores de la Universidad Autónoma de Colima, la UABC y el CICESE.<br>
+            <a href="https://sites.google.com/view/2026-mexihc-imsabi/p%C3%A1gina-principal" class="uline" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial del taller IMSaBi (abre en una nueva pestaña)">Sitio oficial del taller IMSaBi</a>
+        </li>
+        <li class="mb-3">
+            <strong>Reimaginar la Interacción Humano-Computadora en la Era de la Inteligencia Artificial</strong><br>
+            Organizado por investigadores de la Universidad de Colima.<br>
+            <a href="https://www.ihclab.com/mexihc2026/" class="uline" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial del taller Reimaginar la Interacción Humano-Computadora en la Era de la Inteligencia Artificial (abre en una nueva pestaña)">Sitio oficial del Taller Reimaginar la IHC en la Era de la IA</a>
+        </li>
+        <li class="mb-3">
+            <strong>Envejecimiento en casa: Diseño, implementación y evaluación en contextos reales</strong><br>
+            Organizado por investigadores de la CITEDI y Dalhousie University.<br>
+            <a href="https://adminudi.github.io/-TallerU.github.io/" class="uline" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial del taller Envejecimiento en casa (abre en una nueva pestaña)">Sitio oficial del Taller Envejecimiento en Casa</a>
+        </li>
+    </ul>
 
     <h2 id="cws-submission">Envío de propuestas</h2>
     <p>

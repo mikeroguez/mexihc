@@ -54,16 +54,16 @@ export const callMilestones = [
         labels: { es: 'Notificación de talleres', en: 'Workshop notification' },
       },
       {
-        date: '2026-08-05',
-        labels: { es: 'Recepción de trabajos', en: 'Participant submission deadline' },
+        date: '2026-08-20',
+        labels: { es: 'Fecha límite para envío de artículos en Talleres', en: 'Workshop paper submission deadline' },
       },
       {
-        date: '2026-08-24',
-        labels: { es: 'Notificación de trabajos', en: 'Participant acceptance notification' },
+        date: '2026-08-28',
+        labels: { es: 'Notificación de aceptación', en: 'Acceptance notification' },
       },
       {
         date: '2026-09-14',
-        labels: { es: 'Versión final', en: 'Camera-ready submission' },
+        labels: { es: 'Camera Ready', en: 'Camera-ready submission' },
       },
     ],
   },

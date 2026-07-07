@@ -29,7 +29,12 @@ export default {
         ]"
         :milestones="[
             { label: 'Extended workshop proposal deadline', date: '2026-06-08' },
-            { label: 'Extended workshop acceptance notification', date: '2026-06-12' }
+            { label: 'Extended workshop acceptance notification', date: '2026-06-12' },
+            { label: 'Workshop paper submission deadline', date: '2026-08-20' },
+            { label: 'Acceptance notification', date: '2026-08-28' },
+            { label: 'Camera-Ready submission', date: '2026-09-14' },
+            { label: 'Start of MexIHC 2026', date: '2026-10-27', kind: 'conference-start' },
+            { label: 'End of MexIHC 2026', date: '2026-10-30', kind: 'conference-end' }
         ]"
         :all-dates-to="Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-accepted-workshops' })"
         all-dates-label="View workshop sites"
@@ -85,13 +90,36 @@ export default {
     <ul>
         <li><del>May 25, 2026</del> <strong>June 8, 2026</strong> – Workshop proposal deadline <strong>(extended)</strong></li>
         <li><del>May 29, 2026</del> <strong>June 12, 2026</strong> – Workshop acceptance notification <strong>(extended)</strong></li>
+        <li><strong>August 20, 2026</strong> – Workshop paper submission deadline</li>
+        <li><strong>August 28, 2026</strong> – Acceptance notification</li>
+        <li><strong>September 14, 2026</strong> – Camera-Ready submission</li>
         <li><strong>October 27-30, 2026</strong> – MexIHC 2026 conference dates</li>
     </ul>
 
-    <h2 id="cws-accepted-workshops">Accepted Workshops</h2>
+    <h2 id="cws-accepted-workshops">Call for Papers of Accepted Workshops</h2>
     <p>
-        Under construction.
+        In this section you will find the calls for papers of the accepted workshops at MexIHC 2026. Below are the links to the corresponding websites of each workshop, where you can get more information about the topics of interest, important dates, and submission guidelines. We invite you to participate and contribute with your research in these specialized events.
     </p>
+    <p>
+        For more details about each workshop and to submit your work, please click on the corresponding link:
+    </p>
+    <ul>
+        <li class="mb-3">
+            <strong>Medical Informatics for Health and Wellbeing (IMSaBi)</strong><br>
+            Organized by researchers from the Universidad Autónoma de Colima, UABC, and CICESE.<br>
+            <a href="https://sites.google.com/view/2026-mexihc-imsabi/p%C3%A1gina-principal" class="uline" target="_blank" rel="noopener noreferrer" aria-label="Official website of the IMSaBi workshop (opens in a new tab)">Official website of the IMSaBi workshop</a>
+        </li>
+        <li class="mb-3">
+            <strong>Reimagining Human-Computer Interaction in the Era of Artificial Intelligence</strong><br>
+            Organized by researchers from the Universidad de Colima.<br>
+            <a href="https://www.ihclab.com/mexihc2026/" class="uline" target="_blank" rel="noopener noreferrer" aria-label="Official website of the Reimagining HCI workshop (opens in a new tab)">Official website of the Reimagining HCI workshop</a>
+        </li>
+        <li class="mb-3">
+            <strong>Aging at Home: Design, Implementation, and Evaluation in Real Contexts</strong><br>
+            Organized by researchers from CITEDI and Dalhousie University.<br>
+            <a href="https://adminudi.github.io/-TallerU.github.io/" class="uline" target="_blank" rel="noopener noreferrer" aria-label="Official website of the Aging at Home workshop (opens in a new tab)">Official website of the Aging at Home workshop</a>
+        </li>
+    </ul>
 
     <h2 id="cws-submission">Submission</h2>
     <p>
