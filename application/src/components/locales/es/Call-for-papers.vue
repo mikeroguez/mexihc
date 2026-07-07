@@ -122,6 +122,10 @@ export default {
     al preparar tu envío.
   </p>
 
+  <p>
+    Para cualquier duda o aclaración sobre la convocatoria o el proceso de revisión, favor de contactar a las coordinadoras del programa (Program Chairs) a: <a class="uline" href="mailto:pc.2026@mexihc.org">pc.2026@mexihc.org</a>.
+  </p>
+
   <h2 id="cfp-dates">Fechas importantes</h2>
   <ul>
     <li><del>1 de junio de 2026</del> <del>15 de junio de 2026</del> <strong>21 de junio de 2026</strong> – Fecha límite para envíos <strong>(extendida)</strong></li>
@@ -257,7 +261,9 @@ export default {
         </template>
         <template #name> Adriana L. Iñiguez-Carrillo </template>
         <template #institution> Universidad de Guadalajara (UdG) </template>
-        <template #email> Program Chairs </template>
+        <template #email>
+          <a class="uline" href="mailto:pc.2026@mexihc.org">pc.2026@mexihc.org</a>
+        </template>
       </OrganizerItem>
     </div>
 
@@ -280,7 +286,9 @@ export default {
         </template>
         <template #name> Mayra Donaji Barrera-Machuca </template>
         <template #institution> University of Calgary (UCalgary) </template>
-        <template #email> Program Chairs </template>
+        <template #email>
+          <a class="uline" href="mailto:pc.2026@mexihc.org">pc.2026@mexihc.org</a>
+        </template>
       </OrganizerItem>
     </div>
 
@@ -303,7 +311,9 @@ export default {
         <template #institution>
           Universidad Autónoma de Baja California (UABC)
         </template>
-        <template #email> Program Chairs </template>
+        <template #email>
+          <a class="uline" href="mailto:pc.2026@mexihc.org">pc.2026@mexihc.org</a>
+        </template>
       </OrganizerItem>
     </div>
   </div>
