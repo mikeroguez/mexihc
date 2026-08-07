@@ -5,6 +5,160 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.1.22] - 2026-08-07
+
+### Added
+- Entrada de RSS en español, inglés y feed multilingüe anunciando la prórroga del Coloquio de Graduados al 16 de agosto de 2026.
+- Enlace al formulario de envío del Coloquio de Graduados en la convocatoria bilingüe.
+
+### Changed
+- Post-it del CTA principal actualizado para destacar la prórroga del Coloquio de Graduados.
+- Convocatoria del Coloquio de Graduados actualizada con la fecha límite extendida, tanto en página, tabla de convocatorias, navbar e hitos.
+- Información de talleres aceptados reubicada al inicio de la convocatoria de talleres para reducir confusión con la convocatoria histórica de propuestas.
+- Afiliación del taller IMSaBi corregida a Universidad Autónoma de Coahuila.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.22`.
+
+## [2026.1.21] - 2026-07-07
+
+### Added
+- Entradas de noticias en los canales RSS (español, inglés y multilingüe) anunciando los talleres aceptados y las fechas límite centralizadas de recepción de trabajos de talleres.
+
+### Changed
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.21`.
+
+## [2026.1.20] - 2026-07-07
+
+### Added
+- Sección informativa bilingüe de convocatorias para envío de artículos a los talleres aceptados (IMSaBi, Reimaginar la IHC, Envejecimiento en casa) con enlaces accesibles.
+- Enlace al correo único de contacto de las coordinadoras de programa (`pc.2026@mexihc.org`) tanto en sus tarjetas de perfil como en los detalles de envío en la Convocatoria de Artículos.
+
+### Changed
+- Widget e hitos de la Convocatoria de Talleres reactivados y actualizados con las nuevas fechas del control centralizado de envío de trabajos (envío de artículos al 20 de agosto, notificación al 28 de agosto y final al 14 de septiembre).
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.20`.
+
+### Fixed
+- Corregida excepción en tiempo de ejecución (ReferenceError) al cargar la sección "Acerca de" de la página de inicio (llamada incorrecta a la función `getComponentForLocale`).
+
+## [2026.1.19] - 2026-06-24
+
+### Added
+- Sección bilingüe de talleres aceptados en construcción en la convocatoria de talleres.
+
+### Changed
+- Widget de la convocatoria de talleres actualizado para indicar que la recepción de propuestas ya cerró y que el siguiente hito es el registro de participación a talleres, con enlace a los sitios de talleres aceptados.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.19`.
+
+## [2026.1.18] - 2026-06-22
+
+### Changed
+- Fechas posteriores al cierre de la convocatoria de trabajos recorridas 15 días: notificación de aceptación al 22 de agosto de 2026 y envío de versión lista para publicación al 16 de septiembre de 2026.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.18`.
+
+## [2026.1.17] - 2026-06-16
+
+### Changed
+- Nueva extensión pública de la convocatoria de trabajos: fecha límite actualizada del 15 de junio al 21 de junio de 2026 en página CFP, tabla de convocatorias, navbar, jumbotron y RSS.
+
+## [2026.1.16] - 2026-06-09
+
+### Changed
+- Convocatoria de pósteres actualizada en español e inglés para recibir propuestas por correo electrónico en `posters.2026@mexihc.org`, en lugar de EasyChair.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.16`.
+
+## [2026.1.15] - 2026-06-06
+
+### Changed
+- Tarjeta del ponente principal ahora es _sticky_ durante el scroll de la biografía, para que la fotografía permanezca visible al leer el texto largo.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.15`.
+
+## [2026.1.14] - 2026-06-06
+
+### Added
+- Entradas RSS de las recomendaciones de accesibilidad para autores en los tres feeds (ES, EN y multilingüe).
+- Enlace a las recomendaciones de accesibilidad para autores en todas las convocatorias activas: artículos, pósteres, coloquio de graduados, concurso de diseño estudiantil, talleres y tutoriales (ES y EN).
+
+### Changed
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.14`.
+
+## [2026.1.13] - 2026-06-06
+
+### Changed
+- Página de recomendaciones de accesibilidad para autores (ES/EN) renovada con contenido actualizado: lenguaje inclusivo con referencia a Sharif et al. (ASSETS 2022), checklists por sección (documentos, presentaciones, videos) con ítems detallados, botones de herramientas por aplicación, y cajas informativas para LaTeX, Apple Pages/Keynote y verificación de PDF.
+- Labels de navegación interna de la página de accesibilidad actualizados a nombres cortos en ES y EN.
+- Estilos de los nuevos elementos integrados con la paleta de colores y variables CSS del sitio (`--mexihc-indigo`, `--mexihc-magenta`, `--mexihc-paper`, `--mexihc-mist`, `--mexihc-slate`).
+- Nota de fuentes (WCAG 2.2, ACM SIGACCESS) reemplaza al badge anterior.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.13`.
+
+## [2026.1.12] - 2026-06-06
+
+### Added
+- Gillian Hayes anunciada como segunda ponente principal de MexIHC 2026, con resumen de la charla y biografía en español e inglés.
+- Tarjeta bilingüe de Gillian Hayes en el home con imagen genérica y enlace directo a su perfil.
+- Entradas RSS del anuncio de Gillian Hayes en los feeds en español, inglés y multilingüe.
+
+### Changed
+- Índice de la página de ponentes principales migrado al componente compartido de navegación interna usado por las convocatorias.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.12`.
+
+## [2026.1.11] - 2026-06-06
+
+### Added
+- Roberto Martínez-Maldonado anunciado como primer ponente principal de MexIHC 2026, con fotografía, resumen de la charla y biografía en español e inglés.
+- Entradas RSS del anuncio del keynote en los feeds en español, inglés y multilingüe.
+- Accesos a la página de ponentes principales desde el navbar y el footer.
+
+### Changed
+- Sección de ponentes principales activada en el home con una tarjeta bilingüe enlazada al perfil completo.
+- Página de ponentes actualizada para mostrar únicamente la información confirmada de la edición 2026.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.11`.
+
+### Fixed
+- Corregida la carga dinámica del componente de ponentes en el home.
+
+## [2026.1.10] - 2026-06-06
+
+### Added
+- Nueva convocatoria a la sesión de pósteres de MexIHC 2026 en español e inglés, con fechas importantes, lineamientos de envío, revisión, asistencia y responsables.
+- Entradas RSS para la convocatoria de pósteres en los feeds en español, inglés y multilingüe.
+
+### Changed
+- Navbar y tabla de convocatorias actualizados con la fecha límite del 30 de agosto de 2026 y acceso a la convocatoria de pósteres.
+- Perfiles de responsables de pósteres alineados con el estilo y tamaño de las demás convocatorias.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.10`.
+
+### Fixed
+- Corregido el enlace de recomendaciones de accesibilidad que interrumpía el renderizado del contenido y las tarjetas de responsables.
+- Normalizados los enlaces HTTPS de plantillas de todas las convocatorias para descargar archivos ZIP: plantilla AMexIHC general y plantilla específica de talleres.
+
+## [2026.1.9] - 2026-06-03
+
+### Fixed
+- Corregidos los enlaces a la plantilla de la revista AMexIHC en todas las convocatorias publicadas para usar `http://mexihc.org/aihc_template.docx`.
+- Corregidos los enlaces a la revista AIHC en las convocatorias para usar `https://revistaaihc.mx/index.php/aihc`.
+- Reparados enlaces de publicación en la convocatoria de pósteres para que el texto de la revista quede dentro del vínculo.
+
+### Changed
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.9`.
+
+## [2026.1.8] - 2026-06-03
+
+### Added
+- Nueva convocatoria del Coloquio de Graduados / Consorcio de Posgrado 2026 en español e inglés, con navegación interna, fechas importantes y responsables actualizados.
+- Concurso de Diseño Estudiantil 2026 en español e inglés, incluyendo RSS y responsables sincronizados con la página de organizadores.
+- Convocatoria de Talleres 2026 separada de Tutoriales, con plantilla oficial, fechas, responsables y entradas RSS.
+- Entradas RSS multilingües y por idioma para nuevas convocatorias y actualizaciones de fechas.
+
+### Changed
+- Extensión pública de la convocatoria de trabajos: fecha límite actualizada del 1 de junio al 15 de junio de 2026 en UI, tabla de convocatorias, navbar y RSS.
+- Extensión pública de la convocatoria de talleres: fecha límite actualizada del 25 de mayo al 8 de junio de 2026 y notificación al 12 de junio de 2026.
+- Tabla de convocatorias con estados automáticos de abierta/cerrada según la fecha límite.
+- Navbar y footer sincronizados con las convocatorias publicadas y sus mensajes de fecha.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.8`.
+
+### Fixed
+- Correcciones de contenido y assets en organizadores y convocatorias, incluyendo la fotografía de Marcela D. Rodríguez y responsables del concurso estudiantil.
+- Ajustes de RSS para mantener enlaces, fechas y feeds por idioma consistentes.
+
 ## [2026.1.7] - 2026-05-06
 
 ### Changed

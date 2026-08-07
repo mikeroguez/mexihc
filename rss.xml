@@ -6,7 +6,7 @@
     <description>Official multilingual RSS feed for MexIHC 2026 updates. Use rss-es.xml and
       rss-en.xml for language-specific feeds.</description>
     <language>en-US</language>
-    <lastBuildDate>Sat, 02 May 2026 04:22:04 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 18:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss.xml" rel="self" type="application/rss+xml" />
     <atom:link href="https://www.mexihc.org/2026/rss-es.xml" rel="alternate"
@@ -18,6 +18,166 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/</link>
     </image>
+
+    <item>
+      <title>[ES] Prórroga del Coloquio de Graduados de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/graduate-colloquium</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/es/graduate-colloquium#extension-2026-08-07</guid>
+      <description>La fecha límite para envíos al Coloquio de Graduados se extendió del 9 de agosto de 2026 al 16 de agosto de 2026.</description>
+      <pubDate>Fri, 07 Aug 2026 18:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] MexIHC 2026 Graduate Colloquium deadline extended</title>
+      <link>https://www.mexihc.org/2026/en/graduate-colloquium</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/graduate-colloquium#extension-2026-08-07</guid>
+      <description>The Graduate Colloquium submission deadline was extended from August 9, 2026 to August 16, 2026.</description>
+      <pubDate>Fri, 07 Aug 2026 18:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[ES] Convocatoria para envío de trabajos a talleres aceptados en MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/call-for-workshops</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/es/call-for-workshops#accepted-workshops-2026-07-07</guid>
+      <description>Conoce las convocatorias y sitios web de los talleres aceptados para MexIHC 2026 (IMSaBi, Reimaginar la IHC, Envejecimiento en casa). La fecha límite centralizada para el envío de artículos a los talleres es el 20 de agosto de 2026.</description>
+      <pubDate>Tue, 07 Jul 2026 18:55:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] Call for Papers of accepted workshops at MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/call-for-workshops</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/call-for-workshops#accepted-workshops-2026-07-07</guid>
+      <description>Check out the call for papers and websites of the accepted workshops for MexIHC 2026 (IMSaBi, Reimagining HCI, Aging at Home). The centralized deadline for submitting papers to workshops is August 20, 2026.</description>
+      <pubDate>Tue, 07 Jul 2026 18:55:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[ES] Nueva prórroga en la convocatoria de trabajos de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/call-for-papers</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/es/call-for-papers#extension-2026-06-16</guid>
+      <description>La fecha límite para envíos de trabajos se extendió del 15 de junio de 2026 al 21 de junio de 2026.</description>
+      <pubDate>Tue, 16 Jun 2026 12:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] Call for Papers deadline extended again for MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/call-for-papers</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/call-for-papers#extension-2026-06-16</guid>
+      <description>The paper submission deadline was extended from June 15, 2026 to June 21, 2026.</description>
+      <pubDate>Tue, 16 Jun 2026 12:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[ES] Recomendaciones de accesibilidad para autores de MexIHC 2026 actualizadas</title>
+      <link>https://www.mexihc.org/2026/es/accessibility-recommendations-for-authors</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/accessibility-recommendations-for-authors</guid>
+      <description>Consulta las recomendaciones de accesibilidad para autores de MexIHC 2026, alineadas con WCAG 2.2. Incluye guías de lenguaje inclusivo, documentos accesibles, presentaciones y videos con subtítulos.</description>
+      <pubDate>Sat, 06 Jun 2026 23:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] MexIHC 2026 Accessibility Recommendations for Authors updated</title>
+      <link>https://www.mexihc.org/2026/en/accessibility-recommendations-for-authors</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/en/accessibility-recommendations-for-authors</guid>
+      <description>Check the updated accessibility recommendations for MexIHC 2026 authors, aligned with WCAG 2.2. Includes inclusive language guidance, accessible documents, presentations, and videos with subtitles.</description>
+      <pubDate>Sat, 06 Jun 2026 23:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[ES] Gillian Hayes, segunda ponente principal confirmada de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/keynote-speakers#gillian-hayes</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/keynote-speakers#gillian-hayes</guid>
+      <description>Conoce la charla y biografía de Gillian Hayes, segunda ponente principal confirmada de MexIHC 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 21:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] Gillian Hayes announced as the second MexIHC 2026 keynote speaker</title>
+      <link>https://www.mexihc.org/2026/en/keynote-speakers#gillian-hayes</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/en/keynote-speakers#gillian-hayes</guid>
+      <description>Read the talk abstract and biography of Gillian Hayes, the second confirmed keynote speaker for MexIHC 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 21:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[ES] Roberto Martínez-Maldonado, primer ponente principal confirmado de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/keynote-speakers#roberto-martinez-maldonado</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/keynote-speakers#roberto-martinez-maldonado</guid>
+      <description>Conoce la charla y biografía de Roberto Martínez-Maldonado, primer ponente principal confirmado de MexIHC 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 20:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] Roberto Martínez-Maldonado announced as the first MexIHC 2026 keynote speaker</title>
+      <link>https://www.mexihc.org/2026/en/keynote-speakers#roberto-martinez-maldonado</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/en/keynote-speakers#roberto-martinez-maldonado</guid>
+      <description>Read the talk abstract and biography of Roberto Martínez-Maldonado, the first confirmed keynote speaker for MexIHC 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 20:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[ES] Convocatoria a la sesión de pósteres abierta para MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/call-for-posters</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/call-for-posters</guid>
+      <description>Consulta la convocatoria a la sesión de pósteres de MexIHC 2026. La fecha límite para envíos es el 30 de agosto de 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 18:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] Call for Poster Track is open for MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/call-for-posters</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/en/call-for-posters</guid>
+      <description>Check the MexIHC 2026 Call for Poster Track. The submission deadline is August 30, 2026.</description>
+      <pubDate>Sat, 06 Jun 2026 18:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[ES] Convocatoria al Coloquio de Graduados abierta para MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/graduate-colloquium</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/graduate-colloquium</guid>
+      <description>Consulta la convocatoria del Coloquio de Graduados de MexIHC 2026. La fecha límite para envíos es el 16 de agosto de 2026.</description>
+      <pubDate>Wed, 03 Jun 2026 18:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] Call for Graduate Colloquium is open for MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/graduate-colloquium</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/en/graduate-colloquium</guid>
+      <description>Check the MexIHC 2026 Graduate Colloquium call. The submission deadline is August 16, 2026.</description>
+      <pubDate>Wed, 03 Jun 2026 18:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[ES] Prórroga en la convocatoria de trabajos de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/call-for-papers</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/es/call-for-papers#extension-2026-05-29</guid>
+      <description>La fecha límite para envíos de trabajos se extendió del 1 de junio de 2026 al 15 de junio de 2026.</description>
+      <pubDate>Fri, 29 May 2026 19:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] Call for Papers deadline extended for MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/call-for-papers</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/call-for-papers#extension-2026-05-29</guid>
+      <description>The paper submission deadline was extended from June 1, 2026 to June 15, 2026.</description>
+      <pubDate>Fri, 29 May 2026 19:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[ES] Prórroga en la convocatoria de talleres de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/call-for-workshops</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/es/call-for-workshops#extension-2026-05-26</guid>
+      <description>La fecha límite para propuestas de talleres se extendió del 25 de mayo de 2026 al 8 de junio de 2026. La notificación de aceptación cambió del 29 de mayo de 2026 al 12 de junio de 2026.</description>
+      <pubDate>Tue, 26 May 2026 19:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] Workshop deadline extended for MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/call-for-workshops</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/call-for-workshops#extension-2026-05-26</guid>
+      <description>The workshop proposal deadline was extended from May 25, 2026 to June 8, 2026. The acceptance notification moved from May 29, 2026 to June 12, 2026.</description>
+      <pubDate>Tue, 26 May 2026 19:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>[ES] Concurso de diseño estudiantil abierto para MexIHC 2026</title>
@@ -40,7 +200,7 @@
       <link>https://www.mexihc.org/2026/es/call-for-workshops-and-tutorials</link>
       <guid isPermaLink="true">https://www.mexihc.org/2026/es/call-for-workshops-and-tutorials</guid>
       <description>El comité organizador invita a someter propuestas de tutoriales en temas relacionados con la IHC.</description>
-      <pubDate>Fri, 24 Apr 2026 13:50:00 GMT</pubDate>
+      <pubDate>Tue, 19 May 2026 19:35:59 GMT</pubDate>
     </item>
 
     <item>
@@ -48,7 +208,23 @@
       <link>https://www.mexihc.org/2026/en/call-for-workshops-and-tutorials</link>
       <guid isPermaLink="true">https://www.mexihc.org/2026/en/call-for-workshops-and-tutorials</guid>
       <description>The organizing committee invites the submission of tutorial proposals on topics related to HCI.</description>
-      <pubDate>Fri, 24 Apr 2026 13:50:00 GMT</pubDate>
+      <pubDate>Tue, 19 May 2026 19:35:59 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[ES] Convocatoria de talleres abierta para MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/call-for-workshops</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/call-for-workshops</guid>
+      <description>Consulta la convocatoria de talleres de MexIHC 2026 y envía tu propuesta antes del 8 de junio de 2026.</description>
+      <pubDate>Tue, 19 May 2026 19:35:59 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] Call for Workshops is open for MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/call-for-workshops</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/en/call-for-workshops</guid>
+      <description>Check the MexIHC 2026 Call for Workshops and submit your proposal before June 8, 2026.</description>
+      <pubDate>Tue, 19 May 2026 19:35:59 GMT</pubDate>
     </item>
 
     <item>
@@ -56,7 +232,7 @@
       <link>https://www.mexihc.org/2026/es/call-for-papers</link>
       <guid isPermaLink="true">https://www.mexihc.org/2026/es/call-for-papers</guid>
       <description>Consulta lineamientos, temas de interés y fechas importantes de la convocatoria
-        de trabajos.</description>
+        de trabajos. La fecha límite para envíos es el 21 de junio de 2026.</description>
       <pubDate>Mon, 16 Feb 2026 12:00:00 GMT</pubDate>
     </item>
 
@@ -64,7 +240,7 @@
       <title>[EN] Call for Papers is open for MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/call-for-papers</link>
       <guid isPermaLink="true">https://www.mexihc.org/2026/en/call-for-papers</guid>
-      <description>Check submission guidelines, topics, and important dates for the Call for Papers.</description>
+      <description>Check submission guidelines, topics, and important dates for the Call for Papers. The submission deadline is June 21, 2026.</description>
       <pubDate>Mon, 16 Feb 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
