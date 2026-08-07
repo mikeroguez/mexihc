@@ -20,12 +20,12 @@ export default {
 <template>
     <InPageNavigationPanel
         :links="[
+            { label: 'Talleres aceptados', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-accepted-workshops' }) },
+            { label: 'Fechas importantes', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-dates' }) },
             { label: 'Modalidad', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-format' }) },
             { label: 'Guía para propuestas', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-guidelines' }) },
             { label: 'Tras la aceptación', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-after-acceptance' }) },
-            { label: 'Fechas importantes', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-dates' }) },
-            { label: 'Talleres aceptados', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-accepted-workshops' }) },
-            { label: 'Envío de propuestas', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-submission' }) }
+            { label: 'Envío de propuestas cerrado', to: Tr.i18nRoute({ name: 'call-for-workshops', hash: '#cws-submission' }) }
         ]"
         :milestones="[
             { label: 'Fecha límite extendida para propuestas de taller', date: '2026-06-08' },
@@ -42,6 +42,32 @@ export default {
         completed-next-stage="Registro de participación a talleres"
     />
 
+    <h2 id="cws-accepted-workshops">Convocatorias para trabajos de talleres aceptados</h2>
+    <p>
+        Esta es la información vigente para participar en los talleres aceptados de MexIHC 2026. Consulta el sitio de cada taller para revisar sus temas de interés, fechas específicas y directrices de envío.
+    </p>
+    <p>
+        Para más detalles sobre cada taller y para enviar tus trabajos, haz clic en el enlace correspondiente:
+    </p>
+    <ul>
+        <li class="mb-3">
+            <strong>Informática Médica para la Salud y Bienestar (IMSaBi)</strong><br>
+            Organizado por investigadores de la Universidad Autónoma de Coahuila, la UABC y el CICESE.<br>
+            <a href="https://sites.google.com/view/2026-mexihc-imsabi/p%C3%A1gina-principal" class="uline" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial del taller IMSaBi (abre en una nueva pestaña)">Sitio oficial del taller IMSaBi</a>
+        </li>
+        <li class="mb-3">
+            <strong>Reimaginar la Interacción Humano-Computadora en la Era de la Inteligencia Artificial</strong><br>
+            Organizado por investigadores de la Universidad de Colima.<br>
+            <a href="https://www.ihclab.com/mexihc2026/" class="uline" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial del taller Reimaginar la Interacción Humano-Computadora en la Era de la Inteligencia Artificial (abre en una nueva pestaña)">Sitio oficial del Taller Reimaginar la IHC en la Era de la IA</a>
+        </li>
+        <li class="mb-3">
+            <strong>Envejecimiento en casa: Diseño, implementación y evaluación en contextos reales</strong><br>
+            Organizado por investigadores de la CITEDI y Dalhousie University.<br>
+            <a href="https://adminudi.github.io/-TallerU.github.io/" class="uline" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial del taller Envejecimiento en casa (abre en una nueva pestaña)">Sitio oficial del Taller Envejecimiento en Casa</a>
+        </li>
+    </ul>
+
+    <h2>Información histórica para organizadores de talleres</h2>
     <p><strong>Actualización:</strong> la convocatoria de talleres fue extendida. La fecha límite pasó del <del>25 de mayo de 2026</del> al <strong>8 de junio de 2026</strong>, y la notificación de aceptación cambió del <del>29 de mayo de 2026</del> al <strong>12 de junio de 2026</strong>.</p>
 
     <p>
@@ -96,34 +122,9 @@ export default {
         <li><strong>27 al 30 de octubre de 2026</strong> – Celebración de MexIHC 2026</li>
     </ul>
 
-    <h2 id="cws-accepted-workshops">Convocatorias para trabajos de talleres aceptados</h2>
+    <h2 id="cws-submission">Envío de propuestas de taller (cerrado)</h2>
     <p>
-        En esta sección encontrarás las convocatorias para trabajos de los talleres aceptados en MexIHC 2026. A continuación, se presentan los enlaces a los sitios correspondientes de cada taller, donde podrás obtener más información sobre los temas de interés, fechas importantes y directrices para el envío de trabajos. Te invitamos a participar y contribuir con tu investigación en estos eventos especializados.
-    </p>
-    <p>
-        Para más detalles sobre cada taller y para enviar tus trabajos, haz clic en el enlace correspondiente:
-    </p>
-    <ul>
-        <li class="mb-3">
-            <strong>Informática Médica para la Salud y Bienestar (IMSaBi)</strong><br>
-            Organizado por investigadores de la Universidad Autónoma de Colima, la UABC y el CICESE.<br>
-            <a href="https://sites.google.com/view/2026-mexihc-imsabi/p%C3%A1gina-principal" class="uline" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial del taller IMSaBi (abre en una nueva pestaña)">Sitio oficial del taller IMSaBi</a>
-        </li>
-        <li class="mb-3">
-            <strong>Reimaginar la Interacción Humano-Computadora en la Era de la Inteligencia Artificial</strong><br>
-            Organizado por investigadores de la Universidad de Colima.<br>
-            <a href="https://www.ihclab.com/mexihc2026/" class="uline" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial del taller Reimaginar la Interacción Humano-Computadora en la Era de la Inteligencia Artificial (abre en una nueva pestaña)">Sitio oficial del Taller Reimaginar la IHC en la Era de la IA</a>
-        </li>
-        <li class="mb-3">
-            <strong>Envejecimiento en casa: Diseño, implementación y evaluación en contextos reales</strong><br>
-            Organizado por investigadores de la CITEDI y Dalhousie University.<br>
-            <a href="https://adminudi.github.io/-TallerU.github.io/" class="uline" target="_blank" rel="noopener noreferrer" aria-label="Sitio oficial del taller Envejecimiento en casa (abre en una nueva pestaña)">Sitio oficial del Taller Envejecimiento en Casa</a>
-        </li>
-    </ul>
-
-    <h2 id="cws-submission">Envío de propuestas</h2>
-    <p>
-        Las propuestas deberán enviarse por correo a <a href="mailto:ws.2026@mexihc.org">ws.2026@mexihc.org</a>. Para preparar el documento, utilice el <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">template oficial de talleres</a>.
+        La recepción de propuestas de talleres ya cerró. Durante la convocatoria, las propuestas debían enviarse por correo a <a href="mailto:ws.2026@mexihc.org">ws.2026@mexihc.org</a> usando el <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">template oficial de talleres</a>.
     </p>
 
     <p>

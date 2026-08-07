@@ -103,7 +103,8 @@ export const callMilestones = [
     routeName: 'graduate-colloquium',
     milestones: [
       {
-        date: '2026-08-09',
+        date: '2026-08-16',
+        previousDates: ['2026-08-09'],
         labels: { es: 'Fecha límite para envíos', en: 'Submission deadline' },
       },
       {

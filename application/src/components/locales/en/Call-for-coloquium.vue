@@ -27,7 +27,7 @@ export default {
             { label: 'Important dates', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' }) }
         ]"
         :milestones="[
-            { label: 'Submission deadline', date: '2026-08-09' },
+            { label: 'Extended submission deadline', date: '2026-08-16' },
             { label: 'Acceptance notification', date: '2026-09-04' },
             { label: 'Camera-ready submission', date: '2026-09-13' },
             { label: 'MexIHC 2026 starts', date: '2026-10-27', kind: 'conference-start' },
@@ -36,6 +36,8 @@ export default {
         :all-dates-to="Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' })"
         all-dates-label="See all important dates"
     />
+
+    <p><strong>Update:</strong> the submission deadline was extended from <del>August 9, 2026</del> to <strong>August 16, 2026</strong>.</p>
 
     <p>
         We warmly welcome master's and doctoral students currently enrolled in graduate programs focused on <strong>Human-Computer Interaction (HCI)</strong> to submit their research proposals for consideration in the Graduate Colloquium of the <strong>XI Mexican Conference on Human-Computer Interaction (MexIHC 2026)</strong>.
@@ -93,6 +95,9 @@ export default {
     <p>
         This call is open to the entire graduate student community. Abstracts will be evaluated based on conceptual and methodological clarity, the technical quality of the written proposal, and the potential impact of the project in HCI.
     </p>
+    <p>
+        Submissions must be completed through the <a href="https://docs.google.com/forms/d/e/1FAIpQLScUmqUbjObUTpYmc1KrLb7keRT2reeeWo3u-pGoahxQYtBavg/viewform?usp=sharing&amp;ouid=108190964662549054217" class="uline" target="_blank" rel="noopener noreferrer" aria-label="Graduate Colloquium submission form (opens in a new tab)">Graduate Colloquium submission form</a>.
+    </p>
 
     <p>
         We invite you to read the
@@ -104,7 +109,7 @@ export default {
 
     <h2 id="cgc-dates">Important dates</h2>
     <ul>
-        <li><strong>August 9, 2026</strong> - Submission deadline</li>
+        <li><del>August 9, 2026</del> <strong>August 16, 2026</strong> - Submission deadline <strong>(extended)</strong></li>
         <li><strong>August 18-31, 2026</strong> - Review period</li>
         <li><strong>September 4, 2026</strong> - Acceptance notification</li>
         <li><strong>September 13, 2026</strong> - Camera-ready submission</li>

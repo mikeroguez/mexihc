@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/es/</link>
     <description>Canal RSS oficial de noticias y actualizaciones de MexIHC 2026 en español.</description>
     <language>es-MX</language>
-    <lastBuildDate>Tue, 07 Jul 2026 18:55:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 18:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-es.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/es/</link>
     </image>
+
+    <item>
+      <title>Prórroga del Coloquio de Graduados de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/graduate-colloquium</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/es/graduate-colloquium#extension-2026-08-07</guid>
+      <description>La fecha límite para envíos al Coloquio de Graduados se extendió del 9 de agosto de 2026 al 16 de agosto de 2026.</description>
+      <pubDate>Fri, 07 Aug 2026 18:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Convocatoria para envío de trabajos a talleres aceptados en MexIHC 2026</title>
@@ -66,7 +74,7 @@
       <title>Convocatoria al Coloquio de Graduados abierta para MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/es/graduate-colloquium</link>
       <guid isPermaLink="true">https://www.mexihc.org/2026/es/graduate-colloquium</guid>
-      <description>Consulta la convocatoria del Coloquio de Graduados de MexIHC 2026. La fecha límite para envíos es el 9 de agosto de 2026.</description>
+      <description>Consulta la convocatoria del Coloquio de Graduados de MexIHC 2026. La fecha límite para envíos es el 16 de agosto de 2026.</description>
       <pubDate>Wed, 03 Jun 2026 18:00:00 GMT</pubDate>
     </item>
 

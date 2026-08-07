@@ -27,7 +27,7 @@ export default {
             { label: 'Fechas importantes', to: Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' }) }
         ]"
         :milestones="[
-            { label: 'Fecha límite de envío', date: '2026-08-09' },
+            { label: 'Fecha límite extendida de envío', date: '2026-08-16' },
             { label: 'Notificación de aceptación', date: '2026-09-04' },
             { label: 'Envío de versión final', date: '2026-09-13' },
             { label: 'Inicio de MexIHC 2026', date: '2026-10-27', kind: 'conference-start' },
@@ -36,6 +36,8 @@ export default {
         :all-dates-to="Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' })"
         all-dates-label="Ver todas las fechas importantes"
     />
+
+    <p><strong>Actualización:</strong> la fecha límite de envío se extendió del <del>9 de agosto de 2026</del> al <strong>16 de agosto de 2026</strong>.</p>
 
     <p>
         Damos una cálida bienvenida a la comunidad estudiantil de maestría y doctorado actualmente inscrita en programas de posgrado centrados en la <strong>Interacción Humano-Computadora (HCI)</strong>, a presentar sus propuestas de investigación para ser consideradas en el Coloquio de Graduados de la <strong>XI Conferencia Mexicana sobre Interacción Humano-Computadora (MexIHC 2026)</strong>.
@@ -93,6 +95,9 @@ export default {
     <p>
         Esta convocatoria está abierta a toda la comunidad estudiantil de posgrado. Los resúmenes serán evaluados con base en la claridad conceptual y metodológica, la calidad técnica de la propuesta escrita y el potencial de impacto del proyecto en el área de HCI.
     </p>
+    <p>
+        Los envíos deben realizarse mediante el <a href="https://docs.google.com/forms/d/e/1FAIpQLScUmqUbjObUTpYmc1KrLb7keRT2reeeWo3u-pGoahxQYtBavg/viewform?usp=sharing&amp;ouid=108190964662549054217" class="uline" target="_blank" rel="noopener noreferrer" aria-label="Formulario de envío del Coloquio de Graduados (abre en una nueva pestaña)">formulario de envío del Coloquio de Graduados</a>.
+    </p>
 
     <p>
         Te invitamos a leer las
@@ -104,7 +109,7 @@ export default {
 
     <h2 id="cgc-dates">Fechas importantes</h2>
     <ul>
-        <li><strong>9 de agosto de 2026</strong> - Fecha límite de envío</li>
+        <li><del>9 de agosto de 2026</del> <strong>16 de agosto de 2026</strong> - Fecha límite de envío <strong>(extendida)</strong></li>
         <li><strong>18 al 31 de agosto de 2026</strong> - Periodo de revisión</li>
         <li><strong>4 de septiembre de 2026</strong> - Notificación de aceptación</li>
         <li><strong>13 de septiembre de 2026</strong> - Envío de versión final (camera-ready)</li>

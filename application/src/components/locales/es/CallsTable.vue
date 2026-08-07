@@ -89,9 +89,12 @@ const calls = computed(() => [
     key: 'cgc',
     title: 'Convocatoria al coloquio de graduados',
     to: Tr.i18nRoute({ name: 'graduate-colloquium' }),
-    ...getCallStatus('2026-08-09'),
+    ...getCallStatus('2026-08-16'),
     iconClass: 'fas fa-user-graduate',
-    deadline: 'Fecha límite para envíos: 9 de agosto de 2026',
+    deadlinePrefix: 'Fecha límite para envíos:',
+    oldDeadline: '9 de agosto de 2026',
+    deadline: '16 de agosto de 2026',
+    deadlineBadge: 'Extendida',
   },
 ])
 </script>
