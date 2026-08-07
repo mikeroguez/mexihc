@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.1.22] - 2026-08-07
+
+### Added
+- Entrada de RSS en español, inglés y feed multilingüe anunciando la prórroga del Coloquio de Graduados al 16 de agosto de 2026.
+- Enlace al formulario de envío del Coloquio de Graduados en la convocatoria bilingüe.
+
+### Changed
+- Post-it del CTA principal actualizado para destacar la prórroga del Coloquio de Graduados.
+- Convocatoria del Coloquio de Graduados actualizada con la fecha límite extendida, tanto en página, tabla de convocatorias, navbar e hitos.
+- Información de talleres aceptados reubicada al inicio de la convocatoria de talleres para reducir confusión con la convocatoria histórica de propuestas.
+- Afiliación del taller IMSaBi corregida a Universidad Autónoma de Coahuila.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.22`.
+
 ## [2026.1.21] - 2026-07-07
 
 ### Added
