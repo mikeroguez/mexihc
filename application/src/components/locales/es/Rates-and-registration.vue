@@ -1,163 +1,171 @@
 <script>
-	import Tr from '@/i18n/translation'
+import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue'
+import Tr from '@/i18n/translation'
 
-	export default {
-		setup() {
-			return { Tr }
-		}
+export default {
+	components: {
+		InPageNavigationPanel
+	},
+	setup() {
+		return { Tr }
 	}
+}
 </script>
 
 <template>
-    <h2 class="">Autores</h2>
+	<InPageNavigationPanel
+		:links="[
+			{ label: 'Autores', to: Tr.i18nRoute({ name: 'registration', hash: '#authors' }) },
+			{ label: 'Asistentes', to: Tr.i18nRoute({ name: 'registration', hash: '#attendees' }) },
+			{ label: 'Tutoriales', to: Tr.i18nRoute({ name: 'registration', hash: '#tutorials' }) },
+			{ label: 'Registro y pago', to: Tr.i18nRoute({ name: 'registration', hash: '#payment' }) }
+		]"
+	/>
 
-	<table class="table table-striped">
-		<caption>Tabla de costos para autores</caption>
-		<thead>
-			<tr>
-				<th scope="col">Descripción</th>
-				<th scope="col">Costo</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Artículo completo o breve</td>
-				<td><span class="fst-italic fw-light">$4,000 MXN</span></td>
-			</tr>
-			<tr>
-				<td>Artículo adicional (mismo presentador)</td>
-				<td><span class="fst-italic fw-light">$1,500 MXN</span></td>
-			</tr>
-			<tr>
-				<td>Artículo de taller</td>
-				<td><span class="fst-italic fw-light">$3,000 MXN</span></td>
-			</tr>
-			<tr>
-				<td>Consorcio de posgrado</td>
-				<td><span class="fst-italic fw-light">$2,000 MXN</span></td>
-			</tr>
-			<tr>
-				<td>Póster</td>
-				<td><span class="fst-italic fw-light">$1,600 MXN</span></td>
-			</tr>
-			<tr>
-				<td>Competencia de diseño estudiantil</td>
-				<td>
-					<span class="fst-italic fw-light">Profesor: $800 MXN</span><br>
-					<span class="fst-italic fw-light">Estudiantes: $500 MXN</span>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<h3 class="h5">La tarifa incluye:</h3>
-	<ul>
-		<li>Publicación en la revista de AMexIHC.</li>
-		<li>Acceso a conferencias magistrales, conferencias, SDC y pósters.</li>
-		<li>Membresía de AMexIHC.</li>
-	</ul>
-	
-	<hr>
-	
-	<h2 class="">Asistentes</h2>
-
-	<table class="table table-striped">
-		<caption>Tabla de costos para asistentes</caption>
-		<thead>
-			<tr>
-				<th scope="col">Descripción</th>
-				<th scope="col">Costo</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Profesor/Estudiante/General</td>
-				<td><span class="fst-italic fw-light">$0 MXN</span></td>
-			</tr>
-			<tr>
-				<td>Con kit y certificado</td>
-				<td><span class="fst-italic fw-light">$500 MXN</span></td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<td span="3"><strong>Nota:</strong> Asientos limitados</td>
-			</tr>
-		</tfoot>		
-	</table>
-
-	<h3 class="h4">La tarifa incluye:</h3>
-	<ul>
-		<li>Acceso a conferencias magistrales, conferencias, SDC y pósters.</li>
-	</ul>
-
-	<h2 class="">Tutoriales</h2>
-
-	<table class="table table-striped">
-		<caption>Tabla de costos a tutoriales</caption>
-		<thead>
-			<tr>
-				<th scope="col">Descripción</th>
-				<th scope="col">Costo</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Autores registrados</td>
-				<td><span class="fst-italic fw-light">$450 MXN</span></td>
-			</tr>
-			<tr>
-				<td>Solo tutorial</td>
-				<td><span class="fst-italic fw-light">$800 MXN</span></td>
-			</tr>
-			<tr>
-				<td>Estudiantes de licenciatura</td>
-				<td><span class="fst-italic">$150 MXN</span></td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<td span="3"><strong>Nota:</strong> Asientos limitados</td>
-			</tr>
-		</tfoot>		
-	</table>
-	
-	<hr>
-	
-	<h2 class="">Información bancaria</h2>
-	<p>Para registrarse en el evento, por favor siga los siguientes pasos:</p>
-
-	<ol>
-		<li>Complete el formulario con su información utilizando el <a class="uline" href="https://conferencias.app/">sistema de registro</a>.</li>
-		<li>Realice el pago (preferentemente transferencia bancaria o depósito) utilizando los datos bancarios proporcionados y el Código de Registro proporcionado por el sistema de registro.</li>
-		<li>Envíe una copia de la factura de pago a registration.2024@mexihc.org (especialmente para depósitos en el banco).</li>
-		<li>Además, si necesita una factura fiscal, puede solicitarla a través del sistema y se le enviará por correo electrónico.</li>
-		<li>Los pagos realizados desde fuera de México pueden usar PayPal para completar el registro. Las instrucciones aparecerán en la página de confirmación.</li>
-	</ol>
-
-	<p>Para pagos desde cuentas bancarias mexicanas, utilice <strong>(Fecha límite 18 de octubre)</strong>:</p>
-
-	<p class="text-bold">
-		Nombre: ASOCIACION MEXICANA DE INTERACCION HUMANO COMPUTADORA AC <br>
-		Banco: BANCO DEL BAJIO <br>
-		Clabe interbancaria: 030767900000120128 <br>
-		Cuenta: 88823590201 <br>
-		Concepto: {Registration code}
+	<p>
+		Estas son las tarifas confirmadas para MexIHC 2026. Revisa la categoría que corresponde a tu participación
+		antes de iniciar el registro.
 	</p>
+	<p><strong>Nota:</strong> La cena de gala no está incluida en estas tarifas.</p>
 
-    <section class="py-5 container" id="download-soft-ui">
-        <div class="bg-gradient-dark position-relative border-radius-xl overflow-hidden">
-            <img src="/assets/img/shapes/cactus.svg" alt="" class="position-absolute start-0 top-md-0 w-100 opacity-6">
-            <div class="container py-7 postion-relative z-index-2 position-relative">
-                <div class="row">
-                    <div class="col-md-7 mx-auto text-center">                        
-                        <a href="https://conferencias.app/" class="btn btn-lg  bg-gradient-yellow  btn-round">
-                          {{ $t("register.register_button") }}
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<section id="authors" class="mt-5">
+		<h2>Autores</h2>
 
+		<table class="table table-striped">
+			<caption>Tabla de costos para autores</caption>
+			<thead>
+				<tr>
+					<th scope="col">Descripción</th>
+					<th scope="col">Costo</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Artículo completo o breve</td>
+					<td><span class="fst-italic fw-light">$4,000 MXN</span></td>
+				</tr>
+				<tr>
+					<td>Artículo adicional (mismo presentador)</td>
+					<td><span class="fst-italic fw-light">$1,500 MXN</span></td>
+				</tr>
+				<tr>
+					<td>Artículo de taller</td>
+					<td><span class="fst-italic fw-light">$3,000 MXN</span></td>
+				</tr>
+				<tr>
+					<td>Consorcio de posgrado</td>
+					<td><span class="fst-italic fw-light">$1,000 MXN</span></td>
+				</tr>
+				<tr>
+					<td>Póster</td>
+					<td><span class="fst-italic fw-light">$1,600 MXN</span></td>
+				</tr>
+				<tr>
+					<td>Competencia de diseño estudiantil</td>
+					<td>
+						<span class="fst-italic fw-light">Profesor: $800 MXN</span><br>
+						<span class="fst-italic fw-light">Estudiante individual: $500 MXN</span><br>
+						<span class="fst-italic fw-light">Equipo de 2 o más estudiantes: $1,000 MXN por equipo</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3 class="h5">El registro de autor incluye:</h3>
+		<ul>
+			<li>Acceso a conferencias magistrales, sesiones de la conferencia, SDC, pósters y recepción de bienvenida.</li>
+			<li>Membresía de AMexIHC.</li>
+		</ul>
+	</section>
+
+	<section id="attendees" class="mt-5">
+		<h2>Asistentes</h2>
+
+		<table class="table table-striped">
+			<caption>Tabla de costos para asistentes</caption>
+			<thead>
+				<tr>
+					<th scope="col">Descripción</th>
+					<th scope="col">Costo</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Acceso general (profesor/estudiante/general)</td>
+					<td><span class="fst-italic fw-light">$0 MXN</span></td>
+				</tr>
+				<tr>
+					<td>Acceso general con kit y certificado</td>
+					<td><span class="fst-italic fw-light">$500 MXN</span></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2"><strong>Nota:</strong> Asientos limitados</td>
+				</tr>
+			</tfoot>
+		</table>
+
+		<h3 class="h5">El registro de asistente incluye:</h3>
+		<ul>
+			<li>Acceso a conferencias magistrales, sesiones de la conferencia, SDC y pósters.</li>
+		</ul>
+	</section>
+
+	<section id="tutorials" class="mt-5">
+		<h2>Tutoriales</h2>
+
+		<table class="table table-striped">
+			<caption>Tabla de costos para tutoriales</caption>
+			<thead>
+				<tr>
+					<th scope="col">Descripción</th>
+					<th scope="col">Costo</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Autores registrados</td>
+					<td><span class="fst-italic fw-light">$450 MXN</span></td>
+				</tr>
+				<tr>
+					<td>Participantes del consorcio de posgrado</td>
+					<td><span class="fst-italic fw-light">$0 MXN</span></td>
+				</tr>
+				<tr>
+					<td>Estudiantes de instituciones sede</td>
+					<td><span class="fst-italic fw-light">$100 MXN</span></td>
+				</tr>
+				<tr>
+					<td>Estudiantes en general</td>
+					<td><span class="fst-italic fw-light">$200 MXN</span></td>
+				</tr>
+				<tr>
+					<td>Solo tutorial</td>
+					<td><span class="fst-italic fw-light">$800 MXN</span></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2"><strong>Nota:</strong> Asientos limitados</td>
+				</tr>
+			</tfoot>
+		</table>
+	</section>
+
+	<section id="payment" class="mt-5">
+		<h2>Registro y pago</h2>
+		<p>
+			El formulario oficial de registro y las instrucciones finales de pago serán publicados próximamente.
+			No se muestran datos bancarios hasta que estén confirmados para MexIHC 2026.
+		</p>
+		<div class="d-flex flex-wrap gap-2">
+			<RouterLink :to="Tr.i18nRoute({ name: 'getting-started' })" class="btn bg-gradient-primary btn-round">
+				Ver primeros pasos
+			</RouterLink>
+			<button class="btn btn-secondary disabled btn-round" type="button" disabled aria-disabled="true">
+				Formulario pendiente
+			</button>
+		</div>
+	</section>
 </template>
