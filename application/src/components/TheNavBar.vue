@@ -176,7 +176,53 @@
 						</button>
 						<div class="collapse navbar-collapse pt-3 pb-2 py-lg-0" id="navigation">
 							<ul class="navbar-nav navbar-nav-hover w-100">
-
+								<li class="nav-item dropdown dropdown-hover mx-2">
+									<RouterLink
+										:to="Tr.i18nRoute({ name: 'getting-started' })"
+										class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+										:class="{ 'active-section': isAttendeesSectionActive() }"
+										id="navbarDropdownAttendees"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										{{ $t("nav.for_attendees") }}
+										&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+									</RouterLink>
+									<ul
+										class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
+										aria-labelledby="navbarDropdownAttendees"
+									>
+										<li>
+											<RouterLink
+												:to="Tr.i18nRoute({ name: 'getting-started' })"
+												class="dropdown-item border-radius-md"
+												:class="{ 'active-submenu': isRoute('getting-started') }"
+											>
+												<span class="fs-6 dropdown-header text-dark font-weight-bolder p-0 text-wrap">
+													{{ $t("nav.getting_started_title") }}
+												</span>
+												<span class="text-sm text-dark text-wrap">
+													{{ $t("nav.getting_started_message") }}
+												</span>
+											</RouterLink>
+										</li>
+										<li>
+											<RouterLink
+												:to="Tr.i18nRoute({ name: 'registration' })"
+												class="dropdown-item border-radius-md"
+												:class="{ 'active-submenu': isRoute('registration') }"
+											>
+												<span class="fs-6 dropdown-header text-dark font-weight-bolder p-0 text-wrap">
+													{{ $t("nav.rates_and_registration_title") }}
+												</span>
+												<span class="text-sm text-dark text-wrap">
+													{{ $t("nav.rates_and_registration_message") }}
+												</span>
+											</RouterLink>
+										</li>
+									</ul>
+								</li>
 								<li class="nav-item dropdown dropdown-hover mx-2">
 									<RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers' })"
 										class="nav-link ps-2 d-flex cursor-pointer align-items-center"
@@ -228,72 +274,24 @@
 														</span>
 													</div>
 												</div>
-										</RouterLink>
-									</li>
-									<li class="mexihc-accessibility-menu-item">
-										<RouterLink
-											:to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })"
-											class="dropdown-item border-radius-md"
-											:class="{ 'active-submenu': isRoute('accessibility-recommendations-for-authors') }"
-										>
-											<span class="fs-6 dropdown-header text-dark font-weight-bolder p-0 text-wrap">
-												{{ $t('nav.accessibility_for_autors') }}
-											</span>
-											<span class="text-sm text-dark text-wrap">
-												{{ $t('nav.accessibility_for_autors_message') }}
-											</span>
-										</RouterLink>
-									</li>
-
+											</RouterLink>
+										</li>
+										<li class="mexihc-accessibility-menu-item">
+											<RouterLink
+												:to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors' })"
+												class="dropdown-item border-radius-md"
+												:class="{ 'active-submenu': isRoute('accessibility-recommendations-for-authors') }"
+											>
+												<span class="fs-6 dropdown-header text-dark font-weight-bolder p-0 text-wrap">
+													{{ $t('nav.accessibility_for_autors') }}
+												</span>
+												<span class="text-sm text-dark text-wrap">
+													{{ $t('nav.accessibility_for_autors_message') }}
+												</span>
+											</RouterLink>
+										</li>
 									</ul>
 								</li>
-									<li class="nav-item dropdown dropdown-hover mx-2">
-										<RouterLink
-											:to="Tr.i18nRoute({ name: 'getting-started' })"
-											class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-											:class="{ 'active-section': isAttendeesSectionActive() }"
-											id="navbarDropdownAttendees"
-											role="button"
-											data-bs-toggle="dropdown"
-											aria-expanded="false"
-										>
-											{{ $t("nav.for_attendees") }}
-											&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
-										</RouterLink>
-										<ul
-											class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
-											aria-labelledby="navbarDropdownAttendees"
-										>
-											<li>
-												<RouterLink
-													:to="Tr.i18nRoute({ name: 'getting-started' })"
-													class="dropdown-item border-radius-md"
-													:class="{ 'active-submenu': isRoute('getting-started') }"
-												>
-													<span class="fs-6 dropdown-header text-dark font-weight-bolder p-0 text-wrap">
-														{{ $t("nav.getting_started_title") }}
-													</span>
-													<span class="text-sm text-dark text-wrap">
-														{{ $t("nav.getting_started_message") }}
-													</span>
-												</RouterLink>
-											</li>
-											<li>
-												<RouterLink
-													:to="Tr.i18nRoute({ name: 'registration' })"
-													class="dropdown-item border-radius-md"
-													:class="{ 'active-submenu': isRoute('registration') }"
-												>
-													<span class="fs-6 dropdown-header text-dark font-weight-bolder p-0 text-wrap">
-														{{ $t("nav.rates_and_registration_title") }}
-													</span>
-													<span class="text-sm text-dark text-wrap">
-														{{ $t("nav.rates_and_registration_message") }}
-													</span>
-												</RouterLink>
-											</li>
-										</ul>
-									</li>
 								<li class="nav-item mx-2">
 									<RouterLink
 										:to="Tr.i18nRoute({ name: 'keynote-speakers' })"
@@ -303,8 +301,8 @@
 										{{ $t("nav.keynotes") }}
 									</RouterLink>
 								</li>
-							<li class="nav-item mx-2">
-								<RouterLink
+								<li class="nav-item mx-2">
+									<RouterLink
 										:to="Tr.i18nRoute({ name: 'organizers' })"
 										class="nav-link ps-2 d-flex cursor-pointer align-items-center"
 										:class="{ 'active-section': isRoute('organizers') }"
