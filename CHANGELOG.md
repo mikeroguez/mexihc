@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.1.23] - 2026-08-13
+
+### Added
+- Tarifas bilingües actualizadas para autores, asistentes y tutoriales.
+- Navegación interna en las páginas `Primeros pasos` y `Tarifas y registro`.
+
+### Changed
+- Sección de registro activada en los hitos de la página principal y agrupada dentro del menú `Para los asistentes`.
+- Página `Primeros pasos` actualizada para MexIHC 2026 en Ensenada, con información logística pendiente y sin datos de ediciones anteriores.
+- Página `Tarifas y registro` reorganizada para conservar tarifas confirmadas y mantener el formulario de registro como pendiente.
+- Enlaces visibles a tutoriales aceptados retirados del menú de asistentes hasta que la sección esté lista.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.23`.
+
 ## [2026.1.22] - 2026-08-07
 
 ### Added

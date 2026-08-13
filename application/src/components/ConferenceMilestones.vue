@@ -15,7 +15,7 @@ const items = computed(() => [
     key: 'registration',
     titleKey: 'about.registration',
     descriptionKey: 'about.registration_desc',
-    status: 'coming_soon',
+    status: 'open',
     iconClass: 'fas fa-user-clock',
     routeName: 'registration'
   }
