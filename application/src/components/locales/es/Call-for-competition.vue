@@ -26,7 +26,7 @@ export default {
             { label: 'Proceso de selección', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-selection' }) }
         ]"
         :milestones="[
-            { label: 'Fecha límite de recepción de trabajos', date: '2026-08-16' },
+            { label: 'Fecha límite de recepción de trabajos', date: '2026-08-30' },
             { label: 'Fecha límite para camera ready', date: '2026-09-13' },
             { label: 'Inicio de MexIHC 2026', date: '2026-10-27', kind: 'conference-start' },
             { label: 'Cierre de MexIHC 2026', date: '2026-10-30', kind: 'conference-end' }
@@ -36,6 +36,7 @@ export default {
     />
 
     <h2 id="sdc-goals">Objetivos</h2>
+    <p><strong>Actualización:</strong> la fecha límite de envío se extendió del <del>16 de agosto de 2026</del> al <strong>30 de agosto de 2026</strong>.</p>
     <ul>
         <li>Proveer a los estudiantes de diferentes campos de interacción humano-computadora una oportunidad para participar en una actividad práctica y demostrar sus habilidades en la resolución de problemas, el diseño interactivo y la experiencia de usuario.</li>
         <li>Crear un espacio para solucionar problemas reales utilizando diferentes enfoques, incluyendo investigación de diseño, lluvia de ideas, prototipos, implementación y evaluación.</li>
@@ -55,7 +56,7 @@ export default {
 
     <h2 id="sdc-dates">Fechas importantes</h2>
     <ul>
-        <li>Fecha límite de recepción de trabajos: 16 de agosto de 2026.</li>
+        <li><del>16 de agosto de 2026</del> <strong>30 de agosto de 2026</strong> - Fecha límite de recepción de trabajos <strong>(extendida)</strong>.</li>
         <li>Fecha límite para camera ready: 13 de septiembre de 2026.</li>
     </ul>
 

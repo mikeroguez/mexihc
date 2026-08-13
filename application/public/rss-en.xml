@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/en/</link>
     <description>Official RSS feed for MexIHC 2026 news and updates in English.</description>
     <language>en-US</language>
-    <lastBuildDate>Fri, 07 Aug 2026 18:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 18:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-en.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/</link>
     </image>
+
+    <item>
+      <title>MexIHC 2026 Student Design Competition deadline extended</title>
+      <link>https://www.mexihc.org/2026/en/student-design-competition</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/student-design-competition#extension-2026-08-13</guid>
+      <description>The Student Design Competition submission deadline was extended from August 16, 2026 to August 30, 2026.</description>
+      <pubDate>Thu, 13 Aug 2026 18:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>MexIHC 2026 Graduate Colloquium deadline extended</title>
@@ -98,7 +106,7 @@
       <title>Student Design Competition is open for MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/student-design-competition</link>
       <guid isPermaLink="true">https://www.mexihc.org/2026/en/student-design-competition</guid>
-      <description>Check the 2026 Student Design Competition call and submit your proposal before August 16, 2026.</description>
+      <description>Check the 2026 Student Design Competition call and submit your proposal before August 30, 2026.</description>
       <pubDate>Sat, 02 May 2026 04:22:04 GMT</pubDate>
     </item>
 

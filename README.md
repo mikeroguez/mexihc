@@ -1,4 +1,4 @@
-# MexIHC Versión 2026.1.23
+# MexIHC Versión 2026.1.24
 
 ## Sitio web para el MexIHC 2026
 
@@ -7,7 +7,7 @@ Sitio web de difusión de MexIHC 2026, organizado por la [Asociación Mexicana d
 
 ### Versión actual
 
-La versión `2026.1.23` activa la sección de registro, actualiza las tarifas y mejora la navegación para asistentes.
+La versión `2026.1.24` extiende la fecha límite del Concurso de Diseño Estudiantil al 30 de agosto de 2026 y actualiza la convocatoria, navegación, post-it principal y canales RSS.
 
 ### Technology used
 

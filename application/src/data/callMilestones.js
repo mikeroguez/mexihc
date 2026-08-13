@@ -88,7 +88,8 @@ export const callMilestones = [
     routeName: 'student-design-competition',
     milestones: [
       {
-        date: '2026-08-16',
+        date: '2026-08-30',
+        previousDates: ['2026-08-16'],
         labels: { es: 'Fecha límite para envíos', en: 'Submission deadline' },
       },
       {

@@ -5,9 +5,9 @@ import Tr from '@/i18n/translation'
 <template>
     <div class="alert alert-warning mexihc-postit col-md-8 m-auto" role="alert">
         <p>
-            <strong>Coloquio de Graduados:</strong>
-            envíos hasta el 16 de agosto.
-            <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium' })" class="mexihc-postit-rss-link">
+            <strong>Concurso de diseño estudiantil:</strong>
+            extendimos la fecha límite de envíos al 30 de agosto.
+            <RouterLink :to="Tr.i18nRoute({ name: 'student-design-competition' })" class="mexihc-postit-rss-link">
                 Ver convocatoria
             </RouterLink>
         </p>

@@ -5,9 +5,9 @@ import Tr from '@/i18n/translation'
 <template>
     <div class="alert alert-warning mexihc-postit col-md-8 m-auto" role="alert">
         <p>
-            <strong>Graduate Colloquium:</strong>
-            submissions due August 16.
-            <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium' })" class="mexihc-postit-rss-link">
+            <strong>Student Design Competition:</strong>
+            submissions are now due August 30.
+            <RouterLink :to="Tr.i18nRoute({ name: 'student-design-competition' })" class="mexihc-postit-rss-link">
                 View call
             </RouterLink>
         </p>
