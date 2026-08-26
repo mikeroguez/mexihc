@@ -28,7 +28,7 @@ import Tr from '@/i18n/translation'
             { label: 'Asistencia', to: Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-attendance' }) }
         ]"
         :milestones="[
-            { label: 'Fecha límite de recepción', date: '2026-08-30' },
+            { label: 'Fecha límite de recepción', date: '2026-09-06' },
             { label: 'Notificación de aceptación', date: '2026-09-14' },
             { label: 'Versión final', date: '2026-09-20' },
             { label: 'Inicio de MexIHC 2026', date: '2026-10-27', kind: 'conference-start' },
@@ -50,7 +50,7 @@ import Tr from '@/i18n/translation'
 
     <h2 id="cpt-dates">Fechas importantes</h2>
     <ul>
-        <li>Fecha límite de recepción: domingo 30 de agosto de 2026</li>
+        <li>Fecha límite de recepción: <del>domingo 30 de agosto de 2026</del> <strong>domingo 6 de septiembre de 2026</strong> <strong>(extendida)</strong></li>
         <li>Notificación de aceptación: lunes 14 de septiembre de 2026</li>
         <li>Versión final: domingo 20 de septiembre de 2026</li>
     </ul>

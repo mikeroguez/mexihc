@@ -26,7 +26,7 @@ export default {
             { label: 'Selection process', to: Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-selection' }) }
         ]"
         :milestones="[
-            { label: 'Submission deadline', date: '2026-08-30' },
+            { label: 'Submission deadline', date: '2026-09-06' },
             { label: 'Camera-ready deadline', date: '2026-09-13' },
             { label: 'MexIHC 2026 starts', date: '2026-10-27', kind: 'conference-start' },
             { label: 'MexIHC 2026 ends', date: '2026-10-30', kind: 'conference-end' }
@@ -36,7 +36,7 @@ export default {
     />
 
     <h2 id="sdc-goals">Goals</h2>
-    <p><strong>Update:</strong> the submission deadline has been extended from <del>August 16, 2026</del> to <strong>August 30, 2026</strong>.</p>
+    <p><strong>Update:</strong> the submission deadline has been extended from <del>August 30, 2026</del> to <strong>September 6, 2026</strong>.</p>
     <ul>
         <li>Provide students from different human-computer interaction related fields with an opportunity to participate in a practical activity and demonstrate their skills in problem solving, interaction design, and user experience.</li>
         <li>Create a space for addressing real problems through different approaches, including design research, brainstorming, prototyping, implementation, and evaluation.</li>
@@ -56,7 +56,7 @@ export default {
 
     <h2 id="sdc-dates">Important Dates</h2>
     <ul>
-        <li><del>August 16, 2026</del> <strong>August 30, 2026</strong> - Submission deadline <strong>(extended)</strong>.</li>
+        <li><del>August 16, 2026</del> <del>August 30, 2026</del> <strong>September 6, 2026</strong> - Submission deadline <strong>(extended)</strong>.</li>
         <li>Camera-ready deadline: September 13, 2026.</li>
     </ul>
 

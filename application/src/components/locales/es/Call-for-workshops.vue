@@ -30,8 +30,7 @@ export default {
         :milestones="[
             { label: 'Fecha límite extendida para propuestas de taller', date: '2026-06-08' },
             { label: 'Notificación extendida de aceptación del taller', date: '2026-06-12' },
-            { label: 'Fecha límite para envío de artículos en Talleres', date: '2026-08-20' },
-            { label: 'Notificación de aceptación', date: '2026-08-28' },
+            { label: 'Fecha límite para envío de artículos en Talleres', date: '2026-08-29' },
             { label: 'Camera Ready', date: '2026-09-14' },
             { label: 'Inicio de MexIHC 2026', date: '2026-10-27', kind: 'conference-start' },
             { label: 'Cierre de MexIHC 2026', date: '2026-10-30', kind: 'conference-end' }
@@ -116,8 +115,8 @@ export default {
     <ul>
         <li><del>25 de mayo de 2026</del> <strong>8 de junio de 2026</strong> – Fecha límite para propuestas de taller <strong>(extendida)</strong></li>
         <li><del>29 de mayo de 2026</del> <strong>12 de junio de 2026</strong> – Notificación de aceptación del taller <strong>(extendida)</strong></li>
-        <li><strong>20 de agosto de 2026</strong> – Fecha límite para envío de artículos en Talleres</li>
-        <li><strong>28 de agosto de 2026</strong> – Notificación de aceptación</li>
+        <li><del>20 de agosto de 2026</del> <strong>29 de agosto de 2026</strong> – Fecha límite para envío de artículos en Talleres <strong>(extendida)</strong></li>
+        <li><strong>Por confirmar</strong> – Notificación de aceptación</li>
         <li><strong>14 de septiembre de 2026</strong> – Envío de versión lista para publicación (Camera Ready)</li>
         <li><strong>27 al 30 de octubre de 2026</strong> – Celebración de MexIHC 2026</li>
     </ul>

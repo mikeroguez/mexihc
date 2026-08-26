@@ -30,8 +30,7 @@ export default {
         :milestones="[
             { label: 'Extended workshop proposal deadline', date: '2026-06-08' },
             { label: 'Extended workshop acceptance notification', date: '2026-06-12' },
-            { label: 'Workshop paper submission deadline', date: '2026-08-20' },
-            { label: 'Acceptance notification', date: '2026-08-28' },
+            { label: 'Workshop paper submission deadline', date: '2026-08-29' },
             { label: 'Camera-Ready submission', date: '2026-09-14' },
             { label: 'Start of MexIHC 2026', date: '2026-10-27', kind: 'conference-start' },
             { label: 'End of MexIHC 2026', date: '2026-10-30', kind: 'conference-end' }
@@ -116,8 +115,8 @@ export default {
     <ul>
         <li><del>May 25, 2026</del> <strong>June 8, 2026</strong> – Workshop proposal deadline <strong>(extended)</strong></li>
         <li><del>May 29, 2026</del> <strong>June 12, 2026</strong> – Workshop acceptance notification <strong>(extended)</strong></li>
-        <li><strong>August 20, 2026</strong> – Workshop paper submission deadline</li>
-        <li><strong>August 28, 2026</strong> – Acceptance notification</li>
+        <li><del>August 20, 2026</del> <strong>August 29, 2026</strong> – Workshop paper submission deadline <strong>(extended)</strong></li>
+        <li><strong>To be confirmed</strong> – Acceptance notification</li>
         <li><strong>September 14, 2026</strong> – Camera-Ready submission</li>
         <li><strong>October 27-30, 2026</strong> – MexIHC 2026 conference dates</li>
     </ul>

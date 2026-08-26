@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.1.26] - 2026-08-26
+
+### Added
+- Entradas de RSS en español, inglés y feed multilingüe anunciando la prórroga de pósteres y Concurso de Diseño Estudiantil al 6 de septiembre de 2026.
+
+### Changed
+- Convocatorias de pósteres y Concurso de Diseño Estudiantil extendidas del 30 de agosto al 6 de septiembre de 2026 en páginas bilingües, tabla de convocatorias, navbar, post-it principal e hitos.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.26`.
+
+## [2026.1.25] - 2026-08-26
+
+### Added
+- Entrada de RSS en español, inglés y feed multilingüe anunciando la prórroga de recepción de trabajos de talleres aceptados al 29 de agosto de 2026.
+
+### Changed
+- Recepción de trabajos para los talleres aceptados extendida del 20 de agosto al 29 de agosto de 2026 en la convocatoria bilingüe, hitos y canales RSS.
+- Notificación de aceptación de trabajos de talleres marcada como pendiente de confirmar para evitar que aparezca antes de la fecha límite extendida.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.25`.
+
 ## [2026.1.24] - 2026-08-13
 
 ### Added

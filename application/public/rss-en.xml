@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/en/</link>
     <description>Official RSS feed for MexIHC 2026 news and updates in English.</description>
     <language>en-US</language>
-    <lastBuildDate>Thu, 13 Aug 2026 18:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 18:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-en.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -15,10 +15,26 @@
     </image>
 
     <item>
+      <title>MexIHC 2026 Posters and Student Design Competition deadlines extended</title>
+      <link>https://www.mexihc.org/2026/en/call-for-posters</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/call-for-posters#posters-sdc-extension-2026-08-26</guid>
+      <description>The submission deadlines for the Poster Track and Student Design Competition were extended from August 30, 2026 to September 6, 2026.</description>
+      <pubDate>Wed, 26 Aug 2026 19:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>MexIHC 2026 accepted workshops paper submission deadline extended</title>
+      <link>https://www.mexihc.org/2026/en/call-for-workshops</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/call-for-workshops#workshop-papers-extension-2026-08-26</guid>
+      <description>The centralized paper submission deadline for accepted MexIHC 2026 workshops was extended from August 20, 2026 to August 29, 2026.</description>
+      <pubDate>Wed, 26 Aug 2026 18:00:00 GMT</pubDate>
+    </item>
+
+    <item>
       <title>MexIHC 2026 Student Design Competition deadline extended</title>
       <link>https://www.mexihc.org/2026/en/student-design-competition</link>
       <guid isPermaLink="false">https://www.mexihc.org/2026/en/student-design-competition#extension-2026-08-13</guid>
-      <description>The Student Design Competition submission deadline was extended from August 16, 2026 to August 30, 2026.</description>
+      <description>The Student Design Competition submission deadline was extended from August 16, 2026 to August 30, 2026 and later to September 6, 2026.</description>
       <pubDate>Thu, 13 Aug 2026 18:00:00 GMT</pubDate>
     </item>
 
@@ -34,7 +50,7 @@
       <title>Call for Papers of accepted workshops at MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/call-for-workshops</link>
       <guid isPermaLink="false">https://www.mexihc.org/2026/en/call-for-workshops#accepted-workshops-2026-07-07</guid>
-      <description>Check out the call for papers and websites of the accepted workshops for MexIHC 2026 (IMSaBi, Reimagining HCI, Aging at Home). The centralized deadline for submitting papers to workshops is August 20, 2026.</description>
+      <description>Check out the call for papers and websites of the accepted workshops for MexIHC 2026 (IMSaBi, Reimagining HCI, Aging at Home). The centralized deadline for submitting papers to workshops was extended from August 20, 2026 to August 29, 2026.</description>
       <pubDate>Tue, 07 Jul 2026 18:55:00 GMT</pubDate>
     </item>
 
@@ -74,7 +90,7 @@
       <title>Call for Poster Track is open for MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/call-for-posters</link>
       <guid isPermaLink="true">https://www.mexihc.org/2026/en/call-for-posters</guid>
-      <description>Check the MexIHC 2026 Call for Poster Track. The submission deadline is August 30, 2026.</description>
+      <description>Check the MexIHC 2026 Call for Poster Track. The submission deadline is September 6, 2026.</description>
       <pubDate>Sat, 06 Jun 2026 18:00:00 GMT</pubDate>
     </item>
 
@@ -106,7 +122,7 @@
       <title>Student Design Competition is open for MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/student-design-competition</link>
       <guid isPermaLink="true">https://www.mexihc.org/2026/en/student-design-competition</guid>
-      <description>Check the 2026 Student Design Competition call and submit your proposal before August 30, 2026.</description>
+      <description>Check the 2026 Student Design Competition call and submit your proposal before September 6, 2026.</description>
       <pubDate>Sat, 02 May 2026 04:22:04 GMT</pubDate>
     </item>
 

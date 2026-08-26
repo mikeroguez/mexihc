@@ -28,7 +28,7 @@ import Tr from '@/i18n/translation'
             { label: 'Attendance', to: Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-attendance' }) }
         ]"
         :milestones="[
-            { label: 'Submission deadline', date: '2026-08-30' },
+            { label: 'Submission deadline', date: '2026-09-06' },
             { label: 'Acceptance notification', date: '2026-09-14' },
             { label: 'Camera-ready submission', date: '2026-09-20' },
             { label: 'MexIHC 2026 starts', date: '2026-10-27', kind: 'conference-start' },
@@ -49,7 +49,7 @@ import Tr from '@/i18n/translation'
 
     <h2 id="cpt-dates">Important Dates</h2>
     <ul>
-        <li>Submission deadline: Sunday, August 30, 2026</li>
+        <li>Submission deadline: <del>Sunday, August 30, 2026</del> <strong>Sunday, September 6, 2026</strong> <strong>(extended)</strong></li>
         <li>Acceptance notification: Monday, September 14, 2026</li>
         <li>Camera-ready submission: Sunday, September 20, 2026</li>
     </ul>

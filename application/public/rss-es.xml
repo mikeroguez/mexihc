@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/es/</link>
     <description>Canal RSS oficial de noticias y actualizaciones de MexIHC 2026 en español.</description>
     <language>es-MX</language>
-    <lastBuildDate>Thu, 13 Aug 2026 18:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 18:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-es.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -15,10 +15,26 @@
     </image>
 
     <item>
+      <title>Prórroga de pósteres y Concurso de Diseño Estudiantil de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/call-for-posters</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/es/call-for-posters#posters-sdc-extension-2026-08-26</guid>
+      <description>Las fechas límite para envíos a la sesión de pósteres y al Concurso de Diseño Estudiantil se extendieron del 30 de agosto de 2026 al 6 de septiembre de 2026.</description>
+      <pubDate>Wed, 26 Aug 2026 19:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Prórroga para envío de trabajos a talleres aceptados de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/call-for-workshops</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/es/call-for-workshops#workshop-papers-extension-2026-08-26</guid>
+      <description>La fecha límite centralizada para el envío de artículos a los talleres aceptados de MexIHC 2026 se extendió del 20 de agosto de 2026 al 29 de agosto de 2026.</description>
+      <pubDate>Wed, 26 Aug 2026 18:00:00 GMT</pubDate>
+    </item>
+
+    <item>
       <title>Prórroga del Concurso de Diseño Estudiantil de MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/es/student-design-competition</link>
       <guid isPermaLink="false">https://www.mexihc.org/2026/es/student-design-competition#extension-2026-08-13</guid>
-      <description>La fecha límite para envíos al Concurso de Diseño Estudiantil se extendió del 16 de agosto de 2026 al 30 de agosto de 2026.</description>
+      <description>La fecha límite para envíos al Concurso de Diseño Estudiantil se extendió del 16 de agosto de 2026 al 30 de agosto de 2026 y posteriormente al 6 de septiembre de 2026.</description>
       <pubDate>Thu, 13 Aug 2026 18:00:00 GMT</pubDate>
     </item>
 
@@ -34,7 +50,7 @@
       <title>Convocatoria para envío de trabajos a talleres aceptados en MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/es/call-for-workshops</link>
       <guid isPermaLink="false">https://www.mexihc.org/2026/es/call-for-workshops#accepted-workshops-2026-07-07</guid>
-      <description>Conoce las convocatorias y sitios web de los talleres aceptados para MexIHC 2026 (IMSaBi, Reimaginar la IHC, Envejecimiento en casa). La fecha límite centralizada para el envío de artículos a los talleres es el 20 de agosto de 2026.</description>
+      <description>Conoce las convocatorias y sitios web de los talleres aceptados para MexIHC 2026 (IMSaBi, Reimaginar la IHC, Envejecimiento en casa). La fecha límite centralizada para el envío de artículos a los talleres se extendió del 20 de agosto de 2026 al 29 de agosto de 2026.</description>
       <pubDate>Tue, 07 Jul 2026 18:55:00 GMT</pubDate>
     </item>
 
@@ -74,7 +90,7 @@
       <title>Convocatoria a la sesión de pósteres abierta para MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/es/call-for-posters</link>
       <guid isPermaLink="true">https://www.mexihc.org/2026/es/call-for-posters</guid>
-      <description>Consulta la convocatoria a la sesión de pósteres de MexIHC 2026. La fecha límite para envíos es el 30 de agosto de 2026.</description>
+      <description>Consulta la convocatoria a la sesión de pósteres de MexIHC 2026. La fecha límite para envíos es el 6 de septiembre de 2026.</description>
       <pubDate>Sat, 06 Jun 2026 18:00:00 GMT</pubDate>
     </item>
 
@@ -106,7 +122,7 @@
       <title>Concurso de diseño estudiantil abierto para MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/es/student-design-competition</link>
       <guid isPermaLink="true">https://www.mexihc.org/2026/es/student-design-competition</guid>
-      <description>Consulta la convocatoria del Concurso de Diseño Estudiantil 2026 y envía tu propuesta antes del 30 de agosto de 2026.</description>
+      <description>Consulta la convocatoria del Concurso de Diseño Estudiantil 2026 y envía tu propuesta antes del 6 de septiembre de 2026.</description>
       <pubDate>Sat, 02 May 2026 04:22:04 GMT</pubDate>
     </item>
 

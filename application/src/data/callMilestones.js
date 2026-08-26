@@ -25,7 +25,8 @@ export const callMilestones = [
     routeName: 'call-for-posters',
     milestones: [
       {
-        date: '2026-08-30',
+        date: '2026-09-06',
+        previousDates: ['2026-08-30'],
         labels: { es: 'Fecha límite para envíos', en: 'Submission deadline' },
       },
       {
@@ -54,12 +55,9 @@ export const callMilestones = [
         labels: { es: 'Notificación de talleres', en: 'Workshop notification' },
       },
       {
-        date: '2026-08-20',
+        date: '2026-08-29',
+        previousDates: ['2026-08-20'],
         labels: { es: 'Fecha límite para envío de artículos en Talleres', en: 'Workshop paper submission deadline' },
-      },
-      {
-        date: '2026-08-28',
-        labels: { es: 'Notificación de aceptación', en: 'Acceptance notification' },
       },
       {
         date: '2026-09-14',
@@ -88,8 +86,8 @@ export const callMilestones = [
     routeName: 'student-design-competition',
     milestones: [
       {
-        date: '2026-08-30',
-        previousDates: ['2026-08-16'],
+        date: '2026-09-06',
+        previousDates: ['2026-08-16', '2026-08-30'],
         labels: { es: 'Fecha límite para envíos', en: 'Submission deadline' },
       },
       {
