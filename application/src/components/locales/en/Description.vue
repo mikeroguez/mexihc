@@ -1,3 +1,13 @@
+<script>
+import Tr from '@/i18n/translation'
+
+export default {
+    setup() {
+        return { Tr }
+    }
+}
+</script>
+
 <template>
     <h3 class="text-white mb-0">The largest conference in Human-Computer Interaction in Mexico.</h3>
 
@@ -6,4 +16,13 @@
         Interaction in a biennial format. Organized by the Mexican Association on Human-Computer Interaction (<a
             class="uline-dark" href="https://www.amexihc.org/">AMexIHC</a>).
     </p>
+
+    <div class="d-flex flex-wrap justify-content-center gap-2">
+        <RouterLink :to="Tr.i18nRoute({ name: 'schedule' })" class="btn bg-gradient-yellow btn-round btn-lg">
+            Preliminary schedule
+        </RouterLink>
+        <RouterLink :to="Tr.i18nRoute({ name: 'getting-started' })" class="btn btn-outline-light btn-round btn-lg">
+            Get ready to attend
+        </RouterLink>
+    </div>
 </template>

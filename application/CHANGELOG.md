@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.1.36] - 2026-09-04
+
+### Added
+- Información de hotel sede y hospedaje preferencial agregada a la guía de preparación en páginas bilingües.
+- Flyers de Hotel Cortez Baja Inn, Hotel Bahía y Misión Santa Isabel agregados a la sección de hospedaje.
+- Agenda preliminar 2026 agregada en paginas bilingues con actividades del 27 al 30 de octubre de 2026.
+
+### Changed
+- Programa anterior de 2024 reemplazado por una estructura preliminar 2026 sujeta a cambios.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.36`.
+
 ## [2026.1.35] - 2026-09-01
 
 ### Changed

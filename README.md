@@ -1,4 +1,4 @@
-# MexIHC Versión 2026.1.35
+# MexIHC Versión 2026.1.36
 
 ## Sitio web para el MexIHC 2026
 
@@ -7,7 +7,7 @@ Sitio web de difusión de MexIHC 2026, organizado por la [Asociación Mexicana d
 
 ### Versión actual
 
-La versión `2026.1.35` retira el enlace del post-it del hero.
+La versión `2026.1.36` agrega información de hospedaje, hotel sede y agenda preliminar 2026.
 
 ### Technology used
 
