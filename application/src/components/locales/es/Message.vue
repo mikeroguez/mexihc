@@ -1,8 +1,8 @@
 <template>
     <div class="alert alert-warning mexihc-postit col-md-8 m-auto" role="alert">
         <p>
-            <strong>Pósteres y Concurso de diseño estudiantil:</strong>
-            extendimos la fecha límite de envíos al 6 de septiembre.
+            <strong>Talleres aceptados:</strong>
+            recibimos artículos de hasta 6 páginas y position papers de 2 páginas hasta el 5 de septiembre.
         </p>
     </div>
 </template>

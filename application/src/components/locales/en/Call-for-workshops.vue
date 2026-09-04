@@ -30,7 +30,8 @@ export default {
         :milestones="[
             { label: 'Extended workshop proposal deadline', date: '2026-06-08' },
             { label: 'Extended workshop acceptance notification', date: '2026-06-12' },
-            { label: 'Workshop paper submission deadline', date: '2026-08-29' },
+            { label: 'Workshop paper submission deadline', date: '2026-09-05' },
+            { label: 'Acceptance notification', date: '2026-09-09' },
             { label: 'Camera-Ready submission', date: '2026-09-14' },
             { label: 'Start of MexIHC 2026', date: '2026-10-27', kind: 'conference-start' },
             { label: 'End of MexIHC 2026', date: '2026-10-30', kind: 'conference-end' }
@@ -66,6 +67,11 @@ export default {
         </li>
     </ul>
 
+    <h2>Submission Types</h2>
+    <p>
+        Workshop papers of up to 6 pages and 2-page position papers are accepted. The submission deadline was extended one more week, from <del>August 29, 2026</del> to <strong>September 5, 2026</strong>.
+    </p>
+
     <h2>Historical Information for Workshop Organizers</h2>
     <p><strong>Update:</strong> the workshop call was extended. The proposal deadline moved from <del>May 25, 2026</del> to <strong>June 8, 2026</strong>, and the acceptance notification moved from <del>May 29, 2026</del> to <strong>June 12, 2026</strong>.</p>
 
@@ -85,7 +91,7 @@ export default {
 
     <h2 id="cws-guidelines">Proposal Guidelines</h2>
     <p>
-        Proposals must contain enough information to assess their relevance and interest to the community. The document may be submitted in Spanish or English, must be 3 to 4 pages long, and should be prepared using the <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">official MexIHC 2026 workshop template</a>.
+        Proposals must contain enough information to assess their relevance and interest to the community. The document may be submitted in Spanish or English, may be up to 6 pages long for papers or 2 pages long for position papers, and should be prepared using the <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">official MexIHC 2026 workshop template</a> or the <a href="https://mexihc.org/AIHC_Template_LaTeX_v2.zip">AIHC LaTeX format</a>.
     </p>
     <p>
         Each proposal must include at least the following information:
@@ -115,15 +121,15 @@ export default {
     <ul>
         <li><del>May 25, 2026</del> <strong>June 8, 2026</strong> – Workshop proposal deadline <strong>(extended)</strong></li>
         <li><del>May 29, 2026</del> <strong>June 12, 2026</strong> – Workshop acceptance notification <strong>(extended)</strong></li>
-        <li><del>August 20, 2026</del> <strong>August 29, 2026</strong> – Workshop paper submission deadline <strong>(extended)</strong></li>
-        <li><strong>To be confirmed</strong> – Acceptance notification</li>
+        <li><del>August 20, 2026</del> <del>August 29, 2026</del> <strong>September 5, 2026</strong> – Workshop paper submission deadline <strong>(extended)</strong></li>
+        <li><del>September 2, 2026</del> <strong>September 9, 2026</strong> – Acceptance notification <strong>(extended)</strong></li>
         <li><strong>September 14, 2026</strong> – Camera-Ready submission</li>
         <li><strong>October 27-30, 2026</strong> – MexIHC 2026 conference dates</li>
     </ul>
 
     <h2 id="cws-submission">Workshop Proposal Submission (Closed)</h2>
     <p>
-        Workshop proposal submissions are now closed. During the call, proposals had to be submitted by email to <a href="mailto:ws.2026@mexihc.org">ws.2026@mexihc.org</a> using the <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">official workshop template</a>.
+        Workshop proposal submissions are now closed. During the call, proposals had to be submitted by email to <a href="mailto:ws.2026@mexihc.org">ws.2026@mexihc.org</a> using the <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">official workshop template</a> or the <a href="https://mexihc.org/AIHC_Template_LaTeX_v2.zip">AIHC LaTeX format</a>.
     </p>
 
     <p>

@@ -30,7 +30,8 @@ export default {
         :milestones="[
             { label: 'Fecha límite extendida para propuestas de taller', date: '2026-06-08' },
             { label: 'Notificación extendida de aceptación del taller', date: '2026-06-12' },
-            { label: 'Fecha límite para envío de artículos en Talleres', date: '2026-08-29' },
+            { label: 'Fecha límite para envío de artículos en Talleres', date: '2026-09-05' },
+            { label: 'Notificación de aceptación', date: '2026-09-09' },
             { label: 'Camera Ready', date: '2026-09-14' },
             { label: 'Inicio de MexIHC 2026', date: '2026-10-27', kind: 'conference-start' },
             { label: 'Cierre de MexIHC 2026', date: '2026-10-30', kind: 'conference-end' }
@@ -66,6 +67,11 @@ export default {
         </li>
     </ul>
 
+    <h2>Tipos de trabajos</h2>
+    <p>
+        Se aceptan artículos de hasta 6 páginas y <em>position papers</em> de 2 páginas para los talleres. La fecha límite para recibir trabajos se extendió una semana más, del <del>29 de agosto de 2026</del> al <strong>5 de septiembre de 2026</strong>.
+    </p>
+
     <h2>Información histórica para organizadores de talleres</h2>
     <p><strong>Actualización:</strong> la convocatoria de talleres fue extendida. La fecha límite pasó del <del>25 de mayo de 2026</del> al <strong>8 de junio de 2026</strong>, y la notificación de aceptación cambió del <del>29 de mayo de 2026</del> al <strong>12 de junio de 2026</strong>.</p>
 
@@ -85,7 +91,7 @@ export default {
 
     <h2 id="cws-guidelines">Guía para la presentación de propuestas</h2>
     <p>
-        Las propuestas deben contener información suficiente para evaluar su relevancia e interés para la comunidad. El documento podrá entregarse en español o inglés, con una extensión de 3 a 4 páginas, y debe elaborarse usando el <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">template oficial de talleres de MexIHC 2026</a>.
+        Las propuestas deben contener información suficiente para evaluar su relevancia e interés para la comunidad. El documento podrá entregarse en español o inglés, con una extensión de hasta 6 páginas para artículos y de 2 páginas para <em>position papers</em>, y debe elaborarse usando el <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">template oficial de talleres de MexIHC 2026</a> o el <a href="https://mexihc.org/AIHC_Template_LaTeX_v2.zip">formato LaTeX de AIHC</a>.
     </p>
     <p>
         Cada propuesta debe incluir como mínimo la siguiente información:
@@ -115,15 +121,15 @@ export default {
     <ul>
         <li><del>25 de mayo de 2026</del> <strong>8 de junio de 2026</strong> – Fecha límite para propuestas de taller <strong>(extendida)</strong></li>
         <li><del>29 de mayo de 2026</del> <strong>12 de junio de 2026</strong> – Notificación de aceptación del taller <strong>(extendida)</strong></li>
-        <li><del>20 de agosto de 2026</del> <strong>29 de agosto de 2026</strong> – Fecha límite para envío de artículos en Talleres <strong>(extendida)</strong></li>
-        <li><strong>Por confirmar</strong> – Notificación de aceptación</li>
+        <li><del>20 de agosto de 2026</del> <del>29 de agosto de 2026</del> <strong>5 de septiembre de 2026</strong> – Fecha límite para envío de artículos en Talleres <strong>(extendida)</strong></li>
+        <li><del>2 de septiembre de 2026</del> <strong>9 de septiembre de 2026</strong> – Notificación de aceptación <strong>(extendida)</strong></li>
         <li><strong>14 de septiembre de 2026</strong> – Envío de versión lista para publicación (Camera Ready)</li>
         <li><strong>27 al 30 de octubre de 2026</strong> – Celebración de MexIHC 2026</li>
     </ul>
 
     <h2 id="cws-submission">Envío de propuestas de taller (cerrado)</h2>
     <p>
-        La recepción de propuestas de talleres ya cerró. Durante la convocatoria, las propuestas debían enviarse por correo a <a href="mailto:ws.2026@mexihc.org">ws.2026@mexihc.org</a> usando el <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">template oficial de talleres</a>.
+        La recepción de propuestas de talleres ya cerró. Durante la convocatoria, las propuestas debían enviarse por correo a <a href="mailto:ws.2026@mexihc.org">ws.2026@mexihc.org</a> usando el <a href="https://mexihc.org/Template_Talleres_MexIHC_2026.zip">template oficial de talleres</a> o el <a href="https://mexihc.org/AIHC_Template_LaTeX_v2.zip">formato LaTeX de AIHC</a>.
     </p>
 
     <p>

@@ -63,13 +63,13 @@ const calls = computed(() => [
   },
   {
     key: 'cws',
-    title: 'Convocatoria de talleres',
+    title: 'Trabajos para talleres aceptados',
     to: Tr.i18nRoute({ name: 'call-for-workshops' }),
-    ...getCallStatus('2026-06-08'),
+    ...getCallStatus('2026-09-05'),
     iconClass: 'fas fa-users-cog',
-    deadlinePrefix: 'Fecha límite para propuestas:',
-    oldDeadline: '25 de mayo de 2026',
-    deadline: '8 de junio de 2026',
+    deadlinePrefix: 'Fecha límite para envíos:',
+    oldDeadline: '29 de agosto de 2026',
+    deadline: '5 de septiembre de 2026',
     deadlineBadge: 'Extendida',
   },
   {

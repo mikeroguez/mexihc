@@ -5,6 +5,68 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.1.35] - 2026-09-01
+
+### Changed
+- Enlace retirado del post-it del hero para dejar solo el aviso de talleres aceptados.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.35`.
+
+## [2026.1.34] - 2026-09-01
+
+### Changed
+- Post-it del hero actualizado para anunciar la prórroga de talleres aceptados al 5 de septiembre de 2026 y los tipos de trabajos aceptados.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.34`.
+
+## [2026.1.33] - 2026-09-01
+
+### Changed
+- Llamado de talleres ajustado para indicar artículos de hasta 6 páginas y position papers de 2 páginas.
+- Tarifas de talleres ajustadas a MXN $1,600 para artículo con publicación en revista y MXN $600 para position paper con publicación en sitio web.
+- Entradas RSS de la prórroga de talleres actualizadas con los tipos de trabajos.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.33`.
+
+## [2026.1.32] - 2026-09-01
+
+### Changed
+- Costos de position papers de talleres movidos del llamado de talleres a la página de Tarifas y registro en páginas bilingües.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.32`.
+
+## [2026.1.31] - 2026-09-01
+
+### Changed
+- Opción de enviar position papers de dos cuartillas agregada al llamado de talleres en páginas bilingües.
+- Modalidades y costos de publicación agregados al llamado de talleres: MXN $1,600 con publicación en revista y MXN $600 con publicación en sitio web.
+- Entradas RSS de la prórroga de talleres actualizadas para mencionar position papers.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.31`.
+
+## [2026.1.30] - 2026-09-01
+
+### Changed
+- Formato LaTeX de AIHC agregado al llamado de talleres en páginas bilingües.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.30`.
+
+## [2026.1.29] - 2026-09-01
+
+### Added
+- Entradas de RSS en español, inglés y feed multilingüe anunciando la nueva prórroga de trabajos para talleres aceptados.
+
+### Changed
+- Trabajos para talleres aceptados extendidos del 29 de agosto al 5 de septiembre de 2026 en páginas bilingües, tabla de convocatorias e hitos.
+- Notificación de aceptación de trabajos de talleres extendida del 2 al 9 de septiembre de 2026 en páginas bilingües e hitos.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.29`.
+
+## [2026.1.28] - 2026-09-01
+
+### Changed
+- Notificación de aceptación de trabajos de talleres actualizada de pendiente por confirmar al 2 de septiembre de 2026 en páginas bilingües e hitos.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.28`.
+
+## [2026.1.27] - 2026-08-26
+
+### Changed
+- Tabla de convocatorias y navbar aclarados para mostrar la etapa vigente de trabajos para talleres aceptados con cierre al 29 de agosto de 2026, en lugar de la convocatoria histórica de propuestas de talleres.
+- Documentación, paquetes y footer sincronizados con la versión `2026.1.27`.
+
 ## [2026.1.26] - 2026-08-26
 
 ### Added

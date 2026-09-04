@@ -6,7 +6,7 @@
     <description>Official multilingual RSS feed for MexIHC 2026 updates. Use rss-es.xml and
       rss-en.xml for language-specific feeds.</description>
     <language>en-US</language>
-    <lastBuildDate>Wed, 26 Aug 2026 18:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 18:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss.xml" rel="self" type="application/rss+xml" />
     <atom:link href="https://www.mexihc.org/2026/rss-es.xml" rel="alternate"
@@ -18,6 +18,22 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/</link>
     </image>
+
+    <item>
+      <title>[ES] Nueva prórroga para trabajos de talleres aceptados de MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/call-for-workshops</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/es/call-for-workshops#workshop-papers-extension-2026-09-01</guid>
+      <description>La fecha límite para el envío de trabajos a talleres aceptados se extendió del 29 de agosto de 2026 al 5 de septiembre de 2026, y la notificación de aceptación cambió del 2 al 9 de septiembre de 2026. Se aceptan artículos de hasta 6 páginas y position papers de 2 páginas.</description>
+      <pubDate>Tue, 01 Sep 2026 18:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>[EN] MexIHC 2026 accepted workshops deadlines extended again</title>
+      <link>https://www.mexihc.org/2026/en/call-for-workshops</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/call-for-workshops#workshop-papers-extension-2026-09-01</guid>
+      <description>The submission deadline for accepted workshops was extended from August 29, 2026 to September 5, 2026, and the acceptance notification moved from September 2 to September 9, 2026. Workshop papers of up to 6 pages and 2-page position papers are accepted.</description>
+      <pubDate>Tue, 01 Sep 2026 18:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>[ES] Prórroga de pósteres y Concurso de Diseño Estudiantil de MexIHC 2026</title>

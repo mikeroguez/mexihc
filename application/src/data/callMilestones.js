@@ -55,9 +55,14 @@ export const callMilestones = [
         labels: { es: 'Notificación de talleres', en: 'Workshop notification' },
       },
       {
-        date: '2026-08-29',
-        previousDates: ['2026-08-20'],
+        date: '2026-09-05',
+        previousDates: ['2026-08-20', '2026-08-29'],
         labels: { es: 'Fecha límite para envío de artículos en Talleres', en: 'Workshop paper submission deadline' },
+      },
+      {
+        date: '2026-09-09',
+        previousDates: ['2026-09-02'],
+        labels: { es: 'Notificación de aceptación', en: 'Acceptance notification' },
       },
       {
         date: '2026-09-14',

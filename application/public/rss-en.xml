@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/en/</link>
     <description>Official RSS feed for MexIHC 2026 news and updates in English.</description>
     <language>en-US</language>
-    <lastBuildDate>Wed, 26 Aug 2026 18:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 18:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-en.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/</link>
     </image>
+
+    <item>
+      <title>MexIHC 2026 accepted workshops deadlines extended again</title>
+      <link>https://www.mexihc.org/2026/en/call-for-workshops</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/call-for-workshops#workshop-papers-extension-2026-09-01</guid>
+      <description>The submission deadline for accepted workshops was extended from August 29, 2026 to September 5, 2026, and the acceptance notification moved from September 2 to September 9, 2026. Workshop papers of up to 6 pages and 2-page position papers are accepted.</description>
+      <pubDate>Tue, 01 Sep 2026 18:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>MexIHC 2026 Posters and Student Design Competition deadlines extended</title>

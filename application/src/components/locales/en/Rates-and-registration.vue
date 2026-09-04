@@ -49,8 +49,12 @@ export default {
 					<td><span class="fst-italic fw-light">$1,500 MXN</span></td>
 				</tr>
 				<tr>
-					<td>Workshop paper</td>
-					<td><span class="fst-italic fw-light">$3,000 MXN</span></td>
+					<td>Workshop paper up to 6 pages, with journal publication</td>
+					<td><span class="fst-italic fw-light">$1,600 MXN</span></td>
+				</tr>
+				<tr>
+					<td>2-page workshop position paper, with website publication</td>
+					<td><span class="fst-italic fw-light">$600 MXN</span></td>
 				</tr>
 				<tr>
 					<td>Postgraduate consortium</td>

@@ -63,13 +63,13 @@ const calls = computed(() => [
   },
   {
     key: 'cws',
-    title: 'Call for workshops',
+    title: 'Papers for accepted workshops',
     to: Tr.i18nRoute({ name: 'call-for-workshops' }),
-    ...getCallStatus('2026-06-08'),
+    ...getCallStatus('2026-09-05'),
     iconClass: 'fas fa-users-cog',
-    deadlinePrefix: 'Proposal deadline:',
-    oldDeadline: 'May 25, 2026',
-    deadline: 'June 8, 2026',
+    deadlinePrefix: 'Submission deadline:',
+    oldDeadline: 'August 29, 2026',
+    deadline: 'September 5, 2026',
     deadlineBadge: 'Extended',
   },
   {
