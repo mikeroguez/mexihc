@@ -2,6 +2,7 @@
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import UiStatusBadge from '@/components/ui/UiStatusBadge.vue'
 
 const props = defineProps({
   links: {
@@ -105,6 +106,15 @@ const conferenceEnded = computed(() => {
 
 const hasWidget = computed(() => normalizedMilestones.value.length > 0)
 
+// The first milestone in the list is always the call's own submission/proposal
+// deadline (conference-wide dates are appended last), so it doubles as an
+// honest "can I still submit?" signal independent of later admin stages.
+const callStatus = computed(() => {
+  const firstMilestone = normalizedMilestones.value[0]
+  if (!firstMilestone) return null
+  return firstMilestone.ts >= todayTs.value ? 'open' : 'closed'
+})
+
 const formatDate = (isoDate) => {
   const date = new Date(`${isoDate}T12:00:00`)
   return new Intl.DateTimeFormat(locale.value, {
@@ -175,7 +185,10 @@ onBeforeUnmount(() => {
     </nav>
 
     <aside v-if="hasWidget" class="next-date-widget" aria-live="polite">
-      <h2 class="in-page-nav-title">{{ text.widgetTitle }}</h2>
+      <div class="next-date-widget-head">
+        <h2 class="in-page-nav-title mb-0">{{ text.widgetTitle }}</h2>
+        <UiStatusBadge v-if="callStatus" :status="callStatus" />
+      </div>
 
       <template v-if="nextMilestone">
         <p class="next-date-name mb-1">{{ nextMilestone.label }}</p>
@@ -237,6 +250,18 @@ onBeforeUnmount(() => {
   box-shadow: 0 10px 24px rgba(1, 22, 56, 0.09);
   backdrop-filter: blur(8px);
   padding: 0.95rem 1rem;
+}
+
+.next-date-widget-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.next-date-widget-head :deep(.ui-status-badge) {
+  flex: 0 0 auto;
 }
 
 .in-page-nav-title {

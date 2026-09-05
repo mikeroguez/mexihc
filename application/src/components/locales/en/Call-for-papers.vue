@@ -55,12 +55,6 @@ export default {
   />
 
   <p>
-    <strong>Update:</strong> the Call for Papers has been extended. The
-    submission deadline moved from <del>June 15, 2026</del> to
-    <strong>June 21, 2026</strong>.
-  </p>
-
-  <p>
     We invite original contributions on the theme of HCI in the age of new
     realities, and relevant topics in Human-Computer Interaction and Interaction
     Design. Papers will be anonymously peer-reviewed by the members of the
@@ -156,80 +150,96 @@ export default {
     key areas:
   </p>
 
-  <h3>AI in HCI</h3>
-  <ul>
-    <li>AI-driven user experience design</li>
-    <li>Ethical considerations in AI for HCI</li>
-    <li>Natural Language Processing in interfaces</li>
-    <li>Emotion recognition and response</li>
-    <li>AI and accessibility</li>
-    <li>Predictive user interfaces</li>
-    <li>Impact of AI on human cognitive processes</li>
-  </ul>
+  <div class="topics-grid">
+    <div class="topic-group">
+      <h3>AI in HCI</h3>
+      <ul class="topic-tags">
+        <li>AI-driven user experience design</li>
+        <li>Ethical considerations in AI for HCI</li>
+        <li>Natural Language Processing in interfaces</li>
+        <li>Emotion recognition and response</li>
+        <li>AI and accessibility</li>
+        <li>Predictive user interfaces</li>
+        <li>Impact of AI on human cognitive processes</li>
+      </ul>
+    </div>
 
-  <h3>Evaluation of Interactive Applications</h3>
-  <ul>
-    <li>New methods and methodologies</li>
-    <li>Tools for evaluation</li>
-    <li>Case studies</li>
-    <li>Accessibility evaluation</li>
-    <li>Theoretical aspects of HCI</li>
-  </ul>
+    <div class="topic-group">
+      <h3>Evaluation of Interactive Applications</h3>
+      <ul class="topic-tags">
+        <li>New methods and methodologies</li>
+        <li>Tools for evaluation</li>
+        <li>Case studies</li>
+        <li>Accessibility evaluation</li>
+        <li>Theoretical aspects of HCI</li>
+      </ul>
+    </div>
 
-  <h3>Theories for HCI</h3>
-  <ul>
-    <li>Theoretical discussions or challenges to current theories</li>
-    <li>Formal modeling</li>
-  </ul>
+    <div class="topic-group">
+      <h3>Theories for HCI</h3>
+      <ul class="topic-tags">
+        <li>Theoretical discussions or challenges to current theories</li>
+        <li>Formal modeling</li>
+      </ul>
+    </div>
 
-  <h3>Design</h3>
-  <ul>
-    <li>New methods and methodologies</li>
-    <li>Case studies</li>
-    <li>Tools for designing</li>
-    <li>Information visualization</li>
-    <li>Adaptive interfaces</li>
-    <li>Universal design</li>
-    <li>Participatory design</li>
-  </ul>
+    <div class="topic-group">
+      <h3>Design</h3>
+      <ul class="topic-tags">
+        <li>New methods and methodologies</li>
+        <li>Case studies</li>
+        <li>Tools for designing</li>
+        <li>Information visualization</li>
+        <li>Adaptive interfaces</li>
+        <li>Universal design</li>
+        <li>Participatory design</li>
+      </ul>
+    </div>
 
-  <h3>User evaluation</h3>
-  <ul>
-    <li>New methods and methodologies</li>
-    <li>Tools for evaluations</li>
-    <li>Case studies</li>
-    <li>Evaluation of user experience</li>
-    <li>User evaluation with people with disabilities</li>
-    <li>Human error and cognitive studies</li>
-    <li>Contextual evaluation and ethno-methodologies</li>
-    <li>Games user research</li>
-  </ul>
+    <div class="topic-group">
+      <h3>User evaluation</h3>
+      <ul class="topic-tags">
+        <li>New methods and methodologies</li>
+        <li>Tools for evaluations</li>
+        <li>Case studies</li>
+        <li>Evaluation of user experience</li>
+        <li>User evaluation with people with disabilities</li>
+        <li>Human error and cognitive studies</li>
+        <li>Contextual evaluation and ethno-methodologies</li>
+        <li>Games user research</li>
+      </ul>
+    </div>
 
-  <h3>Education in HCI</h3>
-  <ul>
-    <li>Case studies of education in HCI</li>
-    <li>HCI to improve the teaching/learning</li>
-  </ul>
+    <div class="topic-group">
+      <h3>Education in HCI</h3>
+      <ul class="topic-tags">
+        <li>Case studies of education in HCI</li>
+        <li>HCI to improve the teaching/learning</li>
+      </ul>
+    </div>
 
-  <h3>Topics related to HCI</h3>
-  <ul>
-    <li>AI in HCI</li>
-    <li>Usability</li>
-    <li>Accessibility</li>
-    <li>Ergonomics</li>
-    <li>Computer Graphics</li>
-    <li>Virtual Reality</li>
-    <li>Augmented Reality</li>
-    <li>Multi-modal Interaction</li>
-    <li>Social Networks</li>
-    <li>Mobile Devices</li>
-    <li>HCI in the Medical Context</li>
-    <li>Video Games</li>
-    <li>Ludic and Aesthetic Applications</li>
-    <li>Cultural aspects in the design</li>
-    <li>Brain-Computer Interaction</li>
-    <li>e-Government</li>
-  </ul>
+    <div class="topic-group">
+      <h3>Topics related to HCI</h3>
+      <ul class="topic-tags">
+        <li>AI in HCI</li>
+        <li>Usability</li>
+        <li>Accessibility</li>
+        <li>Ergonomics</li>
+        <li>Computer Graphics</li>
+        <li>Virtual Reality</li>
+        <li>Augmented Reality</li>
+        <li>Multi-modal Interaction</li>
+        <li>Social Networks</li>
+        <li>Mobile Devices</li>
+        <li>HCI in the Medical Context</li>
+        <li>Video Games</li>
+        <li>Ludic and Aesthetic Applications</li>
+        <li>Cultural aspects in the design</li>
+        <li>Brain-Computer Interaction</li>
+        <li>e-Government</li>
+      </ul>
+    </div>
+  </div>
 
   <h3 class="my-4">{{ $t("organizers.program_chairs_title") }}</h3>
   <div class="row">
@@ -309,3 +319,38 @@ export default {
     </div>
   </div>
 </template>
+
+<style scoped>
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.topic-group h3 {
+  font-size: 1rem;
+  margin-bottom: 0.55rem;
+}
+
+.topic-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topic-tags li {
+  border: 1px solid var(--mexihc-border);
+  border-radius: 999px;
+  padding: 0.28rem 0.6rem;
+  background: var(--mexihc-surface-muted);
+  color: var(--mexihc-night);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+</style>
+

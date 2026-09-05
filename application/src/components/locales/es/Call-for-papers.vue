@@ -59,12 +59,6 @@ export default {
   />
 
   <p>
-    <strong>Actualización:</strong> la convocatoria de trabajos fue extendida.
-    La fecha límite para envíos pasó del <del>15 de junio de 2026</del> al
-    <strong>21 de junio de 2026</strong>.
-  </p>
-
-  <p>
     Invitamos a contribuciones originales sobre el tema de la IHC en la era de
     las nuevas realidades, así como temas relevantes en Interacción
     Humano-Computadora y Diseño de Interacción. Los artículos serán revisados de
@@ -165,80 +159,96 @@ export default {
     siguientes áreas clave:
   </p>
 
-  <h3>IA en HCI</h3>
-  <ul>
-    <li>Diseño de experiencia de usuario impulsado por IA</li>
-    <li>Consideraciones éticas en IA para HCI</li>
-    <li>Procesamiento de lenguaje natural en interfaces</li>
-    <li>Reconocimiento y respuesta emocional</li>
-    <li>IA y accesibilidad</li>
-    <li>Interfaces de usuario predictivas</li>
-    <li>Impacto de la IA en los procesos cognitivos humanos</li>
-  </ul>
+  <div class="topics-grid">
+    <div class="topic-group">
+      <h3>IA en HCI</h3>
+      <ul class="topic-tags">
+        <li>Diseño de experiencia de usuario impulsado por IA</li>
+        <li>Consideraciones éticas en IA para HCI</li>
+        <li>Procesamiento de lenguaje natural en interfaces</li>
+        <li>Reconocimiento y respuesta emocional</li>
+        <li>IA y accesibilidad</li>
+        <li>Interfaces de usuario predictivas</li>
+        <li>Impacto de la IA en los procesos cognitivos humanos</li>
+      </ul>
+    </div>
 
-  <h3>Evaluación de aplicaciones interactivas</h3>
-  <ul>
-    <li>Nuevos métodos y metodologías</li>
-    <li>Herramientas para evaluación</li>
-    <li>Estudios de caso</li>
-    <li>Evaluación de accesibilidad</li>
-    <li>Aspectos teóricos de HCI</li>
-  </ul>
+    <div class="topic-group">
+      <h3>Evaluación de aplicaciones interactivas</h3>
+      <ul class="topic-tags">
+        <li>Nuevos métodos y metodologías</li>
+        <li>Herramientas para evaluación</li>
+        <li>Estudios de caso</li>
+        <li>Evaluación de accesibilidad</li>
+        <li>Aspectos teóricos de HCI</li>
+      </ul>
+    </div>
 
-  <h3>Teorías para HCI</h3>
-  <ul>
-    <li>Discusiones teóricas o desafíos a las teorías actuales</li>
-    <li>Modelado formal</li>
-  </ul>
+    <div class="topic-group">
+      <h3>Teorías para HCI</h3>
+      <ul class="topic-tags">
+        <li>Discusiones teóricas o desafíos a las teorías actuales</li>
+        <li>Modelado formal</li>
+      </ul>
+    </div>
 
-  <h3>Diseño</h3>
-  <ul>
-    <li>Nuevos métodos y metodologías</li>
-    <li>Estudios de caso</li>
-    <li>Herramientas para diseño</li>
-    <li>Visualización de información</li>
-    <li>Interfaces adaptativas</li>
-    <li>Diseño universal</li>
-    <li>Diseño participativo</li>
-  </ul>
+    <div class="topic-group">
+      <h3>Diseño</h3>
+      <ul class="topic-tags">
+        <li>Nuevos métodos y metodologías</li>
+        <li>Estudios de caso</li>
+        <li>Herramientas para diseño</li>
+        <li>Visualización de información</li>
+        <li>Interfaces adaptativas</li>
+        <li>Diseño universal</li>
+        <li>Diseño participativo</li>
+      </ul>
+    </div>
 
-  <h3>Evaluación de usuarios</h3>
-  <ul>
-    <li>Nuevos métodos y metodologías</li>
-    <li>Herramientas para evaluaciones</li>
-    <li>Estudios de caso</li>
-    <li>Evaluación de la experiencia del usuario</li>
-    <li>Evaluación de usuarios con discapacidad</li>
-    <li>Error humano y estudios cognitivos</li>
-    <li>Evaluación contextual y etnometodologías</li>
-    <li>Investigación de usuarios de juegos</li>
-  </ul>
+    <div class="topic-group">
+      <h3>Evaluación de usuarios</h3>
+      <ul class="topic-tags">
+        <li>Nuevos métodos y metodologías</li>
+        <li>Herramientas para evaluaciones</li>
+        <li>Estudios de caso</li>
+        <li>Evaluación de la experiencia del usuario</li>
+        <li>Evaluación de usuarios con discapacidad</li>
+        <li>Error humano y estudios cognitivos</li>
+        <li>Evaluación contextual y etnometodologías</li>
+        <li>Investigación de usuarios de juegos</li>
+      </ul>
+    </div>
 
-  <h3>Educación en HCI</h3>
-  <ul>
-    <li>Estudios de caso de educación en HCI</li>
-    <li>HCI para mejorar la enseñanza/aprendizaje</li>
-  </ul>
+    <div class="topic-group">
+      <h3>Educación en HCI</h3>
+      <ul class="topic-tags">
+        <li>Estudios de caso de educación en HCI</li>
+        <li>HCI para mejorar la enseñanza/aprendizaje</li>
+      </ul>
+    </div>
 
-  <h3>Temas relacionados con HCI</h3>
-  <ul>
-    <li>IA en HCI</li>
-    <li>Usabilidad</li>
-    <li>Accesibilidad</li>
-    <li>Ergonomía</li>
-    <li>Gráficos por computadora</li>
-    <li>Realidad Virtual</li>
-    <li>Realidad Aumentada</li>
-    <li>Interacción multimodal</li>
-    <li>Redes Sociales</li>
-    <li>Dispositivos Móviles</li>
-    <li>HCI en el Contexto Médico</li>
-    <li>Videojuegos</li>
-    <li>Aplicaciones Lúdicas y Estéticas</li>
-    <li>Aspectos culturales en el diseño</li>
-    <li>Interacción Cerebro-Computadora</li>
-    <li>e-Gobierno</li>
-  </ul>
+    <div class="topic-group">
+      <h3>Temas relacionados con HCI</h3>
+      <ul class="topic-tags">
+        <li>IA en HCI</li>
+        <li>Usabilidad</li>
+        <li>Accesibilidad</li>
+        <li>Ergonomía</li>
+        <li>Gráficos por computadora</li>
+        <li>Realidad Virtual</li>
+        <li>Realidad Aumentada</li>
+        <li>Interacción multimodal</li>
+        <li>Redes Sociales</li>
+        <li>Dispositivos Móviles</li>
+        <li>HCI en el Contexto Médico</li>
+        <li>Videojuegos</li>
+        <li>Aplicaciones Lúdicas y Estéticas</li>
+        <li>Aspectos culturales en el diseño</li>
+        <li>Interacción Cerebro-Computadora</li>
+        <li>e-Gobierno</li>
+      </ul>
+    </div>
+  </div>
 
   <h3 class="my-4">{{ $t("organizers.program_chairs_title") }}</h3>
   <div class="row">
@@ -318,3 +328,37 @@ export default {
     </div>
   </div>
 </template>
+
+<style scoped>
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.topic-group h3 {
+  font-size: 1rem;
+  margin-bottom: 0.55rem;
+}
+
+.topic-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topic-tags li {
+  border: 1px solid var(--mexihc-border);
+  border-radius: 999px;
+  padding: 0.28rem 0.6rem;
+  background: var(--mexihc-surface-muted);
+  color: var(--mexihc-night);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+</style>

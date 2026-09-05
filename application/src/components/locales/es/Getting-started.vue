@@ -60,11 +60,9 @@ export default {
 				notes: 'Tarifa disponible para consulta directa con el hotel.'
 			}
 		]
-		const featuredHotels = hotels.filter((hotel) => hotel.image)
-		const additionalHotels = hotels.filter((hotel) => !hotel.image)
 		const baseUrl = import.meta.env.BASE_URL
 
-		return { Tr, featuredHotels, additionalHotels, baseUrl }
+		return { Tr, hotels, baseUrl }
 	}
 }
 </script>
@@ -130,9 +128,10 @@ export default {
 		</p>
 
 		<div class="row g-4">
-			<div v-for="hotel in featuredHotels" :key="hotel.name" class="col-md-6 col-xl-4">
+			<div v-for="hotel in hotels" :key="hotel.name" class="col-md-6 col-xl-4">
 				<article class="card h-100 shadow-sm">
 					<img
+						v-if="hotel.image"
 						:src="`${baseUrl}${hotel.image}`"
 						class="card-img-top hotel-flyer"
 						alt=""
@@ -147,32 +146,6 @@ export default {
 					</div>
 				</article>
 			</div>
-		</div>
-
-		<h3 class="h4 mt-5">Otras opciones de hospedaje</h3>
-		<div class="table-responsive">
-			<table class="table table-striped align-middle">
-				<thead>
-					<tr>
-						<th scope="col">Hotel</th>
-						<th scope="col">Tarifa</th>
-						<th scope="col">Código</th>
-						<th scope="col">Contacto</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr v-for="hotel in additionalHotels" :key="hotel.name">
-						<th scope="row">
-							{{ hotel.name }}
-							<span class="d-block text-primary">{{ hotel.label }}</span>
-							<span class="d-block fw-normal">{{ hotel.notes }}</span>
-						</th>
-						<td>{{ hotel.rates }}</td>
-						<td>{{ hotel.code }}</td>
-						<td>{{ hotel.contact }}</td>
-					</tr>
-				</tbody>
-			</table>
 		</div>
 
 		<p class="small">

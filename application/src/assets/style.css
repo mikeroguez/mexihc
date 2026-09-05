@@ -171,9 +171,23 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: var(--mexihc-paper) !important;
 }
 
+.mexihc-action-link-primary:hover,
+.mexihc-action-link-primary:focus-visible,
+.btn.bg-gradient-primary:hover,
+.btn.bg-gradient-primary:focus-visible {
+  color: var(--mexihc-paper) !important;
+}
+
 .mexihc-action-link-secondary,
 .btn-outline-light {
   border: 1px solid rgba(255, 255, 255, 0.76) !important;
+  color: var(--mexihc-white) !important;
+}
+
+.mexihc-action-link-secondary:hover,
+.mexihc-action-link-secondary:focus-visible,
+.btn-outline-light:hover,
+.btn-outline-light:focus-visible {
   color: var(--mexihc-white) !important;
 }
 

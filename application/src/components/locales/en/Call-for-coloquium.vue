@@ -37,8 +37,6 @@ export default {
         all-dates-label="See all important dates"
     />
 
-    <p><strong>Update:</strong> the submission deadline was extended from <del>August 9, 2026</del> to <strong>August 16, 2026</strong>.</p>
-
     <p>
         We warmly welcome master's and doctoral students currently enrolled in graduate programs focused on <strong>Human-Computer Interaction (HCI)</strong> to submit their research proposals for consideration in the Graduate Colloquium of the <strong>XI Mexican Conference on Human-Computer Interaction (MexIHC 2026)</strong>.
     </p>

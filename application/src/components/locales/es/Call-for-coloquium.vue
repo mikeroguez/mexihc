@@ -37,8 +37,6 @@ export default {
         all-dates-label="Ver todas las fechas importantes"
     />
 
-    <p><strong>Actualización:</strong> la fecha límite de envío se extendió del <del>9 de agosto de 2026</del> al <strong>16 de agosto de 2026</strong>.</p>
-
     <p>
         Damos una cálida bienvenida a la comunidad estudiantil de maestría y doctorado actualmente inscrita en programas de posgrado centrados en la <strong>Interacción Humano-Computadora (HCI)</strong>, a presentar sus propuestas de investigación para ser consideradas en el Coloquio de Graduados de la <strong>XI Conferencia Mexicana sobre Interacción Humano-Computadora (MexIHC 2026)</strong>.
     </p>
