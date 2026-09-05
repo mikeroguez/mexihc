@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.2.0] - 2026-09-04
+
+### Added
+- Sección "Elige tu ruta" promovida justo debajo del encabezado principal del inicio, separando desde el primer momento los caminos de quienes quieren publicar/presentar y quienes quieren asistir.
+- Insignia de estado (abierta/cerrada) en las 6 páginas de convocatoria, calculada automáticamente a partir de la fecha límite de cada una.
+- Componentes de diseño reutilizables (`UiInfoCard`, `UiStatusBadge`) que unifican la apariencia de tarjetas e insignias en todo el sitio.
+
+### Changed
+- Agenda preliminar rediseñada: tarjetas con relleno y acento consistente, tabla general más legible y vista por día para pantallas pequeñas.
+- Texto de "Acerca de MexIHC" simplificado de cuatro párrafos repetitivos a tres, y "Temas de interés" de Convocatoria de Trabajos reorganizado en categorías visuales.
+- Las 6 opciones de hospedaje en Primeros pasos ahora usan un solo patrón de tarjeta, en vez de mezclar tarjetas con imagen y una tabla aparte.
+- Ritmo vertical entre secciones de la página de inicio unificado con un solo token de espaciado.
+
+### Fixed
+- La insignia de "Registro" ya no indica que está abierto cuando el formulario de pago aún no está disponible.
+- Avisos de "convocatoria extendida" vencidos, eliminados de Convocatoria de Trabajos y Coloquio de Graduados.
+- Los menús del menú de navegación ahora también se revelan al usar el teclado (antes solo respondían al mouse).
+- Contraste de texto incorrecto al pasar el cursor sobre los botones principales.
+- Enlace faltante a la Agenda en el pie de página.
+- El desplazamiento a secciones internas ya no deja el contenido oculto detrás del menú fijo.
+
 ## [2026.1.36] - 2026-09-04
 
 ### Added
