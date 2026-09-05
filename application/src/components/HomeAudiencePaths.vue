@@ -61,7 +61,7 @@ const getActions = (path) => [
 </script>
 
 <template>
-  <section class="audience-paths-section my-4" aria-labelledby="audience-paths-title">
+  <section class="audience-paths-section mexihc-section-gap" aria-labelledby="audience-paths-title">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">

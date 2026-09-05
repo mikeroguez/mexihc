@@ -1,3 +1,10 @@
+// When a deadline moves, add the new date and push the old one onto
+// `previousDates` — don't add a separate "Actualización: se extendió..."
+// paragraph in a Call-for-*.vue page. That prose goes stale the moment
+// the *next* milestone passes (see the papers/colloquium pages before
+// this fix), while the dated "Fechas importantes" list and the status
+// badge above it (driven by InPageNavigationPanel's own `:milestones`
+// prop on each page) stay accurate on their own.
 export const callMilestones = [
   {
     key: 'cfp',

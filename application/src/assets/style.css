@@ -24,6 +24,17 @@
   --mexihc-surface-muted: rgba(240, 239, 236, 0.68);
   --mexihc-shadow-sm: 0 8px 18px rgba(1, 22, 56, 0.08);
   --mexihc-shadow-md: 0 14px 28px rgba(1, 22, 56, 0.1);
+  --mexihc-section-gap: 2.5rem;
+}
+
+/*
+ * Use .mexihc-section-gap for the vertical gap BETWEEN major page
+ * sections instead of ad hoc Bootstrap spacing utilities (my-3/my-4/
+ * mt-5/...). Keeping this to one token is what makes a page's section
+ * rhythm read as deliberate instead of accidental.
+ */
+.mexihc-section-gap {
+  margin-top: var(--mexihc-section-gap);
 }
 
 body {
@@ -253,6 +264,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   border: 1px solid rgba(1, 22, 56, 0.14);
   border-radius: 12px;
   box-shadow: 0 12px 26px rgba(1, 22, 56, 0.16);
+}
+
+/*
+ * base.css only reveals .dropdown-hover menus on :hover, so tabbing to a
+ * menu item moves keyboard focus into a panel that stays invisible.
+ * Mirror the same reveal on :focus-within so keyboard users see it too.
+ */
+.dropdown.dropdown-hover:focus-within > .dropdown-menu {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: perspective(999px) rotateX(0deg) translateZ(0) translate3d(0, 37px, 5px) !important;
+}
+
+.dropdown.dropdown-hover:focus-within > .dropdown-menu:before {
+  top: -20px;
 }
 
 .scrolled {

@@ -9,6 +9,10 @@ const props = defineProps({
     type: Array,
     default: () => [],
   },
+  // Extending a deadline? Update this array's date and add the old one
+  // to `previousDates` in the page's "Fechas importantes" list — don't
+  // add a hardcoded "Actualización: se extendió..." paragraph elsewhere
+  // on the page, it will silently go stale once this milestone passes.
   milestones: {
     type: Array,
     default: () => [],
