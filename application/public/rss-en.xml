@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/en/</link>
     <description>Official RSS feed for MexIHC 2026 news and updates in English.</description>
     <language>en-US</language>
-    <lastBuildDate>Fri, 04 Sep 2026 20:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 17:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-en.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/</link>
     </image>
+
+    <item>
+      <title>MexIHC 2026 Poster Track deadline extended</title>
+      <link>https://www.mexihc.org/2026/en/call-for-posters</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/call-for-posters#posters-extension-2026-09-05</guid>
+      <description>The submission deadline for the Poster Track was extended from September 6 to September 13, 2026. The acceptance notification moved to September 23, and the camera-ready deadline moved to September 28, 2026.</description>
+      <pubDate>Sat, 05 Sep 2026 17:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Registration and payment now open for MexIHC 2026</title>

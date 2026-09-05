@@ -256,7 +256,7 @@ export default {
                             {{ $t("nav.copyright") }}
                         </p>
                         <p class="my-0  text-sm">
-                            <a class="uline" :href="`${baseUrl}CHANGELOG.md`">v2026.2.1</a>
+                            <a class="uline" :href="`${baseUrl}CHANGELOG.md`">v2026.2.2</a>
                         </p>
                     </div>
                 </div>

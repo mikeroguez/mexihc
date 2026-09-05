@@ -32,16 +32,18 @@ export const callMilestones = [
     routeName: 'call-for-posters',
     milestones: [
       {
-        date: '2026-09-06',
-        previousDates: ['2026-08-30'],
+        date: '2026-09-13',
+        previousDates: ['2026-08-30', '2026-09-06'],
         labels: { es: 'Fecha límite para envíos', en: 'Submission deadline' },
       },
       {
-        date: '2026-09-14',
+        date: '2026-09-23',
+        previousDates: ['2026-09-14'],
         labels: { es: 'Notificación de aceptación', en: 'Acceptance notification' },
       },
       {
-        date: '2026-09-20',
+        date: '2026-09-28',
+        previousDates: ['2026-09-20'],
         labels: { es: 'Versión final', en: 'Camera-ready submission' },
       },
     ],

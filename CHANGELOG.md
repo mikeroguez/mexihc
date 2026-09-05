@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.2.2] - 2026-09-05
+
+### Changed
+- Convocatoria a la sesión de pósteres extendida: fecha límite de envíos movida del 6 al 13 de septiembre de 2026, notificación de aceptación del 14 al 23 de septiembre, y versión final (camera-ready) del 20 al 28 de septiembre de 2026.
+- Aviso destacado del inicio y noticia en los canales RSS (ES, EN y multilingüe) actualizados para anunciar la prórroga de pósteres.
+
 ## [2026.2.1] - 2026-09-04
 
 ### Added

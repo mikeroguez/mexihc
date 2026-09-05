@@ -5,12 +5,12 @@ import Tr from '@/i18n/translation'
 <template>
     <div class="alert alert-warning mexihc-postit col-md-8 m-auto" role="alert">
         <p>
-            <strong>Registration and payment are open:</strong>
-            you can now register and check the payment instructions for MexIHC 2026.
+            <strong>Poster call extended:</strong>
+            we're now accepting submissions through September 13.
         </p>
         <p>
-            <RouterLink :to="Tr.i18nRoute({ name: 'registration', hash: '#payment' })" class="mexihc-postit-rss-link">
-                View payment instructions
+            <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters' })" class="mexihc-postit-rss-link">
+                View call
             </RouterLink>
         </p>
     </div>
