@@ -121,7 +121,8 @@ export default {
                     <div>
                         <RouterLink :to="Tr.i18nRoute({ name: 'home' })"
                             class="d-inline-flex align-items-center gap-2 text-decoration-none">
-                            <img :src="`${baseUrl}assets/img/logos/logo-med-20.svg`" alt="MexIHC 2026" width="200">
+                            <img :src="`${baseUrl}assets/img/logos/logo-med-20.svg`" alt="MexIHC 2026" width="200"
+                                class="mexihc-footer-logo">
                         </RouterLink>
                     </div>
                     <div class="mt-1">
@@ -255,7 +256,7 @@ export default {
                             {{ $t("nav.copyright") }}
                         </p>
                         <p class="my-0  text-sm">
-                            <a class="uline" :href="`${baseUrl}CHANGELOG.md`">v2026.2.0</a>
+                            <a class="uline" :href="`${baseUrl}CHANGELOG.md`">v2026.2.1</a>
                         </p>
                     </div>
                 </div>

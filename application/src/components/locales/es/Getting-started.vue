@@ -102,8 +102,9 @@ export default {
 			</li>
 			<li class="list-group-item d-flex justify-content-between align-items-start">
 				<div class="ms-2 me-auto">
-					<div class="fw-bold">Espera la apertura del formulario</div>
-					El formulario oficial de registro y las instrucciones finales de pago se publicarán próximamente.
+					<div class="fw-bold">Regístrate y realiza tu pago</div>
+					El formulario de registro y las instrucciones de pago ya están disponibles. Consulta los
+					<RouterLink :to="Tr.i18nRoute({ name: 'registration', hash: '#payment' })" class="uline">detalles de registro y pago</RouterLink>.
 				</div>
 			</li>
 			<li class="list-group-item d-flex justify-content-between align-items-start">
