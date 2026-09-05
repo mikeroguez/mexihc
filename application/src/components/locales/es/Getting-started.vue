@@ -165,6 +165,32 @@ export default {
 
 	<section id="arrival" class="mt-5">
 		<h2 class="h3">Llegada y transporte</h2>
+
+		<h3 class="h5">¿Cómo llegar a Ensenada?</h3>
+		<p>
+			El aeropuerto de vuelos comerciales más cercano a la ciudad de Ensenada es el Aeropuerto Internacional
+			de Tijuana, ubicado a aproximadamente 120&nbsp;km de Ensenada.
+		</p>
+		<p>
+			Junto al aeropuerto de Tijuana se encuentra una terminal de autobuses con servicio directo a Ensenada.
+			Las líneas
+			<a class="uline" href="https://abc.com.mx/home" target="_blank" rel="noopener noreferrer">Autobuses ABC</a>
+			y
+			<a class="uline" href="https://estrellablanca.com.mx/" target="_blank" rel="noopener noreferrer">Estrella Blanca</a>
+			cubren esta ruta; consulta sus páginas para conocer horarios y tarifas vigentes.
+		</p>
+		<p>
+			Otra opción es tomar un taxi del aeropuerto directamente a Ensenada. Ya en la ciudad, también están
+			disponibles servicios de transporte por aplicación como Uber, inDrive y DiDi.
+		</p>
+
+		<h3 class="h5">Transporte local a la UABC y al CICESE</h3>
+		<p>
+			Desde el centro de Ensenada, los camiones con dirección al Sauzal llegan tanto a la UABC como al
+			CICESE. El costo del transporte público es de $13.00&nbsp;MXN para el público en general y de
+			$7.00&nbsp;MXN para estudiantes que muestren una identificación vigente.
+		</p>
+
 		<ul>
 			<li>Planea tu llegada considerando los traslados hacia Ensenada y el horario de inicio de actividades.</li>
 			<li>Confirma con tu hotel las políticas de check-in, anticipo y cancelación.</li>

@@ -164,6 +164,30 @@ export default {
 
 	<section id="arrival" class="mt-5">
 		<h2 class="h3">Arrival and Transportation</h2>
+
+		<h3 class="h5">How to get to Ensenada</h3>
+		<p>
+			The nearest commercial airport to the city of Ensenada is Tijuana International Airport, located
+			about 120&nbsp;km (75&nbsp;mi) from Ensenada.
+		</p>
+		<p>
+			Next to the Tijuana airport there is a bus terminal with direct service to Ensenada. The
+			<a class="uline" href="https://abc.com.mx/home" target="_blank" rel="noopener noreferrer">Autobuses ABC</a>
+			and
+			<a class="uline" href="https://estrellablanca.com.mx/" target="_blank" rel="noopener noreferrer">Estrella Blanca</a>
+			lines cover this route; check their websites for current schedules and fares.
+		</p>
+		<p>
+			You can also take an airport taxi directly to Ensenada. Once in the city, ride-hailing apps such as
+			Uber, inDrive, and DiDi are also available.
+		</p>
+
+		<h3 class="h5">Local transportation to UABC and CICESE</h3>
+		<p>
+			From downtown Ensenada, buses heading to El Sauzal reach both UABC and CICESE. Public transportation
+			costs $13.00&nbsp;MXN for the general public and $7.00&nbsp;MXN for students who show a valid ID.
+		</p>
+
 		<ul>
 			<li>Plan your arrival with transfer times to Ensenada and the start time of conference activities in mind.</li>
 			<li>Confirm check-in, deposit and cancellation policies directly with your hotel.</li>
