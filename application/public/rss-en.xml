@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/en/</link>
     <description>Official RSS feed for MexIHC 2026 news and updates in English.</description>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Sep 2026 18:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 20:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-en.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/</link>
     </image>
+
+    <item>
+      <title>Registration and payment now open for MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/registration#payment</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/en/registration#payment</guid>
+      <description>The Registration System and payment instructions for MexIHC 2026 are now available, including bank information for payments within Mexico. Check the getting started guide too. The deadline for author registration payment is September 25, 2026.</description>
+      <pubDate>Fri, 04 Sep 2026 20:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>MexIHC 2026 accepted workshops deadlines extended again</title>

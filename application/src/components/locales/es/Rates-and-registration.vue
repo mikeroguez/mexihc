@@ -160,16 +160,75 @@ export default {
 	<section id="payment" class="mt-5">
 		<h2>Registro y pago</h2>
 		<p>
-			El formulario oficial de registro y las instrucciones finales de pago serán publicados próximamente.
-			No se muestran datos bancarios hasta que estén confirmados para MexIHC 2026.
+			Para registrarte en el evento, sigue estos pasos:
 		</p>
+		<ol>
+			<li>
+				Completa el formulario con tu información en el
+				<a class="uline" href="https://conferencias.app/" target="_blank" rel="noopener noreferrer"
+					aria-label="Sistema de Registro (abre en una nueva pestaña)">Sistema de Registro</a>.
+				El sistema te dará un <strong>Código de Registro</strong> que se utilizará para realizar el pago. Consérvalo.
+			</li>
+			<li>Realiza el pago utilizando los datos bancarios (abajo) y el Código de Registro proporcionados.</li>
+			<li>
+				Por cuestiones fiscales, para pagos desde el territorio nacional (México), realiza el pago mediante
+				transferencia electrónica o depósito en ventanilla bancaria. Para pagos desde el extranjero, están
+				habilitadas las opciones de PayPal y tarjeta de crédito.
+			</li>
+			<li>
+				Si realizaste tu pago mediante depósito en ventanilla bancaria, envía una copia del comprobante de pago a
+				<a class="uline" href="mailto:registration.2026@mexihc.org">registration.2026@mexihc.org</a>,
+				además de tu Código de Registro.
+			</li>
+			<li>
+				Si necesitas una factura fiscal, puedes solicitarla a través del Sistema de Registro (arriba a la derecha)
+				y se te enviará por correo electrónico.
+			</li>
+		</ol>
+
+		<p>
+			<strong>Fecha límite para pago de registro de autores:</strong> 25 de septiembre de 2026.
+			Si requieres más tiempo, contáctanos a
+			<a class="uline" href="mailto:registration.2026@mexihc.org">registration.2026@mexihc.org</a>.
+		</p>
+
+		<h3 class="h5">Datos bancarios para pagos desde México</h3>
+		<div class="table-responsive">
+			<table class="table table-striped">
+				<caption>Datos bancarios para transferencia o depósito en ventanilla</caption>
+				<tbody>
+					<tr>
+						<th scope="row">Nombre</th>
+						<td>Asociación Mexicana de Interacción Humano Computadora AC</td>
+					</tr>
+					<tr>
+						<th scope="row">Banco</th>
+						<td>Banco del Bajío</td>
+					</tr>
+					<tr>
+						<th scope="row">CLABE</th>
+						<td>030767900000120128</td>
+					</tr>
+					<tr>
+						<th scope="row">Cuenta</th>
+						<td>88823590201</td>
+					</tr>
+					<tr>
+						<th scope="row">Concepto</th>
+						<td>&lt;Código de Registro&gt;</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
 		<div class="d-flex flex-wrap gap-2">
-			<RouterLink :to="Tr.i18nRoute({ name: 'getting-started' })" class="btn bg-gradient-primary btn-round">
+			<a href="https://conferencias.app/" target="_blank" rel="noopener noreferrer"
+				class="btn bg-gradient-primary btn-round" aria-label="Ir al Sistema de Registro (abre en una nueva pestaña)">
+				Ir al Sistema de Registro
+			</a>
+			<RouterLink :to="Tr.i18nRoute({ name: 'getting-started' })" class="btn mexihc-action-link mexihc-action-link-muted btn-round">
 				Ver primeros pasos
 			</RouterLink>
-			<button class="btn btn-secondary disabled btn-round" type="button" disabled aria-disabled="true">
-				Formulario pendiente
-			</button>
 		</div>
 	</section>
 </template>

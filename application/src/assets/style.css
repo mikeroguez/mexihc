@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Patrick+Hand&display=swap');
 
 :root {
   --bs-font-sans-serif: 'Inter', sans-serif;
@@ -378,6 +378,9 @@ nav.scrolled .nav-link {
 .mexihc-postit p {
   color: #5a3f26 !important;
   margin-bottom: 0.65rem;
+  font-family: 'Patrick Hand', 'Inter', cursive;
+  font-size: 1.15rem;
+  line-height: 1.35;
 }
 
 .mexihc-postit p:last-child {
@@ -393,6 +396,8 @@ nav.scrolled .nav-link {
   border: 1px solid rgba(90, 63, 38, 0.3);
   background: linear-gradient(140deg, rgba(255, 248, 229, 0.95), rgba(255, 237, 191, 0.86));
   color: #4c311c !important;
+  font-family: 'Patrick Hand', 'Inter', cursive;
+  font-size: 1.05rem;
   font-weight: 700;
   text-decoration: none !important;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
@@ -500,6 +505,17 @@ div[id] {
 
 .navbar-brand img {
   height: 28px;
+}
+
+/*
+ * The footer logo carries a fixed width="200" attribute as an intrinsic
+ * sizing hint, but nothing capped it to its column — between ~768px and
+ * ~1050px viewport widths col-md-3 renders narrower than 200px, so the
+ * image bled into the "Acerca de esta conferencia" column next to it.
+ */
+.mexihc-footer-logo {
+  max-width: 100%;
+  height: auto;
 }
 
 .cookie-comply__modal,

@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/es/</link>
     <description>Canal RSS oficial de noticias y actualizaciones de MexIHC 2026 en español.</description>
     <language>es-MX</language>
-    <lastBuildDate>Tue, 01 Sep 2026 18:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 20:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-es.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/es/</link>
     </image>
+
+    <item>
+      <title>Registro y pago abiertos para MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/es/registration#payment</link>
+      <guid isPermaLink="true">https://www.mexihc.org/2026/es/registration#payment</guid>
+      <description>Ya están disponibles el Sistema de Registro y las instrucciones de pago para MexIHC 2026, incluyendo los datos bancarios para pagos desde México. Consulta también la guía de primeros pasos. La fecha límite para pago de registro de autores es el 25 de septiembre de 2026.</description>
+      <pubDate>Fri, 04 Sep 2026 20:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Nueva prórroga para trabajos de talleres aceptados de MexIHC 2026</title>
