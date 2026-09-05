@@ -15,6 +15,15 @@
   --mexihc-link: #6c0047;
   --mexihc-link-hover: #4f0035;
   --mexihc-focus: #b11f7a;
+  --mexihc-radius-sm: 6px;
+  --mexihc-radius-md: 8px;
+  --mexihc-radius-lg: 12px;
+  --mexihc-border: rgba(1, 22, 56, 0.12);
+  --mexihc-border-strong: rgba(1, 22, 56, 0.18);
+  --mexihc-surface: rgba(255, 255, 255, 0.88);
+  --mexihc-surface-muted: rgba(240, 239, 236, 0.68);
+  --mexihc-shadow-sm: 0 8px 18px rgba(1, 22, 56, 0.08);
+  --mexihc-shadow-md: 0 14px 28px rgba(1, 22, 56, 0.1);
 }
 
 body {
@@ -119,6 +128,82 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .card .card-body,
 .text-sans-serif {
   font-family: 'Inter', sans-serif !important;
+}
+
+.mexihc-section-title {
+  color: var(--mexihc-night) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.mexihc-surface-card,
+.card {
+  border: 1px solid var(--mexihc-border) !important;
+  border-radius: var(--mexihc-radius-md) !important;
+  background: var(--mexihc-surface) !important;
+  box-shadow: var(--mexihc-shadow-sm) !important;
+}
+
+.mexihc-surface-card {
+  padding: 1.25rem 1.4rem;
+}
+
+.card .card-header {
+  border-radius: var(--mexihc-radius-md) var(--mexihc-radius-md) 0 0 !important;
+}
+
+.mexihc-action-link,
+.btn {
+  border-radius: 999px !important;
+  font-weight: 800;
+  line-height: 1.2;
+  white-space: normal;
+}
+
+.mexihc-action-link-primary,
+.btn.bg-gradient-primary {
+  border: 0;
+  background-image: linear-gradient(130deg, var(--mexihc-magenta) 0%, var(--mexihc-rose) 100%) !important;
+  color: var(--mexihc-paper) !important;
+}
+
+.mexihc-action-link-secondary,
+.btn-outline-light {
+  border: 1px solid rgba(255, 255, 255, 0.76) !important;
+  color: var(--mexihc-white) !important;
+}
+
+.mexihc-action-link-muted {
+  border: 1px solid var(--mexihc-border-strong) !important;
+  background: var(--mexihc-surface-muted) !important;
+  color: var(--mexihc-night) !important;
+}
+
+.mexihc-action-link-muted:hover,
+.mexihc-action-link-muted:focus-visible {
+  border-color: rgba(135, 0, 88, 0.32) !important;
+  color: var(--mexihc-magenta) !important;
+}
+
+.table-responsive {
+  border-radius: var(--mexihc-radius-md);
+}
+
+.table {
+  border-color: var(--mexihc-border) !important;
+}
+
+.table th {
+  color: var(--mexihc-night);
+  font-weight: 800;
+}
+
+.table td {
+  color: var(--mexihc-midnight);
 }
 
 .navbar.blur-nav {
@@ -449,6 +534,10 @@ caption {
 
   .mexihc-hero-logo {
     max-width: 155px;
+  }
+
+  .mexihc-postit {
+    margin-top: 0.65rem;
   }
 }
 

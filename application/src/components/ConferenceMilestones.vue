@@ -15,7 +15,7 @@ const items = computed(() => [
     key: 'registration',
     titleKey: 'about.registration',
     descriptionKey: 'about.registration_desc',
-    status: 'open',
+    status: 'coming_soon',
     iconClass: 'fas fa-user-clock',
     routeName: 'registration'
   }
@@ -35,7 +35,7 @@ const badgeClassByType = {
   planned: 'milestone-badge-planned'
 }
 
-const isLinkEnabled = (item) => item.status === 'open' && Boolean(item.routeName)
+const isLinkEnabled = (item) => (item.status === 'open' || item.status === 'coming_soon') && Boolean(item.routeName)
 </script>
 
 <template>

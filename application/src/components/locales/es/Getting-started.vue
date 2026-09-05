@@ -135,7 +135,7 @@ export default {
 					<img
 						:src="`${baseUrl}${hotel.image}`"
 						class="card-img-top hotel-flyer"
-						:alt="`Flyer de ${hotel.name}`"
+						alt=""
 					>
 					<div class="card-body">
 						<p class="text-primary fw-bold mb-1">{{ hotel.label }}</p>
