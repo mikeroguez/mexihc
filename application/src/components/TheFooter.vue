@@ -230,6 +230,11 @@ export default {
                                 </RouterLink>
                             </li>
                             <li class="nav-item">
+                                <RouterLink :to="Tr.i18nRoute({ name: 'schedule' })" class="nav-link uline">
+                                    {{ $t("nav.schedule") }}
+                                </RouterLink>
+                            </li>
+                            <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers' })" class="nav-link uline">
                                     {{ $t("nav.keynotes") }}
                                 </RouterLink>
@@ -250,7 +255,7 @@ export default {
                             {{ $t("nav.copyright") }}
                         </p>
                         <p class="my-0  text-sm">
-                            <a class="uline" :href="`${baseUrl}CHANGELOG.md`">v2026.1.36</a>
+                            <a class="uline" :href="`${baseUrl}CHANGELOG.md`">v2026.1.37</a>
                         </p>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 <script setup>
 import TheJumbotron from '@/components/Jumbotron.vue'
+import HomeAudiencePaths from '@/components/HomeAudiencePaths.vue'
 import TheAboutSection from '@/components/AboutSection.vue'
 import TheSpeakers from '@/components/TheSpeakers.vue'
 import TheDescription from '@/components/Description.vue'
@@ -10,6 +11,7 @@ import TheSupport from '@/components/Support.vue'
 
 <template>
   <TheJumbotron />
+  <HomeAudiencePaths />
   <TheAboutSection />
   <TheSpeakers />
   <TheDescription />

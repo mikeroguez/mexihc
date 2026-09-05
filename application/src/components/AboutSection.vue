@@ -43,11 +43,11 @@ export default {
 					<div class="col-lg-8">
 						<!-- <h2 class="text-dark mb-0">Titulo Negro</h2> -->
 						<h2 id="about_mexihc" class="text-primary text-gradient text-center">{{ $t("about.about_title") }}</h2>
-						<p>
+						<div class="about-copy">
 							<template v-if="currentComponent">
                             	<component :is="currentComponent" />
-                        	</template>  
-						</p>
+                        	</template>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -64,3 +64,17 @@ export default {
 		</div>
 	</section>
 </template>
+
+<style scoped>
+:deep(.about-lead) {
+	font-size: 1.12rem;
+	font-weight: 600;
+	color: var(--mexihc-night);
+}
+
+:deep(.about-closing) {
+	color: var(--mexihc-magenta);
+	font-weight: 700;
+	font-style: italic;
+}
+</style>

@@ -1,6 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import Tr from '@/i18n/translation'
+import UiStatusBadge from '@/components/ui/UiStatusBadge.vue'
 
 const items = computed(() => [
   {
@@ -20,20 +21,6 @@ const items = computed(() => [
     routeName: 'registration'
   }
 ])
-
-const statusLabelKeyByType = {
-  open: 'about.open',
-  closed: 'about.closed',
-  coming_soon: 'nav.coming_soon',
-  planned: 'about.planned'
-}
-
-const badgeClassByType = {
-  open: 'milestone-badge-open',
-  closed: 'milestone-badge-closed',
-  coming_soon: 'milestone-badge-coming-soon',
-  planned: 'milestone-badge-planned'
-}
 
 const isLinkEnabled = (item) => (item.status === 'open' || item.status === 'coming_soon') && Boolean(item.routeName)
 </script>
@@ -63,9 +50,7 @@ const isLinkEnabled = (item) => (item.status === 'open' || item.status === 'comi
           <p class="milestone-description">{{ $t(item.descriptionKey) }}</p>
         </div>
 
-        <span class="milestone-badge" :class="badgeClassByType[item.status]">
-          {{ $t(statusLabelKeyByType[item.status]) }}
-        </span>
+        <UiStatusBadge :status="item.status" />
       </component>
     </div>
   </section>
@@ -175,35 +160,6 @@ const isLinkEnabled = (item) => (item.status === 'open' || item.status === 'comi
   line-height: 1.3;
 }
 
-.milestone-badge {
-  border-radius: 999px;
-  border: 1px solid rgba(1, 22, 56, 0.18);
-  color: rgba(1, 22, 56, 0.72);
-  background: rgba(1, 22, 56, 0.08);
-  padding: 0.2rem 0.56rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.72rem;
-  font-weight: 800;
-  white-space: nowrap;
-}
-
-.milestone-badge-open {
-  border-color: rgba(135, 0, 88, 0.3);
-  color: var(--mxh-wine);
-  background: var(--mxh-wine-soft);
-}
-
-.milestone-badge-coming-soon {
-  border-color: rgba(1, 22, 56, 0.24);
-  color: var(--mxh-navy);
-  background: rgba(1, 22, 56, 0.1);
-}
-
-.milestone-badge-planned {
-  color: rgba(1, 22, 56, 0.68);
-}
-
 @media (max-width: 767px) {
   .milestone-card {
     align-items: flex-start;
@@ -226,7 +182,7 @@ const isLinkEnabled = (item) => (item.status === 'open' || item.status === 'comi
     font-size: 0.82rem;
   }
 
-  .milestone-badge {
+  :deep(.ui-status-badge) {
     margin-left: auto;
   }
 }
