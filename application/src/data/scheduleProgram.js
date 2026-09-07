@@ -189,7 +189,7 @@ export const scheduleProgram = {
         overviewTitle: 'Overview',
         mobileTitle: 'By day',
         timeHeader: 'Time',
-        emptyLabel: 'To be confirmed',
+        emptyLabel: '',
         days: enDays,
         timeBlocks
     },
@@ -221,7 +221,7 @@ export const scheduleProgram = {
         overviewTitle: 'Vista general',
         mobileTitle: 'Por día',
         timeHeader: 'Horario',
-        emptyLabel: 'Por confirmar',
+        emptyLabel: '',
         days: esDays,
         timeBlocks
     }

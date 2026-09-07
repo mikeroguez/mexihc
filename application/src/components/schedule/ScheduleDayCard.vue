@@ -9,7 +9,7 @@ defineProps({
     },
     emptyLabel: {
         type: String,
-        required: true,
+        default: '',
     },
 })
 

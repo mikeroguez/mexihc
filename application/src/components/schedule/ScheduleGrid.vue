@@ -16,7 +16,7 @@ const props = defineProps({
     },
     emptyLabel: {
         type: String,
-        required: true,
+        default: '',
     },
     isDesktop: {
         type: Boolean,

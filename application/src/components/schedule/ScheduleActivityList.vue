@@ -6,7 +6,7 @@ defineProps({
     },
     emptyLabel: {
         type: String,
-        required: true,
+        default: '',
     },
 })
 </script>
@@ -25,5 +25,5 @@ defineProps({
             {{ item.text }}
         </li>
     </ul>
-    <span v-else class="schedule-empty">{{ emptyLabel }}</span>
+    <span v-else-if="emptyLabel" class="schedule-empty">{{ emptyLabel }}</span>
 </template>
