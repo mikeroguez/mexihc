@@ -1,4 +1,4 @@
-# MexIHC Versión 2026.2.2
+# MexIHC Versión 2026.2.3
 
 ## Sitio web para el MexIHC 2026
 
@@ -7,7 +7,7 @@ Sitio web de difusión de MexIHC 2026, organizado por la [Asociación Mexicana d
 
 ### Versión actual
 
-La versión `2026.2.2` extiende la convocatoria a la sesión de pósteres al 13 de septiembre de 2026, publica el registro y las instrucciones de pago, y corrige el traslape del logo en el pie de página.
+La versión `2026.2.3` actualiza el nombre del hito en la convocatoria del concurso de diseño estudiantil a "Envío de notificaciones de evaluación".
 
 ### Technology used
 

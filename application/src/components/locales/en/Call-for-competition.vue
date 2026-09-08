@@ -27,7 +27,7 @@ export default {
         ]"
         :milestones="[
             { label: 'Submission deadline', date: '2026-09-06' },
-            { label: 'Camera-ready deadline', date: '2026-09-13' },
+            { label: 'Notification of the evaluation process', date: '2026-09-13' },
             { label: 'MexIHC 2026 starts', date: '2026-10-27', kind: 'conference-start' },
             { label: 'MexIHC 2026 ends', date: '2026-10-30', kind: 'conference-end' }
         ]"
@@ -57,7 +57,7 @@ export default {
     <h2 id="sdc-dates">Important Dates</h2>
     <ul>
         <li><del>August 16, 2026</del> <del>August 30, 2026</del> <strong>September 6, 2026</strong> - Submission deadline <strong>(extended)</strong>.</li>
-        <li>Camera-ready deadline: September 13, 2026.</li>
+        <li>Notification of the evaluation process: September 13, 2026.</li>
     </ul>
 
     <h2>Team Requirements</h2>

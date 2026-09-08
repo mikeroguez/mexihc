@@ -106,7 +106,7 @@ export const callMilestones = [
       },
       {
         date: '2026-09-13',
-        labels: { es: 'Versión final', en: 'Camera-ready submission' },
+        labels: { es: 'Envío de notificaciones de evaluación', en: 'Notification of the evaluation process' },
       },
     ],
   },
