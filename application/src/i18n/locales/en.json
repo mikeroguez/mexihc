@@ -5,8 +5,13 @@
     },
     "privacyConsent": {
         "header-title": "Cookie settings",
-        "header-description": "We use cookies and similar technologies to help personalize content and offer a better experience. You can opt to customize them by clicking the preferences button.",
-        "modal-header": "Your privacy preferences"
+        "header-description": "We use cookies to optimize our site and analyze traffic with Google Analytics. You can accept all, decline non-essential cookies, or customize your preferences.",
+        "modal-header": "Your privacy preferences",
+        "accept-all": "Accept All",
+        "decline-all": "Decline All",
+        "preferences": "Preferences",
+        "save-preferences": "Save preferences",
+        "cookie-settings-footer": "Cookie settings"
     },
     "nav": {
         "sitemap": "Sitemap",

@@ -536,6 +536,21 @@ div[id] {
   color: var(--mexihc-paper) !important;
 }
 
+.cookie-comply__button-decline {
+  background-color: transparent !important;
+  color: var(--mexihc-magenta) !important;
+  border: 1px solid var(--mexihc-magenta) !important;
+  margin-right: 0.5rem;
+}
+
+.cookie-comply__button-decline:hover {
+  background-color: rgba(135, 0, 88, 0.12) !important;
+}
+
+.cookie-comply__header-actions {
+  margin-top: 0.5rem;
+}
+
 input:checked + .cookie-comply-slider {
   background-color: var(--mexihc-indigo) !important;
 }

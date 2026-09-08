@@ -8,14 +8,13 @@ export default {
     data() {
         const { locale } = useI18n()
         const description = computed(() => {
-            // Determina la imagen en función del idioma
             switch (locale.value) {
                 case 'en':
                     return 'We use cookies to optimize our site and analyze traffic with Google Analytics. Your data helps us to improve your experience on the site. By accepting, you allow this analysis. If you prefer not to be tracked, you can opt-out; this will place a cookie in your browser to exclude you from tracking on future visits.';
                 case 'es':
-                    return 'Utilizamos cookies para optimizar nuestro sitio y analizar el tráfico con Gooogle Analytics. Tus datos nos ayudan a mejorar tu experiencia en el sitio. Al aceptar, permites este análisis. Si prefieres no ser rastreado, puedes optar por no participar; esto colocará una cookie en tu navegador para excluirte del seguimiento en futuras visitas.';
+                    return 'Utilizamos cookies para optimizar nuestro sitio y analizar el tráfico con Google Analytics. Tus datos nos ayudan a mejorar tu experiencia en el sitio. Al aceptar, permites este análisis. Si prefieres no ser rastreado, puedes optar por no participar; esto colocará una cookie en tu navegador para excluirte del seguimiento en futuras visitas.';
                 default:
-                    return 'We use cookies to optimize our site and analyze traffic with Google Analytics. Your data helps us to improve your experience on the site. By accepting, you allow this analysis. If you prefer not to be tracked, you can opt-out; this will place a cookie in your browser to exclude you from tracking on future visits.'; // Un fallback por defecto
+                    return 'We use cookies to optimize our site and analyze traffic with Google Analytics. Your data helps us to improve your experience on the site. By accepting, you allow this analysis. If you prefer not to be tracked, you can opt-out; this will place a cookie in your browser to exclude you from tracking on future visits.';
             }
         });
 
@@ -40,66 +39,47 @@ export default {
     },
     methods: {
         onAccept() {
-            // Todas (activateogle Analytics)
-            this.activateAnalytics()
-        },
-        onSavePreferences(preferences) {
-            if (preferences.includes('ga_ans')) {
-                /*
-                *   analytics_storage: Se refiere a la gestión del consentimiento para el 
-                *   almacenamiento de datos utilizados por activateogle Analytics u otros servicios de análisis de activateogle.
-                */
-                this.activateAnalyticsStorage()
-            }
-
-            if (preferences.includes('ga_ads')) {
-                /*
-                *   ad_storage: Se utiliza para gestionar el consentimiento relacionado 
-                *   con el almacenamiento de datos para publicidad en los servicios de activateogle.
-                */
-                this.activateAddStorage()
-            }
-
-            if (preferences.includes('ga_adu')) {
-                /*
-                *   ad_user_data: Gestiona el consentimiento para la recopilación de datos del usuario 
-                *   que activateogle podría usar para fines publicitarios.
-                */
-                this.activateAddUserData()
-            }
-
-            if (preferences.includes('ga_adp')) {
-                /*
-                *   ad_personalization: Controla el consentimiento para la personalización de anuncios a 
-                *   través de activateogle, lo que incluye el uso de datos del usuario para dirigir anuncios basados en comportamientos anteriores.
-                */
-                this.activateAddPersonalization()
-            }
-        },
-        activateAnalytics() {
-            this.activateAnalyticsStorage()
-        },
-        activateAnalyticsStorage() {
             this.setConsent('analytics_storage', 'granted');
-        },
-        activateAddStorage() {
             this.setConsent('ad_storage', 'granted');
-        },
-        activateAddUserData() {
             this.setConsent('ad_user_data', 'granted');
-        },
-        activateAddPersonalization() {
             this.setConsent('ad_personalization', 'granted');
         },
-        setConsent(type, consent) {
-            // Actualizar el consentimiento con Google Tag Manager
-            let consentUpdate = {};
-            consentUpdate[type] = consent; // Asegura que la propiedad dinámica se establece correctamente
-            gtag('consent', 'update', consentUpdate);
+        onDeclineAll() {
+            this.setConsent('analytics_storage', 'denied');
+            this.setConsent('ad_storage', 'denied');
+            this.setConsent('ad_user_data', 'denied');
+            this.setConsent('ad_personalization', 'denied');
+            localStorage.setItem('cookie-comply', '[]');
+            
+            // Ocultar banner dinámicamente si está abierto
+            const aside = document.querySelector('.cookie-comply');
+            if (aside) {
+                aside.style.display = 'none';
+            }
+        },
+        onSavePreferences(preferences) {
+            const hasAnalytics = preferences.includes('ga_ans');
+            const hasAds = preferences.includes('ga_ads');
+            const hasUserData = preferences.includes('ga_adu');
+            const hasAdPersonalization = preferences.includes('ga_adp');
 
-            // Establecer la cookie
-            Cookies.set(`consent_${type}`, consent, { expires: 365 }); // Cookie válida por un año
+            this.setConsent('analytics_storage', hasAnalytics ? 'granted' : 'denied');
+            this.setConsent('ad_storage', hasAds ? 'granted' : 'denied');
+            this.setConsent('ad_user_data', hasUserData ? 'granted' : 'denied');
+            this.setConsent('ad_personalization', hasAdPersonalization ? 'granted' : 'denied');
+        },
+        setConsent(type, consent) {
+            let consentUpdate = {};
+            consentUpdate[type] = consent;
+            if (typeof window.gtag === 'function') {
+                window.gtag('consent', 'update', consentUpdate);
+            }
+            Cookies.set(`consent_${type}`, consent, { expires: 365, sameSite: 'Lax', secure: true });
             console.log(`Cookie de consentimiento para ${type} establecida a ${consent}`);
+        },
+        openCookieSettings() {
+            localStorage.removeItem('cookie-comply');
+            window.location.reload();
         },
         rssFeedPathForLocale(locale) {
             if (locale === 'es') return `${this.baseUrl}rss-es.xml`
@@ -166,6 +146,11 @@ export default {
                             <li class="nav-item">
                                 <a :href="currentRssFeed()" class="nav-link uline" target="_blank" rel="noopener noreferrer" type="application/rss+xml">
                                     {{ $t("nav.rss") }}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link uline" @click.prevent="openCookieSettings">
+                                    {{ $t("privacyConsent.cookie-settings-footer") }}
                                 </a>
                             </li>
                         </ul>
@@ -263,16 +248,26 @@ export default {
             </div>
         </div>
 
-        <vue-cookie-comply :preferences="preferences" @on-accept-all-cookies="onAccept"
+        <vue-cookie-comply :preferences="preferences"
+            :accept-all-label="$t('privacyConsent.accept-all')"
+            :preferences-label="$t('privacyConsent.preferences')"
+            @on-accept-all-cookies="onAccept"
             @on-save-cookie-preferences="onSavePreferences">
 
             <template v-slot:header>
-                <h3 class="cookie-comply__header-title">
-                    {{ $t("privacyConsent.header-title") }}
-                </h3>
-                <p class="cookie-comply__header-description">
-                    {{ $t("privacyConsent.header-description") }}
-                </p>
+                <div class="cookie-comply__header-wrapper">
+                    <h3 class="cookie-comply__header-title">
+                        {{ $t("privacyConsent.header-title") }}
+                    </h3>
+                    <p class="cookie-comply__header-description">
+                        {{ $t("privacyConsent.header-description") }}
+                    </p>
+                    <div class="cookie-comply__header-actions">
+                        <button type="button" class="cookie-comply__button cookie-comply__button-decline" @click="onDeclineAll">
+                            {{ $t("privacyConsent.decline-all") }}
+                        </button>
+                    </div>
+                </div>
             </template>
 
             <template v-slot:modal-header>

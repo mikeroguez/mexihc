@@ -5,8 +5,13 @@
     },
     "privacyConsent": {
         "header-title": "Configuración de cookies",
-        "header-description": "Utilizamos cookies y tecnologías similares para personalizar el contenido y ofrecer una mejor experiencia. Puedes optar por personalizarlas haciendo clic en el botón de preferencias.",
-        "modal-header": "Tus preferencias de privacidad"
+        "header-description": "Utilizamos cookies para optimizar nuestro sitio y analizar el tráfico con Google Analytics. Puedes aceptar todas, rechazar las cookies no esenciales o personalizar tus preferencias.",
+        "modal-header": "Tus preferencias de privacidad",
+        "accept-all": "Aceptar todas",
+        "decline-all": "Rechazar todas",
+        "preferences": "Preferencias",
+        "save-preferences": "Guardar preferencias",
+        "cookie-settings-footer": "Configuración de cookies"
     },
     "nav": {
         "sitemap": "Mapa del sitio",
