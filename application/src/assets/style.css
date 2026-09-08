@@ -46,18 +46,19 @@ body {
   color: var(--mexihc-night);
 }
 
-a:not(.btn):not(.nav-link):not(.mexihc-action-link):not(.dropdown-item):not(.navbar-brand) {
-  color: var(--mexihc-link) !important;
+/* Base styling for inline content links using :where() to avoid specificity override on styled links/buttons */
+a:where(:not(.btn):not(.nav-link):not(.mexihc-action-link):not(.dropdown-item):not(.navbar-brand):not(.acc-tool-btn):not(.anchors-float-btn):not(.breadcrumb-link):not(.uline-dark):not(.text-white):not(.text-light):not(.text-primary)) {
+  color: var(--mexihc-link);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 0.14em;
 }
 
-a:not(.btn):not(.nav-link):not(.mexihc-action-link):not(.dropdown-item):not(.navbar-brand):visited {
-  color: var(--mexihc-link) !important;
+a:where(:not(.btn):not(.nav-link):not(.mexihc-action-link):not(.dropdown-item):not(.navbar-brand):not(.acc-tool-btn):not(.anchors-float-btn):not(.breadcrumb-link):not(.uline-dark):not(.text-white):not(.text-light):not(.text-primary)):visited {
+  color: var(--mexihc-link);
 }
 
-a:not(.btn):not(.nav-link):not(.mexihc-action-link):not(.dropdown-item):not(.navbar-brand):hover {
-  color: var(--mexihc-link-hover) !important;
+a:where(:not(.btn):not(.nav-link):not(.mexihc-action-link):not(.dropdown-item):not(.navbar-brand):not(.acc-tool-btn):not(.anchors-float-btn):not(.breadcrumb-link):not(.uline-dark):not(.text-white):not(.text-light):not(.text-primary)):hover {
+  color: var(--mexihc-link-hover);
 }
 
 .text-gradient.text-primary {
@@ -68,7 +69,8 @@ a:not(.btn):not(.nav-link):not(.mexihc-action-link):not(.dropdown-item):not(.nav
   -webkit-background-clip: border-box !important;
 }
 
-a.uline-dark {
+a.uline-dark,
+a.uline-dark:visited {
   color: #f0efec !important;
   text-decoration: underline !important;
   text-underline-offset: 2px;
@@ -83,6 +85,27 @@ a.uline-dark:focus {
   -webkit-text-fill-color: transparent !important;
   position: relative;
   z-index: 1;
+}
+
+/* Explicit visited protection for secondary components */
+.breadcrumb-link:visited {
+  color: #535b68 !important;
+}
+
+.acc-tool-btn:visited {
+  color: var(--mexihc-indigo) !important;
+}
+
+.anchors-float-btn:visited {
+  color: #870058 !important;
+}
+
+a.text-white:visited {
+  color: #ffffff !important;
+}
+
+a.text-light:visited {
+  color: #f8f9fa !important;
 }
 
 a.uline {

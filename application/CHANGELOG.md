@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Corregido conflicto de especificidad CSS con la pseudo-clase `a:visited` que cambiaba el color del texto de los botones a un tono oscuro ilegible cuando el enlace ya había sido visitado por el usuario.
-- Excluidas las clases de botones (`.btn`, `.mexihc-action-link`, etc.) del estilo global `a:visited` y añadidos estilos explícitos `:visited` para todos los tipos de botones.
+- Implementada pseudoclase `:where()` de especificidad nula para el estilo general de enlaces, y añadidas protecciones explícitas `:visited` para todas las clases de botones e hipervínculos personalizados (`.btn`, `.mexihc-action-link-*`, `a.uline-dark`, `.breadcrumb-link`, `.acc-tool-btn`, `.anchors-float-btn`, `a.text-white`, `a.text-light`).
 - Agregados encabezados `Cache-Control: no-cache, no-store, must-revalidate` en `.htaccess` para archivos `.html`, previniendo que el navegador guarde versiones viejas de `index.html`.
 
 ## [2026.2.4] - 2026-09-08
