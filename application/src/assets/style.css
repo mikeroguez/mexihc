@@ -518,9 +518,43 @@ div[id] {
   height: auto;
 }
 
-.cookie-comply__modal,
 .cookie-comply {
-  z-index: 2;
+  z-index: 1040 !important;
+  position: fixed !important;
+}
+
+.cookie-comply__modal {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 1050 !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.cookie-comply__modal-middle {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.cookie-comply__modal-inner {
+  position: relative !important;
+  max-width: 92vw !important;
+  width: 480px !important;
+  max-height: 85vh !important;
+  overflow-y: auto !important;
+  margin: auto !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
 }
 
 .cookie-comply__modal-switches h3 {
