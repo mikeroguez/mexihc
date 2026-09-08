@@ -5,8 +5,10 @@ import { useI18n } from 'vue-i18n'
 import Cookies from 'js-cookie';
 
 export default {
-    data() {
+    setup() {
         const { locale } = useI18n()
+        const baseUrl = import.meta.env.BASE_URL
+
         const description = computed(() => {
             switch (locale.value) {
                 case 'en':
@@ -18,24 +20,25 @@ export default {
             }
         });
 
-        return {
-            preferences: [
-                {
-                    title: 'Google Analytics',
-                    description: description,
-                    items: [
-                        { label: 'analytics_storage', value: 'ga_ans', isEnable: true },
-                        { label: 'ad_storage', value: 'ga_ads' },
-                        { label: 'ad_user_data', value: 'ga_adu' },
-                        { label: 'ad_personalization', value: 'ga_adp' },
-                    ],
-                },
-            ]
+        const getConsentState = (type) => {
+            const val = Cookies.get(`consent_${type}`);
+            return val === 'granted';
         };
-    },
-    setup() {
-        const baseUrl = import.meta.env.BASE_URL
-        return { Tr, baseUrl }
+
+        const preferences = computed(() => [
+            {
+                title: 'Google Analytics',
+                description: description.value,
+                items: [
+                    { label: 'analytics_storage', value: 'ga_ans', isEnable: getConsentState('analytics_storage') },
+                    { label: 'ad_storage', value: 'ga_ads', isEnable: getConsentState('ad_storage') },
+                    { label: 'ad_user_data', value: 'ga_adu', isEnable: getConsentState('ad_user_data') },
+                    { label: 'ad_personalization', value: 'ga_adp', isEnable: getConsentState('ad_personalization') },
+                ],
+            },
+        ]);
+
+        return { Tr, baseUrl, preferences }
     },
     methods: {
         onAccept() {
