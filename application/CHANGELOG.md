@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.2.5] - 2026-09-08
+
+### Fixed
+- Corregido conflicto de especificidad CSS con la pseudo-clase `a:visited` que cambiaba el color del texto de los botones a un tono oscuro ilegible cuando el enlace ya había sido visitado por el usuario.
+- Excluidas las clases de botones (`.btn`, `.mexihc-action-link`, etc.) del estilo global `a:visited` y añadidos estilos explícitos `:visited` para todos los tipos de botones.
+- Agregados encabezados `Cache-Control: no-cache, no-store, must-revalidate` en `.htaccess` para archivos `.html`, previniendo que el navegador guarde versiones viejas de `index.html`.
+
+## [2026.2.4] - 2026-09-08
+
+### Added
+- Tarjetas de previsualización para redes sociales (Open Graph y Twitter 1200x630px) bilingües (`og-banner.jpg` y `og-banner-en.jpg`).
+- Enrutamiento dinámico en `.htaccess` y `index-en.html` para generar tarjetas sociales en inglés al compartir enlaces bajo `/2026/en/`.
+- Botón "Rechazar todas" en la barra inicial de cookies y opción "Configuración de cookies" en el pie de página para cumplimiento completo con el RGPD y ePrivacy de la UE.
+
+### Fixed
+- Casillas del modal de consentimiento de cookies actualizadas para reflejar dinámicamente el estado real guardado por el usuario.
+- Posicionamiento del modal de cookies fijado al viewport (`position: fixed`) centrado en pantalla.
+
 ## [2026.2.3] - 2026-09-08
 
 ### Changed

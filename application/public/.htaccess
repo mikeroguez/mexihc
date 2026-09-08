@@ -3,6 +3,13 @@
 </IfModule>
 
 <IfModule mod_headers.c>
+  # Evitar el almacenamiento en caché de archivos HTML para asegurar que el navegador siempre descargue la última versión de los assets compilados
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+  </FilesMatch>
+
   # Permitir que rastreadores de redes sociales (WhatsApp, Facebook, Twitter, LinkedIn) accedan a las imágenes de vista previa
   <FilesMatch "\.(jpeg|jpg|png|gif|svg|webp|ico)$">
     Header set Access-Control-Allow-Origin "*"
