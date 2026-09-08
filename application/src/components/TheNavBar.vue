@@ -418,7 +418,19 @@
 .navbar .dropdown-item.active-submenu,
 .navbar .dropdown-item.router-link-active,
 .navbar .dropdown-item.router-link-exact-active {
-	background: rgba(135, 0, 88, 0.1) !important;
+	background: rgba(135, 0, 88, 0.08) !important;
+	border-left: 3px solid #870058 !important;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus-visible {
+	background: rgba(135, 0, 88, 0.06) !important;
+	border-left: 3px solid #870058 !important;
+}
+
+.navbar .dropdown-item:hover .dropdown-header,
+.navbar .dropdown-item:focus-visible .dropdown-header {
+	color: #870058 !important;
 }
 
 .navbar .dropdown-item.active-submenu .dropdown-header,
@@ -545,45 +557,66 @@
 }
 
 .mexihc-navbar.is-scrolled .dropdown-menu {
-	background-color: #223048 !important;
-	border-color: rgba(240, 239, 236, 0.18) !important;
+	background-color: #1a2538 !important;
+	border: 1px solid rgba(240, 239, 236, 0.22) !important;
+	box-shadow: 0 16px 38px rgba(0, 0, 0, 0.5) !important;
 }
 
-.mexihc-navbar.is-scrolled .dropdown-item,
-.mexihc-navbar.is-scrolled .dropdown-item .dropdown-header,
+.mexihc-navbar.is-scrolled .dropdown-item {
+	transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.mexihc-navbar.is-scrolled .dropdown-item .dropdown-header {
+	color: #ffffff !important;
+}
+
 .mexihc-navbar.is-scrolled .dropdown-item .text-dark,
 .mexihc-navbar.is-scrolled .dropdown-item .text-sm,
-.mexihc-navbar.is-scrolled .dropdown-item .font-italic {
-	color: #F0EFEC !important;
+.mexihc-navbar.is-scrolled .dropdown-item .font-italic,
+.mexihc-navbar.is-scrolled .dropdown-item .mexihc-milestone-label,
+.mexihc-navbar.is-scrolled .dropdown-item .mexihc-deadline-new {
+	color: rgba(240, 239, 236, 0.88) !important;
+}
+
+.mexihc-navbar.is-scrolled .dropdown-item .mexihc-deadline-old {
+	color: rgba(240, 239, 236, 0.55) !important;
 }
 
 .mexihc-navbar.is-scrolled .dropdown-item.active-submenu,
 .mexihc-navbar.is-scrolled .dropdown-item.router-link-active,
 .mexihc-navbar.is-scrolled .dropdown-item.router-link-exact-active {
-	background: rgba(240, 239, 236, 0.18) !important;
-}
-
-.mexihc-navbar.is-scrolled .dropdown-item:hover,
-.mexihc-navbar.is-scrolled .dropdown-item:focus-visible {
-	background: rgba(240, 239, 236, 0.92) !important;
-	color: #223048 !important;
-}
-
-.mexihc-navbar.is-scrolled .dropdown-item:hover .dropdown-header,
-.mexihc-navbar.is-scrolled .dropdown-item:hover .text-dark,
-.mexihc-navbar.is-scrolled .dropdown-item:hover .text-sm,
-.mexihc-navbar.is-scrolled .dropdown-item:hover .font-italic,
-.mexihc-navbar.is-scrolled .dropdown-item:focus-visible .dropdown-header,
-.mexihc-navbar.is-scrolled .dropdown-item:focus-visible .text-dark,
-.mexihc-navbar.is-scrolled .dropdown-item:focus-visible .text-sm,
-.mexihc-navbar.is-scrolled .dropdown-item:focus-visible .font-italic {
-	color: #223048 !important;
+	background: rgba(175, 73, 114, 0.28) !important;
+	border-left: 3px solid #af4972 !important;
 }
 
 .mexihc-navbar.is-scrolled .dropdown-item.active-submenu .dropdown-header,
 .mexihc-navbar.is-scrolled .dropdown-item.router-link-active .dropdown-header,
 .mexihc-navbar.is-scrolled .dropdown-item.router-link-exact-active .dropdown-header {
-	color: #F0EFEC !important;
+	color: #ffffff !important;
+}
+
+.mexihc-navbar.is-scrolled .dropdown-item:hover,
+.mexihc-navbar.is-scrolled .dropdown-item:focus-visible {
+	background: rgba(240, 239, 236, 0.14) !important;
+	border-left: 3px solid #f7d7ea !important;
+}
+
+.mexihc-navbar.is-scrolled .dropdown-item:hover .dropdown-header,
+.mexihc-navbar.is-scrolled .dropdown-item:focus-visible .dropdown-header {
+	color: #ffffff !important;
+}
+
+.mexihc-navbar.is-scrolled .dropdown-item:hover .text-dark,
+.mexihc-navbar.is-scrolled .dropdown-item:hover .text-sm,
+.mexihc-navbar.is-scrolled .dropdown-item:hover .font-italic,
+.mexihc-navbar.is-scrolled .dropdown-item:hover .mexihc-milestone-label,
+.mexihc-navbar.is-scrolled .dropdown-item:hover .mexihc-deadline-new,
+.mexihc-navbar.is-scrolled .dropdown-item:focus-visible .text-dark,
+.mexihc-navbar.is-scrolled .dropdown-item:focus-visible .text-sm,
+.mexihc-navbar.is-scrolled .dropdown-item:focus-visible .font-italic,
+.mexihc-navbar.is-scrolled .dropdown-item:focus-visible .mexihc-milestone-label,
+.mexihc-navbar.is-scrolled .dropdown-item:focus-visible .mexihc-deadline-new {
+	color: #ffffff !important;
 }
 
 @keyframes mexihc-nav-detach {
@@ -636,17 +669,17 @@
 .mexihc-deadline-badge {
 	display: inline-flex;
 	align-items: center;
-	padding: 0.08rem 0.45rem;
+	padding: 0.08rem 0.48rem;
 	border-radius: 999px;
-	border: 1px solid rgba(135, 0, 88, 0.26);
+	border: 1px solid rgba(135, 0, 88, 0.32);
 	font-size: 0.67rem;
 	font-style: normal;
 	font-weight: 800;
-	letter-spacing: 0.04em;
+	letter-spacing: 0.05em;
 	text-transform: uppercase;
-	color: #6f0049;
-	background: #f7d7ea;
-	box-shadow: 0 1px 2px rgba(1, 22, 56, 0.08);
+	color: #ffffff !important;
+	background: linear-gradient(135deg, #870058 0%, #af4972 100%) !important;
+	box-shadow: 0 2px 5px rgba(135, 0, 88, 0.25);
 }
 
 .mexihc-deadline-old {
@@ -660,10 +693,10 @@
 }
 
 .mexihc-navbar.is-scrolled .mexihc-deadline-badge {
-	border-color: rgba(240, 239, 236, 0.32);
-	color: #223048;
-	background: #f0efec;
-	box-shadow: none;
+	border: 1px solid rgba(255, 255, 255, 0.4) !important;
+	color: #ffffff !important;
+	background: linear-gradient(135deg, #a31d68 0%, #c4387d 100%) !important;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
 }
 
 .mexihc-accessibility-menu-item {
