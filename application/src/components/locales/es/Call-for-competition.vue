@@ -27,7 +27,7 @@ export default {
         ]"
         :milestones="[
             { label: 'Fecha límite de recepción de trabajos', date: '2026-09-06' },
-            { label: 'Fecha límite para camera ready', date: '2026-09-13' },
+            { label: 'Envío de notificaciones de evaluación', date: '2026-09-13' },
             { label: 'Inicio de MexIHC 2026', date: '2026-10-27', kind: 'conference-start' },
             { label: 'Cierre de MexIHC 2026', date: '2026-10-30', kind: 'conference-end' }
         ]"
@@ -57,7 +57,7 @@ export default {
     <h2 id="sdc-dates">Fechas importantes</h2>
     <ul>
         <li><del>16 de agosto de 2026</del> <del>30 de agosto de 2026</del> <strong>6 de septiembre de 2026</strong> - Fecha límite de recepción de trabajos <strong>(extendida)</strong>.</li>
-        <li>Fecha límite para camera ready: 13 de septiembre de 2026.</li>
+        <li>Envío de notificaciones de evaluación: 13 de septiembre de 2026.</li>
     </ul>
 
     <h2>Características de los equipos</h2>
