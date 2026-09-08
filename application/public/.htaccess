@@ -2,11 +2,28 @@
   Options -MultiViews
 </IfModule>
 
+<IfModule mod_headers.c>
+  # Permitir que rastreadores de redes sociales (WhatsApp, Facebook, Twitter, LinkedIn) accedan a las imágenes de vista previa
+  <FilesMatch "\.(jpeg|jpg|png|gif|svg|webp|ico)$">
+    Header set Access-Control-Allow-Origin "*"
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /2026/
 
   RewriteRule ^index\.html$ - [L]
+  RewriteRule ^index-en\.html$ - [L]
+
+  # Enlaces en inglés (/2026/en, /2026/en/...) -> index-en.html
+  RewriteCond %{REQUEST_URI} ^/2026/en
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /2026/index-en.html [L]
+
+  # Enlaces en español / generales -> index.html
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /2026/index.html [L]

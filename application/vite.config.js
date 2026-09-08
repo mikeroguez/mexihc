@@ -12,6 +12,12 @@ export default ({ mode }) => {
     base: env.VITE_BASE_PATH,
     build: {
       emptyOutDir: false,
+      rollupOptions: {
+        input: {
+          main: resolve(dirname(fileURLToPath(import.meta.url)), 'index.html'),
+          en: resolve(dirname(fileURLToPath(import.meta.url)), 'index-en.html'),
+        },
+      },
     },
     plugins: [
       vue(),

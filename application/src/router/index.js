@@ -197,9 +197,15 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = `${to.meta.title}`;
-  document.head.querySelector("[property~='og:title'][content]").content = `${to.meta.title}`;
-  document.head.querySelector("[name='twitter:title'][content]").content = `${to.meta.title}`;
+  if (to.meta && to.meta.title) {
+    document.title = to.meta.title;
+    
+    const ogTitle = document.head.querySelector("meta[property='og:title']");
+    if (ogTitle) ogTitle.setAttribute('content', to.meta.title);
+
+    const twitterTitle = document.head.querySelector("meta[name='twitter:title']");
+    if (twitterTitle) twitterTitle.setAttribute('content', to.meta.title);
+  }
   next();
 })
 export default router
