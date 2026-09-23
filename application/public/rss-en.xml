@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/en/</link>
     <description>Official RSS feed for MexIHC 2026 news and updates in English.</description>
     <language>en-US</language>
-    <lastBuildDate>Sat, 05 Sep 2026 17:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 12:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-en.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/en/</link>
     </image>
+
+    <item>
+      <title>Accepted tutorials for MexIHC 2026</title>
+      <link>https://www.mexihc.org/2026/en/accepted-tutorials</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/en/accepted-tutorials#accepted-tutorials-2026-09-23</guid>
+      <description>The three accepted tutorials for MexIHC 2026 are now available: research workflows with Generative AI agents, human-agent ecosystems with multi-agent AI for healthcare and education, and psychometrics for Human-Computer Interaction research. Schedules, venues, and registration details will be published soon.</description>
+      <pubDate>Wed, 23 Sep 2026 12:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>MexIHC 2026 Poster Track deadline extended</title>

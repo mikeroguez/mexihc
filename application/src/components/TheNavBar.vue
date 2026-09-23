@@ -104,6 +104,7 @@
 				return this.isRouteIn([
 					'keynote-speakers',
 					'schedule',
+					'accepted-tutorials',
 					'accepted-papers',
 				])
 			},
@@ -334,6 +335,20 @@
 												</span>
 												<span class="text-sm text-dark text-wrap">
 													{{ $t("nav.keynotes_message") }}
+												</span>
+											</RouterLink>
+										</li>
+										<li>
+											<RouterLink
+												:to="Tr.i18nRoute({ name: 'accepted-tutorials' })"
+												class="dropdown-item border-radius-md"
+												:class="{ 'active-submenu': isRoute('accepted-tutorials') }"
+											>
+												<span class="fs-6 dropdown-header text-dark font-weight-bolder p-0 text-wrap">
+													{{ $t("nav.tutorial_title") }}
+												</span>
+												<span class="text-sm text-dark text-wrap">
+													{{ $t("nav.tutorial_message") }}
 												</span>
 											</RouterLink>
 										</li>
