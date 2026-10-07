@@ -67,7 +67,7 @@
         "workshop_calls_message": "To be announced",
         "tutorial": "Tutorials",
         "tutorial_title": "Tutorials",
-        "tutorial_message": "To be announced",
+        "tutorial_message": "See the accepted tutorials",
         "coming_soon": "Coming soon"
 
     },
@@ -86,7 +86,7 @@
         "call": "Call for participation",
         "call_desc": "Papers, cases, and HCI research contributions.",
         "registration": "Registration",
-        "registration_desc": "Review the confirmed rates; the payment form will be published soon.",
+        "registration_desc": "Review the confirmed rates and complete your registration.",
         "proceedings": "Proceedings",
         "proceedings_desc": "Not available yet / Planned.",
         "open": "Open",
@@ -100,6 +100,7 @@
         "general_committee_title": "General Committee",
         "program_committee_link": "Program committee",
         "program_committee_title": "Program Committee",
+        "program_committee_members": "main track reviewers",
         "conference_chairs_title": "General Co-Chairs",
         "conference_chairs_description": "Leading the organization and coordination of the conference program and activities.",
         "local_chairs_title": "Local Chairs",

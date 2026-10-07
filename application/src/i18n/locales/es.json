@@ -67,7 +67,7 @@
         "workshop_calls_message": "To be announced",
         "tutorial": "Tutoriales",
         "tutorial_title": "Tutoriales",
-        "tutorial_message": "To be announced",
+        "tutorial_message": "Consulta los tutoriales aceptados",
         "coming_soon": "Próximamente"
     },
     "jumbotron":{
@@ -85,7 +85,7 @@
         "call": "Convocatoria de participación",
         "call_desc": "Artículos, casos y propuestas de investigación en IHC.",
         "registration": "Registro",
-        "registration_desc": "Consulta las tarifas confirmadas; el formulario de pago se publicará próximamente.",
+        "registration_desc": "Consulta las tarifas confirmadas y completa tu registro.",
         "proceedings": "Memorias",
         "proceedings_desc": "Aún no disponibles / planificadas.",
         "open": "Abierta",
@@ -99,6 +99,7 @@
         "general_committee_title": "Comité general",
         "program_committee_link": "Comité de programa",
         "program_committee_title": "Comité de programa",
+        "program_committee_members": "personas revisoras del track principal",
         "conference_chairs_title": "Responsables de la conferencia",
         "conference_chairs_description": "Encargados de la organización y coordinación del programa y actividades de la conferencia.",
         "local_chairs_title": "Responsables locales",

@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026.2.7] - 2026-09-23
+
+### Added
+- Publicados los tres tutoriales aceptados para MexIHC 2026, con sus descripciones y personas ponentes, en español e inglés.
+- Agregada la noticia de los tutoriales aceptados a los canales RSS en español, inglés y formato multilingüe.
+
+### Changed
+- Actualizado el post-it del hero para anunciar los tutoriales aceptados y enlazar a su página.
+- Sincronizadas las versiones del paquete, pie de página y documentación con la versión `2026.2.7`.
+
 ## [2026.2.6] - 2026-09-08
 
 ### Fixed

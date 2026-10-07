@@ -5,12 +5,12 @@ import Tr from '@/i18n/translation'
 <template>
     <div class="alert alert-warning mexihc-postit col-md-8 m-auto" role="alert">
         <p>
-            <strong>Convocatoria de pósteres extendida:</strong>
-            recibimos envíos hasta el 13 de septiembre.
+            <strong>Programa completo disponible:</strong>
+            consulta horarios, sedes, actividades y sesiones de MexIHC 2026.
         </p>
         <p>
-            <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters' })" class="mexihc-postit-rss-link">
-                Ver convocatoria
+            <RouterLink :to="Tr.i18nRoute({ name: 'schedule' })" class="mexihc-postit-rss-link">
+                Ver programa
             </RouterLink>
         </p>
     </div>

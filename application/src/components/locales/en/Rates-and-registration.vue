@@ -49,11 +49,15 @@ export default {
 					<td><span class="fst-italic fw-light">$1,500 MXN</span></td>
 				</tr>
 				<tr>
-					<td>Workshop paper up to 6 pages, with journal publication</td>
+					<td>Regular workshop paper</td>
+					<td><span class="fst-italic fw-light">$3,000 MXN</span></td>
+				</tr>
+				<tr>
+					<td>Workshop position paper, with publication in <em>Avances en Interacción Humano-Computadora</em> (AIHC)</td>
 					<td><span class="fst-italic fw-light">$1,600 MXN</span></td>
 				</tr>
 				<tr>
-					<td>2-page workshop position paper, with website publication</td>
+					<td>Workshop position paper, with publication on the MexIHC 2026 website</td>
 					<td><span class="fst-italic fw-light">$600 MXN</span></td>
 				</tr>
 				<tr>
