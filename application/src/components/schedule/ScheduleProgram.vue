@@ -1,19 +1,16 @@
 <script>
-import { onBeforeUnmount, onMounted, ref } from 'vue'
 import InPageNavigationPanel from '@/components/InPageNavigationPanel.vue'
 import Tr from '@/i18n/translation'
 import UiSectionTitle from '@/components/ui/UiSectionTitle.vue'
 import UiSurfaceCard from '@/components/ui/UiSurfaceCard.vue'
 import ScheduleAudienceCard from './ScheduleAudienceCard.vue'
 import ScheduleDayCard from './ScheduleDayCard.vue'
-import ScheduleGrid from './ScheduleGrid.vue'
 
 export default {
     components: {
         InPageNavigationPanel,
         ScheduleAudienceCard,
         ScheduleDayCard,
-        ScheduleGrid,
         UiSectionTitle,
         UiSurfaceCard,
     },
@@ -23,26 +20,7 @@ export default {
             required: true,
         },
     },
-    setup() {
-        const isDesktop = ref(typeof window !== 'undefined' ? window.matchMedia('(min-width: 768px)').matches : true)
-        let mediaQuery
-
-        const syncViewport = (event) => {
-            isDesktop.value = event.matches
-        }
-
-        onMounted(() => {
-            mediaQuery = window.matchMedia('(min-width: 768px)')
-            isDesktop.value = mediaQuery.matches
-            mediaQuery.addEventListener('change', syncViewport)
-        })
-
-        onBeforeUnmount(() => {
-            mediaQuery?.removeEventListener('change', syncViewport)
-        })
-
-        return { Tr, isDesktop }
-    }
+    setup: () => ({ Tr })
 }
 </script>
 
@@ -78,30 +56,28 @@ export default {
         <section class="schedule-highlight-section mt-4" aria-labelledby="highlights-heading">
             <UiSectionTitle id="highlights-heading">{{ content.highlightsTitle }}</UiSectionTitle>
             <div class="schedule-highlight-list">
-                <span v-for="item in content.highlights" :key="item" class="schedule-highlight-pill">{{ item }}</span>
+                <RouterLink
+                    v-for="item in content.highlights"
+                    :key="item.target"
+                    :to="Tr.i18nRoute({ name: 'schedule', hash: `#${item.target}` })"
+                    class="schedule-highlight-pill"
+                >
+                    {{ item.label }}
+                </RouterLink>
             </div>
         </section>
 
-        <section class="schedule-grid-section mt-5" aria-labelledby="schedule-grid-heading">
-            <UiSectionTitle id="schedule-grid-heading">{{ content.overviewTitle }}</UiSectionTitle>
-            <ScheduleGrid
-                :days="content.days"
-                :time-blocks="content.timeBlocks"
-                :time-header="content.timeHeader"
-                :empty-label="content.emptyLabel"
-                :is-desktop="isDesktop"
-            />
-        </section>
-
-        <section class="schedule-mobile-section mt-5" aria-labelledby="schedule-days-heading">
+        <section class="schedule-days-section mt-5" aria-labelledby="schedule-days-heading">
             <UiSectionTitle id="schedule-days-heading">{{ content.mobileTitle }}</UiSectionTitle>
-            <ScheduleDayCard
-                v-for="day in content.days"
-                :id="isDesktop ? null : day.id"
-                :key="day.id"
-                :day="day"
-                :empty-label="content.emptyLabel"
-            />
+            <div class="schedule-day-list">
+                <ScheduleDayCard
+                    v-for="day in content.days"
+                    :id="day.id"
+                    :key="day.id"
+                    :day="day"
+                    :empty-label="content.emptyLabel"
+                />
+            </div>
         </section>
     </div>
 </template>
@@ -117,8 +93,7 @@ export default {
 
 .schedule-audience-section,
 .schedule-highlight-section,
-.schedule-grid-section,
-.schedule-mobile-section {
+.schedule-days-section {
     margin-top: 2.5rem !important;
 }
 
@@ -210,14 +185,28 @@ export default {
 }
 
 .schedule-highlight-pill {
+    display: inline-flex;
     border: 1px solid rgba(135, 0, 88, 0.18);
     border-radius: 999px;
     padding: 0.42rem 0.72rem;
     background: rgba(135, 0, 88, 0.08);
     color: var(--mexihc-magenta);
     font-size: 0.92rem;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.2;
+    text-decoration: none;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.schedule-highlight-pill:hover,
+.schedule-highlight-pill:focus-visible {
+    background: rgba(135, 0, 88, 0.16);
+    color: var(--mexihc-magenta);
+    transform: translateY(-1px);
+}
+
+:deep(.schedule-items li[id]) {
+    scroll-margin-top: 7rem;
 }
 
 :deep(.schedule-table-wrap) {
@@ -337,22 +326,55 @@ export default {
     display: none;
 }
 
+:deep(.schedule-item-details) {
+    margin-top: 0.4rem;
+}
+
+:deep(.schedule-item-details summary) {
+    width: fit-content;
+    cursor: pointer;
+    color: var(--mexihc-magenta);
+    font-size: 0.82rem;
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
+}
+
+:deep(.schedule-item-details ol) {
+    display: grid;
+    gap: 0.35rem;
+    margin: 0.55rem 0 0;
+    padding-left: 1.2rem;
+    color: var(--mexihc-slate);
+    font-size: 0.84rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+:deep(.schedule-item-details ol li) {
+    padding: 0;
+    color: inherit;
+    font: inherit;
+}
+
+:deep(.schedule-item-details ol li::before) {
+    display: none;
+}
+
 :deep(.schedule-empty) {
     color: var(--mexihc-slate);
     font-weight: 700;
 }
 
-.schedule-mobile-section {
-    display: none;
+.schedule-day-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
 }
 
 :deep(.schedule-day-card) {
     display: block;
     padding: 1.35rem 1.5rem;
-}
-
-:deep(.schedule-day-card + .schedule-day-card) {
-    margin-top: 1.25rem;
 }
 
 :deep(.schedule-day-card header) {
@@ -413,12 +435,8 @@ export default {
         margin: 1rem 0;
     }
 
-    .schedule-grid-section {
-        display: none;
-    }
-
-    .schedule-mobile-section {
-        display: block;
+    .schedule-day-list {
+        grid-template-columns: 1fr;
         margin-top: 2rem !important;
     }
 

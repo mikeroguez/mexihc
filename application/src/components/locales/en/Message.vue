@@ -5,12 +5,12 @@ import Tr from '@/i18n/translation'
 <template>
     <div class="alert alert-warning mexihc-postit col-md-8 m-auto" role="alert">
         <p>
-            <strong>Accepted tutorials:</strong>
-            explore the three tutorials selected for MexIHC 2026.
+            <strong>Full program now available:</strong>
+            explore MexIHC 2026 schedules, venues, activities and sessions.
         </p>
         <p>
-            <RouterLink :to="Tr.i18nRoute({ name: 'accepted-tutorials' })" class="mexihc-postit-rss-link">
-                View tutorials
+            <RouterLink :to="Tr.i18nRoute({ name: 'schedule' })" class="mexihc-postit-rss-link">
+                View program
             </RouterLink>
         </p>
     </div>

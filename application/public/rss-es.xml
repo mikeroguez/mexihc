@@ -5,7 +5,7 @@
     <link>https://www.mexihc.org/2026/es/</link>
     <description>Canal RSS oficial de noticias y actualizaciones de MexIHC 2026 en español.</description>
     <language>es-MX</language>
-    <lastBuildDate>Wed, 23 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 23:00:00 GMT</lastBuildDate>
     <generator>MexIHC Vite Site</generator>
     <atom:link href="https://www.mexihc.org/2026/rss-es.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -13,6 +13,14 @@
       <title>MexIHC 2026</title>
       <link>https://www.mexihc.org/2026/es/</link>
     </image>
+
+    <item>
+      <title>Programa completo de MexIHC 2026 disponible</title>
+      <link>https://www.mexihc.org/2026/es/schedule</link>
+      <guid isPermaLink="false">https://www.mexihc.org/2026/es/schedule#program-2026-10-07</guid>
+      <description>Ya está disponible el programa completo de MexIHC 2026. Consulta la agenda por día, horarios, sedes, tutoriales, talleres, sesiones de artículos, keynotes, actividades sociales y clausura.</description>
+      <pubDate>Wed, 07 Oct 2026 23:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Tutoriales aceptados de MexIHC 2026</title>
