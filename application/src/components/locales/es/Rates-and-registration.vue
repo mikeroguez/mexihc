@@ -49,11 +49,15 @@ export default {
 					<td><span class="fst-italic fw-light">$1,500 MXN</span></td>
 				</tr>
 				<tr>
-					<td>Artículo de taller de hasta 6 páginas, con publicación en revista</td>
+					<td>Artículo regular de taller</td>
+					<td><span class="fst-italic fw-light">$3,000 MXN</span></td>
+				</tr>
+				<tr>
+					<td>Position paper de taller, con publicación en <em>Avances en Interacción Humano-Computadora</em> (AIHC)</td>
 					<td><span class="fst-italic fw-light">$1,600 MXN</span></td>
 				</tr>
 				<tr>
-					<td>Position paper de taller de 2 páginas, con publicación en sitio web</td>
+					<td>Position paper de taller, con publicación en el sitio web de MexIHC 2026</td>
 					<td><span class="fst-italic fw-light">$600 MXN</span></td>
 				</tr>
 				<tr>
