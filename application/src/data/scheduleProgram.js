@@ -64,14 +64,14 @@ const enDays = [
             { time: '10:30 - 13:00', items: [{ text: 'Student Design Competition - UABC, DIB Audiovisual Room - Lizbeth Escobedo and Cuauhtémoc Rivera-Loaiza - runs in parallel with S2', kind: 'author' }] },
             { time: '13:00 - 14:30', items: [{ text: 'Lunch break (includes transportation to CICESE)', meta: true }] },
             { time: '14:30 - 15:30', items: [{ text: 'S3 - Accessibility and inclusion - CICESE Auditorium - 3 papers', kind: 'author', detailsLabel: 'View the 3 papers', details: [
-                '14:30 - #8 - Cognitive Smart Assistive Device for the Personal Hygiene of Children with ASD - Quevedo-Lozano, Hernández-Capuchín, Ramírez-Fernández',
-                '14:50 - #37 - Sign-based Search in Sign Language Dictionaries: A Systematic Literature Review - Bautista Flores, Fajardo Flores, Gaytán Lugo, Santana Mancilla',
-                '15:10 - #42 - Exergames for Adults with Mobility Limitations: A Narrative Review - Schiaffino-Rivas, Santana-Mancilla, Alcaraz-Valencia, Gaytán-Lugo'
+                '14:30 - #23 - Participatory Tuning of Synthetic Subjects: Towards a Realistic AI-based Dementia Patient - Jiménez López, Menchaca-Méndez, Juárez Gambino, Castro, Favela',
+                '14:50 - #8 - Cognitive Smart Assistive Device for the Personal Hygiene of Children with ASD - Quevedo-Lozano, Hernández-Capuchín, Ramírez-Fernández',
+                '15:10 - #37 - Sign-based Search in Sign Language Dictionaries: A Systematic Literature Review - Bautista Flores, Fajardo Flores, Gaytán Lugo, Santana Mancilla'
             ] }] },
             { time: '15:30 - 15:50', items: [{ text: 'Coffee break at CICESE', meta: true }] },
             { time: '15:50 - 16:50', items: [{ text: 'S4 - Digital health and well-being - CICESE Auditorium - 3 papers', kind: 'author', detailsLabel: 'View the 3 papers', details: [
                 '15:50 - #15 - Cultural Sensitivity and Conversational Usability in an LLM-based JITAI for Alcohol Harm Reduction - Gutiérrez, Parra, Castro, Banos',
-                '16:10 - #39 - Understanding How to Design an Unobtrusive HCI Tracking for Early Cognitive Decline - Cornejo, Zapata, Ramírez-Alonso, Manzo Martínez, Gaxiola',
+                '16:10 - #42 - Exergames for Adults with Mobility Limitations: A Narrative Review - Schiaffino-Rivas, Santana-Mancilla, Alcaraz-Valencia, Gaytán-Lugo',
                 '16:30 - #19 - Usability Testing of a Mobile App for Monitoring and Predicting Emotional Dysregulation - Alvarado-Contreras, Soto-Mendoza, Pérez-Pedraza, Ruiz-y-Ruiz, Caro'
             ] }] },
             { time: '17:00 - 18:30', items: [{ id: 'panel-20-years', text: 'Panel - 20 Years of MexIHC - CICESE Auditorium', featured: true, kind: 'attendee' }] },
@@ -83,7 +83,7 @@ const enDays = [
         blocks: [
             { time: '09:15 - 10:35', items: [{ text: 'S5 - AI for clinical practice and care - UABC, DIB 4th floor - 4 papers', kind: 'author', detailsLabel: 'View the 4 papers', details: [
                 '#16 - Toward Human-Centered AI for Cardiovascular Care - Mercado Partida, Castro, Pérez Castro, Villavicencio-Navarro',
-                '#23 - Participatory Tuning of Synthetic Subjects: Towards a Realistic AI-based Dementia Patient - Jiménez López, Menchaca-Méndez, Juárez Gambino, Castro, Favela',
+                '#39 - Understanding How to Design an Unobtrusive HCI Tracking for Early Cognitive Decline - Cornejo, Zapata, Ramírez-Alonso, Manzo Martínez, Gaxiola',
                 '#44 - Hospital Staff Perceptions of Navigation Errors by a Mobile Delivery Robot - Garcia Goo, Schadenberg, Evers',
                 '#17 - Beyond the Black Box: How Blockchain-Based Provenance Supports XAI Transparency - Lizárraga Reyes, Favela Vara'
             ] }] },
@@ -156,14 +156,14 @@ const esDays = [
             { time: '10:30 - 13:00', items: [{ text: 'Concurso de Diseño Estudiantil - UABC, DIB Audiovisual - Lizbeth Escobedo y Cuauhtémoc Rivera-Loaiza - en paralelo con S2', kind: 'author' }] },
             { time: '13:00 - 14:30', items: [{ text: 'Comida libre (incluye traslado a CICESE)', meta: true }] },
             { time: '14:30 - 15:30', items: [{ text: 'S3 - Accesibilidad e inclusión - Auditorio CICESE - 3 artículos', kind: 'author', detailsLabel: 'Ver los 3 artículos', details: [
-                '14:30 - #8 - Cognitive Smart Assistive Device for the Personal Hygiene of Children with ASD - Quevedo-Lozano, Hernández-Capuchín, Ramírez-Fernández',
-                '14:50 - #37 - Sign-based Search in Sign Language Dictionaries: A Systematic Literature Review - Bautista Flores, Fajardo Flores, Gaytán Lugo, Santana Mancilla',
-                '15:10 - #42 - Exergames for Adults with Mobility Limitations: A Narrative Review - Schiaffino-Rivas, Santana-Mancilla, Alcaraz-Valencia, Gaytán-Lugo'
+                '14:30 - #23 - Participatory Tuning of Synthetic Subjects: Towards a Realistic AI-based Dementia Patient - Jiménez López, Menchaca-Méndez, Juárez Gambino, Castro, Favela',
+                '14:50 - #8 - Cognitive Smart Assistive Device for the Personal Hygiene of Children with ASD - Quevedo-Lozano, Hernández-Capuchín, Ramírez-Fernández',
+                '15:10 - #37 - Sign-based Search in Sign Language Dictionaries: A Systematic Literature Review - Bautista Flores, Fajardo Flores, Gaytán Lugo, Santana Mancilla'
             ] }] },
             { time: '15:30 - 15:50', items: [{ text: 'Café en CICESE', meta: true }] },
             { time: '15:50 - 16:50', items: [{ text: 'S4 - Salud digital y bienestar - Auditorio CICESE - 3 artículos', kind: 'author', detailsLabel: 'Ver los 3 artículos', details: [
                 '15:50 - #15 - Cultural Sensitivity and Conversational Usability in an LLM-based JITAI for Alcohol Harm Reduction - Gutiérrez, Parra, Castro, Banos',
-                '16:10 - #39 - Understanding How to Design an Unobtrusive HCI Tracking for Early Cognitive Decline - Cornejo, Zapata, Ramírez-Alonso, Manzo Martínez, Gaxiola',
+                '16:10 - #42 - Exergames for Adults with Mobility Limitations: A Narrative Review - Schiaffino-Rivas, Santana-Mancilla, Alcaraz-Valencia, Gaytán-Lugo',
                 '16:30 - #19 - Usability Testing of a Mobile App for Monitoring and Predicting Emotional Dysregulation - Alvarado-Contreras, Soto-Mendoza, Pérez-Pedraza, Ruiz-y-Ruiz, Caro'
             ] }] },
             { time: '17:00 - 18:30', items: [{ id: 'panel-20-years', text: 'Panel - 20 años de MexIHC - Auditorio CICESE', featured: true, kind: 'attendee' }] },
@@ -175,7 +175,7 @@ const esDays = [
         blocks: [
             { time: '09:15 - 10:35', items: [{ text: 'S5 - IA para la práctica clínica y el cuidado - UABC, DIB 4to piso - 4 artículos', kind: 'author', detailsLabel: 'Ver los 4 artículos', details: [
                 '#16 - Toward Human-Centered AI for Cardiovascular Care - Mercado Partida, Castro, Pérez Castro, Villavicencio-Navarro',
-                '#23 - Participatory Tuning of Synthetic Subjects: Towards a Realistic AI-based Dementia Patient - Jiménez López, Menchaca-Méndez, Juárez Gambino, Castro, Favela',
+                '#39 - Understanding How to Design an Unobtrusive HCI Tracking for Early Cognitive Decline - Cornejo, Zapata, Ramírez-Alonso, Manzo Martínez, Gaxiola',
                 '#44 - Hospital Staff Perceptions of Navigation Errors by a Mobile Delivery Robot - Garcia Goo, Schadenberg, Evers',
                 '#17 - Beyond the Black Box: How Blockchain-Based Provenance Supports XAI Transparency - Lizárraga Reyes, Favela Vara'
             ] }] },
