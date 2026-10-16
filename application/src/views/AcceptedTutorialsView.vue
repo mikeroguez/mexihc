@@ -51,6 +51,20 @@ const tutorials = {
           bio: 'Heber Abraham Zapata Robles es doctorante en Ciencias de la Computación en CICESE, maestro en Ingeniería en Computación por la UACH y psicólogo por la ELPAC-Universidad de Ciencias del Comportamiento. Su investigación integra psiquiatría computacional, interacción humano-computadora e informática médica.'
         }
       ]
+    },
+    {
+      id: 'more-than-human-ai-education',
+      title: 'A Participatory Design Studio for More-than-Human AI in Education',
+      summary: 'Many emerging educational AI innovations centre interactions between an individual learner and an AI system. In doing so, they risk amplifying longstanding educational tensions: offloading cognitive and metacognitive effort, eroding productive struggle, and displacing peer and group learning embedded in social and cultural contexts. They can also obscure wider costs, including the extraction of data, human labour, energy, and natural resources.\n\nThese tensions call for design perspectives that challenge mainstream AI assumptions of efficiency, individualisation, extraction, and limitless availability. Indigenous knowledge systems, nature-inspired design, planetary-centred design, and more-than-human perspectives offer valuable starting points for reimagining our relationships with AI.\n\nThis session will be an experiential participatory design studio for collective ideation. Working with situated educational scenarios, participants will map the relationships surrounding AI, examine what it strengthens, weakens, or obscures, and generate ideas about when AI should be invited, limited, redesigned, or refused.',
+      capacity: '30 participants',
+      recommendedReadings: [
+        { label: 'Springer chapter', url: 'https://link.springer.com/chapter/10.1007/978-3-032-29791-4_29' },
+        { label: 'arXiv preprint', url: 'https://arxiv.org/pdf/2604.19099' },
+        { label: 'Additional reading', url: 'https://drive.google.com/file/d/1XrNWYvrQPxj1aWp1ayWWTseFWf_yLuPD/view' }
+      ],
+      presenters: [
+        { name: 'Roberto Martínez-Maldonado' }
+      ]
     }
   ],
   en: [
@@ -99,6 +113,20 @@ const tutorials = {
           name: 'Heber Abraham Zapata Robles',
           bio: 'Heber Abraham Zapata Robles is a Ph.D. student in Computer Science at CICESE, holds a master’s degree in Computer Engineering from UACH, and is a psychologist from ELPAC-Universidad de Ciencias del Comportamiento. His research integrates computational psychiatry, human-computer interaction, and medical informatics.'
         }
+      ]
+    },
+    {
+      id: 'more-than-human-ai-education',
+      title: 'A Participatory Design Studio for More-than-Human AI in Education',
+      summary: 'Many emerging educational AI innovations centre interactions between an individual learner and an AI system. In doing so, they risk amplifying longstanding educational tensions: offloading cognitive and metacognitive effort, eroding productive struggle, and displacing peer and group learning embedded in social and cultural contexts. They can also obscure wider costs, including the extraction of data, human labour, energy, and natural resources.\n\nThese tensions call for design perspectives that challenge mainstream AI assumptions of efficiency, individualisation, extraction, and limitless availability. Indigenous knowledge systems, nature-inspired design, planetary-centred design, and more-than-human perspectives offer valuable starting points for reimagining our relationships with AI.\n\nThis session will be an experiential participatory design studio for collective ideation. Working with situated educational scenarios, participants will map the relationships surrounding AI, examine what it strengthens, weakens, or obscures, and generate ideas about when AI should be invited, limited, redesigned, or refused.',
+      capacity: '30 personas',
+      recommendedReadings: [
+        { label: 'Capítulo de Springer', url: 'https://link.springer.com/chapter/10.1007/978-3-032-29791-4_29' },
+        { label: 'Preprint en arXiv', url: 'https://arxiv.org/pdf/2604.19099' },
+        { label: 'Lectura adicional', url: 'https://drive.google.com/file/d/1XrNWYvrQPxj1aWp1ayWWTseFWf_yLuPD/view' }
+      ],
+      presenters: [
+        { name: 'Roberto Martínez-Maldonado' }
       ]
     }
   ]
@@ -154,6 +182,21 @@ export default {
               <h2 class="tutorial-title text-primary text-gradient">{{ tutorial.title }}</h2>
               <p class="tutorial-summary">{{ tutorial.summary }}</p>
 
+              <p v-if="tutorial.capacity" class="tutorial-capacity">
+                <strong>{{ $i18n.locale === 'es' ? 'Cupo:' : 'Capacity:' }}</strong> {{ tutorial.capacity }}
+              </p>
+
+              <section v-if="tutorial.recommendedReadings?.length" class="tutorial-readings">
+                <h3 class="tutorial-readings-heading">
+                  {{ $i18n.locale === 'es' ? 'Lecturas recomendadas antes de la sesión' : 'Recommended reading before the session' }}
+                </h3>
+                <ul>
+                  <li v-for="reading in tutorial.recommendedReadings" :key="reading.url">
+                    <a :href="reading.url" target="_blank" rel="noopener noreferrer">{{ reading.label }}</a>
+                  </li>
+                </ul>
+              </section>
+
               <h3 class="tutorial-presenters-heading">
                 {{ $i18n.locale === 'es' ? 'Imparte' : 'Presented by' }}
               </h3>
@@ -168,7 +211,7 @@ export default {
                   <p v-if="presenter.email" class="tutorial-presenter-email">
                     <a :href="'mailto:' + presenter.email">{{ presenter.email }}</a>
                   </p>
-                  <p class="tutorial-presenter-bio">{{ presenter.bio }}</p>
+                  <p v-if="presenter.bio" class="tutorial-presenter-bio">{{ presenter.bio }}</p>
                 </section>
               </div>
             </article>
@@ -197,10 +240,35 @@ export default {
 }
 
 .tutorial-summary {
+  white-space: pre-line;
   margin-bottom: 1.6rem;
   color: var(--mexihc-night);
   font-size: 1.02rem;
   line-height: 1.75;
+}
+
+.tutorial-capacity {
+  margin: -0.8rem 0 1.6rem;
+  color: var(--mexihc-night);
+}
+
+.tutorial-readings {
+  margin: 0 0 1.8rem;
+}
+
+.tutorial-readings-heading {
+  margin-bottom: 0.65rem;
+  color: var(--mexihc-night);
+  font-size: 1.12rem;
+}
+
+.tutorial-readings ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.tutorial-readings li + li {
+  margin-top: 0.35rem;
 }
 
 .tutorial-presenters-heading {

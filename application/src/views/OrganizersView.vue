@@ -20,6 +20,7 @@ const photoByName = {
   "Pedro C. Santana-Mancilla": assetUrl("/assets/img/people/pedro.png"),
   "Victor García": assetUrl("/assets/img/people/victor.png"),
   "Jessica Beltrán": assetUrl("/assets/img/people/jessica.png"),
+  "Viridiana Silva": assetUrl("/assets/img/people/viridiana.png"),
   "Victoria Meza-Kubo": assetUrl("/assets/img/people/vicky.png"),
   "Luis A. Castro": assetUrl("/assets/img/people/luis.png"),
   "Pablo Bautista": assetUrl("/assets/img/people/pablo.jpg"),

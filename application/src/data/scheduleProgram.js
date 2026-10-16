@@ -27,7 +27,7 @@ const enDays = [
             { time: '08:30 - 09:00', items: [{ text: 'Registration - UABC, DIB Lobby', kind: 'attendee' }] },
             { time: '09:00 - 13:00', items: [
                 { text: '7 parallel activities at UABC and CICESE', kind: 'author', detailsLabel: 'View activities', details: [
-                    'W1 - IMSaBI workshop - CICESE, DCC Computer Lab - Jessica Beltrán',
+                    'W1 - IMSaBI workshop - CICESE, DCC Department Auditorium - Jessica Beltrán',
                     'W3 - Aging at Home workshop - CICESE, Room 101 - Luis Zamudio',
                     'W2 - HCAI workshop - UABC, DIB Audiovisual Room - Pedro Santana',
                     'T4 - A Participatory Design Studio for More-than-Human AI in Education - UABC, DIB Room B - Roberto Martínez-Maldonado',
@@ -42,7 +42,7 @@ const enDays = [
             { time: '15:00 - 16:00', items: [{ id: 'keynote-gillian', text: 'Keynote 1 - Gillian Hayes - CICESE Auditorium - introduced by Mónica Tentori', featured: true, kind: 'attendee' }] },
             { time: '16:10 - 17:30', items: [{ text: 'S1 - Neuroergonomics and activity recognition - CICESE Auditorium (proposed) - 4 papers', kind: 'author', detailsLabel: 'View the 4 papers', details: [
                 '16:10 - #9 - Neuroergonomic validation for BCI systems and stress quantification in industry (NOM-035) - Pineda, Hernández-Capuchín, Ramírez-Fernández',
-                '16:30 - #12 - Evaluation of ChatGPT User Experience Through EEG Signals: A Systematic Review - Hernández Domínguez, Mezura-Godoy, Benítez-Guerrero',
+                '16:30 - #12 - Evaluation of ChatGPT User Experience: A Systematic Literature Review - Hernández Domínguez, Mezura-Godoy, Benítez-Guerrero',
                 '16:50 - #18 - ActivGuide: Toward Interactive Guidance for HAR Data Collection - Beltrán Mercado, Gámez-Elizalde, Beltrán Márquez, Castro',
                 '17:10 - #21 - Privacy-Aware HAR in Office Environments Using Federated Learning - Miranda Rucabado, Avalos Rosales, Martínez García Moreno, Navarro Hernández, Beltrán Márquez'
             ] }] },
@@ -82,17 +82,17 @@ const enDays = [
         id: 'friday', label: 'Day 4: Friday, Oct 30', shortLabel: 'Friday 30', venue: 'UABC',
         blocks: [
             { time: '09:15 - 10:35', items: [{ text: 'S5 - AI for clinical practice and care - UABC, DIB 4th floor - 4 papers', kind: 'author', detailsLabel: 'View the 4 papers', details: [
-                '#16 - Toward Human-Centered AI for Cardiovascular Care - Mercado Partida, Castro, Pérez Castro, Villavicencio-Navarro',
-                '#39 - Understanding How to Design an Unobtrusive HCI Tracking for Early Cognitive Decline - Cornejo, Zapata, Ramírez-Alonso, Manzo Martínez, Gaxiola',
-                '#44 - Hospital Staff Perceptions of Navigation Errors by a Mobile Delivery Robot - Garcia Goo, Schadenberg, Evers',
-                '#17 - Beyond the Black Box: How Blockchain-Based Provenance Supports XAI Transparency - Lizárraga Reyes, Favela Vara'
+                '09:15 - #16 - Toward Human-Centered AI for Cardiovascular Care - Mercado Partida, Castro, Pérez Castro, Villavicencio-Navarro',
+                '09:35 - #39 - Understanding How to Design an Unobtrusive HCI Tracking for Early Cognitive Decline - Cornejo, Zapata, Ramírez-Alonso, Manzo Martínez, Gaxiola',
+                '09:55 - #44 - Hospital Staff Perceptions of Navigation Errors by a Mobile Delivery Robot - Garcia Goo, Schadenberg, Evers',
+                '10:15 - #17 - Beyond the Black Box: How Blockchain-Based Provenance Supports XAI Transparency - Lizárraga Reyes, Favela Vara'
             ] }] },
             { time: '10:35 - 11:05', items: [{ text: 'Coffee break - UABC, DIB 4th floor', meta: true }] },
             { time: '11:05 - 12:25', items: [{ text: 'S6 - Mobile apps for well-being and learning - UABC, DIB 4th floor - 4 papers', kind: 'author', detailsLabel: 'View the 4 papers', details: [
-                '#32 - Meritum: A Mobile App for Mitigating the Effects of Imposter Syndrome - Aguilar Solís, Navarro, Caro',
-                '#20 - Stilo: An Interactive Fashion Recommendation System to Support Cognitive Load - Sandez, Haro, Zatarain-Aceves, Caro',
-                '#33 - Huellitas Care: Preventive Care and Veterinary Emergencies for Pet Owners - Balderrama Campos, Carpio de la Cruz, Navarro, Caro',
-                '#3 - Usability and Cognitive Ergonomics in Mobile Radiology Learning Tools - Moreno-Lara, Silva-Trujillo'
+                '11:05 - #32 - Meritum: A Mobile App for Mitigating the Effects of Imposter Syndrome - Aguilar Solís, Navarro, Caro',
+                '11:25 - #20 - Stilo: An Interactive Fashion Recommendation System to Support Cognitive Load - Sandez, Haro, Zatarain-Aceves, Caro',
+                '11:45 - #33 - Huellitas Care: Preventive Care and Veterinary Emergencies for Pet Owners - Balderrama Campos, Carpio de la Cruz, Navarro, Caro',
+                '12:05 - #3 - Usability and Cognitive Ergonomics in Mobile Radiology Learning Tools - Moreno-Lara, Silva-Trujillo'
             ] }] },
             { time: '12:45 - 13:00', items: [{ text: 'Closing ceremony - UABC, DIB 4th floor', featured: true, kind: 'attendee' }] }
         ]
@@ -119,7 +119,7 @@ const esDays = [
             { time: '08:30 - 09:00', items: [{ text: 'Registro - UABC, Lobby DIB', kind: 'attendee' }] },
             { time: '09:00 - 13:00', items: [
                 { text: '7 actividades simultáneas en UABC y CICESE', kind: 'author', detailsLabel: 'Ver actividades', details: [
-                    'Taller W1 - IMSaBI - CICESE, Laboratorio de Cómputo DCC - Jessica Beltrán',
+                    'Taller W1 - IMSaBI - CICESE, Auditorio Departamento de Ciencias de la Computación - DCC - Jessica Beltrán',
                     'Taller W3 - Envejecimiento en casa - CICESE, Sala 101 - Luis Zamudio',
                     'Taller W2 - HCAI - UABC, DIB Audiovisual - Pedro Santana',
                     'Tutorial T4 - A Participatory Design Studio for More-than-Human AI in Education - UABC, DIB Sala B - Roberto Martínez-Maldonado',
@@ -134,7 +134,7 @@ const esDays = [
             { time: '15:00 - 16:00', items: [{ id: 'keynote-gillian', text: 'Keynote 1 - Gillian Hayes - Auditorio CICESE - presenta: Mónica Tentori', featured: true, kind: 'attendee' }] },
             { time: '16:10 - 17:30', items: [{ text: 'S1 - Neuroergonomía y reconocimiento de actividad - Auditorio CICESE (propuesto) - 4 artículos', kind: 'author', detailsLabel: 'Ver los 4 artículos', details: [
                 '16:10 - #9 - Validación neuroergonómica para sistemas BCI y la cuantificación del estrés en la industria (NOM-035) - Pineda, Hernández-Capuchín, Ramírez-Fernández',
-                '16:30 - #12 - Evaluation of ChatGPT User Experience Through EEG Signals: A Systematic Review - Hernández Domínguez, Mezura-Godoy, Benítez-Guerrero',
+                '16:30 - #12 - Evaluation of ChatGPT User Experience: A Systematic Literature Review - Hernández Domínguez, Mezura-Godoy, Benítez-Guerrero',
                 '16:50 - #18 - ActivGuide: Toward Interactive Guidance for HAR Data Collection - Beltrán Mercado, Gámez-Elizalde, Beltrán Márquez, Castro',
                 '17:10 - #21 - Privacy-Aware HAR in Office Environments Using Federated Learning - Miranda Rucabado, Avalos Rosales, Martínez García Moreno, Navarro Hernández, Beltrán Márquez'
             ] }] },
@@ -174,17 +174,17 @@ const esDays = [
         id: 'friday', label: 'Día 4: Viernes 30 oct', shortLabel: 'Viernes 30', venue: 'UABC',
         blocks: [
             { time: '09:15 - 10:35', items: [{ text: 'S5 - IA para la práctica clínica y el cuidado - UABC, DIB 4to piso - 4 artículos', kind: 'author', detailsLabel: 'Ver los 4 artículos', details: [
-                '#16 - Toward Human-Centered AI for Cardiovascular Care - Mercado Partida, Castro, Pérez Castro, Villavicencio-Navarro',
-                '#39 - Understanding How to Design an Unobtrusive HCI Tracking for Early Cognitive Decline - Cornejo, Zapata, Ramírez-Alonso, Manzo Martínez, Gaxiola',
-                '#44 - Hospital Staff Perceptions of Navigation Errors by a Mobile Delivery Robot - Garcia Goo, Schadenberg, Evers',
-                '#17 - Beyond the Black Box: How Blockchain-Based Provenance Supports XAI Transparency - Lizárraga Reyes, Favela Vara'
+                '09:15 - #16 - Toward Human-Centered AI for Cardiovascular Care - Mercado Partida, Castro, Pérez Castro, Villavicencio-Navarro',
+                '09:35 - #39 - Understanding How to Design an Unobtrusive HCI Tracking for Early Cognitive Decline - Cornejo, Zapata, Ramírez-Alonso, Manzo Martínez, Gaxiola',
+                '09:55 - #44 - Hospital Staff Perceptions of Navigation Errors by a Mobile Delivery Robot - Garcia Goo, Schadenberg, Evers',
+                '10:15 - #17 - Beyond the Black Box: How Blockchain-Based Provenance Supports XAI Transparency - Lizárraga Reyes, Favela Vara'
             ] }] },
             { time: '10:35 - 11:05', items: [{ text: 'Café - UABC, DIB 4to piso', meta: true }] },
             { time: '11:05 - 12:25', items: [{ text: 'S6 - Apps móviles para bienestar y aprendizaje - UABC, DIB 4to piso - 4 artículos', kind: 'author', detailsLabel: 'Ver los 4 artículos', details: [
-                '#32 - Meritum: A Mobile App for Mitigating the Effects of Imposter Syndrome - Aguilar Solís, Navarro, Caro',
-                '#20 - Stilo: An Interactive Fashion Recommendation System to Support Cognitive Load - Sandez, Haro, Zatarain-Aceves, Caro',
-                '#33 - Huellitas Care: Preventive Care and Veterinary Emergencies for Pet Owners - Balderrama Campos, Carpio de la Cruz, Navarro, Caro',
-                '#3 - Usability and Cognitive Ergonomics in Mobile Radiology Learning Tools - Moreno-Lara, Silva-Trujillo'
+                '11:05 - #32 - Meritum: A Mobile App for Mitigating the Effects of Imposter Syndrome - Aguilar Solís, Navarro, Caro',
+                '11:25 - #20 - Stilo: An Interactive Fashion Recommendation System to Support Cognitive Load - Sandez, Haro, Zatarain-Aceves, Caro',
+                '11:45 - #33 - Huellitas Care: Preventive Care and Veterinary Emergencies for Pet Owners - Balderrama Campos, Carpio de la Cruz, Navarro, Caro',
+                '12:05 - #3 - Usability and Cognitive Ergonomics in Mobile Radiology Learning Tools - Moreno-Lara, Silva-Trujillo'
             ] }] },
             { time: '12:45 - 13:00', items: [{ text: 'Clausura - UABC, DIB 4to piso', featured: true, kind: 'attendee' }] }
         ]
